@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Troubleshoot on Hugo</title>
+    <link>https://gohugo.io/troubleshooting/</link>
+    <description>Recent content in Troubleshoot on Hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 01 Feb 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://gohugo.io/troubleshooting/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Frequently Asked Questions</title>
+      <link>https://gohugo.io/troubleshooting/faq/</link>
+      <pubDate>Sat, 10 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://gohugo.io/troubleshooting/faq/</guid>
+      <description>Note: The answers/solutions presented below are short, and may not be enough to solve your problem. Visit Hugo Discourse and use the search. It that does not help, start a new topic and ask your questions.
+I can&amp;rsquo;t see my content! Is your markdown file in draft mode? When testing, run hugo server with the -D or --buildDrafts switch.
+Can I set configuration variables via OS environment?</description>
+    </item>
+    
+    <item>
+      <title>Build Performance</title>
+      <link>https://gohugo.io/troubleshooting/build-performance/</link>
+      <pubDate>Sun, 12 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://gohugo.io/troubleshooting/build-performance/</guid>
+      <description>The example site used below is from https://github.com/gohugoio/hugo/tree/master/examples/blog
+Template Metrics Hugo is a very fast static site generator, but it is possible to write inefficient templates. Hugo&amp;rsquo;s template metrics feature is extremely helpful in pinpointing which templates are executed most often and how long those executions take in terms of CPU time.
+   Metric Name Description     cumulative duration The cumulative time spent executing a given template.</description>
+    </item>
+    
+  </channel>
+</rss>

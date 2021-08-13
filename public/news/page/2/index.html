@@ -1,0 +1,2363 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+  
+  <link rel="preload" href="https://gohugo.io/fonts/muli-latin-200.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="https://gohugo.io/fonts/muli-latin-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="https://gohugo.io/fonts/muli-latin-800.woff2" as="font" type="font/woff2" crossorigin>
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <title>Hugo News | Hugo</title>
+
+  <meta name="viewport" content="width=device-width,minimum-scale=1">
+  <meta name="generator" content="Hugo 0.87.0" />
+
+  
+  <meta name="robots" content="noindex, nofollow">
+  
+
+  <link rel="alternate" type="application/rss&#43;xml" href="https://gohugo.io/news/index.xml">
+  
+  
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/output/css/app.min.bab83909a2f2fe2aa45bf7e4813899f4f705e6858479cea5bd48eee72fdf0a70.css" integrity="sha256-urg5CaLy/iqkW/fkgTiZ9PcF5oWEec6lvUju5y/fCnA=" crossorigin="anonymous">
+  
+  
+  
+
+  <meta name="description"
+  content="The world’s fastest framework for building websites">
+
+  
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/output/js/app.0984bf5469ab3c8aa82cf8eb015a560d74ee028723b1ab38e928998f5f72baba.js" integrity="sha256-CYS/VGmrPIqoLPjrAVpWDXTuAocjsas46SiZj19yuro=" crossorigin="anonymous" defer></script>
+  
+      
+ 
+
+
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+  
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0594cb">
+<meta name="theme-color" content="#ffffff">
+<meta property="og:title" content="Hugo News" />
+<meta property="og:description" content="The world’s fastest framework for building websites" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://gohugo.io/news/" /><meta property="og:image" content="https://gohugo.io/images/gohugoio-card.png"/>
+
+<meta itemprop="name" content="Hugo News">
+<meta itemprop="description" content="The world’s fastest framework for building websites"><meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://gohugo.io/images/gohugoio-card.png"/>
+
+<meta name="twitter:title" content="Hugo News"/>
+<meta name="twitter:description" content="The world’s fastest framework for building websites"/>
+<meta name="twitter:site" content="@GoHugoIO"/>
+
+
+</head>
+
+<body class="ma0 sans-serif bg-primary-color-light">
+  
+<nav class="bg-primary-color-dark pv4 w-100" role="navigation">
+
+  <div class="center flex-ns flex-wrap items-center justify-start mw9">
+
+    <h1 class="dim f3 lh-solid ml0-ns mr0 mr4-l mv0 pl3 pl4-ns">
+      <a href="https://gohugo.io/" class="link white">
+         HUGO
+      </a>
+    </h1>
+    <ul class="list ma0 pa0 dn dib-l">
+      
+        <li class="f5 dib mr4" role="menuitem">
+            
+          <a href="/news/" class="dim link light-silver">
+            News
+              
+            
+            
+          </a>
+        </li>
+      
+        <li class="f5 dib mr4" role="menuitem">
+            
+          <a href="/documentation/" class="dim link light-silver">
+            Docs
+              
+            
+            
+          </a>
+        </li>
+      
+        <li class="f5 dib mr4" role="menuitem">
+            
+          <a href="https://themes.gohugo.io/" class="dim link light-silver">
+            Themes
+              
+            
+            
+          </a>
+        </li>
+      
+        <li class="f5 dib mr4" role="menuitem">
+            
+          <a href="/showcase/" class="dim link light-silver">
+            Showcase
+              
+            
+            
+          </a>
+        </li>
+      
+        <li class="f5 dib mr4" role="menuitem">
+            
+          <a href="https://discourse.gohugo.io/" class="dim link light-silver">
+            Community
+              
+            
+            
+              <span class="pl1">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10" height="10" viewBox="0 0 32 32" class="fill-current v-base" aria-label="External Link">
+<path d="M25.152 16.576v5.696q0 2.144-1.504 3.648t-3.648 1.504h-14.848q-2.144 0-3.648-1.504t-1.504-3.648v-14.848q0-2.112 1.504-3.616t3.648-1.536h12.576q0.224 0 0.384 0.16t0.16 0.416v1.152q0 0.256-0.16 0.416t-0.384 0.16h-12.576q-1.184 0-2.016 0.832t-0.864 2.016v14.848q0 1.184 0.864 2.016t2.016 0.864h14.848q1.184 0 2.016-0.864t0.832-2.016v-5.696q0-0.256 0.16-0.416t0.416-0.16h1.152q0.256 0 0.416 0.16t0.16 0.416zM32 1.152v9.12q0 0.48-0.352 0.8t-0.8 0.352-0.8-0.352l-3.136-3.136-11.648 11.648q-0.16 0.192-0.416 0.192t-0.384-0.192l-2.048-2.048q-0.192-0.16-0.192-0.384t0.192-0.416l11.648-11.648-3.136-3.136q-0.352-0.352-0.352-0.8t0.352-0.8 0.8-0.352h9.12q0.48 0 0.8 0.352t0.352 0.8z"></path>
+</svg>
+
+              </span>
+            
+          </a>
+        </li>
+      
+        <li class="f5 dib mr4" role="menuitem">
+            
+          <a href="https://github.com/gohugoio/hugo" class="dim link light-silver">
+            GitHub
+              
+            
+            
+              <span class="pl1">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10" height="10" viewBox="0 0 32 32" class="fill-current v-base" aria-label="External Link">
+<path d="M25.152 16.576v5.696q0 2.144-1.504 3.648t-3.648 1.504h-14.848q-2.144 0-3.648-1.504t-1.504-3.648v-14.848q0-2.112 1.504-3.616t3.648-1.536h12.576q0.224 0 0.384 0.16t0.16 0.416v1.152q0 0.256-0.16 0.416t-0.384 0.16h-12.576q-1.184 0-2.016 0.832t-0.864 2.016v14.848q0 1.184 0.864 2.016t2.016 0.864h14.848q1.184 0 2.016-0.864t0.832-2.016v-5.696q0-0.256 0.16-0.416t0.416-0.16h1.152q0.256 0 0.416 0.16t0.16 0.416zM32 1.152v9.12q0 0.48-0.352 0.8t-0.8 0.352-0.8-0.352l-3.136-3.136-11.648 11.648q-0.16 0.192-0.416 0.192t-0.384-0.192l-2.048-2.048q-0.192-0.16-0.192-0.384t0.192-0.416l11.648-11.648-3.136-3.136q-0.352-0.352-0.352-0.8t0.352-0.8 0.8-0.352h9.12q0.48 0 0.8 0.352t0.352 0.8z"></path>
+</svg>
+
+              </span>
+            
+          </a>
+        </li>
+      
+    </ul>
+
+    <div class="db dib-ns pl3"><form id="site-search-form" action="" role="search">
+  <fieldset class="bn ma0 pa0">
+    <label class="clip" for="search-input">Search</label>
+    <input type="search" id="search-input" class="needs-js bg-left bn f5 input-reset lh-solid mt3 mt0-ns pl4 pv2 w5 white" placeholder="Search the Docs" name="search-input" value="" style="background: url('/images/icon-search.png') 5px 11px/16px 16px no-repeat; background-color: rgba(255,255,255,0);">
+  </fieldset>
+</form></div>
+
+    <span class="absolute mt1 mt2-l pr3 right-0 top-0">
+
+  <a href="https://twitter.com/intent/follow?screen_name=GoHugoIO" title="Follow on Twitter" class="link-transition twitter link dib z-999 pt3 pt0-l mr2">
+    <svg height="32px" id="Layer_1" style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
+
+  </a>
+
+<a class="github-button needs-js link primary-color-dark" href="https://github.com/gohugoio/hugo" data-size="large" data-show-count="false" aria-label="Star gohugoio/hugo on GitHub">Star</a>
+</span>
+
+  </div>
+</nav>
+
+  
+  <main role="main" class="content-with-sidebar min-vh-100 pb7 pb0-ns">
+    
+<div class="w-100 ph4 ph5-ns pb5 pb6-ns pt1 pt3-ns ">
+
+  <article class="cf pa3 pa4-m pa4-l nested-copy-line-height nested-img">
+    <h1 class="primary-color-dark">
+      Hugo News
+    </h1>
+    <div class="nested-copy-line-height">
+      
+    </div>
+  </article>
+
+  
+
+  <div class="flex flex-wrap">
+      
+
+    
+    <section class="flex-ns flex-wrap justify-between w-100 w-80-nsTK v-top">
+      
+        <div class="relative flex-auto w-100 w-40-l mr3 mb3 bg-white ba b--moon-gray nested-copy-line-height weight-0">
+
+  <div class="bg-white mb2 pa3 pa4-l gray">
+    
+      <date class="f6 db" datetime="">
+        July 4, 2018
+      </date>
+    
+
+    <h1 class="near-black f3">
+      <a href="/news/lets-celebrate-hugos-5th-birthday/" class="link primary-color dim">Let’s celebrate Hugo’s 5th birthday</a>
+    </h1>
+
+    <div class="lh-copy links">
+      
+          How a side project became one of the most popular frameworks for building websites.
+        
+
+        <a href="/news/lets-celebrate-hugos-5th-birthday/" class="f6 mt2 db link primary-color dim">
+          Read More &raquo;
+        </a>
+
+    </div>
+
+
+  </div>
+</div>
+
+      
+        <div class="relative flex-auto w-100 w-40-l mr3 mb3 bg-white ba b--moon-gray nested-copy-line-height weight-0">
+
+  <div class="bg-white mb2 pa3 pa4-l gray">
+    
+      <date class="f6 db" datetime="">
+        June 28, 2018
+      </date>
+    
+
+    <h1 class="near-black f3">
+      <a href="/news/0.42.2-relnotes/" class="link primary-color dim">Hugo 0.42.2: One Bug Fix</a>
+    </h1>
+
+    <div class="lh-copy links">
+      
+          Hugo 0.42.2 fixes server reload on config changes.
+        
+
+        <a href="/news/0.42.2-relnotes/" class="f6 mt2 db link primary-color dim">
+          Read More &raquo;
+        </a>
+
+    </div>
+
+
+  </div>
+</div>
+
+      
+        <div class="relative flex-auto w-100 w-40-l mr3 mb3 bg-white ba b--moon-gray nested-copy-line-height weight-0">
+
+  <div class="bg-white mb2 pa3 pa4-l gray">
+    
+      <date class="f6 db" datetime="">
+        June 13, 2018
+      </date>
+    
+
+    <h1 class="near-black f3">
+      <a href="/news/0.42.1-relnotes/" class="link primary-color dim">Hugo 0.42.1: Two Bug Fixes</a>
+    </h1>
+
+    <div class="lh-copy links">
+      
+          Hugo 0.42.1 fixes two issues.
+        
+
+        <a href="/news/0.42.1-relnotes/" class="f6 mt2 db link primary-color dim">
+          Read More &raquo;
+        </a>
+
+    </div>
+
+
+  </div>
+</div>
+
+      
+        <div class="relative flex-auto w-100 w-40-l mr3 mb3 bg-white ba b--moon-gray nested-copy-line-height weight-0">
+
+  <div class="bg-white mb2 pa3 pa4-l gray">
+    
+      <date class="f6 db" datetime="">
+        June 12, 2018
+      </date>
+    
+
+    <h1 class="near-black f3">
+      <a href="/news/0.42-relnotes/" class="link primary-color dim">Hugo 0.42: Theme Composition and Inheritance!</a>
+    </h1>
+
+    <div class="lh-copy links">
+      
+          Hugo 0.42 adds Theme Components support, a new and powerful way of composing your Hugo sites.
+        
+
+        <a href="/news/0.42-relnotes/" class="f6 mt2 db link primary-color dim">
+          Read More &raquo;
+        </a>
+
+    </div>
+
+
+  </div>
+</div>
+
+      
+        <div class="relative flex-auto w-100 w-40-l mr3 mb3 bg-white ba b--moon-gray nested-copy-line-height weight-0">
+
+  <div class="bg-white mb2 pa3 pa4-l gray">
+    
+      <date class="f6 db" datetime="">
+        May 25, 2018
+      </date>
+    
+
+    <h1 class="near-black f3">
+      <a href="/news/0.41-relnotes/" class="link primary-color dim">Hugo 0.41: Privacy Configuration for GDPR</a>
+    </h1>
+
+    <div class="lh-copy links">
+      
+          Hugo 0.41 adds a new site configuration section to meet the new General Data Protection Regulation (GDPR).
+        
+
+        <a href="/news/0.41-relnotes/" class="f6 mt2 db link primary-color dim">
+          Read More &raquo;
+        </a>
+
+    </div>
+
+
+  </div>
+</div>
+
+      
+        <div class="relative flex-auto w-100 w-40-l mr3 mb3 bg-white ba b--moon-gray nested-copy-line-height weight-0">
+
+  <div class="bg-white mb2 pa3 pa4-l gray">
+    
+      <date class="f6 db" datetime="">
+        May 9, 2018
+      </date>
+    
+
+    <h1 class="near-black f3">
+      <a href="/news/0.40.3-relnotes/" class="link primary-color dim">Hugo 0.40.3: One Bug Fix</a>
+    </h1>
+
+    <div class="lh-copy links">
+      
+          Fixes a rare, but possible Content truncation issue.
+        
+
+        <a href="/news/0.40.3-relnotes/" class="f6 mt2 db link primary-color dim">
+          Read More &raquo;
+        </a>
+
+    </div>
+
+
+  </div>
+</div>
+
+      
+        <div class="relative flex-auto w-100 w-40-l mr3 mb3 bg-white ba b--moon-gray nested-copy-line-height weight-0">
+
+  <div class="bg-white mb2 pa3 pa4-l gray">
+    
+      <date class="f6 db" datetime="">
+        April 30, 2018
+      </date>
+    
+
+    <h1 class="near-black f3">
+      <a href="/news/0.40.2-relnotes/" class="link primary-color dim">Hugo 0.40.2: Two Bug fixes</a>
+    </h1>
+
+    <div class="lh-copy links">
+      
+          Fixes some regressions introduced in 0.40.
+        
+
+        <a href="/news/0.40.2-relnotes/" class="f6 mt2 db link primary-color dim">
+          Read More &raquo;
+        </a>
+
+    </div>
+
+
+  </div>
+</div>
+
+      
+        <div class="relative flex-auto w-100 w-40-l mr3 mb3 bg-white ba b--moon-gray nested-copy-line-height weight-0">
+
+  <div class="bg-white mb2 pa3 pa4-l gray">
+    
+      <date class="f6 db" datetime="">
+        April 25, 2018
+      </date>
+    
+
+    <h1 class="near-black f3">
+      <a href="/news/0.40.1-relnotes/" class="link primary-color dim">Hugo 0.40.1: One Bug Fix</a>
+    </h1>
+
+    <div class="lh-copy links">
+      
+          Fixes some shortcode vs .Content corner cases.
+        
+
+        <a href="/news/0.40.1-relnotes/" class="f6 mt2 db link primary-color dim">
+          Read More &raquo;
+        </a>
+
+    </div>
+
+
+  </div>
+</div>
+
+      
+        <div class="relative flex-auto w-100 w-40-l mr3 mb3 bg-white ba b--moon-gray nested-copy-line-height weight-0">
+
+  <div class="bg-white mb2 pa3 pa4-l gray">
+    
+      <date class="f6 db" datetime="">
+        April 23, 2018
+      </date>
+    
+
+    <h1 class="near-black f3">
+      <a href="/news/0.40-relnotes/" class="link primary-color dim">Hugo 0.40: The Revival of the Shortcodes</a>
+    </h1>
+
+    <div class="lh-copy links">
+      
+          Hugo 0.40: Shortcodes with <code>.Content</code> (almost) always available, processed in order of appearance, several new template funcs …
+        
+
+        <a href="/news/0.40-relnotes/" class="f6 mt2 db link primary-color dim">
+          Read More &raquo;
+        </a>
+
+    </div>
+
+
+  </div>
+</div>
+
+      
+        <div class="relative flex-auto w-100 w-40-l mr3 mb3 bg-white ba b--moon-gray nested-copy-line-height weight-0">
+
+  <div class="bg-white mb2 pa3 pa4-l gray">
+    
+      <date class="f6 db" datetime="">
+        April 16, 2018
+      </date>
+    
+
+    <h1 class="near-black f3">
+      <a href="/news/0.39-relnotes/" class="link primary-color dim">Hugo 0.39: The Nat King Cole Stabilizer Edition</a>
+    </h1>
+
+    <div class="lh-copy links">
+      
+          Hugo 0.39: Rewrite of the /commands package, <code>Resource.Content</code>, several new template funcs, and more …
+        
+
+        <a href="/news/0.39-relnotes/" class="f6 mt2 db link primary-color dim">
+          Read More &raquo;
+        </a>
+
+    </div>
+
+
+  </div>
+</div>
+
+      
+        <div class="relative flex-auto w-100 w-40-l mr3 mb3 bg-white ba b--moon-gray nested-copy-line-height weight-0">
+
+  <div class="bg-white mb2 pa3 pa4-l gray">
+    
+      <date class="f6 db" datetime="">
+        April 9, 2018
+      </date>
+    
+
+    <h1 class="near-black f3">
+      <a href="/news/0.38.2-relnotes/" class="link primary-color dim">Hugo 0.38.2: Two Bugfixes</a>
+    </h1>
+
+    <div class="lh-copy links">
+      
+          0.38.2 fixes <code>--contentDir</code> flag handling and &ldquo;.&rdquo; in content filenames.
+        
+
+        <a href="/news/0.38.2-relnotes/" class="f6 mt2 db link primary-color dim">
+          Read More &raquo;
+        </a>
+
+    </div>
+
+
+  </div>
+</div>
+
+      
+        <div class="relative flex-auto w-100 w-40-l mr3 mb3 bg-white ba b--moon-gray nested-copy-line-height weight-0">
+
+  <div class="bg-white mb2 pa3 pa4-l gray">
+    
+      <date class="f6 db" datetime="">
+        April 5, 2018
+      </date>
+    
+
+    <h1 class="near-black f3">
+      <a href="/news/0.38.1-relnotes/" class="link primary-color dim">Hugo 0.38.1: Some Live Reload Fixes</a>
+    </h1>
+
+    <div class="lh-copy links">
+      
+          Hugo 0.38.1 fixes some live reload issues introduced in 0.38.
+        
+
+        <a href="/news/0.38.1-relnotes/" class="f6 mt2 db link primary-color dim">
+          Read More &raquo;
+        </a>
+
+    </div>
+
+
+  </div>
+</div>
+
+      
+        <div class="relative flex-auto w-100 w-40-l mr3 mb3 bg-white ba b--moon-gray nested-copy-line-height weight-0">
+
+  <div class="bg-white mb2 pa3 pa4-l gray">
+    
+      <date class="f6 db" datetime="">
+        April 2, 2018
+      </date>
+    
+
+    <h1 class="near-black f3">
+      <a href="/news/0.38-relnotes/" class="link primary-color dim">Hugo 0.38: The Easter Egg Edition</a>
+    </h1>
+
+    <div class="lh-copy links">
+      
+          Hugo 0.38: Date and slug from filenames, multiple content dirs, config from themes, language merge func …
+        
+
+        <a href="/news/0.38-relnotes/" class="f6 mt2 db link primary-color dim">
+          Read More &raquo;
+        </a>
+
+    </div>
+
+
+  </div>
+</div>
+
+      
+        <div class="relative flex-auto w-100 w-40-l mr3 mb3 bg-white ba b--moon-gray nested-copy-line-height weight-0">
+
+  <div class="bg-white mb2 pa3 pa4-l gray">
+    
+      <date class="f6 db" datetime="">
+        March 7, 2018
+      </date>
+    
+
+    <h1 class="near-black f3">
+      <a href="/news/0.37.1-relnotes/" class="link primary-color dim">Hugo 0.37.1: One Bugfix</a>
+    </h1>
+
+    <div class="lh-copy links">
+      
+          Fixes SVG (and similar) handling as page resources.
+        
+
+        <a href="/news/0.37.1-relnotes/" class="f6 mt2 db link primary-color dim">
+          Read More &raquo;
+        </a>
+
+    </div>
+
+
+  </div>
+</div>
+
+      
+        <div class="relative flex-auto w-100 w-40-l mr3 mb3 bg-white ba b--moon-gray nested-copy-line-height weight-0">
+
+  <div class="bg-white mb2 pa3 pa4-l gray">
+    
+      <date class="f6 db" datetime="">
+        February 27, 2018
+      </date>
+    
+
+    <h1 class="near-black f3">
+      <a href="/news/0.37-relnotes/" class="link primary-color dim">Hugo 0.37: Preserve PNG Colour Palette</a>
+    </h1>
+
+    <div class="lh-copy links">
+      
+          Reduces processed PNG file sizes. And 0.37 is built with Go 1.10!
+        
+
+        <a href="/news/0.37-relnotes/" class="f6 mt2 db link primary-color dim">
+          Read More &raquo;
+        </a>
+
+    </div>
+
+
+  </div>
+</div>
+
+      
+        <div class="relative flex-auto w-100 w-40-l mr3 mb3 bg-white ba b--moon-gray nested-copy-line-height weight-0">
+
+  <div class="bg-white mb2 pa3 pa4-l gray">
+    
+      <date class="f6 db" datetime="">
+        February 15, 2018
+      </date>
+    
+
+    <h1 class="near-black f3">
+      <a href="/news/0.36.1-relnotes/" class="link primary-color dim">Hugo 0.36.1: One Bugfix</a>
+    </h1>
+
+    <div class="lh-copy links">
+      
+          Fixes a multi-thread image processing issue.
+        
+
+        <a href="/news/0.36.1-relnotes/" class="f6 mt2 db link primary-color dim">
+          Read More &raquo;
+        </a>
+
+    </div>
+
+
+  </div>
+</div>
+
+      
+        <div class="relative flex-auto w-100 w-40-l mr3 mb3 bg-white ba b--moon-gray nested-copy-line-height weight-0">
+
+  <div class="bg-white mb2 pa3 pa4-l gray">
+    
+      <date class="f6 db" datetime="">
+        February 5, 2018
+      </date>
+    
+
+    <h1 class="near-black f3">
+      <a href="/news/0.36-relnotes/" class="link primary-color dim">Hugo 0.36: Smart Image Cropping!</a>
+    </h1>
+
+    <div class="lh-copy links">
+      
+          Hugo 0.36 announces smart image cropping and some important bug fixes.
+        
+
+        <a href="/news/0.36-relnotes/" class="f6 mt2 db link primary-color dim">
+          Read More &raquo;
+        </a>
+
+    </div>
+
+
+  </div>
+</div>
+
+      
+        <div class="relative flex-auto w-100 w-40-l mr3 mb3 bg-white ba b--moon-gray nested-copy-line-height weight-0">
+
+  <div class="bg-white mb2 pa3 pa4-l gray">
+    
+      <date class="f6 db" datetime="">
+        January 31, 2018
+      </date>
+    
+
+    <h1 class="near-black f3">
+      <a href="/news/0.35-relnotes/" class="link primary-color dim">Hugo 0.35: Headless Bundles!</a>
+    </h1>
+
+    <div class="lh-copy links">
+      
+          Headless Bundles, disable languages, improves fast render mode, and much more.
+        
+
+        <a href="/news/0.35-relnotes/" class="f6 mt2 db link primary-color dim">
+          Read More &raquo;
+        </a>
+
+    </div>
+
+
+  </div>
+</div>
+
+      
+        <div class="relative flex-auto w-100 w-40-l mr3 mb3 bg-white ba b--moon-gray nested-copy-line-height weight-0">
+
+  <div class="bg-white mb2 pa3 pa4-l gray">
+    
+      <date class="f6 db" datetime="">
+        January 22, 2018
+      </date>
+    
+
+    <h1 class="near-black f3">
+      <a href="/news/0.34-relnotes/" class="link primary-color dim">Hugo 0.34: Pattern matching to filter images and other resources</a>
+    </h1>
+
+    <div class="lh-copy links">
+      
+          Hugo 0.34 adds full glob with super-asterisk support, for example <code>*.jpg</code>.
+        
+
+        <a href="/news/0.34-relnotes/" class="f6 mt2 db link primary-color dim">
+          Read More &raquo;
+        </a>
+
+    </div>
+
+
+  </div>
+</div>
+
+      
+        <div class="relative flex-auto w-100 w-40-l mr3 mb3 bg-white ba b--moon-gray nested-copy-line-height weight-0">
+
+  <div class="bg-white mb2 pa3 pa4-l gray">
+    
+      <date class="f6 db" datetime="">
+        January 18, 2018
+      </date>
+    
+
+    <h1 class="near-black f3">
+      <a href="/news/0.33-relnotes/" class="link primary-color dim">Hugo 0.33: The New Kinder Surprise!</a>
+    </h1>
+
+    <div class="lh-copy links">
+      
+          Hugo 0.33 comes with resource (images etc.) metadata, <code>type</code> and <code>layout</code> for all page types, <code>url</code> in front matter for list pages …
+        
+
+        <a href="/news/0.33-relnotes/" class="f6 mt2 db link primary-color dim">
+          Read More &raquo;
+        </a>
+
+    </div>
+
+
+  </div>
+</div>
+
+      
+        <div class="relative flex-auto w-100 w-40-l mr3 mb3 bg-white ba b--moon-gray nested-copy-line-height weight-0">
+
+  <div class="bg-white mb2 pa3 pa4-l gray">
+    
+      <date class="f6 db" datetime="">
+        January 11, 2018
+      </date>
+    
+
+    <h1 class="near-black f3">
+      <a href="/news/0.32.4-relnotes/" class="link primary-color dim">Hugo 0.32.4: Two bugfixes</a>
+    </h1>
+
+    <div class="lh-copy links">
+      
+          Fixes non-ASCII path handling for Page resources.
+        
+
+        <a href="/news/0.32.4-relnotes/" class="f6 mt2 db link primary-color dim">
+          Read More &raquo;
+        </a>
+
+    </div>
+
+
+  </div>
+</div>
+
+      
+        <div class="relative flex-auto w-100 w-40-l mr3 mb3 bg-white ba b--moon-gray nested-copy-line-height weight-0">
+
+  <div class="bg-white mb2 pa3 pa4-l gray">
+    
+      <date class="f6 db" datetime="">
+        January 8, 2018
+      </date>
+    
+
+    <h1 class="near-black f3">
+      <a href="/news/0.32.3-relnotes/" class="link primary-color dim">Hugo 0.32.3: Some important bug fixes</a>
+    </h1>
+
+    <div class="lh-copy links">
+      
+          Fixes multilingual resource (images etc.) handling etc.
+        
+
+        <a href="/news/0.32.3-relnotes/" class="f6 mt2 db link primary-color dim">
+          Read More &raquo;
+        </a>
+
+    </div>
+
+
+  </div>
+</div>
+
+      
+        <div class="relative flex-auto w-100 w-40-l mr3 mb3 bg-white ba b--moon-gray nested-copy-line-height weight-0">
+
+  <div class="bg-white mb2 pa3 pa4-l gray">
+    
+      <date class="f6 db" datetime="">
+        January 3, 2018
+      </date>
+    
+
+    <h1 class="near-black f3">
+      <a href="/news/0.32.2-relnotes/" class="link primary-color dim">Hugo 0.32.2: One bugfix</a>
+    </h1>
+
+    <div class="lh-copy links">
+      
+          Fixes one issue with publishing of processed images when no cache.
+        
+
+        <a href="/news/0.32.2-relnotes/" class="f6 mt2 db link primary-color dim">
+          Read More &raquo;
+        </a>
+
+    </div>
+
+
+  </div>
+</div>
+
+      
+        <div class="relative flex-auto w-100 w-40-l mr3 mb3 bg-white ba b--moon-gray nested-copy-line-height weight-0">
+
+  <div class="bg-white mb2 pa3 pa4-l gray">
+    
+      <date class="f6 db" datetime="">
+        January 2, 2018
+      </date>
+    
+
+    <h1 class="near-black f3">
+      <a href="/news/0.32.1-relnotes/" class="link primary-color dim">Hugo 0.32.1: Two bugfixes</a>
+    </h1>
+
+    <div class="lh-copy links">
+      
+          Fixes image processing in shortcodes.
+        
+
+        <a href="/news/0.32.1-relnotes/" class="f6 mt2 db link primary-color dim">
+          Read More &raquo;
+        </a>
+
+    </div>
+
+
+  </div>
+</div>
+
+      
+        <div class="relative flex-auto w-100 w-40-l mr3 mb3 bg-white ba b--moon-gray nested-copy-line-height weight-0">
+
+  <div class="bg-white mb2 pa3 pa4-l gray">
+    
+      <date class="f6 db" datetime="">
+        December 31, 2017
+      </date>
+    
+
+    <h1 class="near-black f3">
+      <a href="/news/0.32-relnotes/" class="link primary-color dim">Hugo 0.32: Page Bundles and Image Processing!</a>
+    </h1>
+
+    <div class="lh-copy links">
+      
+          Images and other resources with page-relative links, resize, scale and crop images, and much more.
+        
+
+        <a href="/news/0.32-relnotes/" class="f6 mt2 db link primary-color dim">
+          Read More &raquo;
+        </a>
+
+    </div>
+
+
+  </div>
+</div>
+
+      
+        <div class="relative flex-auto w-100 w-40-l mr3 mb3 bg-white ba b--moon-gray nested-copy-line-height weight-0">
+
+  <div class="bg-white mb2 pa3 pa4-l gray">
+    
+      <date class="f6 db" datetime="">
+        November 27, 2017
+      </date>
+    
+
+    <h1 class="near-black f3">
+      <a href="/news/0.31.1-relnotes/" class="link primary-color dim">Hugo 0.31.1: One Bugfix!</a>
+    </h1>
+
+    <div class="lh-copy links">
+      
+          Fixes broken <code>--appendPort=false</code>.
+        
+
+        <a href="/news/0.31.1-relnotes/" class="f6 mt2 db link primary-color dim">
+          Read More &raquo;
+        </a>
+
+    </div>
+
+
+  </div>
+</div>
+
+      
+        <div class="relative flex-auto w-100 w-40-l mr3 mb3 bg-white ba b--moon-gray nested-copy-line-height weight-0">
+
+  <div class="bg-white mb2 pa3 pa4-l gray">
+    
+      <date class="f6 db" datetime="">
+        November 20, 2017
+      </date>
+    
+
+    <h1 class="near-black f3">
+      <a href="/news/0.31-relnotes/" class="link primary-color dim">Hugo 0.31: Language Multihost Edition!</a>
+    </h1>
+
+    <div class="lh-copy links">
+      
+          Hugo 0.31: Multihost, smart union static dirs, and more &hellip;
+        
+
+        <a href="/news/0.31-relnotes/" class="f6 mt2 db link primary-color dim">
+          Read More &raquo;
+        </a>
+
+    </div>
+
+
+  </div>
+</div>
+
+      
+        <div class="relative flex-auto w-100 w-40-l mr3 mb3 bg-white ba b--moon-gray nested-copy-line-height weight-0">
+
+  <div class="bg-white mb2 pa3 pa4-l gray">
+    
+      <date class="f6 db" datetime="">
+        October 19, 2017
+      </date>
+    
+
+    <h1 class="near-black f3">
+      <a href="/news/0.30.2-relnotes/" class="link primary-color dim">Hugo 0.30.2: One More Bugfix</a>
+    </h1>
+
+    <div class="lh-copy links">
+      
+          Fixes Fast Render mode when having sub-path in <code>baseURL</code>.
+        
+
+        <a href="/news/0.30.2-relnotes/" class="f6 mt2 db link primary-color dim">
+          Read More &raquo;
+        </a>
+
+    </div>
+
+
+  </div>
+</div>
+
+      
+        <div class="relative flex-auto w-100 w-40-l mr3 mb3 bg-white ba b--moon-gray nested-copy-line-height weight-0">
+
+  <div class="bg-white mb2 pa3 pa4-l gray">
+    
+      <date class="f6 db" datetime="">
+        October 19, 2017
+      </date>
+    
+
+    <h1 class="near-black f3">
+      <a href="/news/0.30.1-relnotes/" class="link primary-color dim">Hugo 0.30.1: Two Important Bugfixes!</a>
+    </h1>
+
+    <div class="lh-copy links">
+      
+          Fixes <code>hugo -w</code> and validator-broken Sitemap.
+        
+
+        <a href="/news/0.30.1-relnotes/" class="f6 mt2 db link primary-color dim">
+          Read More &raquo;
+        </a>
+
+    </div>
+
+
+  </div>
+</div>
+
+      
+        <div class="relative flex-auto w-100 w-40-l mr3 mb3 bg-white ba b--moon-gray nested-copy-line-height weight-0">
+
+  <div class="bg-white mb2 pa3 pa4-l gray">
+    
+      <date class="f6 db" datetime="">
+        October 16, 2017
+      </date>
+    
+
+    <h1 class="near-black f3">
+      <a href="/news/0.30-relnotes/" class="link primary-color dim">Hugo 0.30: Race Car Edition!</a>
+    </h1>
+
+    <div class="lh-copy links">
+      
+          Fast Render Mode boosts live reloading!
+        
+
+        <a href="/news/0.30-relnotes/" class="f6 mt2 db link primary-color dim">
+          Read More &raquo;
+        </a>
+
+    </div>
+
+
+  </div>
+</div>
+
+      
+        <div class="relative flex-auto w-100 w-40-l mr3 mb3 bg-white ba b--moon-gray nested-copy-line-height weight-0">
+
+  <div class="bg-white mb2 pa3 pa4-l gray">
+    
+      <date class="f6 db" datetime="">
+        September 26, 2017
+      </date>
+    
+
+    <h1 class="near-black f3">
+      <a href="/news/0.29-relnotes/" class="link primary-color dim">Hugo 0.29: Template Metrics</a>
+    </h1>
+
+    <div class="lh-copy links">
+      
+          Makes it easy to find template bottle necks.
+        
+
+        <a href="/news/0.29-relnotes/" class="f6 mt2 db link primary-color dim">
+          Read More &raquo;
+        </a>
+
+    </div>
+
+
+  </div>
+</div>
+
+      
+        <div class="relative flex-auto w-100 w-40-l mr3 mb3 bg-white ba b--moon-gray nested-copy-line-height weight-0">
+
+  <div class="bg-white mb2 pa3 pa4-l gray">
+    
+      <date class="f6 db" datetime="">
+        September 25, 2017
+      </date>
+    
+
+    <h1 class="near-black f3">
+      <a href="/news/0.28-relnotes/" class="link primary-color dim">Hugo 0.28: High-speed Syntax Highlighting!</a>
+    </h1>
+
+    <div class="lh-copy links">
+      
+          Chroma is the new default syntax highlighter in Hugo.
+        
+
+        <a href="/news/0.28-relnotes/" class="f6 mt2 db link primary-color dim">
+          Read More &raquo;
+        </a>
+
+    </div>
+
+
+  </div>
+</div>
+
+      
+        <div class="relative flex-auto w-100 w-40-l mr3 mb3 bg-white ba b--moon-gray nested-copy-line-height weight-0">
+
+  <div class="bg-white mb2 pa3 pa4-l gray">
+    
+      <date class="f6 db" datetime="">
+        September 13, 2017
+      </date>
+    
+
+    <h1 class="near-black f3">
+      <a href="/news/0.27.1-relnotes/" class="link primary-color dim">Hugo 0.27.1: One bugfix</a>
+    </h1>
+
+    <div class="lh-copy links">
+      
+          Hugo 0.27.1 fixes an issue introduced in Go 1.9 with HTML escaping of shortcodes in multi output sites.
+        
+
+        <a href="/news/0.27.1-relnotes/" class="f6 mt2 db link primary-color dim">
+          Read More &raquo;
+        </a>
+
+    </div>
+
+
+  </div>
+</div>
+
+      
+        <div class="relative flex-auto w-100 w-40-l mr3 mb3 bg-white ba b--moon-gray nested-copy-line-height weight-0">
+
+  <div class="bg-white mb2 pa3 pa4-l gray">
+    
+      <date class="f6 db" datetime="">
+        September 11, 2017
+      </date>
+    
+
+    <h1 class="near-black f3">
+      <a href="/news/0.27-relnotes/" class="link primary-color dim">Hugo 0.27: Fast and Flexible Related Content!</a>
+    </h1>
+
+    <div class="lh-copy links">
+      
+          Makes it easy to add &ldquo;See Also&rdquo; sections etc. to your site.
+        
+
+        <a href="/news/0.27-relnotes/" class="f6 mt2 db link primary-color dim">
+          Read More &raquo;
+        </a>
+
+    </div>
+
+
+  </div>
+</div>
+
+      
+        <div class="relative flex-auto w-100 w-40-l mr3 mb3 bg-white ba b--moon-gray nested-copy-line-height weight-0">
+
+  <div class="bg-white mb2 pa3 pa4-l gray">
+    
+      <date class="f6 db" datetime="">
+        August 7, 2017
+      </date>
+    
+
+    <h1 class="near-black f3">
+      <a href="/news/0.26-relnotes/" class="link primary-color dim">Hugo 0.26: Language Style Edition</a>
+    </h1>
+
+    <div class="lh-copy links">
+      
+          Hugo 0.26 brings proper AP Style or Chicago Style Title Case, « French Guillemets » and more.
+        
+
+        <a href="/news/0.26-relnotes/" class="f6 mt2 db link primary-color dim">
+          Read More &raquo;
+        </a>
+
+    </div>
+
+
+  </div>
+</div>
+
+      
+        <div class="relative flex-auto w-100 w-40-l mr3 mb3 bg-white ba b--moon-gray nested-copy-line-height weight-0">
+
+  <div class="bg-white mb2 pa3 pa4-l gray">
+    
+      <date class="f6 db" datetime="">
+        July 24, 2017
+      </date>
+    
+
+    <h1 class="near-black f3">
+      <a href="/news/http2-server-push-in-hugo/" class="link primary-color dim">HTTP/2 Server Push in Hugo</a>
+    </h1>
+
+    <div class="lh-copy links">
+      
+          As every page in Hugo can be output to multiple formats, it is easy to create Netlify&rsquo;s _redirects and _headers files on the fly.
+        
+
+        <a href="/news/http2-server-push-in-hugo/" class="f6 mt2 db link primary-color dim">
+          Read More &raquo;
+        </a>
+
+    </div>
+
+
+  </div>
+</div>
+
+      
+        <div class="relative flex-auto w-100 w-40-l mr3 mb3 bg-white ba b--moon-gray nested-copy-line-height weight-0">
+
+  <div class="bg-white mb2 pa3 pa4-l gray">
+    
+      <date class="f6 db" datetime="">
+        July 10, 2017
+      </date>
+    
+
+    <h1 class="near-black f3">
+      <a href="/news/0.25.1-relnotes/" class="link primary-color dim">Hugo 0.25.1</a>
+    </h1>
+
+    <div class="lh-copy links">
+      
+          This is a bug-fix release with a couple of important fixes
+        
+
+        <a href="/news/0.25.1-relnotes/" class="f6 mt2 db link primary-color dim">
+          Read More &raquo;
+        </a>
+
+    </div>
+
+
+  </div>
+</div>
+
+      
+        <div class="relative flex-auto w-100 w-40-l mr3 mb3 bg-white ba b--moon-gray nested-copy-line-height weight-0">
+
+  <div class="bg-white mb2 pa3 pa4-l gray">
+    
+      <date class="f6 db" datetime="">
+        July 7, 2017
+      </date>
+    
+
+    <h1 class="near-black f3">
+      <a href="/news/0.25-relnotes/" class="link primary-color dim">Hugo 0.25</a>
+    </h1>
+
+    <div class="lh-copy links">
+      
+          Hugo 0.25 automatically opens the page you're working on in the browser
+        
+
+        <a href="/news/0.25-relnotes/" class="f6 mt2 db link primary-color dim">
+          Read More &raquo;
+        </a>
+
+    </div>
+
+
+  </div>
+</div>
+
+      
+        <div class="relative flex-auto w-100 w-40-l mr3 mb3 bg-white ba b--moon-gray nested-copy-line-height weight-0">
+
+  <div class="bg-white mb2 pa3 pa4-l gray">
+    
+      <date class="f6 db" datetime="">
+        June 24, 2017
+      </date>
+    
+
+    <h1 class="near-black f3">
+      <a href="/news/0.24.1-relnotes/" class="link primary-color dim">Hugo 0.24.1</a>
+    </h1>
+
+    <div class="lh-copy links">
+      
+          This release fixes some important archetype-related regressions from Hugo 0.24
+        
+
+        <a href="/news/0.24.1-relnotes/" class="f6 mt2 db link primary-color dim">
+          Read More &raquo;
+        </a>
+
+    </div>
+
+
+  </div>
+</div>
+
+      
+        <div class="relative flex-auto w-100 w-40-l mr3 mb3 bg-white ba b--moon-gray nested-copy-line-height weight-0">
+
+  <div class="bg-white mb2 pa3 pa4-l gray">
+    
+      <date class="f6 db" datetime="">
+        June 17, 2017
+      </date>
+    
+
+    <h1 class="near-black f3">
+      <a href="/news/0.24-relnotes/" class="link primary-color dim">Hugo 0.24</a>
+    </h1>
+
+    <div class="lh-copy links">
+      
+          The Revival of the Archetypes!
+        
+
+        <a href="/news/0.24-relnotes/" class="f6 mt2 db link primary-color dim">
+          Read More &raquo;
+        </a>
+
+    </div>
+
+
+  </div>
+</div>
+
+      
+        <div class="relative flex-auto w-100 w-40-l mr3 mb3 bg-white ba b--moon-gray nested-copy-line-height weight-0">
+
+  <div class="bg-white mb2 pa3 pa4-l gray">
+    
+      <date class="f6 db" datetime="">
+        June 16, 2017
+      </date>
+    
+
+    <h1 class="near-black f3">
+      <a href="/news/0.23-relnotes/" class="link primary-color dim">Hugo 0.23</a>
+    </h1>
+
+    <div class="lh-copy links">
+      
+          Hugo 0.23 is mainly a release that handles all the small changes needed to get Hugo moved to a GitHub organisation
+        
+
+        <a href="/news/0.23-relnotes/" class="f6 mt2 db link primary-color dim">
+          Read More &raquo;
+        </a>
+
+    </div>
+
+
+  </div>
+</div>
+
+      
+        <div class="relative flex-auto w-100 w-40-l mr3 mb3 bg-white ba b--moon-gray nested-copy-line-height weight-0">
+
+  <div class="bg-white mb2 pa3 pa4-l gray">
+    
+      <date class="f6 db" datetime="">
+        June 13, 2017
+      </date>
+    
+
+    <h1 class="near-black f3">
+      <a href="/news/0.22.1-relnotes/" class="link primary-color dim">Hugo 0.22.1</a>
+    </h1>
+
+    <div class="lh-copy links">
+      
+          Hugo 0.22.1 fixes a couple of issues reported after the 0.22 release
+        
+
+        <a href="/news/0.22.1-relnotes/" class="f6 mt2 db link primary-color dim">
+          Read More &raquo;
+        </a>
+
+    </div>
+
+
+  </div>
+</div>
+
+      
+        <div class="relative flex-auto w-100 w-40-l mr3 mb3 bg-white ba b--moon-gray nested-copy-line-height weight-0">
+
+  <div class="bg-white mb2 pa3 pa4-l gray">
+    
+      <date class="f6 db" datetime="">
+        June 12, 2017
+      </date>
+    
+
+    <h1 class="near-black f3">
+      <a href="/news/0.22-relnotes/" class="link primary-color dim">Hugo 0.22</a>
+    </h1>
+
+    <div class="lh-copy links">
+      
+          Hugo 0.22 brings nested sections, by popular demand and a long sought after feature
+        
+
+        <a href="/news/0.22-relnotes/" class="f6 mt2 db link primary-color dim">
+          Read More &raquo;
+        </a>
+
+    </div>
+
+
+  </div>
+</div>
+
+      
+        <div class="relative flex-auto w-100 w-40-l mr3 mb3 bg-white ba b--moon-gray nested-copy-line-height weight-0">
+
+  <div class="bg-white mb2 pa3 pa4-l gray">
+    
+      <date class="f6 db" datetime="">
+        May 22, 2017
+      </date>
+    
+
+    <h1 class="near-black f3">
+      <a href="/news/0.21-relnotes/" class="link primary-color dim">Hugo 0.21</a>
+    </h1>
+
+    <div class="lh-copy links">
+      
+          Hugo 0.21 brings full support for shortcodes per Output Format, the last vital piece of that puzzle
+        
+
+        <a href="/news/0.21-relnotes/" class="f6 mt2 db link primary-color dim">
+          Read More &raquo;
+        </a>
+
+    </div>
+
+
+  </div>
+</div>
+
+      
+        <div class="relative flex-auto w-100 w-40-l mr3 mb3 bg-white ba b--moon-gray nested-copy-line-height weight-0">
+
+  <div class="bg-white mb2 pa3 pa4-l gray">
+    
+      <date class="f6 db" datetime="">
+        May 3, 2017
+      </date>
+    
+
+    <h1 class="near-black f3">
+      <a href="/news/0.20.7-relnotes/" class="link primary-color dim">Hugo 0.20.7</a>
+    </h1>
+
+    <div class="lh-copy links">
+      
+          This just fixes an issue with the release scripts, no change in the binaries
+        
+
+        <a href="/news/0.20.7-relnotes/" class="f6 mt2 db link primary-color dim">
+          Read More &raquo;
+        </a>
+
+    </div>
+
+
+  </div>
+</div>
+
+      
+        <div class="relative flex-auto w-100 w-40-l mr3 mb3 bg-white ba b--moon-gray nested-copy-line-height weight-0">
+
+  <div class="bg-white mb2 pa3 pa4-l gray">
+    
+      <date class="f6 db" datetime="">
+        April 27, 2017
+      </date>
+    
+
+    <h1 class="near-black f3">
+      <a href="/news/0.20.6-relnotes/" class="link primary-color dim">Hugo 0.20.6</a>
+    </h1>
+
+    <div class="lh-copy links">
+      
+          There have been some shouting on discuss.gohugo.io about some broken sites after the release of Hugo 0.20. This release reintroduces the old behaviour, making /my-blog-post/index.md work as expected.
+Hugo now has:
+ 16675+ stars 456+ contributors 156+ themes  Fixes  Avoid index.md in /index/index.html #3396 Make missing GitInfo a WARNING b30ca4be @bep #3376 Fix some of the fpm fields for deb 3bd1d057 @anthonyfok  
+      
+
+        <a href="/news/0.20.6-relnotes/" class="f6 mt2 db link primary-color dim">
+          Read More &raquo;
+        </a>
+
+    </div>
+
+
+  </div>
+</div>
+
+      
+        <div class="relative flex-auto w-100 w-40-l mr3 mb3 bg-white ba b--moon-gray nested-copy-line-height weight-0">
+
+  <div class="bg-white mb2 pa3 pa4-l gray">
+    
+      <date class="f6 db" datetime="">
+        April 25, 2017
+      </date>
+    
+
+    <h1 class="near-black f3">
+      <a href="/news/0.20.5-relnotes/" class="link primary-color dim">Hugo 0.20.5</a>
+    </h1>
+
+    <div class="lh-copy links">
+      
+          This is a bug-fix release which fixes the version number of 0.20.4 (which wrongly shows up as 0.21-DEV) (#3388).
+      
+
+        <a href="/news/0.20.5-relnotes/" class="f6 mt2 db link primary-color dim">
+          Read More &raquo;
+        </a>
+
+    </div>
+
+
+  </div>
+</div>
+
+      
+        <div class="relative flex-auto w-100 w-40-l mr3 mb3 bg-white ba b--moon-gray nested-copy-line-height weight-0">
+
+  <div class="bg-white mb2 pa3 pa4-l gray">
+    
+      <date class="f6 db" datetime="">
+        April 24, 2017
+      </date>
+    
+
+    <h1 class="near-black f3">
+      <a href="/news/0.20.4-relnotes/" class="link primary-color dim">Hugo 0.20.4</a>
+    </h1>
+
+    <div class="lh-copy links">
+      
+          This is the second bug-fix release of the day, fixing a couple of issues related to the new release scripts
+        
+
+        <a href="/news/0.20.4-relnotes/" class="f6 mt2 db link primary-color dim">
+          Read More &raquo;
+        </a>
+
+    </div>
+
+
+  </div>
+</div>
+
+      
+        <div class="relative flex-auto w-100 w-40-l mr3 mb3 bg-white ba b--moon-gray nested-copy-line-height weight-0">
+
+  <div class="bg-white mb2 pa3 pa4-l gray">
+    
+      <date class="f6 db" datetime="">
+        April 24, 2017
+      </date>
+    
+
+    <h1 class="near-black f3">
+      <a href="/news/0.20.3-relnotes/" class="link primary-color dim">Hugo 0.20.3</a>
+    </h1>
+
+    <div class="lh-copy links">
+      
+          This is a bug-fix release with one important fix. But it also adds some harness around GoReleaser
+        
+
+        <a href="/news/0.20.3-relnotes/" class="f6 mt2 db link primary-color dim">
+          Read More &raquo;
+        </a>
+
+    </div>
+
+
+  </div>
+</div>
+
+      
+        <div class="relative flex-auto w-100 w-40-l mr3 mb3 bg-white ba b--moon-gray nested-copy-line-height weight-0">
+
+  <div class="bg-white mb2 pa3 pa4-l gray">
+    
+      <date class="f6 db" datetime="">
+        April 16, 2017
+      </date>
+    
+
+    <h1 class="near-black f3">
+      <a href="/news/0.20.2-relnotes/" class="link primary-color dim">Hugo 0.20.2</a>
+    </h1>
+
+    <div class="lh-copy links">
+      
+          Hugo 0.20.2 adds support for plain text partials included into HTML templates
+        
+
+        <a href="/news/0.20.2-relnotes/" class="f6 mt2 db link primary-color dim">
+          Read More &raquo;
+        </a>
+
+    </div>
+
+
+  </div>
+</div>
+
+      
+        <div class="relative flex-auto w-100 w-40-l mr3 mb3 bg-white ba b--moon-gray nested-copy-line-height weight-0">
+
+  <div class="bg-white mb2 pa3 pa4-l gray">
+    
+      <date class="f6 db" datetime="">
+        April 13, 2017
+      </date>
+    
+
+    <h1 class="near-black f3">
+      <a href="/news/0.20.1-relnotes/" class="link primary-color dim">Hugo 0.20.1</a>
+    </h1>
+
+    <div class="lh-copy links">
+      
+          Hugo 0.20.1 is a bug fix release, fixing some important regressions introduced in 0.20
+        
+
+        <a href="/news/0.20.1-relnotes/" class="f6 mt2 db link primary-color dim">
+          Read More &raquo;
+        </a>
+
+    </div>
+
+
+  </div>
+</div>
+
+      
+        <div class="relative flex-auto w-100 w-40-l mr3 mb3 bg-white ba b--moon-gray nested-copy-line-height weight-0">
+
+  <div class="bg-white mb2 pa3 pa4-l gray">
+    
+      <date class="f6 db" datetime="">
+        April 10, 2017
+      </date>
+    
+
+    <h1 class="near-black f3">
+      <a href="/news/0.20-relnotes/" class="link primary-color dim">Hugo 0.20</a>
+    </h1>
+
+    <div class="lh-copy links">
+      
+          Hugo 0.20 introduces the powerful and long sought after feature Custom Output Formats
+        
+
+        <a href="/news/0.20-relnotes/" class="f6 mt2 db link primary-color dim">
+          Read More &raquo;
+        </a>
+
+    </div>
+
+
+  </div>
+</div>
+
+      
+        <div class="relative flex-auto w-100 w-40-l mr3 mb3 bg-white ba b--moon-gray nested-copy-line-height weight-0">
+
+  <div class="bg-white mb2 pa3 pa4-l gray">
+    
+      <date class="f6 db" datetime="">
+        February 27, 2017
+      </date>
+    
+
+    <h1 class="near-black f3">
+      <a href="/news/0.19-relnotes/" class="link primary-color dim">Hugo 0.19</a>
+    </h1>
+
+    <div class="lh-copy links">
+      
+          Hugo 0.19 brings native Emacs Org-mode content support, and Hugo has its own Twitter account
+        
+
+        <a href="/news/0.19-relnotes/" class="f6 mt2 db link primary-color dim">
+          Read More &raquo;
+        </a>
+
+    </div>
+
+
+  </div>
+</div>
+
+      
+        <div class="relative flex-auto w-100 w-40-l mr3 mb3 bg-white ba b--moon-gray nested-copy-line-height weight-0">
+
+  <div class="bg-white mb2 pa3 pa4-l gray">
+    
+      <date class="f6 db" datetime="">
+        December 30, 2016
+      </date>
+    
+
+    <h1 class="near-black f3">
+      <a href="/news/0.18-relnotes/" class="link primary-color dim">Hugo 0.18</a>
+    </h1>
+
+    <div class="lh-copy links">
+      
+          The primary new feature in Hugo 0.18 is that every piece of content is now a Page.
+        
+
+        <a href="/news/0.18-relnotes/" class="f6 mt2 db link primary-color dim">
+          Read More &raquo;
+        </a>
+
+    </div>
+
+
+  </div>
+</div>
+
+      
+        <div class="relative flex-auto w-100 w-40-l mr3 mb3 bg-white ba b--moon-gray nested-copy-line-height weight-0">
+
+  <div class="bg-white mb2 pa3 pa4-l gray">
+    
+      <date class="f6 db" datetime="">
+        October 7, 2016
+      </date>
+    
+
+    <h1 class="near-black f3">
+      <a href="/news/0.17-relnotes/" class="link primary-color dim">0.17: Hugo is going global</a>
+    </h1>
+
+    <div class="lh-copy links">
+      
+          Hugo now supports multilingual sites with the most simple and elegant experience.
+        
+
+        <a href="/news/0.17-relnotes/" class="f6 mt2 db link primary-color dim">
+          Read More &raquo;
+        </a>
+
+    </div>
+
+
+  </div>
+</div>
+
+      
+        <div class="relative flex-auto w-100 w-40-l mr3 mb3 bg-white ba b--moon-gray nested-copy-line-height weight-0">
+
+  <div class="bg-white mb2 pa3 pa4-l gray">
+    
+      <date class="f6 db" datetime="">
+        June 6, 2016
+      </date>
+    
+
+    <h1 class="near-black f3">
+      <a href="/news/0.16-relnotes/" class="link primary-color dim">Hugo 0.16</a>
+    </h1>
+
+    <div class="lh-copy links">
+      
+          Hugo 0.16 is our best and biggest release ever. The Hugo community has outdone itself with continued performance improvements, beautiful themes and increased stability.
+        
+
+        <a href="/news/0.16-relnotes/" class="f6 mt2 db link primary-color dim">
+          Read More &raquo;
+        </a>
+
+    </div>
+
+
+  </div>
+</div>
+
+      
+        <div class="relative flex-auto w-100 w-40-l mr3 mb3 bg-white ba b--moon-gray nested-copy-line-height weight-0">
+
+  <div class="bg-white mb2 pa3 pa4-l gray">
+    
+      <date class="f6 db" datetime="">
+        December 19, 2015
+      </date>
+    
+
+    <h1 class="near-black f3">
+      <a href="/news/0.15-relnotes/" class="link primary-color dim">Hugo 0.15</a>
+    </h1>
+
+    <div class="lh-copy links">
+      
+          The v0.15.0 Hugo release brings a lot of polish to Hugo. Exactly 6 months after the 0.14 release, Hugo has seen massive growth and changes. Most notably, this is Hugo&rsquo;s first release under the Apache 2.0 license.
+        
+
+        <a href="/news/0.15-relnotes/" class="f6 mt2 db link primary-color dim">
+          Read More &raquo;
+        </a>
+
+    </div>
+
+
+  </div>
+</div>
+
+      
+        <div class="relative flex-auto w-100 w-40-l mr3 mb3 bg-white ba b--moon-gray nested-copy-line-height weight-0">
+
+  <div class="bg-white mb2 pa3 pa4-l gray">
+    
+      <date class="f6 db" datetime="">
+        May 26, 2015
+      </date>
+    
+
+    <h1 class="near-black f3">
+      <a href="/news/0.14-relnotes/" class="link primary-color dim">Hugo 0.14</a>
+    </h1>
+
+    <div class="lh-copy links">
+      
+          The v0.14.0 Hugo release brings of the most demanded features to Hugo. The foundation of Hugo is stabilizing nicely and a lot of polish has been added. We’ve expanded support for additional content types with support for AsciiDoc, Restructured Text, HTML and Markdown.
+        
+
+        <a href="/news/0.14-relnotes/" class="f6 mt2 db link primary-color dim">
+          Read More &raquo;
+        </a>
+
+    </div>
+
+
+  </div>
+</div>
+
+      
+        <div class="relative flex-auto w-100 w-40-l mr3 mb3 bg-white ba b--moon-gray nested-copy-line-height weight-0">
+
+  <div class="bg-white mb2 pa3 pa4-l gray">
+    
+      <date class="f6 db" datetime="">
+        February 22, 2015
+      </date>
+    
+
+    <h1 class="near-black f3">
+      <a href="/news/0.13-relnotes/" class="link primary-color dim">Hugo 0.13</a>
+    </h1>
+
+    <div class="lh-copy links">
+      
+          Hugo 0.13 is the largest Hugo release to date. The release introduced some long sought after features (pagination, sequencing, data loading, tons of template improvements) as well as major internal improvements. In addition to the code changes, the Hugo community has grown significantly and now has over 3000 stars on GitHub, 134 contributors, 24 themes and 1000s of happy users.
+        
+
+        <a href="/news/0.13-relnotes/" class="f6 mt2 db link primary-color dim">
+          Read More &raquo;
+        </a>
+
+    </div>
+
+
+  </div>
+</div>
+
+      
+        <div class="relative flex-auto w-100 w-40-l mr3 mb3 bg-white ba b--moon-gray nested-copy-line-height weight-0">
+
+  <div class="bg-white mb2 pa3 pa4-l gray">
+    
+      <date class="f6 db" datetime="">
+        January 21, 2015
+      </date>
+    
+
+    <h1 class="near-black f3">
+      <a href="/news/0.12-relnotes/" class="link primary-color dim">Hugo 0.12</a>
+    </h1>
+
+    <div class="lh-copy links">
+      
+          Hugo 0.12 focused on polishing the theme engine and adding critical functionality to the templates.
+        
+
+        <a href="/news/0.12-relnotes/" class="f6 mt2 db link primary-color dim">
+          Read More &raquo;
+        </a>
+
+    </div>
+
+
+  </div>
+</div>
+
+      
+        <div class="relative flex-auto w-100 w-40-l mr3 mb3 bg-white ba b--moon-gray nested-copy-line-height weight-0">
+
+  <div class="bg-white mb2 pa3 pa4-l gray">
+    
+      <date class="f6 db" datetime="">
+        May 29, 2014
+      </date>
+    
+
+    <h1 class="near-black f3">
+      <a href="/news/0.11-relnotes/" class="link primary-color dim">Hugo 0.11</a>
+    </h1>
+
+    <div class="lh-copy links">
+      
+          Now 3–4 times faster, Hugo 0.11 brings live reload, theme engine, menu system, XML sitemap, and more!
+        
+
+        <a href="/news/0.11-relnotes/" class="f6 mt2 db link primary-color dim">
+          Read More &raquo;
+        </a>
+
+    </div>
+
+
+  </div>
+</div>
+
+      
+        <div class="relative flex-auto w-100 w-40-l mr3 mb3 bg-white ba b--moon-gray nested-copy-line-height weight-0">
+
+  <div class="bg-white mb2 pa3 pa4-l gray">
+    
+      <date class="f6 db" datetime="">
+        March 1, 2014
+      </date>
+    
+
+    <h1 class="near-black f3">
+      <a href="/news/0.10-relnotes/" class="link primary-color dim">Hugo 0.10</a>
+    </h1>
+
+    <div class="lh-copy links">
+      
+          Hugo 0.10 brings syntax highlighting (powered by Pygments), automatic table of contents generation, support for Unicode, and a lot more!
+        
+
+        <a href="/news/0.10-relnotes/" class="f6 mt2 db link primary-color dim">
+          Read More &raquo;
+        </a>
+
+    </div>
+
+
+  </div>
+</div>
+
+      
+        <div class="relative flex-auto w-100 w-40-l mr3 mb3 bg-white ba b--moon-gray nested-copy-line-height weight-0">
+
+  <div class="bg-white mb2 pa3 pa4-l gray">
+    
+      <date class="f6 db" datetime="">
+        November 16, 2013
+      </date>
+    
+
+    <h1 class="near-black f3">
+      <a href="/news/0.9-relnotes/" class="link primary-color dim">Hugo 0.9</a>
+    </h1>
+
+    <div class="lh-copy links">
+      
+          Hugo 0.9 is the most significant update to Hugo ever!  It contains contributions from dozens of contributors and represents hundreds of features, fixes and improvements.
+        
+
+        <a href="/news/0.9-relnotes/" class="f6 mt2 db link primary-color dim">
+          Read More &raquo;
+        </a>
+
+    </div>
+
+
+  </div>
+</div>
+
+      
+        <div class="relative flex-auto w-100 w-40-l mr3 mb3 bg-white ba b--moon-gray nested-copy-line-height weight-0">
+
+  <div class="bg-white mb2 pa3 pa4-l gray">
+    
+      <date class="f6 db" datetime="">
+        August 3, 2013
+      </date>
+    
+
+    <h1 class="near-black f3">
+      <a href="/news/0.8-relnotes/" class="link primary-color dim">Hugo 0.8</a>
+    </h1>
+
+    <div class="lh-copy links">
+      
+          Hugo 0.8 added support for pretty URLs, support for TOML and YAML, better Windows compatibility, and more!
+        
+
+        <a href="/news/0.8-relnotes/" class="f6 mt2 db link primary-color dim">
+          Read More &raquo;
+        </a>
+
+    </div>
+
+
+  </div>
+</div>
+
+      
+        <div class="relative flex-auto w-100 w-40-l mr3 mb3 bg-white ba b--moon-gray nested-copy-line-height weight-0">
+
+  <div class="bg-white mb2 pa3 pa4-l gray">
+    
+      <date class="f6 db" datetime="">
+        July 5, 2013
+      </date>
+    
+
+    <h1 class="near-black f3">
+      <a href="/news/0.7-relnotes/" class="link primary-color dim">Hugo 0.7</a>
+    </h1>
+
+    <div class="lh-copy links">
+      
+          The first public release of Hugo.
+        
+
+        <a href="/news/0.7-relnotes/" class="f6 mt2 db link primary-color dim">
+          Read More &raquo;
+        </a>
+
+    </div>
+
+
+  </div>
+</div>
+
+      
+    </section>
+  </div>
+  <div class="nested-list-reset nested-links">
+    
+    
+    <ul class="pagination pagination-default">
+      <li class="page-item">
+        <a href="/news/" aria-label="First" class="page-link" role="button"><span aria-hidden="true">&laquo;&laquo;</span></a>
+      </li>
+      <li class="page-item">
+        <a href="/news/" aria-label="Previous" class="page-link" role="button"><span aria-hidden="true">&laquo;</span></a>
+      </li>
+      <li class="page-item">
+        <a href="/news/" aria-label="Page 1" class="page-link" role="button">1</a>
+      </li>
+      <li class="page-item active">
+        <a href="#" aria-current="page" aria-label="Page 2" class="page-link" role="button">2</a>
+      </li>
+      <li class="page-item disabled">
+        <a href="#" aria-disabled="true" aria-label="Next" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">&raquo;</span></a>
+      </li>
+      <li class="page-item disabled">
+        <a href="#" aria-disabled="true" aria-label="Last" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">&raquo;&raquo;</span></a>
+      </li>
+    </ul>
+  </div>
+
+</div>
+
+  </main>
+
+  <footer class="bg-primary-color-dark ph4-ns pt4 relative w-100" role="contentinfo">
+    <div class="center flex-ns flex-wrap justify-between mw9 w-90">
+      <div class="pb3 pt4 w-100 w-50-ns">
+
+         <div class="b f3  light-gray mb3 nested-links tc">
+           By the <a href="https://github.com/gohugoio/hugo/graphs/contributors" class="link">Hugo Authors</a><br />
+          </div>
+
+          <div class="center w4">
+            <img src="/images/hugo-logo-wide.svg" alt="Hugo Logo">
+          </div>
+
+          <ul class="center f6 list ma0 mv3 pa0 tc"><li class="dib mr3"><a href="https://github.com/gohugoio/hugo/issues/new" class="dim link light-gray pv2">File an Issue</a></li><li class="dib mr3"><a href="https://discourse.gohugo.io/" class="dim link light-gray pv2">Get Help</a></li><li class="dib"><a href="https://gitter.im/spf13/hugo" class="dim link light-gray pv2">Discuss Source Code</a></li></ul>
+
+          <ul class="center f6 list ma0 mv4 pa0 tc">
+            <li class="dib mr3"><a href="https://twitter.com/gohugoio" class="dim link light-gray pv2">@GoHugoIO</a></li>
+            <li class="dib mr3"><a href="https://twitter.com/spf13" class="dim link light-gray pv2">@spf13</a></li>
+            <li class="dib"><a href="https://twitter.com/bepsays" class="dim link light-gray pv2">@bepsays</a></li>
+          </ul>
+
+          
+
+      </div>
+
+      <div class="w-100 w-50-l"> 
+        
+
+
+  <section class="pb3 w-100">
+    <div class="center mw9"> 
+      <h3 class="b f3 mv0 light-gray">Hugo Sponsors</h3>
+      <div class="flex-ns flex-wrap center justify-between pt3">
+        
+          
+          
+            <div class="ba b--dark-gray bg-light-gray br3 flex flex-column flex-wrap items-center justify-center ph3 pv4 mb4 w-100 w-30-l  o-100">
+              
+                
+                   <a href="https://www.linode.com/?utm_campaign=hugosponsor&amp;utm_medium=banner&amp;utm_source=homepage" class="grow">
+                
+              <img src="/images/sponsors/linode-logo_standard_light_medium.png" alt="Logo for Linode" class="img h3 center" />
+              </a>
+              
+            </div>
+          
+        
+          
+          
+            <div class="ba b--dark-gray bg-light-gray br3 flex flex-column flex-wrap items-center justify-center ph3 pv4 mb4 w-100 w-30-l  o-100">
+              
+                
+                   <a href="https://esolia.com/post/why-did-esolia-choose-hugo/?utm_campaign=hugosponsor&amp;utm_medium=banner&amp;utm_source=homepage" class="grow">
+                
+              <img src="/images/sponsors/esolia-logo.svg" alt="Logo for eSolia" class="img h3 center" />
+              </a>
+              
+            </div>
+          
+        
+          
+          
+            <div class="ba b--dark-gray bg-light-gray br3 flex flex-column flex-wrap items-center justify-center ph3 pv4 mb4 w-100 w-30-l  o-100" style="background-color: #5A2FA1;">
+              
+                
+                   <a href="https://brave.com/?utm_campaign=hugosponsor&amp;utm_medium=banner&amp;utm_source=homepage" class="grow">
+                
+              <img src="/images/sponsors/brave-logo.svg" alt="Logo for Brave" class="img h3 center" />
+              </a>
+              
+            </div>
+          
+        
+      </div>
+    </div>
+  </section>
+
+
+      </div>
+
+    </div>
+
+    <div class="f7 gray mb5 mb0-ns ph3 w-100"> 
+      <p class="dib mr4">The Hugo logos are copyright © Steve Francia 2013–2021.</p>
+      <p class="dib">The Hugo Gopher is based on an original work by Renée French.</p>
+    </div>
+
+    <img src="/images/gopher-side_color.svg" alt="" class="absolute-l bottom-0 dn db-l h4 right-0 z-999"/>
+
+    <div class="bg-primary-color-dark bottom-0 left-0 right-0 dn-l fixed pb3 ph3 w-100"><div  class="globalmenu mobilemenu pb3 dn">
+    
+
+<ul class="list hidden dib ph0 ma0 scrolling-touch tc">
+  
+    <li  class="tl dib ma0 hover-bg-black w-100">
+        <a href="/news/" class="ttu f6 link primary-color-light overflow hover-white db brand-font  ma0 w-100 pv3 ph4">
+          News
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100">
+        <a href="/documentation/" class="ttu f6 link primary-color-light overflow hover-white db brand-font  ma0 w-100 pv3 ph4">
+          Docs
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100">
+        <a href="https://themes.gohugo.io/" class="ttu f6 link primary-color-light overflow hover-white db brand-font  ma0 w-100 pv3 ph4">
+          Themes
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100">
+        <a href="/showcase/" class="ttu f6 link primary-color-light overflow hover-white db brand-font  ma0 w-100 pv3 ph4">
+          Showcase
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100">
+        <a href="https://discourse.gohugo.io/" class="ttu f6 link primary-color-light overflow hover-white db brand-font  ma0 w-100 pv3 ph4">
+          Community
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100">
+        <a href="https://github.com/gohugoio/hugo" class="ttu f6 link primary-color-light overflow hover-white db brand-font  ma0 w-100 pv3 ph4">
+          GitHub
+        </a>
+    </li>
+  
+</ul>
+
+</div>
+<div  class="docsmenu mobilemenu pb3 dn">
+    
+
+<ul class="list dib ph0 ma0 scrolling-touch tc">
+  
+    <li  class="tl dib ma0 hover-bg-black w-100">
+        <a href="/about/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
+          About Hugo
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100">
+        <a href="/getting-started/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
+          Getting Started
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100 mb2 bb b--mid-gray">
+        <a href="/hugo-modules/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
+          Hugo Modules
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100">
+        <a href="/content-management/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
+          Content Management
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100">
+        <a href="/templates/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
+          Templates
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100">
+        <a href="/functions/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
+          Functions
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100">
+        <a href="/variables/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
+          Variables
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100">
+        <a href="/hugo-pipes/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
+          Hugo Pipes
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100 mb2 bb b--mid-gray">
+        <a href="/commands/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
+          CLI
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100">
+        <a href="/troubleshooting/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
+          Troubleshooting
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100">
+        <a href="/tools/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
+          Tools
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100">
+        <a href="/hosting-and-deployment/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
+          Hosting &amp; Deployment
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100 mb2 bb b--mid-gray">
+        <a href="/contribute/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
+          Contribute
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100">
+        <a href="/maintenance/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
+          Maintenance
+        </a>
+    </li>
+  
+</ul>
+
+</div>
+
+<div class="flex dn-l justify-between">
+  <button class="js-toggle flex-auto dib dn-l f6 tc db mt4-ns ph3 pv2 link mr2 white bg-primary-color-dark hover-bg-primary-color ba b--white-40 w-auto" data-target=".globalmenu">Menu</button>
+
+  <button class="js-toggle flex-auto dib dn-l f6 tc db mt4-ns ph3 pv2 link white bg-primary-color-dark hover-bg-primary-color ba b--white-40 w-auto" data-target=".docsmenu">Docs Menu</button>
+</div>
+</div>
+
+</footer>
+
+
+</body>
+
+</html>

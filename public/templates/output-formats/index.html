@@ -1,0 +1,4016 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+  
+  <link rel="preload" href="https://gohugo.io/fonts/muli-latin-200.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="https://gohugo.io/fonts/muli-latin-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="https://gohugo.io/fonts/muli-latin-800.woff2" as="font" type="font/woff2" crossorigin>
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <title>Custom Output Formats | Hugo</title>
+
+  <meta name="viewport" content="width=device-width,minimum-scale=1">
+  <meta name="generator" content="Hugo 0.87.0" />
+
+  
+  <meta name="robots" content="noindex, nofollow">
+  
+
+  
+  
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/output/css/app.min.bab83909a2f2fe2aa45bf7e4813899f4f705e6858479cea5bd48eee72fdf0a70.css" integrity="sha256-urg5CaLy/iqkW/fkgTiZ9PcF5oWEec6lvUju5y/fCnA=" crossorigin="anonymous">
+  
+  
+  
+
+  <meta name="description"
+  content="Hugo can output content in multiple formats, including calendar events, e-book formats, Google AMP, and JSON search indexes, or any custom text format.">
+
+  
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/output/js/app.0984bf5469ab3c8aa82cf8eb015a560d74ee028723b1ab38e928998f5f72baba.js" integrity="sha256-CYS/VGmrPIqoLPjrAVpWDXTuAocjsas46SiZj19yuro=" crossorigin="anonymous" defer></script>
+  
+      
+ 
+
+
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+  
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0594cb">
+<meta name="theme-color" content="#ffffff">
+<meta property="og:title" content="Custom Output Formats" />
+<meta property="og:description" content="Hugo can output content in multiple formats, including calendar events, e-book formats, Google AMP, and JSON search indexes, or any custom text format." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://gohugo.io/templates/output-formats/" /><meta property="og:image" content="https://gohugo.io/images/gohugoio-card.png"/><meta property="article:section" content="templates" />
+<meta property="article:published_time" content="2017-03-22T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-06-16T15:43:50+02:00" />
+
+<meta itemprop="name" content="Custom Output Formats">
+<meta itemprop="description" content="Hugo can output content in multiple formats, including calendar events, e-book formats, Google AMP, and JSON search indexes, or any custom text format."><meta itemprop="datePublished" content="2017-03-22T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2020-06-16T15:43:50+02:00" />
+<meta itemprop="wordCount" content="2173"><meta itemprop="image" content="https://gohugo.io/images/gohugoio-card.png"/>
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://gohugo.io/images/gohugoio-card.png"/>
+
+<meta name="twitter:title" content="Custom Output Formats"/>
+<meta name="twitter:description" content="Hugo can output content in multiple formats, including calendar events, e-book formats, Google AMP, and JSON search indexes, or any custom text format."/>
+<meta name="twitter:site" content="@GoHugoIO"/>
+
+
+</head>
+
+<body class="ma0 sans-serif bg-primary-color-light">
+  
+<nav class="bg-primary-color-dark pv4 w-100" role="navigation">
+
+  <div class="center flex-ns flex-wrap items-center justify-start mw9">
+
+    <h1 class="dim f3 lh-solid ml0-ns mr0 mr4-l mv0 pl3 pl4-ns">
+      <a href="https://gohugo.io/" class="link white">
+         HUGO
+      </a>
+    </h1>
+    <ul class="list ma0 pa0 dn dib-l">
+      
+        <li class="f5 dib mr4" role="menuitem">
+            
+          <a href="/news/" class="dim link light-silver">
+            News
+              
+            
+            
+          </a>
+        </li>
+      
+        <li class="f5 dib mr4" role="menuitem">
+            
+          <a href="/documentation/" class="dim link light-silver">
+            Docs
+              
+            
+            
+          </a>
+        </li>
+      
+        <li class="f5 dib mr4" role="menuitem">
+            
+          <a href="https://themes.gohugo.io/" class="dim link light-silver">
+            Themes
+              
+            
+            
+          </a>
+        </li>
+      
+        <li class="f5 dib mr4" role="menuitem">
+            
+          <a href="/showcase/" class="dim link light-silver">
+            Showcase
+              
+            
+            
+          </a>
+        </li>
+      
+        <li class="f5 dib mr4" role="menuitem">
+            
+          <a href="https://discourse.gohugo.io/" class="dim link light-silver">
+            Community
+              
+            
+            
+              <span class="pl1">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10" height="10" viewBox="0 0 32 32" class="fill-current v-base" aria-label="External Link">
+<path d="M25.152 16.576v5.696q0 2.144-1.504 3.648t-3.648 1.504h-14.848q-2.144 0-3.648-1.504t-1.504-3.648v-14.848q0-2.112 1.504-3.616t3.648-1.536h12.576q0.224 0 0.384 0.16t0.16 0.416v1.152q0 0.256-0.16 0.416t-0.384 0.16h-12.576q-1.184 0-2.016 0.832t-0.864 2.016v14.848q0 1.184 0.864 2.016t2.016 0.864h14.848q1.184 0 2.016-0.864t0.832-2.016v-5.696q0-0.256 0.16-0.416t0.416-0.16h1.152q0.256 0 0.416 0.16t0.16 0.416zM32 1.152v9.12q0 0.48-0.352 0.8t-0.8 0.352-0.8-0.352l-3.136-3.136-11.648 11.648q-0.16 0.192-0.416 0.192t-0.384-0.192l-2.048-2.048q-0.192-0.16-0.192-0.384t0.192-0.416l11.648-11.648-3.136-3.136q-0.352-0.352-0.352-0.8t0.352-0.8 0.8-0.352h9.12q0.48 0 0.8 0.352t0.352 0.8z"></path>
+</svg>
+
+              </span>
+            
+          </a>
+        </li>
+      
+        <li class="f5 dib mr4" role="menuitem">
+            
+          <a href="https://github.com/gohugoio/hugo" class="dim link light-silver">
+            GitHub
+              
+            
+            
+              <span class="pl1">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10" height="10" viewBox="0 0 32 32" class="fill-current v-base" aria-label="External Link">
+<path d="M25.152 16.576v5.696q0 2.144-1.504 3.648t-3.648 1.504h-14.848q-2.144 0-3.648-1.504t-1.504-3.648v-14.848q0-2.112 1.504-3.616t3.648-1.536h12.576q0.224 0 0.384 0.16t0.16 0.416v1.152q0 0.256-0.16 0.416t-0.384 0.16h-12.576q-1.184 0-2.016 0.832t-0.864 2.016v14.848q0 1.184 0.864 2.016t2.016 0.864h14.848q1.184 0 2.016-0.864t0.832-2.016v-5.696q0-0.256 0.16-0.416t0.416-0.16h1.152q0.256 0 0.416 0.16t0.16 0.416zM32 1.152v9.12q0 0.48-0.352 0.8t-0.8 0.352-0.8-0.352l-3.136-3.136-11.648 11.648q-0.16 0.192-0.416 0.192t-0.384-0.192l-2.048-2.048q-0.192-0.16-0.192-0.384t0.192-0.416l11.648-11.648-3.136-3.136q-0.352-0.352-0.352-0.8t0.352-0.8 0.8-0.352h9.12q0.48 0 0.8 0.352t0.352 0.8z"></path>
+</svg>
+
+              </span>
+            
+          </a>
+        </li>
+      
+    </ul>
+
+    <div class="db dib-ns pl3"><form id="site-search-form" action="" role="search">
+  <fieldset class="bn ma0 pa0">
+    <label class="clip" for="search-input">Search</label>
+    <input type="search" id="search-input" class="needs-js bg-left bn f5 input-reset lh-solid mt3 mt0-ns pl4 pv2 w5 white" placeholder="Search the Docs" name="search-input" value="" style="background: url('/images/icon-search.png') 5px 11px/16px 16px no-repeat; background-color: rgba(255,255,255,0);">
+  </fieldset>
+</form></div>
+
+    <span class="absolute mt1 mt2-l pr3 right-0 top-0">
+
+  <a href="https://twitter.com/intent/follow?screen_name=GoHugoIO" title="Follow on Twitter" class="link-transition twitter link dib z-999 pt3 pt0-l mr2">
+    <svg height="32px" id="Layer_1" style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
+
+  </a>
+
+<a class="github-button needs-js link primary-color-dark" href="https://github.com/gohugoio/hugo" data-size="large" data-show-count="false" aria-label="Star gohugoio/hugo on GitHub">Star</a>
+</span>
+
+  </div>
+</nav>
+
+  
+  <main role="main" class="content-with-sidebar min-vh-100 pb7 pb0-ns">
+    
+  <article class="w-100 ph4 pb5 pb6-ns pt1 pt5-ns">
+    <div class="flex-l">
+
+      <div class="order-2 w-100 w-20-l ph5-m ph0-l mb4 sticky">
+<aside class="fixed-lTK mw5-l right-0 f6 bl-l b--moon-gray pv4 pv0-ns ph4-l nested-list-reset nested-links nested-copy-line-height">
+	
+		<p class="b">What's on this Page</p>
+  	<nav id="TableOfContents">
+  <ul>
+    <li><a href="#media-types">Media Types</a></li>
+    <li><a href="#output-format-definitions">Output Format Definitions</a></li>
+    <li><a href="#output-formats-for-pages">Output Formats for Pages</a></li>
+    <li><a href="#list-output-formats">List Output formats</a></li>
+    <li><a href="#link-to-output-formats">Link to Output Formats</a></li>
+    <li><a href="#templates-for-your-output-formats">Templates for Your Output Formats</a></li>
+  </ul>
+</nav>
+	
+
+	<div date-pref>
+		
+			<a href="https://gohugo.io/templates/lookup-order/" class="dib f6 pl1 hover-bg-light-gray br-100" title="Hugo&#39;s Lookup Order ">
+				<svg class="fill-current" height="30px" viewBox="0 0 24 24" width="30px" xmlns="http://www.w3.org/2000/svg">
+    <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
+    <path d="M0 0h24v24H0z" fill="none"/>
+</svg>
+
+			</a>
+		
+
+		
+			<a href="https://gohugo.io/templates/base/" class="dib f6 pr1 hover-bg-light-gray br-100" title="Base Templates and Blocks">
+			<svg class="fill-current" height="30px" viewBox="0 0 24 24" width="30px" xmlns="http://www.w3.org/2000/svg">
+    <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
+    <path d="M0 0h24v24H0z" fill="none"/>
+</svg>
+
+			</a>
+		
+	</div>
+
+</aside>
+</div>
+
+      <div class="order-1 w-60-l mw7 ph0 ph5-ns mid-gray nested-copy-line-height no-underline nested-links nested-img nested-copy-seperator nested-blockquote mt0-ns" style="flex-grow:1;">
+        <div class="documentation-copy center measure-wide-l">
+          <div id="readout" class="fixed right-0 bottom-0">
+          </div>
+          <header class="flex-none w-100">
+  
+    
+      <a href="/categories/templates" class="f6 fw8 mb0 link mid-gray dim mr3">
+        TEMPLATES
+      </a>
+    
+  
+  <h1 class="lh-title mb3 mv0 pt3 primary-color-dark">Custom Output Formats</h1>
+</header>
+
+<aside class="bt bw1 pt3 mt2 mid-gray b--mid-gray fn w-100">
+  
+    <div class="f4 fw4 lh-copy">
+      Hugo can output content in multiple formats, including calendar events, e-book formats, Google AMP, and JSON search indexes, or any custom text format.
+    </div>
+  
+
+  
+</aside>
+
+
+
+<div class="prose" id="prose">
+
+<p>This page describes how to properly configure your site with the media types and output formats, as well as where to create your templates for your custom outputs.</p>
+<h2 id="media-types">Media Types <a class="header-link" href="#media-types"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
+<p>A <a href="https://en.wikipedia.org/wiki/Media_type">media type</a> (also known as <em>MIME type</em> and <em>content type</em>) is a two-part identifier for file formats and format contents transmitted on the Internet.</p>
+<p>This is the full set of built-in media types in Hugo:</p>
+
+
+
+
+
+<table class="table table-bordered">
+	<tr>
+		
+		<th>type</th>
+		
+		<th>suffixes</th>
+		
+	</tr>
+	
+	<tr>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			<td>application/javascript</td>
+		
+			<td>[js]</td>
+		
+	</tr>
+	
+	<tr>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			<td>application/json</td>
+		
+			<td>[json]</td>
+		
+	</tr>
+	
+	<tr>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			<td>application/manifest&#43;json</td>
+		
+			<td>[webmanifest]</td>
+		
+	</tr>
+	
+	<tr>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			<td>application/octet-stream</td>
+		
+			<td>[]</td>
+		
+	</tr>
+	
+	<tr>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			<td>application/rss&#43;xml</td>
+		
+			<td>[xml]</td>
+		
+	</tr>
+	
+	<tr>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			<td>application/toml</td>
+		
+			<td>[toml]</td>
+		
+	</tr>
+	
+	<tr>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			<td>application/typescript</td>
+		
+			<td>[ts]</td>
+		
+	</tr>
+	
+	<tr>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			<td>application/xml</td>
+		
+			<td>[xml]</td>
+		
+	</tr>
+	
+	<tr>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			<td>application/yaml</td>
+		
+			<td>[yaml yml]</td>
+		
+	</tr>
+	
+	<tr>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			<td>image/jpeg</td>
+		
+			<td>[jpg jpeg]</td>
+		
+	</tr>
+	
+	<tr>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			<td>image/png</td>
+		
+			<td>[png]</td>
+		
+	</tr>
+	
+	<tr>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			<td>image/svg&#43;xml</td>
+		
+			<td>[svg]</td>
+		
+	</tr>
+	
+	<tr>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			<td>image/webp</td>
+		
+			<td>[webp]</td>
+		
+	</tr>
+	
+	<tr>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			<td>text/calendar</td>
+		
+			<td>[ics]</td>
+		
+	</tr>
+	
+	<tr>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			<td>text/css</td>
+		
+			<td>[css]</td>
+		
+	</tr>
+	
+	<tr>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			<td>text/csv</td>
+		
+			<td>[csv]</td>
+		
+	</tr>
+	
+	<tr>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			<td>text/html</td>
+		
+			<td>[html]</td>
+		
+	</tr>
+	
+	<tr>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			<td>text/jsx</td>
+		
+			<td>[jsx]</td>
+		
+	</tr>
+	
+	<tr>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			<td>text/plain</td>
+		
+			<td>[txt]</td>
+		
+	</tr>
+	
+	<tr>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			<td>text/tsx</td>
+		
+			<td>[tsx]</td>
+		
+	</tr>
+	
+	<tr>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			<td>text/x-sass</td>
+		
+			<td>[sass]</td>
+		
+	</tr>
+	
+	<tr>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			<td>text/x-scss</td>
+		
+			<td>[scss]</td>
+		
+	</tr>
+	
+	<tr>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			<td>video/3gpp</td>
+		
+			<td>[3gpp 3gp]</td>
+		
+	</tr>
+	
+	<tr>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			<td>video/mp4</td>
+		
+			<td>[mp4]</td>
+		
+	</tr>
+	
+	<tr>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			<td>video/mpeg</td>
+		
+			<td>[mpg mpeg]</td>
+		
+	</tr>
+	
+	<tr>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			<td>video/ogg</td>
+		
+			<td>[ogv]</td>
+		
+	</tr>
+	
+	<tr>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			<td>video/webm</td>
+		
+			<td>[webm]</td>
+		
+	</tr>
+	
+	<tr>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			<td>video/x-msvideo</td>
+		
+			<td>[avi]</td>
+		
+	</tr>
+	
+</table>
+
+<p><strong>Note:</strong></p>
+<ul>
+<li>It is possible to add custom media types or change the defaults; e.g., if you want to change the suffix for <code>text/html</code> to <code>asp</code>.</li>
+<li><code>Suffixes</code> are the values that will be used for URLs and filenames for that media type in Hugo.</li>
+<li>The <code>Type</code> is the identifier that must be used when defining new/custom <code>Output Formats</code> (see below).</li>
+<li>The full set of media types will be registered in Hugo&rsquo;s built-in development server to make sure they are recognized by the browser.</li>
+</ul>
+<p>To add or modify a media type, define it in a <code>mediaTypes</code> section in your <a href="/getting-started/configuration/">site configuration</a>, either for all sites or for a given language.</p>
+
+
+
+  
+
+
+<div class="code relative" id="config">
+  <div class="code-nav flex flex-nowrap items-stretch"><div class="san-serif f6 dib lh-solid pl2 pv2 mr2">
+        config.
+      </div>
+      <button data-toggle-tab="yaml" class="tab-button active ba san-serif f6 dib lh-solid ph2 pv2">
+        yaml
+      </button>
+      &nbsp;
+    
+      <button data-toggle-tab="toml" class="tab-button  ba san-serif f6 dib lh-solid ph2 pv2">
+        toml
+      </button>
+      &nbsp;
+    
+      <button data-toggle-tab="json" class="tab-button  ba san-serif f6 dib lh-solid ph2 pv2">
+        json
+      </button>
+      &nbsp;
+    
+  </div>
+  <div class="tab-content">
+    
+      <div data-pane="yaml" class="code-copy-content nt3 tab-pane active">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">mediaTypes</span><span class="p">:</span><span class="w">
+</span><span class="w">  </span><span class="nt">text/enriched</span><span class="p">:</span><span class="w">
+</span><span class="w">    </span><span class="nt">suffixes</span><span class="p">:</span><span class="w">
+</span><span class="w">    </span>- <span class="l">enr</span><span class="w">
+</span><span class="w">  </span><span class="nt">text/html</span><span class="p">:</span><span class="w">
+</span><span class="w">    </span><span class="nt">suffixes</span><span class="p">:</span><span class="w">
+</span><span class="w">    </span>- <span class="l">asp</span><span class="w">
+</span></code></pre></div>
+      </div>
+      
+        <button class="needs-js copy copy-toggle bg-accent-color-dark f6 absolute top-0 right-0 lh-solid hover-bg-primary-color-dark bn white ph3 pv2" title="Copy this code to your clipboard." data-clipboard-action="copy" aria-label="copy button"></button>
+        
+      
+    
+      <div data-pane="toml" class="code-copy-content nt3 tab-pane ">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="p">[</span><span class="nx">mediaTypes</span><span class="p">]</span>
+<span class="p">[</span><span class="nx">mediaTypes</span><span class="p">.</span><span class="s1">&#39;text/enriched&#39;</span><span class="p">]</span>
+<span class="nx">suffixes</span> <span class="p">=</span> <span class="p">[</span><span class="s1">&#39;enr&#39;</span><span class="p">]</span>
+
+<span class="p">[</span><span class="nx">mediaTypes</span><span class="p">.</span><span class="s1">&#39;text/html&#39;</span><span class="p">]</span>
+<span class="nx">suffixes</span> <span class="p">=</span> <span class="p">[</span><span class="s1">&#39;asp&#39;</span><span class="p">]</span>
+
+
+</code></pre></div>
+      </div>
+      
+        <button class="needs-js copy copy-toggle bg-accent-color-dark f6 absolute top-0 right-0 lh-solid hover-bg-primary-color-dark bn white ph3 pv2" title="Copy this code to your clipboard." data-clipboard-action="copy" aria-label="copy button"></button>
+        
+      
+    
+      <div data-pane="json" class="code-copy-content nt3 tab-pane ">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
+   <span class="nt">&#34;mediaTypes&#34;</span><span class="p">:</span> <span class="p">{</span>
+      <span class="nt">&#34;text/enriched&#34;</span><span class="p">:</span> <span class="p">{</span>
+         <span class="nt">&#34;suffixes&#34;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="s2">&#34;enr&#34;</span>
+         <span class="p">]</span>
+      <span class="p">},</span>
+      <span class="nt">&#34;text/html&#34;</span><span class="p">:</span> <span class="p">{</span>
+         <span class="nt">&#34;suffixes&#34;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="s2">&#34;asp&#34;</span>
+         <span class="p">]</span>
+      <span class="p">}</span>
+   <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+      </div>
+      
+        <button class="needs-js copy copy-toggle bg-accent-color-dark f6 absolute top-0 right-0 lh-solid hover-bg-primary-color-dark bn white ph3 pv2" title="Copy this code to your clipboard." data-clipboard-action="copy" aria-label="copy button"></button>
+        
+      
+    
+  </div>
+  
+</div>
+
+<p>The above example adds one new media type, <code>text/enriched</code>, and changes the suffix for the built-in <code>text/html</code> media type.</p>
+<p><strong>Note:</strong> these media types are configured for <strong>your output formats</strong>. If you want to redefine one of Hugo&rsquo;s default output formats (e.g. <code>HTML</code>), you also need to redefine the media type. So, if you want to change the suffix of the <code>HTML</code> output format from <code>html</code> (default) to <code>htm</code>:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="p">[</span><span class="nx">mediaTypes</span><span class="p">]</span>
+<span class="p">[</span><span class="nx">mediaTypes</span><span class="p">.</span><span class="s2">&#34;text/html&#34;</span><span class="p">]</span>
+<span class="nx">suffixes</span> <span class="p">=</span> <span class="p">[</span><span class="s2">&#34;htm&#34;</span><span class="p">]</span>
+
+<span class="c"># Redefine HTML to update its media type.</span>
+<span class="p">[</span><span class="nx">outputFormats</span><span class="p">]</span>
+<span class="p">[</span><span class="nx">outputFormats</span><span class="p">.</span><span class="nx">HTML</span><span class="p">]</span>
+<span class="nx">mediaType</span> <span class="p">=</span> <span class="s2">&#34;text/html&#34;</span>
+</code></pre></div><p><strong>Note</strong> that for the above to work, you also need to add an <code>outputs</code> definition in your site config.</p>
+<h2 id="output-format-definitions">Output Format Definitions <a class="header-link" href="#output-format-definitions"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
+<p>Given a media type and some additional configuration, you get an <strong>Output Format</strong>.</p>
+<p>This is the full set of Hugo&rsquo;s built-in output formats:</p>
+
+
+
+
+
+<table class="table table-bordered">
+	<tr>
+		
+		<th>name</th>
+		
+		<th>mediaType</th>
+		
+		<th>path</th>
+		
+		<th>baseName</th>
+		
+		<th>rel</th>
+		
+		<th>protocol</th>
+		
+		<th>isPlainText</th>
+		
+		<th>isHTML</th>
+		
+		<th>noUgly</th>
+		
+		<th>permalinkable</th>
+		
+	</tr>
+	
+	<tr>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			<td>HTML</td>
+		
+			<td>text/html</td>
+		
+			<td></td>
+		
+			<td>index</td>
+		
+			<td>canonical</td>
+		
+			<td></td>
+		
+			<td>false</td>
+		
+			<td>true</td>
+		
+			<td>false</td>
+		
+			<td>true</td>
+		
+	</tr>
+	
+	<tr>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			<td>AMP</td>
+		
+			<td>text/html</td>
+		
+			<td>amp</td>
+		
+			<td>index</td>
+		
+			<td>amphtml</td>
+		
+			<td></td>
+		
+			<td>false</td>
+		
+			<td>true</td>
+		
+			<td>false</td>
+		
+			<td>true</td>
+		
+	</tr>
+	
+	<tr>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			<td>CSS</td>
+		
+			<td>text/css</td>
+		
+			<td></td>
+		
+			<td>styles</td>
+		
+			<td>stylesheet</td>
+		
+			<td></td>
+		
+			<td>true</td>
+		
+			<td>false</td>
+		
+			<td>false</td>
+		
+			<td>false</td>
+		
+	</tr>
+	
+	<tr>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			<td>CSV</td>
+		
+			<td>text/csv</td>
+		
+			<td></td>
+		
+			<td>index</td>
+		
+			<td>alternate</td>
+		
+			<td></td>
+		
+			<td>true</td>
+		
+			<td>false</td>
+		
+			<td>false</td>
+		
+			<td>false</td>
+		
+	</tr>
+	
+	<tr>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			<td>Calendar</td>
+		
+			<td>text/calendar</td>
+		
+			<td></td>
+		
+			<td>index</td>
+		
+			<td>alternate</td>
+		
+			<td>webcal://</td>
+		
+			<td>true</td>
+		
+			<td>false</td>
+		
+			<td>false</td>
+		
+			<td>false</td>
+		
+	</tr>
+	
+	<tr>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			<td>JSON</td>
+		
+			<td>application/json</td>
+		
+			<td></td>
+		
+			<td>index</td>
+		
+			<td>alternate</td>
+		
+			<td></td>
+		
+			<td>true</td>
+		
+			<td>false</td>
+		
+			<td>false</td>
+		
+			<td>false</td>
+		
+	</tr>
+	
+	<tr>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			<td>ROBOTS</td>
+		
+			<td>text/plain</td>
+		
+			<td></td>
+		
+			<td>robots</td>
+		
+			<td>alternate</td>
+		
+			<td></td>
+		
+			<td>true</td>
+		
+			<td>false</td>
+		
+			<td>false</td>
+		
+			<td>false</td>
+		
+	</tr>
+	
+	<tr>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			<td>RSS</td>
+		
+			<td>application/rss&#43;xml</td>
+		
+			<td></td>
+		
+			<td>index</td>
+		
+			<td>alternate</td>
+		
+			<td></td>
+		
+			<td>false</td>
+		
+			<td>false</td>
+		
+			<td>true</td>
+		
+			<td>false</td>
+		
+	</tr>
+	
+	<tr>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			<td>Sitemap</td>
+		
+			<td>application/xml</td>
+		
+			<td></td>
+		
+			<td>sitemap</td>
+		
+			<td>sitemap</td>
+		
+			<td></td>
+		
+			<td>false</td>
+		
+			<td>false</td>
+		
+			<td>true</td>
+		
+			<td>false</td>
+		
+	</tr>
+	
+	<tr>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			<td>WebAppManifest</td>
+		
+			<td>application/manifest&#43;json</td>
+		
+			<td></td>
+		
+			<td>manifest</td>
+		
+			<td>manifest</td>
+		
+			<td></td>
+		
+			<td>true</td>
+		
+			<td>false</td>
+		
+			<td>false</td>
+		
+			<td>false</td>
+		
+	</tr>
+	
+</table>
+
+<ul>
+<li>A page can be output in as many output formats as you want, and you can have an infinite amount of output formats defined <strong>as long as they resolve to a unique path on the file system</strong>. In the above table, the best example of this is <code>AMP</code> vs. <code>HTML</code>. <code>AMP</code> has the value <code>amp</code> for <code>Path</code> so it doesn&rsquo;t overwrite the <code>HTML</code> version; e.g. we can now have both <code>/index.html</code> and <code>/amp/index.html</code>.</li>
+<li>The <code>MediaType</code> must match the <code>Type</code> of an already defined media type.</li>
+<li>You can define new output formats or redefine built-in output formats; e.g., if you want to put <code>AMP</code> pages in a different path.</li>
+</ul>
+<p>To add or modify an output format, define it in an <code>outputFormats</code> section in your site&rsquo;s <a href="/getting-started/configuration/">configuration file</a>, either for all sites or for a given language.</p>
+
+
+
+  
+
+
+<div class="code relative" id="config">
+  <div class="code-nav flex flex-nowrap items-stretch"><div class="san-serif f6 dib lh-solid pl2 pv2 mr2">
+        config.
+      </div>
+      <button data-toggle-tab="yaml" class="tab-button active ba san-serif f6 dib lh-solid ph2 pv2">
+        yaml
+      </button>
+      &nbsp;
+    
+      <button data-toggle-tab="toml" class="tab-button  ba san-serif f6 dib lh-solid ph2 pv2">
+        toml
+      </button>
+      &nbsp;
+    
+      <button data-toggle-tab="json" class="tab-button  ba san-serif f6 dib lh-solid ph2 pv2">
+        json
+      </button>
+      &nbsp;
+    
+  </div>
+  <div class="tab-content">
+    
+      <div data-pane="yaml" class="code-copy-content nt3 tab-pane active">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">outputFormats</span><span class="p">:</span><span class="w">
+</span><span class="w">  </span><span class="nt">MyEnrichedFormat</span><span class="p">:</span><span class="w">
+</span><span class="w">    </span><span class="nt">baseName</span><span class="p">:</span><span class="w"> </span><span class="l">myindex</span><span class="w">
+</span><span class="w">    </span><span class="nt">isPlainText</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span><span class="w">    </span><span class="nt">mediaType</span><span class="p">:</span><span class="w"> </span><span class="l">text/enriched</span><span class="w">
+</span><span class="w">    </span><span class="nt">protocol</span><span class="p">:</span><span class="w"> </span><span class="l">bep://</span><span class="w">
+</span></code></pre></div>
+      </div>
+      
+        <button class="needs-js copy copy-toggle bg-accent-color-dark f6 absolute top-0 right-0 lh-solid hover-bg-primary-color-dark bn white ph3 pv2" title="Copy this code to your clipboard." data-clipboard-action="copy" aria-label="copy button"></button>
+        
+      
+    
+      <div data-pane="toml" class="code-copy-content nt3 tab-pane ">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="p">[</span><span class="nx">outputFormats</span><span class="p">]</span>
+<span class="p">[</span><span class="nx">outputFormats</span><span class="p">.</span><span class="nx">MyEnrichedFormat</span><span class="p">]</span>
+<span class="nx">baseName</span> <span class="p">=</span> <span class="s1">&#39;myindex&#39;</span>
+<span class="nx">isPlainText</span> <span class="p">=</span> <span class="kc">true</span>
+<span class="nx">mediaType</span> <span class="p">=</span> <span class="s1">&#39;text/enriched&#39;</span>
+<span class="nx">protocol</span> <span class="p">=</span> <span class="s1">&#39;bep://&#39;</span>
+
+
+</code></pre></div>
+      </div>
+      
+        <button class="needs-js copy copy-toggle bg-accent-color-dark f6 absolute top-0 right-0 lh-solid hover-bg-primary-color-dark bn white ph3 pv2" title="Copy this code to your clipboard." data-clipboard-action="copy" aria-label="copy button"></button>
+        
+      
+    
+      <div data-pane="json" class="code-copy-content nt3 tab-pane ">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
+   <span class="nt">&#34;outputFormats&#34;</span><span class="p">:</span> <span class="p">{</span>
+      <span class="nt">&#34;MyEnrichedFormat&#34;</span><span class="p">:</span> <span class="p">{</span>
+         <span class="nt">&#34;baseName&#34;</span><span class="p">:</span> <span class="s2">&#34;myindex&#34;</span><span class="p">,</span>
+         <span class="nt">&#34;isPlainText&#34;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+         <span class="nt">&#34;mediaType&#34;</span><span class="p">:</span> <span class="s2">&#34;text/enriched&#34;</span><span class="p">,</span>
+         <span class="nt">&#34;protocol&#34;</span><span class="p">:</span> <span class="s2">&#34;bep://&#34;</span>
+      <span class="p">}</span>
+   <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+      </div>
+      
+        <button class="needs-js copy copy-toggle bg-accent-color-dark f6 absolute top-0 right-0 lh-solid hover-bg-primary-color-dark bn white ph3 pv2" title="Copy this code to your clipboard." data-clipboard-action="copy" aria-label="copy button"></button>
+        
+      
+    
+  </div>
+  
+</div>
+
+<p>The above example is fictional, but if used for the homepage on a site with <code>baseURL</code> <code>https://example.org</code>, it will produce a plain text homepage with the URL <code>bep://example.org/myindex.enr</code>.</p>
+<h3 id="configure-output-formats">Configure Output Formats <a class="header-link" href="#configure-output-formats"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
+<p>The following is the full list of configuration options for output formats and their default values:</p>
+<dl>
+<dt><code>name</code></dt>
+<dd>the output format identifier. This is used to define what output format(s) you want for your pages.</dd>
+<dt><code>mediaType</code></dt>
+<dd>this must match the <code>Type</code> of a defined media type.</dd>
+<dt><code>path</code></dt>
+<dd>sub path to save the output files.</dd>
+<dt><code>baseName</code></dt>
+<dd>the base filename for the list filenames (homepage, etc.). <strong>Default:</strong> <code>index</code>.</dd>
+<dt><code>rel</code></dt>
+<dd>can be used to create <code>rel</code> values in <code>link</code> tags. <strong>Default:</strong> <code>alternate</code>.</dd>
+<dt><code>protocol</code></dt>
+<dd>will replace the &ldquo;http://&rdquo; or &ldquo;https://&rdquo; in your <code>baseURL</code> for this output format.</dd>
+<dt><code>isPlainText</code></dt>
+<dd>use Go&rsquo;s plain text templates parser for the templates. <strong>Default:</strong> <code>false</code>.</dd>
+<dt><code>isHTML</code></dt>
+<dd>used in situations only relevant for <code>HTML</code>-type formats; e.g., page aliases.</dd>
+<dt><code>noUgly</code></dt>
+<dd>used to turn off ugly URLs If <code>uglyURLs</code> is set to <code>true</code> in your site. <strong>Default:</strong> <code>false</code>.</dd>
+<dt><code>notAlternative</code></dt>
+<dd>enable if it doesn&rsquo;t make sense to include this format in an <code>AlternativeOutputFormats</code> format listing on <code>Page</code> (e.g., with <code>CSS</code>). Note that we use the term <em>alternative</em> and not <em>alternate</em> here, as it does not necessarily replace the other format. <strong>Default:</strong> <code>false</code>.</dd>
+<dt><code>permalinkable</code></dt>
+<dd>make <code>.Permalink</code> and <code>.RelPermalink</code> return the rendering Output Format rather than main (<a href="#link-to-output-formats">see below</a>). This is enabled by default for <code>HTML</code> and <code>AMP</code>. <strong>Default:</strong> <code>false</code>.</dd>
+</dl>
+<h2 id="output-formats-for-pages">Output Formats for Pages <a class="header-link" href="#output-formats-for-pages"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
+<p>A <code>Page</code> in Hugo can be rendered to multiple <em>output formats</em> on the file
+system.</p>
+<h3 id="default-output-formats">Default Output Formats <a class="header-link" href="#default-output-formats"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
+<p>Every <code>Page</code> has a <a href="/templates/section-templates/#page-kinds"><code>Kind</code></a> attribute, and the default Output
+Formats are set based on that.</p>
+<table>
+<thead>
+<tr>
+<th>Kind</th>
+<th>Default Output Formats</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>page</code></td>
+<td>HTML</td>
+</tr>
+<tr>
+<td><code>home</code></td>
+<td>HTML, RSS</td>
+</tr>
+<tr>
+<td><code>section</code></td>
+<td>HTML, RSS</td>
+</tr>
+<tr>
+<td><code>taxonomy</code></td>
+<td>HTML, RSS</td>
+</tr>
+<tr>
+<td><code>term</code></td>
+<td>HTML, RSS</td>
+</tr>
+</tbody>
+</table>
+<h3 id="customizing-output-formats">Customizing Output Formats <a class="header-link" href="#customizing-output-formats"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
+<p>This can be changed by defining an <code>outputs</code> list of output formats in either
+the <code>Page</code> front matter or in the site configuration (either for all sites or
+per language).</p>
+<p>Example from site config file:</p>
+
+
+
+  
+
+
+<div class="code relative" id="config">
+  <div class="code-nav flex flex-nowrap items-stretch"><div class="san-serif f6 dib lh-solid pl2 pv2 mr2">
+        config.
+      </div>
+      <button data-toggle-tab="yaml" class="tab-button active ba san-serif f6 dib lh-solid ph2 pv2">
+        yaml
+      </button>
+      &nbsp;
+    
+      <button data-toggle-tab="toml" class="tab-button  ba san-serif f6 dib lh-solid ph2 pv2">
+        toml
+      </button>
+      &nbsp;
+    
+      <button data-toggle-tab="json" class="tab-button  ba san-serif f6 dib lh-solid ph2 pv2">
+        json
+      </button>
+      &nbsp;
+    
+  </div>
+  <div class="tab-content">
+    
+      <div data-pane="yaml" class="code-copy-content nt3 tab-pane active">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">outputs</span><span class="p">:</span><span class="w">
+</span><span class="w">  </span><span class="nt">home</span><span class="p">:</span><span class="w">
+</span><span class="w">  </span>- <span class="l">HTML</span><span class="w">
+</span><span class="w">  </span>- <span class="l">AMP</span><span class="w">
+</span><span class="w">  </span>- <span class="l">RSS</span><span class="w">
+</span><span class="w">  </span><span class="nt">page</span><span class="p">:</span><span class="w">
+</span><span class="w">  </span>- <span class="l">HTML</span><span class="w">
+</span></code></pre></div>
+      </div>
+      
+        <button class="needs-js copy copy-toggle bg-accent-color-dark f6 absolute top-0 right-0 lh-solid hover-bg-primary-color-dark bn white ph3 pv2" title="Copy this code to your clipboard." data-clipboard-action="copy" aria-label="copy button"></button>
+        
+      
+    
+      <div data-pane="toml" class="code-copy-content nt3 tab-pane ">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="p">[</span><span class="nx">outputs</span><span class="p">]</span>
+<span class="nx">home</span> <span class="p">=</span> <span class="p">[</span><span class="s1">&#39;HTML&#39;</span><span class="p">,</span> <span class="s1">&#39;AMP&#39;</span><span class="p">,</span> <span class="s1">&#39;RSS&#39;</span><span class="p">]</span>
+<span class="nx">page</span> <span class="p">=</span> <span class="p">[</span><span class="s1">&#39;HTML&#39;</span><span class="p">]</span>
+
+</code></pre></div>
+      </div>
+      
+        <button class="needs-js copy copy-toggle bg-accent-color-dark f6 absolute top-0 right-0 lh-solid hover-bg-primary-color-dark bn white ph3 pv2" title="Copy this code to your clipboard." data-clipboard-action="copy" aria-label="copy button"></button>
+        
+      
+    
+      <div data-pane="json" class="code-copy-content nt3 tab-pane ">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
+   <span class="nt">&#34;outputs&#34;</span><span class="p">:</span> <span class="p">{</span>
+      <span class="nt">&#34;home&#34;</span><span class="p">:</span> <span class="p">[</span>
+         <span class="s2">&#34;HTML&#34;</span><span class="p">,</span>
+         <span class="s2">&#34;AMP&#34;</span><span class="p">,</span>
+         <span class="s2">&#34;RSS&#34;</span>
+      <span class="p">],</span>
+      <span class="nt">&#34;page&#34;</span><span class="p">:</span> <span class="p">[</span>
+         <span class="s2">&#34;HTML&#34;</span>
+      <span class="p">]</span>
+   <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+      </div>
+      
+        <button class="needs-js copy copy-toggle bg-accent-color-dark f6 absolute top-0 right-0 lh-solid hover-bg-primary-color-dark bn white ph3 pv2" title="Copy this code to your clipboard." data-clipboard-action="copy" aria-label="copy button"></button>
+        
+      
+    
+  </div>
+  
+</div>
+
+<p>Note that in the above examples, the <em>output formats</em> for <code>section</code>,
+<code>taxonomy</code> and <code>term</code> will stay at their default value <code>[&quot;HTML&quot;, &quot;RSS&quot;]</code>.</p>
+<p>
+
+
+<button class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 mr2 ml2 px-4 border border-gray-400 rounded shadow">
+    <a href="https://gohugo.io/news/0.73.0-relnotes/" target="_blank">New in v0.73.0</a>
+</button> We have fixed the before confusing page kinds used for taxonomies (see the listing below) to be in line with the terms used when we talk about taxonomies. We have been careful to avoid site breakage, and you should get an ERROR in the console if you need to adjust your <code>outputs</code> section.</p>
+<table>
+<thead>
+<tr>
+<th>Kind</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>home</code></td>
+<td>The landing page for the home page</td>
+<td><code>/index.html</code></td>
+</tr>
+<tr>
+<td><code>page</code></td>
+<td>The landing page for a given page</td>
+<td><code>my-post</code> page (<code>/posts/my-post/index.html</code>)</td>
+</tr>
+<tr>
+<td><code>section</code></td>
+<td>The landing page of a given section</td>
+<td><code>posts</code> section (<code>/posts/index.html</code>)</td>
+</tr>
+<tr>
+<td><code>taxonomy</code></td>
+<td>The landing page for a taxonomy</td>
+<td><code>tags</code> taxonomy (<code>/tags/index.html</code>)</td>
+</tr>
+<tr>
+<td><code>term</code></td>
+<td>The landing page for one taxonomy&rsquo;s term</td>
+<td>term <code>awesome</code> in <code>tags</code> taxonomy (<code>/tags/awesome/index.html</code>)</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>The <code>outputs</code> definition is per <a href="/templates/section-templates/#page-kinds"><code>Page</code> <code>Kind</code></a> (<code>page</code>, <code>home</code>, <code>section</code>, <code>taxonomy</code>, or <code>term</code>).</li>
+<li>The names (e.g. <code>HTML</code>, <code>AMP</code>) used must match the <code>Name</code> of a defined <em>Output Format</em>.
+<ul>
+<li>These names are case insensitive.</li>
+</ul>
+</li>
+<li>These can be overridden per <code>Page</code> in the front matter of content files.</li>
+</ul>
+<p>The following is an example of <code>YAML</code> front matter in a content file that defines output formats for the rendered <code>Page</code>:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nn">---</span><span class="w">
+</span><span class="w"></span><span class="nt">date</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;2016-03-19&#34;</span><span class="w">
+</span><span class="w"></span><span class="nt">outputs</span><span class="p">:</span><span class="w">
+</span><span class="w"></span>- <span class="l">html</span><span class="w">
+</span><span class="w"></span>- <span class="l">amp</span><span class="w">
+</span><span class="w"></span>- <span class="l">json</span><span class="w">
+</span><span class="w"></span><span class="nn">---</span><span class="w">
+</span></code></pre></div><h2 id="list-output-formats">List Output formats <a class="header-link" href="#list-output-formats"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
+<p>Each <code>Page</code> has both an <code>.OutputFormats</code> (all formats, including the current) and an <code>.AlternativeOutputFormats</code> variable, the latter of which is useful for creating a <code>link rel</code> list in your site&rsquo;s <code>&lt;head&gt;</code>:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go-html-template" data-lang="go-html-template"><span class="cp">{{</span><span class="w"> </span><span class="k">range</span><span class="w"> </span><span class="na">.AlternativeOutputFormats</span><span class="w"> </span><span class="cp">-}}</span>
+<span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#34;</span><span class="cp">{{</span><span class="w"> </span><span class="na">.Rel</span><span class="w"> </span><span class="cp">}}</span><span class="s">&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;</span><span class="cp">{{</span><span class="w"> </span><span class="na">.MediaType.Type</span><span class="w"> </span><span class="cp">}}</span><span class="s">&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;</span><span class="cp">{{</span><span class="w"> </span><span class="na">.Permalink</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nx">safeURL</span><span class="w"> </span><span class="cp">}}</span><span class="s">&#34;</span><span class="p">&gt;</span>
+<span class="cp">{{</span><span class="w"> </span><span class="k">end</span><span class="w"> </span><span class="cp">-}}</span>
+</code></pre></div><h2 id="link-to-output-formats">Link to Output Formats <a class="header-link" href="#link-to-output-formats"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
+<p><code>.Permalink</code> and <code>.RelPermalink</code> on <code>Page</code> will return the first output format defined for that page (usually <code>HTML</code> if nothing else is defined). This is regardless of the template file they are being called from.</p>
+<p><strong>from <code>single.json.json</code>:</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go-html-template" data-lang="go-html-template"><span class="cp">{{</span><span class="w"> </span><span class="na">.RelPermalink</span><span class="w"> </span><span class="cp">}}</span> &gt; /that-page/
+<span class="cp">{{</span><span class="w"> </span><span class="k">with</span><span class="w">  </span><span class="na">.OutputFormats.Get</span><span class="w"> </span><span class="s">&#34;json&#34;</span><span class="w"> </span><span class="cp">-}}</span>
+<span class="cp">{{</span><span class="w"> </span><span class="na">.RelPermalink</span><span class="w"> </span><span class="cp">}}</span> &gt; /that-page/index.json
+<span class="cp">{{-</span><span class="w"> </span><span class="k">end</span><span class="w"> </span><span class="cp">}}</span>
+</code></pre></div><p>In order for them to return the output format of the current template file instead, the given output format should have its <code>permalinkable</code> setting set to true.</p>
+<p><strong>Same template file as above with json output format&rsquo;s <code>permalinkable</code> set to true:</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go-html-template" data-lang="go-html-template"><span class="cp">{{</span><span class="w"> </span><span class="na">.RelPermalink</span><span class="w"> </span><span class="cp">}}</span> &gt; /that-page/index.json
+<span class="cp">{{</span><span class="w"> </span><span class="k">with</span><span class="w">  </span><span class="na">.OutputFormats.Get</span><span class="w"> </span><span class="s">&#34;html&#34;</span><span class="w"> </span><span class="cp">-}}</span>
+<span class="cp">{{</span><span class="w"> </span><span class="na">.RelPermalink</span><span class="w"> </span><span class="cp">}}</span> &gt; /that-page/
+<span class="cp">{{-</span><span class="w"> </span><span class="k">end</span><span class="w"> </span><span class="cp">}}</span>
+</code></pre></div><p>From content files, you can use the <a href="/content-management/shortcodes/#ref-and-relref"><code>ref</code> or <code>relref</code> shortcodes</a>:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go-html-template" data-lang="go-html-template">[Neat](<span class="cp">{{</span><span class="err">&lt;</span><span class="w"> </span><span class="nx">ref</span><span class="w"> </span><span class="s">&#34;blog/neat.md&#34;</span><span class="w"> </span><span class="s">&#34;amp&#34;</span><span class="w"> </span><span class="err">&gt;</span><span class="cp">}}</span>)
+[Who](<span class="cp">{{</span><span class="err">&lt;</span><span class="w"> </span><span class="nx">relref</span><span class="w"> </span><span class="s">&#34;about.md#who&#34;</span><span class="w"> </span><span class="s">&#34;amp&#34;</span><span class="w"> </span><span class="err">&gt;</span><span class="cp">}}</span>)
+</code></pre></div><h2 id="templates-for-your-output-formats">Templates for Your Output Formats <a class="header-link" href="#templates-for-your-output-formats"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
+<p>A new output format needs a corresponding template in order to render anything useful.</p>
+
+<aside class="admonition note">
+	<div class="note-icon">
+		
+	</div>
+	
+	
+	<div class="admonition-content"><p>The key distinction for Hugo versions 0.20 and newer is that Hugo looks at an output format&rsquo;s <code>Name</code> and MediaType&rsquo;s <code>Suffixes</code> when choosing the template used to render a given <code>Page</code>.</p>
+</div>
+</aside>
+
+<p>The following table shows examples of different output formats, the suffix used, and Hugo&rsquo;s respective template <a href="/templates/lookup/">lookup order</a>. All of the examples in the table can:</p>
+<ul>
+<li>Use a <a href="/templates/base/">base template</a>.</li>
+<li>Include <a href="/templates/partials/">partial templates</a></li>
+</ul>
+
+
+
+
+
+<table class="table table-bordered">
+	<tr>
+		
+		<th>Example</th>
+		
+		<th>OutputFormat</th>
+		
+		<th>Suffix</th>
+		
+		<th>Template Lookup Order</th>
+		
+	</tr>
+	
+	<tr>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			<td>Single page in &#34;posts&#34; section</td>
+		
+			<td>HTML</td>
+		
+			<td>html</td>
+		
+			<td>[layouts/posts/single.html.html layouts/posts/single.html layouts/_default/single.html.html layouts/_default/single.html]</td>
+		
+	</tr>
+	
+	<tr>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			<td>Base template for single page in &#34;posts&#34; section</td>
+		
+			<td>HTML</td>
+		
+			<td>html</td>
+		
+			<td>[layouts/posts/single-baseof.html.html layouts/posts/baseof.html.html layouts/posts/single-baseof.html layouts/posts/baseof.html layouts/_default/single-baseof.html.html layouts/_default/baseof.html.html layouts/_default/single-baseof.html layouts/_default/baseof.html]</td>
+		
+	</tr>
+	
+	<tr>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			<td>Single page in &#34;posts&#34; section with layout set</td>
+		
+			<td>HTML</td>
+		
+			<td>html</td>
+		
+			<td>[layouts/posts/demolayout.html.html layouts/posts/single.html.html layouts/posts/demolayout.html layouts/posts/single.html layouts/_default/demolayout.html.html layouts/_default/single.html.html layouts/_default/demolayout.html layouts/_default/single.html]</td>
+		
+	</tr>
+	
+	<tr>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			<td>Base template for single page in &#34;posts&#34; section with layout set</td>
+		
+			<td>HTML</td>
+		
+			<td>html</td>
+		
+			<td>[layouts/posts/demolayout-baseof.html.html layouts/posts/single-baseof.html.html layouts/posts/baseof.html.html layouts/posts/demolayout-baseof.html layouts/posts/single-baseof.html layouts/posts/baseof.html layouts/_default/demolayout-baseof.html.html layouts/_default/single-baseof.html.html layouts/_default/baseof.html.html layouts/_default/demolayout-baseof.html layouts/_default/single-baseof.html layouts/_default/baseof.html]</td>
+		
+	</tr>
+	
+	<tr>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			<td>AMP single page</td>
+		
+			<td>AMP</td>
+		
+			<td>html</td>
+		
+			<td>[layouts/posts/single.amp.html layouts/posts/single.html layouts/_default/single.amp.html layouts/_default/single.html]</td>
+		
+	</tr>
+	
+	<tr>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			<td>AMP single page, French language</td>
+		
+			<td>AMP</td>
+		
+			<td>html</td>
+		
+			<td>[layouts/posts/single.fr.amp.html layouts/posts/single.amp.html layouts/posts/single.fr.html layouts/posts/single.html layouts/_default/single.fr.amp.html layouts/_default/single.amp.html layouts/_default/single.fr.html layouts/_default/single.html]</td>
+		
+	</tr>
+	
+	<tr>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			<td>Home page</td>
+		
+			<td>HTML</td>
+		
+			<td>html</td>
+		
+			<td>[layouts/index.html.html layouts/home.html.html layouts/list.html.html layouts/index.html layouts/home.html layouts/list.html layouts/_default/index.html.html layouts/_default/home.html.html layouts/_default/list.html.html layouts/_default/index.html layouts/_default/home.html layouts/_default/list.html]</td>
+		
+	</tr>
+	
+	<tr>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			<td>Base template for home page</td>
+		
+			<td>HTML</td>
+		
+			<td>html</td>
+		
+			<td>[layouts/index-baseof.html.html layouts/home-baseof.html.html layouts/list-baseof.html.html layouts/baseof.html.html layouts/index-baseof.html layouts/home-baseof.html layouts/list-baseof.html layouts/baseof.html layouts/_default/index-baseof.html.html layouts/_default/home-baseof.html.html layouts/_default/list-baseof.html.html layouts/_default/baseof.html.html layouts/_default/index-baseof.html layouts/_default/home-baseof.html layouts/_default/list-baseof.html layouts/_default/baseof.html]</td>
+		
+	</tr>
+	
+	<tr>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			<td>Home page with type set</td>
+		
+			<td>HTML</td>
+		
+			<td>html</td>
+		
+			<td>[layouts/demotype/index.html.html layouts/demotype/home.html.html layouts/demotype/list.html.html layouts/demotype/index.html layouts/demotype/home.html layouts/demotype/list.html layouts/index.html.html layouts/home.html.html layouts/list.html.html layouts/index.html layouts/home.html layouts/list.html layouts/_default/index.html.html layouts/_default/home.html.html layouts/_default/list.html.html layouts/_default/index.html layouts/_default/home.html layouts/_default/list.html]</td>
+		
+	</tr>
+	
+	<tr>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			<td>Base template for home page with type set</td>
+		
+			<td>HTML</td>
+		
+			<td>html</td>
+		
+			<td>[layouts/demotype/index-baseof.html.html layouts/demotype/home-baseof.html.html layouts/demotype/list-baseof.html.html layouts/demotype/baseof.html.html layouts/demotype/index-baseof.html layouts/demotype/home-baseof.html layouts/demotype/list-baseof.html layouts/demotype/baseof.html layouts/index-baseof.html.html layouts/home-baseof.html.html layouts/list-baseof.html.html layouts/baseof.html.html layouts/index-baseof.html layouts/home-baseof.html layouts/list-baseof.html layouts/baseof.html layouts/_default/index-baseof.html.html layouts/_default/home-baseof.html.html layouts/_default/list-baseof.html.html layouts/_default/baseof.html.html layouts/_default/index-baseof.html layouts/_default/home-baseof.html layouts/_default/list-baseof.html layouts/_default/baseof.html]</td>
+		
+	</tr>
+	
+	<tr>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			<td>Home page with layout set</td>
+		
+			<td>HTML</td>
+		
+			<td>html</td>
+		
+			<td>[layouts/demolayout.html.html layouts/index.html.html layouts/home.html.html layouts/list.html.html layouts/demolayout.html layouts/index.html layouts/home.html layouts/list.html layouts/_default/demolayout.html.html layouts/_default/index.html.html layouts/_default/home.html.html layouts/_default/list.html.html layouts/_default/demolayout.html layouts/_default/index.html layouts/_default/home.html layouts/_default/list.html]</td>
+		
+	</tr>
+	
+	<tr>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			<td>AMP home, French language</td>
+		
+			<td>AMP</td>
+		
+			<td>html</td>
+		
+			<td>[layouts/index.fr.amp.html layouts/home.fr.amp.html layouts/list.fr.amp.html layouts/index.amp.html layouts/home.amp.html layouts/list.amp.html layouts/index.fr.html layouts/home.fr.html layouts/list.fr.html layouts/index.html layouts/home.html layouts/list.html layouts/_default/index.fr.amp.html layouts/_default/home.fr.amp.html layouts/_default/list.fr.amp.html layouts/_default/index.amp.html layouts/_default/home.amp.html layouts/_default/list.amp.html layouts/_default/index.fr.html layouts/_default/home.fr.html layouts/_default/list.fr.html layouts/_default/index.html layouts/_default/home.html layouts/_default/list.html]</td>
+		
+	</tr>
+	
+	<tr>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			<td>JSON home</td>
+		
+			<td>JSON</td>
+		
+			<td>json</td>
+		
+			<td>[layouts/index.json.json layouts/home.json.json layouts/list.json.json layouts/index.json layouts/home.json layouts/list.json layouts/_default/index.json.json layouts/_default/home.json.json layouts/_default/list.json.json layouts/_default/index.json layouts/_default/home.json layouts/_default/list.json]</td>
+		
+	</tr>
+	
+	<tr>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			<td>RSS home</td>
+		
+			<td>RSS</td>
+		
+			<td>xml</td>
+		
+			<td>[layouts/index.rss.xml layouts/home.rss.xml layouts/rss.xml layouts/list.rss.xml layouts/index.xml layouts/home.xml layouts/list.xml layouts/_default/index.rss.xml layouts/_default/home.rss.xml layouts/_default/rss.xml layouts/_default/list.rss.xml layouts/_default/index.xml layouts/_default/home.xml layouts/_default/list.xml layouts/_internal/_default/rss.xml]</td>
+		
+	</tr>
+	
+	<tr>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			<td>RSS section posts</td>
+		
+			<td>RSS</td>
+		
+			<td>xml</td>
+		
+			<td>[layouts/posts/section.rss.xml layouts/posts/rss.xml layouts/posts/list.rss.xml layouts/posts/section.xml layouts/posts/list.xml layouts/section/section.rss.xml layouts/section/rss.xml layouts/section/list.rss.xml layouts/section/section.xml layouts/section/list.xml layouts/_default/section.rss.xml layouts/_default/rss.xml layouts/_default/list.rss.xml layouts/_default/section.xml layouts/_default/list.xml layouts/_internal/_default/rss.xml]</td>
+		
+	</tr>
+	
+	<tr>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			<td>Taxonomy in categories</td>
+		
+			<td>RSS</td>
+		
+			<td>xml</td>
+		
+			<td>[layouts/categories/category.terms.rss.xml layouts/categories/terms.rss.xml layouts/categories/taxonomy.rss.xml layouts/categories/rss.xml layouts/categories/list.rss.xml layouts/categories/category.terms.xml layouts/categories/terms.xml layouts/categories/taxonomy.xml layouts/categories/list.xml layouts/category/category.terms.rss.xml layouts/category/terms.rss.xml layouts/category/taxonomy.rss.xml layouts/category/rss.xml layouts/category/list.rss.xml layouts/category/category.terms.xml layouts/category/terms.xml layouts/category/taxonomy.xml layouts/category/list.xml layouts/taxonomy/category.terms.rss.xml layouts/taxonomy/terms.rss.xml layouts/taxonomy/taxonomy.rss.xml layouts/taxonomy/rss.xml layouts/taxonomy/list.rss.xml layouts/taxonomy/category.terms.xml layouts/taxonomy/terms.xml layouts/taxonomy/taxonomy.xml layouts/taxonomy/list.xml layouts/_default/category.terms.rss.xml layouts/_default/terms.rss.xml layouts/_default/taxonomy.rss.xml layouts/_default/rss.xml layouts/_default/list.rss.xml layouts/_default/category.terms.xml layouts/_default/terms.xml layouts/_default/taxonomy.xml layouts/_default/list.xml layouts/_internal/_default/rss.xml]</td>
+		
+	</tr>
+	
+	<tr>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			<td>Term in categories</td>
+		
+			<td>RSS</td>
+		
+			<td>xml</td>
+		
+			<td>[layouts/categories/term.rss.xml layouts/categories/category.rss.xml layouts/categories/taxonomy.rss.xml layouts/categories/rss.xml layouts/categories/list.rss.xml layouts/categories/term.xml layouts/categories/category.xml layouts/categories/taxonomy.xml layouts/categories/list.xml layouts/term/term.rss.xml layouts/term/category.rss.xml layouts/term/taxonomy.rss.xml layouts/term/rss.xml layouts/term/list.rss.xml layouts/term/term.xml layouts/term/category.xml layouts/term/taxonomy.xml layouts/term/list.xml layouts/taxonomy/term.rss.xml layouts/taxonomy/category.rss.xml layouts/taxonomy/taxonomy.rss.xml layouts/taxonomy/rss.xml layouts/taxonomy/list.rss.xml layouts/taxonomy/term.xml layouts/taxonomy/category.xml layouts/taxonomy/taxonomy.xml layouts/taxonomy/list.xml layouts/category/term.rss.xml layouts/category/category.rss.xml layouts/category/taxonomy.rss.xml layouts/category/rss.xml layouts/category/list.rss.xml layouts/category/term.xml layouts/category/category.xml layouts/category/taxonomy.xml layouts/category/list.xml layouts/_default/term.rss.xml layouts/_default/category.rss.xml layouts/_default/taxonomy.rss.xml layouts/_default/rss.xml layouts/_default/list.rss.xml layouts/_default/term.xml layouts/_default/category.xml layouts/_default/taxonomy.xml layouts/_default/list.xml layouts/_internal/_default/rss.xml]</td>
+		
+	</tr>
+	
+	<tr>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			<td>Section list for &#34;posts&#34; section</td>
+		
+			<td>HTML</td>
+		
+			<td>html</td>
+		
+			<td>[layouts/posts/posts.html.html layouts/posts/section.html.html layouts/posts/list.html.html layouts/posts/posts.html layouts/posts/section.html layouts/posts/list.html layouts/section/posts.html.html layouts/section/section.html.html layouts/section/list.html.html layouts/section/posts.html layouts/section/section.html layouts/section/list.html layouts/_default/posts.html.html layouts/_default/section.html.html layouts/_default/list.html.html layouts/_default/posts.html layouts/_default/section.html layouts/_default/list.html]</td>
+		
+	</tr>
+	
+	<tr>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			<td>Section list for &#34;posts&#34; section with type set to &#34;blog&#34;</td>
+		
+			<td>HTML</td>
+		
+			<td>html</td>
+		
+			<td>[layouts/blog/posts.html.html layouts/blog/section.html.html layouts/blog/list.html.html layouts/blog/posts.html layouts/blog/section.html layouts/blog/list.html layouts/posts/posts.html.html layouts/posts/section.html.html layouts/posts/list.html.html layouts/posts/posts.html layouts/posts/section.html layouts/posts/list.html layouts/section/posts.html.html layouts/section/section.html.html layouts/section/list.html.html layouts/section/posts.html layouts/section/section.html layouts/section/list.html layouts/_default/posts.html.html layouts/_default/section.html.html layouts/_default/list.html.html layouts/_default/posts.html layouts/_default/section.html layouts/_default/list.html]</td>
+		
+	</tr>
+	
+	<tr>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			<td>Section list for &#34;posts&#34; section with layout set to &#34;demoLayout&#34;</td>
+		
+			<td>HTML</td>
+		
+			<td>html</td>
+		
+			<td>[layouts/posts/demolayout.html.html layouts/posts/posts.html.html layouts/posts/section.html.html layouts/posts/list.html.html layouts/posts/demolayout.html layouts/posts/posts.html layouts/posts/section.html layouts/posts/list.html layouts/section/demolayout.html.html layouts/section/posts.html.html layouts/section/section.html.html layouts/section/list.html.html layouts/section/demolayout.html layouts/section/posts.html layouts/section/section.html layouts/section/list.html layouts/_default/demolayout.html.html layouts/_default/posts.html.html layouts/_default/section.html.html layouts/_default/list.html.html layouts/_default/demolayout.html layouts/_default/posts.html layouts/_default/section.html layouts/_default/list.html]</td>
+		
+	</tr>
+	
+	<tr>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			<td>Taxonomy list in categories</td>
+		
+			<td>HTML</td>
+		
+			<td>html</td>
+		
+			<td>[layouts/categories/category.terms.html.html layouts/categories/terms.html.html layouts/categories/taxonomy.html.html layouts/categories/list.html.html layouts/categories/category.terms.html layouts/categories/terms.html layouts/categories/taxonomy.html layouts/categories/list.html layouts/category/category.terms.html.html layouts/category/terms.html.html layouts/category/taxonomy.html.html layouts/category/list.html.html layouts/category/category.terms.html layouts/category/terms.html layouts/category/taxonomy.html layouts/category/list.html layouts/taxonomy/category.terms.html.html layouts/taxonomy/terms.html.html layouts/taxonomy/taxonomy.html.html layouts/taxonomy/list.html.html layouts/taxonomy/category.terms.html layouts/taxonomy/terms.html layouts/taxonomy/taxonomy.html layouts/taxonomy/list.html layouts/_default/category.terms.html.html layouts/_default/terms.html.html layouts/_default/taxonomy.html.html layouts/_default/list.html.html layouts/_default/category.terms.html layouts/_default/terms.html layouts/_default/taxonomy.html layouts/_default/list.html]</td>
+		
+	</tr>
+	
+	<tr>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			<td>Taxonomy term in categories</td>
+		
+			<td>HTML</td>
+		
+			<td>html</td>
+		
+			<td>[layouts/categories/term.html.html layouts/categories/category.html.html layouts/categories/taxonomy.html.html layouts/categories/list.html.html layouts/categories/term.html layouts/categories/category.html layouts/categories/taxonomy.html layouts/categories/list.html layouts/term/term.html.html layouts/term/category.html.html layouts/term/taxonomy.html.html layouts/term/list.html.html layouts/term/term.html layouts/term/category.html layouts/term/taxonomy.html layouts/term/list.html layouts/taxonomy/term.html.html layouts/taxonomy/category.html.html layouts/taxonomy/taxonomy.html.html layouts/taxonomy/list.html.html layouts/taxonomy/term.html layouts/taxonomy/category.html layouts/taxonomy/taxonomy.html layouts/taxonomy/list.html layouts/category/term.html.html layouts/category/category.html.html layouts/category/taxonomy.html.html layouts/category/list.html.html layouts/category/term.html layouts/category/category.html layouts/category/taxonomy.html layouts/category/list.html layouts/_default/term.html.html layouts/_default/category.html.html layouts/_default/taxonomy.html.html layouts/_default/list.html.html layouts/_default/term.html layouts/_default/category.html layouts/_default/taxonomy.html layouts/_default/list.html]</td>
+		
+	</tr>
+	
+</table>
+
+<p>Hugo will now also detect the media type and output format of partials, if possible, and use that information to decide if the partial should be parsed as a plain text template or not.</p>
+<p>Hugo will look for the name given, so you can name it whatever you want. But if you want it treated as plain text, you should use the file suffix and, if needed, the name of the Output Format. The pattern is as follows:</p>
+<pre><code>[partial name].[OutputFormat].[suffix]
+</code></pre><p>The partial below is a plain text template (Output Format is <code>CSV</code>, and since this is the only output format with the suffix <code>csv</code>, we don&rsquo;t need to include the Output Format&rsquo;s <code>Name</code>):</p>
+<pre><code>{{ partial &quot;mytextpartial.csv&quot; . }}
+</code></pre>
+</div>
+
+          
+
+<h2>See Also</h2>
+<ul>
+	
+	<li><a href="/templates/lists/">Lists of Content in Hugo</a></li>
+	
+	<li><a href="/templates/rss/">RSS Templates</a></li>
+	
+</ul>
+
+        </div>
+      </div>
+      <div class="order-0 w-20 dn db-l">
+        
+<nav role="navigation">
+  <ul class="list pa0 nl2">
+    
+      
+      <li class="f5 w-100 hover-bg-light-gray hover-accent-color-light fw8">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".about">About Hugo</a>
+        <ul class="about desktopmenu animated fadeIn list pl0 bg-light-gray dn">
+          <li class="f6 fw4">
+            <a href="/about/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Overview
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/about/security-model/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Hugo&#39;s Security Model
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/about/hugo-and-gdpr/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Hugo and GDPR
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/about/what-is-hugo/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              What is Hugo
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/about/features/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Hugo Features
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/about/benefits/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              The Benefits of Static
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/about/license/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              License
+            </a>
+          </li>
+        </ul>
+      </li>
+      
+      <li class="f5 w-100 hover-bg-light-gray hover-accent-color-light fw8">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".getting-started">Getting Started</a>
+        <ul class="getting-started desktopmenu animated fadeIn list pl0 bg-light-gray dn">
+          <li class="f6 fw4">
+            <a href="/getting-started/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Get Started Overview
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/getting-started/quick-start/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Quick Start
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/getting-started/installing/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Install Hugo
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/getting-started/usage/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Basic Usage
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/getting-started/directory-structure/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Directory Structure
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/getting-started/configuration/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Configuration
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/getting-started/external-learning-resources/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              External Learning Resources
+            </a>
+          </li>
+        </ul>
+      </li>
+      
+      <li class="f5 w-100 hover-bg-light-gray hover-accent-color-light fw8 mb1 bb b--moon-gray">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".modules">Hugo Modules</a>
+        <ul class="modules desktopmenu animated fadeIn list pl0 bg-light-gray dn">
+          <li class="f6 fw4">
+            <a href="/hugo-modules/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Hugo Modules Overview
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/hugo-modules/configuration/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Configure Modules
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/hugo-modules/use-modules/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Use Hugo Modules
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/hugo-modules/theme-components/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Theme Components
+            </a>
+          </li>
+        </ul>
+      </li>
+      
+      <li class="f5 w-100 hover-bg-light-gray hover-accent-color-light fw8">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".content-management">Content Management</a>
+        <ul class="content-management desktopmenu animated fadeIn list pl0 bg-light-gray dn">
+          <li class="f6 fw4">
+            <a href="/content-management/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Content Management Overview
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/content-management/organization/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Organization
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/content-management/page-bundles/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Page Bundles
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/content-management/formats/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Content Formats
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/content-management/front-matter/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Front Matter
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/content-management/build-options/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Build Options
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/content-management/page-resources/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Page Resources
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/content-management/image-processing/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Image Processing
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/content-management/shortcodes/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Shortcodes
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/content-management/related/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Related Content
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/content-management/sections/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Sections
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/content-management/types/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Content Types
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/content-management/archetypes/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Archetypes
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/content-management/taxonomies/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Taxonomies
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/content-management/summaries/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Summaries
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/content-management/cross-references/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Links and Cross References
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/content-management/urls/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              URL Management
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/content-management/menus/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Menus
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/content-management/static-files/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Static Files
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/content-management/toc/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Table of Contents
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/content-management/comments/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Comments
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/content-management/multilingual/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Multilingual and i18n
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/content-management/syntax-highlighting/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Syntax Highlighting
+            </a>
+          </li>
+        </ul>
+      </li>
+      
+      <li class="f5 w-100 hover-bg-light-gray hover-accent-color-light fw8">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2  primary-color" data-target=".templates">Templates</a>
+        <ul class="templates desktopmenu animated fadeIn list pl0 bg-light-gray db">
+          <li class="f6 fw4">
+            <a href="/templates/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Templates Overview
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/templates/introduction/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Introduction
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/templates/lookup-order/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Template Lookup Order
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/templates/output-formats/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 primary-color ">
+              Custom Output Formats
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/templates/base/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Base Templates and Blocks
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/templates/lists/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              List Page Templates
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/templates/homepage/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Homepage Template
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/templates/section-templates/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Section Templates
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/templates/taxonomy-templates/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Taxonomy Templates
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/templates/single-page-templates/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Single Page Templates
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/templates/views/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Content View Templates
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/templates/data-templates/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Data Templates
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/templates/partials/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Partial Templates
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/templates/shortcode-templates/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Shortcode Templates
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/templates/files/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Local File Templates
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/templates/404/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              404 Page
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/templates/menu-templates/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Menu Templates
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/templates/pagination/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Pagination
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/templates/rss/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              RSS Templates
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/templates/sitemap-template/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Sitemap Template
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/templates/robots/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Robots.txt
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/templates/internal/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Internal Templates
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/templates/alternatives/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Alternative Templating
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/templates/template-debugging/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Template Debugging
+            </a>
+          </li>
+        </ul>
+      </li>
+      
+      <li class="f5 w-100 hover-bg-light-gray hover-accent-color-light fw8">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".functions">Functions</a>
+        <ul class="functions desktopmenu animated fadeIn list pl0 bg-light-gray dn">
+          <li class="f6 fw4">
+            <a href="/functions/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Functions Quick Reference
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/adddate/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              .AddDate
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/format/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              .Format
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/get/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              .Get
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/getpage/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              .GetPage
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/hasmenucurrent/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              .HasMenuCurrent
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/ismenucurrent/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              .IsMenuCurrent
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/param/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              .Param
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/render/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              .Render
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/renderstring/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              .RenderString
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/scratch/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              .Scratch
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/unix/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              .Unix
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/abslangurl/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              absLangURL
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/absurl/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              absURL
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/after/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              after
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/anchorize/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              anchorize
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/append/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              append
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/apply/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              apply
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/base64/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              base64
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/chomp/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              chomp
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/complement/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              complement
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/cond/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              cond
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/countrunes/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              countrunes
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/countwords/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              countwords
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/default/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              default
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/delimit/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              delimit
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/dict/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              dict
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/echoparam/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              echoParam
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/emojify/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              emojify
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/eq/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              eq
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/errorf/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              errorf and warnf
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/fileexists/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              fileExists
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/findre/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              findRE
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/first/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              first
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/float/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              float
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/ge/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              ge
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/getenv/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              getenv
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/group/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              group
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/gt/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              gt
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/hasprefix/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              hasPrefix
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/highlight/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              highlight
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/hmac/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              hmac
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/htmlescape/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              htmlEscape
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/htmlunescape/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              htmlUnescape
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/hugo/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              hugo
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/humanize/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              humanize
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/i18n/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              i18n
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/images/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Image Functions
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/in/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              in
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/index-function/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              index
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/int/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              int
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/intersect/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              intersect
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/isset/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              isset
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/jsonify/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              jsonify
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/lang/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              lang
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/lang.merge/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              lang.Merge
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/last/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              last
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/le/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              le
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/len/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              len
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/lower/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              lower
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/lt/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              lt
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/markdownify/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              markdownify
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/math/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Math
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/md5/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              md5
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/merge/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              merge
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/ne/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              ne
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/now/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              now
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/os.stat/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              os.Stat
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/partialcached/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              partialCached
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/path.base/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              path.Base
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/path.dir/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              path.Dir
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/path.ext/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              path.Ext
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/path.join/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              path.Join
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/path.split/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              path.Split
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/plainify/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              plainify
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/pluralize/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              pluralize
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/print/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              print
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/printf/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              printf
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/println/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              println
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/querify/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              querify
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/range/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              range
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/readdir/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              readDir
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/readfile/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              readFile
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/ref/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              ref
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/reflect.ismap/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              reflect.IsMap
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/reflect.isslice/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              reflect.IsSlice
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/rellangurl/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              relLangURL
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/relref/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              relref
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/relurl/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              relURL
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/replace/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              replace
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/replacere/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              replaceRE
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/safecss/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              safeCSS
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/safehtml/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              safeHTML
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/safehtmlattr/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              safeHTMLAttr
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/safejs/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              safeJS
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/safeurl/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              safeURL
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/seq/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              seq
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/sha/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              sha
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/shuffle/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              shuffle
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/singularize/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              singularize
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/site/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              site
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/slice/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              slice
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/slicestr/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              slicestr
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/sort/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              sort
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/split/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              split
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/string/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              string
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/strings.count/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              strings.Count
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/strings.hassuffix/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              strings.HasSuffix
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/strings.repeat/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              strings.Repeat
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/strings.runecount/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              strings.RuneCount
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/strings.trimleft/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              strings.TrimLeft
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/strings.trimprefix/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              strings.TrimPrefix
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/strings.trimright/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              strings.TrimRight
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/strings.trimsuffix/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              strings.TrimSuffix
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/substr/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              substr
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/symdiff/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              symdiff
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/templates.exists/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              templates.Exists
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/time/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              time
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/dateformat/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              time.Format
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/title/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              title
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/transform.unmarshal/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              transform.Unmarshal
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/trim/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              trim
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/truncate/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              truncate
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/union/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              union
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/uniq/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              uniq
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/upper/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              upper
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/urlize/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              urlize
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/urls.parse/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              urls.Parse
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/where/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              where
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/with/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              with
+            </a>
+          </li>
+        </ul>
+      </li>
+      
+      <li class="f5 w-100 hover-bg-light-gray hover-accent-color-light fw8">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".variables">Variables</a>
+        <ul class="variables desktopmenu animated fadeIn list pl0 bg-light-gray dn">
+          <li class="f6 fw4">
+            <a href="/variables/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Variables Overview
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/variables/site/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Site Variables
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/variables/page/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Page Variables
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/variables/shortcodes/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Shortcode Variables
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/variables/pages/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Pages Methods
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/variables/taxonomy/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Taxonomy Variables
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/variables/files/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              File Variables
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/variables/menus/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Menu Entry Properties
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/variables/hugo/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Hugo Variables
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/variables/git/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Git Variables
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/variables/sitemap/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Sitemap Variables
+            </a>
+          </li>
+        </ul>
+      </li>
+      
+      <li class="f5 w-100 hover-bg-light-gray hover-accent-color-light fw8">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".pipes">Hugo Pipes</a>
+        <ul class="pipes desktopmenu animated fadeIn list pl0 bg-light-gray dn">
+          <li class="f6 fw4">
+            <a href="/hugo-pipes/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Hugo Pipes Overview
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/hugo-pipes/introduction/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Hugo Pipes Introduction
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/hugo-pipes/scss-sass/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              SASS / SCSS
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/hugo-pipes/postprocess/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              PostProcess
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/hugo-pipes/postcss/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              PostCSS
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/hugo-pipes/js/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              JavaScript Building
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/hugo-pipes/babel/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Babel
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/hugo-pipes/minification/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Asset minification
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/hugo-pipes/bundling/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Asset bundling
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/hugo-pipes/fingerprint/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Fingerprinting and SRI
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/hugo-pipes/resource-from-template/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Resource from Template
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/hugo-pipes/resource-from-string/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Resource from String
+            </a>
+          </li>
+        </ul>
+      </li>
+      
+      <li class="f5 w-100 hover-bg-light-gray hover-accent-color-light fw8 mb1 bb b--moon-gray">
+        <a href="/commands/" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".commands">CLI</a>
+      </li>
+      
+      <li class="f5 w-100 hover-bg-light-gray hover-accent-color-light fw8">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".troubleshooting">Troubleshooting</a>
+        <ul class="troubleshooting desktopmenu animated fadeIn list pl0 bg-light-gray dn">
+          <li class="f6 fw4">
+            <a href="/troubleshooting/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Troubleshoot
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/troubleshooting/faq/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              FAQ
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/troubleshooting/build-performance/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Build Performance
+            </a>
+          </li>
+        </ul>
+      </li>
+      
+      <li class="f5 w-100 hover-bg-light-gray hover-accent-color-light fw8">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".tools">Tools</a>
+        <ul class="tools desktopmenu animated fadeIn list pl0 bg-light-gray dn">
+          <li class="f6 fw4">
+            <a href="/tools/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Developer Tools Overview
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/tools/migrations/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Migrations
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/tools/starter-kits/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Starter Kits
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/tools/frontends/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Frontends
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/tools/editors/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Editor Plug-ins
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/tools/search/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Search
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/tools/other/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Other Projects
+            </a>
+          </li>
+        </ul>
+      </li>
+      
+      <li class="f5 w-100 hover-bg-light-gray hover-accent-color-light fw8">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".hosting-and-deployment">Hosting &amp; Deployment</a>
+        <ul class="hosting-and-deployment desktopmenu animated fadeIn list pl0 bg-light-gray dn">
+          <li class="f6 fw4">
+            <a href="/hosting-and-deployment/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Hosting &amp; Deployment Overview
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/hosting-and-deployment/hugo-deploy/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Hugo Deploy
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/hosting-and-deployment/deployment-with-nanobox/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Host-Agnostic Deploys with Nanobox
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/hosting-and-deployment/hosting-on-aws-amplify/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Host on AWS Amplify
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/hosting-and-deployment/hosting-on-netlify/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Host on Netlify
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/hosting-and-deployment/hosting-on-render/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Host on Render
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/hosting-and-deployment/hosting-on-firebase/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Host on Firebase
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/hosting-and-deployment/hosting-on-github/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Host on GitHub
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/hosting-and-deployment/hosting-on-gitlab/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Host on GitLab
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/hosting-and-deployment/hosting-on-keycdn/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Hosting on KeyCDN
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/hosting-and-deployment/hosting-on-bitbucket/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Host on Bitbucket
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/hosting-and-deployment/deployment-with-wercker/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Deployment with Wercker
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/hosting-and-deployment/deployment-with-rsync/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Deployment with Rsync
+            </a>
+          </li>
+        </ul>
+      </li>
+      
+      <li class="f5 w-100 hover-bg-light-gray hover-accent-color-light fw8 mb1 bb b--moon-gray">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".contribute">Contribute</a>
+        <ul class="contribute desktopmenu animated fadeIn list pl0 bg-light-gray dn">
+          <li class="f6 fw4">
+            <a href="/contribute/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Contribute to Hugo
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/contribute/development/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Development
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/contribute/documentation/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Documentation
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/contribute/themes/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Themes
+            </a>
+          </li>
+        </ul>
+      </li>
+      
+      <li class="f5 w-100 hover-bg-light-gray hover-accent-color-light fw8">
+        <a href="/maintenance/" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".">Maintenance</a>
+      </li>
+  </ul>
+</nav>
+
+      </div>
+
+    </div>
+  </article>
+
+  <div class="w-100 bg-light-gray">
+    <div class="mw7 pa4 center nested-lh-copy lh-copy">
+      <h6 class="f4 dark-gray mb2">
+  <a href="https://gohugo.io/templates/output-formats/" class="hide-child link primary-color">
+  <span class="nl3 child"><svg class="grow" fill="" height="14px" viewBox="0 0 24 24" width="14px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg>
+</span>
+    “Custom Output Formats”
+  </a> was last updated: June 16, 2020: <a class="hide-child link primary-color" href="https://github.com/gohugoio/hugoDocs/commit/bc0b484d1b65fec3593ee56a1594ce3bcacc83db">Rename taxonomy kinds from taxonomy to term, taxonomyTerm to taxonomy (bc0b484d1)</a>
+</h6>
+
+      <a href="https://github.com/gohugoio/hugoDocs/edit/master/content/en/templates%5coutput-formats.md" class="
+f6 ph3 pv1 br2 dib  tc ttu mv3 bg-primary-color white hover-bg-green link
+">Improve this page</a>
+
+      
+
+
+    </div>
+  </div>
+
+  </main>
+
+  <footer class="bg-primary-color-dark ph4-ns pt4 relative w-100" role="contentinfo">
+    <div class="center flex-ns flex-wrap justify-between mw9 w-90">
+      <div class="pb3 pt4 w-100 w-50-ns">
+
+         <div class="b f3  light-gray mb3 nested-links tc">
+           By the <a href="https://github.com/gohugoio/hugo/graphs/contributors" class="link">Hugo Authors</a><br />
+          </div>
+
+          <div class="center w4">
+            <img src="/images/hugo-logo-wide.svg" alt="Hugo Logo">
+          </div>
+
+          <ul class="center f6 list ma0 mv3 pa0 tc"><li class="dib mr3"><a href="https://github.com/gohugoio/hugo/issues/new" class="dim link light-gray pv2">File an Issue</a></li><li class="dib mr3"><a href="https://discourse.gohugo.io/" class="dim link light-gray pv2">Get Help</a></li><li class="dib"><a href="https://gitter.im/spf13/hugo" class="dim link light-gray pv2">Discuss Source Code</a></li></ul>
+
+          <ul class="center f6 list ma0 mv4 pa0 tc">
+            <li class="dib mr3"><a href="https://twitter.com/gohugoio" class="dim link light-gray pv2">@GoHugoIO</a></li>
+            <li class="dib mr3"><a href="https://twitter.com/spf13" class="dim link light-gray pv2">@spf13</a></li>
+            <li class="dib"><a href="https://twitter.com/bepsays" class="dim link light-gray pv2">@bepsays</a></li>
+          </ul>
+
+          
+
+      </div>
+
+      <div class="w-100 w-50-l"> 
+        
+
+
+  <section class="pb3 w-100">
+    <div class="center mw9"> 
+      <h3 class="b f3 mv0 light-gray">Hugo Sponsors</h3>
+      <div class="flex-ns flex-wrap center justify-between pt3">
+        
+          
+          
+            <div class="ba b--dark-gray bg-light-gray br3 flex flex-column flex-wrap items-center justify-center ph3 pv4 mb4 w-100 w-30-l  o-100">
+              
+                
+                   <a href="https://www.linode.com/?utm_campaign=hugosponsor&amp;utm_medium=banner&amp;utm_source=homepage" class="grow">
+                
+              <img src="/images/sponsors/linode-logo_standard_light_medium.png" alt="Logo for Linode" class="img h3 center" />
+              </a>
+              
+            </div>
+          
+        
+          
+          
+            <div class="ba b--dark-gray bg-light-gray br3 flex flex-column flex-wrap items-center justify-center ph3 pv4 mb4 w-100 w-30-l  o-100">
+              
+                
+                   <a href="https://esolia.com/post/why-did-esolia-choose-hugo/?utm_campaign=hugosponsor&amp;utm_medium=banner&amp;utm_source=homepage" class="grow">
+                
+              <img src="/images/sponsors/esolia-logo.svg" alt="Logo for eSolia" class="img h3 center" />
+              </a>
+              
+            </div>
+          
+        
+          
+          
+            <div class="ba b--dark-gray bg-light-gray br3 flex flex-column flex-wrap items-center justify-center ph3 pv4 mb4 w-100 w-30-l  o-100" style="background-color: #5A2FA1;">
+              
+                
+                   <a href="https://brave.com/?utm_campaign=hugosponsor&amp;utm_medium=banner&amp;utm_source=homepage" class="grow">
+                
+              <img src="/images/sponsors/brave-logo.svg" alt="Logo for Brave" class="img h3 center" />
+              </a>
+              
+            </div>
+          
+        
+      </div>
+    </div>
+  </section>
+
+
+      </div>
+
+    </div>
+
+    <div class="f7 gray mb5 mb0-ns ph3 w-100"> 
+      <p class="dib mr4">The Hugo logos are copyright © Steve Francia 2013–2021.</p>
+      <p class="dib">The Hugo Gopher is based on an original work by Renée French.</p>
+    </div>
+
+    <img src="/images/gopher-side_color.svg" alt="" class="absolute-l bottom-0 dn db-l h4 right-0 z-999"/>
+
+    <div class="bg-primary-color-dark bottom-0 left-0 right-0 dn-l fixed pb3 ph3 w-100"><div  class="globalmenu mobilemenu pb3 dn">
+    
+
+<ul class="list hidden dib ph0 ma0 scrolling-touch tc">
+  
+    <li  class="tl dib ma0 hover-bg-black w-100">
+        <a href="/news/" class="ttu f6 link primary-color-light overflow hover-white db brand-font  ma0 w-100 pv3 ph4">
+          News
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100">
+        <a href="/documentation/" class="ttu f6 link primary-color-light overflow hover-white db brand-font  ma0 w-100 pv3 ph4">
+          Docs
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100">
+        <a href="https://themes.gohugo.io/" class="ttu f6 link primary-color-light overflow hover-white db brand-font  ma0 w-100 pv3 ph4">
+          Themes
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100">
+        <a href="/showcase/" class="ttu f6 link primary-color-light overflow hover-white db brand-font  ma0 w-100 pv3 ph4">
+          Showcase
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100">
+        <a href="https://discourse.gohugo.io/" class="ttu f6 link primary-color-light overflow hover-white db brand-font  ma0 w-100 pv3 ph4">
+          Community
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100">
+        <a href="https://github.com/gohugoio/hugo" class="ttu f6 link primary-color-light overflow hover-white db brand-font  ma0 w-100 pv3 ph4">
+          GitHub
+        </a>
+    </li>
+  
+</ul>
+
+</div>
+<div  class="docsmenu mobilemenu pb3 dn">
+    
+
+<ul class="list dib ph0 ma0 scrolling-touch tc">
+  
+    <li  class="tl dib ma0 hover-bg-black w-100">
+        <a href="/about/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
+          About Hugo
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100">
+        <a href="/getting-started/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
+          Getting Started
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100 mb2 bb b--mid-gray">
+        <a href="/hugo-modules/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
+          Hugo Modules
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100">
+        <a href="/content-management/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
+          Content Management
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100">
+        <a href="/templates/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
+          Templates
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100">
+        <a href="/functions/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
+          Functions
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100">
+        <a href="/variables/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
+          Variables
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100">
+        <a href="/hugo-pipes/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
+          Hugo Pipes
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100 mb2 bb b--mid-gray">
+        <a href="/commands/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
+          CLI
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100">
+        <a href="/troubleshooting/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
+          Troubleshooting
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100">
+        <a href="/tools/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
+          Tools
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100">
+        <a href="/hosting-and-deployment/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
+          Hosting &amp; Deployment
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100 mb2 bb b--mid-gray">
+        <a href="/contribute/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
+          Contribute
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100">
+        <a href="/maintenance/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
+          Maintenance
+        </a>
+    </li>
+  
+</ul>
+
+</div>
+
+<div class="flex dn-l justify-between">
+  <button class="js-toggle flex-auto dib dn-l f6 tc db mt4-ns ph3 pv2 link mr2 white bg-primary-color-dark hover-bg-primary-color ba b--white-40 w-auto" data-target=".globalmenu">Menu</button>
+
+  <button class="js-toggle flex-auto dib dn-l f6 tc db mt4-ns ph3 pv2 link white bg-primary-color-dark hover-bg-primary-color ba b--white-40 w-auto" data-target=".docsmenu">Docs Menu</button>
+</div>
+</div>
+
+</footer>
+
+
+</body>
+
+</html>

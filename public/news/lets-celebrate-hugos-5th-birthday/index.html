@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+  
+  <link rel="preload" href="https://gohugo.io/fonts/muli-latin-200.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="https://gohugo.io/fonts/muli-latin-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="https://gohugo.io/fonts/muli-latin-800.woff2" as="font" type="font/woff2" crossorigin>
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <title>Let’s celebrate Hugo’s 5th birthday | Hugo</title>
+
+  <meta name="viewport" content="width=device-width,minimum-scale=1">
+  <meta name="generator" content="Hugo 0.87.0" />
+
+  
+  <meta name="robots" content="noindex, nofollow">
+  
+
+  
+  
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/output/css/app.min.bab83909a2f2fe2aa45bf7e4813899f4f705e6858479cea5bd48eee72fdf0a70.css" integrity="sha256-urg5CaLy/iqkW/fkgTiZ9PcF5oWEec6lvUju5y/fCnA=" crossorigin="anonymous">
+  
+  
+  
+
+  <meta name="description"
+  content="How a side project became one of the most popular frameworks for building websites.">
+
+  
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/output/js/app.0984bf5469ab3c8aa82cf8eb015a560d74ee028723b1ab38e928998f5f72baba.js" integrity="sha256-CYS/VGmrPIqoLPjrAVpWDXTuAocjsas46SiZj19yuro=" crossorigin="anonymous" defer></script>
+  
+      
+ 
+
+
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+  
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0594cb">
+<meta name="theme-color" content="#ffffff">
+<meta property="og:title" content="Let’s celebrate Hugo’s 5th birthday" />
+<meta property="og:description" content="How a side project became one of the most popular frameworks for building websites." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://gohugo.io/news/lets-celebrate-hugos-5th-birthday/" /><meta property="og:image" content="https://gohugo.io/news/lets-celebrate-hugos-5th-birthday/featured.png"/><meta property="article:section" content="news" />
+<meta property="article:published_time" content="2018-07-04T00:00:00+00:00" />
+<meta property="article:modified_time" content="2019-10-21T10:22:28+02:00" />
+
+<meta itemprop="name" content="Let’s celebrate Hugo’s 5th birthday">
+<meta itemprop="description" content="How a side project became one of the most popular frameworks for building websites."><meta itemprop="datePublished" content="2018-07-04T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2019-10-21T10:22:28+02:00" />
+<meta itemprop="wordCount" content="1593"><meta itemprop="image" content="https://gohugo.io/news/lets-celebrate-hugos-5th-birthday/featured.png">
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://gohugo.io/news/lets-celebrate-hugos-5th-birthday/featured.png"/>
+<meta name="twitter:title" content="Let’s celebrate Hugo’s 5th birthday"/>
+<meta name="twitter:description" content="How a side project became one of the most popular frameworks for building websites."/>
+<meta name="twitter:site" content="@GoHugoIO"/>
+
+
+</head>
+
+<body class="ma0 sans-serif bg-primary-color-light">
+  
+<nav class="bg-primary-color-dark pv4 w-100" role="navigation">
+
+  <div class="center flex-ns flex-wrap items-center justify-start mw9">
+
+    <h1 class="dim f3 lh-solid ml0-ns mr0 mr4-l mv0 pl3 pl4-ns">
+      <a href="https://gohugo.io/" class="link white">
+         HUGO
+      </a>
+    </h1>
+    <ul class="list ma0 pa0 dn dib-l">
+      
+        <li class="f5 dib mr4" role="menuitem">
+            
+          <a href="/news/" class="dim link light-silver">
+            News
+              
+            
+            
+          </a>
+        </li>
+      
+        <li class="f5 dib mr4" role="menuitem">
+            
+          <a href="/documentation/" class="dim link light-silver">
+            Docs
+              
+            
+            
+          </a>
+        </li>
+      
+        <li class="f5 dib mr4" role="menuitem">
+            
+          <a href="https://themes.gohugo.io/" class="dim link light-silver">
+            Themes
+              
+            
+            
+          </a>
+        </li>
+      
+        <li class="f5 dib mr4" role="menuitem">
+            
+          <a href="/showcase/" class="dim link light-silver">
+            Showcase
+              
+            
+            
+          </a>
+        </li>
+      
+        <li class="f5 dib mr4" role="menuitem">
+            
+          <a href="https://discourse.gohugo.io/" class="dim link light-silver">
+            Community
+              
+            
+            
+              <span class="pl1">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10" height="10" viewBox="0 0 32 32" class="fill-current v-base" aria-label="External Link">
+<path d="M25.152 16.576v5.696q0 2.144-1.504 3.648t-3.648 1.504h-14.848q-2.144 0-3.648-1.504t-1.504-3.648v-14.848q0-2.112 1.504-3.616t3.648-1.536h12.576q0.224 0 0.384 0.16t0.16 0.416v1.152q0 0.256-0.16 0.416t-0.384 0.16h-12.576q-1.184 0-2.016 0.832t-0.864 2.016v14.848q0 1.184 0.864 2.016t2.016 0.864h14.848q1.184 0 2.016-0.864t0.832-2.016v-5.696q0-0.256 0.16-0.416t0.416-0.16h1.152q0.256 0 0.416 0.16t0.16 0.416zM32 1.152v9.12q0 0.48-0.352 0.8t-0.8 0.352-0.8-0.352l-3.136-3.136-11.648 11.648q-0.16 0.192-0.416 0.192t-0.384-0.192l-2.048-2.048q-0.192-0.16-0.192-0.384t0.192-0.416l11.648-11.648-3.136-3.136q-0.352-0.352-0.352-0.8t0.352-0.8 0.8-0.352h9.12q0.48 0 0.8 0.352t0.352 0.8z"></path>
+</svg>
+
+              </span>
+            
+          </a>
+        </li>
+      
+        <li class="f5 dib mr4" role="menuitem">
+            
+          <a href="https://github.com/gohugoio/hugo" class="dim link light-silver">
+            GitHub
+              
+            
+            
+              <span class="pl1">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10" height="10" viewBox="0 0 32 32" class="fill-current v-base" aria-label="External Link">
+<path d="M25.152 16.576v5.696q0 2.144-1.504 3.648t-3.648 1.504h-14.848q-2.144 0-3.648-1.504t-1.504-3.648v-14.848q0-2.112 1.504-3.616t3.648-1.536h12.576q0.224 0 0.384 0.16t0.16 0.416v1.152q0 0.256-0.16 0.416t-0.384 0.16h-12.576q-1.184 0-2.016 0.832t-0.864 2.016v14.848q0 1.184 0.864 2.016t2.016 0.864h14.848q1.184 0 2.016-0.864t0.832-2.016v-5.696q0-0.256 0.16-0.416t0.416-0.16h1.152q0.256 0 0.416 0.16t0.16 0.416zM32 1.152v9.12q0 0.48-0.352 0.8t-0.8 0.352-0.8-0.352l-3.136-3.136-11.648 11.648q-0.16 0.192-0.416 0.192t-0.384-0.192l-2.048-2.048q-0.192-0.16-0.192-0.384t0.192-0.416l11.648-11.648-3.136-3.136q-0.352-0.352-0.352-0.8t0.352-0.8 0.8-0.352h9.12q0.48 0 0.8 0.352t0.352 0.8z"></path>
+</svg>
+
+              </span>
+            
+          </a>
+        </li>
+      
+    </ul>
+
+    <div class="db dib-ns pl3"><form id="site-search-form" action="" role="search">
+  <fieldset class="bn ma0 pa0">
+    <label class="clip" for="search-input">Search</label>
+    <input type="search" id="search-input" class="needs-js bg-left bn f5 input-reset lh-solid mt3 mt0-ns pl4 pv2 w5 white" placeholder="Search the Docs" name="search-input" value="" style="background: url('/images/icon-search.png') 5px 11px/16px 16px no-repeat; background-color: rgba(255,255,255,0);">
+  </fieldset>
+</form></div>
+
+    <span class="absolute mt1 mt2-l pr3 right-0 top-0">
+
+  <a href="https://twitter.com/intent/follow?screen_name=GoHugoIO" title="Follow on Twitter" class="link-transition twitter link dib z-999 pt3 pt0-l mr2">
+    <svg height="32px" id="Layer_1" style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
+
+  </a>
+
+<a class="github-button needs-js link primary-color-dark" href="https://github.com/gohugoio/hugo" data-size="large" data-show-count="false" aria-label="Star gohugoio/hugo on GitHub">Star</a>
+</span>
+
+  </div>
+</nav>
+
+  
+  <main role="main" class="content-with-sidebar min-vh-100 pb7 pb0-ns">
+    
+  
+
+  <article class="cf ph4 pv3 pv5-ns">
+      
+    <header class="flex-none w-100 pb3">
+      
+        
+          <a href="/categories/blog" class="f6 fw8 mb0 link mid-gray dim mr3">
+            BLOG
+          </a>
+        
+      
+
+      <h1 class="lh-title fw9 mb7 mv0 pt3">
+        <a href="/news/lets-celebrate-hugos-5th-birthday/" class="link primary-color dim">
+          Let’s celebrate Hugo’s 5th birthday
+        </a>
+      </h1>
+    </header>
+
+    <div class="flex-l">
+      <aside class="mid-gray fn w-100 w-25-l">
+        
+          <h2 class="f3 lh-title">
+            How a side project became one of the most popular frameworks for building websites.
+          </h2>
+        
+        <time class="f6 mt2 db ttu tracked" datetime="2018-07-04T00:00:00Z">
+          July 4, 2018
+        </time>
+        
+        
+
+        <div class="nested-links mt4">
+
+	<div date-pref>
+		
+			<a href="https://gohugo.io/news/0.43-relnotes/" class="dib f6 pl1 hover-bg-light-gray br-100" title="And Now: Hugo Pipes! ">
+				<svg class="fill-current" height="30px" viewBox="0 0 24 24" width="30px" xmlns="http://www.w3.org/2000/svg">
+    <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
+    <path d="M0 0h24v24H0z" fill="none"/>
+</svg>
+
+			</a>
+		
+
+		
+			<a href="https://gohugo.io/news/0.42.2-relnotes/" class="dib f6 pr1 hover-bg-light-gray br-100" title="Hugo 0.42.2: One Bug Fix">
+			<svg class="fill-current" height="30px" viewBox="0 0 24 24" width="30px" xmlns="http://www.w3.org/2000/svg">
+    <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
+    <path d="M0 0h24v24H0z" fill="none"/>
+</svg>
+
+			</a>
+		
+	</div>
+
+</div>
+
+      </aside>
+
+      <div class="fn pl5-l pt3 mid-gray w-100 w-two-third-l sans-serif nested-copy-line-height no-underline nested-links nested-img nested-copy-seperator nested-blockquote measure-wide-l">
+        
+          
+          
+          
+          <img src="/news/lets-celebrate-hugos-5th-birthday/featured_hu30cb938a182ebd06b50ed15d006d8f64_179291_480x0_resize_catmullrom_3.png" alt="Featured Image for Let’s celebrate Hugo’s 5th birthday" class="mw-100">
+          
+          
+        <p><em>By Bjørn Erik Pedersen (<a href="https://twitter.com/bepsays">@bepsays</a> / <a href="https://github.com/bep">@bep</a>), Hugo Lead</em></p>
+<p><strong>Five years ago today, <a href="https://github.com/spf13/">Steve Francia</a> made his <a href="https://github.com/gohugoio/hugo/commit/50a1d6f3f155ab837310e00ffb309a9199773c73">first commit</a> on the Hugo project: &ldquo;Hugo: A Fast and Flexible Static Site Generator built with love by spf13 in GoLang&rdquo;.</strong></p>
+<p>Steve was writing that on a train commute to New York. I&rsquo;m writing this article running Hugo <code>v0.43-DEV</code>, the preview version of the next Hugo release. The release is scheduled for Monday and adds a powerful <a href="https://github.com/gohugoio/hugo/issues/4854#issue-333062459">assets pipeline</a>, with SCSS/SASS support, assets minification, fingerprinting/subresource integrity, ad-hoc image processing and much more.</p>
+<p><strong>I cannot remember the last time I was this excited about a Hugo release. &ldquo;Game changer&rdquo; may be too strong, but it makes for a really nice integrated website design-workflow that, with Hugo&rsquo;s build speed, is hard to beat.</strong></p>
+
+
+
+
+
+
+
+<figure style="padding: 0.25rem; margin: 2rem 0; background-color: #cccc">
+	<img style="max-width: 100%; width: auto; height: auto;" src="/news/lets-celebrate-hugos-5th-birthday/sunset-get_hud0ada96a3532fb27dcd0de96bcce0679_358844_600x300_fill_catmullrom_smart1_3.png" width="600" height="300">
+	<figcaption>
+	<small>
+	
+	
+Fetch and scale an image in the upcoming Hugo 0.43.
+
+	
+	</small>
+	</figcaption>
+</figure>
+<p>But that is a release for Monday. Now is a time to look at the current status of Hugo after the first five years.</p>
+<h2 id="hugo-in-numbers">Hugo in Numbers <a class="header-link" href="#hugo-in-numbers"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
+<p>According to <a href="https://trends.builtwith.com/cms/Hugo">BuiltWith</a>, more than 29 000 live websites are built with Hugo. Of those, 390 are in the top 1 million. Wappalyzer <a href="https://www.wappalyzer.com/categories/static-site-generator">reports</a> that Hugo serves almost 50% of the static sites.</p>
+<p>Hugo is big in the <a href="https://discourse.gohugo.io/t/hugo-in-public-administration/8792">public sector</a>, with the US Government as a prominent user. Some examples are <a href="https://vote.gov/">vote.gov</a> and <a href="https://digital.gov/">digital.gov</a>.</p>
+<p><a href="https://www.smashingmagazine.com/">Smashing Magazine</a> is a big and very popular Hugo site. It is <a href="https://discourse.gohugo.io/t/smashing-magazine-s-redesign-powered-by-hugo-jamstack/5826/7">reported</a> that they build their complex site with 7500 content pages in 13 seconds.</p>
+<p>Some other example sites are <a href="https://kubernetes.io/">kubernetes.io</a>, <a href="https://gohugo.io/showcase/letsencrypt/">letsencrypt.org</a>, <a href="http://gohugo.io/showcase/1password-support/">support.1password.com</a>, <a href="https://www.netlify.com">netlify.com</a>, <a href="https://litecoin.org/">litecoin.org</a>, and <a href="https://forestry.io/">forestry.io</a>.</p>
+
+
+
+
+
+
+
+<figure style="padding: 0.25rem; margin: 2rem 0; background-color: #cccc">
+	<img style="max-width: 100%; width: auto; height: auto;" src="/news/lets-celebrate-hugos-5th-birthday/graph-stars_hu169ba15a8bcaf4ddd6a5a1aa8505c448_15599_600x400_fit_catmullrom_3.png" width="600" height="370">
+	<figcaption>
+	<small>
+	
+	
+Number of GitHub stars in relation to the Hugo release dates.
+
+	
+	</small>
+	</figcaption>
+</figure>
+<p>More numbers:</p>
+<ul>
+<li>26800+ <a href="https://github.com/gohugoio/hugo/stargazers">stars</a> on GitHub.</li>
+<li>444+ <a href="https://github.com/gohugoio/hugo/graphs/contributors">contributors</a> to the Hugo source repository, 654+ to <a href="https://github.com/gohugoio/hugoDocs/graphs/contributors">Hugo Docs</a>. <a href="https://github.com/bep">@bep</a> is the most active with around 70% of the current code base (line count).</li>
+<li>235+ <a href="https://themes.gohugo.io/">themes</a></li>
+<li>50% increase in the number of user sessions on the <a href="https://gohugo.io/">gohugo.io</a> web sites the last 12 months.<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></li>
+<li>Hugo build release binaries for <a href="https://github.com/gohugoio/hugo/releases/tag/v0.42.2">a myriad</a> of platforms. And since it can also be installed from Chocolatey on Windows, Brew on MacOs, Snap on Linux and <code>apt-get</code> on Debian/Ubuntu, it is impossible to give accurate download numbers. But the number is not small.</li>
+</ul>
+<h2 id="hugo-next">Hugo Next <a class="header-link" href="#hugo-next"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
+<p>We&rsquo;re not finished with Hugo, but Hugo <code>0.43</code> very nicely wraps up the first five years. It started out as a small and fast static site generator. It is now <a href="https://forestry.io/blog/hugo-vs-jekyll-benchmark/">even faster</a>, and now so loaded with features that it has grown out of being just a &ldquo;static site generator&rdquo;. It is a <em>framework for building websites</em>.</p>
+<p>My interest in Hugo started on the Sunday when I moved my blog, <a href="https://bepsays.com/en/">bepsays.com</a>, twice. The second static generator choice of that day, Hugo, was a good match. I remember Steve being very enthusiastic about getting patches with fixes and enhancements, and I was eventually taken over by the simplicity and power of Go, the programming language, and started to implement lots of new features.</p>
+<p>My goal with all of this, if there is one, is to get a single binary with native and really fast implementations of the complete stack I need for web development and content editing. The single binary takes most of the pain out of installation and upgrades (if you stick with the same binary, it will continue to just work for decades).</p>
+<p><strong>With 0.43, we are almost there.</strong> With that release, it should be possible to set up a Hugo-only project without any additional tools (Gulp, WebPack) for all aspects of website building. There will still be situations where those tools will still be needed, of course, but we will continue to fill the gaps in the feature set.</p>
+<p>Hugo has stuck with the sub-zero versions to signal active development, with a new main release every 5-6 weeks. But we take stability very seriously (breaking things add lots of support work, we don&rsquo;t like that) and most site upgrades are <a href="https://twitter.com/tmmx/status/1006288444459503616">smooth</a>. But we are closing in on the first major stable version.</p>
+<h3 id="the-road-to-10">The Road to 1.0 <a class="header-link" href="#the-road-to-10"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
+<p>We have some more technical tasks that needs to be done (there is ongoing work to get the page queries into a more consistent state, also a simpler <code>.GetPage</code> method), but also some cool new functionality. The following roadmap is taken from memory, and may not be complete, but should be a good indication of what&rsquo;s ahead.</p>
+<dl>
+<dt>Pages from &ldquo;other data sources&rdquo;</dt>
+<dd>Currently, in addition to Hugo&rsquo;s list pages, every URL must be backed by a content file (Markdown, HTML etc.). This covers most use cases, but we need a flexible way to generate pages from other data sources. Think product catalogues and similar.</dd>
+<dt>Upgrade Blackfriday to v2</dt>
+<dd><a href="https://github.com/russross/blackfriday">Blackfriday</a> is the main content renderer in Hugo. It has been rewritten to a more flexible architecture, which should allow us to fix some of the current shortcomings.</dd>
+</dl>
+<p>We should be able to create a better and easier-to-use data structure from the rendered content: Summary, the content after the summary, being able to range over the footnotes and the ToC. Having ToC as a proper data structure also opens up a few other potential uses; using it as an index in <a href="https://gohugo.io/content-management/related/">Related Content</a> would be one example.</p>
+<p>This should also enable us to <em>do more</em> with <a href="/templates/output-formats">Custom Output Formats</a>. It is already very powerful. GettyPubs are using it in <a href="https://github.com/gettypubs/quire">Quire</a> to build <a href="http://www.getty.edu/publications/digital/digitalpubs.html">beautiful multi-platform publications</a>. But it can be improved. For rendering of content files, you are currently restricted to HTML. It would be great if we could configure alternative renderers per output format, such as LaTeX and EPUB.</p>
+<p>Related to this is also to add a configurable &ldquo;Markdown URL rewriter&rdquo;, which should make more portable URLs in Markdown, e.g. image links that work both when viewed on GitHub and your published site.</p>
+<h3 id="the-road-to-the-future">The Road to the Future <a class="header-link" href="#the-road-to-the-future"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
+<p>These are the items that first come to mind if you ask me to think even further ahead:</p>
+<dl>
+<dt>Dependency manager for Theme Components</dt>
+<dd>In Hugo <code>0.42</code> we added <a href="/themes/theme-components/">Theme Components</a> and Theme Inheritance. With SCSS support in Hugo <code>0.43</code>, which also follows the same project/themes precedence order (add <code>_variables.scss</code> to your project, configure SASS colour variables in <code>config.toml</code>), we have a solid foundation for creating easy to use and extensible themes. But we are missing some infrastructure around this. We have a site with 235+ <a href="https://themes.gohugo.io/">themes</a><sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup> listed, but you currently need to do some added work to get the theme up and running for your site. In the Go world, we don&rsquo;t have NPM to use, which is a curse and a blessing, but I have some ideas about building a simple dependency manager into Hugo, modelled after how Go is doing it (<code>hugo install</code>). You should be able to configure what theme and theme components you want to use, and Hugo should handle the installation of the correct versions. This should make it easier for the user, but it would also enable community driven and even commercial &ldquo;theme stores&rdquo;.</dd>
+</dl>
+
+
+
+
+
+
+
+<figure style="padding: 0.25rem; margin: 2rem 0; background-color: #cccc">
+	<img style="max-width: 100%; width: auto; height: auto;" src="/news/lets-celebrate-hugos-5th-birthday/graph-themes_hu25707bee0ec3007199f71bb29226f30c_16956_600x400_fit_catmullrom_3.png" width="600" height="370">
+	<figcaption>
+	<small>
+	
+	
+Number of Hugo themes on themes.gohugo.io in relation to the Hugo release dates.
+
+	
+	</small>
+	</figcaption>
+</figure>
+<dl>
+<dt>The &ldquo;New York Times on Hugo&rdquo; Use Case</dt>
+<dd>There are recurring questions on the support forum from <a href="https://discourse.gohugo.io/t/transition-2m-posts-from-wordpress-to-hugo/12704">really big sites</a> that want to move to Hugo. There are many <a href="https://www.netlify.com/blog/2016/05/18/9-reasons-your-site-should-be-static/">good reasons</a> why they want this (security, cost-saving, EU regulations etc.). And while there have been reports about companies building 600 000 pages with Hugo on very powerful hardware, we will have to rethink the build model to make this usable. Keywords are: streaming builds, segmented builds, partial rebuilds. There are other site generators also talking about this. It should be possible, and my instinct tells me that it should be easier to do when your starting point is &ldquo;really fast&rdquo;. But this is not a small weekend project for me, and I have already talked to several companies about sponsoring this.</dd>
+<dt>Plugins</dt>
+<dd>A Theme Component could also be called a plugin. But there are several potential plugin hooks into Hugo&rsquo;s build pipeline: resource transformations, content rendering, etc. We will eventually get there, but we should do it without giving up too much of the Hugo speed and simplicity.</dd>
+</dl>
+<h2 id="thanks">Thanks <a class="header-link" href="#thanks"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
+<p>So, thanks to everyone who has contributed to getting Hugo where it is today. It is hard to single out individuals, but a big shout-out to all the Hugo experts and moderators helping out making <a href="https://discourse.gohugo.io/">discourse.gohugo.io</a> a very active and possibly one of the best support forums out there.</p>
+<p>And the last shout-out goes to two maintainers who have been there more or less from the start. <a href="https://github.com/digitalcraftsman/">@digitalcraftsman</a> has been doing a fantastic job keeping the fast growing theme site and <a href="https://github.com/gohugoio/hugoThemes">repository</a> in pristine condition. I have it on my watch list, but that is just out of curiosity. There is lots of activity, but it runs as clock work. <a href="https://github.com/anthonyfok">Anthony Fok</a> has contributed with a variety of things but is most notable as the Linux expert on the team. He manages the Debian build and is the one to thank for up-to-date binaries on Debian and Ubuntu.</p>
+<p>One final note: If you have not done so already, please visit <a href="https://github.com/gohugoio/hugo">github.com/gohugoio/hugo</a> and push the &ldquo;star button&rdquo;.</p>
+<p>Gopher artwork by <a href="https://github.com/ashleymcnamara/gophers/">Ashley McNamara</a> (licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>). Inspired by <a href="https://reneefrench.blogspot.com/">Renee French</a>.</p>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>Numbers from Google Analytics. The Hugo websites are <a href="https://discourse.gohugo.io">https://discourse.gohugo.io</a>, <a href="https://gohugo.io">https://gohugo.io</a> and <a href="https://themes.gohugo.io">https://themes.gohugo.io</a>. It is rumoured that when <a href="https://twitter.com/biilmann?lang=en">Matt Biilman</a>, CEO and Co-founder of Netlify, opened the first power bill after sponsoring Hugo&rsquo;s hosting, said: &ldquo;Du må lave fis med mig, those Hugo sites have lots of web traffic!&rdquo;&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2" role="doc-endnote">
+<p>We pull all the themes from GitHub and build the theme site and 235 demo sites on Netlify in 4 minutes. That is impressive.&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+
+      </div>
+    </div>
+    
+
+      <div class="gray f6 mv6">
+        Last Update: October 21, 2019 <br>
+        <a href="https://github.com/gohugoio/hugoDocs/edit/master/content/en/news%5clets-celebrate-hugos-5th-birthday%5cindex.md" class="
+f6 ph3 pv1 br2 dib  tc ttu mv3 bg-primary-color white hover-bg-green link
+">Improve this page</a>
+
+      </div>
+
+  </article>
+
+
+  </main>
+
+  <footer class="bg-primary-color-dark ph4-ns pt4 relative w-100" role="contentinfo">
+    <div class="center flex-ns flex-wrap justify-between mw9 w-90">
+      <div class="pb3 pt4 w-100 w-50-ns">
+
+         <div class="b f3  light-gray mb3 nested-links tc">
+           By the <a href="https://github.com/gohugoio/hugo/graphs/contributors" class="link">Hugo Authors</a><br />
+          </div>
+
+          <div class="center w4">
+            <img src="/images/hugo-logo-wide.svg" alt="Hugo Logo">
+          </div>
+
+          <ul class="center f6 list ma0 mv3 pa0 tc"><li class="dib mr3"><a href="https://github.com/gohugoio/hugo/issues/new" class="dim link light-gray pv2">File an Issue</a></li><li class="dib mr3"><a href="https://discourse.gohugo.io/" class="dim link light-gray pv2">Get Help</a></li><li class="dib"><a href="https://gitter.im/spf13/hugo" class="dim link light-gray pv2">Discuss Source Code</a></li></ul>
+
+          <ul class="center f6 list ma0 mv4 pa0 tc">
+            <li class="dib mr3"><a href="https://twitter.com/gohugoio" class="dim link light-gray pv2">@GoHugoIO</a></li>
+            <li class="dib mr3"><a href="https://twitter.com/spf13" class="dim link light-gray pv2">@spf13</a></li>
+            <li class="dib"><a href="https://twitter.com/bepsays" class="dim link light-gray pv2">@bepsays</a></li>
+          </ul>
+
+          
+
+      </div>
+
+      <div class="w-100 w-50-l"> 
+        
+
+
+  <section class="pb3 w-100">
+    <div class="center mw9"> 
+      <h3 class="b f3 mv0 light-gray">Hugo Sponsors</h3>
+      <div class="flex-ns flex-wrap center justify-between pt3">
+        
+          
+          
+            <div class="ba b--dark-gray bg-light-gray br3 flex flex-column flex-wrap items-center justify-center ph3 pv4 mb4 w-100 w-30-l  o-100">
+              
+                
+                   <a href="https://www.linode.com/?utm_campaign=hugosponsor&amp;utm_medium=banner&amp;utm_source=homepage" class="grow">
+                
+              <img src="/images/sponsors/linode-logo_standard_light_medium.png" alt="Logo for Linode" class="img h3 center" />
+              </a>
+              
+            </div>
+          
+        
+          
+          
+            <div class="ba b--dark-gray bg-light-gray br3 flex flex-column flex-wrap items-center justify-center ph3 pv4 mb4 w-100 w-30-l  o-100">
+              
+                
+                   <a href="https://esolia.com/post/why-did-esolia-choose-hugo/?utm_campaign=hugosponsor&amp;utm_medium=banner&amp;utm_source=homepage" class="grow">
+                
+              <img src="/images/sponsors/esolia-logo.svg" alt="Logo for eSolia" class="img h3 center" />
+              </a>
+              
+            </div>
+          
+        
+          
+          
+            <div class="ba b--dark-gray bg-light-gray br3 flex flex-column flex-wrap items-center justify-center ph3 pv4 mb4 w-100 w-30-l  o-100" style="background-color: #5A2FA1;">
+              
+                
+                   <a href="https://brave.com/?utm_campaign=hugosponsor&amp;utm_medium=banner&amp;utm_source=homepage" class="grow">
+                
+              <img src="/images/sponsors/brave-logo.svg" alt="Logo for Brave" class="img h3 center" />
+              </a>
+              
+            </div>
+          
+        
+      </div>
+    </div>
+  </section>
+
+
+      </div>
+
+    </div>
+
+    <div class="f7 gray mb5 mb0-ns ph3 w-100"> 
+      <p class="dib mr4">The Hugo logos are copyright © Steve Francia 2013–2021.</p>
+      <p class="dib">The Hugo Gopher is based on an original work by Renée French.</p>
+    </div>
+
+    <img src="/images/gopher-side_color.svg" alt="" class="absolute-l bottom-0 dn db-l h4 right-0 z-999"/>
+
+    <div class="bg-primary-color-dark bottom-0 left-0 right-0 dn-l fixed pb3 ph3 w-100"><div  class="globalmenu mobilemenu pb3 dn">
+    
+
+<ul class="list hidden dib ph0 ma0 scrolling-touch tc">
+  
+    <li  class="tl dib ma0 hover-bg-black w-100">
+        <a href="/news/" class="ttu f6 link primary-color-light overflow hover-white db brand-font  ma0 w-100 pv3 ph4">
+          News
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100">
+        <a href="/documentation/" class="ttu f6 link primary-color-light overflow hover-white db brand-font  ma0 w-100 pv3 ph4">
+          Docs
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100">
+        <a href="https://themes.gohugo.io/" class="ttu f6 link primary-color-light overflow hover-white db brand-font  ma0 w-100 pv3 ph4">
+          Themes
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100">
+        <a href="/showcase/" class="ttu f6 link primary-color-light overflow hover-white db brand-font  ma0 w-100 pv3 ph4">
+          Showcase
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100">
+        <a href="https://discourse.gohugo.io/" class="ttu f6 link primary-color-light overflow hover-white db brand-font  ma0 w-100 pv3 ph4">
+          Community
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100">
+        <a href="https://github.com/gohugoio/hugo" class="ttu f6 link primary-color-light overflow hover-white db brand-font  ma0 w-100 pv3 ph4">
+          GitHub
+        </a>
+    </li>
+  
+</ul>
+
+</div>
+<div  class="docsmenu mobilemenu pb3 dn">
+    
+
+<ul class="list dib ph0 ma0 scrolling-touch tc">
+  
+    <li  class="tl dib ma0 hover-bg-black w-100">
+        <a href="/about/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
+          About Hugo
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100">
+        <a href="/getting-started/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
+          Getting Started
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100 mb2 bb b--mid-gray">
+        <a href="/hugo-modules/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
+          Hugo Modules
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100">
+        <a href="/content-management/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
+          Content Management
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100">
+        <a href="/templates/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
+          Templates
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100">
+        <a href="/functions/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
+          Functions
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100">
+        <a href="/variables/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
+          Variables
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100">
+        <a href="/hugo-pipes/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
+          Hugo Pipes
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100 mb2 bb b--mid-gray">
+        <a href="/commands/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
+          CLI
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100">
+        <a href="/troubleshooting/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
+          Troubleshooting
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100">
+        <a href="/tools/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
+          Tools
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100">
+        <a href="/hosting-and-deployment/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
+          Hosting &amp; Deployment
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100 mb2 bb b--mid-gray">
+        <a href="/contribute/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
+          Contribute
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100">
+        <a href="/maintenance/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
+          Maintenance
+        </a>
+    </li>
+  
+</ul>
+
+</div>
+
+<div class="flex dn-l justify-between">
+  <button class="js-toggle flex-auto dib dn-l f6 tc db mt4-ns ph3 pv2 link mr2 white bg-primary-color-dark hover-bg-primary-color ba b--white-40 w-auto" data-target=".globalmenu">Menu</button>
+
+  <button class="js-toggle flex-auto dib dn-l f6 tc db mt4-ns ph3 pv2 link white bg-primary-color-dark hover-bg-primary-color ba b--white-40 w-auto" data-target=".docsmenu">Docs Menu</button>
+</div>
+</div>
+
+</footer>
+
+
+</body>
+
+</html>

@@ -1,0 +1,2240 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+  
+  <link rel="preload" href="https://gohugo.io/fonts/muli-latin-200.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="https://gohugo.io/fonts/muli-latin-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="https://gohugo.io/fonts/muli-latin-800.woff2" as="font" type="font/woff2" crossorigin>
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <title>Image Processing | Hugo</title>
+
+  <meta name="viewport" content="width=device-width,minimum-scale=1">
+  <meta name="generator" content="Hugo 0.87.0" />
+
+  
+  <meta name="robots" content="noindex, nofollow">
+  
+
+  
+  
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/output/css/app.min.bab83909a2f2fe2aa45bf7e4813899f4f705e6858479cea5bd48eee72fdf0a70.css" integrity="sha256-urg5CaLy/iqkW/fkgTiZ9PcF5oWEec6lvUju5y/fCnA=" crossorigin="anonymous">
+  
+  
+  
+
+  <meta name="description"
+  content="Image Page resources can be resized and cropped.">
+
+  
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/output/js/app.0984bf5469ab3c8aa82cf8eb015a560d74ee028723b1ab38e928998f5f72baba.js" integrity="sha256-CYS/VGmrPIqoLPjrAVpWDXTuAocjsas46SiZj19yuro=" crossorigin="anonymous" defer></script>
+  
+      
+ 
+
+
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+  
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0594cb">
+<meta name="theme-color" content="#ffffff">
+<meta property="og:title" content="Image Processing" />
+<meta property="og:description" content="Image Page resources can be resized and cropped." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://gohugo.io/content-management/image-processing/" /><meta property="og:image" content="https://gohugo.io/images/gohugoio-card.png"/><meta property="article:section" content="content-management" />
+<meta property="article:published_time" content="2018-01-24T13:10:00-05:00" />
+<meta property="article:modified_time" content="2021-07-28T12:28:52+02:00" />
+
+<meta itemprop="name" content="Image Processing">
+<meta itemprop="description" content="Image Page resources can be resized and cropped."><meta itemprop="datePublished" content="2018-01-24T13:10:00-05:00" />
+<meta itemprop="dateModified" content="2021-07-28T12:28:52+02:00" />
+<meta itemprop="wordCount" content="1380"><meta itemprop="image" content="https://gohugo.io/images/gohugoio-card.png"/>
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://gohugo.io/images/gohugoio-card.png"/>
+
+<meta name="twitter:title" content="Image Processing"/>
+<meta name="twitter:description" content="Image Page resources can be resized and cropped."/>
+<meta name="twitter:site" content="@GoHugoIO"/>
+
+
+</head>
+
+<body class="ma0 sans-serif bg-primary-color-light">
+  
+<nav class="bg-primary-color-dark pv4 w-100" role="navigation">
+
+  <div class="center flex-ns flex-wrap items-center justify-start mw9">
+
+    <h1 class="dim f3 lh-solid ml0-ns mr0 mr4-l mv0 pl3 pl4-ns">
+      <a href="https://gohugo.io/" class="link white">
+         HUGO
+      </a>
+    </h1>
+    <ul class="list ma0 pa0 dn dib-l">
+      
+        <li class="f5 dib mr4" role="menuitem">
+            
+          <a href="/news/" class="dim link light-silver">
+            News
+              
+            
+            
+          </a>
+        </li>
+      
+        <li class="f5 dib mr4" role="menuitem">
+            
+          <a href="/documentation/" class="dim link light-silver">
+            Docs
+              
+            
+            
+          </a>
+        </li>
+      
+        <li class="f5 dib mr4" role="menuitem">
+            
+          <a href="https://themes.gohugo.io/" class="dim link light-silver">
+            Themes
+              
+            
+            
+          </a>
+        </li>
+      
+        <li class="f5 dib mr4" role="menuitem">
+            
+          <a href="/showcase/" class="dim link light-silver">
+            Showcase
+              
+            
+            
+          </a>
+        </li>
+      
+        <li class="f5 dib mr4" role="menuitem">
+            
+          <a href="https://discourse.gohugo.io/" class="dim link light-silver">
+            Community
+              
+            
+            
+              <span class="pl1">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10" height="10" viewBox="0 0 32 32" class="fill-current v-base" aria-label="External Link">
+<path d="M25.152 16.576v5.696q0 2.144-1.504 3.648t-3.648 1.504h-14.848q-2.144 0-3.648-1.504t-1.504-3.648v-14.848q0-2.112 1.504-3.616t3.648-1.536h12.576q0.224 0 0.384 0.16t0.16 0.416v1.152q0 0.256-0.16 0.416t-0.384 0.16h-12.576q-1.184 0-2.016 0.832t-0.864 2.016v14.848q0 1.184 0.864 2.016t2.016 0.864h14.848q1.184 0 2.016-0.864t0.832-2.016v-5.696q0-0.256 0.16-0.416t0.416-0.16h1.152q0.256 0 0.416 0.16t0.16 0.416zM32 1.152v9.12q0 0.48-0.352 0.8t-0.8 0.352-0.8-0.352l-3.136-3.136-11.648 11.648q-0.16 0.192-0.416 0.192t-0.384-0.192l-2.048-2.048q-0.192-0.16-0.192-0.384t0.192-0.416l11.648-11.648-3.136-3.136q-0.352-0.352-0.352-0.8t0.352-0.8 0.8-0.352h9.12q0.48 0 0.8 0.352t0.352 0.8z"></path>
+</svg>
+
+              </span>
+            
+          </a>
+        </li>
+      
+        <li class="f5 dib mr4" role="menuitem">
+            
+          <a href="https://github.com/gohugoio/hugo" class="dim link light-silver">
+            GitHub
+              
+            
+            
+              <span class="pl1">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10" height="10" viewBox="0 0 32 32" class="fill-current v-base" aria-label="External Link">
+<path d="M25.152 16.576v5.696q0 2.144-1.504 3.648t-3.648 1.504h-14.848q-2.144 0-3.648-1.504t-1.504-3.648v-14.848q0-2.112 1.504-3.616t3.648-1.536h12.576q0.224 0 0.384 0.16t0.16 0.416v1.152q0 0.256-0.16 0.416t-0.384 0.16h-12.576q-1.184 0-2.016 0.832t-0.864 2.016v14.848q0 1.184 0.864 2.016t2.016 0.864h14.848q1.184 0 2.016-0.864t0.832-2.016v-5.696q0-0.256 0.16-0.416t0.416-0.16h1.152q0.256 0 0.416 0.16t0.16 0.416zM32 1.152v9.12q0 0.48-0.352 0.8t-0.8 0.352-0.8-0.352l-3.136-3.136-11.648 11.648q-0.16 0.192-0.416 0.192t-0.384-0.192l-2.048-2.048q-0.192-0.16-0.192-0.384t0.192-0.416l11.648-11.648-3.136-3.136q-0.352-0.352-0.352-0.8t0.352-0.8 0.8-0.352h9.12q0.48 0 0.8 0.352t0.352 0.8z"></path>
+</svg>
+
+              </span>
+            
+          </a>
+        </li>
+      
+    </ul>
+
+    <div class="db dib-ns pl3"><form id="site-search-form" action="" role="search">
+  <fieldset class="bn ma0 pa0">
+    <label class="clip" for="search-input">Search</label>
+    <input type="search" id="search-input" class="needs-js bg-left bn f5 input-reset lh-solid mt3 mt0-ns pl4 pv2 w5 white" placeholder="Search the Docs" name="search-input" value="" style="background: url('/images/icon-search.png') 5px 11px/16px 16px no-repeat; background-color: rgba(255,255,255,0);">
+  </fieldset>
+</form></div>
+
+    <span class="absolute mt1 mt2-l pr3 right-0 top-0">
+
+  <a href="https://twitter.com/intent/follow?screen_name=GoHugoIO" title="Follow on Twitter" class="link-transition twitter link dib z-999 pt3 pt0-l mr2">
+    <svg height="32px" id="Layer_1" style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
+
+  </a>
+
+<a class="github-button needs-js link primary-color-dark" href="https://github.com/gohugoio/hugo" data-size="large" data-show-count="false" aria-label="Star gohugoio/hugo on GitHub">Star</a>
+</span>
+
+  </div>
+</nav>
+
+  
+  <main role="main" class="content-with-sidebar min-vh-100 pb7 pb0-ns">
+    
+  <article class="w-100 ph4 pb5 pb6-ns pt1 pt5-ns">
+    <div class="flex-l">
+
+      <div class="order-2 w-100 w-20-l ph5-m ph0-l mb4 sticky">
+<aside class="fixed-lTK mw5-l right-0 f6 bl-l b--moon-gray pv4 pv0-ns ph4-l nested-list-reset nested-links nested-copy-line-height">
+	
+		<p class="b">What's on this Page</p>
+  	<nav id="TableOfContents">
+  <ul>
+    <li><a href="#the-image-page-resource">The Image Page Resource</a></li>
+    <li><a href="#the-image-resource">The Image Resource</a></li>
+    <li><a href="#image-processing-methods">Image Processing Methods</a></li>
+    <li><a href="#image-processing-options">Image Processing Options</a></li>
+    <li><a href="#image-processing-examples">Image Processing Examples</a></li>
+    <li><a href="#image-processing-config">Image Processing Config</a></li>
+    <li><a href="#smart-cropping-of-images">Smart Cropping of Images</a></li>
+    <li><a href="#image-processing-performance-consideration">Image Processing Performance Consideration</a></li>
+  </ul>
+</nav>
+	
+
+	<div date-pref>
+		
+			<a href="https://gohugo.io/content-management/page-resources/" class="dib f6 pl1 hover-bg-light-gray br-100" title="Page Resources ">
+				<svg class="fill-current" height="30px" viewBox="0 0 24 24" width="30px" xmlns="http://www.w3.org/2000/svg">
+    <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
+    <path d="M0 0h24v24H0z" fill="none"/>
+</svg>
+
+			</a>
+		
+
+		
+			<a href="https://gohugo.io/content-management/page-bundles/" class="dib f6 pr1 hover-bg-light-gray br-100" title="Page Bundles">
+			<svg class="fill-current" height="30px" viewBox="0 0 24 24" width="30px" xmlns="http://www.w3.org/2000/svg">
+    <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
+    <path d="M0 0h24v24H0z" fill="none"/>
+</svg>
+
+			</a>
+		
+	</div>
+
+</aside>
+</div>
+
+      <div class="order-1 w-60-l mw7 ph0 ph5-ns mid-gray nested-copy-line-height no-underline nested-links nested-img nested-copy-seperator nested-blockquote mt0-ns" style="flex-grow:1;">
+        <div class="documentation-copy center measure-wide-l">
+          <div id="readout" class="fixed right-0 bottom-0">
+          </div>
+          <header class="flex-none w-100">
+  
+    
+      <a href="/categories/content-management" class="f6 fw8 mb0 link mid-gray dim mr3">
+        CONTENT MANAGEMENT
+      </a>
+    
+  
+  <h1 class="lh-title mb3 mv0 pt3 primary-color-dark">Image Processing</h1>
+</header>
+
+<aside class="bt bw1 pt3 mt2 mid-gray b--mid-gray fn w-100">
+  
+    <div class="f4 fw4 lh-copy">
+      Image Page resources can be resized and cropped.
+    </div>
+  
+
+  
+</aside>
+
+
+
+<div class="prose" id="prose">
+
+<h2 id="the-image-page-resource">The Image Page Resource <a class="header-link" href="#the-image-page-resource"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
+<p>The <code>image</code> is a <a href="/content-management/page-resources/">Page Resource</a>, and the processing methods listed below do not work on images inside your <code>/static</code> folder.</p>
+<p>To print all images paths in a <a href="/content-management/organization/#page-bundles">Page Bundle</a>:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go-html-template" data-lang="go-html-template"><span class="cp">{{</span><span class="w"> </span><span class="k">with</span><span class="w"> </span><span class="na">.Resources.ByType</span><span class="w"> </span><span class="s">&#34;image&#34;</span><span class="w"> </span><span class="cp">}}</span>
+<span class="cp">{{</span><span class="w"> </span><span class="k">range</span><span class="w"> </span><span class="na">.</span><span class="w"> </span><span class="cp">}}</span>
+<span class="cp">{{</span><span class="w"> </span><span class="na">.RelPermalink</span><span class="w"> </span><span class="cp">}}</span>
+<span class="cp">{{</span><span class="w"> </span><span class="k">end</span><span class="w"> </span><span class="cp">}}</span>
+<span class="cp">{{</span><span class="w"> </span><span class="k">end</span><span class="w"> </span><span class="cp">}}</span>
+
+</code></pre></div><h2 id="the-image-resource">The Image Resource <a class="header-link" href="#the-image-resource"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
+<p>The <code>image</code> resource can also be retrieved from a <a href="/hugo-pipes/introduction/#from-file-to-resource">global resource</a></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go-html-template" data-lang="go-html-template"><span class="cp">{{-</span><span class="w"> </span><span class="nx">$image</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">resources</span><span class="na">.Get</span><span class="w"> </span><span class="s">&#34;images/logo.jpg&#34;</span><span class="w"> </span><span class="cp">-}}</span>
+</code></pre></div><h2 id="image-processing-methods">Image Processing Methods <a class="header-link" href="#image-processing-methods"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
+<p>The <code>image</code> resource implements the  <code>Resize</code>, <code>Fit</code>, <code>Fill</code>, and <code>Filter</code> methods, each returning a transformed image using the specified dimensions and processing options.</p>
+
+<aside class="admonition note">
+	<div class="note-icon">
+		
+	</div>
+	
+	
+	<div class="admonition-content"><p>Metadata (EXIF, IPTC, XMP, etc.) is not preserved during image transformation. Use the <a href="#exif"><code>Exif</code></a> method with the <em>original</em> image to extract EXIF metadata from JPEG or TIFF images.</p>
+</div>
+</aside>
+
+<h3 id="resize">Resize <a class="header-link" href="#resize"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
+<p>Resizes the image to the specified width and height.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="c1">// Resize to a width of 600px and preserve ratio
+</span><span class="c1"></span><span class="p">{{</span> <span class="err">$</span><span class="nx">image</span> <span class="o">:=</span> <span class="err">$</span><span class="nx">resource</span><span class="p">.</span><span class="nx">Resize</span> <span class="s">&#34;600x&#34;</span> <span class="p">}}</span>
+
+<span class="c1">// Resize to a height of 400px and preserve ratio
+</span><span class="c1"></span><span class="p">{{</span> <span class="err">$</span><span class="nx">image</span> <span class="o">:=</span> <span class="err">$</span><span class="nx">resource</span><span class="p">.</span><span class="nx">Resize</span> <span class="s">&#34;x400&#34;</span> <span class="p">}}</span>
+
+<span class="c1">// Resize to a width 600px and a height of 400px
+</span><span class="c1"></span><span class="p">{{</span> <span class="err">$</span><span class="nx">image</span> <span class="o">:=</span> <span class="err">$</span><span class="nx">resource</span><span class="p">.</span><span class="nx">Resize</span> <span class="s">&#34;600x400&#34;</span> <span class="p">}}</span>
+</code></pre></div><h3 id="fit">Fit <a class="header-link" href="#fit"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
+<p>Scale down the image to fit the given dimensions while maintaining aspect ratio. Both height and width are required.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="p">{{</span> <span class="err">$</span><span class="nx">image</span> <span class="o">:=</span> <span class="err">$</span><span class="nx">resource</span><span class="p">.</span><span class="nx">Fit</span> <span class="s">&#34;600x400&#34;</span> <span class="p">}}</span>
+</code></pre></div><h3 id="fill">Fill <a class="header-link" href="#fill"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
+<p>Resize and crop the image to match the given dimensions. Both height and width are required.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="p">{{</span> <span class="err">$</span><span class="nx">image</span> <span class="o">:=</span> <span class="err">$</span><span class="nx">resource</span><span class="p">.</span><span class="nx">Fill</span> <span class="s">&#34;600x400&#34;</span> <span class="p">}}</span>
+</code></pre></div><h3 id="filter">Filter <a class="header-link" href="#filter"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
+<p>Apply one or more filters to your image. See <a href="/functions/images/#image-filters">Image Filters</a> for a full list.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go-html-template" data-lang="go-html-template"><span class="cp">{{</span><span class="w"> </span><span class="nx">$img</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">$img</span><span class="na">.Filter</span><span class="w"> </span><span class="o">(</span><span class="nx">images</span><span class="na">.GaussianBlur</span><span class="w"> </span><span class="nx">6</span><span class="o">)</span><span class="w"> </span><span class="o">(</span><span class="nx">images</span><span class="na">.Pixelate</span><span class="w"> </span><span class="nx">8</span><span class="o">)</span><span class="w"> </span><span class="cp">}}</span>
+</code></pre></div><p>The above can also be written in a more functional style using pipes:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go-html-template" data-lang="go-html-template"><span class="cp">{{</span><span class="w"> </span><span class="nx">$img</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">$img</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nx">images</span><span class="na">.Filter</span><span class="w"> </span><span class="o">(</span><span class="nx">images</span><span class="na">.GaussianBlur</span><span class="w"> </span><span class="nx">6</span><span class="o">)</span><span class="w"> </span><span class="o">(</span><span class="nx">images</span><span class="na">.Pixelate</span><span class="w"> </span><span class="nx">8</span><span class="o">)</span><span class="w"> </span><span class="cp">}}</span>
+</code></pre></div><p>The filters will be applied in the given order.</p>
+<p>Sometimes it can be useful to create the filter chain once and then reuse it:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go-html-template" data-lang="go-html-template"><span class="cp">{{</span><span class="w"> </span><span class="nx">$filters</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">slice</span><span class="w">  </span><span class="o">(</span><span class="nx">images</span><span class="na">.GaussianBlur</span><span class="w"> </span><span class="nx">6</span><span class="o">)</span><span class="w"> </span><span class="o">(</span><span class="nx">images</span><span class="na">.Pixelate</span><span class="w"> </span><span class="nx">8</span><span class="o">)</span><span class="w"> </span><span class="cp">}}</span>
+<span class="cp">{{</span><span class="w"> </span><span class="nx">$img1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">$img1</span><span class="na">.Filter</span><span class="w"> </span><span class="nx">$filters</span><span class="w"> </span><span class="cp">}}</span>
+<span class="cp">{{</span><span class="w"> </span><span class="nx">$img2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">$img2</span><span class="na">.Filter</span><span class="w"> </span><span class="nx">$filters</span><span class="w"> </span><span class="cp">}}</span>
+</code></pre></div><h3 id="exif">Exif <a class="header-link" href="#exif"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
+<p>Provides an <a href="https://en.wikipedia.org/wiki/Exif">Exif</a> object with metadata about the image.</p>
+<p>Note that this is only supported for JPEG and TIFF images, so it&rsquo;s recommended to wrap the access with a <code>with</code>, e.g.:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go-html-template" data-lang="go-html-template"><span class="cp">{{</span><span class="w"> </span><span class="k">with</span><span class="w"> </span><span class="nx">$img</span><span class="na">.Exif</span><span class="w"> </span><span class="cp">}}</span>
+Date: <span class="cp">{{</span><span class="w"> </span><span class="na">.Date</span><span class="w"> </span><span class="cp">}}</span>
+Lat/Long: <span class="cp">{{</span><span class="w"> </span><span class="na">.Lat</span><span class="cp">}}</span>/<span class="cp">{{</span><span class="w"> </span><span class="na">.Long</span><span class="w"> </span><span class="cp">}}</span>
+Tags:
+<span class="cp">{{</span><span class="w"> </span><span class="k">range</span><span class="w"> </span><span class="nx">$k</span><span class="o">,</span><span class="w"> </span><span class="nx">$v</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="na">.Tags</span><span class="w"> </span><span class="cp">}}</span>
+TAG: <span class="cp">{{</span><span class="w"> </span><span class="nx">$k</span><span class="w"> </span><span class="cp">}}</span>: <span class="cp">{{</span><span class="w"> </span><span class="nx">$v</span><span class="w"> </span><span class="cp">}}</span>
+<span class="cp">{{</span><span class="w"> </span><span class="k">end</span><span class="w"> </span><span class="cp">}}</span>
+<span class="cp">{{</span><span class="w"> </span><span class="k">end</span><span class="w"> </span><span class="cp">}}</span>
+</code></pre></div><p>Or individually access EXIF data with dot access, e.g.:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go-html-template" data-lang="go-html-template"><span class="cp">{{</span><span class="w"> </span><span class="k">with</span><span class="w"> </span><span class="nx">$src</span><span class="na">.Exif</span><span class="w"> </span><span class="cp">}}</span>
+  <span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
+      <span class="cp">{{</span><span class="w"> </span><span class="k">with</span><span class="w"> </span><span class="na">.Date</span><span class="w"> </span><span class="cp">}}</span><span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Date: <span class="cp">{{</span><span class="w"> </span><span class="na">.Format</span><span class="w"> </span><span class="s">&#34;January 02, 2006&#34;</span><span class="w"> </span><span class="cp">}}</span><span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span><span class="cp">{{</span><span class="w"> </span><span class="k">end</span><span class="w"> </span><span class="cp">}}</span>
+      <span class="cp">{{</span><span class="w"> </span><span class="k">with</span><span class="w"> </span><span class="na">.Tags.ApertureValue</span><span class="w"> </span><span class="cp">}}</span><span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Aperture: <span class="cp">{{</span><span class="w"> </span><span class="nx">lang</span><span class="na">.NumFmt</span><span class="w"> </span><span class="nx">2</span><span class="w"> </span><span class="na">.</span><span class="w"> </span><span class="cp">}}</span><span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span><span class="cp">{{</span><span class="w"> </span><span class="k">end</span><span class="w"> </span><span class="cp">}}</span>
+      <span class="cp">{{</span><span class="w"> </span><span class="k">with</span><span class="w"> </span><span class="na">.Tags.BrightnessValue</span><span class="w"> </span><span class="cp">}}</span><span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Brightness: <span class="cp">{{</span><span class="w"> </span><span class="nx">lang</span><span class="na">.NumFmt</span><span class="w"> </span><span class="nx">2</span><span class="w"> </span><span class="na">.</span><span class="w"> </span><span class="cp">}}</span><span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span><span class="cp">{{</span><span class="w"> </span><span class="k">end</span><span class="w"> </span><span class="cp">}}</span>
+      <span class="cp">{{</span><span class="w"> </span><span class="k">with</span><span class="w"> </span><span class="na">.Tags.ExposureTime</span><span class="w"> </span><span class="cp">}}</span><span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Exposure Time: <span class="cp">{{</span><span class="w"> </span><span class="na">.</span><span class="w"> </span><span class="cp">}}</span><span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span><span class="cp">{{</span><span class="w"> </span><span class="k">end</span><span class="w"> </span><span class="cp">}}</span>
+      <span class="cp">{{</span><span class="w"> </span><span class="k">with</span><span class="w"> </span><span class="na">.Tags.FNumber</span><span class="w"> </span><span class="cp">}}</span><span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>F Number: <span class="cp">{{</span><span class="w"> </span><span class="na">.</span><span class="w"> </span><span class="cp">}}</span><span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span><span class="cp">{{</span><span class="w"> </span><span class="k">end</span><span class="w"> </span><span class="cp">}}</span>
+      <span class="cp">{{</span><span class="w"> </span><span class="k">with</span><span class="w"> </span><span class="na">.Tags.FocalLength</span><span class="w"> </span><span class="cp">}}</span><span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Focal Length: <span class="cp">{{</span><span class="w"> </span><span class="na">.</span><span class="w"> </span><span class="cp">}}</span><span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span><span class="cp">{{</span><span class="w"> </span><span class="k">end</span><span class="w"> </span><span class="cp">}}</span>
+      <span class="cp">{{</span><span class="w"> </span><span class="k">with</span><span class="w"> </span><span class="na">.Tags.ISOSpeedRatings</span><span class="w"> </span><span class="cp">}}</span><span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>ISO Speed Ratings: <span class="cp">{{</span><span class="w"> </span><span class="na">.</span><span class="w"> </span><span class="cp">}}</span><span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span><span class="cp">{{</span><span class="w"> </span><span class="k">end</span><span class="w"> </span><span class="cp">}}</span>
+      <span class="cp">{{</span><span class="w"> </span><span class="k">with</span><span class="w"> </span><span class="na">.Tags.LensModel</span><span class="w"> </span><span class="cp">}}</span><span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Lens Model: <span class="cp">{{</span><span class="w"> </span><span class="na">.</span><span class="w"> </span><span class="cp">}}</span><span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span><span class="cp">{{</span><span class="w"> </span><span class="k">end</span><span class="w"> </span><span class="cp">}}</span>
+  <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+<span class="cp">{{</span><span class="w"> </span><span class="k">end</span><span class="w"> </span><span class="cp">}}</span>
+</code></pre></div><p>Some fields may need to be formatted with <a href="/functions/lang/"><code>lang.FormatNumberCustom</code></a> function to prevent display like <code>Aperture: 2.278934289</code> instead of <code>Aperture: 2.28</code>.</p>
+<h4 id="exif-fields">Exif fields <a class="header-link" href="#exif-fields"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h4>
+<dl>
+<dt>Date</dt>
+<dd>&ldquo;photo taken&rdquo; date/time</dd>
+<dt>Lat</dt>
+<dd>&ldquo;photo taken where&rdquo;, GPS latitude</dd>
+<dt>Long</dt>
+<dd>&ldquo;photo taken where&rdquo;, GPS longitude</dd>
+</dl>
+<p>See <a href="#image-processing-config">Image Processing Config</a> for how to configure what gets included in Exif.</p>
+<h2 id="image-processing-options">Image Processing Options <a class="header-link" href="#image-processing-options"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
+<p>In addition to the dimensions (e.g. <code>600x400</code>), Hugo supports a set of additional image options.</p>
+<h3 id="background-color">Background Color <a class="header-link" href="#background-color"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
+<p>The background color to fill into the transparency layer. This is mostly useful when converting to a format that does not support transparency, e.g. <code>JPEG</code>.</p>
+<p>You can set the background color to use with a 3 or 6 digit hex code starting with <code>#</code>.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="p">{{</span> <span class="err">$</span><span class="nx">image</span><span class="p">.</span><span class="nx">Resize</span> <span class="s">&#34;600x jpg #b31280&#34;</span> <span class="p">}}</span>
+</code></pre></div><p>For color codes, see <a href="https://www.google.com/search?q=color+picker">https://www.google.com/search?q=color+picker</a></p>
+<p><strong>Note</strong> that you also set a default background color to use, see <a href="#image-processing-config">Image Processing Config</a>.</p>
+<h3 id="jpeg-and-webp-quality">JPEG and WebP Quality <a class="header-link" href="#jpeg-and-webp-quality"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
+<p>Only relevant for JPEG and WebP images, values 1 to 100 inclusive, higher is better. Default is 75.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="p">{{</span> <span class="err">$</span><span class="nx">image</span><span class="p">.</span><span class="nx">Resize</span> <span class="s">&#34;600x q50&#34;</span> <span class="p">}}</span>
+</code></pre></div><p>
+
+
+<button class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 mr2 ml2 px-4 border border-gray-400 rounded shadow">
+    <a href="https://gohugo.io/news/0.83.0-relnotes/" target="_blank">New in v0.83.0</a>
+</button> WebP support was added in Hugo 0.83.0.</p>
+<h3 id="hint">Hint <a class="header-link" href="#hint"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
+
+
+
+<button class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 mr2 ml2 px-4 border border-gray-400 rounded shadow">
+    <a href="https://gohugo.io/news/0.83.0-relnotes/" target="_blank">New in v0.83.0</a>
+</button>
+
+
+
+<button class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 mr2 ml2 px-4 border border-gray-400 rounded shadow">
+    <a href="https://gohugo.io/news/0.83.0-relnotes/" target="_blank">New in v0.83.0</a>
+</button>
+<p>Hint about what type of image this is. Currently only used when encoding to WebP.</p>
+<p>Default value is <code>photo</code>.</p>
+<p>Valid values are <code>picture</code>, <code>photo</code>, <code>drawing</code>, <code>icon</code>, or <code>text</code>.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="p">{{</span> <span class="err">$</span><span class="nx">image</span><span class="p">.</span><span class="nx">Resize</span> <span class="s">&#34;600x webp drawing&#34;</span> <span class="p">}}</span>
+</code></pre></div><h3 id="rotate">Rotate <a class="header-link" href="#rotate"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
+<p>Rotates an image by the given angle counter-clockwise. The rotation will be performed first to get the dimensions correct. The main use of this is to be able to manually correct for <a href="https://github.com/golang/go/issues/4341">EXIF orientation</a> of JPEG images.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="p">{{</span> <span class="err">$</span><span class="nx">image</span><span class="p">.</span><span class="nx">Resize</span> <span class="s">&#34;600x r90&#34;</span> <span class="p">}}</span>
+</code></pre></div><h3 id="anchor">Anchor <a class="header-link" href="#anchor"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
+<p>Only relevant for the <code>Fill</code> method. This is useful for thumbnail generation where the main motive is located in, say, the left corner.</p>
+<p>Valid values are <code>Smart</code>, <code>Center</code>, <code>TopLeft</code>, <code>Top</code>, <code>TopRight</code>, <code>Left</code>, <code>Right</code>, <code>BottomLeft</code>, <code>Bottom</code>, <code>BottomRight</code>.</p>
+<p>Default value is <code>Smart</code>, which uses <a href="https://github.com/muesli/smartcrop">Smartcrop</a> to determine the best crop.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="p">{{</span> <span class="err">$</span><span class="nx">image</span><span class="p">.</span><span class="nx">Fill</span> <span class="s">&#34;300x200 BottomLeft&#34;</span> <span class="p">}}</span>
+</code></pre></div><h3 id="resample-filter">Resample Filter <a class="header-link" href="#resample-filter"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
+<p>Filter used in resizing. Default is <code>Box</code>, a simple and fast resampling filter appropriate for downscaling.</p>
+<p>Examples are: <code>Box</code>, <code>NearestNeighbor</code>, <code>Linear</code>, <code>Gaussian</code>.</p>
+<p>See <a href="https://github.com/disintegration/imaging">https://github.com/disintegration/imaging</a> for more. If you want to trade quality for faster processing, this may be a option to test.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="p">{{</span> <span class="err">$</span><span class="nx">image</span><span class="p">.</span><span class="nx">Resize</span> <span class="s">&#34;600x400 Gaussian&#34;</span> <span class="p">}}</span>
+</code></pre></div><h3 id="target-format">Target Format <a class="header-link" href="#target-format"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
+<p>By default the images is encoded in the source format, but you can set the target format as an option.</p>
+<p>Valid values are <code>jpg</code>, <code>png</code>, <code>tif</code>, <code>bmp</code>, <code>gif</code> and <code>webp</code>.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="p">{{</span> <span class="err">$</span><span class="nx">image</span><span class="p">.</span><span class="nx">Resize</span> <span class="s">&#34;600x jpg&#34;</span> <span class="p">}}</span>
+</code></pre></div><p>
+
+
+<button class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 mr2 ml2 px-4 border border-gray-400 rounded shadow">
+    <a href="https://gohugo.io/news/0.83.0-relnotes/" target="_blank">New in v0.83.0</a>
+</button> WebP support was added in Hugo 0.83.0.</p>
+<h2 id="image-processing-examples">Image Processing Examples <a class="header-link" href="#image-processing-examples"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
+<p><em>The photo of the sunset used in the examples below is Copyright <a href="https://commons.wikimedia.org/wiki/User:Bep">Bjørn Erik Pedersen</a> (Creative Commons Attribution-Share Alike 4.0 International license)</em></p>
+
+
+
+
+
+
+
+<figure style="padding: 0.25rem; margin: 2rem 0; background-color: #cccc">
+	<img style="max-width: 100%; width: auto; height: auto;" src="/content-management/image-processing/sunset_hu875bbbed66c1db46c12ef98a97f76229_34584_300x0_resize_q75_catmullrom.jpg" width="300" height="187">
+	<figcaption>
+	<small>
+	
+	.Resize "300x"
+	
+	</small>
+	</figcaption>
+</figure>
+
+
+
+
+
+
+
+<figure style="padding: 0.25rem; margin: 2rem 0; background-color: #cccc">
+	<img style="max-width: 100%; width: auto; height: auto;" src="/content-management/image-processing/sunset_hu875bbbed66c1db46c12ef98a97f76229_34584_90x120_fill_q75_catmullrom_left.jpg" width="90" height="120">
+	<figcaption>
+	<small>
+	
+	.Fill "90x120 left"
+	
+	</small>
+	</figcaption>
+</figure>
+
+
+
+
+
+
+
+<figure style="padding: 0.25rem; margin: 2rem 0; background-color: #cccc">
+	<img style="max-width: 100%; width: auto; height: auto;" src="/content-management/image-processing/sunset_hu875bbbed66c1db46c12ef98a97f76229_34584_90x120_fill_q75_catmullrom_right.jpg" width="90" height="120">
+	<figcaption>
+	<small>
+	
+	.Fill "90x120 right"
+	
+	</small>
+	</figcaption>
+</figure>
+
+
+
+
+
+
+
+<figure style="padding: 0.25rem; margin: 2rem 0; background-color: #cccc">
+	<img style="max-width: 100%; width: auto; height: auto;" src="/content-management/image-processing/sunset_hu875bbbed66c1db46c12ef98a97f76229_34584_90x90_fit_q75_catmullrom.jpg" width="90" height="56">
+	<figcaption>
+	<small>
+	
+	.Fit "90x90"
+	
+	</small>
+	</figcaption>
+</figure>
+
+
+
+
+
+
+
+<figure style="padding: 0.25rem; margin: 2rem 0; background-color: #cccc">
+	<img style="max-width: 100%; width: auto; height: auto;" src="/content-management/image-processing/sunset_hu875bbbed66c1db46c12ef98a97f76229_34584_300x0_resize_q10_catmullrom.jpg" width="300" height="187">
+	<figcaption>
+	<small>
+	
+	.Resize "300x q10"
+	
+	</small>
+	</figcaption>
+</figure>
+<p>This is the shortcode used in the examples above:</p>
+
+
+
+
+
+
+
+
+
+
+<div class="code relative" id="layouts/shortcodes/imgproc.html"><div class="filename san-serif f6 dib lh-solid pl2 pv2">layouts/shortcodes/imgproc.html</div>
+		<button class="needs-js copy bg-accent-color-dark f6 absolute top-0 right-0 lh-solid hover-bg-primary-color-dark bn white ph3 pv2" title="Copy this code to your clipboard." data-clipboard-action="copy" aria-label="copy button">
+		</button>
+		
+	
+	<div class="code-copy-content nt3" >
+		
+		<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go-html-template" data-lang="go-html-template">
+<span class="cp">{{</span><span class="w"> </span><span class="nx">$original</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="na">.Page.Resources.GetMatch</span><span class="w"> </span><span class="o">(</span><span class="k">printf</span><span class="w"> </span><span class="s">&#34;*%s*&#34;</span><span class="w"> </span><span class="o">(</span><span class="na">.Get</span><span class="w"> </span><span class="nx">0</span><span class="o">))</span><span class="w"> </span><span class="cp">}}</span>
+<span class="cp">{{</span><span class="w"> </span><span class="nx">$command</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="na">.Get</span><span class="w"> </span><span class="nx">1</span><span class="w"> </span><span class="cp">}}</span>
+<span class="cp">{{</span><span class="w"> </span><span class="nx">$options</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="na">.Get</span><span class="w"> </span><span class="nx">2</span><span class="w"> </span><span class="cp">}}</span>
+<span class="cp">{{</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="k">eq</span><span class="w"> </span><span class="nx">$command</span><span class="w"> </span><span class="s">&#34;Fit&#34;</span><span class="cp">}}</span>
+<span class="cp">{{</span><span class="w"> </span><span class="na">.Scratch.Set</span><span class="w"> </span><span class="s">&#34;image&#34;</span><span class="w"> </span><span class="o">(</span><span class="nx">$original</span><span class="na">.Fit</span><span class="w"> </span><span class="nx">$options</span><span class="o">)</span><span class="w"> </span><span class="cp">}}</span>
+<span class="cp">{{</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="k">eq</span><span class="w"> </span><span class="nx">$command</span><span class="w"> </span><span class="s">&#34;Resize&#34;</span><span class="cp">}}</span>
+<span class="cp">{{</span><span class="w"> </span><span class="na">.Scratch.Set</span><span class="w"> </span><span class="s">&#34;image&#34;</span><span class="w"> </span><span class="o">(</span><span class="nx">$original</span><span class="na">.Resize</span><span class="w"> </span><span class="nx">$options</span><span class="o">)</span><span class="w"> </span><span class="cp">}}</span>
+<span class="cp">{{</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="k">eq</span><span class="w"> </span><span class="nx">$command</span><span class="w"> </span><span class="s">&#34;Fill&#34;</span><span class="cp">}}</span>
+<span class="cp">{{</span><span class="w"> </span><span class="na">.Scratch.Set</span><span class="w"> </span><span class="s">&#34;image&#34;</span><span class="w"> </span><span class="o">(</span><span class="nx">$original</span><span class="na">.Fill</span><span class="w"> </span><span class="nx">$options</span><span class="o">)</span><span class="w"> </span><span class="cp">}}</span>
+<span class="cp">{{</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="cp">}}</span>
+<span class="cp">{{</span><span class="w"> </span><span class="nx">errorf</span><span class="w"> </span><span class="s">&#34;Invalid image processing command: Must be one of Fit, Fill or Resize.&#34;</span><span class="cp">}}</span>
+<span class="cp">{{</span><span class="w"> </span><span class="k">end</span><span class="w"> </span><span class="cp">}}</span>
+<span class="cp">{{</span><span class="w"> </span><span class="nx">$image</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="na">.Scratch.Get</span><span class="w"> </span><span class="s">&#34;image&#34;</span><span class="w"> </span><span class="cp">}}</span>
+<span class="p">&lt;</span><span class="nt">figure</span> <span class="na">style</span><span class="o">=</span><span class="s">&#34;padding: 0.25rem; margin: 2rem 0; background-color: #cccc&#34;</span><span class="p">&gt;</span>
+	<span class="p">&lt;</span><span class="nt">img</span> <span class="na">style</span><span class="o">=</span><span class="s">&#34;max-width: 100%; width: auto; height: auto;&#34;</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;</span><span class="cp">{{</span><span class="w"> </span><span class="nx">$image</span><span class="na">.RelPermalink</span><span class="w"> </span><span class="cp">}}</span><span class="s">&#34;</span> <span class="na">width</span><span class="o">=</span><span class="s">&#34;</span><span class="cp">{{</span><span class="w"> </span><span class="nx">$image</span><span class="na">.Width</span><span class="w"> </span><span class="cp">}}</span><span class="s">&#34;</span> <span class="na">height</span><span class="o">=</span><span class="s">&#34;</span><span class="cp">{{</span><span class="w"> </span><span class="nx">$image</span><span class="na">.Height</span><span class="w"> </span><span class="cp">}}</span><span class="s">&#34;</span><span class="p">&gt;</span>
+	<span class="p">&lt;</span><span class="nt">figcaption</span><span class="p">&gt;</span>
+	<span class="p">&lt;</span><span class="nt">small</span><span class="p">&gt;</span>
+	<span class="cp">{{</span><span class="w"> </span><span class="k">with</span><span class="w"> </span><span class="na">.Inner</span><span class="w"> </span><span class="cp">}}</span>
+	<span class="cp">{{</span><span class="w"> </span><span class="na">.</span><span class="w"> </span><span class="cp">}}</span>
+	<span class="cp">{{</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="cp">}}</span>
+	.<span class="cp">{{</span><span class="w"> </span><span class="nx">$command</span><span class="w"> </span><span class="cp">}}</span> &#34;<span class="cp">{{</span><span class="w"> </span><span class="nx">$options</span><span class="w"> </span><span class="cp">}}</span>&#34;
+	<span class="cp">{{</span><span class="w"> </span><span class="k">end</span><span class="w"> </span><span class="cp">}}</span>
+	<span class="p">&lt;/</span><span class="nt">small</span><span class="p">&gt;</span>
+	<span class="p">&lt;/</span><span class="nt">figcaption</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">figure</span><span class="p">&gt;</span>  
+</code></pre></div>
+	</div>
+
+</div>
+
+<p>And it is used like this:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go-html-template" data-lang="go-html-template"><span class="cp">{{</span><span class="err">&lt;</span><span class="w"> </span><span class="nx">imgproc</span><span class="w"> </span><span class="nx">sunset</span><span class="w"> </span><span class="nx">Resize</span><span class="w"> </span><span class="s">&#34;300x&#34;</span><span class="w"> </span><span class="err">/&gt;</span><span class="cp">}}</span>
+</code></pre></div>
+<aside class="admonition note">
+	<div class="note-icon">
+		
+	</div>
+	
+	
+	<div class="admonition-content"><p><strong>Tip:</strong> Note the self-closing shortcode syntax above. The <code>imgproc</code> shortcode can be called both with and without <strong>inner content</strong>.</p>
+</div>
+</aside>
+
+<h2 id="image-processing-config">Image Processing Config <a class="header-link" href="#image-processing-config"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
+<p>You can configure an <code>imaging</code> section in <code>config.toml</code> with default image processing options:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="p">[</span><span class="nx">imaging</span><span class="p">]</span>
+<span class="c"># Default resample filter used for resizing. Default is Box,</span>
+<span class="c"># a simple and fast averaging filter appropriate for downscaling.</span>
+<span class="c"># See https://github.com/disintegration/imaging</span>
+<span class="nx">resampleFilter</span> <span class="p">=</span> <span class="s2">&#34;box&#34;</span>
+
+<span class="c"># Default JPEG or WebP quality setting. Default is 75.</span>
+<span class="nx">quality</span> <span class="p">=</span> <span class="mi">75</span>
+
+<span class="c"># Default hint about what type of image. Currently only used for WebP encoding.</span>
+<span class="c"># Default is &#34;photo&#34;.</span>
+<span class="c"># Valid values are &#34;picture&#34;, &#34;photo&#34;, &#34;drawing&#34;, &#34;icon&#34;, or &#34;text&#34;.</span>
+<span class="nx">hint</span> <span class="p">=</span> <span class="s2">&#34;photo&#34;</span>
+
+<span class="c"># Anchor used when cropping pictures.</span>
+<span class="c"># Default is &#34;smart&#34; which does Smart Cropping, using https://github.com/muesli/smartcrop</span>
+<span class="c"># Smart Cropping is content aware and tries to find the best crop for each image.</span>
+<span class="c"># Valid values are Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight</span>
+<span class="nx">anchor</span> <span class="p">=</span> <span class="s2">&#34;smart&#34;</span>
+
+<span class="c"># Default background color.</span>
+<span class="c"># Hugo will preserve transparency for target formats that supports it,</span>
+<span class="c"># but will fall back to this color for JPEG.</span>
+<span class="c"># Expects a standard HEX color string with 3 or 6 digits.</span>
+<span class="c"># See https://www.google.com/search?q=color+picker</span>
+<span class="nx">bgColor</span> <span class="p">=</span> <span class="s2">&#34;#ffffff&#34;</span>
+
+<span class="p">[</span><span class="nx">imaging</span><span class="p">.</span><span class="nx">exif</span><span class="p">]</span>
+ <span class="c"># Regexp matching the fields you want to Exclude from the (massive) set of Exif info</span>
+<span class="c"># available. As we cache this info to disk, this is for performance and</span>
+<span class="c"># disk space reasons more than anything.</span>
+<span class="c"># If you want it all, put &#34;.*&#34; in this config setting.</span>
+<span class="c"># Note that if neither this or ExcludeFields is set, Hugo will return a small</span>
+<span class="c"># default set.</span>
+<span class="nx">includeFields</span> <span class="p">=</span> <span class="s2">&#34;&#34;</span>
+
+<span class="c"># Regexp matching the Exif fields you want to exclude. This may be easier to use</span>
+<span class="c"># than IncludeFields above, depending on what you want.</span>
+<span class="nx">excludeFields</span> <span class="p">=</span> <span class="s2">&#34;&#34;</span>
+
+<span class="c"># Hugo extracts the &#34;photo taken&#34; date/time into .Date by default.</span>
+<span class="c"># Set this to true to turn it off.</span>
+<span class="nx">disableDate</span> <span class="p">=</span> <span class="kc">false</span>
+
+<span class="c"># Hugo extracts the &#34;photo taken where&#34; (GPS latitude and longitude) into</span>
+<span class="c"># .Long and .Lat. Set this to true to turn it off.</span>
+<span class="nx">disableLatLong</span> <span class="p">=</span> <span class="kc">false</span>
+</code></pre></div><h2 id="smart-cropping-of-images">Smart Cropping of Images <a class="header-link" href="#smart-cropping-of-images"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
+<p>By default, Hugo will use <a href="https://github.com/muesli/smartcrop">Smartcrop</a>, a library created by <a href="https://github.com/muesli">muesli</a>, when cropping images with <code>.Fill</code>. You can set the anchor point manually, but in most cases the smart option will make a good choice. And we will work with the library author to improve this in the future.</p>
+<p>An example using the sunset image from above:</p>
+
+
+
+
+
+
+
+<figure style="padding: 0.25rem; margin: 2rem 0; background-color: #cccc">
+	<img style="max-width: 100%; width: auto; height: auto;" src="/content-management/image-processing/sunset_hu875bbbed66c1db46c12ef98a97f76229_34584_200x200_fill_q75_catmullrom_smart1.jpg" width="200" height="200">
+	<figcaption>
+	<small>
+	
+	.Fill "200x200 smart"
+	
+	</small>
+	</figcaption>
+</figure>
+<h2 id="image-processing-performance-consideration">Image Processing Performance Consideration <a class="header-link" href="#image-processing-performance-consideration"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
+<p>Processed images are stored below <code>&lt;project-dir&gt;/resources</code> (can be set with <code>resourceDir</code> config setting). This folder is deliberately placed in the project, as it is recommended to check these into source control as part of the project. These images are not &ldquo;Hugo fast&rdquo; to generate, but once generated they can be reused.</p>
+<p>If you change your image settings (e.g. size), remove or rename images etc., you will end up with unused images taking up space and cluttering your project.</p>
+<p>To clean up, run:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">hugo --gc
+</code></pre></div>
+<aside class="admonition note">
+	<div class="note-icon">
+		
+	</div>
+	
+	
+	<div class="admonition-content"><p><strong>GC</strong> is short for <strong>Garbage Collection</strong>.</p>
+</div>
+</aside>
+
+
+</div>
+
+          
+
+<h2>See Also</h2>
+<ul>
+	
+	<li><a href="/content-management/page-resources/">Page Resources</a></li>
+	
+	<li><a href="/content-management/organization/">Content Organization</a></li>
+	
+	<li><a href="/functions/images/">Image Functions</a></li>
+	
+</ul>
+
+        </div>
+      </div>
+      <div class="order-0 w-20 dn db-l">
+        
+<nav role="navigation">
+  <ul class="list pa0 nl2">
+    
+      
+      <li class="f5 w-100 hover-bg-light-gray hover-accent-color-light fw8">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".about">About Hugo</a>
+        <ul class="about desktopmenu animated fadeIn list pl0 bg-light-gray dn">
+          <li class="f6 fw4">
+            <a href="/about/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Overview
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/about/security-model/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Hugo&#39;s Security Model
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/about/hugo-and-gdpr/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Hugo and GDPR
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/about/what-is-hugo/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              What is Hugo
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/about/features/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Hugo Features
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/about/benefits/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              The Benefits of Static
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/about/license/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              License
+            </a>
+          </li>
+        </ul>
+      </li>
+      
+      <li class="f5 w-100 hover-bg-light-gray hover-accent-color-light fw8">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".getting-started">Getting Started</a>
+        <ul class="getting-started desktopmenu animated fadeIn list pl0 bg-light-gray dn">
+          <li class="f6 fw4">
+            <a href="/getting-started/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Get Started Overview
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/getting-started/quick-start/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Quick Start
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/getting-started/installing/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Install Hugo
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/getting-started/usage/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Basic Usage
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/getting-started/directory-structure/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Directory Structure
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/getting-started/configuration/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Configuration
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/getting-started/external-learning-resources/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              External Learning Resources
+            </a>
+          </li>
+        </ul>
+      </li>
+      
+      <li class="f5 w-100 hover-bg-light-gray hover-accent-color-light fw8 mb1 bb b--moon-gray">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".modules">Hugo Modules</a>
+        <ul class="modules desktopmenu animated fadeIn list pl0 bg-light-gray dn">
+          <li class="f6 fw4">
+            <a href="/hugo-modules/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Hugo Modules Overview
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/hugo-modules/configuration/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Configure Modules
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/hugo-modules/use-modules/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Use Hugo Modules
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/hugo-modules/theme-components/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Theme Components
+            </a>
+          </li>
+        </ul>
+      </li>
+      
+      <li class="f5 w-100 hover-bg-light-gray hover-accent-color-light fw8">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2  primary-color" data-target=".content-management">Content Management</a>
+        <ul class="content-management desktopmenu animated fadeIn list pl0 bg-light-gray db">
+          <li class="f6 fw4">
+            <a href="/content-management/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Content Management Overview
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/content-management/organization/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Organization
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/content-management/page-bundles/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Page Bundles
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/content-management/formats/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Content Formats
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/content-management/front-matter/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Front Matter
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/content-management/build-options/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Build Options
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/content-management/page-resources/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Page Resources
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/content-management/image-processing/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 primary-color ">
+              Image Processing
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/content-management/shortcodes/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Shortcodes
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/content-management/related/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Related Content
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/content-management/sections/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Sections
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/content-management/types/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Content Types
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/content-management/archetypes/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Archetypes
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/content-management/taxonomies/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Taxonomies
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/content-management/summaries/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Summaries
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/content-management/cross-references/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Links and Cross References
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/content-management/urls/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              URL Management
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/content-management/menus/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Menus
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/content-management/static-files/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Static Files
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/content-management/toc/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Table of Contents
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/content-management/comments/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Comments
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/content-management/multilingual/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Multilingual and i18n
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/content-management/syntax-highlighting/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Syntax Highlighting
+            </a>
+          </li>
+        </ul>
+      </li>
+      
+      <li class="f5 w-100 hover-bg-light-gray hover-accent-color-light fw8">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".templates">Templates</a>
+        <ul class="templates desktopmenu animated fadeIn list pl0 bg-light-gray dn">
+          <li class="f6 fw4">
+            <a href="/templates/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Templates Overview
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/templates/introduction/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Introduction
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/templates/lookup-order/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Template Lookup Order
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/templates/output-formats/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Custom Output Formats
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/templates/base/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Base Templates and Blocks
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/templates/lists/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              List Page Templates
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/templates/homepage/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Homepage Template
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/templates/section-templates/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Section Templates
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/templates/taxonomy-templates/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Taxonomy Templates
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/templates/single-page-templates/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Single Page Templates
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/templates/views/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Content View Templates
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/templates/data-templates/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Data Templates
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/templates/partials/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Partial Templates
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/templates/shortcode-templates/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Shortcode Templates
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/templates/files/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Local File Templates
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/templates/404/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              404 Page
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/templates/menu-templates/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Menu Templates
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/templates/pagination/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Pagination
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/templates/rss/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              RSS Templates
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/templates/sitemap-template/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Sitemap Template
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/templates/robots/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Robots.txt
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/templates/internal/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Internal Templates
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/templates/alternatives/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Alternative Templating
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/templates/template-debugging/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Template Debugging
+            </a>
+          </li>
+        </ul>
+      </li>
+      
+      <li class="f5 w-100 hover-bg-light-gray hover-accent-color-light fw8">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".functions">Functions</a>
+        <ul class="functions desktopmenu animated fadeIn list pl0 bg-light-gray dn">
+          <li class="f6 fw4">
+            <a href="/functions/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Functions Quick Reference
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/adddate/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              .AddDate
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/format/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              .Format
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/get/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              .Get
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/getpage/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              .GetPage
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/hasmenucurrent/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              .HasMenuCurrent
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/ismenucurrent/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              .IsMenuCurrent
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/param/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              .Param
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/render/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              .Render
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/renderstring/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              .RenderString
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/scratch/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              .Scratch
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/unix/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              .Unix
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/abslangurl/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              absLangURL
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/absurl/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              absURL
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/after/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              after
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/anchorize/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              anchorize
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/append/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              append
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/apply/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              apply
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/base64/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              base64
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/chomp/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              chomp
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/complement/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              complement
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/cond/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              cond
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/countrunes/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              countrunes
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/countwords/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              countwords
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/default/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              default
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/delimit/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              delimit
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/dict/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              dict
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/echoparam/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              echoParam
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/emojify/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              emojify
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/eq/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              eq
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/errorf/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              errorf and warnf
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/fileexists/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              fileExists
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/findre/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              findRE
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/first/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              first
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/float/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              float
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/ge/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              ge
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/getenv/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              getenv
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/group/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              group
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/gt/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              gt
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/hasprefix/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              hasPrefix
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/highlight/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              highlight
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/hmac/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              hmac
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/htmlescape/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              htmlEscape
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/htmlunescape/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              htmlUnescape
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/hugo/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              hugo
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/humanize/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              humanize
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/i18n/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              i18n
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/images/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Image Functions
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/in/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              in
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/index-function/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              index
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/int/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              int
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/intersect/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              intersect
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/isset/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              isset
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/jsonify/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              jsonify
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/lang/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              lang
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/lang.merge/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              lang.Merge
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/last/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              last
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/le/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              le
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/len/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              len
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/lower/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              lower
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/lt/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              lt
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/markdownify/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              markdownify
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/math/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Math
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/md5/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              md5
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/merge/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              merge
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/ne/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              ne
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/now/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              now
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/os.stat/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              os.Stat
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/partialcached/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              partialCached
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/path.base/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              path.Base
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/path.dir/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              path.Dir
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/path.ext/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              path.Ext
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/path.join/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              path.Join
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/path.split/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              path.Split
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/plainify/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              plainify
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/pluralize/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              pluralize
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/print/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              print
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/printf/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              printf
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/println/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              println
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/querify/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              querify
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/range/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              range
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/readdir/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              readDir
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/readfile/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              readFile
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/ref/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              ref
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/reflect.ismap/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              reflect.IsMap
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/reflect.isslice/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              reflect.IsSlice
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/rellangurl/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              relLangURL
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/relref/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              relref
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/relurl/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              relURL
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/replace/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              replace
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/replacere/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              replaceRE
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/safecss/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              safeCSS
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/safehtml/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              safeHTML
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/safehtmlattr/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              safeHTMLAttr
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/safejs/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              safeJS
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/safeurl/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              safeURL
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/seq/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              seq
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/sha/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              sha
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/shuffle/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              shuffle
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/singularize/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              singularize
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/site/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              site
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/slice/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              slice
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/slicestr/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              slicestr
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/sort/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              sort
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/split/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              split
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/string/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              string
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/strings.count/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              strings.Count
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/strings.hassuffix/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              strings.HasSuffix
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/strings.repeat/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              strings.Repeat
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/strings.runecount/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              strings.RuneCount
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/strings.trimleft/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              strings.TrimLeft
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/strings.trimprefix/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              strings.TrimPrefix
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/strings.trimright/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              strings.TrimRight
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/strings.trimsuffix/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              strings.TrimSuffix
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/substr/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              substr
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/symdiff/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              symdiff
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/templates.exists/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              templates.Exists
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/time/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              time
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/dateformat/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              time.Format
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/title/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              title
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/transform.unmarshal/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              transform.Unmarshal
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/trim/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              trim
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/truncate/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              truncate
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/union/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              union
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/uniq/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              uniq
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/upper/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              upper
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/urlize/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              urlize
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/urls.parse/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              urls.Parse
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/where/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              where
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/with/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              with
+            </a>
+          </li>
+        </ul>
+      </li>
+      
+      <li class="f5 w-100 hover-bg-light-gray hover-accent-color-light fw8">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".variables">Variables</a>
+        <ul class="variables desktopmenu animated fadeIn list pl0 bg-light-gray dn">
+          <li class="f6 fw4">
+            <a href="/variables/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Variables Overview
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/variables/site/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Site Variables
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/variables/page/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Page Variables
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/variables/shortcodes/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Shortcode Variables
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/variables/pages/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Pages Methods
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/variables/taxonomy/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Taxonomy Variables
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/variables/files/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              File Variables
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/variables/menus/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Menu Entry Properties
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/variables/hugo/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Hugo Variables
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/variables/git/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Git Variables
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/variables/sitemap/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Sitemap Variables
+            </a>
+          </li>
+        </ul>
+      </li>
+      
+      <li class="f5 w-100 hover-bg-light-gray hover-accent-color-light fw8">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".pipes">Hugo Pipes</a>
+        <ul class="pipes desktopmenu animated fadeIn list pl0 bg-light-gray dn">
+          <li class="f6 fw4">
+            <a href="/hugo-pipes/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Hugo Pipes Overview
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/hugo-pipes/introduction/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Hugo Pipes Introduction
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/hugo-pipes/scss-sass/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              SASS / SCSS
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/hugo-pipes/postprocess/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              PostProcess
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/hugo-pipes/postcss/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              PostCSS
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/hugo-pipes/js/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              JavaScript Building
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/hugo-pipes/babel/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Babel
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/hugo-pipes/minification/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Asset minification
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/hugo-pipes/bundling/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Asset bundling
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/hugo-pipes/fingerprint/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Fingerprinting and SRI
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/hugo-pipes/resource-from-template/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Resource from Template
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/hugo-pipes/resource-from-string/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Resource from String
+            </a>
+          </li>
+        </ul>
+      </li>
+      
+      <li class="f5 w-100 hover-bg-light-gray hover-accent-color-light fw8 mb1 bb b--moon-gray">
+        <a href="/commands/" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".commands">CLI</a>
+      </li>
+      
+      <li class="f5 w-100 hover-bg-light-gray hover-accent-color-light fw8">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".troubleshooting">Troubleshooting</a>
+        <ul class="troubleshooting desktopmenu animated fadeIn list pl0 bg-light-gray dn">
+          <li class="f6 fw4">
+            <a href="/troubleshooting/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Troubleshoot
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/troubleshooting/faq/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              FAQ
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/troubleshooting/build-performance/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Build Performance
+            </a>
+          </li>
+        </ul>
+      </li>
+      
+      <li class="f5 w-100 hover-bg-light-gray hover-accent-color-light fw8">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".tools">Tools</a>
+        <ul class="tools desktopmenu animated fadeIn list pl0 bg-light-gray dn">
+          <li class="f6 fw4">
+            <a href="/tools/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Developer Tools Overview
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/tools/migrations/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Migrations
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/tools/starter-kits/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Starter Kits
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/tools/frontends/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Frontends
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/tools/editors/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Editor Plug-ins
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/tools/search/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Search
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/tools/other/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Other Projects
+            </a>
+          </li>
+        </ul>
+      </li>
+      
+      <li class="f5 w-100 hover-bg-light-gray hover-accent-color-light fw8">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".hosting-and-deployment">Hosting &amp; Deployment</a>
+        <ul class="hosting-and-deployment desktopmenu animated fadeIn list pl0 bg-light-gray dn">
+          <li class="f6 fw4">
+            <a href="/hosting-and-deployment/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Hosting &amp; Deployment Overview
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/hosting-and-deployment/hugo-deploy/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Hugo Deploy
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/hosting-and-deployment/deployment-with-nanobox/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Host-Agnostic Deploys with Nanobox
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/hosting-and-deployment/hosting-on-aws-amplify/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Host on AWS Amplify
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/hosting-and-deployment/hosting-on-netlify/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Host on Netlify
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/hosting-and-deployment/hosting-on-render/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Host on Render
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/hosting-and-deployment/hosting-on-firebase/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Host on Firebase
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/hosting-and-deployment/hosting-on-github/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Host on GitHub
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/hosting-and-deployment/hosting-on-gitlab/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Host on GitLab
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/hosting-and-deployment/hosting-on-keycdn/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Hosting on KeyCDN
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/hosting-and-deployment/hosting-on-bitbucket/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Host on Bitbucket
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/hosting-and-deployment/deployment-with-wercker/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Deployment with Wercker
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/hosting-and-deployment/deployment-with-rsync/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Deployment with Rsync
+            </a>
+          </li>
+        </ul>
+      </li>
+      
+      <li class="f5 w-100 hover-bg-light-gray hover-accent-color-light fw8 mb1 bb b--moon-gray">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".contribute">Contribute</a>
+        <ul class="contribute desktopmenu animated fadeIn list pl0 bg-light-gray dn">
+          <li class="f6 fw4">
+            <a href="/contribute/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Contribute to Hugo
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/contribute/development/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Development
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/contribute/documentation/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Documentation
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/contribute/themes/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Themes
+            </a>
+          </li>
+        </ul>
+      </li>
+      
+      <li class="f5 w-100 hover-bg-light-gray hover-accent-color-light fw8">
+        <a href="/maintenance/" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".">Maintenance</a>
+      </li>
+  </ul>
+</nav>
+
+      </div>
+
+    </div>
+  </article>
+
+  <div class="w-100 bg-light-gray">
+    <div class="mw7 pa4 center nested-lh-copy lh-copy">
+      <h6 class="f4 dark-gray mb2">
+  <a href="https://gohugo.io/content-management/image-processing/" class="hide-child link primary-color">
+  <span class="nl3 child"><svg class="grow" fill="" height="14px" viewBox="0 0 24 24" width="14px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg>
+</span>
+    “Image Processing”
+  </a> was last updated: July 28, 2021: <a class="hide-child link primary-color" href="https://github.com/gohugoio/hugoDocs/commit/198cdf8f04c746aae12c76362e543aafd4f1218a">tpl/lang: Add new localized versions of lang.FormatNumber etc. (198cdf8f0)</a>
+</h6>
+
+      <a href="https://github.com/gohugoio/hugoDocs/edit/master/content/en/content-management%5cimage-processing%5cindex.md" class="
+f6 ph3 pv1 br2 dib  tc ttu mv3 bg-primary-color white hover-bg-green link
+">Improve this page</a>
+
+      
+
+
+    </div>
+  </div>
+
+  </main>
+
+  <footer class="bg-primary-color-dark ph4-ns pt4 relative w-100" role="contentinfo">
+    <div class="center flex-ns flex-wrap justify-between mw9 w-90">
+      <div class="pb3 pt4 w-100 w-50-ns">
+
+         <div class="b f3  light-gray mb3 nested-links tc">
+           By the <a href="https://github.com/gohugoio/hugo/graphs/contributors" class="link">Hugo Authors</a><br />
+          </div>
+
+          <div class="center w4">
+            <img src="/images/hugo-logo-wide.svg" alt="Hugo Logo">
+          </div>
+
+          <ul class="center f6 list ma0 mv3 pa0 tc"><li class="dib mr3"><a href="https://github.com/gohugoio/hugo/issues/new" class="dim link light-gray pv2">File an Issue</a></li><li class="dib mr3"><a href="https://discourse.gohugo.io/" class="dim link light-gray pv2">Get Help</a></li><li class="dib"><a href="https://gitter.im/spf13/hugo" class="dim link light-gray pv2">Discuss Source Code</a></li></ul>
+
+          <ul class="center f6 list ma0 mv4 pa0 tc">
+            <li class="dib mr3"><a href="https://twitter.com/gohugoio" class="dim link light-gray pv2">@GoHugoIO</a></li>
+            <li class="dib mr3"><a href="https://twitter.com/spf13" class="dim link light-gray pv2">@spf13</a></li>
+            <li class="dib"><a href="https://twitter.com/bepsays" class="dim link light-gray pv2">@bepsays</a></li>
+          </ul>
+
+          
+
+      </div>
+
+      <div class="w-100 w-50-l"> 
+        
+
+
+  <section class="pb3 w-100">
+    <div class="center mw9"> 
+      <h3 class="b f3 mv0 light-gray">Hugo Sponsors</h3>
+      <div class="flex-ns flex-wrap center justify-between pt3">
+        
+          
+          
+            <div class="ba b--dark-gray bg-light-gray br3 flex flex-column flex-wrap items-center justify-center ph3 pv4 mb4 w-100 w-30-l  o-100">
+              
+                
+                   <a href="https://www.linode.com/?utm_campaign=hugosponsor&amp;utm_medium=banner&amp;utm_source=homepage" class="grow">
+                
+              <img src="/images/sponsors/linode-logo_standard_light_medium.png" alt="Logo for Linode" class="img h3 center" />
+              </a>
+              
+            </div>
+          
+        
+          
+          
+            <div class="ba b--dark-gray bg-light-gray br3 flex flex-column flex-wrap items-center justify-center ph3 pv4 mb4 w-100 w-30-l  o-100">
+              
+                
+                   <a href="https://esolia.com/post/why-did-esolia-choose-hugo/?utm_campaign=hugosponsor&amp;utm_medium=banner&amp;utm_source=homepage" class="grow">
+                
+              <img src="/images/sponsors/esolia-logo.svg" alt="Logo for eSolia" class="img h3 center" />
+              </a>
+              
+            </div>
+          
+        
+          
+          
+            <div class="ba b--dark-gray bg-light-gray br3 flex flex-column flex-wrap items-center justify-center ph3 pv4 mb4 w-100 w-30-l  o-100" style="background-color: #5A2FA1;">
+              
+                
+                   <a href="https://brave.com/?utm_campaign=hugosponsor&amp;utm_medium=banner&amp;utm_source=homepage" class="grow">
+                
+              <img src="/images/sponsors/brave-logo.svg" alt="Logo for Brave" class="img h3 center" />
+              </a>
+              
+            </div>
+          
+        
+      </div>
+    </div>
+  </section>
+
+
+      </div>
+
+    </div>
+
+    <div class="f7 gray mb5 mb0-ns ph3 w-100"> 
+      <p class="dib mr4">The Hugo logos are copyright © Steve Francia 2013–2021.</p>
+      <p class="dib">The Hugo Gopher is based on an original work by Renée French.</p>
+    </div>
+
+    <img src="/images/gopher-side_color.svg" alt="" class="absolute-l bottom-0 dn db-l h4 right-0 z-999"/>
+
+    <div class="bg-primary-color-dark bottom-0 left-0 right-0 dn-l fixed pb3 ph3 w-100"><div  class="globalmenu mobilemenu pb3 dn">
+    
+
+<ul class="list hidden dib ph0 ma0 scrolling-touch tc">
+  
+    <li  class="tl dib ma0 hover-bg-black w-100">
+        <a href="/news/" class="ttu f6 link primary-color-light overflow hover-white db brand-font  ma0 w-100 pv3 ph4">
+          News
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100">
+        <a href="/documentation/" class="ttu f6 link primary-color-light overflow hover-white db brand-font  ma0 w-100 pv3 ph4">
+          Docs
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100">
+        <a href="https://themes.gohugo.io/" class="ttu f6 link primary-color-light overflow hover-white db brand-font  ma0 w-100 pv3 ph4">
+          Themes
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100">
+        <a href="/showcase/" class="ttu f6 link primary-color-light overflow hover-white db brand-font  ma0 w-100 pv3 ph4">
+          Showcase
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100">
+        <a href="https://discourse.gohugo.io/" class="ttu f6 link primary-color-light overflow hover-white db brand-font  ma0 w-100 pv3 ph4">
+          Community
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100">
+        <a href="https://github.com/gohugoio/hugo" class="ttu f6 link primary-color-light overflow hover-white db brand-font  ma0 w-100 pv3 ph4">
+          GitHub
+        </a>
+    </li>
+  
+</ul>
+
+</div>
+<div  class="docsmenu mobilemenu pb3 dn">
+    
+
+<ul class="list dib ph0 ma0 scrolling-touch tc">
+  
+    <li  class="tl dib ma0 hover-bg-black w-100">
+        <a href="/about/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
+          About Hugo
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100">
+        <a href="/getting-started/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
+          Getting Started
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100 mb2 bb b--mid-gray">
+        <a href="/hugo-modules/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
+          Hugo Modules
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100">
+        <a href="/content-management/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
+          Content Management
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100">
+        <a href="/templates/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
+          Templates
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100">
+        <a href="/functions/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
+          Functions
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100">
+        <a href="/variables/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
+          Variables
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100">
+        <a href="/hugo-pipes/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
+          Hugo Pipes
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100 mb2 bb b--mid-gray">
+        <a href="/commands/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
+          CLI
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100">
+        <a href="/troubleshooting/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
+          Troubleshooting
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100">
+        <a href="/tools/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
+          Tools
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100">
+        <a href="/hosting-and-deployment/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
+          Hosting &amp; Deployment
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100 mb2 bb b--mid-gray">
+        <a href="/contribute/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
+          Contribute
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100">
+        <a href="/maintenance/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
+          Maintenance
+        </a>
+    </li>
+  
+</ul>
+
+</div>
+
+<div class="flex dn-l justify-between">
+  <button class="js-toggle flex-auto dib dn-l f6 tc db mt4-ns ph3 pv2 link mr2 white bg-primary-color-dark hover-bg-primary-color ba b--white-40 w-auto" data-target=".globalmenu">Menu</button>
+
+  <button class="js-toggle flex-auto dib dn-l f6 tc db mt4-ns ph3 pv2 link white bg-primary-color-dark hover-bg-primary-color ba b--white-40 w-auto" data-target=".docsmenu">Docs Menu</button>
+</div>
+</div>
+
+</footer>
+
+
+</body>
+
+</html>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>getting started on Hugo</title>
+    <link>https://gohugo.io/categories/getting-started/</link>
+    <description>Recent content in getting started on Hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 15 Nov 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://gohugo.io/categories/getting-started/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Get Started</title>
+      <link>https://gohugo.io/getting-started/</link>
+      <pubDate>Wed, 01 Feb 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://gohugo.io/getting-started/</guid>
+      <description>If this is your first time using Hugo and you&amp;rsquo;ve already installed Hugo on your machine, we recommend the quick start. You can also use external learning resources to learn Hugo.</description>
+    </item>
+    
+    <item>
+      <title>Quick Start</title>
+      <link>https://gohugo.io/getting-started/quick-start/</link>
+      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://gohugo.io/getting-started/quick-start/</guid>
+      <description>This quick start uses macOS in the examples. For instructions about how to install Hugo on other operating systems, see install.
+It is recommended to have Git installed to run this tutorial.
+For other approaches learning Hugo like book or a video tutorial refer to the external learning resources page.
+Step 1: Install Hugo Homebrew and MacPorts, package managers for macOS, can be installed from brew.</description>
+    </item>
+    
+    <item>
+      <title>Install Hugo</title>
+      <link>https://gohugo.io/getting-started/installing/</link>
+      <pubDate>Tue, 01 Nov 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://gohugo.io/getting-started/installing/</guid>
+      <description>There is lots of talk about &amp;ldquo;Hugo being written in Go&amp;rdquo;, but you don&amp;rsquo;t need to install Go to enjoy Hugo. Just grab a precompiled binary!
+Hugo is written in Go with support for multiple platforms. The latest release can be found at Hugo Releases.
+Hugo currently provides pre-built binaries for the following:
+ macOS (Darwin) for x64, i386, and ARM architectures Windows Linux OpenBSD FreeBSD  Hugo may also be compiled from source wherever the Go toolchain can run; e.</description>
+    </item>
+    
+    <item>
+      <title>Basic Usage</title>
+      <link>https://gohugo.io/getting-started/usage/</link>
+      <pubDate>Wed, 01 Feb 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://gohugo.io/getting-started/usage/</guid>
+      <description>The following is a description of the most common commands you will use while developing your Hugo project. See the Command Line Reference for a comprehensive view of Hugo&amp;rsquo;s CLI.
+Test Installation Once you have installed Hugo, make sure it is in your PATH. You can test that Hugo has been installed correctly via the help command:
+hugo helpThe output you see in your console should be similar to the following:</description>
+    </item>
+    
+    <item>
+      <title>Directory Structure</title>
+      <link>https://gohugo.io/getting-started/directory-structure/</link>
+      <pubDate>Mon, 02 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://gohugo.io/getting-started/directory-structure/</guid>
+      <description>New Site Scaffolding   Running the hugo new site generator from the command line will create a directory structure with the following elements:
+.├── archetypes├── config.toml├── content├── data├── layouts├── static└── themesDirectory Structure Explained The following is a high-level overview of each of the directories with links to each of their respective sections within the Hugo docs.
+ archetypes You can create new content files in Hugo using the hugo new command.</description>
+    </item>
+    
+    <item>
+      <title>Code Toggle</title>
+      <link>https://gohugo.io/getting-started/code-toggle/</link>
+      <pubDate>Fri, 16 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://gohugo.io/getting-started/code-toggle/</guid>
+      <description>The Config Toggler! This is an example for the Config Toggle shortcode. Its purpose is to let users choose a Config language by clicking on its corresponding tab. Upon doing so, every Code toggler on the page will be switched to the target language. Also, target language will be saved in user&amp;rsquo;s localStorage so when they go to a different pages, Code Toggler display their last &amp;ldquo;toggled&amp;rdquo; config language.</description>
+    </item>
+    
+    <item>
+      <title>Configure Hugo</title>
+      <link>https://gohugo.io/getting-started/configuration/</link>
+      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://gohugo.io/getting-started/configuration/</guid>
+      <description>Configuration File Hugo uses the config.toml, config.yaml, or config.json (if found in the site root) as the default site config file.
+The user can choose to override that default with one or more site config files using the command line --config switch.
+Examples:
+hugo --config debugconfig.tomlhugo --config a.toml,b.toml,c.tomlMultiple site config files can be specified as a comma-separated string to the --config switch.
+Configuration Directory In addition to using a single site config file, one can use the configDir directory (default to config/) to maintain easier organization and environment specific settings.</description>
+    </item>
+    
+    <item>
+      <title>Configure Markup</title>
+      <link>https://gohugo.io/getting-started/configuration-markup/</link>
+      <pubDate>Fri, 15 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://gohugo.io/getting-started/configuration-markup/</guid>
+      <description>Configure Markup New in v0.60.0 See Goldmark for settings related to the default Markdown handler in Hugo.
+Below are all markup related configuration in Hugo with their default settings:
+config.yaml&amp;nbsp;toml&amp;nbsp;json&amp;nbsp;markup:asciidocExt:attributes:{}backend:html5extensions:[]failureLevel:fatalnoHeaderOrFooter:truepreserveTOC:falsesafeMode:unsafesectionNumbers:falsetrace:falseverbose:falseworkingFolderCurrent:falseblackFriday:angledQuotes:falseextensions:nullextensionsMask:nullfootnoteAnchorPrefix:&amp;#34;&amp;#34;footnoteReturnLinkContents:&amp;#34;&amp;#34;fractions:truehrefTargetBlank:falselatexDashes:truenofollowLinks:falsenoreferrerLinks:falseplainIDAnchors:trueskipHTML:falsesmartDashes:truesmartypants:truesmartypantsQuotesNBSP:falsetaskLists:truedefaultMarkdownHandler:goldmarkgoldmark:extensions:definitionList:truefootnote:truelinkify:truestrikethrough:truetable:truetaskList:truetypographer:trueparser:attribute:block:falsetitle:trueautoHeadingID:trueautoHeadingIDType:githubrenderer:hardWraps:falseunsafe:falsexhtml:falsehighlight:anchorLineNos:falsecodeFences:trueguessSyntax:falsehl_Lines:&amp;#34;&amp;#34;lineAnchors:&amp;#34;&amp;#34;lineNoStart:1lineNos:falselineNumbersInTable:truenoClasses:truestyle:monokaitabWidth:4tableOfContents:endLevel:3ordered:falsestartLevel:2[markup] defaultMarkdownHandler = &amp;#39;goldmark&amp;#39; [markup.asciidocExt] backend = &amp;#39;html5&amp;#39; extensions = [] failureLevel = &amp;#39;fatal&amp;#39; noHeaderOrFooter = true preserveTOC = false safeMode = &amp;#39;unsafe&amp;#39; sectionNumbers = false trace = false verbose = false workingFolderCurrent = false [markup.</description>
+    </item>
+    
+  </channel>
+</rss>

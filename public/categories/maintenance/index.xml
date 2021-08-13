@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>maintenance on Hugo</title>
+    <link>https://gohugo.io/categories/maintenance/</link>
+    <description>Recent content in maintenance on Hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 09 Feb 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://gohugo.io/categories/maintenance/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Maintenance</title>
+      <link>https://gohugo.io/maintenance/</link>
+      <pubDate>Fri, 09 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://gohugo.io/maintenance/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
