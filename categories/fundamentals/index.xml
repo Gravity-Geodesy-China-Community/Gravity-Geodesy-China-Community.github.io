@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>fundamentals on Hugo</title>
+    <link>https://gohugo.io/categories/fundamentals/</link>
+    <description>Recent content in fundamentals on Hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 15 Nov 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://gohugo.io/categories/fundamentals/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Introduction to Hugo Templating</title>
+      <link>https://gohugo.io/templates/introduction/</link>
+      <pubDate>Wed, 01 Feb 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://gohugo.io/templates/introduction/</guid>
+      <description>The following is only a primer on Go Templates. For an in-depth look into Go Templates, check the official Go docs.
+Go Templates provide an extremely simple template language that adheres to the belief that only the most basic of logic belongs in the template or view layer.
+Basic Syntax Go Templates are HTML files with the addition of variables and functions. Go Template variables and functions are accessible within {{ }}.</description>
+    </item>
+    
+    <item>
+      <title>Content Organization</title>
+      <link>https://gohugo.io/content-management/organization/</link>
+      <pubDate>Wed, 01 Feb 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://gohugo.io/content-management/organization/</guid>
+      <description>Page Bundles Hugo 0.32 announced page-relative images and other resources packaged into Page Bundles.
+These terms are connected, and you also need to read about Page Resources and Image Processing to get the full picture.
+The illustration shows 3 bundles. Note that the home page bundle cannot contain other content pages, but other files (images etc.) are fine. The bundle documentation is work in progress.</description>
+    </item>
+    
+    <item>
+      <title>Hugo&#39;s Lookup Order</title>
+      <link>https://gohugo.io/templates/lookup-order/</link>
+      <pubDate>Wed, 01 Feb 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://gohugo.io/templates/lookup-order/</guid>
+      <description>Hugo Layouts Lookup Rules Hugo takes the parameters listed below into consideration when choosing a layout for a given page. They are listed in a priority order. This should feel natural, but look at the table below for concrete examples of the different parameter variations.
+ Kind The page Kind (the home page is one). See the example tables below per kind. This also determines if it is a single page (i.</description>
+    </item>
+    
+    <item>
+      <title>Base Templates and Blocks</title>
+      <link>https://gohugo.io/templates/base/</link>
+      <pubDate>Wed, 01 Feb 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://gohugo.io/templates/base/</guid>
+      <description>The block keyword allows you to define the outer shell of your pages&#39; one or more master template(s) and then fill in or override portions as necessary.
+  Base Template Lookup Order New in v0.63.0 Since Hugo v0.63, the base template lookup order closely follows that of the template it applies to (e.g. _default/list.html).
+See Template Lookup Order for details and examples.
+Define the Base Template The following defines a simple base template at _default/baseof.</description>
+    </item>
+    
+    <item>
+      <title>Install Hugo</title>
+      <link>https://gohugo.io/getting-started/installing/</link>
+      <pubDate>Tue, 01 Nov 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://gohugo.io/getting-started/installing/</guid>
+      <description>There is lots of talk about &amp;ldquo;Hugo being written in Go&amp;rdquo;, but you don&amp;rsquo;t need to install Go to enjoy Hugo. Just grab a precompiled binary!
+Hugo is written in Go with support for multiple platforms. The latest release can be found at Hugo Releases.
+Hugo currently provides pre-built binaries for the following:
+ macOS (Darwin) for x64, i386, and ARM architectures Windows Linux OpenBSD FreeBSD  Hugo may also be compiled from source wherever the Go toolchain can run; e.</description>
+    </item>
+    
+    <item>
+      <title>Directory Structure</title>
+      <link>https://gohugo.io/getting-started/directory-structure/</link>
+      <pubDate>Mon, 02 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://gohugo.io/getting-started/directory-structure/</guid>
+      <description>New Site Scaffolding   Running the hugo new site generator from the command line will create a directory structure with the following elements:
+.├── archetypes├── config.toml├── content├── data├── layouts├── static└── themesDirectory Structure Explained The following is a high-level overview of each of the directories with links to each of their respective sections within the Hugo docs.
+ archetypes You can create new content files in Hugo using the hugo new command.</description>
+    </item>
+    
+    <item>
+      <title>Code Toggle</title>
+      <link>https://gohugo.io/getting-started/code-toggle/</link>
+      <pubDate>Fri, 16 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://gohugo.io/getting-started/code-toggle/</guid>
+      <description>The Config Toggler! This is an example for the Config Toggle shortcode. Its purpose is to let users choose a Config language by clicking on its corresponding tab. Upon doing so, every Code toggler on the page will be switched to the target language. Also, target language will be saved in user&amp;rsquo;s localStorage so when they go to a different pages, Code Toggler display their last &amp;ldquo;toggled&amp;rdquo; config language.</description>
+    </item>
+    
+    <item>
+      <title>Configure Hugo</title>
+      <link>https://gohugo.io/getting-started/configuration/</link>
+      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://gohugo.io/getting-started/configuration/</guid>
+      <description>Configuration File Hugo uses the config.toml, config.yaml, or config.json (if found in the site root) as the default site config file.
+The user can choose to override that default with one or more site config files using the command line --config switch.
+Examples:
+hugo --config debugconfig.tomlhugo --config a.toml,b.toml,c.tomlMultiple site config files can be specified as a comma-separated string to the --config switch.
+Configuration Directory In addition to using a single site config file, one can use the configDir directory (default to config/) to maintain easier organization and environment specific settings.</description>
+    </item>
+    
+    <item>
+      <title>Configure Markup</title>
+      <link>https://gohugo.io/getting-started/configuration-markup/</link>
+      <pubDate>Fri, 15 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://gohugo.io/getting-started/configuration-markup/</guid>
+      <description>Configure Markup New in v0.60.0 See Goldmark for settings related to the default Markdown handler in Hugo.
+Below are all markup related configuration in Hugo with their default settings:
+config.yaml&amp;nbsp;toml&amp;nbsp;json&amp;nbsp;markup:asciidocExt:attributes:{}backend:html5extensions:[]failureLevel:fatalnoHeaderOrFooter:truepreserveTOC:falsesafeMode:unsafesectionNumbers:falsetrace:falseverbose:falseworkingFolderCurrent:falseblackFriday:angledQuotes:falseextensions:nullextensionsMask:nullfootnoteAnchorPrefix:&amp;#34;&amp;#34;footnoteReturnLinkContents:&amp;#34;&amp;#34;fractions:truehrefTargetBlank:falselatexDashes:truenofollowLinks:falsenoreferrerLinks:falseplainIDAnchors:trueskipHTML:falsesmartDashes:truesmartypants:truesmartypantsQuotesNBSP:falsetaskLists:truedefaultMarkdownHandler:goldmarkgoldmark:extensions:definitionList:truefootnote:truelinkify:truestrikethrough:truetable:truetaskList:truetypographer:trueparser:attribute:block:falsetitle:trueautoHeadingID:trueautoHeadingIDType:githubrenderer:hardWraps:falseunsafe:falsexhtml:falsehighlight:anchorLineNos:falsecodeFences:trueguessSyntax:falsehl_Lines:&amp;#34;&amp;#34;lineAnchors:&amp;#34;&amp;#34;lineNoStart:1lineNos:falselineNumbersInTable:truenoClasses:truestyle:monokaitabWidth:4tableOfContents:endLevel:3ordered:falsestartLevel:2[markup] defaultMarkdownHandler = &amp;#39;goldmark&amp;#39; [markup.asciidocExt] backend = &amp;#39;html5&amp;#39; extensions = [] failureLevel = &amp;#39;fatal&amp;#39; noHeaderOrFooter = true preserveTOC = false safeMode = &amp;#39;unsafe&amp;#39; sectionNumbers = false trace = false verbose = false workingFolderCurrent = false [markup.</description>
+    </item>
+    
+    <item>
+      <title>Comments</title>
+      <link>https://gohugo.io/content-management/comments/</link>
+      <pubDate>Wed, 01 Feb 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://gohugo.io/content-management/comments/</guid>
+      <description>Hugo ships with support for Disqus, a third-party service that provides comment and community capabilities to websites via JavaScript.
+Your theme may already support Disqus, but if not, it is easy to add to your templates via Hugo&amp;rsquo;s built-in Disqus partial.
+Add Disqus Hugo comes with all the code you need to load Disqus into your templates. Before adding Disqus to your site, you&amp;rsquo;ll need to set up an account.</description>
+    </item>
+    
+  </channel>
+</rss>

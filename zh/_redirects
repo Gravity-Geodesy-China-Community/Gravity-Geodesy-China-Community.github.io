@@ -1,0 +1,11 @@
+# Netlify redirects. See https://www.netlify.com/docs/redirects/
+
+/about-hugo/                       	/zh/about/
+/docs/                             	/zh/about/
+/content/                          	/zh/content-management/
+/content/organization              	/zh/content-management/
+/templates/overview/               	/zh/templates/
+/templates/content                 	/zh/templates/
+/templates/blocks/                 	/zh/templates/base/
+/templates/base-templates-and-blocks/	/zh/templates/base/
+/release-notes/                    	/zh/news/

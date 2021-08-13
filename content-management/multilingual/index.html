@@ -1,0 +1,3069 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+  
+  <link rel="preload" href="https://gohugo.io/fonts/muli-latin-200.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="https://gohugo.io/fonts/muli-latin-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="https://gohugo.io/fonts/muli-latin-800.woff2" as="font" type="font/woff2" crossorigin>
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <title>Multilingual Mode | Hugo</title>
+
+  <meta name="viewport" content="width=device-width,minimum-scale=1">
+  <meta name="generator" content="Hugo 0.87.0" />
+
+  
+  <meta name="robots" content="noindex, nofollow">
+  
+
+  
+  
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/output/css/app.min.bab83909a2f2fe2aa45bf7e4813899f4f705e6858479cea5bd48eee72fdf0a70.css" integrity="sha256-urg5CaLy/iqkW/fkgTiZ9PcF5oWEec6lvUju5y/fCnA=" crossorigin="anonymous">
+  
+  
+  
+
+  <meta name="description"
+  content="Hugo supports the creation of websites with multiple languages side by side.">
+
+  
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/output/js/app.0984bf5469ab3c8aa82cf8eb015a560d74ee028723b1ab38e928998f5f72baba.js" integrity="sha256-CYS/VGmrPIqoLPjrAVpWDXTuAocjsas46SiZj19yuro=" crossorigin="anonymous" defer></script>
+  
+      
+ 
+
+
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+  
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0594cb">
+<meta name="theme-color" content="#ffffff">
+<meta property="og:title" content="Multilingual Mode" />
+<meta property="og:description" content="Hugo supports the creation of websites with multiple languages side by side." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://gohugo.io/content-management/multilingual/" /><meta property="og:image" content="https://gohugo.io/images/gohugoio-card.png"/><meta property="article:section" content="content-management" />
+<meta property="article:published_time" content="2017-01-10T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-04-09T16:18:02+02:00" />
+
+<meta itemprop="name" content="Multilingual Mode">
+<meta itemprop="description" content="Hugo supports the creation of websites with multiple languages side by side."><meta itemprop="datePublished" content="2017-01-10T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2021-04-09T16:18:02+02:00" />
+<meta itemprop="wordCount" content="2464"><meta itemprop="image" content="https://gohugo.io/images/gohugoio-card.png"/>
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://gohugo.io/images/gohugoio-card.png"/>
+
+<meta name="twitter:title" content="Multilingual Mode"/>
+<meta name="twitter:description" content="Hugo supports the creation of websites with multiple languages side by side."/>
+<meta name="twitter:site" content="@GoHugoIO"/>
+
+
+</head>
+
+<body class="ma0 sans-serif bg-primary-color-light">
+  
+<nav class="bg-primary-color-dark pv4 w-100" role="navigation">
+
+  <div class="center flex-ns flex-wrap items-center justify-start mw9">
+
+    <h1 class="dim f3 lh-solid ml0-ns mr0 mr4-l mv0 pl3 pl4-ns">
+      <a href="https://gohugo.io/" class="link white">
+         HUGO
+      </a>
+    </h1>
+    <ul class="list ma0 pa0 dn dib-l">
+      
+        <li class="f5 dib mr4" role="menuitem">
+            
+          <a href="/news/" class="dim link light-silver">
+            News
+              
+            
+            
+          </a>
+        </li>
+      
+        <li class="f5 dib mr4" role="menuitem">
+            
+          <a href="/documentation/" class="dim link light-silver">
+            Docs
+              
+            
+            
+          </a>
+        </li>
+      
+        <li class="f5 dib mr4" role="menuitem">
+            
+          <a href="https://themes.gohugo.io/" class="dim link light-silver">
+            Themes
+              
+            
+            
+          </a>
+        </li>
+      
+        <li class="f5 dib mr4" role="menuitem">
+            
+          <a href="/showcase/" class="dim link light-silver">
+            Showcase
+              
+            
+            
+          </a>
+        </li>
+      
+        <li class="f5 dib mr4" role="menuitem">
+            
+          <a href="https://discourse.gohugo.io/" class="dim link light-silver">
+            Community
+              
+            
+            
+              <span class="pl1">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10" height="10" viewBox="0 0 32 32" class="fill-current v-base" aria-label="External Link">
+<path d="M25.152 16.576v5.696q0 2.144-1.504 3.648t-3.648 1.504h-14.848q-2.144 0-3.648-1.504t-1.504-3.648v-14.848q0-2.112 1.504-3.616t3.648-1.536h12.576q0.224 0 0.384 0.16t0.16 0.416v1.152q0 0.256-0.16 0.416t-0.384 0.16h-12.576q-1.184 0-2.016 0.832t-0.864 2.016v14.848q0 1.184 0.864 2.016t2.016 0.864h14.848q1.184 0 2.016-0.864t0.832-2.016v-5.696q0-0.256 0.16-0.416t0.416-0.16h1.152q0.256 0 0.416 0.16t0.16 0.416zM32 1.152v9.12q0 0.48-0.352 0.8t-0.8 0.352-0.8-0.352l-3.136-3.136-11.648 11.648q-0.16 0.192-0.416 0.192t-0.384-0.192l-2.048-2.048q-0.192-0.16-0.192-0.384t0.192-0.416l11.648-11.648-3.136-3.136q-0.352-0.352-0.352-0.8t0.352-0.8 0.8-0.352h9.12q0.48 0 0.8 0.352t0.352 0.8z"></path>
+</svg>
+
+              </span>
+            
+          </a>
+        </li>
+      
+        <li class="f5 dib mr4" role="menuitem">
+            
+          <a href="https://github.com/gohugoio/hugo" class="dim link light-silver">
+            GitHub
+              
+            
+            
+              <span class="pl1">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10" height="10" viewBox="0 0 32 32" class="fill-current v-base" aria-label="External Link">
+<path d="M25.152 16.576v5.696q0 2.144-1.504 3.648t-3.648 1.504h-14.848q-2.144 0-3.648-1.504t-1.504-3.648v-14.848q0-2.112 1.504-3.616t3.648-1.536h12.576q0.224 0 0.384 0.16t0.16 0.416v1.152q0 0.256-0.16 0.416t-0.384 0.16h-12.576q-1.184 0-2.016 0.832t-0.864 2.016v14.848q0 1.184 0.864 2.016t2.016 0.864h14.848q1.184 0 2.016-0.864t0.832-2.016v-5.696q0-0.256 0.16-0.416t0.416-0.16h1.152q0.256 0 0.416 0.16t0.16 0.416zM32 1.152v9.12q0 0.48-0.352 0.8t-0.8 0.352-0.8-0.352l-3.136-3.136-11.648 11.648q-0.16 0.192-0.416 0.192t-0.384-0.192l-2.048-2.048q-0.192-0.16-0.192-0.384t0.192-0.416l11.648-11.648-3.136-3.136q-0.352-0.352-0.352-0.8t0.352-0.8 0.8-0.352h9.12q0.48 0 0.8 0.352t0.352 0.8z"></path>
+</svg>
+
+              </span>
+            
+          </a>
+        </li>
+      
+    </ul>
+
+    <div class="db dib-ns pl3"><form id="site-search-form" action="" role="search">
+  <fieldset class="bn ma0 pa0">
+    <label class="clip" for="search-input">Search</label>
+    <input type="search" id="search-input" class="needs-js bg-left bn f5 input-reset lh-solid mt3 mt0-ns pl4 pv2 w5 white" placeholder="Search the Docs" name="search-input" value="" style="background: url('/images/icon-search.png') 5px 11px/16px 16px no-repeat; background-color: rgba(255,255,255,0);">
+  </fieldset>
+</form></div>
+
+    <span class="absolute mt1 mt2-l pr3 right-0 top-0">
+
+  <a href="https://twitter.com/intent/follow?screen_name=GoHugoIO" title="Follow on Twitter" class="link-transition twitter link dib z-999 pt3 pt0-l mr2">
+    <svg height="32px" id="Layer_1" style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
+
+  </a>
+
+<a class="github-button needs-js link primary-color-dark" href="https://github.com/gohugoio/hugo" data-size="large" data-show-count="false" aria-label="Star gohugoio/hugo on GitHub">Star</a>
+</span>
+
+  </div>
+</nav>
+
+  
+  <main role="main" class="content-with-sidebar min-vh-100 pb7 pb0-ns">
+    
+  <article class="w-100 ph4 pb5 pb6-ns pt1 pt5-ns">
+    <div class="flex-l">
+
+      <div class="order-2 w-100 w-20-l ph5-m ph0-l mb4 sticky">
+<aside class="fixed-lTK mw5-l right-0 f6 bl-l b--moon-gray pv4 pv0-ns ph4-l nested-list-reset nested-links nested-copy-line-height">
+	
+		<p class="b">What's on this Page</p>
+  	<nav id="TableOfContents">
+  <ul>
+    <li><a href="#configure-languages">Configure Languages</a></li>
+    <li><a href="#translate-your-content">Translate Your Content</a></li>
+    <li><a href="#reference-the-translated-content">Reference the Translated Content</a></li>
+    <li><a href="#translation-of-strings">Translation of Strings</a></li>
+    <li><a href="#customize-dates">Customize Dates</a></li>
+    <li><a href="#menus">Menus</a></li>
+    <li><a href="#missing-translations">Missing Translations</a></li>
+    <li><a href="#multilingual-themes-support">Multilingual Themes support</a></li>
+  </ul>
+</nav>
+	
+
+	<div date-pref>
+		
+			<a href="https://gohugo.io/content-management/comments/" class="dib f6 pl1 hover-bg-light-gray br-100" title="Comments ">
+				<svg class="fill-current" height="30px" viewBox="0 0 24 24" width="30px" xmlns="http://www.w3.org/2000/svg">
+    <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
+    <path d="M0 0h24v24H0z" fill="none"/>
+</svg>
+
+			</a>
+		
+
+		
+			<a href="https://gohugo.io/content-management/page-resources/" class="dib f6 pr1 hover-bg-light-gray br-100" title="Page Resources">
+			<svg class="fill-current" height="30px" viewBox="0 0 24 24" width="30px" xmlns="http://www.w3.org/2000/svg">
+    <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
+    <path d="M0 0h24v24H0z" fill="none"/>
+</svg>
+
+			</a>
+		
+	</div>
+
+</aside>
+</div>
+
+      <div class="order-1 w-60-l mw7 ph0 ph5-ns mid-gray nested-copy-line-height no-underline nested-links nested-img nested-copy-seperator nested-blockquote mt0-ns" style="flex-grow:1;">
+        <div class="documentation-copy center measure-wide-l">
+          <div id="readout" class="fixed right-0 bottom-0">
+          </div>
+          <header class="flex-none w-100">
+  
+    
+      <a href="/categories/content-management" class="f6 fw8 mb0 link mid-gray dim mr3">
+        CONTENT MANAGEMENT
+      </a>
+    
+  
+  <h1 class="lh-title mb3 mv0 pt3 primary-color-dark">Multilingual Mode</h1>
+</header>
+
+<aside class="bt bw1 pt3 mt2 mid-gray b--mid-gray fn w-100">
+  
+    <div class="f4 fw4 lh-copy">
+      Hugo supports the creation of websites with multiple languages side by side.
+    </div>
+  
+
+  
+</aside>
+
+
+
+<div class="prose" id="prose">
+
+<p>You should define the available languages in a <code>languages</code> section in your site configuration.</p>
+<blockquote>
+<p>Also See <a href="https://regisphilibert.com/blog/2018/08/hugo-multilingual-part-1-managing-content-translation/">Hugo Multilingual Part 1: Content translation</a></p>
+</blockquote>
+<h2 id="configure-languages">Configure Languages <a class="header-link" href="#configure-languages"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
+<p>The following is an example of a site configuration for a multilingual Hugo project:</p>
+
+
+
+  
+
+
+<div class="code relative" id="config">
+  <div class="code-nav flex flex-nowrap items-stretch"><div class="san-serif f6 dib lh-solid pl2 pv2 mr2">
+        config.
+      </div>
+      <button data-toggle-tab="yaml" class="tab-button active ba san-serif f6 dib lh-solid ph2 pv2">
+        yaml
+      </button>
+      &nbsp;
+    
+      <button data-toggle-tab="toml" class="tab-button  ba san-serif f6 dib lh-solid ph2 pv2">
+        toml
+      </button>
+      &nbsp;
+    
+      <button data-toggle-tab="json" class="tab-button  ba san-serif f6 dib lh-solid ph2 pv2">
+        json
+      </button>
+      &nbsp;
+    
+  </div>
+  <div class="tab-content">
+    
+      <div data-pane="yaml" class="code-copy-content nt3 tab-pane active">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">copyright</span><span class="p">:</span><span class="w"> </span><span class="l">Everything is mine</span><span class="w">
+</span><span class="w"></span><span class="nt">defaultContentLanguage</span><span class="p">:</span><span class="w"> </span><span class="l">en</span><span class="w">
+</span><span class="w"></span><span class="nt">languages</span><span class="p">:</span><span class="w">
+</span><span class="w">  </span><span class="nt">ar</span><span class="p">:</span><span class="w">
+</span><span class="w">    </span><span class="nt">languagedirection</span><span class="p">:</span><span class="w"> </span><span class="l">rtl</span><span class="w">
+</span><span class="w">    </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l">مدونتي</span><span class="w">
+</span><span class="w">    </span><span class="nt">weight</span><span class="p">:</span><span class="w"> </span><span class="m">2</span><span class="w">
+</span><span class="w">  </span><span class="nt">en</span><span class="p">:</span><span class="w">
+</span><span class="w">    </span><span class="nt">params</span><span class="p">:</span><span class="w">
+</span><span class="w">      </span><span class="nt">linkedin</span><span class="p">:</span><span class="w"> </span><span class="l">https://linkedin.com/whoever</span><span class="w">
+</span><span class="w">    </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l">My blog</span><span class="w">
+</span><span class="w">    </span><span class="nt">weight</span><span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
+</span><span class="w">  </span><span class="nt">fr</span><span class="p">:</span><span class="w">
+</span><span class="w">    </span><span class="nt">params</span><span class="p">:</span><span class="w">
+</span><span class="w">      </span><span class="nt">linkedin</span><span class="p">:</span><span class="w"> </span><span class="l">https://linkedin.com/fr/whoever</span><span class="w">
+</span><span class="w">      </span><span class="nt">navigation</span><span class="p">:</span><span class="w">
+</span><span class="w">        </span><span class="nt">help</span><span class="p">:</span><span class="w"> </span><span class="l">Aide</span><span class="w">
+</span><span class="w">    </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l">Mon blogue</span><span class="w">
+</span><span class="w">    </span><span class="nt">weight</span><span class="p">:</span><span class="w"> </span><span class="m">2</span><span class="w">
+</span><span class="w">  </span><span class="nt">pt-pt</span><span class="p">:</span><span class="w">
+</span><span class="w">    </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l">O meu blog</span><span class="w">
+</span><span class="w">    </span><span class="nt">weight</span><span class="p">:</span><span class="w"> </span><span class="m">3</span><span class="w">
+</span><span class="w"></span><span class="nt">params</span><span class="p">:</span><span class="w">
+</span><span class="w">  </span><span class="nt">navigation</span><span class="p">:</span><span class="w">
+</span><span class="w">    </span><span class="nt">help</span><span class="p">:</span><span class="w"> </span><span class="l">Help</span><span class="w">
+</span></code></pre></div>
+      </div>
+      
+        <button class="needs-js copy copy-toggle bg-accent-color-dark f6 absolute top-0 right-0 lh-solid hover-bg-primary-color-dark bn white ph3 pv2" title="Copy this code to your clipboard." data-clipboard-action="copy" aria-label="copy button"></button>
+        
+      
+    
+      <div data-pane="toml" class="code-copy-content nt3 tab-pane ">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="nx">copyright</span> <span class="p">=</span> <span class="s1">&#39;Everything is mine&#39;</span>
+<span class="nx">defaultContentLanguage</span> <span class="p">=</span> <span class="s1">&#39;en&#39;</span>
+<span class="p">[</span><span class="nx">languages</span><span class="p">]</span>
+<span class="p">[</span><span class="nx">languages</span><span class="p">.</span><span class="nx">ar</span><span class="p">]</span>
+<span class="nx">languagedirection</span> <span class="p">=</span> <span class="s1">&#39;rtl&#39;</span>
+<span class="nx">title</span> <span class="p">=</span> <span class="s1">&#39;مدونتي&#39;</span>
+<span class="nx">weight</span> <span class="p">=</span> <span class="mi">2</span>
+
+<span class="p">[</span><span class="nx">languages</span><span class="p">.</span><span class="nx">en</span><span class="p">]</span>
+<span class="nx">title</span> <span class="p">=</span> <span class="s1">&#39;My blog&#39;</span>
+<span class="nx">weight</span> <span class="p">=</span> <span class="mi">1</span>
+<span class="p">[</span><span class="nx">languages</span><span class="p">.</span><span class="nx">en</span><span class="p">.</span><span class="nx">params</span><span class="p">]</span>
+<span class="nx">linkedin</span> <span class="p">=</span> <span class="s1">&#39;https://linkedin.com/whoever&#39;</span>
+
+
+<span class="p">[</span><span class="nx">languages</span><span class="p">.</span><span class="nx">fr</span><span class="p">]</span>
+<span class="nx">title</span> <span class="p">=</span> <span class="s1">&#39;Mon blogue&#39;</span>
+<span class="nx">weight</span> <span class="p">=</span> <span class="mi">2</span>
+<span class="p">[</span><span class="nx">languages</span><span class="p">.</span><span class="nx">fr</span><span class="p">.</span><span class="nx">params</span><span class="p">]</span>
+<span class="nx">linkedin</span> <span class="p">=</span> <span class="s1">&#39;https://linkedin.com/fr/whoever&#39;</span>
+<span class="p">[</span><span class="nx">languages</span><span class="p">.</span><span class="nx">fr</span><span class="p">.</span><span class="nx">params</span><span class="p">.</span><span class="nx">navigation</span><span class="p">]</span>
+<span class="nx">help</span> <span class="p">=</span> <span class="s1">&#39;Aide&#39;</span>
+
+
+
+<span class="p">[</span><span class="nx">languages</span><span class="p">.</span><span class="nx">pt-pt</span><span class="p">]</span>
+<span class="nx">title</span> <span class="p">=</span> <span class="s1">&#39;O meu blog&#39;</span>
+<span class="nx">weight</span> <span class="p">=</span> <span class="mi">3</span>
+
+
+<span class="p">[</span><span class="nx">params</span><span class="p">]</span>
+<span class="p">[</span><span class="nx">params</span><span class="p">.</span><span class="nx">navigation</span><span class="p">]</span>
+<span class="nx">help</span> <span class="p">=</span> <span class="s1">&#39;Help&#39;</span>
+
+
+</code></pre></div>
+      </div>
+      
+        <button class="needs-js copy copy-toggle bg-accent-color-dark f6 absolute top-0 right-0 lh-solid hover-bg-primary-color-dark bn white ph3 pv2" title="Copy this code to your clipboard." data-clipboard-action="copy" aria-label="copy button"></button>
+        
+      
+    
+      <div data-pane="json" class="code-copy-content nt3 tab-pane ">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
+   <span class="nt">&#34;copyright&#34;</span><span class="p">:</span> <span class="s2">&#34;Everything is mine&#34;</span><span class="p">,</span>
+   <span class="nt">&#34;defaultContentLanguage&#34;</span><span class="p">:</span> <span class="s2">&#34;en&#34;</span><span class="p">,</span>
+   <span class="nt">&#34;languages&#34;</span><span class="p">:</span> <span class="p">{</span>
+      <span class="nt">&#34;ar&#34;</span><span class="p">:</span> <span class="p">{</span>
+         <span class="nt">&#34;languagedirection&#34;</span><span class="p">:</span> <span class="s2">&#34;rtl&#34;</span><span class="p">,</span>
+         <span class="nt">&#34;title&#34;</span><span class="p">:</span> <span class="s2">&#34;مدونتي&#34;</span><span class="p">,</span>
+         <span class="nt">&#34;weight&#34;</span><span class="p">:</span> <span class="mi">2</span>
+      <span class="p">},</span>
+      <span class="nt">&#34;en&#34;</span><span class="p">:</span> <span class="p">{</span>
+         <span class="nt">&#34;params&#34;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&#34;linkedin&#34;</span><span class="p">:</span> <span class="s2">&#34;https://linkedin.com/whoever&#34;</span>
+         <span class="p">},</span>
+         <span class="nt">&#34;title&#34;</span><span class="p">:</span> <span class="s2">&#34;My blog&#34;</span><span class="p">,</span>
+         <span class="nt">&#34;weight&#34;</span><span class="p">:</span> <span class="mi">1</span>
+      <span class="p">},</span>
+      <span class="nt">&#34;fr&#34;</span><span class="p">:</span> <span class="p">{</span>
+         <span class="nt">&#34;params&#34;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&#34;linkedin&#34;</span><span class="p">:</span> <span class="s2">&#34;https://linkedin.com/fr/whoever&#34;</span><span class="p">,</span>
+            <span class="nt">&#34;navigation&#34;</span><span class="p">:</span> <span class="p">{</span>
+               <span class="nt">&#34;help&#34;</span><span class="p">:</span> <span class="s2">&#34;Aide&#34;</span>
+            <span class="p">}</span>
+         <span class="p">},</span>
+         <span class="nt">&#34;title&#34;</span><span class="p">:</span> <span class="s2">&#34;Mon blogue&#34;</span><span class="p">,</span>
+         <span class="nt">&#34;weight&#34;</span><span class="p">:</span> <span class="mi">2</span>
+      <span class="p">},</span>
+      <span class="nt">&#34;pt-pt&#34;</span><span class="p">:</span> <span class="p">{</span>
+         <span class="nt">&#34;title&#34;</span><span class="p">:</span> <span class="s2">&#34;O meu blog&#34;</span><span class="p">,</span>
+         <span class="nt">&#34;weight&#34;</span><span class="p">:</span> <span class="mi">3</span>
+      <span class="p">}</span>
+   <span class="p">},</span>
+   <span class="nt">&#34;params&#34;</span><span class="p">:</span> <span class="p">{</span>
+      <span class="nt">&#34;navigation&#34;</span><span class="p">:</span> <span class="p">{</span>
+         <span class="nt">&#34;help&#34;</span><span class="p">:</span> <span class="s2">&#34;Help&#34;</span>
+      <span class="p">}</span>
+   <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+      </div>
+      
+        <button class="needs-js copy copy-toggle bg-accent-color-dark f6 absolute top-0 right-0 lh-solid hover-bg-primary-color-dark bn white ph3 pv2" title="Copy this code to your clipboard." data-clipboard-action="copy" aria-label="copy button"></button>
+        
+      
+    
+  </div>
+  
+</div>
+
+<p>Anything not defined in a <code>languages</code> block will fall back to the global value for that key (e.g., <code>copyright</code> for the English <code>en</code> language). This also works for <code>params</code>, as demonstrated with <code>help</code> above: You will get the value <code>Aide</code> in French and <code>Help</code> in all the languages without this parameter set.</p>
+<p>With the configuration above, all content, sitemap, RSS feeds, paginations,
+and taxonomy pages will be rendered below <code>/</code> in English (your default content language) and then below <code>/fr</code> in French.</p>
+<p>When working with front matter <code>Params</code> in <a href="/templates/single-page-templates/">single page templates</a>, omit the <code>params</code> in the key for the translation.</p>
+<p><code>defaultContentLanguage</code> sets the project&rsquo;s default language. If not set, the default language will be <code>en</code>.</p>
+<p>If the default language needs to be rendered below its own language code (<code>/en</code>) like the others, set <code>defaultContentLanguageInSubdir: true</code>.</p>
+<p>Only the obvious non-global options can be overridden per language. Examples of global options are <code>baseURL</code>, <code>buildDrafts</code>, etc.</p>
+<p><strong>Please note:</strong> use lowercase language codes, even when using regional languages (ie. use pt-pt instead of pt-PT). Currently Hugo language internals lowercase language codes, which can cause conflicts with settings like <code>defaultContentLanguage</code> which are not lowercased. Please track the evolution of this issue in <a href="https://github.com/gohugoio/hugo/issues/7344">Hugo repository issue tracker</a></p>
+<h3 id="disable-a-language">Disable a Language <a class="header-link" href="#disable-a-language"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
+<p>You can disable one or more languages. This can be useful when working on a new translation.</p>
+
+
+
+  
+
+
+<div class="code relative" id="config">
+  <div class="code-nav flex flex-nowrap items-stretch"><div class="san-serif f6 dib lh-solid pl2 pv2 mr2">
+        config.
+      </div>
+      <button data-toggle-tab="yaml" class="tab-button active ba san-serif f6 dib lh-solid ph2 pv2">
+        yaml
+      </button>
+      &nbsp;
+    
+      <button data-toggle-tab="toml" class="tab-button  ba san-serif f6 dib lh-solid ph2 pv2">
+        toml
+      </button>
+      &nbsp;
+    
+      <button data-toggle-tab="json" class="tab-button  ba san-serif f6 dib lh-solid ph2 pv2">
+        json
+      </button>
+      &nbsp;
+    
+  </div>
+  <div class="tab-content">
+    
+      <div data-pane="yaml" class="code-copy-content nt3 tab-pane active">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">disableLanguages</span><span class="p">:</span><span class="w">
+</span><span class="w"></span>- <span class="l">fr</span><span class="w">
+</span><span class="w"></span>- <span class="l">ja</span><span class="w">
+</span></code></pre></div>
+      </div>
+      
+        <button class="needs-js copy copy-toggle bg-accent-color-dark f6 absolute top-0 right-0 lh-solid hover-bg-primary-color-dark bn white ph3 pv2" title="Copy this code to your clipboard." data-clipboard-action="copy" aria-label="copy button"></button>
+        
+      
+    
+      <div data-pane="toml" class="code-copy-content nt3 tab-pane ">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="nx">disableLanguages</span> <span class="p">=</span> <span class="p">[</span><span class="s1">&#39;fr&#39;</span><span class="p">,</span> <span class="s1">&#39;ja&#39;</span><span class="p">]</span>
+</code></pre></div>
+      </div>
+      
+        <button class="needs-js copy copy-toggle bg-accent-color-dark f6 absolute top-0 right-0 lh-solid hover-bg-primary-color-dark bn white ph3 pv2" title="Copy this code to your clipboard." data-clipboard-action="copy" aria-label="copy button"></button>
+        
+      
+    
+      <div data-pane="json" class="code-copy-content nt3 tab-pane ">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
+   <span class="nt">&#34;disableLanguages&#34;</span><span class="p">:</span> <span class="p">[</span>
+      <span class="s2">&#34;fr&#34;</span><span class="p">,</span>
+      <span class="s2">&#34;ja&#34;</span>
+   <span class="p">]</span>
+<span class="p">}</span>
+</code></pre></div>
+      </div>
+      
+        <button class="needs-js copy copy-toggle bg-accent-color-dark f6 absolute top-0 right-0 lh-solid hover-bg-primary-color-dark bn white ph3 pv2" title="Copy this code to your clipboard." data-clipboard-action="copy" aria-label="copy button"></button>
+        
+      
+    
+  </div>
+  
+</div>
+
+<p>Note that you cannot disable the default content language.</p>
+<p>We kept this as a standalone setting to make it easier to set via <a href="/getting-started/configuration/#configure-with-environment-variables">OS environment</a>:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="nv">HUGO_DISABLELANGUAGES</span><span class="o">=</span><span class="s2">&#34;fr ja&#34;</span> hugo
+</code></pre></div><p>If you have already a list of disabled languages in <code>config.toml</code>, you can enable them in development like this:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="nv">HUGO_DISABLELANGUAGES</span><span class="o">=</span><span class="s2">&#34; &#34;</span> hugo server
+</code></pre></div><h3 id="configure-multilingual-multihost">Configure Multilingual Multihost <a class="header-link" href="#configure-multilingual-multihost"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
+<p>From <strong>Hugo 0.31</strong> we support multiple languages in a multihost configuration. See <a href="https://github.com/gohugoio/hugo/issues/4027">this issue</a> for details.</p>
+<p>This means that you can now configure a <code>baseURL</code> per <code>language</code>:</p>
+<blockquote>
+<p>If a <code>baseURL</code> is set on the <code>language</code> level, then all languages must have one and they must all be different.</p>
+</blockquote>
+<p>Example:</p>
+
+
+
+  
+
+
+<div class="code relative" id="config">
+  <div class="code-nav flex flex-nowrap items-stretch"><div class="san-serif f6 dib lh-solid pl2 pv2 mr2">
+        config.
+      </div>
+      <button data-toggle-tab="yaml" class="tab-button active ba san-serif f6 dib lh-solid ph2 pv2">
+        yaml
+      </button>
+      &nbsp;
+    
+      <button data-toggle-tab="toml" class="tab-button  ba san-serif f6 dib lh-solid ph2 pv2">
+        toml
+      </button>
+      &nbsp;
+    
+      <button data-toggle-tab="json" class="tab-button  ba san-serif f6 dib lh-solid ph2 pv2">
+        json
+      </button>
+      &nbsp;
+    
+  </div>
+  <div class="tab-content">
+    
+      <div data-pane="yaml" class="code-copy-content nt3 tab-pane active">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">languages</span><span class="p">:</span><span class="w">
+</span><span class="w">  </span><span class="nt">en</span><span class="p">:</span><span class="w">
+</span><span class="w">    </span><span class="nt">baseURL</span><span class="p">:</span><span class="w"> </span><span class="l">https://example.com</span><span class="w">
+</span><span class="w">    </span><span class="nt">languageName</span><span class="p">:</span><span class="w"> </span><span class="l">English</span><span class="w">
+</span><span class="w">    </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l">In English</span><span class="w">
+</span><span class="w">    </span><span class="nt">weight</span><span class="p">:</span><span class="w"> </span><span class="m">2</span><span class="w">
+</span><span class="w">  </span><span class="nt">fr</span><span class="p">:</span><span class="w">
+</span><span class="w">    </span><span class="nt">baseURL</span><span class="p">:</span><span class="w"> </span><span class="l">https://example.fr</span><span class="w">
+</span><span class="w">    </span><span class="nt">languageName</span><span class="p">:</span><span class="w"> </span><span class="l">Français</span><span class="w">
+</span><span class="w">    </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l">En Français</span><span class="w">
+</span><span class="w">    </span><span class="nt">weight</span><span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
+</span></code></pre></div>
+      </div>
+      
+        <button class="needs-js copy copy-toggle bg-accent-color-dark f6 absolute top-0 right-0 lh-solid hover-bg-primary-color-dark bn white ph3 pv2" title="Copy this code to your clipboard." data-clipboard-action="copy" aria-label="copy button"></button>
+        
+      
+    
+      <div data-pane="toml" class="code-copy-content nt3 tab-pane ">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="p">[</span><span class="nx">languages</span><span class="p">]</span>
+<span class="p">[</span><span class="nx">languages</span><span class="p">.</span><span class="nx">en</span><span class="p">]</span>
+<span class="nx">baseURL</span> <span class="p">=</span> <span class="s1">&#39;https://example.com&#39;</span>
+<span class="nx">languageName</span> <span class="p">=</span> <span class="s1">&#39;English&#39;</span>
+<span class="nx">title</span> <span class="p">=</span> <span class="s1">&#39;In English&#39;</span>
+<span class="nx">weight</span> <span class="p">=</span> <span class="mi">2</span>
+
+<span class="p">[</span><span class="nx">languages</span><span class="p">.</span><span class="nx">fr</span><span class="p">]</span>
+<span class="nx">baseURL</span> <span class="p">=</span> <span class="s1">&#39;https://example.fr&#39;</span>
+<span class="nx">languageName</span> <span class="p">=</span> <span class="s1">&#39;Français&#39;</span>
+<span class="nx">title</span> <span class="p">=</span> <span class="s1">&#39;En Français&#39;</span>
+<span class="nx">weight</span> <span class="p">=</span> <span class="mi">1</span>
+
+
+</code></pre></div>
+      </div>
+      
+        <button class="needs-js copy copy-toggle bg-accent-color-dark f6 absolute top-0 right-0 lh-solid hover-bg-primary-color-dark bn white ph3 pv2" title="Copy this code to your clipboard." data-clipboard-action="copy" aria-label="copy button"></button>
+        
+      
+    
+      <div data-pane="json" class="code-copy-content nt3 tab-pane ">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
+   <span class="nt">&#34;languages&#34;</span><span class="p">:</span> <span class="p">{</span>
+      <span class="nt">&#34;en&#34;</span><span class="p">:</span> <span class="p">{</span>
+         <span class="nt">&#34;baseURL&#34;</span><span class="p">:</span> <span class="s2">&#34;https://example.com&#34;</span><span class="p">,</span>
+         <span class="nt">&#34;languageName&#34;</span><span class="p">:</span> <span class="s2">&#34;English&#34;</span><span class="p">,</span>
+         <span class="nt">&#34;title&#34;</span><span class="p">:</span> <span class="s2">&#34;In English&#34;</span><span class="p">,</span>
+         <span class="nt">&#34;weight&#34;</span><span class="p">:</span> <span class="mi">2</span>
+      <span class="p">},</span>
+      <span class="nt">&#34;fr&#34;</span><span class="p">:</span> <span class="p">{</span>
+         <span class="nt">&#34;baseURL&#34;</span><span class="p">:</span> <span class="s2">&#34;https://example.fr&#34;</span><span class="p">,</span>
+         <span class="nt">&#34;languageName&#34;</span><span class="p">:</span> <span class="s2">&#34;Français&#34;</span><span class="p">,</span>
+         <span class="nt">&#34;title&#34;</span><span class="p">:</span> <span class="s2">&#34;En Français&#34;</span><span class="p">,</span>
+         <span class="nt">&#34;weight&#34;</span><span class="p">:</span> <span class="mi">1</span>
+      <span class="p">}</span>
+   <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+      </div>
+      
+        <button class="needs-js copy copy-toggle bg-accent-color-dark f6 absolute top-0 right-0 lh-solid hover-bg-primary-color-dark bn white ph3 pv2" title="Copy this code to your clipboard." data-clipboard-action="copy" aria-label="copy button"></button>
+        
+      
+    
+  </div>
+  
+</div>
+
+<p>With the above, the two sites will be generated into <code>public</code> with their own root:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">public
+├── en
+└── fr
+</code></pre></div><p><strong>All URLs (i.e <code>.Permalink</code> etc.) will be generated from that root. So the English home page above will have its <code>.Permalink</code> set to <code>https://example.com/</code>.</strong></p>
+<p>When you run <code>hugo server</code> we will start multiple HTTP servers. You will typically see something like this in the console:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">Web Server is available at 127.0.0.1:1313 <span class="o">(</span><span class="nb">bind</span> address 127.0.0.1<span class="o">)</span>
+Web Server is available at 127.0.0.1:1314 <span class="o">(</span><span class="nb">bind</span> address 127.0.0.1<span class="o">)</span>
+Press Ctrl+C to stop
+</code></pre></div><p>Live reload and <code>--navigateToChanged</code> between the servers work as expected.</p>
+<h3 id="taxonomies-and-blackfriday">Taxonomies and Blackfriday <a class="header-link" href="#taxonomies-and-blackfriday"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
+<p>Taxonomies and <a href="/getting-started/configuration/">Blackfriday configuration</a> can also be set per language:</p>
+
+
+
+  
+
+
+<div class="code relative" id="config">
+  <div class="code-nav flex flex-nowrap items-stretch"><div class="san-serif f6 dib lh-solid pl2 pv2 mr2">
+        config.
+      </div>
+      <button data-toggle-tab="yaml" class="tab-button active ba san-serif f6 dib lh-solid ph2 pv2">
+        yaml
+      </button>
+      &nbsp;
+    
+      <button data-toggle-tab="toml" class="tab-button  ba san-serif f6 dib lh-solid ph2 pv2">
+        toml
+      </button>
+      &nbsp;
+    
+      <button data-toggle-tab="json" class="tab-button  ba san-serif f6 dib lh-solid ph2 pv2">
+        json
+      </button>
+      &nbsp;
+    
+  </div>
+  <div class="tab-content">
+    
+      <div data-pane="yaml" class="code-copy-content nt3 tab-pane active">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">Taxonomies</span><span class="p">:</span><span class="w">
+</span><span class="w">  </span><span class="nt">tag</span><span class="p">:</span><span class="w"> </span><span class="l">tags</span><span class="w">
+</span><span class="w"></span><span class="nt">blackfriday</span><span class="p">:</span><span class="w">
+</span><span class="w">  </span><span class="nt">angledQuotes</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span><span class="w">  </span><span class="nt">hrefTargetBlank</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span><span class="w"></span><span class="nt">languages</span><span class="p">:</span><span class="w">
+</span><span class="w">  </span><span class="nt">en</span><span class="p">:</span><span class="w">
+</span><span class="w">    </span><span class="nt">blackfriday</span><span class="p">:</span><span class="w">
+</span><span class="w">      </span><span class="nt">angledQuotes</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+</span><span class="w">    </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l">English</span><span class="w">
+</span><span class="w">    </span><span class="nt">weight</span><span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
+</span><span class="w">  </span><span class="nt">fr</span><span class="p">:</span><span class="w">
+</span><span class="w">    </span><span class="nt">Taxonomies</span><span class="p">:</span><span class="w">
+</span><span class="w">      </span><span class="nt">plaque</span><span class="p">:</span><span class="w"> </span><span class="l">plaques</span><span class="w">
+</span><span class="w">    </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l">Français</span><span class="w">
+</span><span class="w">    </span><span class="nt">weight</span><span class="p">:</span><span class="w"> </span><span class="m">2</span><span class="w">
+</span></code></pre></div>
+      </div>
+      
+        <button class="needs-js copy copy-toggle bg-accent-color-dark f6 absolute top-0 right-0 lh-solid hover-bg-primary-color-dark bn white ph3 pv2" title="Copy this code to your clipboard." data-clipboard-action="copy" aria-label="copy button"></button>
+        
+      
+    
+      <div data-pane="toml" class="code-copy-content nt3 tab-pane ">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="p">[</span><span class="nx">Taxonomies</span><span class="p">]</span>
+<span class="nx">tag</span> <span class="p">=</span> <span class="s1">&#39;tags&#39;</span>
+
+<span class="p">[</span><span class="nx">blackfriday</span><span class="p">]</span>
+<span class="nx">angledQuotes</span> <span class="p">=</span> <span class="kc">true</span>
+<span class="nx">hrefTargetBlank</span> <span class="p">=</span> <span class="kc">true</span>
+
+<span class="p">[</span><span class="nx">languages</span><span class="p">]</span>
+<span class="p">[</span><span class="nx">languages</span><span class="p">.</span><span class="nx">en</span><span class="p">]</span>
+<span class="nx">title</span> <span class="p">=</span> <span class="s1">&#39;English&#39;</span>
+<span class="nx">weight</span> <span class="p">=</span> <span class="mi">1</span>
+<span class="p">[</span><span class="nx">languages</span><span class="p">.</span><span class="nx">en</span><span class="p">.</span><span class="nx">blackfriday</span><span class="p">]</span>
+<span class="nx">angledQuotes</span> <span class="p">=</span> <span class="kc">false</span>
+
+
+<span class="p">[</span><span class="nx">languages</span><span class="p">.</span><span class="nx">fr</span><span class="p">]</span>
+<span class="nx">title</span> <span class="p">=</span> <span class="s1">&#39;Français&#39;</span>
+<span class="nx">weight</span> <span class="p">=</span> <span class="mi">2</span>
+<span class="p">[</span><span class="nx">languages</span><span class="p">.</span><span class="nx">fr</span><span class="p">.</span><span class="nx">Taxonomies</span><span class="p">]</span>
+<span class="nx">plaque</span> <span class="p">=</span> <span class="s1">&#39;plaques&#39;</span>
+
+
+
+</code></pre></div>
+      </div>
+      
+        <button class="needs-js copy copy-toggle bg-accent-color-dark f6 absolute top-0 right-0 lh-solid hover-bg-primary-color-dark bn white ph3 pv2" title="Copy this code to your clipboard." data-clipboard-action="copy" aria-label="copy button"></button>
+        
+      
+    
+      <div data-pane="json" class="code-copy-content nt3 tab-pane ">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
+   <span class="nt">&#34;Taxonomies&#34;</span><span class="p">:</span> <span class="p">{</span>
+      <span class="nt">&#34;tag&#34;</span><span class="p">:</span> <span class="s2">&#34;tags&#34;</span>
+   <span class="p">},</span>
+   <span class="nt">&#34;blackfriday&#34;</span><span class="p">:</span> <span class="p">{</span>
+      <span class="nt">&#34;angledQuotes&#34;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+      <span class="nt">&#34;hrefTargetBlank&#34;</span><span class="p">:</span> <span class="kc">true</span>
+   <span class="p">},</span>
+   <span class="nt">&#34;languages&#34;</span><span class="p">:</span> <span class="p">{</span>
+      <span class="nt">&#34;en&#34;</span><span class="p">:</span> <span class="p">{</span>
+         <span class="nt">&#34;blackfriday&#34;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&#34;angledQuotes&#34;</span><span class="p">:</span> <span class="kc">false</span>
+         <span class="p">},</span>
+         <span class="nt">&#34;title&#34;</span><span class="p">:</span> <span class="s2">&#34;English&#34;</span><span class="p">,</span>
+         <span class="nt">&#34;weight&#34;</span><span class="p">:</span> <span class="mi">1</span>
+      <span class="p">},</span>
+      <span class="nt">&#34;fr&#34;</span><span class="p">:</span> <span class="p">{</span>
+         <span class="nt">&#34;Taxonomies&#34;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&#34;plaque&#34;</span><span class="p">:</span> <span class="s2">&#34;plaques&#34;</span>
+         <span class="p">},</span>
+         <span class="nt">&#34;title&#34;</span><span class="p">:</span> <span class="s2">&#34;Français&#34;</span><span class="p">,</span>
+         <span class="nt">&#34;weight&#34;</span><span class="p">:</span> <span class="mi">2</span>
+      <span class="p">}</span>
+   <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+      </div>
+      
+        <button class="needs-js copy copy-toggle bg-accent-color-dark f6 absolute top-0 right-0 lh-solid hover-bg-primary-color-dark bn white ph3 pv2" title="Copy this code to your clipboard." data-clipboard-action="copy" aria-label="copy button"></button>
+        
+      
+    
+  </div>
+  
+</div>
+
+<h2 id="translate-your-content">Translate Your Content <a class="header-link" href="#translate-your-content"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
+<p>There are two ways to manage your content translations. Both ensure each page is assigned a language and is linked to its counterpart translations.</p>
+<h3 id="translation-by-filename">Translation by filename <a class="header-link" href="#translation-by-filename"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
+<p>Considering the following example:</p>
+<ol>
+<li><code>/content/about.en.md</code></li>
+<li><code>/content/about.fr.md</code></li>
+</ol>
+<p>The first file is assigned the English language and is linked to the second.
+The second file is assigned the French language and is linked to the first.</p>
+<p>Their language is <strong>assigned</strong> according to the language code added as a <strong>suffix to the filename</strong>.</p>
+<p>By having the same <strong>path and base filename</strong>, the content pieces are <strong>linked</strong> together as translated pages.</p>
+
+<aside class="admonition note">
+	<div class="note-icon">
+		
+	</div>
+	
+	
+	<div class="admonition-content">
+If a file has no language code, it will be assigned the default language.
+</div>
+</aside>
+
+<h3 id="translation-by-content-directory">Translation by content directory <a class="header-link" href="#translation-by-content-directory"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
+<p>This system uses different content directories for each of the languages. Each language&rsquo;s content directory is set using the <code>contentDir</code> param.</p>
+
+
+
+  
+
+
+<div class="code relative" id="config">
+  <div class="code-nav flex flex-nowrap items-stretch"><div class="san-serif f6 dib lh-solid pl2 pv2 mr2">
+        config.
+      </div>
+      <button data-toggle-tab="yaml" class="tab-button active ba san-serif f6 dib lh-solid ph2 pv2">
+        yaml
+      </button>
+      &nbsp;
+    
+      <button data-toggle-tab="toml" class="tab-button  ba san-serif f6 dib lh-solid ph2 pv2">
+        toml
+      </button>
+      &nbsp;
+    
+      <button data-toggle-tab="json" class="tab-button  ba san-serif f6 dib lh-solid ph2 pv2">
+        json
+      </button>
+      &nbsp;
+    
+  </div>
+  <div class="tab-content">
+    
+      <div data-pane="yaml" class="code-copy-content nt3 tab-pane active">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">languages</span><span class="p">:</span><span class="w">
+</span><span class="w">  </span><span class="nt">en</span><span class="p">:</span><span class="w">
+</span><span class="w">    </span><span class="nt">contentDir</span><span class="p">:</span><span class="w"> </span><span class="l">content/english</span><span class="w">
+</span><span class="w">    </span><span class="nt">languageName</span><span class="p">:</span><span class="w"> </span><span class="l">English</span><span class="w">
+</span><span class="w">    </span><span class="nt">weight</span><span class="p">:</span><span class="w"> </span><span class="m">10</span><span class="w">
+</span><span class="w">  </span><span class="nt">fr</span><span class="p">:</span><span class="w">
+</span><span class="w">    </span><span class="nt">contentDir</span><span class="p">:</span><span class="w"> </span><span class="l">content/french</span><span class="w">
+</span><span class="w">    </span><span class="nt">languageName</span><span class="p">:</span><span class="w"> </span><span class="l">Français</span><span class="w">
+</span><span class="w">    </span><span class="nt">weight</span><span class="p">:</span><span class="w"> </span><span class="m">20</span><span class="w">
+</span></code></pre></div>
+      </div>
+      
+        <button class="needs-js copy copy-toggle bg-accent-color-dark f6 absolute top-0 right-0 lh-solid hover-bg-primary-color-dark bn white ph3 pv2" title="Copy this code to your clipboard." data-clipboard-action="copy" aria-label="copy button"></button>
+        
+      
+    
+      <div data-pane="toml" class="code-copy-content nt3 tab-pane ">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="p">[</span><span class="nx">languages</span><span class="p">]</span>
+<span class="p">[</span><span class="nx">languages</span><span class="p">.</span><span class="nx">en</span><span class="p">]</span>
+<span class="nx">contentDir</span> <span class="p">=</span> <span class="s1">&#39;content/english&#39;</span>
+<span class="nx">languageName</span> <span class="p">=</span> <span class="s1">&#39;English&#39;</span>
+<span class="nx">weight</span> <span class="p">=</span> <span class="mi">10</span>
+
+<span class="p">[</span><span class="nx">languages</span><span class="p">.</span><span class="nx">fr</span><span class="p">]</span>
+<span class="nx">contentDir</span> <span class="p">=</span> <span class="s1">&#39;content/french&#39;</span>
+<span class="nx">languageName</span> <span class="p">=</span> <span class="s1">&#39;Français&#39;</span>
+<span class="nx">weight</span> <span class="p">=</span> <span class="mi">20</span>
+
+
+</code></pre></div>
+      </div>
+      
+        <button class="needs-js copy copy-toggle bg-accent-color-dark f6 absolute top-0 right-0 lh-solid hover-bg-primary-color-dark bn white ph3 pv2" title="Copy this code to your clipboard." data-clipboard-action="copy" aria-label="copy button"></button>
+        
+      
+    
+      <div data-pane="json" class="code-copy-content nt3 tab-pane ">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
+   <span class="nt">&#34;languages&#34;</span><span class="p">:</span> <span class="p">{</span>
+      <span class="nt">&#34;en&#34;</span><span class="p">:</span> <span class="p">{</span>
+         <span class="nt">&#34;contentDir&#34;</span><span class="p">:</span> <span class="s2">&#34;content/english&#34;</span><span class="p">,</span>
+         <span class="nt">&#34;languageName&#34;</span><span class="p">:</span> <span class="s2">&#34;English&#34;</span><span class="p">,</span>
+         <span class="nt">&#34;weight&#34;</span><span class="p">:</span> <span class="mi">10</span>
+      <span class="p">},</span>
+      <span class="nt">&#34;fr&#34;</span><span class="p">:</span> <span class="p">{</span>
+         <span class="nt">&#34;contentDir&#34;</span><span class="p">:</span> <span class="s2">&#34;content/french&#34;</span><span class="p">,</span>
+         <span class="nt">&#34;languageName&#34;</span><span class="p">:</span> <span class="s2">&#34;Français&#34;</span><span class="p">,</span>
+         <span class="nt">&#34;weight&#34;</span><span class="p">:</span> <span class="mi">20</span>
+      <span class="p">}</span>
+   <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+      </div>
+      
+        <button class="needs-js copy copy-toggle bg-accent-color-dark f6 absolute top-0 right-0 lh-solid hover-bg-primary-color-dark bn white ph3 pv2" title="Copy this code to your clipboard." data-clipboard-action="copy" aria-label="copy button"></button>
+        
+      
+    
+  </div>
+  
+</div>
+
+<p>The value of <code>contentDir</code> can be any valid path &ndash; even absolute path references. The only restriction is that the content directories cannot overlap.</p>
+<p>Considering the following example in conjunction with the configuration above:</p>
+<ol>
+<li><code>/content/english/about.md</code></li>
+<li><code>/content/french/about.md</code></li>
+</ol>
+<p>The first file is assigned the English language and is linked to the second.
+The second file is assigned the French language and is linked to the first.</p>
+<p>Their language is <strong>assigned</strong> according to the content directory they are <strong>placed</strong> in.</p>
+<p>By having the same <strong>path and basename</strong> (relative to their language content directory), the content pieces are <strong>linked</strong> together as translated pages.</p>
+<h3 id="bypassing-default-linking">Bypassing default linking. <a class="header-link" href="#bypassing-default-linking"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
+<p>Any pages sharing the same <code>translationKey</code> set in front matter will be linked as translated pages regardless of basename or location.</p>
+<p>Considering the following example:</p>
+<ol>
+<li><code>/content/about-us.en.md</code></li>
+<li><code>/content/om.nn.md</code></li>
+<li><code>/content/presentation/a-propos.fr.md</code></li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="c"># set in all three pages</span><span class="w">
+</span><span class="w"></span><span class="nt">translationKey</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;about&#34;</span><span class="w">
+</span></code></pre></div><p>By setting the <code>translationKey</code> front matter param to <code>about</code> in all three pages, they will be <strong>linked</strong> as translated pages.</p>
+<h3 id="localizing-permalinks">Localizing permalinks <a class="header-link" href="#localizing-permalinks"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
+<p>Because paths and filenames are used to handle linking, all translated pages will share the same URL (apart from the language subdirectory).</p>
+<p>To localize the URLs, the <a href="https://gohugo.io/content-management/organization/#slug"><code>slug</code></a> or <a href="https://gohugo.io/content-management/organization/#url"><code>url</code></a> front matter param can be set in any of the non-default language file.</p>
+<p>For example, a French translation (<code>content/about.fr.md</code>) can have its own localized slug.</p>
+
+
+
+  
+
+
+<div class="code relative" >
+  <div class="code-nav flex flex-nowrap items-stretch">
+      <button data-toggle-tab="yaml" class="tab-button active ba san-serif f6 dib lh-solid ph2 pv2">
+        yaml
+      </button>
+      &nbsp;
+    
+      <button data-toggle-tab="toml" class="tab-button  ba san-serif f6 dib lh-solid ph2 pv2">
+        toml
+      </button>
+      &nbsp;
+    
+      <button data-toggle-tab="json" class="tab-button  ba san-serif f6 dib lh-solid ph2 pv2">
+        json
+      </button>
+      &nbsp;
+    
+  </div>
+  <div class="tab-content">
+    
+      <div data-pane="yaml" class="code-copy-content nt3 tab-pane active">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">Title</span><span class="p">:</span><span class="w"> </span><span class="l">A Propos</span><span class="w">
+</span><span class="w"></span><span class="nt">slug</span><span class="p">:</span><span class="w"> </span><span class="l">a-propos</span><span class="w">
+</span></code></pre></div>
+      </div>
+      
+        <button class="needs-js copy copy-toggle bg-accent-color-dark f6 absolute top-0 right-0 lh-solid hover-bg-primary-color-dark bn white ph3 pv2" title="Copy this code to your clipboard." data-clipboard-action="copy" aria-label="copy button"></button>
+        
+      
+    
+      <div data-pane="toml" class="code-copy-content nt3 tab-pane ">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="nx">Title</span> <span class="p">=</span> <span class="s1">&#39;A Propos&#39;</span>
+<span class="nx">slug</span> <span class="p">=</span> <span class="s1">&#39;a-propos&#39;</span>
+</code></pre></div>
+      </div>
+      
+        <button class="needs-js copy copy-toggle bg-accent-color-dark f6 absolute top-0 right-0 lh-solid hover-bg-primary-color-dark bn white ph3 pv2" title="Copy this code to your clipboard." data-clipboard-action="copy" aria-label="copy button"></button>
+        
+      
+    
+      <div data-pane="json" class="code-copy-content nt3 tab-pane ">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
+   <span class="nt">&#34;Title&#34;</span><span class="p">:</span> <span class="s2">&#34;A Propos&#34;</span><span class="p">,</span>
+   <span class="nt">&#34;slug&#34;</span><span class="p">:</span> <span class="s2">&#34;a-propos&#34;</span>
+<span class="p">}</span>
+</code></pre></div>
+      </div>
+      
+        <button class="needs-js copy copy-toggle bg-accent-color-dark f6 absolute top-0 right-0 lh-solid hover-bg-primary-color-dark bn white ph3 pv2" title="Copy this code to your clipboard." data-clipboard-action="copy" aria-label="copy button"></button>
+        
+      
+    
+  </div>
+  
+</div>
+
+<p>At render, Hugo will build both <code>/about/</code> and <code>/fr/a-propos/</code> while maintaining their translation linking.</p>
+
+<aside class="admonition note">
+	<div class="note-icon">
+		
+	</div>
+	
+	
+	<div class="admonition-content"><p>If using <code>url</code>, remember to include the language part as well: <code>/fr/compagnie/a-propos/</code>.</p>
+</div>
+</aside>
+
+<h3 id="page-bundles">Page Bundles <a class="header-link" href="#page-bundles"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
+<p>To avoid the burden of having to duplicate files, each Page Bundle inherits the resources of its linked translated pages' bundles except for the content files (markdown files, html files etc&hellip;).</p>
+<p>Therefore, from within a template, the page will have access to the files from all linked pages' bundles.</p>
+<p>If, across the linked bundles, two or more files share the same basename, only one will be included and chosen as follows:</p>
+<ul>
+<li>File from current language bundle, if present.</li>
+<li>First file found across bundles by order of language <code>Weight</code>.</li>
+</ul>
+
+<aside class="admonition note">
+	<div class="note-icon">
+		
+	</div>
+	
+	
+	<div class="admonition-content"><p>Page Bundle resources follow the same language assignment logic as content files, both by filename (<code>image.jpg</code>, <code>image.fr.jpg</code>) and by directory (<code>english/about/header.jpg</code>, <code>french/about/header.jpg</code>).</p>
+</div>
+</aside>
+
+<h2 id="reference-the-translated-content">Reference the Translated Content <a class="header-link" href="#reference-the-translated-content"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
+<p>To create a list of links to translated content, use a template similar to the following:</p>
+
+
+
+
+
+
+
+
+
+
+<div class="code relative" id="layouts/partials/i18nlist.html"><div class="filename san-serif f6 dib lh-solid pl2 pv2">layouts/partials/i18nlist.html</div>
+		<button class="needs-js copy bg-accent-color-dark f6 absolute top-0 right-0 lh-solid hover-bg-primary-color-dark bn white ph3 pv2" title="Copy this code to your clipboard." data-clipboard-action="copy" aria-label="copy button">
+		</button>
+		
+	
+	<div class="code-copy-content nt3" >
+		
+		<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go-html-template" data-lang="go-html-template">
+<span class="cp">{{</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="na">.IsTranslated</span><span class="w"> </span><span class="cp">}}</span>
+<span class="p">&lt;</span><span class="nt">h4</span><span class="p">&gt;</span><span class="cp">{{</span><span class="w"> </span><span class="nx">i18n</span><span class="w"> </span><span class="s">&#34;translations&#34;</span><span class="w"> </span><span class="cp">}}</span><span class="p">&lt;/</span><span class="nt">h4</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
+    <span class="cp">{{</span><span class="w"> </span><span class="k">range</span><span class="w"> </span><span class="na">.Translations</span><span class="w"> </span><span class="cp">}}</span>
+    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;</span><span class="cp">{{</span><span class="w"> </span><span class="na">.Permalink</span><span class="w"> </span><span class="cp">}}</span><span class="s">&#34;</span><span class="p">&gt;</span><span class="cp">{{</span><span class="w"> </span><span class="na">.Lang</span><span class="w"> </span><span class="cp">}}</span>: <span class="cp">{{</span><span class="w"> </span><span class="na">.Title</span><span class="w"> </span><span class="cp">}}{{</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="na">.IsPage</span><span class="w"> </span><span class="cp">}}</span> (<span class="cp">{{</span><span class="w"> </span><span class="nx">i18n</span><span class="w"> </span><span class="s">&#34;wordCount&#34;</span><span class="w"> </span><span class="na">.</span><span class="w"> </span><span class="cp">}}</span>)<span class="cp">{{</span><span class="w"> </span><span class="k">end</span><span class="w"> </span><span class="cp">}}</span><span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+    <span class="cp">{{</span><span class="w"> </span><span class="k">end</span><span class="w"> </span><span class="cp">}}</span>
+<span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+<span class="cp">{{</span><span class="w"> </span><span class="k">end</span><span class="w"> </span><span class="cp">}}</span>
+</code></pre></div>
+	</div>
+
+</div>
+
+<p>The above can be put in a <code>partial</code> (i.e., inside <code>layouts/partials/</code>) and included in any template, whether a <a href="/templates/single-page-templates/">single content page</a> or the <a href="/templates/homepage/">homepage</a>. It will not print anything if there are no translations for a given page.</p>
+<p>The above also uses the <a href="/functions/i18n/"><code>i18n</code> function</a> described in the next section.</p>
+<h3 id="list-all-available-languages">List All Available Languages <a class="header-link" href="#list-all-available-languages"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
+<p><code>.AllTranslations</code> on a <code>Page</code> can be used to list all translations, including the page itself. On the home page it can be used to build a language navigator:</p>
+
+
+
+
+
+
+
+
+
+
+<div class="code relative" id="layouts/partials/alllanguages.html"><div class="filename san-serif f6 dib lh-solid pl2 pv2">layouts/partials/allLanguages.html</div>
+		<button class="needs-js copy bg-accent-color-dark f6 absolute top-0 right-0 lh-solid hover-bg-primary-color-dark bn white ph3 pv2" title="Copy this code to your clipboard." data-clipboard-action="copy" aria-label="copy button">
+		</button>
+		
+	
+	<div class="code-copy-content nt3" >
+		
+		<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go-html-template" data-lang="go-html-template">
+<span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
+<span class="cp">{{</span><span class="w"> </span><span class="k">range</span><span class="w"> </span><span class="na">$.Site.Home.AllTranslations</span><span class="w"> </span><span class="cp">}}</span>
+<span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;</span><span class="cp">{{</span><span class="w"> </span><span class="na">.Permalink</span><span class="w"> </span><span class="cp">}}</span><span class="s">&#34;</span><span class="p">&gt;</span><span class="cp">{{</span><span class="w"> </span><span class="na">.Language.LanguageName</span><span class="w"> </span><span class="cp">}}</span><span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+<span class="cp">{{</span><span class="w"> </span><span class="k">end</span><span class="w"> </span><span class="cp">}}</span>
+<span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+</code></pre></div>
+	</div>
+
+</div>
+
+<h2 id="translation-of-strings">Translation of Strings <a class="header-link" href="#translation-of-strings"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
+<p>Hugo uses <a href="https://github.com/nicksnyder/go-i18n">go-i18n</a> to support string translations. <a href="https://github.com/nicksnyder/go-i18n">See the project&rsquo;s source repository</a> to find tools that will help you manage your translation workflows.</p>
+<p>Translations are collected from the <code>themes/&lt;THEME&gt;/i18n/</code> folder (built into the theme), as well as translations present in <code>i18n/</code> at the root of your project. In the <code>i18n</code>, the translations will be merged and take precedence over what is in the theme folder. Language files should be named according to <a href="https://tools.ietf.org/html/rfc5646">RFC 5646</a> with names such as <code>en-US.toml</code>, <code>fr.toml</code>, etc.</p>
+
+<aside class="admonition note">
+	<div class="note-icon">
+		
+	</div>
+	
+	
+	<div class="admonition-content"><p>From <strong>Hugo 0.31</strong> you no longer need to use a valid language code. It can be anything.</p>
+<p>See <a href="https://github.com/gohugoio/hugo/issues/3564">https://github.com/gohugoio/hugo/issues/3564</a></p>
+</div>
+</aside>
+
+<h3 id="query-basic-translation">Query basic translation <a class="header-link" href="#query-basic-translation"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
+<p>From within your templates, use the <code>i18n</code> function like this:</p>
+<pre><code>{{ i18n &quot;home&quot; }}
+</code></pre><p>The function will search for the <code>&quot;home&quot;</code> id:</p>
+
+
+
+  
+
+
+<div class="code relative" id="i18n/en-us">
+  <div class="code-nav flex flex-nowrap items-stretch"><div class="san-serif f6 dib lh-solid pl2 pv2 mr2">
+        i18n/en-US.
+      </div>
+      <button data-toggle-tab="yaml" class="tab-button active ba san-serif f6 dib lh-solid ph2 pv2">
+        yaml
+      </button>
+      &nbsp;
+    
+      <button data-toggle-tab="toml" class="tab-button  ba san-serif f6 dib lh-solid ph2 pv2">
+        toml
+      </button>
+      &nbsp;
+    
+      <button data-toggle-tab="json" class="tab-button  ba san-serif f6 dib lh-solid ph2 pv2">
+        json
+      </button>
+      &nbsp;
+    
+  </div>
+  <div class="tab-content">
+    
+      <div data-pane="yaml" class="code-copy-content nt3 tab-pane active">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">home</span><span class="p">:</span><span class="w">
+</span><span class="w">  </span><span class="nt">other</span><span class="p">:</span><span class="w"> </span><span class="l">Home</span><span class="w">
+</span></code></pre></div>
+      </div>
+      
+        <button class="needs-js copy copy-toggle bg-accent-color-dark f6 absolute top-0 right-0 lh-solid hover-bg-primary-color-dark bn white ph3 pv2" title="Copy this code to your clipboard." data-clipboard-action="copy" aria-label="copy button"></button>
+        
+      
+    
+      <div data-pane="toml" class="code-copy-content nt3 tab-pane ">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="p">[</span><span class="nx">home</span><span class="p">]</span>
+<span class="nx">other</span> <span class="p">=</span> <span class="s1">&#39;Home&#39;</span>
+
+</code></pre></div>
+      </div>
+      
+        <button class="needs-js copy copy-toggle bg-accent-color-dark f6 absolute top-0 right-0 lh-solid hover-bg-primary-color-dark bn white ph3 pv2" title="Copy this code to your clipboard." data-clipboard-action="copy" aria-label="copy button"></button>
+        
+      
+    
+      <div data-pane="json" class="code-copy-content nt3 tab-pane ">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
+   <span class="nt">&#34;home&#34;</span><span class="p">:</span> <span class="p">{</span>
+      <span class="nt">&#34;other&#34;</span><span class="p">:</span> <span class="s2">&#34;Home&#34;</span>
+   <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+      </div>
+      
+        <button class="needs-js copy copy-toggle bg-accent-color-dark f6 absolute top-0 right-0 lh-solid hover-bg-primary-color-dark bn white ph3 pv2" title="Copy this code to your clipboard." data-clipboard-action="copy" aria-label="copy button"></button>
+        
+      
+    
+  </div>
+  
+</div>
+
+<p>The result will be</p>
+<pre><code>Home
+</code></pre><h3 id="query-a-flexible-translation-with-variables">Query a flexible translation with variables <a class="header-link" href="#query-a-flexible-translation-with-variables"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
+<p>Often you will want to use the page variables in the translation strings. To do so, pass the <code>.</code> context when calling <code>i18n</code>:</p>
+<pre><code>{{ i18n &quot;wordCount&quot; . }}
+</code></pre><p>The function will pass the <code>.</code> context to the <code>&quot;wordCount&quot;</code> id:</p>
+
+
+
+  
+
+
+<div class="code relative" id="i18n/en-us">
+  <div class="code-nav flex flex-nowrap items-stretch"><div class="san-serif f6 dib lh-solid pl2 pv2 mr2">
+        i18n/en-US.
+      </div>
+      <button data-toggle-tab="yaml" class="tab-button active ba san-serif f6 dib lh-solid ph2 pv2">
+        yaml
+      </button>
+      &nbsp;
+    
+      <button data-toggle-tab="toml" class="tab-button  ba san-serif f6 dib lh-solid ph2 pv2">
+        toml
+      </button>
+      &nbsp;
+    
+      <button data-toggle-tab="json" class="tab-button  ba san-serif f6 dib lh-solid ph2 pv2">
+        json
+      </button>
+      &nbsp;
+    
+  </div>
+  <div class="tab-content">
+    
+      <div data-pane="yaml" class="code-copy-content nt3 tab-pane active">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">wordCount</span><span class="p">:</span><span class="w">
+</span><span class="w">  </span><span class="nt">other</span><span class="p">:</span><span class="w"> </span><span class="l">This article has {{ .WordCount }} words.</span><span class="w">
+</span></code></pre></div>
+      </div>
+      
+        <button class="needs-js copy copy-toggle bg-accent-color-dark f6 absolute top-0 right-0 lh-solid hover-bg-primary-color-dark bn white ph3 pv2" title="Copy this code to your clipboard." data-clipboard-action="copy" aria-label="copy button"></button>
+        
+      
+    
+      <div data-pane="toml" class="code-copy-content nt3 tab-pane ">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="p">[</span><span class="nx">wordCount</span><span class="p">]</span>
+<span class="nx">other</span> <span class="p">=</span> <span class="s1">&#39;This article has {{ .WordCount }} words.&#39;</span>
+
+</code></pre></div>
+      </div>
+      
+        <button class="needs-js copy copy-toggle bg-accent-color-dark f6 absolute top-0 right-0 lh-solid hover-bg-primary-color-dark bn white ph3 pv2" title="Copy this code to your clipboard." data-clipboard-action="copy" aria-label="copy button"></button>
+        
+      
+    
+      <div data-pane="json" class="code-copy-content nt3 tab-pane ">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
+   <span class="nt">&#34;wordCount&#34;</span><span class="p">:</span> <span class="p">{</span>
+      <span class="nt">&#34;other&#34;</span><span class="p">:</span> <span class="s2">&#34;This article has {{ .WordCount }} words.&#34;</span>
+   <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+      </div>
+      
+        <button class="needs-js copy copy-toggle bg-accent-color-dark f6 absolute top-0 right-0 lh-solid hover-bg-primary-color-dark bn white ph3 pv2" title="Copy this code to your clipboard." data-clipboard-action="copy" aria-label="copy button"></button>
+        
+      
+    
+  </div>
+  
+</div>
+
+<p>Assume <code>.WordCount</code> in the context has value is 101. The result will be:</p>
+<pre><code>This article has 101 words.
+</code></pre><h3 id="query-a-singularplural-translation">Query a singular/plural translation <a class="header-link" href="#query-a-singularplural-translation"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
+<p>In order to meet singular/plural requirement, you must pass a dictionary (map) with a numeric <code>.Count</code> property to the <code>i18n</code> function. The below example uses <code>.ReadingTime</code> variable which has a built-in <code>.Count</code> property.</p>
+<pre><code>{{ i18n &quot;readingTime&quot; .ReadingTime }}
+</code></pre><p>The function will read <code>.Count</code> from <code>.ReadingTime</code> and evaluate where the number is singular (<code>one</code>) or plural (<code>other</code>). After that, it will pass to <code>readingTime</code> id:</p>
+
+
+
+  
+
+
+<div class="code relative" id="i18n/en-us">
+  <div class="code-nav flex flex-nowrap items-stretch"><div class="san-serif f6 dib lh-solid pl2 pv2 mr2">
+        i18n/en-US.
+      </div>
+      <button data-toggle-tab="yaml" class="tab-button active ba san-serif f6 dib lh-solid ph2 pv2">
+        yaml
+      </button>
+      &nbsp;
+    
+      <button data-toggle-tab="toml" class="tab-button  ba san-serif f6 dib lh-solid ph2 pv2">
+        toml
+      </button>
+      &nbsp;
+    
+      <button data-toggle-tab="json" class="tab-button  ba san-serif f6 dib lh-solid ph2 pv2">
+        json
+      </button>
+      &nbsp;
+    
+  </div>
+  <div class="tab-content">
+    
+      <div data-pane="yaml" class="code-copy-content nt3 tab-pane active">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">readingTime</span><span class="p">:</span><span class="w">
+</span><span class="w">  </span><span class="nt">one</span><span class="p">:</span><span class="w"> </span><span class="l">One minute to read</span><span class="w">
+</span><span class="w">  </span><span class="nt">other</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;{{.Count}} minutes to read&#39;</span><span class="w">
+</span></code></pre></div>
+      </div>
+      
+        <button class="needs-js copy copy-toggle bg-accent-color-dark f6 absolute top-0 right-0 lh-solid hover-bg-primary-color-dark bn white ph3 pv2" title="Copy this code to your clipboard." data-clipboard-action="copy" aria-label="copy button"></button>
+        
+      
+    
+      <div data-pane="toml" class="code-copy-content nt3 tab-pane ">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="p">[</span><span class="nx">readingTime</span><span class="p">]</span>
+<span class="nx">one</span> <span class="p">=</span> <span class="s1">&#39;One minute to read&#39;</span>
+<span class="nx">other</span> <span class="p">=</span> <span class="s1">&#39;{{.Count}} minutes to read&#39;</span>
+
+</code></pre></div>
+      </div>
+      
+        <button class="needs-js copy copy-toggle bg-accent-color-dark f6 absolute top-0 right-0 lh-solid hover-bg-primary-color-dark bn white ph3 pv2" title="Copy this code to your clipboard." data-clipboard-action="copy" aria-label="copy button"></button>
+        
+      
+    
+      <div data-pane="json" class="code-copy-content nt3 tab-pane ">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
+   <span class="nt">&#34;readingTime&#34;</span><span class="p">:</span> <span class="p">{</span>
+      <span class="nt">&#34;one&#34;</span><span class="p">:</span> <span class="s2">&#34;One minute to read&#34;</span><span class="p">,</span>
+      <span class="nt">&#34;other&#34;</span><span class="p">:</span> <span class="s2">&#34;{{.Count}} minutes to read&#34;</span>
+   <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+      </div>
+      
+        <button class="needs-js copy copy-toggle bg-accent-color-dark f6 absolute top-0 right-0 lh-solid hover-bg-primary-color-dark bn white ph3 pv2" title="Copy this code to your clipboard." data-clipboard-action="copy" aria-label="copy button"></button>
+        
+      
+    
+  </div>
+  
+</div>
+
+<p>Assume <code>.ReadingTime.Count</code> in the context has value of 525600. The result will be:</p>
+<pre><code>525600 minutes to read
+</code></pre><p>If <code>.ReadingTime.Count</code> in the context has value is 1. The result is:</p>
+<pre><code>One minute to read
+</code></pre><p>In case you need to pass custom data: (<code>(dict &quot;Count&quot; 25)</code> is minimum requirement)</p>
+<pre><code>{{ i18n &quot;readingTime&quot; (dict &quot;Count&quot; 25 &quot;FirstArgument&quot; true &quot;SecondArgument&quot; false &quot;Etc&quot; &quot;so on, so far&quot;) }}
+</code></pre><h2 id="customize-dates">Customize Dates <a class="header-link" href="#customize-dates"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
+<p>At the time of this writing, Go does not yet have support for internationalized locales for dates, but if you do some work, you can simulate it. For example, if you want to use French month names, you can add a data file like <code>data/mois.yaml</code> with this content:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">1</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;janvier&#34;</span><span class="w">
+</span><span class="w"></span><span class="nt">2</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;février&#34;</span><span class="w">
+</span><span class="w"></span><span class="nt">3</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;mars&#34;</span><span class="w">
+</span><span class="w"></span><span class="nt">4</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;avril&#34;</span><span class="w">
+</span><span class="w"></span><span class="nt">5</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;mai&#34;</span><span class="w">
+</span><span class="w"></span><span class="nt">6</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;juin&#34;</span><span class="w">
+</span><span class="w"></span><span class="nt">7</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;juillet&#34;</span><span class="w">
+</span><span class="w"></span><span class="nt">8</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;août&#34;</span><span class="w">
+</span><span class="w"></span><span class="nt">9</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;septembre&#34;</span><span class="w">
+</span><span class="w"></span><span class="nt">10</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;octobre&#34;</span><span class="w">
+</span><span class="w"></span><span class="nt">11</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;novembre&#34;</span><span class="w">
+</span><span class="w"></span><span class="nt">12</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;décembre&#34;</span><span class="w">
+</span></code></pre></div><p>&hellip;then index the non-English date names in your templates like so:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">time</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;post-date&#34;</span> <span class="na">datetime</span><span class="o">=</span><span class="s">&#34;{{ .Date.Format `2006-01-02T15:04:05Z07:00` | safeHTML }}&#34;</span><span class="p">&gt;</span>
+  Article publié le {{ .Date.Day }} {{ index $.Site.Data.mois (printf &#34;%d&#34; .Date.Month) }} {{ .Date.Year }} (dernière modification le {{ .Lastmod.Day }} {{ index $.Site.Data.mois (printf &#34;%d&#34; .Lastmod.Month) }} {{ .Lastmod.Year }})
+<span class="p">&lt;/</span><span class="nt">time</span><span class="p">&gt;</span>
+</code></pre></div><p>This technique extracts the day, month and year by specifying <code>.Date.Day</code>, <code>.Date.Month</code>, and <code>.Date.Year</code>, and uses the month number as a key, when indexing the month name data file.</p>
+<h2 id="menus">Menus <a class="header-link" href="#menus"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
+<p>You can define your menus for each language independently. Creating multilingual menus works just like <a href="/content-management/menus/">creating regular menus</a>, except they&rsquo;re defined in language-specific blocks in the configuration file:</p>
+
+
+
+  
+
+
+<div class="code relative" id="config">
+  <div class="code-nav flex flex-nowrap items-stretch"><div class="san-serif f6 dib lh-solid pl2 pv2 mr2">
+        config.
+      </div>
+      <button data-toggle-tab="yaml" class="tab-button active ba san-serif f6 dib lh-solid ph2 pv2">
+        yaml
+      </button>
+      &nbsp;
+    
+      <button data-toggle-tab="toml" class="tab-button  ba san-serif f6 dib lh-solid ph2 pv2">
+        toml
+      </button>
+      &nbsp;
+    
+      <button data-toggle-tab="json" class="tab-button  ba san-serif f6 dib lh-solid ph2 pv2">
+        json
+      </button>
+      &nbsp;
+    
+  </div>
+  <div class="tab-content">
+    
+      <div data-pane="yaml" class="code-copy-content nt3 tab-pane active">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">defaultContentLanguage</span><span class="p">:</span><span class="w"> </span><span class="l">en</span><span class="w">
+</span><span class="w"></span><span class="nt">languages</span><span class="p">:</span><span class="w">
+</span><span class="w">  </span><span class="nt">de</span><span class="p">:</span><span class="w">
+</span><span class="w">    </span><span class="nt">languageName</span><span class="p">:</span><span class="w"> </span><span class="l">Deutsch</span><span class="w">
+</span><span class="w">    </span><span class="nt">menu</span><span class="p">:</span><span class="w">
+</span><span class="w">      </span><span class="nt">main</span><span class="p">:</span><span class="w">
+</span><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Startseite</span><span class="w">
+</span><span class="w">        </span><span class="nt">url</span><span class="p">:</span><span class="w"> </span><span class="l">/</span><span class="w">
+</span><span class="w">        </span><span class="nt">weight</span><span class="p">:</span><span class="w"> </span><span class="m">0</span><span class="w">
+</span><span class="w">    </span><span class="nt">weight</span><span class="p">:</span><span class="w"> </span><span class="m">10</span><span class="w">
+</span><span class="w">  </span><span class="nt">en</span><span class="p">:</span><span class="w">
+</span><span class="w">    </span><span class="nt">languageName</span><span class="p">:</span><span class="w"> </span><span class="l">English</span><span class="w">
+</span><span class="w">    </span><span class="nt">menu</span><span class="p">:</span><span class="w">
+</span><span class="w">      </span><span class="nt">main</span><span class="p">:</span><span class="w">
+</span><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Home</span><span class="w">
+</span><span class="w">        </span><span class="nt">url</span><span class="p">:</span><span class="w"> </span><span class="l">/</span><span class="w">
+</span><span class="w">        </span><span class="nt">weight</span><span class="p">:</span><span class="w"> </span><span class="m">0</span><span class="w">
+</span><span class="w">    </span><span class="nt">weight</span><span class="p">:</span><span class="w"> </span><span class="m">0</span><span class="w">
+</span></code></pre></div>
+      </div>
+      
+        <button class="needs-js copy copy-toggle bg-accent-color-dark f6 absolute top-0 right-0 lh-solid hover-bg-primary-color-dark bn white ph3 pv2" title="Copy this code to your clipboard." data-clipboard-action="copy" aria-label="copy button"></button>
+        
+      
+    
+      <div data-pane="toml" class="code-copy-content nt3 tab-pane ">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="nx">defaultContentLanguage</span> <span class="p">=</span> <span class="s1">&#39;en&#39;</span>
+<span class="p">[</span><span class="nx">languages</span><span class="p">]</span>
+<span class="p">[</span><span class="nx">languages</span><span class="p">.</span><span class="nx">de</span><span class="p">]</span>
+<span class="nx">languageName</span> <span class="p">=</span> <span class="s1">&#39;Deutsch&#39;</span>
+<span class="nx">weight</span> <span class="p">=</span> <span class="mi">10</span>
+<span class="p">[</span><span class="nx">languages</span><span class="p">.</span><span class="nx">de</span><span class="p">.</span><span class="nx">menu</span><span class="p">]</span>
+<span class="p">[[</span><span class="nx">languages</span><span class="p">.</span><span class="nx">de</span><span class="p">.</span><span class="nx">menu</span><span class="p">.</span><span class="nx">main</span><span class="p">]]</span>
+<span class="nx">name</span> <span class="p">=</span> <span class="s1">&#39;Startseite&#39;</span>
+<span class="nx">url</span> <span class="p">=</span> <span class="s1">&#39;/&#39;</span>
+<span class="nx">weight</span> <span class="p">=</span> <span class="mi">0</span>
+
+
+
+<span class="p">[</span><span class="nx">languages</span><span class="p">.</span><span class="nx">en</span><span class="p">]</span>
+<span class="nx">languageName</span> <span class="p">=</span> <span class="s1">&#39;English&#39;</span>
+<span class="nx">weight</span> <span class="p">=</span> <span class="mi">0</span>
+<span class="p">[</span><span class="nx">languages</span><span class="p">.</span><span class="nx">en</span><span class="p">.</span><span class="nx">menu</span><span class="p">]</span>
+<span class="p">[[</span><span class="nx">languages</span><span class="p">.</span><span class="nx">en</span><span class="p">.</span><span class="nx">menu</span><span class="p">.</span><span class="nx">main</span><span class="p">]]</span>
+<span class="nx">name</span> <span class="p">=</span> <span class="s1">&#39;Home&#39;</span>
+<span class="nx">url</span> <span class="p">=</span> <span class="s1">&#39;/&#39;</span>
+<span class="nx">weight</span> <span class="p">=</span> <span class="mi">0</span>
+
+
+
+
+</code></pre></div>
+      </div>
+      
+        <button class="needs-js copy copy-toggle bg-accent-color-dark f6 absolute top-0 right-0 lh-solid hover-bg-primary-color-dark bn white ph3 pv2" title="Copy this code to your clipboard." data-clipboard-action="copy" aria-label="copy button"></button>
+        
+      
+    
+      <div data-pane="json" class="code-copy-content nt3 tab-pane ">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
+   <span class="nt">&#34;defaultContentLanguage&#34;</span><span class="p">:</span> <span class="s2">&#34;en&#34;</span><span class="p">,</span>
+   <span class="nt">&#34;languages&#34;</span><span class="p">:</span> <span class="p">{</span>
+      <span class="nt">&#34;de&#34;</span><span class="p">:</span> <span class="p">{</span>
+         <span class="nt">&#34;languageName&#34;</span><span class="p">:</span> <span class="s2">&#34;Deutsch&#34;</span><span class="p">,</span>
+         <span class="nt">&#34;menu&#34;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&#34;main&#34;</span><span class="p">:</span> <span class="p">[</span>
+               <span class="p">{</span>
+                  <span class="nt">&#34;name&#34;</span><span class="p">:</span> <span class="s2">&#34;Startseite&#34;</span><span class="p">,</span>
+                  <span class="nt">&#34;url&#34;</span><span class="p">:</span> <span class="s2">&#34;/&#34;</span><span class="p">,</span>
+                  <span class="nt">&#34;weight&#34;</span><span class="p">:</span> <span class="mi">0</span>
+               <span class="p">}</span>
+            <span class="p">]</span>
+         <span class="p">},</span>
+         <span class="nt">&#34;weight&#34;</span><span class="p">:</span> <span class="mi">10</span>
+      <span class="p">},</span>
+      <span class="nt">&#34;en&#34;</span><span class="p">:</span> <span class="p">{</span>
+         <span class="nt">&#34;languageName&#34;</span><span class="p">:</span> <span class="s2">&#34;English&#34;</span><span class="p">,</span>
+         <span class="nt">&#34;menu&#34;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&#34;main&#34;</span><span class="p">:</span> <span class="p">[</span>
+               <span class="p">{</span>
+                  <span class="nt">&#34;name&#34;</span><span class="p">:</span> <span class="s2">&#34;Home&#34;</span><span class="p">,</span>
+                  <span class="nt">&#34;url&#34;</span><span class="p">:</span> <span class="s2">&#34;/&#34;</span><span class="p">,</span>
+                  <span class="nt">&#34;weight&#34;</span><span class="p">:</span> <span class="mi">0</span>
+               <span class="p">}</span>
+            <span class="p">]</span>
+         <span class="p">},</span>
+         <span class="nt">&#34;weight&#34;</span><span class="p">:</span> <span class="mi">0</span>
+      <span class="p">}</span>
+   <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+      </div>
+      
+        <button class="needs-js copy copy-toggle bg-accent-color-dark f6 absolute top-0 right-0 lh-solid hover-bg-primary-color-dark bn white ph3 pv2" title="Copy this code to your clipboard." data-clipboard-action="copy" aria-label="copy button"></button>
+        
+      
+    
+  </div>
+  
+</div>
+
+<p>The rendering of the main navigation works as usual. <code>.Site.Menus</code> will just contain the menu in the current language. Note that <code>absLangURL</code> below will link to the correct locale of your website. Without it, menu entries in all languages would link to the English version, since it&rsquo;s the default content language that resides in the root directory.</p>
+<pre><code>&lt;ul&gt;
+    {{- $currentPage := . -}}
+    {{ range .Site.Menus.main -}}
+    &lt;li class=&quot;{{ if $currentPage.IsMenuCurrent &quot;main&quot; . }}active{{ end }}&quot;&gt;
+        &lt;a href=&quot;{{ .URL | absLangURL }}&quot;&gt;{{ .Name }}&lt;/a&gt;
+    &lt;/li&gt;
+    {{- end }}
+&lt;/ul&gt;
+
+</code></pre><h2 id="missing-translations">Missing Translations <a class="header-link" href="#missing-translations"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
+<p>If a string does not have a translation for the current language, Hugo will use the value from the default language. If no default value is set, an empty string will be shown.</p>
+<p>While translating a Hugo website, it can be handy to have a visual indicator of missing translations. The <a href="/getting-started/configuration/"><code>enableMissingTranslationPlaceholders</code> configuration option</a> will flag all untranslated strings with the placeholder <code>[i18n] identifier</code>, where <code>identifier</code> is the id of the missing translation.</p>
+
+<aside class="admonition note">
+	<div class="note-icon">
+		
+	</div>
+	
+	
+	<div class="admonition-content"><p>Hugo will generate your website with these missing translation placeholders. It might not be suitable for production environments.</p>
+</div>
+</aside>
+
+<p>For merging of content from other languages (i.e. missing content translations), see <a href="/functions/lang.merge/">lang.Merge</a>.</p>
+<p>To track down missing translation strings, run Hugo with the <code>--i18n-warnings</code> flag:</p>
+<pre><code> hugo --i18n-warnings | grep i18n
+i18n|MISSING_TRANSLATION|en|wordCount
+</code></pre><h2 id="multilingual-themes-support">Multilingual Themes support <a class="header-link" href="#multilingual-themes-support"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
+<p>To support Multilingual mode in your themes, some considerations must be taken for the URLs in the templates. If there is more than one language, URLs must meet the following criteria:</p>
+<ul>
+<li>Come from the built-in <code>.Permalink</code> or <code>.RelPermalink</code></li>
+<li>Be constructed with the <a href="/functions/rellangurl"><code>relLangURL</code> template function</a> or the <a href="/functions/abslangurl"><code>absLangURL</code> template function</a> <strong>OR</strong> be prefixed with <code>{{ .LanguagePrefix }}</code></li>
+</ul>
+<p>If there is more than one language defined, the <code>LanguagePrefix</code> variable will equal <code>/en</code> (or whatever your <code>CurrentLanguage</code> is). If not enabled, it will be an empty string (and is therefore harmless for single-language Hugo websites).</p>
+
+</div>
+
+          
+
+<h2>See Also</h2>
+<ul>
+	
+	<li><a href="/functions/i18n/">i18n</a></li>
+	
+	<li><a href="/functions/abslangurl/">absLangURL</a></li>
+	
+	<li><a href="/functions/rellangurl/">relLangURL</a></li>
+	
+	<li><a href="/functions/uniq/">uniq</a></li>
+	
+	<li><a href="/functions/lang.merge/">lang.Merge</a></li>
+	
+</ul>
+
+        </div>
+      </div>
+      <div class="order-0 w-20 dn db-l">
+        
+<nav role="navigation">
+  <ul class="list pa0 nl2">
+    
+      
+      <li class="f5 w-100 hover-bg-light-gray hover-accent-color-light fw8">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".about">About Hugo</a>
+        <ul class="about desktopmenu animated fadeIn list pl0 bg-light-gray dn">
+          <li class="f6 fw4">
+            <a href="/about/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Overview
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/about/security-model/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Hugo&#39;s Security Model
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/about/hugo-and-gdpr/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Hugo and GDPR
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/about/what-is-hugo/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              What is Hugo
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/about/features/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Hugo Features
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/about/benefits/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              The Benefits of Static
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/about/license/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              License
+            </a>
+          </li>
+        </ul>
+      </li>
+      
+      <li class="f5 w-100 hover-bg-light-gray hover-accent-color-light fw8">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".getting-started">Getting Started</a>
+        <ul class="getting-started desktopmenu animated fadeIn list pl0 bg-light-gray dn">
+          <li class="f6 fw4">
+            <a href="/getting-started/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Get Started Overview
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/getting-started/quick-start/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Quick Start
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/getting-started/installing/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Install Hugo
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/getting-started/usage/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Basic Usage
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/getting-started/directory-structure/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Directory Structure
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/getting-started/configuration/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Configuration
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/getting-started/external-learning-resources/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              External Learning Resources
+            </a>
+          </li>
+        </ul>
+      </li>
+      
+      <li class="f5 w-100 hover-bg-light-gray hover-accent-color-light fw8 mb1 bb b--moon-gray">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".modules">Hugo Modules</a>
+        <ul class="modules desktopmenu animated fadeIn list pl0 bg-light-gray dn">
+          <li class="f6 fw4">
+            <a href="/hugo-modules/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Hugo Modules Overview
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/hugo-modules/configuration/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Configure Modules
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/hugo-modules/use-modules/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Use Hugo Modules
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/hugo-modules/theme-components/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Theme Components
+            </a>
+          </li>
+        </ul>
+      </li>
+      
+      <li class="f5 w-100 hover-bg-light-gray hover-accent-color-light fw8">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2  primary-color" data-target=".content-management">Content Management</a>
+        <ul class="content-management desktopmenu animated fadeIn list pl0 bg-light-gray db">
+          <li class="f6 fw4">
+            <a href="/content-management/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Content Management Overview
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/content-management/organization/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Organization
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/content-management/page-bundles/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Page Bundles
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/content-management/formats/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Content Formats
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/content-management/front-matter/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Front Matter
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/content-management/build-options/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Build Options
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/content-management/page-resources/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Page Resources
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/content-management/image-processing/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Image Processing
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/content-management/shortcodes/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Shortcodes
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/content-management/related/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Related Content
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/content-management/sections/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Sections
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/content-management/types/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Content Types
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/content-management/archetypes/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Archetypes
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/content-management/taxonomies/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Taxonomies
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/content-management/summaries/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Summaries
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/content-management/cross-references/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Links and Cross References
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/content-management/urls/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              URL Management
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/content-management/menus/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Menus
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/content-management/static-files/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Static Files
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/content-management/toc/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Table of Contents
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/content-management/comments/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Comments
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/content-management/multilingual/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 primary-color ">
+              Multilingual and i18n
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/content-management/syntax-highlighting/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Syntax Highlighting
+            </a>
+          </li>
+        </ul>
+      </li>
+      
+      <li class="f5 w-100 hover-bg-light-gray hover-accent-color-light fw8">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".templates">Templates</a>
+        <ul class="templates desktopmenu animated fadeIn list pl0 bg-light-gray dn">
+          <li class="f6 fw4">
+            <a href="/templates/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Templates Overview
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/templates/introduction/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Introduction
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/templates/lookup-order/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Template Lookup Order
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/templates/output-formats/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Custom Output Formats
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/templates/base/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Base Templates and Blocks
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/templates/lists/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              List Page Templates
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/templates/homepage/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Homepage Template
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/templates/section-templates/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Section Templates
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/templates/taxonomy-templates/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Taxonomy Templates
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/templates/single-page-templates/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Single Page Templates
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/templates/views/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Content View Templates
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/templates/data-templates/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Data Templates
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/templates/partials/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Partial Templates
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/templates/shortcode-templates/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Shortcode Templates
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/templates/files/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Local File Templates
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/templates/404/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              404 Page
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/templates/menu-templates/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Menu Templates
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/templates/pagination/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Pagination
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/templates/rss/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              RSS Templates
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/templates/sitemap-template/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Sitemap Template
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/templates/robots/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Robots.txt
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/templates/internal/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Internal Templates
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/templates/alternatives/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Alternative Templating
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/templates/template-debugging/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Template Debugging
+            </a>
+          </li>
+        </ul>
+      </li>
+      
+      <li class="f5 w-100 hover-bg-light-gray hover-accent-color-light fw8">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".functions">Functions</a>
+        <ul class="functions desktopmenu animated fadeIn list pl0 bg-light-gray dn">
+          <li class="f6 fw4">
+            <a href="/functions/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Functions Quick Reference
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/adddate/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              .AddDate
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/format/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              .Format
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/get/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              .Get
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/getpage/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              .GetPage
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/hasmenucurrent/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              .HasMenuCurrent
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/ismenucurrent/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              .IsMenuCurrent
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/param/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              .Param
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/render/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              .Render
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/renderstring/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              .RenderString
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/scratch/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              .Scratch
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/unix/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              .Unix
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/abslangurl/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              absLangURL
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/absurl/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              absURL
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/after/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              after
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/anchorize/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              anchorize
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/append/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              append
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/apply/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              apply
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/base64/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              base64
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/chomp/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              chomp
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/complement/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              complement
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/cond/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              cond
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/countrunes/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              countrunes
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/countwords/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              countwords
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/default/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              default
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/delimit/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              delimit
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/dict/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              dict
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/echoparam/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              echoParam
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/emojify/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              emojify
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/eq/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              eq
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/errorf/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              errorf and warnf
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/fileexists/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              fileExists
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/findre/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              findRE
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/first/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              first
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/float/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              float
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/ge/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              ge
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/getenv/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              getenv
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/group/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              group
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/gt/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              gt
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/hasprefix/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              hasPrefix
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/highlight/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              highlight
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/hmac/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              hmac
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/htmlescape/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              htmlEscape
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/htmlunescape/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              htmlUnescape
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/hugo/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              hugo
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/humanize/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              humanize
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/i18n/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              i18n
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/images/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Image Functions
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/in/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              in
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/index-function/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              index
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/int/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              int
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/intersect/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              intersect
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/isset/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              isset
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/jsonify/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              jsonify
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/lang/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              lang
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/lang.merge/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              lang.Merge
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/last/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              last
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/le/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              le
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/len/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              len
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/lower/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              lower
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/lt/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              lt
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/markdownify/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              markdownify
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/math/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Math
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/md5/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              md5
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/merge/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              merge
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/ne/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              ne
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/now/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              now
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/os.stat/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              os.Stat
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/partialcached/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              partialCached
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/path.base/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              path.Base
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/path.dir/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              path.Dir
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/path.ext/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              path.Ext
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/path.join/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              path.Join
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/path.split/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              path.Split
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/plainify/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              plainify
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/pluralize/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              pluralize
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/print/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              print
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/printf/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              printf
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/println/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              println
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/querify/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              querify
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/range/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              range
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/readdir/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              readDir
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/readfile/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              readFile
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/ref/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              ref
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/reflect.ismap/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              reflect.IsMap
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/reflect.isslice/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              reflect.IsSlice
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/rellangurl/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              relLangURL
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/relref/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              relref
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/relurl/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              relURL
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/replace/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              replace
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/replacere/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              replaceRE
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/safecss/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              safeCSS
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/safehtml/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              safeHTML
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/safehtmlattr/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              safeHTMLAttr
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/safejs/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              safeJS
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/safeurl/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              safeURL
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/seq/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              seq
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/sha/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              sha
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/shuffle/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              shuffle
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/singularize/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              singularize
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/site/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              site
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/slice/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              slice
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/slicestr/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              slicestr
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/sort/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              sort
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/split/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              split
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/string/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              string
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/strings.count/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              strings.Count
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/strings.hassuffix/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              strings.HasSuffix
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/strings.repeat/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              strings.Repeat
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/strings.runecount/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              strings.RuneCount
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/strings.trimleft/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              strings.TrimLeft
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/strings.trimprefix/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              strings.TrimPrefix
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/strings.trimright/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              strings.TrimRight
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/strings.trimsuffix/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              strings.TrimSuffix
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/substr/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              substr
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/symdiff/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              symdiff
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/templates.exists/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              templates.Exists
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/time/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              time
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/dateformat/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              time.Format
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/title/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              title
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/transform.unmarshal/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              transform.Unmarshal
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/trim/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              trim
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/truncate/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              truncate
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/union/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              union
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/uniq/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              uniq
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/upper/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              upper
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/urlize/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              urlize
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/urls.parse/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              urls.Parse
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/where/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              where
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/functions/with/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              with
+            </a>
+          </li>
+        </ul>
+      </li>
+      
+      <li class="f5 w-100 hover-bg-light-gray hover-accent-color-light fw8">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".variables">Variables</a>
+        <ul class="variables desktopmenu animated fadeIn list pl0 bg-light-gray dn">
+          <li class="f6 fw4">
+            <a href="/variables/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Variables Overview
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/variables/site/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Site Variables
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/variables/page/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Page Variables
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/variables/shortcodes/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Shortcode Variables
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/variables/pages/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Pages Methods
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/variables/taxonomy/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Taxonomy Variables
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/variables/files/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              File Variables
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/variables/menus/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Menu Entry Properties
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/variables/hugo/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Hugo Variables
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/variables/git/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Git Variables
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/variables/sitemap/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Sitemap Variables
+            </a>
+          </li>
+        </ul>
+      </li>
+      
+      <li class="f5 w-100 hover-bg-light-gray hover-accent-color-light fw8">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".pipes">Hugo Pipes</a>
+        <ul class="pipes desktopmenu animated fadeIn list pl0 bg-light-gray dn">
+          <li class="f6 fw4">
+            <a href="/hugo-pipes/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Hugo Pipes Overview
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/hugo-pipes/introduction/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Hugo Pipes Introduction
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/hugo-pipes/scss-sass/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              SASS / SCSS
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/hugo-pipes/postprocess/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              PostProcess
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/hugo-pipes/postcss/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              PostCSS
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/hugo-pipes/js/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              JavaScript Building
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/hugo-pipes/babel/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Babel
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/hugo-pipes/minification/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Asset minification
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/hugo-pipes/bundling/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Asset bundling
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/hugo-pipes/fingerprint/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Fingerprinting and SRI
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/hugo-pipes/resource-from-template/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Resource from Template
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/hugo-pipes/resource-from-string/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Resource from String
+            </a>
+          </li>
+        </ul>
+      </li>
+      
+      <li class="f5 w-100 hover-bg-light-gray hover-accent-color-light fw8 mb1 bb b--moon-gray">
+        <a href="/commands/" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".commands">CLI</a>
+      </li>
+      
+      <li class="f5 w-100 hover-bg-light-gray hover-accent-color-light fw8">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".troubleshooting">Troubleshooting</a>
+        <ul class="troubleshooting desktopmenu animated fadeIn list pl0 bg-light-gray dn">
+          <li class="f6 fw4">
+            <a href="/troubleshooting/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Troubleshoot
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/troubleshooting/faq/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              FAQ
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/troubleshooting/build-performance/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Build Performance
+            </a>
+          </li>
+        </ul>
+      </li>
+      
+      <li class="f5 w-100 hover-bg-light-gray hover-accent-color-light fw8">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".tools">Tools</a>
+        <ul class="tools desktopmenu animated fadeIn list pl0 bg-light-gray dn">
+          <li class="f6 fw4">
+            <a href="/tools/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Developer Tools Overview
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/tools/migrations/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Migrations
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/tools/starter-kits/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Starter Kits
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/tools/frontends/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Frontends
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/tools/editors/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Editor Plug-ins
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/tools/search/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Search
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/tools/other/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Other Projects
+            </a>
+          </li>
+        </ul>
+      </li>
+      
+      <li class="f5 w-100 hover-bg-light-gray hover-accent-color-light fw8">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".hosting-and-deployment">Hosting &amp; Deployment</a>
+        <ul class="hosting-and-deployment desktopmenu animated fadeIn list pl0 bg-light-gray dn">
+          <li class="f6 fw4">
+            <a href="/hosting-and-deployment/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Hosting &amp; Deployment Overview
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/hosting-and-deployment/hugo-deploy/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Hugo Deploy
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/hosting-and-deployment/deployment-with-nanobox/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Host-Agnostic Deploys with Nanobox
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/hosting-and-deployment/hosting-on-aws-amplify/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Host on AWS Amplify
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/hosting-and-deployment/hosting-on-netlify/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Host on Netlify
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/hosting-and-deployment/hosting-on-render/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Host on Render
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/hosting-and-deployment/hosting-on-firebase/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Host on Firebase
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/hosting-and-deployment/hosting-on-github/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Host on GitHub
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/hosting-and-deployment/hosting-on-gitlab/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Host on GitLab
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/hosting-and-deployment/hosting-on-keycdn/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Hosting on KeyCDN
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/hosting-and-deployment/hosting-on-bitbucket/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Host on Bitbucket
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/hosting-and-deployment/deployment-with-wercker/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Deployment with Wercker
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/hosting-and-deployment/deployment-with-rsync/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Deployment with Rsync
+            </a>
+          </li>
+        </ul>
+      </li>
+      
+      <li class="f5 w-100 hover-bg-light-gray hover-accent-color-light fw8 mb1 bb b--moon-gray">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".contribute">Contribute</a>
+        <ul class="contribute desktopmenu animated fadeIn list pl0 bg-light-gray dn">
+          <li class="f6 fw4">
+            <a href="/contribute/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Contribute to Hugo
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/contribute/development/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Development
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/contribute/documentation/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Documentation
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/contribute/themes/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Themes
+            </a>
+          </li>
+        </ul>
+      </li>
+      
+      <li class="f5 w-100 hover-bg-light-gray hover-accent-color-light fw8">
+        <a href="/maintenance/" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".">Maintenance</a>
+      </li>
+  </ul>
+</nav>
+
+      </div>
+
+    </div>
+  </article>
+
+  <div class="w-100 bg-light-gray">
+    <div class="mw7 pa4 center nested-lh-copy lh-copy">
+      <h6 class="f4 dark-gray mb2">
+  <a href="https://gohugo.io/content-management/multilingual/" class="hide-child link primary-color">
+  <span class="nl3 child"><svg class="grow" fill="" height="14px" viewBox="0 0 24 24" width="14px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg>
+</span>
+    “Multilingual Mode”
+  </a> was last updated: April 9, 2021: <a class="hide-child link primary-color" href="https://github.com/gohugoio/hugoDocs/commit/5d354c38d2fe9799f3821f395e666fcc9875d66c">Replaced ``` code blocks with Code Toggler (5d354c38d)</a>
+</h6>
+
+      <a href="https://github.com/gohugoio/hugoDocs/edit/master/content/en/content-management%5cmultilingual.md" class="
+f6 ph3 pv1 br2 dib  tc ttu mv3 bg-primary-color white hover-bg-green link
+">Improve this page</a>
+
+      
+
+
+    </div>
+  </div>
+
+  </main>
+
+  <footer class="bg-primary-color-dark ph4-ns pt4 relative w-100" role="contentinfo">
+    <div class="center flex-ns flex-wrap justify-between mw9 w-90">
+      <div class="pb3 pt4 w-100 w-50-ns">
+
+         <div class="b f3  light-gray mb3 nested-links tc">
+           By the <a href="https://github.com/gohugoio/hugo/graphs/contributors" class="link">Hugo Authors</a><br />
+          </div>
+
+          <div class="center w4">
+            <img src="/images/hugo-logo-wide.svg" alt="Hugo Logo">
+          </div>
+
+          <ul class="center f6 list ma0 mv3 pa0 tc"><li class="dib mr3"><a href="https://github.com/gohugoio/hugo/issues/new" class="dim link light-gray pv2">File an Issue</a></li><li class="dib mr3"><a href="https://discourse.gohugo.io/" class="dim link light-gray pv2">Get Help</a></li><li class="dib"><a href="https://gitter.im/spf13/hugo" class="dim link light-gray pv2">Discuss Source Code</a></li></ul>
+
+          <ul class="center f6 list ma0 mv4 pa0 tc">
+            <li class="dib mr3"><a href="https://twitter.com/gohugoio" class="dim link light-gray pv2">@GoHugoIO</a></li>
+            <li class="dib mr3"><a href="https://twitter.com/spf13" class="dim link light-gray pv2">@spf13</a></li>
+            <li class="dib"><a href="https://twitter.com/bepsays" class="dim link light-gray pv2">@bepsays</a></li>
+          </ul>
+
+          
+
+      </div>
+
+      <div class="w-100 w-50-l"> 
+        
+
+
+  <section class="pb3 w-100">
+    <div class="center mw9"> 
+      <h3 class="b f3 mv0 light-gray">Hugo Sponsors</h3>
+      <div class="flex-ns flex-wrap center justify-between pt3">
+        
+          
+          
+            <div class="ba b--dark-gray bg-light-gray br3 flex flex-column flex-wrap items-center justify-center ph3 pv4 mb4 w-100 w-30-l  o-100">
+              
+                
+                   <a href="https://www.linode.com/?utm_campaign=hugosponsor&amp;utm_medium=banner&amp;utm_source=homepage" class="grow">
+                
+              <img src="/images/sponsors/linode-logo_standard_light_medium.png" alt="Logo for Linode" class="img h3 center" />
+              </a>
+              
+            </div>
+          
+        
+          
+          
+            <div class="ba b--dark-gray bg-light-gray br3 flex flex-column flex-wrap items-center justify-center ph3 pv4 mb4 w-100 w-30-l  o-100">
+              
+                
+                   <a href="https://esolia.com/post/why-did-esolia-choose-hugo/?utm_campaign=hugosponsor&amp;utm_medium=banner&amp;utm_source=homepage" class="grow">
+                
+              <img src="/images/sponsors/esolia-logo.svg" alt="Logo for eSolia" class="img h3 center" />
+              </a>
+              
+            </div>
+          
+        
+          
+          
+            <div class="ba b--dark-gray bg-light-gray br3 flex flex-column flex-wrap items-center justify-center ph3 pv4 mb4 w-100 w-30-l  o-100" style="background-color: #5A2FA1;">
+              
+                
+                   <a href="https://brave.com/?utm_campaign=hugosponsor&amp;utm_medium=banner&amp;utm_source=homepage" class="grow">
+                
+              <img src="/images/sponsors/brave-logo.svg" alt="Logo for Brave" class="img h3 center" />
+              </a>
+              
+            </div>
+          
+        
+      </div>
+    </div>
+  </section>
+
+
+      </div>
+
+    </div>
+
+    <div class="f7 gray mb5 mb0-ns ph3 w-100"> 
+      <p class="dib mr4">The Hugo logos are copyright © Steve Francia 2013–2021.</p>
+      <p class="dib">The Hugo Gopher is based on an original work by Renée French.</p>
+    </div>
+
+    <img src="/images/gopher-side_color.svg" alt="" class="absolute-l bottom-0 dn db-l h4 right-0 z-999"/>
+
+    <div class="bg-primary-color-dark bottom-0 left-0 right-0 dn-l fixed pb3 ph3 w-100"><div  class="globalmenu mobilemenu pb3 dn">
+    
+
+<ul class="list hidden dib ph0 ma0 scrolling-touch tc">
+  
+    <li  class="tl dib ma0 hover-bg-black w-100">
+        <a href="/news/" class="ttu f6 link primary-color-light overflow hover-white db brand-font  ma0 w-100 pv3 ph4">
+          News
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100">
+        <a href="/documentation/" class="ttu f6 link primary-color-light overflow hover-white db brand-font  ma0 w-100 pv3 ph4">
+          Docs
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100">
+        <a href="https://themes.gohugo.io/" class="ttu f6 link primary-color-light overflow hover-white db brand-font  ma0 w-100 pv3 ph4">
+          Themes
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100">
+        <a href="/showcase/" class="ttu f6 link primary-color-light overflow hover-white db brand-font  ma0 w-100 pv3 ph4">
+          Showcase
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100">
+        <a href="https://discourse.gohugo.io/" class="ttu f6 link primary-color-light overflow hover-white db brand-font  ma0 w-100 pv3 ph4">
+          Community
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100">
+        <a href="https://github.com/gohugoio/hugo" class="ttu f6 link primary-color-light overflow hover-white db brand-font  ma0 w-100 pv3 ph4">
+          GitHub
+        </a>
+    </li>
+  
+</ul>
+
+</div>
+<div  class="docsmenu mobilemenu pb3 dn">
+    
+
+<ul class="list dib ph0 ma0 scrolling-touch tc">
+  
+    <li  class="tl dib ma0 hover-bg-black w-100">
+        <a href="/about/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
+          About Hugo
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100">
+        <a href="/getting-started/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
+          Getting Started
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100 mb2 bb b--mid-gray">
+        <a href="/hugo-modules/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
+          Hugo Modules
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100">
+        <a href="/content-management/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
+          Content Management
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100">
+        <a href="/templates/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
+          Templates
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100">
+        <a href="/functions/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
+          Functions
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100">
+        <a href="/variables/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
+          Variables
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100">
+        <a href="/hugo-pipes/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
+          Hugo Pipes
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100 mb2 bb b--mid-gray">
+        <a href="/commands/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
+          CLI
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100">
+        <a href="/troubleshooting/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
+          Troubleshooting
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100">
+        <a href="/tools/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
+          Tools
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100">
+        <a href="/hosting-and-deployment/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
+          Hosting &amp; Deployment
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100 mb2 bb b--mid-gray">
+        <a href="/contribute/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
+          Contribute
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100">
+        <a href="/maintenance/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
+          Maintenance
+        </a>
+    </li>
+  
+</ul>
+
+</div>
+
+<div class="flex dn-l justify-between">
+  <button class="js-toggle flex-auto dib dn-l f6 tc db mt4-ns ph3 pv2 link mr2 white bg-primary-color-dark hover-bg-primary-color ba b--white-40 w-auto" data-target=".globalmenu">Menu</button>
+
+  <button class="js-toggle flex-auto dib dn-l f6 tc db mt4-ns ph3 pv2 link white bg-primary-color-dark hover-bg-primary-color ba b--white-40 w-auto" data-target=".docsmenu">Docs Menu</button>
+</div>
+</div>
+
+</footer>
+
+
+</body>
+
+</html>

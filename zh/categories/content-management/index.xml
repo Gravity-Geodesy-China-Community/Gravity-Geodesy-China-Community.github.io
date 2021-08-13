@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>content management on Hugo</title>
+    <link>https://gohugo.io/zh/categories/content-management/</link>
+    <description>Recent content in content management on Hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 23 Apr 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://gohugo.io/zh/categories/content-management/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>内容管理</title>
+      <link>https://gohugo.io/zh/content-management/</link>
+      <pubDate>Mon, 23 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://gohugo.io/zh/content-management/</guid>
+      <description>一个实用的静态网站生成器，需要超越“文件头” (front matter) 和模板的等基本功能，才能兼备可伸缩性和可管理性，满足用户所需。Hugo 不仅是给开发者设计的，</description>
+    </item>
+    
+  </channel>
+</rss>

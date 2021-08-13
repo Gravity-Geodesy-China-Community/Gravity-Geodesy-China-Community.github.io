@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>project organization on Hugo</title>
+    <link>https://gohugo.io/categories/project-organization/</link>
+    <description>Recent content in project organization on Hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 01 Feb 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://gohugo.io/categories/project-organization/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Comments</title>
+      <link>https://gohugo.io/content-management/comments/</link>
+      <pubDate>Wed, 01 Feb 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://gohugo.io/content-management/comments/</guid>
+      <description>Hugo ships with support for Disqus, a third-party service that provides comment and community capabilities to websites via JavaScript.
+Your theme may already support Disqus, but if not, it is easy to add to your templates via Hugo&amp;rsquo;s built-in Disqus partial.
+Add Disqus Hugo comes with all the code you need to load Disqus into your templates. Before adding Disqus to your site, you&amp;rsquo;ll need to set up an account.</description>
+    </item>
+    
+  </channel>
+</rss>

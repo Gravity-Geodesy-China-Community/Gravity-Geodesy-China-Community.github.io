@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Hugo</title>
+    <link>https://gohugo.io/categories/</link>
+    <description>Recent content in Categories on Hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 03 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://gohugo.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Releases</title>
+      <link>https://gohugo.io/categories/releases/</link>
+      <pubDate>Tue, 03 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://gohugo.io/categories/releases/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>functions</title>
+      <link>https://gohugo.io/categories/functions/</link>
+      <pubDate>Wed, 28 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://gohugo.io/categories/functions/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>asset management</title>
+      <link>https://gohugo.io/categories/asset-management/</link>
+      <pubDate>Mon, 20 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://gohugo.io/categories/asset-management/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>content management</title>
+      <link>https://gohugo.io/categories/content-management/</link>
+      <pubDate>Mon, 02 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://gohugo.io/categories/content-management/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>fundamentals</title>
+      <link>https://gohugo.io/categories/fundamentals/</link>
+      <pubDate>Fri, 15 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://gohugo.io/categories/fundamentals/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>getting started</title>
+      <link>https://gohugo.io/categories/getting-started/</link>
+      <pubDate>Fri, 15 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://gohugo.io/categories/getting-started/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>variables and params</title>
+      <link>https://gohugo.io/categories/variables-and-params/</link>
+      <pubDate>Sun, 20 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://gohugo.io/categories/variables-and-params/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hugo modules</title>
+      <link>https://gohugo.io/categories/hugo-modules/</link>
+      <pubDate>Wed, 24 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://gohugo.io/categories/hugo-modules/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hosting and deployment</title>
+      <link>https://gohugo.io/categories/hosting-and-deployment/</link>
+      <pubDate>Thu, 06 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://gohugo.io/categories/hosting-and-deployment/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>blog</title>
+      <link>https://gohugo.io/categories/blog/</link>
+      <pubDate>Wed, 04 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://gohugo.io/categories/blog/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>troubleshooting</title>
+      <link>https://gohugo.io/categories/troubleshooting/</link>
+      <pubDate>Sat, 10 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://gohugo.io/categories/troubleshooting/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>maintenance</title>
+      <link>https://gohugo.io/categories/maintenance/</link>
+      <pubDate>Fri, 09 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://gohugo.io/categories/maintenance/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>templates</title>
+      <link>https://gohugo.io/categories/templates/</link>
+      <pubDate>Wed, 22 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://gohugo.io/categories/templates/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>contribute</title>
+      <link>https://gohugo.io/categories/contribute/</link>
+      <pubDate>Wed, 01 Feb 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://gohugo.io/categories/contribute/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>developer tools</title>
+      <link>https://gohugo.io/categories/developer-tools/</link>
+      <pubDate>Wed, 01 Feb 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://gohugo.io/categories/developer-tools/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>project organization</title>
+      <link>https://gohugo.io/categories/project-organization/</link>
+      <pubDate>Wed, 01 Feb 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://gohugo.io/categories/project-organization/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>about hugo</title>
+      <link>https://gohugo.io/categories/about-hugo/</link>
+      <pubDate>Mon, 01 Feb 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://gohugo.io/categories/about-hugo/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
