@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>About Hugo on Hugo</title>
+    <title>About Hugo on Gravity</title>
     <link>https://gohugo.io/about/</link>
-    <description>Recent content in About Hugo on Hugo</description>
+    <description>Recent content in About Hugo on Gravity</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 01 Feb 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://gohugo.io/about/index.xml" rel="self" type="application/rss+xml" />
@@ -13,7 +13,7 @@
       <pubDate>Tue, 01 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://gohugo.io/about/security-model/</guid>
-      <description>Runtime Security Hugo produces static output, so once built, the runtime is the browser (assuming the output is HTML) and any server (API) that you integrate with.
+      <description>Runtime Security  Hugo produces static output, so once built, the runtime is the browser (assuming the output is HTML) and any server (API) that you integrate with.
 But when developing and building your site, the runtime is the hugo executable. Securing a runtime can be a real challenge.
 Hugo&amp;rsquo;s main approach is that of sandboxing:
  Hugo has a virtual file system and only the main project (not third-party components) is allowed to mount directories or files outside the project root.</description>
@@ -45,7 +45,7 @@ Websites built with Hugo are extremely fast and secure.</description>
       <pubDate>Wed, 01 Feb 2017 00:00:00 +0000</pubDate>
       
       <guid>https://gohugo.io/about/features/</guid>
-      <description>General  Extremely fast build times (&amp;lt; 1 ms per page) Completely cross platform, with easy installation on macOS, Linux, Windows, and more Renders changes on the fly with LiveReload as you develop Powerful theming Host your site anywhere  Organization  Straightforward organization for your projects, including website sections Customizable URLs Support for configurable taxonomies, including categories and tags Sort content as you desire through powerful template functions Automatic table of contents generation Dynamic menu creation Pretty URLs support Permalink pattern support Redirects via aliases  Content  Native Markdown and Emacs Org-Mode support, as well as other languages via external helpers (see supported formats) TOML, YAML, and JSON metadata support in front matter Customizable homepage Multiple content types Automatic and user defined content summaries Shortcodes to enable rich content inside of Markdown &amp;ldquo;Minutes to Read&amp;rdquo; functionality &amp;ldquo;WordCount&amp;rdquo; functionality  Additional Features  Integrated Disqus comment support Integrated Google Analytics support Automatic RSS creation Support for Go HTML templates Syntax highlighting powered by Chroma  </description>
+      <description>General   Extremely fast build times (&amp;lt; 1 ms per page) Completely cross platform, with easy installation on macOS, Linux, Windows, and more Renders changes on the fly with LiveReload as you develop Powerful theming Host your site anywhere  Organization   Straightforward organization for your projects, including website sections Customizable URLs Support for configurable taxonomies, including categories and tags Sort content as you desire through powerful template functions Automatic table of contents generation Dynamic menu creation Pretty URLs support Permalink pattern support Redirects via aliases  Content   Native Markdown and Emacs Org-Mode support, as well as other languages via external helpers (see supported formats) TOML, YAML, and JSON metadata support in front matter Customizable homepage Multiple content types Automatic and user defined content summaries Shortcodes to enable rich content inside of Markdown &amp;ldquo;Minutes to Read&amp;rdquo; functionality &amp;ldquo;WordCount&amp;rdquo; functionality  Additional Features   Integrated Disqus comment support Integrated Google Analytics support Automatic RSS creation Support for Go HTML templates Syntax highlighting powered by Chroma  </description>
     </item>
     
     <item>
@@ -65,9 +65,9 @@ Over time, dynamic site generators were programmed to cache their HTML files to 
       
       <guid>https://gohugo.io/about/license/</guid>
       <description>Hugo v0.15 and later are released under the Apache 2.0 license. Earlier versions of Hugo were released under the Simple Public License.
-Version 2.0, January 2004 https://www.apache.org/licenses/LICENSE-2.0
+  Version 2.0, January 2004 https://www.apache.org/licenses/LICENSE-2.0
 Terms and Conditions for use, reproduction, and distribution
-1. Definitions “License” shall mean the terms and conditions for use, reproduction, and distribution as defined by Sections 1 through 9 of this document.
+1. Definitions  “License” shall mean the terms and conditions for use, reproduction, and distribution as defined by Sections 1 through 9 of this document.
 “Licensor” shall mean the copyright owner or entity authorized by the copyright owner that is granting the License.</description>
     </item>
     

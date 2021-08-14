@@ -13,7 +13,7 @@
   <title>Image Processing | Hugo</title>
 
   <meta name="viewport" content="width=device-width,minimum-scale=1">
-  <meta name="generator" content="Hugo 0.87.0" />
+  <meta name="generator" content="Hugo 0.84.0" />
 
   
   <meta name="robots" content="noindex, nofollow">
@@ -42,7 +42,7 @@
 
 
   
-  <script type="text/javascript" src="/output/js/app.0984bf5469ab3c8aa82cf8eb015a560d74ee028723b1ab38e928998f5f72baba.js" integrity="sha256-CYS/VGmrPIqoLPjrAVpWDXTuAocjsas46SiZj19yuro=" crossorigin="anonymous" defer></script>
+  <script type="text/javascript" src="/output/js/app.175b405753a9c0ce86ab35944e9c4cc1a758a6873209cf5106600f6b2f5a59b6.js" integrity="sha256-F1tAV1OpwM6GqzWUTpxMwadYpocyCc9RBmAPay9aWbY=" crossorigin="anonymous" defer></script>
   
       
  
@@ -62,11 +62,11 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://gohugo.io/content-management/image-processing/" /><meta property="og:image" content="https://gohugo.io/images/gohugoio-card.png"/><meta property="article:section" content="content-management" />
 <meta property="article:published_time" content="2018-01-24T13:10:00-05:00" />
-<meta property="article:modified_time" content="2021-07-28T12:28:52+02:00" />
+<meta property="article:modified_time" content="2021-08-13T21:11:25&#43;08:00" />
 
 <meta itemprop="name" content="Image Processing">
 <meta itemprop="description" content="Image Page resources can be resized and cropped."><meta itemprop="datePublished" content="2018-01-24T13:10:00-05:00" />
-<meta itemprop="dateModified" content="2021-07-28T12:28:52+02:00" />
+<meta itemprop="dateModified" content="2021-08-13T21:11:25&#43;08:00" />
 <meta itemprop="wordCount" content="1380"><meta itemprop="image" content="https://gohugo.io/images/gohugoio-card.png"/>
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://gohugo.io/images/gohugoio-card.png"/>
@@ -268,7 +268,7 @@
 <h2 id="the-image-page-resource">The Image Page Resource <a class="header-link" href="#the-image-page-resource"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
 <p>The <code>image</code> is a <a href="/content-management/page-resources/">Page Resource</a>, and the processing methods listed below do not work on images inside your <code>/static</code> folder.</p>
 <p>To print all images paths in a <a href="/content-management/organization/#page-bundles">Page Bundle</a>:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go-html-template" data-lang="go-html-template"><span class="cp">{{</span><span class="w"> </span><span class="k">with</span><span class="w"> </span><span class="na">.Resources.ByType</span><span class="w"> </span><span class="s">&#34;image&#34;</span><span class="w"> </span><span class="cp">}}</span>
+<div class="highlight"><pre class="chroma"><code class="language-go-html-template" data-lang="go-html-template"><span class="cp">{{</span><span class="w"> </span><span class="k">with</span><span class="w"> </span><span class="na">.Resources.ByType</span><span class="w"> </span><span class="s">&#34;image&#34;</span><span class="w"> </span><span class="cp">}}</span>
 <span class="cp">{{</span><span class="w"> </span><span class="k">range</span><span class="w"> </span><span class="na">.</span><span class="w"> </span><span class="cp">}}</span>
 <span class="cp">{{</span><span class="w"> </span><span class="na">.RelPermalink</span><span class="w"> </span><span class="cp">}}</span>
 <span class="cp">{{</span><span class="w"> </span><span class="k">end</span><span class="w"> </span><span class="cp">}}</span>
@@ -276,7 +276,7 @@
 
 </code></pre></div><h2 id="the-image-resource">The Image Resource <a class="header-link" href="#the-image-resource"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
 <p>The <code>image</code> resource can also be retrieved from a <a href="/hugo-pipes/introduction/#from-file-to-resource">global resource</a></p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go-html-template" data-lang="go-html-template"><span class="cp">{{-</span><span class="w"> </span><span class="nx">$image</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">resources</span><span class="na">.Get</span><span class="w"> </span><span class="s">&#34;images/logo.jpg&#34;</span><span class="w"> </span><span class="cp">-}}</span>
+<div class="highlight"><pre class="chroma"><code class="language-go-html-template" data-lang="go-html-template"><span class="cp">{{-</span><span class="w"> </span><span class="nx">$image</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">resources</span><span class="na">.Get</span><span class="w"> </span><span class="s">&#34;images/logo.jpg&#34;</span><span class="w"> </span><span class="cp">-}}</span>
 </code></pre></div><h2 id="image-processing-methods">Image Processing Methods <a class="header-link" href="#image-processing-methods"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
 <p>The <code>image</code> resource implements the  <code>Resize</code>, <code>Fit</code>, <code>Fill</code>, and <code>Filter</code> methods, each returning a transformed image using the specified dimensions and processing options.</p>
 
@@ -292,7 +292,7 @@
 
 <h3 id="resize">Resize <a class="header-link" href="#resize"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
 <p>Resizes the image to the specified width and height.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="c1">// Resize to a width of 600px and preserve ratio
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="c1">// Resize to a width of 600px and preserve ratio
 </span><span class="c1"></span><span class="p">{{</span> <span class="err">$</span><span class="nx">image</span> <span class="o">:=</span> <span class="err">$</span><span class="nx">resource</span><span class="p">.</span><span class="nx">Resize</span> <span class="s">&#34;600x&#34;</span> <span class="p">}}</span>
 
 <span class="c1">// Resize to a height of 400px and preserve ratio
@@ -302,24 +302,24 @@
 </span><span class="c1"></span><span class="p">{{</span> <span class="err">$</span><span class="nx">image</span> <span class="o">:=</span> <span class="err">$</span><span class="nx">resource</span><span class="p">.</span><span class="nx">Resize</span> <span class="s">&#34;600x400&#34;</span> <span class="p">}}</span>
 </code></pre></div><h3 id="fit">Fit <a class="header-link" href="#fit"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
 <p>Scale down the image to fit the given dimensions while maintaining aspect ratio. Both height and width are required.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="p">{{</span> <span class="err">$</span><span class="nx">image</span> <span class="o">:=</span> <span class="err">$</span><span class="nx">resource</span><span class="p">.</span><span class="nx">Fit</span> <span class="s">&#34;600x400&#34;</span> <span class="p">}}</span>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="p">{{</span> <span class="err">$</span><span class="nx">image</span> <span class="o">:=</span> <span class="err">$</span><span class="nx">resource</span><span class="p">.</span><span class="nx">Fit</span> <span class="s">&#34;600x400&#34;</span> <span class="p">}}</span>
 </code></pre></div><h3 id="fill">Fill <a class="header-link" href="#fill"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
 <p>Resize and crop the image to match the given dimensions. Both height and width are required.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="p">{{</span> <span class="err">$</span><span class="nx">image</span> <span class="o">:=</span> <span class="err">$</span><span class="nx">resource</span><span class="p">.</span><span class="nx">Fill</span> <span class="s">&#34;600x400&#34;</span> <span class="p">}}</span>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="p">{{</span> <span class="err">$</span><span class="nx">image</span> <span class="o">:=</span> <span class="err">$</span><span class="nx">resource</span><span class="p">.</span><span class="nx">Fill</span> <span class="s">&#34;600x400&#34;</span> <span class="p">}}</span>
 </code></pre></div><h3 id="filter">Filter <a class="header-link" href="#filter"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
 <p>Apply one or more filters to your image. See <a href="/functions/images/#image-filters">Image Filters</a> for a full list.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go-html-template" data-lang="go-html-template"><span class="cp">{{</span><span class="w"> </span><span class="nx">$img</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">$img</span><span class="na">.Filter</span><span class="w"> </span><span class="o">(</span><span class="nx">images</span><span class="na">.GaussianBlur</span><span class="w"> </span><span class="nx">6</span><span class="o">)</span><span class="w"> </span><span class="o">(</span><span class="nx">images</span><span class="na">.Pixelate</span><span class="w"> </span><span class="nx">8</span><span class="o">)</span><span class="w"> </span><span class="cp">}}</span>
+<div class="highlight"><pre class="chroma"><code class="language-go-html-template" data-lang="go-html-template"><span class="cp">{{</span><span class="w"> </span><span class="nx">$img</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">$img</span><span class="na">.Filter</span><span class="w"> </span><span class="o">(</span><span class="nx">images</span><span class="na">.GaussianBlur</span><span class="w"> </span><span class="nx">6</span><span class="o">)</span><span class="w"> </span><span class="o">(</span><span class="nx">images</span><span class="na">.Pixelate</span><span class="w"> </span><span class="nx">8</span><span class="o">)</span><span class="w"> </span><span class="cp">}}</span>
 </code></pre></div><p>The above can also be written in a more functional style using pipes:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go-html-template" data-lang="go-html-template"><span class="cp">{{</span><span class="w"> </span><span class="nx">$img</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">$img</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nx">images</span><span class="na">.Filter</span><span class="w"> </span><span class="o">(</span><span class="nx">images</span><span class="na">.GaussianBlur</span><span class="w"> </span><span class="nx">6</span><span class="o">)</span><span class="w"> </span><span class="o">(</span><span class="nx">images</span><span class="na">.Pixelate</span><span class="w"> </span><span class="nx">8</span><span class="o">)</span><span class="w"> </span><span class="cp">}}</span>
+<div class="highlight"><pre class="chroma"><code class="language-go-html-template" data-lang="go-html-template"><span class="cp">{{</span><span class="w"> </span><span class="nx">$img</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">$img</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nx">images</span><span class="na">.Filter</span><span class="w"> </span><span class="o">(</span><span class="nx">images</span><span class="na">.GaussianBlur</span><span class="w"> </span><span class="nx">6</span><span class="o">)</span><span class="w"> </span><span class="o">(</span><span class="nx">images</span><span class="na">.Pixelate</span><span class="w"> </span><span class="nx">8</span><span class="o">)</span><span class="w"> </span><span class="cp">}}</span>
 </code></pre></div><p>The filters will be applied in the given order.</p>
 <p>Sometimes it can be useful to create the filter chain once and then reuse it:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go-html-template" data-lang="go-html-template"><span class="cp">{{</span><span class="w"> </span><span class="nx">$filters</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">slice</span><span class="w">  </span><span class="o">(</span><span class="nx">images</span><span class="na">.GaussianBlur</span><span class="w"> </span><span class="nx">6</span><span class="o">)</span><span class="w"> </span><span class="o">(</span><span class="nx">images</span><span class="na">.Pixelate</span><span class="w"> </span><span class="nx">8</span><span class="o">)</span><span class="w"> </span><span class="cp">}}</span>
+<div class="highlight"><pre class="chroma"><code class="language-go-html-template" data-lang="go-html-template"><span class="cp">{{</span><span class="w"> </span><span class="nx">$filters</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">slice</span><span class="w">  </span><span class="o">(</span><span class="nx">images</span><span class="na">.GaussianBlur</span><span class="w"> </span><span class="nx">6</span><span class="o">)</span><span class="w"> </span><span class="o">(</span><span class="nx">images</span><span class="na">.Pixelate</span><span class="w"> </span><span class="nx">8</span><span class="o">)</span><span class="w"> </span><span class="cp">}}</span>
 <span class="cp">{{</span><span class="w"> </span><span class="nx">$img1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">$img1</span><span class="na">.Filter</span><span class="w"> </span><span class="nx">$filters</span><span class="w"> </span><span class="cp">}}</span>
 <span class="cp">{{</span><span class="w"> </span><span class="nx">$img2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">$img2</span><span class="na">.Filter</span><span class="w"> </span><span class="nx">$filters</span><span class="w"> </span><span class="cp">}}</span>
 </code></pre></div><h3 id="exif">Exif <a class="header-link" href="#exif"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
 <p>Provides an <a href="https://en.wikipedia.org/wiki/Exif">Exif</a> object with metadata about the image.</p>
 <p>Note that this is only supported for JPEG and TIFF images, so it&rsquo;s recommended to wrap the access with a <code>with</code>, e.g.:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go-html-template" data-lang="go-html-template"><span class="cp">{{</span><span class="w"> </span><span class="k">with</span><span class="w"> </span><span class="nx">$img</span><span class="na">.Exif</span><span class="w"> </span><span class="cp">}}</span>
+<div class="highlight"><pre class="chroma"><code class="language-go-html-template" data-lang="go-html-template"><span class="cp">{{</span><span class="w"> </span><span class="k">with</span><span class="w"> </span><span class="nx">$img</span><span class="na">.Exif</span><span class="w"> </span><span class="cp">}}</span>
 Date: <span class="cp">{{</span><span class="w"> </span><span class="na">.Date</span><span class="w"> </span><span class="cp">}}</span>
 Lat/Long: <span class="cp">{{</span><span class="w"> </span><span class="na">.Lat</span><span class="cp">}}</span>/<span class="cp">{{</span><span class="w"> </span><span class="na">.Long</span><span class="w"> </span><span class="cp">}}</span>
 Tags:
@@ -328,7 +328,7 @@ TAG: <span class="cp">{{</span><span class="w"> </span><span class="nx">$k</span
 <span class="cp">{{</span><span class="w"> </span><span class="k">end</span><span class="w"> </span><span class="cp">}}</span>
 <span class="cp">{{</span><span class="w"> </span><span class="k">end</span><span class="w"> </span><span class="cp">}}</span>
 </code></pre></div><p>Or individually access EXIF data with dot access, e.g.:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go-html-template" data-lang="go-html-template"><span class="cp">{{</span><span class="w"> </span><span class="k">with</span><span class="w"> </span><span class="nx">$src</span><span class="na">.Exif</span><span class="w"> </span><span class="cp">}}</span>
+<div class="highlight"><pre class="chroma"><code class="language-go-html-template" data-lang="go-html-template"><span class="cp">{{</span><span class="w"> </span><span class="k">with</span><span class="w"> </span><span class="nx">$src</span><span class="na">.Exif</span><span class="w"> </span><span class="cp">}}</span>
   <span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
       <span class="cp">{{</span><span class="w"> </span><span class="k">with</span><span class="w"> </span><span class="na">.Date</span><span class="w"> </span><span class="cp">}}</span><span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Date: <span class="cp">{{</span><span class="w"> </span><span class="na">.Format</span><span class="w"> </span><span class="s">&#34;January 02, 2006&#34;</span><span class="w"> </span><span class="cp">}}</span><span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span><span class="cp">{{</span><span class="w"> </span><span class="k">end</span><span class="w"> </span><span class="cp">}}</span>
       <span class="cp">{{</span><span class="w"> </span><span class="k">with</span><span class="w"> </span><span class="na">.Tags.ApertureValue</span><span class="w"> </span><span class="cp">}}</span><span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Aperture: <span class="cp">{{</span><span class="w"> </span><span class="nx">lang</span><span class="na">.NumFmt</span><span class="w"> </span><span class="nx">2</span><span class="w"> </span><span class="na">.</span><span class="w"> </span><span class="cp">}}</span><span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span><span class="cp">{{</span><span class="w"> </span><span class="k">end</span><span class="w"> </span><span class="cp">}}</span>
@@ -356,12 +356,12 @@ TAG: <span class="cp">{{</span><span class="w"> </span><span class="nx">$k</span
 <h3 id="background-color">Background Color <a class="header-link" href="#background-color"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
 <p>The background color to fill into the transparency layer. This is mostly useful when converting to a format that does not support transparency, e.g. <code>JPEG</code>.</p>
 <p>You can set the background color to use with a 3 or 6 digit hex code starting with <code>#</code>.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="p">{{</span> <span class="err">$</span><span class="nx">image</span><span class="p">.</span><span class="nx">Resize</span> <span class="s">&#34;600x jpg #b31280&#34;</span> <span class="p">}}</span>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="p">{{</span> <span class="err">$</span><span class="nx">image</span><span class="p">.</span><span class="nx">Resize</span> <span class="s">&#34;600x jpg #b31280&#34;</span> <span class="p">}}</span>
 </code></pre></div><p>For color codes, see <a href="https://www.google.com/search?q=color+picker">https://www.google.com/search?q=color+picker</a></p>
 <p><strong>Note</strong> that you also set a default background color to use, see <a href="#image-processing-config">Image Processing Config</a>.</p>
 <h3 id="jpeg-and-webp-quality">JPEG and WebP Quality <a class="header-link" href="#jpeg-and-webp-quality"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
 <p>Only relevant for JPEG and WebP images, values 1 to 100 inclusive, higher is better. Default is 75.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="p">{{</span> <span class="err">$</span><span class="nx">image</span><span class="p">.</span><span class="nx">Resize</span> <span class="s">&#34;600x q50&#34;</span> <span class="p">}}</span>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="p">{{</span> <span class="err">$</span><span class="nx">image</span><span class="p">.</span><span class="nx">Resize</span> <span class="s">&#34;600x q50&#34;</span> <span class="p">}}</span>
 </code></pre></div><p>
 
 
@@ -384,24 +384,24 @@ TAG: <span class="cp">{{</span><span class="w"> </span><span class="nx">$k</span
 <p>Hint about what type of image this is. Currently only used when encoding to WebP.</p>
 <p>Default value is <code>photo</code>.</p>
 <p>Valid values are <code>picture</code>, <code>photo</code>, <code>drawing</code>, <code>icon</code>, or <code>text</code>.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="p">{{</span> <span class="err">$</span><span class="nx">image</span><span class="p">.</span><span class="nx">Resize</span> <span class="s">&#34;600x webp drawing&#34;</span> <span class="p">}}</span>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="p">{{</span> <span class="err">$</span><span class="nx">image</span><span class="p">.</span><span class="nx">Resize</span> <span class="s">&#34;600x webp drawing&#34;</span> <span class="p">}}</span>
 </code></pre></div><h3 id="rotate">Rotate <a class="header-link" href="#rotate"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
 <p>Rotates an image by the given angle counter-clockwise. The rotation will be performed first to get the dimensions correct. The main use of this is to be able to manually correct for <a href="https://github.com/golang/go/issues/4341">EXIF orientation</a> of JPEG images.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="p">{{</span> <span class="err">$</span><span class="nx">image</span><span class="p">.</span><span class="nx">Resize</span> <span class="s">&#34;600x r90&#34;</span> <span class="p">}}</span>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="p">{{</span> <span class="err">$</span><span class="nx">image</span><span class="p">.</span><span class="nx">Resize</span> <span class="s">&#34;600x r90&#34;</span> <span class="p">}}</span>
 </code></pre></div><h3 id="anchor">Anchor <a class="header-link" href="#anchor"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
 <p>Only relevant for the <code>Fill</code> method. This is useful for thumbnail generation where the main motive is located in, say, the left corner.</p>
 <p>Valid values are <code>Smart</code>, <code>Center</code>, <code>TopLeft</code>, <code>Top</code>, <code>TopRight</code>, <code>Left</code>, <code>Right</code>, <code>BottomLeft</code>, <code>Bottom</code>, <code>BottomRight</code>.</p>
 <p>Default value is <code>Smart</code>, which uses <a href="https://github.com/muesli/smartcrop">Smartcrop</a> to determine the best crop.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="p">{{</span> <span class="err">$</span><span class="nx">image</span><span class="p">.</span><span class="nx">Fill</span> <span class="s">&#34;300x200 BottomLeft&#34;</span> <span class="p">}}</span>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="p">{{</span> <span class="err">$</span><span class="nx">image</span><span class="p">.</span><span class="nx">Fill</span> <span class="s">&#34;300x200 BottomLeft&#34;</span> <span class="p">}}</span>
 </code></pre></div><h3 id="resample-filter">Resample Filter <a class="header-link" href="#resample-filter"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
 <p>Filter used in resizing. Default is <code>Box</code>, a simple and fast resampling filter appropriate for downscaling.</p>
 <p>Examples are: <code>Box</code>, <code>NearestNeighbor</code>, <code>Linear</code>, <code>Gaussian</code>.</p>
 <p>See <a href="https://github.com/disintegration/imaging">https://github.com/disintegration/imaging</a> for more. If you want to trade quality for faster processing, this may be a option to test.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="p">{{</span> <span class="err">$</span><span class="nx">image</span><span class="p">.</span><span class="nx">Resize</span> <span class="s">&#34;600x400 Gaussian&#34;</span> <span class="p">}}</span>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="p">{{</span> <span class="err">$</span><span class="nx">image</span><span class="p">.</span><span class="nx">Resize</span> <span class="s">&#34;600x400 Gaussian&#34;</span> <span class="p">}}</span>
 </code></pre></div><h3 id="target-format">Target Format <a class="header-link" href="#target-format"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
 <p>By default the images is encoded in the source format, but you can set the target format as an option.</p>
 <p>Valid values are <code>jpg</code>, <code>png</code>, <code>tif</code>, <code>bmp</code>, <code>gif</code> and <code>webp</code>.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="p">{{</span> <span class="err">$</span><span class="nx">image</span><span class="p">.</span><span class="nx">Resize</span> <span class="s">&#34;600x jpg&#34;</span> <span class="p">}}</span>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="p">{{</span> <span class="err">$</span><span class="nx">image</span><span class="p">.</span><span class="nx">Resize</span> <span class="s">&#34;600x jpg&#34;</span> <span class="p">}}</span>
 </code></pre></div><p>
 
 
@@ -513,8 +513,7 @@ TAG: <span class="cp">{{</span><span class="w"> </span><span class="nx">$k</span
 	
 	<div class="code-copy-content nt3" >
 		
-		<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go-html-template" data-lang="go-html-template">
-<span class="cp">{{</span><span class="w"> </span><span class="nx">$original</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="na">.Page.Resources.GetMatch</span><span class="w"> </span><span class="o">(</span><span class="k">printf</span><span class="w"> </span><span class="s">&#34;*%s*&#34;</span><span class="w"> </span><span class="o">(</span><span class="na">.Get</span><span class="w"> </span><span class="nx">0</span><span class="o">))</span><span class="w"> </span><span class="cp">}}</span>
+		<div class="highlight"><pre class="chroma"><code class="language-go-html-template" data-lang="go-html-template"><span class="cp">{{</span><span class="w"> </span><span class="nx">$original</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="na">.Page.Resources.GetMatch</span><span class="w"> </span><span class="o">(</span><span class="k">printf</span><span class="w"> </span><span class="s">&#34;*%s*&#34;</span><span class="w"> </span><span class="o">(</span><span class="na">.Get</span><span class="w"> </span><span class="nx">0</span><span class="o">))</span><span class="w"> </span><span class="cp">}}</span>
 <span class="cp">{{</span><span class="w"> </span><span class="nx">$command</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="na">.Get</span><span class="w"> </span><span class="nx">1</span><span class="w"> </span><span class="cp">}}</span>
 <span class="cp">{{</span><span class="w"> </span><span class="nx">$options</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="na">.Get</span><span class="w"> </span><span class="nx">2</span><span class="w"> </span><span class="cp">}}</span>
 <span class="cp">{{</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="k">eq</span><span class="w"> </span><span class="nx">$command</span><span class="w"> </span><span class="s">&#34;Fit&#34;</span><span class="cp">}}</span>
@@ -538,14 +537,13 @@ TAG: <span class="cp">{{</span><span class="w"> </span><span class="nx">$k</span
 	<span class="cp">{{</span><span class="w"> </span><span class="k">end</span><span class="w"> </span><span class="cp">}}</span>
 	<span class="p">&lt;/</span><span class="nt">small</span><span class="p">&gt;</span>
 	<span class="p">&lt;/</span><span class="nt">figcaption</span><span class="p">&gt;</span>
-<span class="p">&lt;/</span><span class="nt">figure</span><span class="p">&gt;</span>  
-</code></pre></div>
+<span class="p">&lt;/</span><span class="nt">figure</span><span class="p">&gt;</span>  </code></pre></div>
 	</div>
 
 </div>
 
 <p>And it is used like this:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go-html-template" data-lang="go-html-template"><span class="cp">{{</span><span class="err">&lt;</span><span class="w"> </span><span class="nx">imgproc</span><span class="w"> </span><span class="nx">sunset</span><span class="w"> </span><span class="nx">Resize</span><span class="w"> </span><span class="s">&#34;300x&#34;</span><span class="w"> </span><span class="err">/&gt;</span><span class="cp">}}</span>
+<div class="highlight"><pre class="chroma"><code class="language-go-html-template" data-lang="go-html-template"><span class="cp">{{</span><span class="err">&lt;</span><span class="w"> </span><span class="nx">imgproc</span><span class="w"> </span><span class="nx">sunset</span><span class="w"> </span><span class="nx">Resize</span><span class="w"> </span><span class="s">&#34;300x&#34;</span><span class="w"> </span><span class="err">/&gt;</span><span class="cp">}}</span>
 </code></pre></div>
 <aside class="admonition note">
 	<div class="note-icon">
@@ -559,7 +557,7 @@ TAG: <span class="cp">{{</span><span class="w"> </span><span class="nx">$k</span
 
 <h2 id="image-processing-config">Image Processing Config <a class="header-link" href="#image-processing-config"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
 <p>You can configure an <code>imaging</code> section in <code>config.toml</code> with default image processing options:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="p">[</span><span class="nx">imaging</span><span class="p">]</span>
+<div class="highlight"><pre class="chroma"><code class="language-toml" data-lang="toml"><span class="p">[</span><span class="nx">imaging</span><span class="p">]</span>
 <span class="c"># Default resample filter used for resizing. Default is Box,</span>
 <span class="c"># a simple and fast averaging filter appropriate for downscaling.</span>
 <span class="c"># See https://github.com/disintegration/imaging</span>
@@ -630,7 +628,7 @@ TAG: <span class="cp">{{</span><span class="w"> </span><span class="nx">$k</span
 <p>Processed images are stored below <code>&lt;project-dir&gt;/resources</code> (can be set with <code>resourceDir</code> config setting). This folder is deliberately placed in the project, as it is recommended to check these into source control as part of the project. These images are not &ldquo;Hugo fast&rdquo; to generate, but once generated they can be reused.</p>
 <p>If you change your image settings (e.g. size), remove or rename images etc., you will end up with unused images taking up space and cluttering your project.</p>
 <p>To clean up, run:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">hugo --gc
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">hugo --gc
 </code></pre></div>
 <aside class="admonition note">
 	<div class="note-icon">
@@ -815,11 +813,6 @@ TAG: <span class="cp">{{</span><span class="w"> </span><span class="nx">$k</span
           <li class="f6 fw4">
             <a href="/content-management/image-processing/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 primary-color ">
               Image Processing
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/content-management/shortcodes/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Shortcodes
             </a>
           </li>
           <li class="f6 fw4">
@@ -1817,11 +1810,6 @@ TAG: <span class="cp">{{</span><span class="w"> </span><span class="nx">$k</span
             </a>
           </li>
           <li class="f6 fw4">
-            <a href="/troubleshooting/faq/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              FAQ
-            </a>
-          </li>
-          <li class="f6 fw4">
             <a href="/troubleshooting/build-performance/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
               Build Performance
             </a>
@@ -1985,10 +1973,10 @@ TAG: <span class="cp">{{</span><span class="w"> </span><span class="nx">$k</span
   <span class="nl3 child"><svg class="grow" fill="" height="14px" viewBox="0 0 24 24" width="14px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg>
 </span>
     “Image Processing”
-  </a> was last updated: July 28, 2021: <a class="hide-child link primary-color" href="https://github.com/gohugoio/hugoDocs/commit/198cdf8f04c746aae12c76362e543aafd4f1218a">tpl/lang: Add new localized versions of lang.FormatNumber etc. (198cdf8f0)</a>
+  </a> was last updated: August 13, 2021: <a class="hide-child link primary-color" href="https://github.com/gohugoio/hugoDocs/commit/675299e5580f46886a1b39c571db992a3336bb8c">try hugo templete (675299e)</a>
 </h6>
 
-      <a href="https://github.com/gohugoio/hugoDocs/edit/master/content/en/content-management%5cimage-processing%5cindex.md" class="
+      <a href="https://github.com/gohugoio/hugoDocs/edit/master/content/en/content-management/image-processing/index.md" class="
 f6 ph3 pv1 br2 dib  tc ttu mv3 bg-primary-color white hover-bg-green link
 ">Improve this page</a>
 

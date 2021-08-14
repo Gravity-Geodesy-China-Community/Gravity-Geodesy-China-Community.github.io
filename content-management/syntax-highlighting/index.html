@@ -13,7 +13,7 @@
   <title>Syntax Highlighting | Hugo</title>
 
   <meta name="viewport" content="width=device-width,minimum-scale=1">
-  <meta name="generator" content="Hugo 0.87.0" />
+  <meta name="generator" content="Hugo 0.84.0" />
 
   
   <meta name="robots" content="noindex, nofollow">
@@ -42,7 +42,7 @@
 
 
   
-  <script type="text/javascript" src="/output/js/app.0984bf5469ab3c8aa82cf8eb015a560d74ee028723b1ab38e928998f5f72baba.js" integrity="sha256-CYS/VGmrPIqoLPjrAVpWDXTuAocjsas46SiZj19yuro=" crossorigin="anonymous" defer></script>
+  <script type="text/javascript" src="/output/js/app.175b405753a9c0ce86ab35944e9c4cc1a758a6873209cf5106600f6b2f5a59b6.js" integrity="sha256-F1tAV1OpwM6GqzWUTpxMwadYpocyCc9RBmAPay9aWbY=" crossorigin="anonymous" defer></script>
   
       
  
@@ -61,12 +61,12 @@
 <meta property="og:description" content="Hugo comes with really fast syntax highlighting from Chroma." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://gohugo.io/content-management/syntax-highlighting/" /><meta property="og:image" content="https://gohugo.io/images/gohugoio-card.png"/><meta property="article:section" content="content-management" />
-<meta property="article:published_time" content="2017-02-01T00:00:00+00:00" />
-<meta property="article:modified_time" content="2021-03-25T16:01:48+00:00" />
+<meta property="article:published_time" content="2017-02-01T00:00:00&#43;00:00" />
+<meta property="article:modified_time" content="2021-08-13T21:11:25&#43;08:00" />
 
 <meta itemprop="name" content="Syntax Highlighting">
-<meta itemprop="description" content="Hugo comes with really fast syntax highlighting from Chroma."><meta itemprop="datePublished" content="2017-02-01T00:00:00+00:00" />
-<meta itemprop="dateModified" content="2021-03-25T16:01:48+00:00" />
+<meta itemprop="description" content="Hugo comes with really fast syntax highlighting from Chroma."><meta itemprop="datePublished" content="2017-02-01T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2021-08-13T21:11:25&#43;08:00" />
 <meta itemprop="wordCount" content="1344"><meta itemprop="image" content="https://gohugo.io/images/gohugoio-card.png"/>
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://gohugo.io/images/gohugoio-card.png"/>
@@ -269,7 +269,7 @@
 <h2 id="generate-syntax-highlighter-css">Generate Syntax Highlighter CSS <a class="header-link" href="#generate-syntax-highlighter-css"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
 <p>If you run with <code>pygmentsUseClasses=true</code> in your site config, you need a style sheet.</p>
 <p>You can generate one with Hugo:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">hugo gen chromastyles --style<span class="o">=</span>monokai &gt; syntax.css
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">hugo gen chromastyles --style<span class="o">=</span>monokai &gt; syntax.css
 </code></pre></div><p>Run <code>hugo gen chromastyles -h</code> for more options. See <a href="https://xyproto.github.io/splash/docs/">https://xyproto.github.io/splash/docs/</a> for a gallery of available styles.</p>
 <h2 id="highlight-shortcode">Highlight Shortcode <a class="header-link" href="#highlight-shortcode"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
 <p>Highlighting is carried out via the built-in <a href="https://gohugo.io/content-management/shortcodes/#highlight"><code>highlight</code> shortcode</a>. It takes exactly one required parameter for the programming language to be highlighted and requires a closing shortcode. Note that <code>highlight</code> is <em>not</em> used for client-side javascript highlighting.</p>
@@ -293,7 +293,7 @@
 </code></pre><p>Gives this:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">199
+<pre class="chroma"><code><span class="lnt">199
 </span><span class="lnt">200
 </span><span class="lnt">201
 </span><span class="lnt">202
@@ -315,7 +315,7 @@
 </span><span class="lnt">218
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="c1">// GetTitleFunc returns a func that can be used to transform a string to
+<pre class="chroma"><code class="language-go" data-lang="go"><span class="c1">// GetTitleFunc returns a func that can be used to transform a string to
 </span><span class="c1">// title case.
 </span><span class="c1">//
 </span><span class="c1">// The supported styles are
@@ -352,7 +352,7 @@
 </code></pre><p>Gives this:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">199
+<pre class="chroma"><code><span class="lnt">199
 </span><span class="lnt">200
 </span><span class="lnt">201
 </span><span class="lnt">202
@@ -374,7 +374,7 @@
 </span><span class="lnt">218
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="c1">// GetTitleFunc returns a func that can be used to transform a string to
+<pre class="chroma"><code class="language-go" data-lang="go"><span class="c1">// GetTitleFunc returns a func that can be used to transform a string to
 </span><span class="c1">// title case.
 </span><span class="c1">//
 </span><span class="c1">// The supported styles are
@@ -1188,11 +1188,6 @@
           <li class="f6 fw4">
             <a href="/content-management/image-processing/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
               Image Processing
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/content-management/shortcodes/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Shortcodes
             </a>
           </li>
           <li class="f6 fw4">
@@ -2190,11 +2185,6 @@
             </a>
           </li>
           <li class="f6 fw4">
-            <a href="/troubleshooting/faq/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              FAQ
-            </a>
-          </li>
-          <li class="f6 fw4">
             <a href="/troubleshooting/build-performance/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
               Build Performance
             </a>
@@ -2358,10 +2348,10 @@
   <span class="nl3 child"><svg class="grow" fill="" height="14px" viewBox="0 0 24 24" width="14px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg>
 </span>
     “Syntax Highlighting”
-  </a> was last updated: March 25, 2021: <a class="hide-child link primary-color" href="https://github.com/gohugoio/hugoDocs/commit/98aa190731c1f3934d88ae40a68e765e4dc9ef3b">Directly link to `highlight` shortcode (#1384) (98aa19073)</a>
+  </a> was last updated: August 13, 2021: <a class="hide-child link primary-color" href="https://github.com/gohugoio/hugoDocs/commit/675299e5580f46886a1b39c571db992a3336bb8c">try hugo templete (675299e)</a>
 </h6>
 
-      <a href="https://github.com/gohugoio/hugoDocs/edit/master/content/en/content-management%5csyntax-highlighting.md" class="
+      <a href="https://github.com/gohugoio/hugoDocs/edit/master/content/en/content-management/syntax-highlighting.md" class="
 f6 ph3 pv1 br2 dib  tc ttu mv3 bg-primary-color white hover-bg-green link
 ">Improve this page</a>
 

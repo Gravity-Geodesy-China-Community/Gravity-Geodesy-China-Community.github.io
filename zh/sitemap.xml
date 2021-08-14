@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://gohugo.io/zh/about/</loc>
-    <lastmod>2019-10-21T10:22:28+02:00</lastmod>
+    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -16,20 +16,10 @@
                 />
   </url><url>
     <loc>https://gohugo.io/zh/content-management/</loc>
-    <lastmod>2019-10-21T10:22:28+02:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://gohugo.io/content-management/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://gohugo.io/zh/content-management/"
-                />
+    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
   </url><url>
     <loc>https://gohugo.io/zh/documentation/</loc>
-    <lastmod>2019-10-21T10:22:28+02:00</lastmod>
+    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -42,33 +32,13 @@
                 />
   </url><url>
     <loc>https://gohugo.io/zh/templates/</loc>
-    <lastmod>2019-10-21T10:22:28+02:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://gohugo.io/templates/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://gohugo.io/zh/templates/"
-                />
+    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
   </url><url>
     <loc>https://gohugo.io/zh/templates/base/</loc>
-    <lastmod>2019-10-21T10:22:28+02:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://gohugo.io/templates/base/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://gohugo.io/zh/templates/base/"
-                />
+    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
   </url><url>
     <loc>https://gohugo.io/zh/categories/</loc>
-    <lastmod>2019-10-21T10:22:28+02:00</lastmod>
+    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -81,20 +51,10 @@
                 />
   </url><url>
     <loc>https://gohugo.io/zh/categories/content-management/</loc>
-    <lastmod>2019-10-21T10:22:28+02:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://gohugo.io/categories/content-management/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://gohugo.io/zh/categories/content-management/"
-                />
+    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
   </url><url>
     <loc>https://gohugo.io/zh/</loc>
-    <lastmod>2020-04-23T00:49:19+09:00</lastmod>
+    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -107,7 +67,7 @@
                 />
   </url><url>
     <loc>https://gohugo.io/zh/categories/fundamentals/</loc>
-    <lastmod>2019-10-21T10:22:28+02:00</lastmod>
+    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -120,20 +80,10 @@
                 />
   </url><url>
     <loc>https://gohugo.io/zh/categories/templates/</loc>
-    <lastmod>2019-10-21T10:22:28+02:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://gohugo.io/categories/templates/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://gohugo.io/zh/categories/templates/"
-                />
+    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
   </url><url>
     <loc>https://gohugo.io/zh/news/</loc>
-    <lastmod>2019-10-21T10:22:28+02:00</lastmod>
+    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"

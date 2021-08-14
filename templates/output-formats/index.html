@@ -13,7 +13,7 @@
   <title>Custom Output Formats | Hugo</title>
 
   <meta name="viewport" content="width=device-width,minimum-scale=1">
-  <meta name="generator" content="Hugo 0.87.0" />
+  <meta name="generator" content="Hugo 0.84.0" />
 
   
   <meta name="robots" content="noindex, nofollow">
@@ -42,7 +42,7 @@
 
 
   
-  <script type="text/javascript" src="/output/js/app.0984bf5469ab3c8aa82cf8eb015a560d74ee028723b1ab38e928998f5f72baba.js" integrity="sha256-CYS/VGmrPIqoLPjrAVpWDXTuAocjsas46SiZj19yuro=" crossorigin="anonymous" defer></script>
+  <script type="text/javascript" src="/output/js/app.175b405753a9c0ce86ab35944e9c4cc1a758a6873209cf5106600f6b2f5a59b6.js" integrity="sha256-F1tAV1OpwM6GqzWUTpxMwadYpocyCc9RBmAPay9aWbY=" crossorigin="anonymous" defer></script>
   
       
  
@@ -61,12 +61,12 @@
 <meta property="og:description" content="Hugo can output content in multiple formats, including calendar events, e-book formats, Google AMP, and JSON search indexes, or any custom text format." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://gohugo.io/templates/output-formats/" /><meta property="og:image" content="https://gohugo.io/images/gohugoio-card.png"/><meta property="article:section" content="templates" />
-<meta property="article:published_time" content="2017-03-22T00:00:00+00:00" />
-<meta property="article:modified_time" content="2020-06-16T15:43:50+02:00" />
+<meta property="article:published_time" content="2017-03-22T00:00:00&#43;00:00" />
+<meta property="article:modified_time" content="2021-08-13T21:11:25&#43;08:00" />
 
 <meta itemprop="name" content="Custom Output Formats">
-<meta itemprop="description" content="Hugo can output content in multiple formats, including calendar events, e-book formats, Google AMP, and JSON search indexes, or any custom text format."><meta itemprop="datePublished" content="2017-03-22T00:00:00+00:00" />
-<meta itemprop="dateModified" content="2020-06-16T15:43:50+02:00" />
+<meta itemprop="description" content="Hugo can output content in multiple formats, including calendar events, e-book formats, Google AMP, and JSON search indexes, or any custom text format."><meta itemprop="datePublished" content="2017-03-22T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2021-08-13T21:11:25&#43;08:00" />
 <meta itemprop="wordCount" content="2173"><meta itemprop="image" content="https://gohugo.io/images/gohugoio-card.png"/>
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://gohugo.io/images/gohugoio-card.png"/>
@@ -964,7 +964,7 @@
   <div class="tab-content">
     
       <div data-pane="yaml" class="code-copy-content nt3 tab-pane active">
-        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">mediaTypes</span><span class="p">:</span><span class="w">
+        <div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">mediaTypes</span><span class="p">:</span><span class="w">
 </span><span class="w">  </span><span class="nt">text/enriched</span><span class="p">:</span><span class="w">
 </span><span class="w">    </span><span class="nt">suffixes</span><span class="p">:</span><span class="w">
 </span><span class="w">    </span>- <span class="l">enr</span><span class="w">
@@ -979,14 +979,11 @@
       
     
       <div data-pane="toml" class="code-copy-content nt3 tab-pane ">
-        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="p">[</span><span class="nx">mediaTypes</span><span class="p">]</span>
-<span class="p">[</span><span class="nx">mediaTypes</span><span class="p">.</span><span class="s1">&#39;text/enriched&#39;</span><span class="p">]</span>
-<span class="nx">suffixes</span> <span class="p">=</span> <span class="p">[</span><span class="s1">&#39;enr&#39;</span><span class="p">]</span>
-
-<span class="p">[</span><span class="nx">mediaTypes</span><span class="p">.</span><span class="s1">&#39;text/html&#39;</span><span class="p">]</span>
-<span class="nx">suffixes</span> <span class="p">=</span> <span class="p">[</span><span class="s1">&#39;asp&#39;</span><span class="p">]</span>
-
-
+        <div class="highlight"><pre class="chroma"><code class="language-toml" data-lang="toml"><span class="p">[</span><span class="nx">mediaTypes</span><span class="p">]</span>
+  <span class="p">[</span><span class="nx">mediaTypes</span><span class="p">.</span><span class="s2">&#34;text/enriched&#34;</span><span class="p">]</span>
+    <span class="nx">suffixes</span> <span class="p">=</span> <span class="p">[</span><span class="s2">&#34;enr&#34;</span><span class="p">]</span>
+  <span class="p">[</span><span class="nx">mediaTypes</span><span class="p">.</span><span class="s2">&#34;text/html&#34;</span><span class="p">]</span>
+    <span class="nx">suffixes</span> <span class="p">=</span> <span class="p">[</span><span class="s2">&#34;asp&#34;</span><span class="p">]</span>
 </code></pre></div>
       </div>
       
@@ -995,7 +992,7 @@
       
     
       <div data-pane="json" class="code-copy-content nt3 tab-pane ">
-        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
+        <div class="highlight"><pre class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
    <span class="nt">&#34;mediaTypes&#34;</span><span class="p">:</span> <span class="p">{</span>
       <span class="nt">&#34;text/enriched&#34;</span><span class="p">:</span> <span class="p">{</span>
          <span class="nt">&#34;suffixes&#34;</span><span class="p">:</span> <span class="p">[</span>
@@ -1022,7 +1019,7 @@
 
 <p>The above example adds one new media type, <code>text/enriched</code>, and changes the suffix for the built-in <code>text/html</code> media type.</p>
 <p><strong>Note:</strong> these media types are configured for <strong>your output formats</strong>. If you want to redefine one of Hugo&rsquo;s default output formats (e.g. <code>HTML</code>), you also need to redefine the media type. So, if you want to change the suffix of the <code>HTML</code> output format from <code>html</code> (default) to <code>htm</code>:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="p">[</span><span class="nx">mediaTypes</span><span class="p">]</span>
+<div class="highlight"><pre class="chroma"><code class="language-toml" data-lang="toml"><span class="p">[</span><span class="nx">mediaTypes</span><span class="p">]</span>
 <span class="p">[</span><span class="nx">mediaTypes</span><span class="p">.</span><span class="s2">&#34;text/html&#34;</span><span class="p">]</span>
 <span class="nx">suffixes</span> <span class="p">=</span> <span class="p">[</span><span class="s2">&#34;htm&#34;</span><span class="p">]</span>
 
@@ -1591,7 +1588,7 @@
   <div class="tab-content">
     
       <div data-pane="yaml" class="code-copy-content nt3 tab-pane active">
-        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">outputFormats</span><span class="p">:</span><span class="w">
+        <div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">outputFormats</span><span class="p">:</span><span class="w">
 </span><span class="w">  </span><span class="nt">MyEnrichedFormat</span><span class="p">:</span><span class="w">
 </span><span class="w">    </span><span class="nt">baseName</span><span class="p">:</span><span class="w"> </span><span class="l">myindex</span><span class="w">
 </span><span class="w">    </span><span class="nt">isPlainText</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
@@ -1605,14 +1602,12 @@
       
     
       <div data-pane="toml" class="code-copy-content nt3 tab-pane ">
-        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="p">[</span><span class="nx">outputFormats</span><span class="p">]</span>
-<span class="p">[</span><span class="nx">outputFormats</span><span class="p">.</span><span class="nx">MyEnrichedFormat</span><span class="p">]</span>
-<span class="nx">baseName</span> <span class="p">=</span> <span class="s1">&#39;myindex&#39;</span>
-<span class="nx">isPlainText</span> <span class="p">=</span> <span class="kc">true</span>
-<span class="nx">mediaType</span> <span class="p">=</span> <span class="s1">&#39;text/enriched&#39;</span>
-<span class="nx">protocol</span> <span class="p">=</span> <span class="s1">&#39;bep://&#39;</span>
-
-
+        <div class="highlight"><pre class="chroma"><code class="language-toml" data-lang="toml"><span class="p">[</span><span class="nx">outputFormats</span><span class="p">]</span>
+  <span class="p">[</span><span class="nx">outputFormats</span><span class="p">.</span><span class="nx">MyEnrichedFormat</span><span class="p">]</span>
+    <span class="nx">baseName</span> <span class="p">=</span> <span class="s2">&#34;myindex&#34;</span>
+    <span class="nx">isPlainText</span> <span class="p">=</span> <span class="kc">true</span>
+    <span class="nx">mediaType</span> <span class="p">=</span> <span class="s2">&#34;text/enriched&#34;</span>
+    <span class="nx">protocol</span> <span class="p">=</span> <span class="s2">&#34;bep://&#34;</span>
 </code></pre></div>
       </div>
       
@@ -1621,7 +1616,7 @@
       
     
       <div data-pane="json" class="code-copy-content nt3 tab-pane ">
-        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
+        <div class="highlight"><pre class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
    <span class="nt">&#34;outputFormats&#34;</span><span class="p">:</span> <span class="p">{</span>
       <span class="nt">&#34;MyEnrichedFormat&#34;</span><span class="p">:</span> <span class="p">{</span>
          <span class="nt">&#34;baseName&#34;</span><span class="p">:</span> <span class="s2">&#34;myindex&#34;</span><span class="p">,</span>
@@ -1739,7 +1734,7 @@ per language).</p>
   <div class="tab-content">
     
       <div data-pane="yaml" class="code-copy-content nt3 tab-pane active">
-        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">outputs</span><span class="p">:</span><span class="w">
+        <div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">outputs</span><span class="p">:</span><span class="w">
 </span><span class="w">  </span><span class="nt">home</span><span class="p">:</span><span class="w">
 </span><span class="w">  </span>- <span class="l">HTML</span><span class="w">
 </span><span class="w">  </span>- <span class="l">AMP</span><span class="w">
@@ -1754,10 +1749,9 @@ per language).</p>
       
     
       <div data-pane="toml" class="code-copy-content nt3 tab-pane ">
-        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="p">[</span><span class="nx">outputs</span><span class="p">]</span>
-<span class="nx">home</span> <span class="p">=</span> <span class="p">[</span><span class="s1">&#39;HTML&#39;</span><span class="p">,</span> <span class="s1">&#39;AMP&#39;</span><span class="p">,</span> <span class="s1">&#39;RSS&#39;</span><span class="p">]</span>
-<span class="nx">page</span> <span class="p">=</span> <span class="p">[</span><span class="s1">&#39;HTML&#39;</span><span class="p">]</span>
-
+        <div class="highlight"><pre class="chroma"><code class="language-toml" data-lang="toml"><span class="p">[</span><span class="nx">outputs</span><span class="p">]</span>
+  <span class="nx">home</span> <span class="p">=</span> <span class="p">[</span><span class="s2">&#34;HTML&#34;</span><span class="p">,</span> <span class="s2">&#34;AMP&#34;</span><span class="p">,</span> <span class="s2">&#34;RSS&#34;</span><span class="p">]</span>
+  <span class="nx">page</span> <span class="p">=</span> <span class="p">[</span><span class="s2">&#34;HTML&#34;</span><span class="p">]</span>
 </code></pre></div>
       </div>
       
@@ -1766,7 +1760,7 @@ per language).</p>
       
     
       <div data-pane="json" class="code-copy-content nt3 tab-pane ">
-        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
+        <div class="highlight"><pre class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
    <span class="nt">&#34;outputs&#34;</span><span class="p">:</span> <span class="p">{</span>
       <span class="nt">&#34;home&#34;</span><span class="p">:</span> <span class="p">[</span>
          <span class="s2">&#34;HTML&#34;</span><span class="p">,</span>
@@ -1790,7 +1784,7 @@ per language).</p>
 </div>
 
 <p>Note that in the above examples, the <em>output formats</em> for <code>section</code>,
-<code>taxonomy</code> and <code>term</code> will stay at their default value <code>[&quot;HTML&quot;, &quot;RSS&quot;]</code>.</p>
+<code>taxonomy</code> and <code>term</code> will stay at their default value <code>[&quot;HTML&quot;, &quot;RSS&quot;]</code>.</p>
 <p>
 
 
@@ -1843,7 +1837,7 @@ per language).</p>
 <li>These can be overridden per <code>Page</code> in the front matter of content files.</li>
 </ul>
 <p>The following is an example of <code>YAML</code> front matter in a content file that defines output formats for the rendered <code>Page</code>:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nn">---</span><span class="w">
+<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nn">---</span><span class="w">
 </span><span class="w"></span><span class="nt">date</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;2016-03-19&#34;</span><span class="w">
 </span><span class="w"></span><span class="nt">outputs</span><span class="p">:</span><span class="w">
 </span><span class="w"></span>- <span class="l">html</span><span class="w">
@@ -1852,24 +1846,24 @@ per language).</p>
 </span><span class="w"></span><span class="nn">---</span><span class="w">
 </span></code></pre></div><h2 id="list-output-formats">List Output formats <a class="header-link" href="#list-output-formats"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
 <p>Each <code>Page</code> has both an <code>.OutputFormats</code> (all formats, including the current) and an <code>.AlternativeOutputFormats</code> variable, the latter of which is useful for creating a <code>link rel</code> list in your site&rsquo;s <code>&lt;head&gt;</code>:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go-html-template" data-lang="go-html-template"><span class="cp">{{</span><span class="w"> </span><span class="k">range</span><span class="w"> </span><span class="na">.AlternativeOutputFormats</span><span class="w"> </span><span class="cp">-}}</span>
+<div class="highlight"><pre class="chroma"><code class="language-go-html-template" data-lang="go-html-template"><span class="cp">{{</span><span class="w"> </span><span class="k">range</span><span class="w"> </span><span class="na">.AlternativeOutputFormats</span><span class="w"> </span><span class="cp">-}}</span>
 <span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#34;</span><span class="cp">{{</span><span class="w"> </span><span class="na">.Rel</span><span class="w"> </span><span class="cp">}}</span><span class="s">&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;</span><span class="cp">{{</span><span class="w"> </span><span class="na">.MediaType.Type</span><span class="w"> </span><span class="cp">}}</span><span class="s">&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;</span><span class="cp">{{</span><span class="w"> </span><span class="na">.Permalink</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nx">safeURL</span><span class="w"> </span><span class="cp">}}</span><span class="s">&#34;</span><span class="p">&gt;</span>
 <span class="cp">{{</span><span class="w"> </span><span class="k">end</span><span class="w"> </span><span class="cp">-}}</span>
 </code></pre></div><h2 id="link-to-output-formats">Link to Output Formats <a class="header-link" href="#link-to-output-formats"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
 <p><code>.Permalink</code> and <code>.RelPermalink</code> on <code>Page</code> will return the first output format defined for that page (usually <code>HTML</code> if nothing else is defined). This is regardless of the template file they are being called from.</p>
 <p><strong>from <code>single.json.json</code>:</strong></p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go-html-template" data-lang="go-html-template"><span class="cp">{{</span><span class="w"> </span><span class="na">.RelPermalink</span><span class="w"> </span><span class="cp">}}</span> &gt; /that-page/
+<div class="highlight"><pre class="chroma"><code class="language-go-html-template" data-lang="go-html-template"><span class="cp">{{</span><span class="w"> </span><span class="na">.RelPermalink</span><span class="w"> </span><span class="cp">}}</span> &gt; /that-page/
 <span class="cp">{{</span><span class="w"> </span><span class="k">with</span><span class="w">  </span><span class="na">.OutputFormats.Get</span><span class="w"> </span><span class="s">&#34;json&#34;</span><span class="w"> </span><span class="cp">-}}</span>
 <span class="cp">{{</span><span class="w"> </span><span class="na">.RelPermalink</span><span class="w"> </span><span class="cp">}}</span> &gt; /that-page/index.json
 <span class="cp">{{-</span><span class="w"> </span><span class="k">end</span><span class="w"> </span><span class="cp">}}</span>
 </code></pre></div><p>In order for them to return the output format of the current template file instead, the given output format should have its <code>permalinkable</code> setting set to true.</p>
 <p><strong>Same template file as above with json output format&rsquo;s <code>permalinkable</code> set to true:</strong></p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go-html-template" data-lang="go-html-template"><span class="cp">{{</span><span class="w"> </span><span class="na">.RelPermalink</span><span class="w"> </span><span class="cp">}}</span> &gt; /that-page/index.json
+<div class="highlight"><pre class="chroma"><code class="language-go-html-template" data-lang="go-html-template"><span class="cp">{{</span><span class="w"> </span><span class="na">.RelPermalink</span><span class="w"> </span><span class="cp">}}</span> &gt; /that-page/index.json
 <span class="cp">{{</span><span class="w"> </span><span class="k">with</span><span class="w">  </span><span class="na">.OutputFormats.Get</span><span class="w"> </span><span class="s">&#34;html&#34;</span><span class="w"> </span><span class="cp">-}}</span>
 <span class="cp">{{</span><span class="w"> </span><span class="na">.RelPermalink</span><span class="w"> </span><span class="cp">}}</span> &gt; /that-page/
 <span class="cp">{{-</span><span class="w"> </span><span class="k">end</span><span class="w"> </span><span class="cp">}}</span>
 </code></pre></div><p>From content files, you can use the <a href="/content-management/shortcodes/#ref-and-relref"><code>ref</code> or <code>relref</code> shortcodes</a>:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go-html-template" data-lang="go-html-template">[Neat](<span class="cp">{{</span><span class="err">&lt;</span><span class="w"> </span><span class="nx">ref</span><span class="w"> </span><span class="s">&#34;blog/neat.md&#34;</span><span class="w"> </span><span class="s">&#34;amp&#34;</span><span class="w"> </span><span class="err">&gt;</span><span class="cp">}}</span>)
+<div class="highlight"><pre class="chroma"><code class="language-go-html-template" data-lang="go-html-template">[Neat](<span class="cp">{{</span><span class="err">&lt;</span><span class="w"> </span><span class="nx">ref</span><span class="w"> </span><span class="s">&#34;blog/neat.md&#34;</span><span class="w"> </span><span class="s">&#34;amp&#34;</span><span class="w"> </span><span class="err">&gt;</span><span class="cp">}}</span>)
 [Who](<span class="cp">{{</span><span class="err">&lt;</span><span class="w"> </span><span class="nx">relref</span><span class="w"> </span><span class="s">&#34;about.md#who&#34;</span><span class="w"> </span><span class="s">&#34;amp&#34;</span><span class="w"> </span><span class="err">&gt;</span><span class="cp">}}</span>)
 </code></pre></div><h2 id="templates-for-your-output-formats">Templates for Your Output Formats <a class="header-link" href="#templates-for-your-output-formats"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
 <p>A new output format needs a corresponding template in order to render anything useful.</p>
@@ -2551,124 +2545,7 @@ per language).</p>
       </li>
       
       <li class="f5 w-100 hover-bg-light-gray hover-accent-color-light fw8">
-        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".content-management">Content Management</a>
-        <ul class="content-management desktopmenu animated fadeIn list pl0 bg-light-gray dn">
-          <li class="f6 fw4">
-            <a href="/content-management/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Content Management Overview
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/content-management/organization/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Organization
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/content-management/page-bundles/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Page Bundles
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/content-management/formats/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Content Formats
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/content-management/front-matter/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Front Matter
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/content-management/build-options/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Build Options
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/content-management/page-resources/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Page Resources
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/content-management/image-processing/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Image Processing
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/content-management/shortcodes/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Shortcodes
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/content-management/related/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Related Content
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/content-management/sections/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Sections
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/content-management/types/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Content Types
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/content-management/archetypes/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Archetypes
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/content-management/taxonomies/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Taxonomies
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/content-management/summaries/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Summaries
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/content-management/cross-references/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Links and Cross References
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/content-management/urls/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              URL Management
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/content-management/menus/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Menus
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/content-management/static-files/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Static Files
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/content-management/toc/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Table of Contents
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/content-management/comments/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Comments
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/content-management/multilingual/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Multilingual and i18n
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/content-management/syntax-highlighting/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Syntax Highlighting
-            </a>
-          </li>
-        </ul>
+        <a href="/content-management/" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".content-management">Content Management</a>
       </li>
       
       <li class="f5 w-100 hover-bg-light-gray hover-accent-color-light fw8">
@@ -3593,11 +3470,6 @@ per language).</p>
             </a>
           </li>
           <li class="f6 fw4">
-            <a href="/troubleshooting/faq/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              FAQ
-            </a>
-          </li>
-          <li class="f6 fw4">
             <a href="/troubleshooting/build-performance/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
               Build Performance
             </a>
@@ -3761,10 +3633,10 @@ per language).</p>
   <span class="nl3 child"><svg class="grow" fill="" height="14px" viewBox="0 0 24 24" width="14px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg>
 </span>
     “Custom Output Formats”
-  </a> was last updated: June 16, 2020: <a class="hide-child link primary-color" href="https://github.com/gohugoio/hugoDocs/commit/bc0b484d1b65fec3593ee56a1594ce3bcacc83db">Rename taxonomy kinds from taxonomy to term, taxonomyTerm to taxonomy (bc0b484d1)</a>
+  </a> was last updated: August 13, 2021: <a class="hide-child link primary-color" href="https://github.com/gohugoio/hugoDocs/commit/675299e5580f46886a1b39c571db992a3336bb8c">try hugo templete (675299e)</a>
 </h6>
 
-      <a href="https://github.com/gohugoio/hugoDocs/edit/master/content/en/templates%5coutput-formats.md" class="
+      <a href="https://github.com/gohugoio/hugoDocs/edit/master/content/en/templates/output-formats.md" class="
 f6 ph3 pv1 br2 dib  tc ttu mv3 bg-primary-color white hover-bg-green link
 ">Improve this page</a>
 

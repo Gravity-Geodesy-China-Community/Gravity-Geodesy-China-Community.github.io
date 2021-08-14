@@ -13,7 +13,7 @@
   <title>Multilingual Mode | Hugo</title>
 
   <meta name="viewport" content="width=device-width,minimum-scale=1">
-  <meta name="generator" content="Hugo 0.87.0" />
+  <meta name="generator" content="Hugo 0.84.0" />
 
   
   <meta name="robots" content="noindex, nofollow">
@@ -42,7 +42,7 @@
 
 
   
-  <script type="text/javascript" src="/output/js/app.0984bf5469ab3c8aa82cf8eb015a560d74ee028723b1ab38e928998f5f72baba.js" integrity="sha256-CYS/VGmrPIqoLPjrAVpWDXTuAocjsas46SiZj19yuro=" crossorigin="anonymous" defer></script>
+  <script type="text/javascript" src="/output/js/app.175b405753a9c0ce86ab35944e9c4cc1a758a6873209cf5106600f6b2f5a59b6.js" integrity="sha256-F1tAV1OpwM6GqzWUTpxMwadYpocyCc9RBmAPay9aWbY=" crossorigin="anonymous" defer></script>
   
       
  
@@ -61,12 +61,12 @@
 <meta property="og:description" content="Hugo supports the creation of websites with multiple languages side by side." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://gohugo.io/content-management/multilingual/" /><meta property="og:image" content="https://gohugo.io/images/gohugoio-card.png"/><meta property="article:section" content="content-management" />
-<meta property="article:published_time" content="2017-01-10T00:00:00+00:00" />
-<meta property="article:modified_time" content="2021-04-09T16:18:02+02:00" />
+<meta property="article:published_time" content="2017-01-10T00:00:00&#43;00:00" />
+<meta property="article:modified_time" content="2021-08-13T21:11:25&#43;08:00" />
 
 <meta itemprop="name" content="Multilingual Mode">
-<meta itemprop="description" content="Hugo supports the creation of websites with multiple languages side by side."><meta itemprop="datePublished" content="2017-01-10T00:00:00+00:00" />
-<meta itemprop="dateModified" content="2021-04-09T16:18:02+02:00" />
+<meta itemprop="description" content="Hugo supports the creation of websites with multiple languages side by side."><meta itemprop="datePublished" content="2017-01-10T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2021-08-13T21:11:25&#43;08:00" />
 <meta itemprop="wordCount" content="2464"><meta itemprop="image" content="https://gohugo.io/images/gohugoio-card.png"/>
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://gohugo.io/images/gohugoio-card.png"/>
@@ -300,7 +300,7 @@
   <div class="tab-content">
     
       <div data-pane="yaml" class="code-copy-content nt3 tab-pane active">
-        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">copyright</span><span class="p">:</span><span class="w"> </span><span class="l">Everything is mine</span><span class="w">
+        <div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">copyright</span><span class="p">:</span><span class="w"> </span><span class="l">Everything is mine</span><span class="w">
 </span><span class="w"></span><span class="nt">defaultContentLanguage</span><span class="p">:</span><span class="w"> </span><span class="l">en</span><span class="w">
 </span><span class="w"></span><span class="nt">languages</span><span class="p">:</span><span class="w">
 </span><span class="w">  </span><span class="nt">ar</span><span class="p">:</span><span class="w">
@@ -333,41 +333,33 @@
       
     
       <div data-pane="toml" class="code-copy-content nt3 tab-pane ">
-        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="nx">copyright</span> <span class="p">=</span> <span class="s1">&#39;Everything is mine&#39;</span>
-<span class="nx">defaultContentLanguage</span> <span class="p">=</span> <span class="s1">&#39;en&#39;</span>
+        <div class="highlight"><pre class="chroma"><code class="language-toml" data-lang="toml"><span class="nx">copyright</span> <span class="p">=</span> <span class="s2">&#34;Everything is mine&#34;</span>
+<span class="nx">defaultContentLanguage</span> <span class="p">=</span> <span class="s2">&#34;en&#34;</span>
+
 <span class="p">[</span><span class="nx">languages</span><span class="p">]</span>
-<span class="p">[</span><span class="nx">languages</span><span class="p">.</span><span class="nx">ar</span><span class="p">]</span>
-<span class="nx">languagedirection</span> <span class="p">=</span> <span class="s1">&#39;rtl&#39;</span>
-<span class="nx">title</span> <span class="p">=</span> <span class="s1">&#39;مدونتي&#39;</span>
-<span class="nx">weight</span> <span class="p">=</span> <span class="mi">2</span>
-
-<span class="p">[</span><span class="nx">languages</span><span class="p">.</span><span class="nx">en</span><span class="p">]</span>
-<span class="nx">title</span> <span class="p">=</span> <span class="s1">&#39;My blog&#39;</span>
-<span class="nx">weight</span> <span class="p">=</span> <span class="mi">1</span>
-<span class="p">[</span><span class="nx">languages</span><span class="p">.</span><span class="nx">en</span><span class="p">.</span><span class="nx">params</span><span class="p">]</span>
-<span class="nx">linkedin</span> <span class="p">=</span> <span class="s1">&#39;https://linkedin.com/whoever&#39;</span>
-
-
-<span class="p">[</span><span class="nx">languages</span><span class="p">.</span><span class="nx">fr</span><span class="p">]</span>
-<span class="nx">title</span> <span class="p">=</span> <span class="s1">&#39;Mon blogue&#39;</span>
-<span class="nx">weight</span> <span class="p">=</span> <span class="mi">2</span>
-<span class="p">[</span><span class="nx">languages</span><span class="p">.</span><span class="nx">fr</span><span class="p">.</span><span class="nx">params</span><span class="p">]</span>
-<span class="nx">linkedin</span> <span class="p">=</span> <span class="s1">&#39;https://linkedin.com/fr/whoever&#39;</span>
-<span class="p">[</span><span class="nx">languages</span><span class="p">.</span><span class="nx">fr</span><span class="p">.</span><span class="nx">params</span><span class="p">.</span><span class="nx">navigation</span><span class="p">]</span>
-<span class="nx">help</span> <span class="p">=</span> <span class="s1">&#39;Aide&#39;</span>
-
-
-
-<span class="p">[</span><span class="nx">languages</span><span class="p">.</span><span class="nx">pt-pt</span><span class="p">]</span>
-<span class="nx">title</span> <span class="p">=</span> <span class="s1">&#39;O meu blog&#39;</span>
-<span class="nx">weight</span> <span class="p">=</span> <span class="mi">3</span>
-
+  <span class="p">[</span><span class="nx">languages</span><span class="p">.</span><span class="nx">ar</span><span class="p">]</span>
+    <span class="nx">languagedirection</span> <span class="p">=</span> <span class="s2">&#34;rtl&#34;</span>
+    <span class="nx">title</span> <span class="p">=</span> <span class="s2">&#34;مدونتي&#34;</span>
+    <span class="nx">weight</span> <span class="p">=</span> <span class="mi">2</span>
+  <span class="p">[</span><span class="nx">languages</span><span class="p">.</span><span class="nx">en</span><span class="p">]</span>
+    <span class="nx">title</span> <span class="p">=</span> <span class="s2">&#34;My blog&#34;</span>
+    <span class="nx">weight</span> <span class="p">=</span> <span class="mi">1</span>
+    <span class="p">[</span><span class="nx">languages</span><span class="p">.</span><span class="nx">en</span><span class="p">.</span><span class="nx">params</span><span class="p">]</span>
+      <span class="nx">linkedin</span> <span class="p">=</span> <span class="s2">&#34;https://linkedin.com/whoever&#34;</span>
+  <span class="p">[</span><span class="nx">languages</span><span class="p">.</span><span class="nx">fr</span><span class="p">]</span>
+    <span class="nx">title</span> <span class="p">=</span> <span class="s2">&#34;Mon blogue&#34;</span>
+    <span class="nx">weight</span> <span class="p">=</span> <span class="mi">2</span>
+    <span class="p">[</span><span class="nx">languages</span><span class="p">.</span><span class="nx">fr</span><span class="p">.</span><span class="nx">params</span><span class="p">]</span>
+      <span class="nx">linkedin</span> <span class="p">=</span> <span class="s2">&#34;https://linkedin.com/fr/whoever&#34;</span>
+      <span class="p">[</span><span class="nx">languages</span><span class="p">.</span><span class="nx">fr</span><span class="p">.</span><span class="nx">params</span><span class="p">.</span><span class="nx">navigation</span><span class="p">]</span>
+        <span class="nx">help</span> <span class="p">=</span> <span class="s2">&#34;Aide&#34;</span>
+  <span class="p">[</span><span class="nx">languages</span><span class="p">.</span><span class="nx">pt-pt</span><span class="p">]</span>
+    <span class="nx">title</span> <span class="p">=</span> <span class="s2">&#34;O meu blog&#34;</span>
+    <span class="nx">weight</span> <span class="p">=</span> <span class="mi">3</span>
 
 <span class="p">[</span><span class="nx">params</span><span class="p">]</span>
-<span class="p">[</span><span class="nx">params</span><span class="p">.</span><span class="nx">navigation</span><span class="p">]</span>
-<span class="nx">help</span> <span class="p">=</span> <span class="s1">&#39;Help&#39;</span>
-
-
+  <span class="p">[</span><span class="nx">params</span><span class="p">.</span><span class="nx">navigation</span><span class="p">]</span>
+    <span class="nx">help</span> <span class="p">=</span> <span class="s2">&#34;Help&#34;</span>
 </code></pre></div>
       </div>
       
@@ -376,7 +368,7 @@
       
     
       <div data-pane="json" class="code-copy-content nt3 tab-pane ">
-        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
+        <div class="highlight"><pre class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
    <span class="nt">&#34;copyright&#34;</span><span class="p">:</span> <span class="s2">&#34;Everything is mine&#34;</span><span class="p">,</span>
    <span class="nt">&#34;defaultContentLanguage&#34;</span><span class="p">:</span> <span class="s2">&#34;en&#34;</span><span class="p">,</span>
    <span class="nt">&#34;languages&#34;</span><span class="p">:</span> <span class="p">{</span>
@@ -463,7 +455,7 @@ and taxonomy pages will be rendered below <code>/</code> in English (your defaul
   <div class="tab-content">
     
       <div data-pane="yaml" class="code-copy-content nt3 tab-pane active">
-        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">disableLanguages</span><span class="p">:</span><span class="w">
+        <div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">disableLanguages</span><span class="p">:</span><span class="w">
 </span><span class="w"></span>- <span class="l">fr</span><span class="w">
 </span><span class="w"></span>- <span class="l">ja</span><span class="w">
 </span></code></pre></div>
@@ -474,7 +466,7 @@ and taxonomy pages will be rendered below <code>/</code> in English (your defaul
       
     
       <div data-pane="toml" class="code-copy-content nt3 tab-pane ">
-        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="nx">disableLanguages</span> <span class="p">=</span> <span class="p">[</span><span class="s1">&#39;fr&#39;</span><span class="p">,</span> <span class="s1">&#39;ja&#39;</span><span class="p">]</span>
+        <div class="highlight"><pre class="chroma"><code class="language-toml" data-lang="toml"><span class="nx">disableLanguages</span> <span class="p">=</span> <span class="p">[</span><span class="s2">&#34;fr&#34;</span><span class="p">,</span> <span class="s2">&#34;ja&#34;</span><span class="p">]</span>
 </code></pre></div>
       </div>
       
@@ -483,7 +475,7 @@ and taxonomy pages will be rendered below <code>/</code> in English (your defaul
       
     
       <div data-pane="json" class="code-copy-content nt3 tab-pane ">
-        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
+        <div class="highlight"><pre class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
    <span class="nt">&#34;disableLanguages&#34;</span><span class="p">:</span> <span class="p">[</span>
       <span class="s2">&#34;fr&#34;</span><span class="p">,</span>
       <span class="s2">&#34;ja&#34;</span>
@@ -502,9 +494,9 @@ and taxonomy pages will be rendered below <code>/</code> in English (your defaul
 
 <p>Note that you cannot disable the default content language.</p>
 <p>We kept this as a standalone setting to make it easier to set via <a href="/getting-started/configuration/#configure-with-environment-variables">OS environment</a>:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="nv">HUGO_DISABLELANGUAGES</span><span class="o">=</span><span class="s2">&#34;fr ja&#34;</span> hugo
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="nv">HUGO_DISABLELANGUAGES</span><span class="o">=</span><span class="s2">&#34;fr ja&#34;</span> hugo
 </code></pre></div><p>If you have already a list of disabled languages in <code>config.toml</code>, you can enable them in development like this:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="nv">HUGO_DISABLELANGUAGES</span><span class="o">=</span><span class="s2">&#34; &#34;</span> hugo server
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="nv">HUGO_DISABLELANGUAGES</span><span class="o">=</span><span class="s2">&#34; &#34;</span> hugo server
 </code></pre></div><h3 id="configure-multilingual-multihost">Configure Multilingual Multihost <a class="header-link" href="#configure-multilingual-multihost"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
 <p>From <strong>Hugo 0.31</strong> we support multiple languages in a multihost configuration. See <a href="https://github.com/gohugoio/hugo/issues/4027">this issue</a> for details.</p>
 <p>This means that you can now configure a <code>baseURL</code> per <code>language</code>:</p>
@@ -541,7 +533,7 @@ and taxonomy pages will be rendered below <code>/</code> in English (your defaul
   <div class="tab-content">
     
       <div data-pane="yaml" class="code-copy-content nt3 tab-pane active">
-        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">languages</span><span class="p">:</span><span class="w">
+        <div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">languages</span><span class="p">:</span><span class="w">
 </span><span class="w">  </span><span class="nt">en</span><span class="p">:</span><span class="w">
 </span><span class="w">    </span><span class="nt">baseURL</span><span class="p">:</span><span class="w"> </span><span class="l">https://example.com</span><span class="w">
 </span><span class="w">    </span><span class="nt">languageName</span><span class="p">:</span><span class="w"> </span><span class="l">English</span><span class="w">
@@ -560,20 +552,17 @@ and taxonomy pages will be rendered below <code>/</code> in English (your defaul
       
     
       <div data-pane="toml" class="code-copy-content nt3 tab-pane ">
-        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="p">[</span><span class="nx">languages</span><span class="p">]</span>
-<span class="p">[</span><span class="nx">languages</span><span class="p">.</span><span class="nx">en</span><span class="p">]</span>
-<span class="nx">baseURL</span> <span class="p">=</span> <span class="s1">&#39;https://example.com&#39;</span>
-<span class="nx">languageName</span> <span class="p">=</span> <span class="s1">&#39;English&#39;</span>
-<span class="nx">title</span> <span class="p">=</span> <span class="s1">&#39;In English&#39;</span>
-<span class="nx">weight</span> <span class="p">=</span> <span class="mi">2</span>
-
-<span class="p">[</span><span class="nx">languages</span><span class="p">.</span><span class="nx">fr</span><span class="p">]</span>
-<span class="nx">baseURL</span> <span class="p">=</span> <span class="s1">&#39;https://example.fr&#39;</span>
-<span class="nx">languageName</span> <span class="p">=</span> <span class="s1">&#39;Français&#39;</span>
-<span class="nx">title</span> <span class="p">=</span> <span class="s1">&#39;En Français&#39;</span>
-<span class="nx">weight</span> <span class="p">=</span> <span class="mi">1</span>
-
-
+        <div class="highlight"><pre class="chroma"><code class="language-toml" data-lang="toml"><span class="p">[</span><span class="nx">languages</span><span class="p">]</span>
+  <span class="p">[</span><span class="nx">languages</span><span class="p">.</span><span class="nx">en</span><span class="p">]</span>
+    <span class="nx">baseURL</span> <span class="p">=</span> <span class="s2">&#34;https://example.com&#34;</span>
+    <span class="nx">languageName</span> <span class="p">=</span> <span class="s2">&#34;English&#34;</span>
+    <span class="nx">title</span> <span class="p">=</span> <span class="s2">&#34;In English&#34;</span>
+    <span class="nx">weight</span> <span class="p">=</span> <span class="mi">2</span>
+  <span class="p">[</span><span class="nx">languages</span><span class="p">.</span><span class="nx">fr</span><span class="p">]</span>
+    <span class="nx">baseURL</span> <span class="p">=</span> <span class="s2">&#34;https://example.fr&#34;</span>
+    <span class="nx">languageName</span> <span class="p">=</span> <span class="s2">&#34;Français&#34;</span>
+    <span class="nx">title</span> <span class="p">=</span> <span class="s2">&#34;En Français&#34;</span>
+    <span class="nx">weight</span> <span class="p">=</span> <span class="mi">1</span>
 </code></pre></div>
       </div>
       
@@ -582,7 +571,7 @@ and taxonomy pages will be rendered below <code>/</code> in English (your defaul
       
     
       <div data-pane="json" class="code-copy-content nt3 tab-pane ">
-        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
+        <div class="highlight"><pre class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
    <span class="nt">&#34;languages&#34;</span><span class="p">:</span> <span class="p">{</span>
       <span class="nt">&#34;en&#34;</span><span class="p">:</span> <span class="p">{</span>
          <span class="nt">&#34;baseURL&#34;</span><span class="p">:</span> <span class="s2">&#34;https://example.com&#34;</span><span class="p">,</span>
@@ -610,12 +599,12 @@ and taxonomy pages will be rendered below <code>/</code> in English (your defaul
 </div>
 
 <p>With the above, the two sites will be generated into <code>public</code> with their own root:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">public
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">public
 ├── en
 └── fr
 </code></pre></div><p><strong>All URLs (i.e <code>.Permalink</code> etc.) will be generated from that root. So the English home page above will have its <code>.Permalink</code> set to <code>https://example.com/</code>.</strong></p>
 <p>When you run <code>hugo server</code> we will start multiple HTTP servers. You will typically see something like this in the console:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">Web Server is available at 127.0.0.1:1313 <span class="o">(</span><span class="nb">bind</span> address 127.0.0.1<span class="o">)</span>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">Web Server is available at 127.0.0.1:1313 <span class="o">(</span><span class="nb">bind</span> address 127.0.0.1<span class="o">)</span>
 Web Server is available at 127.0.0.1:1314 <span class="o">(</span><span class="nb">bind</span> address 127.0.0.1<span class="o">)</span>
 Press Ctrl+C to stop
 </code></pre></div><p>Live reload and <code>--navigateToChanged</code> between the servers work as expected.</p>
@@ -650,7 +639,7 @@ Press Ctrl+C to stop
   <div class="tab-content">
     
       <div data-pane="yaml" class="code-copy-content nt3 tab-pane active">
-        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">Taxonomies</span><span class="p">:</span><span class="w">
+        <div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">Taxonomies</span><span class="p">:</span><span class="w">
 </span><span class="w">  </span><span class="nt">tag</span><span class="p">:</span><span class="w"> </span><span class="l">tags</span><span class="w">
 </span><span class="w"></span><span class="nt">blackfriday</span><span class="p">:</span><span class="w">
 </span><span class="w">  </span><span class="nt">angledQuotes</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
@@ -674,29 +663,24 @@ Press Ctrl+C to stop
       
     
       <div data-pane="toml" class="code-copy-content nt3 tab-pane ">
-        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="p">[</span><span class="nx">Taxonomies</span><span class="p">]</span>
-<span class="nx">tag</span> <span class="p">=</span> <span class="s1">&#39;tags&#39;</span>
+        <div class="highlight"><pre class="chroma"><code class="language-toml" data-lang="toml"><span class="p">[</span><span class="nx">Taxonomies</span><span class="p">]</span>
+  <span class="nx">tag</span> <span class="p">=</span> <span class="s2">&#34;tags&#34;</span>
 
 <span class="p">[</span><span class="nx">blackfriday</span><span class="p">]</span>
-<span class="nx">angledQuotes</span> <span class="p">=</span> <span class="kc">true</span>
-<span class="nx">hrefTargetBlank</span> <span class="p">=</span> <span class="kc">true</span>
+  <span class="nx">angledQuotes</span> <span class="p">=</span> <span class="kc">true</span>
+  <span class="nx">hrefTargetBlank</span> <span class="p">=</span> <span class="kc">true</span>
 
 <span class="p">[</span><span class="nx">languages</span><span class="p">]</span>
-<span class="p">[</span><span class="nx">languages</span><span class="p">.</span><span class="nx">en</span><span class="p">]</span>
-<span class="nx">title</span> <span class="p">=</span> <span class="s1">&#39;English&#39;</span>
-<span class="nx">weight</span> <span class="p">=</span> <span class="mi">1</span>
-<span class="p">[</span><span class="nx">languages</span><span class="p">.</span><span class="nx">en</span><span class="p">.</span><span class="nx">blackfriday</span><span class="p">]</span>
-<span class="nx">angledQuotes</span> <span class="p">=</span> <span class="kc">false</span>
-
-
-<span class="p">[</span><span class="nx">languages</span><span class="p">.</span><span class="nx">fr</span><span class="p">]</span>
-<span class="nx">title</span> <span class="p">=</span> <span class="s1">&#39;Français&#39;</span>
-<span class="nx">weight</span> <span class="p">=</span> <span class="mi">2</span>
-<span class="p">[</span><span class="nx">languages</span><span class="p">.</span><span class="nx">fr</span><span class="p">.</span><span class="nx">Taxonomies</span><span class="p">]</span>
-<span class="nx">plaque</span> <span class="p">=</span> <span class="s1">&#39;plaques&#39;</span>
-
-
-
+  <span class="p">[</span><span class="nx">languages</span><span class="p">.</span><span class="nx">en</span><span class="p">]</span>
+    <span class="nx">title</span> <span class="p">=</span> <span class="s2">&#34;English&#34;</span>
+    <span class="nx">weight</span> <span class="p">=</span> <span class="mi">1</span>
+    <span class="p">[</span><span class="nx">languages</span><span class="p">.</span><span class="nx">en</span><span class="p">.</span><span class="nx">blackfriday</span><span class="p">]</span>
+      <span class="nx">angledQuotes</span> <span class="p">=</span> <span class="kc">false</span>
+  <span class="p">[</span><span class="nx">languages</span><span class="p">.</span><span class="nx">fr</span><span class="p">]</span>
+    <span class="nx">title</span> <span class="p">=</span> <span class="s2">&#34;Français&#34;</span>
+    <span class="nx">weight</span> <span class="p">=</span> <span class="mi">2</span>
+    <span class="p">[</span><span class="nx">languages</span><span class="p">.</span><span class="nx">fr</span><span class="p">.</span><span class="nx">Taxonomies</span><span class="p">]</span>
+      <span class="nx">plaque</span> <span class="p">=</span> <span class="s2">&#34;plaques&#34;</span>
 </code></pre></div>
       </div>
       
@@ -705,7 +689,7 @@ Press Ctrl+C to stop
       
     
       <div data-pane="json" class="code-copy-content nt3 tab-pane ">
-        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
+        <div class="highlight"><pre class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
    <span class="nt">&#34;Taxonomies&#34;</span><span class="p">:</span> <span class="p">{</span>
       <span class="nt">&#34;tag&#34;</span><span class="p">:</span> <span class="s2">&#34;tags&#34;</span>
    <span class="p">},</span>
@@ -796,7 +780,7 @@ If a file has no language code, it will be assigned the default language.
   <div class="tab-content">
     
       <div data-pane="yaml" class="code-copy-content nt3 tab-pane active">
-        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">languages</span><span class="p">:</span><span class="w">
+        <div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">languages</span><span class="p">:</span><span class="w">
 </span><span class="w">  </span><span class="nt">en</span><span class="p">:</span><span class="w">
 </span><span class="w">    </span><span class="nt">contentDir</span><span class="p">:</span><span class="w"> </span><span class="l">content/english</span><span class="w">
 </span><span class="w">    </span><span class="nt">languageName</span><span class="p">:</span><span class="w"> </span><span class="l">English</span><span class="w">
@@ -813,18 +797,15 @@ If a file has no language code, it will be assigned the default language.
       
     
       <div data-pane="toml" class="code-copy-content nt3 tab-pane ">
-        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="p">[</span><span class="nx">languages</span><span class="p">]</span>
-<span class="p">[</span><span class="nx">languages</span><span class="p">.</span><span class="nx">en</span><span class="p">]</span>
-<span class="nx">contentDir</span> <span class="p">=</span> <span class="s1">&#39;content/english&#39;</span>
-<span class="nx">languageName</span> <span class="p">=</span> <span class="s1">&#39;English&#39;</span>
-<span class="nx">weight</span> <span class="p">=</span> <span class="mi">10</span>
-
-<span class="p">[</span><span class="nx">languages</span><span class="p">.</span><span class="nx">fr</span><span class="p">]</span>
-<span class="nx">contentDir</span> <span class="p">=</span> <span class="s1">&#39;content/french&#39;</span>
-<span class="nx">languageName</span> <span class="p">=</span> <span class="s1">&#39;Français&#39;</span>
-<span class="nx">weight</span> <span class="p">=</span> <span class="mi">20</span>
-
-
+        <div class="highlight"><pre class="chroma"><code class="language-toml" data-lang="toml"><span class="p">[</span><span class="nx">languages</span><span class="p">]</span>
+  <span class="p">[</span><span class="nx">languages</span><span class="p">.</span><span class="nx">en</span><span class="p">]</span>
+    <span class="nx">contentDir</span> <span class="p">=</span> <span class="s2">&#34;content/english&#34;</span>
+    <span class="nx">languageName</span> <span class="p">=</span> <span class="s2">&#34;English&#34;</span>
+    <span class="nx">weight</span> <span class="p">=</span> <span class="mi">10</span>
+  <span class="p">[</span><span class="nx">languages</span><span class="p">.</span><span class="nx">fr</span><span class="p">]</span>
+    <span class="nx">contentDir</span> <span class="p">=</span> <span class="s2">&#34;content/french&#34;</span>
+    <span class="nx">languageName</span> <span class="p">=</span> <span class="s2">&#34;Français&#34;</span>
+    <span class="nx">weight</span> <span class="p">=</span> <span class="mi">20</span>
 </code></pre></div>
       </div>
       
@@ -833,7 +814,7 @@ If a file has no language code, it will be assigned the default language.
       
     
       <div data-pane="json" class="code-copy-content nt3 tab-pane ">
-        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
+        <div class="highlight"><pre class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
    <span class="nt">&#34;languages&#34;</span><span class="p">:</span> <span class="p">{</span>
       <span class="nt">&#34;en&#34;</span><span class="p">:</span> <span class="p">{</span>
          <span class="nt">&#34;contentDir&#34;</span><span class="p">:</span> <span class="s2">&#34;content/english&#34;</span><span class="p">,</span>
@@ -876,7 +857,7 @@ The second file is assigned the French language and is linked to the first.</p>
 <li><code>/content/om.nn.md</code></li>
 <li><code>/content/presentation/a-propos.fr.md</code></li>
 </ol>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="c"># set in all three pages</span><span class="w">
+<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="c"># set in all three pages</span><span class="w">
 </span><span class="w"></span><span class="nt">translationKey</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;about&#34;</span><span class="w">
 </span></code></pre></div><p>By setting the <code>translationKey</code> front matter param to <code>about</code> in all three pages, they will be <strong>linked</strong> as translated pages.</p>
 <h3 id="localizing-permalinks">Localizing permalinks <a class="header-link" href="#localizing-permalinks"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
@@ -910,7 +891,7 @@ The second file is assigned the French language and is linked to the first.</p>
   <div class="tab-content">
     
       <div data-pane="yaml" class="code-copy-content nt3 tab-pane active">
-        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">Title</span><span class="p">:</span><span class="w"> </span><span class="l">A Propos</span><span class="w">
+        <div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">Title</span><span class="p">:</span><span class="w"> </span><span class="l">A Propos</span><span class="w">
 </span><span class="w"></span><span class="nt">slug</span><span class="p">:</span><span class="w"> </span><span class="l">a-propos</span><span class="w">
 </span></code></pre></div>
       </div>
@@ -920,8 +901,8 @@ The second file is assigned the French language and is linked to the first.</p>
       
     
       <div data-pane="toml" class="code-copy-content nt3 tab-pane ">
-        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="nx">Title</span> <span class="p">=</span> <span class="s1">&#39;A Propos&#39;</span>
-<span class="nx">slug</span> <span class="p">=</span> <span class="s1">&#39;a-propos&#39;</span>
+        <div class="highlight"><pre class="chroma"><code class="language-toml" data-lang="toml"><span class="nx">Title</span> <span class="p">=</span> <span class="s2">&#34;A Propos&#34;</span>
+<span class="nx">slug</span> <span class="p">=</span> <span class="s2">&#34;a-propos&#34;</span>
 </code></pre></div>
       </div>
       
@@ -930,7 +911,7 @@ The second file is assigned the French language and is linked to the first.</p>
       
     
       <div data-pane="json" class="code-copy-content nt3 tab-pane ">
-        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
+        <div class="highlight"><pre class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
    <span class="nt">&#34;Title&#34;</span><span class="p">:</span> <span class="s2">&#34;A Propos&#34;</span><span class="p">,</span>
    <span class="nt">&#34;slug&#34;</span><span class="p">:</span> <span class="s2">&#34;a-propos&#34;</span>
 <span class="p">}</span>
@@ -995,8 +976,7 @@ The second file is assigned the French language and is linked to the first.</p>
 	
 	<div class="code-copy-content nt3" >
 		
-		<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go-html-template" data-lang="go-html-template">
-<span class="cp">{{</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="na">.IsTranslated</span><span class="w"> </span><span class="cp">}}</span>
+		<div class="highlight"><pre class="chroma"><code class="language-go-html-template" data-lang="go-html-template"><span class="cp">{{</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="na">.IsTranslated</span><span class="w"> </span><span class="cp">}}</span>
 <span class="p">&lt;</span><span class="nt">h4</span><span class="p">&gt;</span><span class="cp">{{</span><span class="w"> </span><span class="nx">i18n</span><span class="w"> </span><span class="s">&#34;translations&#34;</span><span class="w"> </span><span class="cp">}}</span><span class="p">&lt;/</span><span class="nt">h4</span><span class="p">&gt;</span>
 <span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
     <span class="cp">{{</span><span class="w"> </span><span class="k">range</span><span class="w"> </span><span class="na">.Translations</span><span class="w"> </span><span class="cp">}}</span>
@@ -1005,8 +985,7 @@ The second file is assigned the French language and is linked to the first.</p>
     <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
     <span class="cp">{{</span><span class="w"> </span><span class="k">end</span><span class="w"> </span><span class="cp">}}</span>
 <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
-<span class="cp">{{</span><span class="w"> </span><span class="k">end</span><span class="w"> </span><span class="cp">}}</span>
-</code></pre></div>
+<span class="cp">{{</span><span class="w"> </span><span class="k">end</span><span class="w"> </span><span class="cp">}}</span></code></pre></div>
 	</div>
 
 </div>
@@ -1032,13 +1011,11 @@ The second file is assigned the French language and is linked to the first.</p>
 	
 	<div class="code-copy-content nt3" >
 		
-		<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go-html-template" data-lang="go-html-template">
-<span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
+		<div class="highlight"><pre class="chroma"><code class="language-go-html-template" data-lang="go-html-template"><span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
 <span class="cp">{{</span><span class="w"> </span><span class="k">range</span><span class="w"> </span><span class="na">$.Site.Home.AllTranslations</span><span class="w"> </span><span class="cp">}}</span>
 <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;</span><span class="cp">{{</span><span class="w"> </span><span class="na">.Permalink</span><span class="w"> </span><span class="cp">}}</span><span class="s">&#34;</span><span class="p">&gt;</span><span class="cp">{{</span><span class="w"> </span><span class="na">.Language.LanguageName</span><span class="w"> </span><span class="cp">}}</span><span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
 <span class="cp">{{</span><span class="w"> </span><span class="k">end</span><span class="w"> </span><span class="cp">}}</span>
-<span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
-</code></pre></div>
+<span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span></code></pre></div>
 	</div>
 
 </div>
@@ -1091,7 +1068,7 @@ The second file is assigned the French language and is linked to the first.</p>
   <div class="tab-content">
     
       <div data-pane="yaml" class="code-copy-content nt3 tab-pane active">
-        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">home</span><span class="p">:</span><span class="w">
+        <div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">home</span><span class="p">:</span><span class="w">
 </span><span class="w">  </span><span class="nt">other</span><span class="p">:</span><span class="w"> </span><span class="l">Home</span><span class="w">
 </span></code></pre></div>
       </div>
@@ -1101,9 +1078,8 @@ The second file is assigned the French language and is linked to the first.</p>
       
     
       <div data-pane="toml" class="code-copy-content nt3 tab-pane ">
-        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="p">[</span><span class="nx">home</span><span class="p">]</span>
-<span class="nx">other</span> <span class="p">=</span> <span class="s1">&#39;Home&#39;</span>
-
+        <div class="highlight"><pre class="chroma"><code class="language-toml" data-lang="toml"><span class="p">[</span><span class="nx">home</span><span class="p">]</span>
+  <span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;Home&#34;</span>
 </code></pre></div>
       </div>
       
@@ -1112,7 +1088,7 @@ The second file is assigned the French language and is linked to the first.</p>
       
     
       <div data-pane="json" class="code-copy-content nt3 tab-pane ">
-        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
+        <div class="highlight"><pre class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
    <span class="nt">&#34;home&#34;</span><span class="p">:</span> <span class="p">{</span>
       <span class="nt">&#34;other&#34;</span><span class="p">:</span> <span class="s2">&#34;Home&#34;</span>
    <span class="p">}</span>
@@ -1163,7 +1139,7 @@ The second file is assigned the French language and is linked to the first.</p>
   <div class="tab-content">
     
       <div data-pane="yaml" class="code-copy-content nt3 tab-pane active">
-        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">wordCount</span><span class="p">:</span><span class="w">
+        <div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">wordCount</span><span class="p">:</span><span class="w">
 </span><span class="w">  </span><span class="nt">other</span><span class="p">:</span><span class="w"> </span><span class="l">This article has {{ .WordCount }} words.</span><span class="w">
 </span></code></pre></div>
       </div>
@@ -1173,9 +1149,8 @@ The second file is assigned the French language and is linked to the first.</p>
       
     
       <div data-pane="toml" class="code-copy-content nt3 tab-pane ">
-        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="p">[</span><span class="nx">wordCount</span><span class="p">]</span>
-<span class="nx">other</span> <span class="p">=</span> <span class="s1">&#39;This article has {{ .WordCount }} words.&#39;</span>
-
+        <div class="highlight"><pre class="chroma"><code class="language-toml" data-lang="toml"><span class="p">[</span><span class="nx">wordCount</span><span class="p">]</span>
+  <span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;This article has {{ .WordCount }} words.&#34;</span>
 </code></pre></div>
       </div>
       
@@ -1184,7 +1159,7 @@ The second file is assigned the French language and is linked to the first.</p>
       
     
       <div data-pane="json" class="code-copy-content nt3 tab-pane ">
-        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
+        <div class="highlight"><pre class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
    <span class="nt">&#34;wordCount&#34;</span><span class="p">:</span> <span class="p">{</span>
       <span class="nt">&#34;other&#34;</span><span class="p">:</span> <span class="s2">&#34;This article has {{ .WordCount }} words.&#34;</span>
    <span class="p">}</span>
@@ -1235,7 +1210,7 @@ The second file is assigned the French language and is linked to the first.</p>
   <div class="tab-content">
     
       <div data-pane="yaml" class="code-copy-content nt3 tab-pane active">
-        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">readingTime</span><span class="p">:</span><span class="w">
+        <div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">readingTime</span><span class="p">:</span><span class="w">
 </span><span class="w">  </span><span class="nt">one</span><span class="p">:</span><span class="w"> </span><span class="l">One minute to read</span><span class="w">
 </span><span class="w">  </span><span class="nt">other</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;{{.Count}} minutes to read&#39;</span><span class="w">
 </span></code></pre></div>
@@ -1246,10 +1221,9 @@ The second file is assigned the French language and is linked to the first.</p>
       
     
       <div data-pane="toml" class="code-copy-content nt3 tab-pane ">
-        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="p">[</span><span class="nx">readingTime</span><span class="p">]</span>
-<span class="nx">one</span> <span class="p">=</span> <span class="s1">&#39;One minute to read&#39;</span>
-<span class="nx">other</span> <span class="p">=</span> <span class="s1">&#39;{{.Count}} minutes to read&#39;</span>
-
+        <div class="highlight"><pre class="chroma"><code class="language-toml" data-lang="toml"><span class="p">[</span><span class="nx">readingTime</span><span class="p">]</span>
+  <span class="nx">one</span> <span class="p">=</span> <span class="s2">&#34;One minute to read&#34;</span>
+  <span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;{{.Count}} minutes to read&#34;</span>
 </code></pre></div>
       </div>
       
@@ -1258,7 +1232,7 @@ The second file is assigned the French language and is linked to the first.</p>
       
     
       <div data-pane="json" class="code-copy-content nt3 tab-pane ">
-        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
+        <div class="highlight"><pre class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
    <span class="nt">&#34;readingTime&#34;</span><span class="p">:</span> <span class="p">{</span>
       <span class="nt">&#34;one&#34;</span><span class="p">:</span> <span class="s2">&#34;One minute to read&#34;</span><span class="p">,</span>
       <span class="nt">&#34;other&#34;</span><span class="p">:</span> <span class="s2">&#34;{{.Count}} minutes to read&#34;</span>
@@ -1283,7 +1257,7 @@ The second file is assigned the French language and is linked to the first.</p>
 <pre><code>{{ i18n &quot;readingTime&quot; (dict &quot;Count&quot; 25 &quot;FirstArgument&quot; true &quot;SecondArgument&quot; false &quot;Etc&quot; &quot;so on, so far&quot;) }}
 </code></pre><h2 id="customize-dates">Customize Dates <a class="header-link" href="#customize-dates"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
 <p>At the time of this writing, Go does not yet have support for internationalized locales for dates, but if you do some work, you can simulate it. For example, if you want to use French month names, you can add a data file like <code>data/mois.yaml</code> with this content:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">1</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;janvier&#34;</span><span class="w">
+<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">1</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;janvier&#34;</span><span class="w">
 </span><span class="w"></span><span class="nt">2</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;février&#34;</span><span class="w">
 </span><span class="w"></span><span class="nt">3</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;mars&#34;</span><span class="w">
 </span><span class="w"></span><span class="nt">4</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;avril&#34;</span><span class="w">
@@ -1296,7 +1270,7 @@ The second file is assigned the French language and is linked to the first.</p>
 </span><span class="w"></span><span class="nt">11</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;novembre&#34;</span><span class="w">
 </span><span class="w"></span><span class="nt">12</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;décembre&#34;</span><span class="w">
 </span></code></pre></div><p>&hellip;then index the non-English date names in your templates like so:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">time</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;post-date&#34;</span> <span class="na">datetime</span><span class="o">=</span><span class="s">&#34;{{ .Date.Format `2006-01-02T15:04:05Z07:00` | safeHTML }}&#34;</span><span class="p">&gt;</span>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">time</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;post-date&#34;</span> <span class="na">datetime</span><span class="o">=</span><span class="s">&#34;{{ .Date.Format `2006-01-02T15:04:05Z07:00` | safeHTML }}&#34;</span><span class="p">&gt;</span>
   Article publié le {{ .Date.Day }} {{ index $.Site.Data.mois (printf &#34;%d&#34; .Date.Month) }} {{ .Date.Year }} (dernière modification le {{ .Lastmod.Day }} {{ index $.Site.Data.mois (printf &#34;%d&#34; .Lastmod.Month) }} {{ .Lastmod.Year }})
 <span class="p">&lt;/</span><span class="nt">time</span><span class="p">&gt;</span>
 </code></pre></div><p>This technique extracts the day, month and year by specifying <code>.Date.Day</code>, <code>.Date.Month</code>, and <code>.Date.Year</code>, and uses the month number as a key, when indexing the month name data file.</p>
@@ -1331,7 +1305,7 @@ The second file is assigned the French language and is linked to the first.</p>
   <div class="tab-content">
     
       <div data-pane="yaml" class="code-copy-content nt3 tab-pane active">
-        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">defaultContentLanguage</span><span class="p">:</span><span class="w"> </span><span class="l">en</span><span class="w">
+        <div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">defaultContentLanguage</span><span class="p">:</span><span class="w"> </span><span class="l">en</span><span class="w">
 </span><span class="w"></span><span class="nt">languages</span><span class="p">:</span><span class="w">
 </span><span class="w">  </span><span class="nt">de</span><span class="p">:</span><span class="w">
 </span><span class="w">    </span><span class="nt">languageName</span><span class="p">:</span><span class="w"> </span><span class="l">Deutsch</span><span class="w">
@@ -1357,31 +1331,27 @@ The second file is assigned the French language and is linked to the first.</p>
       
     
       <div data-pane="toml" class="code-copy-content nt3 tab-pane ">
-        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="nx">defaultContentLanguage</span> <span class="p">=</span> <span class="s1">&#39;en&#39;</span>
+        <div class="highlight"><pre class="chroma"><code class="language-toml" data-lang="toml"><span class="nx">defaultContentLanguage</span> <span class="p">=</span> <span class="s2">&#34;en&#34;</span>
+
 <span class="p">[</span><span class="nx">languages</span><span class="p">]</span>
-<span class="p">[</span><span class="nx">languages</span><span class="p">.</span><span class="nx">de</span><span class="p">]</span>
-<span class="nx">languageName</span> <span class="p">=</span> <span class="s1">&#39;Deutsch&#39;</span>
-<span class="nx">weight</span> <span class="p">=</span> <span class="mi">10</span>
-<span class="p">[</span><span class="nx">languages</span><span class="p">.</span><span class="nx">de</span><span class="p">.</span><span class="nx">menu</span><span class="p">]</span>
-<span class="p">[[</span><span class="nx">languages</span><span class="p">.</span><span class="nx">de</span><span class="p">.</span><span class="nx">menu</span><span class="p">.</span><span class="nx">main</span><span class="p">]]</span>
-<span class="nx">name</span> <span class="p">=</span> <span class="s1">&#39;Startseite&#39;</span>
-<span class="nx">url</span> <span class="p">=</span> <span class="s1">&#39;/&#39;</span>
-<span class="nx">weight</span> <span class="p">=</span> <span class="mi">0</span>
+  <span class="p">[</span><span class="nx">languages</span><span class="p">.</span><span class="nx">de</span><span class="p">]</span>
+    <span class="nx">languageName</span> <span class="p">=</span> <span class="s2">&#34;Deutsch&#34;</span>
+    <span class="nx">weight</span> <span class="p">=</span> <span class="mi">10</span>
+    <span class="p">[</span><span class="nx">languages</span><span class="p">.</span><span class="nx">de</span><span class="p">.</span><span class="nx">menu</span><span class="p">]</span>
 
+      <span class="p">[[</span><span class="nx">languages</span><span class="p">.</span><span class="nx">de</span><span class="p">.</span><span class="nx">menu</span><span class="p">.</span><span class="nx">main</span><span class="p">]]</span>
+        <span class="nx">name</span> <span class="p">=</span> <span class="s2">&#34;Startseite&#34;</span>
+        <span class="nx">url</span> <span class="p">=</span> <span class="s2">&#34;/&#34;</span>
+        <span class="nx">weight</span> <span class="p">=</span> <span class="mi">0</span>
+  <span class="p">[</span><span class="nx">languages</span><span class="p">.</span><span class="nx">en</span><span class="p">]</span>
+    <span class="nx">languageName</span> <span class="p">=</span> <span class="s2">&#34;English&#34;</span>
+    <span class="nx">weight</span> <span class="p">=</span> <span class="mi">0</span>
+    <span class="p">[</span><span class="nx">languages</span><span class="p">.</span><span class="nx">en</span><span class="p">.</span><span class="nx">menu</span><span class="p">]</span>
 
-
-<span class="p">[</span><span class="nx">languages</span><span class="p">.</span><span class="nx">en</span><span class="p">]</span>
-<span class="nx">languageName</span> <span class="p">=</span> <span class="s1">&#39;English&#39;</span>
-<span class="nx">weight</span> <span class="p">=</span> <span class="mi">0</span>
-<span class="p">[</span><span class="nx">languages</span><span class="p">.</span><span class="nx">en</span><span class="p">.</span><span class="nx">menu</span><span class="p">]</span>
-<span class="p">[[</span><span class="nx">languages</span><span class="p">.</span><span class="nx">en</span><span class="p">.</span><span class="nx">menu</span><span class="p">.</span><span class="nx">main</span><span class="p">]]</span>
-<span class="nx">name</span> <span class="p">=</span> <span class="s1">&#39;Home&#39;</span>
-<span class="nx">url</span> <span class="p">=</span> <span class="s1">&#39;/&#39;</span>
-<span class="nx">weight</span> <span class="p">=</span> <span class="mi">0</span>
-
-
-
-
+      <span class="p">[[</span><span class="nx">languages</span><span class="p">.</span><span class="nx">en</span><span class="p">.</span><span class="nx">menu</span><span class="p">.</span><span class="nx">main</span><span class="p">]]</span>
+        <span class="nx">name</span> <span class="p">=</span> <span class="s2">&#34;Home&#34;</span>
+        <span class="nx">url</span> <span class="p">=</span> <span class="s2">&#34;/&#34;</span>
+        <span class="nx">weight</span> <span class="p">=</span> <span class="mi">0</span>
 </code></pre></div>
       </div>
       
@@ -1390,7 +1360,7 @@ The second file is assigned the French language and is linked to the first.</p>
       
     
       <div data-pane="json" class="code-copy-content nt3 tab-pane ">
-        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
+        <div class="highlight"><pre class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
    <span class="nt">&#34;defaultContentLanguage&#34;</span><span class="p">:</span> <span class="s2">&#34;en&#34;</span><span class="p">,</span>
    <span class="nt">&#34;languages&#34;</span><span class="p">:</span> <span class="p">{</span>
       <span class="nt">&#34;de&#34;</span><span class="p">:</span> <span class="p">{</span>
@@ -1644,11 +1614,6 @@ i18n|MISSING_TRANSLATION|en|wordCount
           <li class="f6 fw4">
             <a href="/content-management/image-processing/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
               Image Processing
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/content-management/shortcodes/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Shortcodes
             </a>
           </li>
           <li class="f6 fw4">
@@ -2646,11 +2611,6 @@ i18n|MISSING_TRANSLATION|en|wordCount
             </a>
           </li>
           <li class="f6 fw4">
-            <a href="/troubleshooting/faq/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              FAQ
-            </a>
-          </li>
-          <li class="f6 fw4">
             <a href="/troubleshooting/build-performance/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
               Build Performance
             </a>
@@ -2814,10 +2774,10 @@ i18n|MISSING_TRANSLATION|en|wordCount
   <span class="nl3 child"><svg class="grow" fill="" height="14px" viewBox="0 0 24 24" width="14px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg>
 </span>
     “Multilingual Mode”
-  </a> was last updated: April 9, 2021: <a class="hide-child link primary-color" href="https://github.com/gohugoio/hugoDocs/commit/5d354c38d2fe9799f3821f395e666fcc9875d66c">Replaced ``` code blocks with Code Toggler (5d354c38d)</a>
+  </a> was last updated: August 13, 2021: <a class="hide-child link primary-color" href="https://github.com/gohugoio/hugoDocs/commit/675299e5580f46886a1b39c571db992a3336bb8c">try hugo templete (675299e)</a>
 </h6>
 
-      <a href="https://github.com/gohugoio/hugoDocs/edit/master/content/en/content-management%5cmultilingual.md" class="
+      <a href="https://github.com/gohugoio/hugoDocs/edit/master/content/en/content-management/multilingual.md" class="
 f6 ph3 pv1 br2 dib  tc ttu mv3 bg-primary-color white hover-bg-green link
 ">Improve this page</a>
 

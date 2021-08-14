@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>functions on Hugo</title>
+    <title>functions on Gravity</title>
     <link>https://gohugo.io/categories/functions/</link>
-    <description>Recent content in functions on Hugo</description>
+    <description>Recent content in functions on Gravity</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 28 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://gohugo.io/categories/functions/index.xml" rel="self" type="application/rss+xml" />
@@ -31,7 +31,7 @@
       <pubDate>Mon, 07 Sep 2020 00:00:00 +0000</pubDate>
       
       <guid>https://gohugo.io/functions/strings.count/</guid>
-      <description>New in v0.74.0 If SUBSTR is an empty string, this function returns 1 plus the number of Unicode code points in STRING.
+      <description> New in v0.74.0  If SUBSTR is an empty string, this function returns 1 plus the number of Unicode code points in STRING.
    Example Result     `{{ &amp;ldquo;aaabaab&amp;rdquo; strings.Count &amp;ldquo;a&amp;rdquo; }}`   `{{ &amp;ldquo;aaabaab&amp;rdquo; strings.Count &amp;ldquo;aa&amp;rdquo; }}`   `{{ &amp;ldquo;aaabaab&amp;rdquo; strings.Count &amp;ldquo;aaa&amp;rdquo; }}`   `{{ &amp;ldquo;aaabaab&amp;rdquo; strings.Count &amp;quot;&amp;quot; }}`    </description>
     </item>
     
@@ -42,7 +42,7 @@
       
       <guid>https://gohugo.io/functions/hmac/</guid>
       <description>hmac returns a cryptographic hash that uses a key to sign a message.
-{{ hmac &amp;quot;sha256&amp;quot; &amp;quot;Secret key&amp;quot; &amp;quot;Hello world, gophers!&amp;quot;}},&amp;lt;!-- returns the string &amp;quot;b6d11b6c53830b9d87036272ca9fe9d19306b8f9d8aa07b15da27d89e6e34f40&amp;quot;Supported hash functions:
+{{ hmac &amp;quot;sha256&amp;quot; &amp;quot;Secret key&amp;quot; &amp;quot;Hello world, gophers!&amp;quot;}}, &amp;lt;!-- returns the string &amp;quot;b6d11b6c53830b9d87036272ca9fe9d19306b8f9d8aa07b15da27d89e6e34f40&amp;quot; Supported hash functions:
  md5 sha1 sha256 sha512  </description>
     </item>
     
@@ -52,7 +52,7 @@
       <pubDate>Wed, 18 Dec 2019 00:00:00 +0000</pubDate>
       
       <guid>https://gohugo.io/functions/renderstring/</guid>
-      <description>New in v0.62.0 .RenderString is a method on Page that renders some markup to HTML using the content renderer defined for that page (if not set in the options).
+      <description>New in v0.62.0  .RenderString is a method on Page that renders some markup to HTML using the content renderer defined for that page (if not set in the options).
 Note that this method does not parse and render shortcodes.
 The method takes an optional map argument with these options:
  display (&amp;ldquo;inline&amp;rdquo;) inline or block. If inline (default), surrounding &amp;lt;p&amp;gt;&amp;lt;/p&amp;gt; on short snippets will be trimmed. markup (defaults to the Page&amp;rsquo;s markup) See identifiers in List of content formats.</description>
@@ -64,7 +64,7 @@ The method takes an optional map argument with these options:
       <pubDate>Tue, 13 Aug 2019 00:00:00 +0000</pubDate>
       
       <guid>https://gohugo.io/functions/strings.hassuffix/</guid>
-      <description>{{ $pdfPath := &amp;quot;/path/to/some.pdf&amp;quot; }}{{ strings.HasSuffix $pdfPath &amp;quot;pdf&amp;quot; }} → true{{ strings.HasSuffix $pdfPath &amp;quot;txt&amp;quot; }} → false </description>
+      <description>{{ $pdfPath := &amp;quot;/path/to/some.pdf&amp;quot; }} {{ strings.HasSuffix $pdfPath &amp;quot;pdf&amp;quot; }} → true {{ strings.HasSuffix $pdfPath &amp;quot;txt&amp;quot; }} → false  </description>
     </item>
     
     <item>
@@ -76,8 +76,8 @@ The method takes an optional map argument with these options:
       <description>Merge creates a copy of the final MAP and merges any preceding MAP into it in reverse order. Key handling is case-insensitive.
 An example merging two maps.
 {{$default_params:=dict&amp;#34;color&amp;#34;&amp;#34;blue&amp;#34;&amp;#34;width&amp;#34;&amp;#34;50%&amp;#34;&amp;#34;height&amp;#34;&amp;#34;25%&amp;#34;&amp;#34;icon&amp;#34;&amp;#34;star&amp;#34;}} {{$user_params:=dict&amp;#34;color&amp;#34;&amp;#34;red&amp;#34;&amp;#34;icon&amp;#34;&amp;#34;mail&amp;#34;&amp;#34;extra&amp;#34;(dict&amp;#34;duration&amp;#34;2)}} {{$params:=merge$default_params$user_params}} Resulting $params:
-&amp;quot;color&amp;quot;: &amp;quot;red&amp;quot;&amp;quot;extra&amp;quot;:&amp;quot;duration&amp;quot;: 2&amp;quot;height&amp;quot;: &amp;quot;25%&amp;quot;&amp;quot;icon&amp;quot;: &amp;quot;mail&amp;quot;&amp;quot;width&amp;quot;: &amp;quot;50%&amp;quot;Regardless of depth, merging only applies to maps. For slices, use append
-</description>
+&amp;quot;color&amp;quot;: &amp;quot;red&amp;quot; &amp;quot;extra&amp;quot;: &amp;quot;duration&amp;quot;: 2 &amp;quot;height&amp;quot;: &amp;quot;25%&amp;quot; &amp;quot;icon&amp;quot;: &amp;quot;mail&amp;quot; &amp;quot;width&amp;quot;: &amp;quot;50%&amp;quot;   Regardless of depth, merging only applies to maps. For slices, use append
+  </description>
     </item>
     
     <item>
@@ -100,7 +100,7 @@ An example merging two maps.
       <description>The function accepts either a Resource created in Hugo Pipes or via Page Bundles, or simply a string. The two examples below will produce the same map:
 {{$greetings:=&amp;#34;hello = \&amp;#34;Hello Hugo\&amp;#34;&amp;#34;|transform.Unmarshal}}` {{$greetings:=&amp;#34;hello = \&amp;#34;Hello Hugo\&amp;#34;&amp;#34;|resources.FromString&amp;#34;data/greetings.toml&amp;#34;|transform.Unmarshal}} In both the above examples, you get a map you can work with:
 {{$greetings.hello}} The above prints Hello Hugo.
-CSV Options Unmarshal with CSV as input has some options you can set:
+CSV Options  Unmarshal with CSV as input has some options you can set:
  delimiter The delimiter used, default is ,.</description>
     </item>
     
@@ -113,7 +113,7 @@ CSV Options Unmarshal with CSV as input has some options you can set:
       <description>path.Base returns the last element of PATH.
 If PATH is empty, . is returned.
 Note: On Windows, PATH is converted to slash (/) separators.
-{{ path.Base &amp;quot;a/news.html&amp;quot; }} → &amp;quot;news.html&amp;quot;{{ path.Base &amp;quot;news.html&amp;quot; }} → &amp;quot;news.html&amp;quot;{{ path.Base &amp;quot;a/b/c&amp;quot; }} → &amp;quot;c&amp;quot;{{ path.Base &amp;quot;/x/y/z/&amp;quot; }} → &amp;quot;z&amp;quot;</description>
+{{ path.Base &amp;quot;a/news.html&amp;quot; }} → &amp;quot;news.html&amp;quot; {{ path.Base &amp;quot;news.html&amp;quot; }} → &amp;quot;news.html&amp;quot; {{ path.Base &amp;quot;a/b/c&amp;quot; }} → &amp;quot;c&amp;quot; {{ path.Base &amp;quot;/x/y/z/&amp;quot; }} → &amp;quot;z&amp;quot; </description>
     </item>
     
     <item>
@@ -125,7 +125,7 @@ Note: On Windows, PATH is converted to slash (/) separators.
       <description>path.Dir returns all but the last element of PATH, typically PATH&amp;rsquo;s directory.
 The returned path will never end in a slash. If PATH is empty, . is returned.
 Note: On Windows, PATH is converted to slash (/) separators.
-{{ path.Dir &amp;quot;a/news.html&amp;quot; }} → &amp;quot;a&amp;quot;{{ path.Dir &amp;quot;news.html&amp;quot; }} → &amp;quot;.&amp;quot;{{ path.Dir &amp;quot;a/b/c&amp;quot; }} → &amp;quot;a/b&amp;quot;{{ path.Dir &amp;quot;/x/y/z&amp;quot; }} → &amp;quot;/x/y&amp;quot;</description>
+{{ path.Dir &amp;quot;a/news.html&amp;quot; }} → &amp;quot;a&amp;quot; {{ path.Dir &amp;quot;news.html&amp;quot; }} → &amp;quot;.&amp;quot; {{ path.Dir &amp;quot;a/b/c&amp;quot; }} → &amp;quot;a/b&amp;quot; {{ path.Dir &amp;quot;/x/y/z&amp;quot; }} → &amp;quot;/x/y&amp;quot; </description>
     </item>
     
     <item>
@@ -137,7 +137,7 @@ Note: On Windows, PATH is converted to slash (/) separators.
       <description>path.Ext returns the file name extension PATH.
 The extension is the suffix beginning at the final dot in the final slash-separated element PATH; it is empty if there is no dot.
 Note: On Windows, PATH is converted to slash (/) separators.
-{{ path.Ext &amp;quot;a/b/c/news.html&amp;quot; }} → &amp;quot;.html&amp;quot;</description>
+{{ path.Ext &amp;quot;a/b/c/news.html&amp;quot; }} → &amp;quot;.html&amp;quot; </description>
     </item>
     
     <item>
@@ -148,7 +148,7 @@ Note: On Windows, PATH is converted to slash (/) separators.
       <guid>https://gohugo.io/functions/path.join/</guid>
       <description>path.Join joins path elements into a single path, adding a separating slash if necessary. All empty strings are ignored.
 Note: All path elements on Windows are converted to slash (&#39;/&#39;) separators.
-{{ path.Join &amp;quot;partial&amp;quot; &amp;quot;news.html&amp;quot; }} → &amp;quot;partial/news.html&amp;quot;{{ path.Join &amp;quot;partial/&amp;quot; &amp;quot;news.html&amp;quot; }} → &amp;quot;partial/news.html&amp;quot;{{ path.Join &amp;quot;foo/baz&amp;quot; &amp;quot;bar&amp;quot; }} → &amp;quot;foo/baz/bar&amp;quot;</description>
+{{ path.Join &amp;quot;partial&amp;quot; &amp;quot;news.html&amp;quot; }} → &amp;quot;partial/news.html&amp;quot; {{ path.Join &amp;quot;partial/&amp;quot; &amp;quot;news.html&amp;quot; }} → &amp;quot;partial/news.html&amp;quot; {{ path.Join &amp;quot;foo/baz&amp;quot; &amp;quot;bar&amp;quot; }} → &amp;quot;foo/baz/bar&amp;quot; </description>
     </item>
     
     <item>
@@ -160,7 +160,7 @@ Note: All path elements on Windows are converted to slash (&#39;/&#39;) separato
       <description>path.Split splits PATH immediately following the final slash, separating it into a directory and a base component.
 The returned values have the property that PATH = DIR+BASE. If there is no slash in PATH, it returns an empty directory and the base is set to PATH.
 Note: On Windows, PATH is converted to slash (/) separators.
-{{ $dirFile := path.Split &amp;quot;a/news.html&amp;quot; }} → $dirFile.Dir → &amp;quot;a/&amp;quot;, $dirFile.File → &amp;quot;news.html&amp;quot;{{ $dirFile := path.</description>
+{{ $dirFile := path.Split &amp;quot;a/news.html&amp;quot; }} → $dirFile.Dir → &amp;quot;a/&amp;quot;, $dirFile.File → &amp;quot;news.html&amp;quot; {{ $dirFile := path.</description>
     </item>
     
     <item>
@@ -170,7 +170,7 @@ Note: On Windows, PATH is converted to slash (/) separators.
       
       <guid>https://gohugo.io/functions/reflect.ismap/</guid>
       <description>reflect.IsMap reports if VALUE is a map. Returns a boolean.
-{{ reflect.IsMap (dict &amp;quot;key&amp;quot; &amp;quot;value&amp;quot;) }} → true{{ reflect.IsMap &amp;quot;yo&amp;quot; }} → false</description>
+{{ reflect.IsMap (dict &amp;quot;key&amp;quot; &amp;quot;value&amp;quot;) }} → true {{ reflect.IsMap &amp;quot;yo&amp;quot; }} → false </description>
     </item>
     
     <item>
@@ -180,7 +180,7 @@ Note: On Windows, PATH is converted to slash (/) separators.
       
       <guid>https://gohugo.io/functions/reflect.isslice/</guid>
       <description>reflect.IsSlice reports if VALUE is a slice. Returns a boolean.
-{{ reflect.IsSlice (slice 1 2 3) }} → true{{ reflect.IsSlice &amp;quot;yo&amp;quot; }} → false</description>
+{{ reflect.IsSlice (slice 1 2 3) }} → true {{ reflect.IsSlice &amp;quot;yo&amp;quot; }} → false </description>
     </item>
     
     <item>
@@ -223,7 +223,7 @@ The function is particularly handy with dynamic path. The following example ensu
       <guid>https://gohugo.io/functions/anchorize/</guid>
       <description>If Goldmark is set as defaultMarkdownHandler, the sanitizing logic adheres to the setting markup.goldmark.parser.autoHeadingIDType. If Blackfriday is set as defaultMarkdownHandler, this template function uses the SanitizedAnchorName logic from Blackfriday (the same applies when markup.goldmark.parser.autoHeadingIDType is set to blackfriday).
 Since the defaultMarkdownHandler and this template function use the same sanitizing logic, you can use the latter to determine the ID of a header for linking with anchor tags.
-{{anchorize &amp;quot;This is a header&amp;quot;}} → &amp;quot;this-is-a-header&amp;quot;{{anchorize &amp;quot;This is also a header&amp;quot;}} → &amp;quot;this-is-also-a-header&amp;quot;{{anchorize &amp;quot;main.</description>
+{{anchorize &amp;quot;This is a header&amp;quot;}} → &amp;quot;this-is-a-header&amp;quot; {{anchorize &amp;quot;This is also a header&amp;quot;}} → &amp;quot;this-is-also-a-header&amp;quot; {{anchorize &amp;quot;main.</description>
     </item>
     
     <item>
@@ -243,7 +243,7 @@ Since the defaultMarkdownHandler and this template function use the same sanitiz
       <pubDate>Fri, 14 Sep 2018 00:00:00 +0000</pubDate>
       
       <guid>https://gohugo.io/functions/group/</guid>
-      <description>layouts/partials/groups.html{{$new:=.Site.RegularPages|first10|group&amp;#34;New&amp;#34;}} {{$old:=.Site.RegularPages|last10|group&amp;#34;Old&amp;#34;}} {{$groups:=slice$new$old}} {{range$groups}} &amp;lt;h3&amp;gt;{{.Key}}{{/* Prints &amp;#34;New&amp;#34;, &amp;#34;Old&amp;#34; */}}&amp;lt;/h3&amp;gt; &amp;lt;ul&amp;gt; {{range.Pages}} &amp;lt;li&amp;gt; &amp;lt;a href=&amp;#34;{{.Permalink}}&amp;#34;&amp;gt;{{.Title}}&amp;lt;/a&amp;gt; &amp;lt;div class=&amp;#34;meta&amp;#34;&amp;gt;{{.Date.Format&amp;#34;Mon, Jan 2, 2006&amp;#34;}}&amp;lt;/div&amp;gt; &amp;lt;/li&amp;gt; {{end}} &amp;lt;/ul&amp;gt; {{end}} The page group you get from group is of the same type you get from the built-in group methods in Hugo. The above example can even be paginated.</description>
+      <description>layouts/partials/groups.html  {{$new:=.Site.RegularPages|first10|group&amp;#34;New&amp;#34;}} {{$old:=.Site.RegularPages|last10|group&amp;#34;Old&amp;#34;}} {{$groups:=slice$new$old}} {{range$groups}} &amp;lt;h3&amp;gt;{{.Key}}{{/* Prints &amp;#34;New&amp;#34;, &amp;#34;Old&amp;#34; */}}&amp;lt;/h3&amp;gt; &amp;lt;ul&amp;gt; {{range.Pages}} &amp;lt;li&amp;gt; &amp;lt;a href=&amp;#34;{{.Permalink}}&amp;#34;&amp;gt;{{.Title}}&amp;lt;/a&amp;gt; &amp;lt;div class=&amp;#34;meta&amp;#34;&amp;gt;{{.Date.Format&amp;#34;Mon, Jan 2, 2006&amp;#34;}}&amp;lt;/div&amp;gt; &amp;lt;/li&amp;gt; {{end}} &amp;lt;/ul&amp;gt; {{end}}   The page group you get from group is of the same type you get from the built-in group methods in Hugo. The above example can even be paginated.</description>
     </item>
     
     <item>
@@ -253,7 +253,7 @@ Since the defaultMarkdownHandler and this template function use the same sanitiz
       
       <guid>https://gohugo.io/functions/os.stat/</guid>
       <description>If your current project working directory has a single file named README.txt (30 bytes):
-{{ $stat := os.Stat &amp;quot;README.txt&amp;quot; }}{{ $stat.Name }} → &amp;quot;README.txt&amp;quot;{{ $stat.Size }} → 30Function os.Stat returns os.FileInfo. For further information of os.FileInfo, see golang page.</description>
+{{ $stat := os.Stat &amp;quot;README.txt&amp;quot; }} {{ $stat.Name }} → &amp;quot;README.txt&amp;quot; {{ $stat.Size }} → 30 Function os.Stat returns os.FileInfo. For further information of os.FileInfo, see golang page.</description>
     </item>
     
     <item>
@@ -263,7 +263,7 @@ Since the defaultMarkdownHandler and this template function use the same sanitiz
       
       <guid>https://gohugo.io/functions/strings.runecount/</guid>
       <description>In contrast with strings.CountRunes function, which strips HTML and whitespace before counting runes, strings.RuneCount simply counts all the runes in a string. It relies on the Go [utf8.RuneCountInString] function.
-{{ &amp;quot;Hello, 世界&amp;quot; | strings.RuneCount }}&amp;lt;!-- outputs a content length of 9 runes. --&amp;gt;</description>
+{{ &amp;quot;Hello, 世界&amp;quot; | strings.RuneCount }} &amp;lt;!-- outputs a content length of 9 runes. --&amp;gt; </description>
     </item>
     
     <item>
@@ -272,7 +272,7 @@ Since the defaultMarkdownHandler and this template function use the same sanitiz
       <pubDate>Thu, 31 May 2018 00:00:00 +0000</pubDate>
       
       <guid>https://gohugo.io/functions/strings.repeat/</guid>
-      <description>{{ strings.Repeat 3 &amp;quot;yo&amp;quot; }} → &amp;quot;yoyoyo&amp;quot;{{ &amp;quot;yo&amp;quot; | strings.Repeat 3 }} → &amp;quot;yoyoyo&amp;quot;</description>
+      <description>{{ strings.Repeat 3 &amp;quot;yo&amp;quot; }} → &amp;quot;yoyoyo&amp;quot; {{ &amp;quot;yo&amp;quot; | strings.Repeat 3 }} → &amp;quot;yoyoyo&amp;quot; </description>
     </item>
     
     <item>
@@ -296,7 +296,7 @@ A more practical example is to fill in the missing translations from the other l
       <description>errorf or warnf will evaluate a format string, then output the result to the ERROR or WARNING log (and only once per error message to avoid flooding the log).
 Any ERROR will also cause the build to fail (the hugo command will exit -1).
 Both functions return an empty string, so the messages are only printed to the console.
-{{ errorf &amp;quot;Failed to handle page %q&amp;quot; .Path }}{{ warnf &amp;quot;You should update the shortcodes in %q&amp;quot; .</description>
+{{ errorf &amp;quot;Failed to handle page %q&amp;quot; .Path }} {{ warnf &amp;quot;You should update the shortcodes in %q&amp;quot; .</description>
     </item>
     
     <item>
@@ -306,7 +306,7 @@ Both functions return an empty string, so the messages are only printed to the c
       
       <guid>https://gohugo.io/functions/float/</guid>
       <description>Useful for turning strings into floating point numbers.
-{{ float &amp;quot;1.23&amp;quot; }} → 1.23</description>
+{{ float &amp;quot;1.23&amp;quot; }} → 1.23 </description>
     </item>
     
     <item>
@@ -316,8 +316,8 @@ Both functions return an empty string, so the messages are only printed to the c
       
       <guid>https://gohugo.io/functions/urls.parse/</guid>
       <description>urls.Parse takes a url as input
-{{ $url := urls.Parse &amp;quot;http://www.gohugo.io&amp;quot; }}and returns a URL structure. The struct fields are accessed via the . notation:
-{{ $url.Scheme }} → &amp;quot;http&amp;quot;{{ $url.Host }} → &amp;quot;www.gohugo.io&amp;quot;</description>
+{{ $url := urls.Parse &amp;quot;http://www.gohugo.io&amp;quot; }} and returns a URL structure. The struct fields are accessed via the . notation:
+{{ $url.Scheme }} → &amp;quot;http&amp;quot; {{ $url.Host }} → &amp;quot;www.gohugo.io&amp;quot; </description>
     </item>
     
     <item>
@@ -328,8 +328,8 @@ Both functions return an empty string, so the messages are only printed to the c
       <guid>https://gohugo.io/functions/cond/</guid>
       <description>cond returns VAR1 if CONTROL is true, or VAR2 if it is not.
 Example:
-{{ cond (eq (len $geese) 1) &amp;quot;goose&amp;quot; &amp;quot;geese&amp;quot; }}Would emit &amp;ldquo;goose&amp;rdquo; if the $geese array has exactly 1 item, or &amp;ldquo;geese&amp;rdquo; otherwise.
-Whenever you use a cond function, both variable expressions are always evaluated. This means that a usage like cond false (div 1 0) 27 will throw an error because div 1 0 will be evaluated even though the condition is false.</description>
+{{ cond (eq (len $geese) 1) &amp;quot;goose&amp;quot; &amp;quot;geese&amp;quot; }} Would emit &amp;ldquo;goose&amp;rdquo; if the $geese array has exactly 1 item, or &amp;ldquo;geese&amp;rdquo; otherwise.
+ Whenever you use a cond function, both variable expressions are always evaluated. This means that a usage like cond false (div 1 0) 27 will throw an error because div 1 0 will be evaluated even though the condition is false.</description>
     </item>
     
     <item>
@@ -339,7 +339,7 @@ Example:
       
       <guid>https://gohugo.io/functions/fileexists/</guid>
       <description>fileExists allows you to check if a file exists under a given path, e.g. before inserting code into a template:
-{{ if (fileExists &amp;quot;static/img/banner.jpg&amp;quot;) -}}&amp;lt;img src=&amp;quot;{{ &amp;quot;img/banner.jpg&amp;quot; | absURL }}&amp;quot; /&amp;gt;{{- end }}In the example above, a banner from the static folder should be shown if the given path points to an existing file.</description>
+{{ if (fileExists &amp;quot;static/img/banner.jpg&amp;quot;) -}} &amp;lt;img src=&amp;quot;{{ &amp;quot;img/banner.jpg&amp;quot; | absURL }}&amp;quot; /&amp;gt; {{- end }} In the example above, a banner from the static folder should be shown if the given path points to an existing file.</description>
     </item>
     
     <item>
@@ -348,7 +348,7 @@ Example:
       <pubDate>Wed, 26 Jul 2017 00:00:00 +0000</pubDate>
       
       <guid>https://gohugo.io/functions/ge/</guid>
-      <description>{{ if ge 10 5 }}true{{ end }}</description>
+      <description>{{ if ge 10 5 }}true{{ end }} </description>
     </item>
     
     <item>
@@ -357,7 +357,7 @@ Example:
       <pubDate>Wed, 26 Jul 2017 00:00:00 +0000</pubDate>
       
       <guid>https://gohugo.io/functions/gt/</guid>
-      <description>{{ if gt 10 5 }}true{{ end }}</description>
+      <description>{{ if gt 10 5 }}true{{ end }} </description>
     </item>
     
     <item>
@@ -366,7 +366,7 @@ Example:
       <pubDate>Wed, 26 Jul 2017 00:00:00 +0000</pubDate>
       
       <guid>https://gohugo.io/functions/le/</guid>
-      <description>{{ if le 5 10 }}true{{ end }}</description>
+      <description>{{ if le 5 10 }}true{{ end }} </description>
     </item>
     
     <item>
@@ -375,7 +375,7 @@ Example:
       <pubDate>Wed, 26 Jul 2017 00:00:00 +0000</pubDate>
       
       <guid>https://gohugo.io/functions/lt/</guid>
-      <description>{{ if lt 5 10 }}true{{ end }}</description>
+      <description>{{ if lt 5 10 }}true{{ end }} </description>
     </item>
     
     <item>
@@ -384,7 +384,7 @@ Example:
       <pubDate>Wed, 26 Jul 2017 00:00:00 +0000</pubDate>
       
       <guid>https://gohugo.io/functions/ne/</guid>
-      <description>{{ if ne .Section &amp;quot;blog&amp;quot; }}current{{ end }}</description>
+      <description>{{ if ne .Section &amp;quot;blog&amp;quot; }}current{{ end }} </description>
     </item>
     
     <item>
@@ -394,8 +394,8 @@ Example:
       
       <guid>https://gohugo.io/functions/adddate/</guid>
       <description>The AddDate function takes three arguments in logical order of years, months, and days.
-Example: Randomized Tweets from the Last 2 Years Let&amp;rsquo;s assume you have a file at data/tweets.toml that contains a list of Tweets to display on your site&amp;rsquo;s homepage. The file is filled with [[tweet]] blocks; e.g.&amp;mdash;
-data/tweets.yaml&amp;nbsp;toml&amp;nbsp;json&amp;nbsp;tweet:- date:&amp;#34;2017-01-07T00:00:00Z&amp;#34;link:https://twitter.com/spf13name:Steve Franciaquote:&amp;#39;I&amp;#39;&amp;#39;m creator of Hugo. #metadocreference&amp;#39;twitter_handle:&amp;#39;@spf13&amp;#39;[[tweet]] date = &amp;#39;2017-01-07T00:00:00Z&amp;#39; link = &amp;#39;https://twitter.</description>
+Example: Randomized Tweets from the Last 2 Years  Let&amp;rsquo;s assume you have a file at data/tweets.toml that contains a list of Tweets to display on your site&amp;rsquo;s homepage. The file is filled with [[tweet]] blocks; e.g.&amp;mdash;
+data/tweets.  yaml  &amp;nbsp; toml  &amp;nbsp; json  &amp;nbsp;  tweet:- date:&amp;#34;2017-01-07T00:00:00Z&amp;#34;link:https://twitter.com/spf13name:Steve Franciaquote:&amp;#39;I&amp;#39;&amp;#39;m creator of Hugo. #metadocreference&amp;#39;twitter_handle:&amp;#39;@spf13&amp;#39;   [[tweet]] date = &amp;#34;2017-01-07T00:00:00Z&amp;#34; link = &amp;#34;https://twitter.</description>
     </item>
     
     <item>
@@ -406,7 +406,7 @@ data/tweets.yaml&amp;nbsp;toml&amp;nbsp;json&amp;nbsp;tweet:- date:&
       <guid>https://gohugo.io/functions/format/</guid>
       <description>.Format will format date values defined in your front matter and can be used as a property on the following page variables:
  .PublishDate .Date .Lastmod  Assuming a key-value of date: 2017-03-03 in a content file&amp;rsquo;s front matter, your can run the date through .Format followed by a layout string for your desired output at build time:
-{{ .PublishDate.Format &amp;quot;January 2, 2006&amp;quot; }} =&amp;gt; March 3, 2017For formatting any string representations of dates defined in your front matter, see the dateFormat function, which will still leverage the Go layout string explained below but uses a slightly different syntax.</description>
+{{ .PublishDate.Format &amp;quot;January 2, 2006&amp;quot; }} =&amp;gt; March 3, 2017 For formatting any string representations of dates defined in your front matter, see the dateFormat function, which will still leverage the Go layout string explained below but uses a slightly different syntax.</description>
     </item>
     
     <item>
@@ -426,7 +426,7 @@ When accessing a named parameter that does not exist, .Get returns an empty stri
       
       <guid>https://gohugo.io/functions/getpage/</guid>
       <description>.GetPage returns a page of a given path. Both Site and Page implements this method. The Page variant will, if given a relative path &amp;ndash; i.e. a path without a leading / &amp;ndash; try look for the page relative to the current page.
-Note: We overhauled and simplified the .GetPage API in Hugo 0.45. Before that you needed to provide a Kind attribute in addition to the path, e.g. {{ .</description>
+ Note: We overhauled and simplified the .GetPage API in Hugo 0.45. Before that you needed to provide a Kind attribute in addition to the path, e.g. {{ .</description>
     </item>
     
     <item>
@@ -436,7 +436,7 @@ When accessing a named parameter that does not exist, .Get returns an empty stri
       
       <guid>https://gohugo.io/functions/hasmenucurrent/</guid>
       <description>.HasMenuCurrent is a method in Page object returning a boolean value. It returns true if the PAGE is the same object as the .Page in one of the children menu entries under MENUENTRY in a given MENU.
-New in v0.86.0 If MENUENTRY&amp;rsquo;s .Page is a section then, from Hugo 0.86.0, this method also returns true for any descendant of that section..
+ New in v0.86.0  If MENUENTRY&amp;rsquo;s .Page is a section then, from Hugo 0.86.0, this method also returns true for any descendant of that section..
 You can find its example use in menu templates.</description>
     </item>
     
@@ -470,7 +470,7 @@ You can use the .Param method to call these values into your template. The follo
       <description>The view is an alternative layout and should be a file name that points to a template in one of the locations specified in the documentation for Content Views.
 This function is only available when applied to a single piece of content within a list context.
 This example could render a piece of content using the content view located at /layouts/_default/summary.html:
-{{ range .Pages }}{{ .Render &amp;quot;summary&amp;quot;}}{{ end }}</description>
+{{ range .Pages }} {{ .Render &amp;quot;summary&amp;quot;}} {{ end }} </description>
     </item>
     
     <item>
@@ -480,7 +480,7 @@ This example could render a piece of content using the content view located at /
       
       <guid>https://gohugo.io/functions/scratch/</guid>
       <description>Scratch is a Hugo feature designed to conveniently manipulate data in a Go Template world. It is either a Page or Shortcode method for which the resulting data will be attached to the given context, or it can live as a unique instance stored in a variable.
-Note that Scratch was initially created as a workaround for a Go template scoping limitation that affected Hugo versions prior to 0.48. For a detailed analysis of .</description>
+ Note that Scratch was initially created as a workaround for a Go template scoping limitation that affected Hugo versions prior to 0.48. For a detailed analysis of .</description>
     </item>
     
     <item>
@@ -489,8 +489,8 @@ This example could render a piece of content using the content view located at /
       <pubDate>Wed, 01 Feb 2017 00:00:00 +0000</pubDate>
       
       <guid>https://gohugo.io/functions/unix/</guid>
-      <description>Example: Time Passed Since Last Modification This very simple one-liner uses now.Unix to calculate the amount of time that has passed between the .LastMod for the current page and the last build of the current page.
-time-passed.html{{div(subnow.Unix.Lastmod.Unix)86400}} Since both values are integers, they can be subtracted and then divided by the number of seconds in a day (i.e., 60 * 60 * 24 == 86400).</description>
+      <description>Example: Time Passed Since Last Modification  This very simple one-liner uses now.Unix to calculate the amount of time that has passed between the .LastMod for the current page and the last build of the current page.
+time-passed.html  {{div(subnow.Unix.Lastmod.Unix)86400}}   Since both values are integers, they can be subtracted and then divided by the number of seconds in a day (i.e., 60 * 60 * 24 == 86400).</description>
     </item>
     
     <item>
@@ -501,7 +501,7 @@ time-passed.html{{div(subnow.Unix.Lastmod.Unix)86400}} Since both values ar
       <guid>https://gohugo.io/functions/abslangurl/</guid>
       <description>Both absLangURL and relLangURL are similar to their absURL and relURL relatives but will add the correct language prefix when the site is configured with more than one language.
 So for a site baseURL set to https://example.com/hugo/ and the current language is en:
-{{ &amp;quot;blog/&amp;quot; | absLangURL }} → &amp;quot;https://example.com/hugo/en/blog/&amp;quot;{{ &amp;quot;blog/&amp;quot; | relLangURL }} → &amp;quot;/hugo/en/blog/&amp;quot;</description>
+{{ &amp;quot;blog/&amp;quot; | absLangURL }} → &amp;quot;https://example.com/hugo/en/blog/&amp;quot; {{ &amp;quot;blog/&amp;quot; | relLangURL }} → &amp;quot;/hugo/en/blog/&amp;quot; </description>
     </item>
     
     <item>
@@ -511,7 +511,7 @@ So for a site baseURL set to https://example.com/hugo/ and the current language 
       
       <guid>https://gohugo.io/functions/absurl/</guid>
       <description>Both absURL and relURL consider the configured value of baseURL in your site&amp;rsquo;s config file. Given a baseURL set to https://example.com/hugo/:
-{{ &amp;quot;mystyle.css&amp;quot; | absURL }} → &amp;quot;https://example.com/hugo/mystyle.css&amp;quot;{{ &amp;quot;mystyle.css&amp;quot; | relURL }} → &amp;quot;/hugo/mystyle.css&amp;quot;{{ &amp;quot;http://gohugo.io/&amp;quot; | relURL }} → &amp;quot;http://gohugo.io/&amp;quot;{{ &amp;quot;http://gohugo.io/&amp;quot; | absURL }} → &amp;quot;http://gohugo.io/&amp;quot;The last two examples may look strange but can be very useful. For example, the following shows how to use absURL in JSON-LD structured data (SEO), where some of your images for a piece of content may or may not be hosted locally:</description>
+{{ &amp;quot;mystyle.css&amp;quot; | absURL }} → &amp;quot;https://example.com/hugo/mystyle.css&amp;quot; {{ &amp;quot;mystyle.css&amp;quot; | relURL }} → &amp;quot;/hugo/mystyle.css&amp;quot; {{ &amp;quot;http://gohugo.io/&amp;quot; | relURL }} → &amp;quot;http://gohugo.io/&amp;quot; {{ &amp;quot;http://gohugo.io/&amp;quot; | absURL }} → &amp;quot;http://gohugo.io/&amp;quot; The last two examples may look strange but can be very useful. For example, the following shows how to use absURL in JSON-LD structured data (SEO), where some of your images for a piece of content may or may not be hosted locally:</description>
     </item>
     
     <item>
@@ -521,7 +521,7 @@ So for a site baseURL set to https://example.com/hugo/ and the current language 
       
       <guid>https://gohugo.io/functions/after/</guid>
       <description>The following shows after being used in conjunction with the slice function:
-{{ $data := slice &amp;quot;one&amp;quot; &amp;quot;two&amp;quot; &amp;quot;three&amp;quot; &amp;quot;four&amp;quot; }}{{ range after 2 $data }}{{ . }}{{ end }}→ [&amp;quot;three&amp;quot;, &amp;quot;four&amp;quot;]Example of after with first: 2nd–4th Most Recent Articles You can use after in combination with the first function and Hugo&amp;rsquo;s powerful sorting methods. Let&amp;rsquo;s assume you have a list page at example.com/articles. You have 10 articles, but you want your templating for the list/section page to show only two rows:</description>
+{{ $data := slice &amp;quot;one&amp;quot; &amp;quot;two&amp;quot; &amp;quot;three&amp;quot; &amp;quot;four&amp;quot; }} {{ range after 2 $data }} {{ . }} {{ end }} → [&amp;quot;three&amp;quot;, &amp;quot;four&amp;quot;] Example of after with first: 2nd–4th Most Recent Articles  You can use after in combination with the first function and Hugo&amp;rsquo;s powerful sorting methods. Let&amp;rsquo;s assume you have a list page at example.com/articles. You have 10 articles, but you want your templating for the list/section page to show only two rows:</description>
     </item>
     
     <item>
@@ -541,8 +541,8 @@ So for a site baseURL set to https://example.com/hugo/ and the current language 
       
       <guid>https://gohugo.io/functions/base64/</guid>
       <description>An example:
-base64-input.html&amp;lt;p&amp;gt;Hello world = {{&amp;#34;Hello world&amp;#34;|base64Encode}}&amp;lt;/p&amp;gt; &amp;lt;p&amp;gt;SGVsbG8gd29ybGQ = {{&amp;#34;SGVsbG8gd29ybGQ=&amp;#34;|base64Decode}}&amp;lt;/p&amp;gt; base-64-output.html&amp;lt;p&amp;gt;Hello world = SGVsbG8gd29ybGQ=&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;SGVsbG8gd29ybGQ = Hello world&amp;lt;/p&amp;gt; You can also pass other data types as arguments to the template function which tries to convert them. The following will convert 42 from an integer to a string because both base64Encode and base64Decode always return a string.
-{{ 42 | base64Encode | base64Decode }}=&amp;gt; &amp;quot;42&amp;quot; rather than 42base64 with APIs Using base64 to decode and encode becomes really powerful if we have to handle responses from APIs.</description>
+base64-input.html  &amp;lt;p&amp;gt;Hello world = {{&amp;#34;Hello world&amp;#34;|base64Encode}}&amp;lt;/p&amp;gt; &amp;lt;p&amp;gt;SGVsbG8gd29ybGQ = {{&amp;#34;SGVsbG8gd29ybGQ=&amp;#34;|base64Decode}}&amp;lt;/p&amp;gt;   base-64-output.html  &amp;lt;p&amp;gt;Hello world = SGVsbG8gd29ybGQ=&amp;lt;/p&amp;gt; &amp;lt;p&amp;gt;SGVsbG8gd29ybGQ = Hello world&amp;lt;/p&amp;gt;    You can also pass other data types as arguments to the template function which tries to convert them. The following will convert 42 from an integer to a string because both base64Encode and base64Decode always return a string.
+{{ 42 | base64Encode | base64Decode }} =&amp;gt; &amp;quot;42&amp;quot; rather than 42 base64 with APIs  Using base64 to decode and encode becomes really powerful if we have to handle responses from APIs.</description>
     </item>
     
     <item>
@@ -552,7 +552,7 @@ base64-input.html&amp;lt;p&amp;gt;Hello world = {{&amp;#34;Hello world&amp;#34
       
       <guid>https://gohugo.io/functions/chomp/</guid>
       <description>Useful in a pipeline to remove newlines added by other processing (e.g., markdownify).
-{{chomp &amp;quot;&amp;lt;p&amp;gt;Blockhead&amp;lt;/p&amp;gt;\n&amp;quot;}} → &amp;quot;&amp;lt;p&amp;gt;Blockhead&amp;lt;/p&amp;gt;&amp;quot;</description>
+{{chomp &amp;quot;&amp;lt;p&amp;gt;Blockhead&amp;lt;/p&amp;gt;\n&amp;quot;}} → &amp;quot;&amp;lt;p&amp;gt;Blockhead&amp;lt;/p&amp;gt;&amp;quot; </description>
     </item>
     
     <item>
@@ -562,7 +562,7 @@ base64-input.html&amp;lt;p&amp;gt;Hello world = {{&amp;#34;Hello world&amp;#34
       
       <guid>https://gohugo.io/functions/countrunes/</guid>
       <description>In contrast with countwords function, which counts every word in a string, the countrunes function determines the number of runes in the content and excludes any whitespace. This has specific utility if you are dealing with CJK-like languages.
-{{ &amp;quot;Hello, 世界&amp;quot; | countrunes }}&amp;lt;!-- outputs a content length of 8 runes. --&amp;gt;</description>
+{{ &amp;quot;Hello, 世界&amp;quot; | countrunes }} &amp;lt;!-- outputs a content length of 8 runes. --&amp;gt; </description>
     </item>
     
     <item>
@@ -572,7 +572,7 @@ base64-input.html&amp;lt;p&amp;gt;Hello world = {{&amp;#34;Hello world&amp;#34
       
       <guid>https://gohugo.io/functions/countwords/</guid>
       <description>The template function works similar to the .WordCount page variable.
-{{ &amp;quot;Hugo is a static site generator.&amp;quot; | countwords }}&amp;lt;!-- outputs a content length of 6 words. --&amp;gt;</description>
+{{ &amp;quot;Hugo is a static site generator.&amp;quot; | countwords }} &amp;lt;!-- outputs a content length of 6 words. --&amp;gt; </description>
     </item>
     
     <item>
@@ -583,7 +583,7 @@ base64-input.html&amp;lt;p&amp;gt;Hello world = {{&amp;#34;Hello world&amp;#34
       <guid>https://gohugo.io/functions/default/</guid>
       <description>default checks whether a given value is set and returns a default value if it is not. Set in this context means different things depending on the data type:
  non-zero for numeric types and times non-zero length for strings, arrays, slices, and maps any boolean or struct value non-nil for any other types  default function examples reference the following content page:
-content/posts/default-function-example.md--- title: Sane Defaults seo_title: date: 2017-02-18 font: oldparam: The default function helps make your templating DRYer.</description>
+content/posts/default-function-example.md  --- title: Sane Defaults seo_title: date: 2017-02-18 font: oldparam: The default function helps make your templating DRYer.</description>
     </item>
     
     <item>
@@ -593,7 +593,7 @@ content/posts/default-function-example.md--- title: Sane Defaults seo_title: d
       
       <guid>https://gohugo.io/functions/delimit/</guid>
       <description>delimit called in your template takes the form of
-{{ delimit array/slice/map delimiter optionallastdelimiter}}delimit loops through any array, slice, or map and returns a string of all the values separated by a delimiter, the second argument in the function call. There is an optional third parameter that lets you choose a different delimiter to go between the last two values in the loop.
+{{ delimit array/slice/map delimiter optionallastdelimiter}} delimit loops through any array, slice, or map and returns a string of all the values separated by a delimiter, the second argument in the function call. There is an optional third parameter that lets you choose a different delimiter to go between the last two values in the loop.
 To maintain a consistent output order, maps will be sorted by keys and only a slice of the values will be returned.</description>
     </item>
     
@@ -605,9 +605,9 @@ To maintain a consistent output order, maps will be sorted by keys and only a sl
       <guid>https://gohugo.io/functions/dict/</guid>
       <description>dict is especially useful for passing more than one value to a partial template.
 Note that the key can be either a string or a string slice. The latter is useful to create a deply nested structure, e.g.:
-{{$m:=dict(slice&amp;#34;a&amp;#34;&amp;#34;b&amp;#34;&amp;#34;c&amp;#34;)&amp;#34;value&amp;#34;}}Example: Using dict to pass multiple values to a partial The partial below creates a SVG and expects fill, height and width from the caller:
+{{$m:=dict(slice&amp;#34;a&amp;#34;&amp;#34;b&amp;#34;&amp;#34;c&amp;#34;)&amp;#34;value&amp;#34;}}Example: Using dict to pass multiple values to a partial  The partial below creates a SVG and expects fill, height and width from the caller:
 Partial definition
-layouts/partials/svgs/external-links.svg&amp;lt;svg version=&amp;#34;1.1&amp;#34; xmlns=&amp;#34;http://www.</description>
+layouts/partials/svgs/external-links.svg  &amp;lt;svg version=&amp;#34;1.1&amp;#34; xmlns=&amp;#34;http://www.</description>
     </item>
     
     <item>
@@ -616,7 +616,7 @@ layouts/partials/svgs/external-links.svg&amp;lt;svg version=&amp;#34;1.1&amp;#
       <pubDate>Wed, 01 Feb 2017 00:00:00 +0000</pubDate>
       
       <guid>https://gohugo.io/functions/echoparam/</guid>
-      <description>{{ echoParam .Params &amp;quot;project_url&amp;quot; }}</description>
+      <description>{{ echoParam .Params &amp;quot;project_url&amp;quot; }} </description>
     </item>
     
     <item>
@@ -637,7 +637,7 @@ I ❤️ Hugo!</description>
       <pubDate>Wed, 01 Feb 2017 00:00:00 +0000</pubDate>
       
       <guid>https://gohugo.io/functions/eq/</guid>
-      <description>{{ if eq .Section &amp;quot;blog&amp;quot; }}current{{ end }}</description>
+      <description>{{ if eq .Section &amp;quot;blog&amp;quot; }}current{{ end }} </description>
     </item>
     
     <item>
@@ -648,7 +648,7 @@ I ❤️ Hugo!</description>
       <guid>https://gohugo.io/functions/findre/</guid>
       <description>By default all matches will be included. The number of matches can be limited with an optional third parameter.
 The example below returns a list of all second level headers (&amp;lt;h2&amp;gt;) in the content:
-{{ findRE &amp;quot;&amp;lt;h2.*?&amp;gt;(.|\n)*?&amp;lt;/h2&amp;gt;&amp;quot; .Content }}You can limit the number of matches in the list with a third parameter. The following example shows how to limit the returned value to just one match (or none, if there are no matched substrings):</description>
+{{ findRE &amp;quot;&amp;lt;h2.*?&amp;gt;(.|\n)*?&amp;lt;/h2&amp;gt;&amp;quot; .Content }} You can limit the number of matches in the list with a third parameter. The following example shows how to limit the returned value to just one match (or none, if there are no matched substrings):</description>
     </item>
     
     <item>
@@ -659,8 +659,8 @@ The example below returns a list of all second level headers (&amp;lt;h2&amp;gt;
       <guid>https://gohugo.io/functions/first/</guid>
       <description>first works in a similar manner to the limit keyword in SQL. It reduces the array to only the first N elements. It takes the array and number of elements as input.
 first takes two arguments:
- number of elements array or slice of maps or structs  layout/_default/section.html{{rangefirst10.Pages}} {{.Render&amp;#34;summary&amp;#34;}} {{end}} Note: Exclusive to first, LIMIT can be &amp;lsquo;0&amp;rsquo; to return an empty array.
-first and where Together Using first and where together can be very powerful.</description>
+ number of elements array or slice of maps or structs  layout/_default/section.html  {{rangefirst10.Pages}} {{.Render&amp;#34;summary&amp;#34;}} {{end}}   Note: Exclusive to first, LIMIT can be &amp;lsquo;0&amp;rsquo; to return an empty array.
+first and where Together  Using first and where together can be very powerful.</description>
     </item>
     
     <item>
@@ -670,8 +670,8 @@ first and where Together Using first and where together can be very powerful.</
       
       <guid>https://gohugo.io/functions/getenv/</guid>
       <description>Takes a string containing the name of the variable as input. Returns an empty string if the variable is not set, otherwise returns the value of the variable.
-{{ getenv &amp;quot;HOME&amp;quot; }}In Unix-like environments, the variable must also be exported in order to be seen by hugo.
-</description>
+{{ getenv &amp;quot;HOME&amp;quot; }}   In Unix-like environments, the variable must also be exported in order to be seen by hugo.
+  </description>
     </item>
     
     <item>
@@ -699,7 +699,7 @@ first and where Together Using first and where together can be very powerful.</
       
       <guid>https://gohugo.io/functions/htmlescape/</guid>
       <description>In the result &amp;amp; becomes &amp;amp;amp; and so on. It escapes only: &amp;lt;, &amp;gt;, &amp;amp;, &#39; and &amp;quot;.
-{{ htmlEscape &amp;quot;Hugo &amp;amp; Caddy &amp;gt; WordPress &amp;amp; Apache&amp;quot; }} → &amp;quot;Hugo &amp;amp;amp; Caddy &amp;amp;gt; WordPress &amp;amp;amp; Apache&amp;quot;</description>
+{{ htmlEscape &amp;quot;Hugo &amp;amp; Caddy &amp;gt; WordPress &amp;amp; Apache&amp;quot; }} → &amp;quot;Hugo &amp;amp;amp; Caddy &amp;amp;gt; WordPress &amp;amp;amp; Apache&amp;quot; </description>
     </item>
     
     <item>
@@ -710,7 +710,7 @@ first and where Together Using first and where together can be very powerful.</
       <guid>https://gohugo.io/functions/htmlunescape/</guid>
       <description>htmlUnescape returns the given string with HTML escape codes un-escaped.
 Remember to pass the output of this to safeHTML if fully un-escaped characters are desired. Otherwise, the output will be escaped again as normal.
-{{ htmlUnescape &amp;quot;Hugo &amp;amp;amp; Caddy &amp;amp;gt; WordPress &amp;amp;amp; Apache&amp;quot; }} → &amp;quot;Hugo &amp;amp; Caddy &amp;gt; WordPress &amp;amp; Apache&amp;quot;</description>
+{{ htmlUnescape &amp;quot;Hugo &amp;amp;amp; Caddy &amp;amp;gt; WordPress &amp;amp;amp; Apache&amp;quot; }} → &amp;quot;Hugo &amp;amp; Caddy &amp;gt; WordPress &amp;amp; Apache&amp;quot; </description>
     </item>
     
     <item>
@@ -720,7 +720,7 @@ Remember to pass the output of this to safeHTML if fully un-escaped characters a
       
       <guid>https://gohugo.io/functions/humanize/</guid>
       <description>If the input is either an int64 value or the string representation of an integer, humanize returns the number with the proper ordinal appended.
-{{humanize &amp;quot;my-first-post&amp;quot;}} → &amp;quot;My first post&amp;quot;{{humanize &amp;quot;myCamelPost&amp;quot;}} → &amp;quot;My camel post&amp;quot;{{humanize &amp;quot;52&amp;quot;}} → &amp;quot;52nd&amp;quot;{{humanize 103}} → &amp;quot;103rd&amp;quot;</description>
+{{humanize &amp;quot;my-first-post&amp;quot;}} → &amp;quot;My first post&amp;quot; {{humanize &amp;quot;myCamelPost&amp;quot;}} → &amp;quot;My camel post&amp;quot; {{humanize &amp;quot;52&amp;quot;}} → &amp;quot;52nd&amp;quot; {{humanize 103}} → &amp;quot;103rd&amp;quot; </description>
     </item>
     
     <item>
@@ -730,8 +730,8 @@ Remember to pass the output of this to safeHTML if fully un-escaped characters a
       
       <guid>https://gohugo.io/functions/i18n/</guid>
       <description>This translates a piece of content based on your i18n/en-US.yaml (and similar) files. You can use the go-i18n tools to manage your translations. The translations can exist in both the theme and at the root of your repository.
-{{ i18n &amp;quot;translation_id&amp;quot; }}T is an alias to i18n. E.g. {{ T &amp;quot;translation_id&amp;quot; }}.
-For more information about string translations, see Translation of Strings in Multilingual Mode.</description>
+{{ i18n &amp;quot;translation_id&amp;quot; }}   T is an alias to i18n. E.g. {{ T &amp;quot;translation_id&amp;quot; }}.
+  For more information about string translations, see Translation of Strings in Multilingual Mode.</description>
     </item>
     
     <item>
@@ -740,11 +740,11 @@ Remember to pass the output of this to safeHTML if fully un-escaped characters a
       <pubDate>Wed, 01 Feb 2017 00:00:00 +0000</pubDate>
       
       <guid>https://gohugo.io/functions/images/</guid>
-      <description>Image Filters See images.Filter for how to apply these filters to an image.
-Overlay New in v0.80.0 Overlay creates a filter that overlays the source image at position x y, e.g:
+      <description>Image Filters  See images.Filter for how to apply these filters to an image.
+Overlay  New in v0.80.0  Overlay creates a filter that overlays the source image at position x y, e.g:
 {{$logoFilter:=(images.Overlay$logo5050)}} {{$img:=$img|images.Filter$logoFilter}} A shorter version of the above, if you only need to apply the filter once:
 {{$img:=$img.Filter(images.Overlay$logo5050)}} The above will overlay $logo in the upper left corner of $img (at position x=50, y=50).
-Brightness Brightness creates a filter that changes the brightness of an image.</description>
+Brightness  Brightness creates a filter that changes the brightness of an image.</description>
     </item>
     
     <item>
@@ -755,7 +755,7 @@ Brightness Brightness creates a filter that changes the brightness of an image.
       <guid>https://gohugo.io/functions/in/</guid>
       <description>The elements supported are strings, integers and floats, although only float64 will match as expected.
 In addition, in can also check if a substring exists in a string.
-{{ if in .Params.tags &amp;quot;Git&amp;quot; }}Follow me on GitHub!{{ end }}{{ if in &amp;quot;this string contains a substring&amp;quot; &amp;quot;substring&amp;quot; }}Substring found!{{ end }}</description>
+{{ if in .Params.tags &amp;quot;Git&amp;quot; }}Follow me on GitHub!{{ end }} {{ if in &amp;quot;this string contains a substring&amp;quot; &amp;quot;substring&amp;quot; }}Substring found!{{ end }} </description>
     </item>
     
     <item>
@@ -766,7 +766,7 @@ In addition, in can also check if a substring exists in a string.
       <guid>https://gohugo.io/functions/index-function/</guid>
       <description>The index functions returns the result of indexing its first argument by the following arguments. Each indexed item must be a map or a slice, e.g.:
 {{$slice:=slice&amp;#34;a&amp;#34;&amp;#34;b&amp;#34;&amp;#34;c&amp;#34;}}{{index$slice1}}=&amp;gt; b {{$map:=dict&amp;#34;a&amp;#34;100&amp;#34;b&amp;#34;200}}{{index$map&amp;#34;b&amp;#34;}}=&amp;gt; 200 The function takes multiple indices as arguments, and this can be used to get nested values, e.g.:
-{{$map:=dict&amp;#34;a&amp;#34;100&amp;#34;b&amp;#34;200&amp;#34;c&amp;#34;(slice102030)}}{{index$map&amp;#34;c&amp;#34;1}}=&amp;gt; 20 {{$map:=dict&amp;#34;a&amp;#34;100&amp;#34;b&amp;#34;200&amp;#34;c&amp;#34;(dict&amp;#34;d&amp;#34;10&amp;#34;e&amp;#34;20)}}{{index$map&amp;#34;c&amp;#34;&amp;#34;e&amp;#34;}}=&amp;gt; 20 Example: Load Data from a Path Based on Front Matter Params Assume you want to add a location = &amp;quot;&amp;quot; field to your front matter for every article written in content/vacations/.</description>
+{{$map:=dict&amp;#34;a&amp;#34;100&amp;#34;b&amp;#34;200&amp;#34;c&amp;#34;(slice102030)}}{{index$map&amp;#34;c&amp;#34;1}}=&amp;gt; 20 {{$map:=dict&amp;#34;a&amp;#34;100&amp;#34;b&amp;#34;200&amp;#34;c&amp;#34;(dict&amp;#34;d&amp;#34;10&amp;#34;e&amp;#34;20)}}{{index$map&amp;#34;c&amp;#34;&amp;#34;e&amp;#34;}}=&amp;gt; 20 Example: Load Data from a Path Based on Front Matter Params  Assume you want to add a location = &amp;quot;&amp;quot; field to your front matter for every article written in content/vacations/.</description>
     </item>
     
     <item>
@@ -776,7 +776,7 @@ In addition, in can also check if a substring exists in a string.
       
       <guid>https://gohugo.io/functions/int/</guid>
       <description>Useful for turning strings into numbers.
-{{ int &amp;quot;123&amp;quot; }} → 123If the input string is supposed to represent a decimal number, and if it has leading 0&amp;rsquo;s, then those 0&amp;rsquo;s will have to be removed before passing the string to the int function, else that string will be tried to be parsed as an octal number representation.
+{{ int &amp;quot;123&amp;quot; }} → 123   If the input string is supposed to represent a decimal number, and if it has leading 0&amp;rsquo;s, then those 0&amp;rsquo;s will have to be removed before passing the string to the int function, else that string will be tried to be parsed as an octal number representation.
 The strings.TrimLeft function can be used for this purpose.</description>
     </item>
     
@@ -787,7 +787,7 @@ The strings.TrimLeft function can be used for this purpose.</description>
       
       <guid>https://gohugo.io/functions/intersect/</guid>
       <description>An useful example is to use it as AND filters when combined with where:
-AND filter in where query {{ $pages := where .Site.RegularPages &amp;quot;Type&amp;quot; &amp;quot;not in&amp;quot; (slice &amp;quot;page&amp;quot; &amp;quot;about&amp;quot;) }}{{ $pages := $pages | union (where .Site.RegularPages &amp;quot;Params.pinned&amp;quot; true) }}{{ $pages := $pages | intersect (where .Site.RegularPages &amp;quot;Params.images&amp;quot; &amp;quot;!=&amp;quot; nil) }}The above fetches regular pages not of page or about type unless they are pinned. And finally, we exclude all pages with no images set in Page params.</description>
+AND filter in where query  {{ $pages := where .Site.RegularPages &amp;quot;Type&amp;quot; &amp;quot;not in&amp;quot; (slice &amp;quot;page&amp;quot; &amp;quot;about&amp;quot;) }} {{ $pages := $pages | union (where .Site.RegularPages &amp;quot;Params.pinned&amp;quot; true) }} {{ $pages := $pages | intersect (where .Site.RegularPages &amp;quot;Params.images&amp;quot; &amp;quot;!=&amp;quot; nil) }} The above fetches regular pages not of page or about type unless they are pinned. And finally, we exclude all pages with no images set in Page params.</description>
     </item>
     
     <item>
@@ -797,7 +797,7 @@ AND filter in where query {{ $pages := where .Site.RegularPages &amp;quot;Type&
       
       <guid>https://gohugo.io/functions/isset/</guid>
       <description>Takes either a slice, array, or channel and an index or a map and a key as input.
-{{ if isset .Params &amp;quot;project_url&amp;quot; }} {{ index .Params &amp;quot;project_url&amp;quot; }}{{ end }}All site-level configuration keys are stored as lower case. Therefore, a myParam key-value set in your site configuration file needs to be accessed with {{if isset .Site.Params &amp;quot;myparam&amp;quot;}} and not with {{if isset .Site.Params &amp;quot;myParam&amp;quot;}}. Note that you can still access the same config key with .</description>
+{{ if isset .Params &amp;quot;project_url&amp;quot; }} {{ index .Params &amp;quot;project_url&amp;quot; }}{{ end }}   All site-level configuration keys are stored as lower case. Therefore, a myParam key-value set in your site configuration file needs to be accessed with {{if isset .Site.Params &amp;quot;myparam&amp;quot;}} and not with {{if isset .Site.Params &amp;quot;myParam&amp;quot;}}. Note that you can still access the same config key with .</description>
     </item>
     
     <item>
@@ -808,7 +808,7 @@ AND filter in where query {{ $pages := where .Site.RegularPages &amp;quot;Type&
       <guid>https://gohugo.io/functions/jsonify/</guid>
       <description>Jsonify encodes a given object to JSON.
 To customize the printing of the JSON, pass a dictionary of options as the first argument. Supported options are &amp;ldquo;prefix&amp;rdquo; and &amp;ldquo;indent&amp;rdquo;. Each JSON element in the output will begin on a new line beginning with prefix followed by one or more copies of indent according to the indentation nesting.
-{{ dict &amp;quot;title&amp;quot; .Title &amp;quot;content&amp;quot; .Plain | jsonify }}{{ dict &amp;quot;title&amp;quot; .Title &amp;quot;content&amp;quot; .</description>
+{{ dict &amp;quot;title&amp;quot; .Title &amp;quot;content&amp;quot; .Plain | jsonify }} {{ dict &amp;quot;title&amp;quot; .Title &amp;quot;content&amp;quot; .</description>
     </item>
     
     <item>
@@ -817,7 +817,7 @@ To customize the printing of the JSON, pass a dictionary of options as the first
       <pubDate>Wed, 01 Feb 2017 00:00:00 +0000</pubDate>
       
       <guid>https://gohugo.io/functions/last/</guid>
-      <description>{{ range last 10 .Pages }}{{ .Render &amp;quot;summary&amp;quot; }}{{ end }}</description>
+      <description>{{ range last 10 .Pages }} {{ .Render &amp;quot;summary&amp;quot; }} {{ end }} </description>
     </item>
     
     <item>
@@ -840,7 +840,7 @@ Channel: the number of elements queued (unread) in the channel buffer; if v is n
       <pubDate>Wed, 01 Feb 2017 00:00:00 +0000</pubDate>
       
       <guid>https://gohugo.io/functions/lower/</guid>
-      <description>{{lower &amp;quot;BatMan&amp;quot;}} → &amp;quot;batman&amp;quot;</description>
+      <description>{{lower &amp;quot;BatMan&amp;quot;}} → &amp;quot;batman&amp;quot; </description>
     </item>
     
     <item>
@@ -849,7 +849,7 @@ Channel: the number of elements queued (unread) in the channel buffer; if v is n
       <pubDate>Wed, 01 Feb 2017 00:00:00 +0000</pubDate>
       
       <guid>https://gohugo.io/functions/markdownify/</guid>
-      <description>{{ .Title | markdownify }}Note: if you need Render Hooks, which markdownify doesn&amp;rsquo;t currently support, use .RenderString instead.</description>
+      <description>{{ .Title | markdownify }} Note: if you need Render Hooks, which markdownify doesn&amp;rsquo;t currently support, use .RenderString instead.</description>
     </item>
     
     <item>
@@ -867,8 +867,8 @@ Channel: the number of elements queued (unread) in the channel buffer; if v is n
       <pubDate>Wed, 01 Feb 2017 00:00:00 +0000</pubDate>
       
       <guid>https://gohugo.io/functions/md5/</guid>
-      <description>{{ md5 &amp;quot;Hello world, gophers!&amp;quot; }}&amp;lt;!-- returns the string &amp;quot;b3029f756f98f79e7f1b7f1d1f0dd53b&amp;quot; --&amp;gt;This can be useful if you want to use Gravatar for generating a unique avatar:
-&amp;lt;img src=&amp;quot;https://www.gravatar.com/avatar/{{ md5 &amp;quot;your@email.com&amp;quot; }}?s=100&amp;amp;d=identicon&amp;quot;&amp;gt;</description>
+      <description>{{ md5 &amp;quot;Hello world, gophers!&amp;quot; }} &amp;lt;!-- returns the string &amp;quot;b3029f756f98f79e7f1b7f1d1f0dd53b&amp;quot; --&amp;gt; This can be useful if you want to use Gravatar for generating a unique avatar:
+&amp;lt;img src=&amp;quot;https://www.gravatar.com/avatar/{{ md5 &amp;quot;your@email.com&amp;quot; }}?s=100&amp;amp;d=identicon&amp;quot;&amp;gt; </description>
     </item>
     
     <item>
@@ -879,9 +879,9 @@ Channel: the number of elements queued (unread) in the channel buffer; if v is n
       <guid>https://gohugo.io/functions/now/</guid>
       <description>See time.Time.
 For example, building your site on June 24, 2017, with the following templating:
-&amp;lt;div&amp;gt;&amp;lt;small&amp;gt;&amp;amp;copy; {{ now.Format &amp;quot;2006&amp;quot;}}&amp;lt;/small&amp;gt;&amp;lt;/div&amp;gt;would produce the following:
-&amp;lt;div&amp;gt;&amp;lt;small&amp;gt;&amp;amp;copy; 2017&amp;lt;/small&amp;gt;&amp;lt;/div&amp;gt;The above example uses the .Format function, which page includes a full listing of date formatting using Go&amp;rsquo;s layout string.
-Older Hugo themes may still be using the obsolete Page’s .Now (uppercase with leading dot), which causes build error that looks like the following:</description>
+&amp;lt;div&amp;gt; &amp;lt;small&amp;gt;&amp;amp;copy; {{ now.Format &amp;quot;2006&amp;quot;}}&amp;lt;/small&amp;gt; &amp;lt;/div&amp;gt; would produce the following:
+&amp;lt;div&amp;gt; &amp;lt;small&amp;gt;&amp;amp;copy; 2017&amp;lt;/small&amp;gt; &amp;lt;/div&amp;gt; The above example uses the .Format function, which page includes a full listing of date formatting using Go&amp;rsquo;s layout string.
+ Older Hugo themes may still be using the obsolete Page’s .Now (uppercase with leading dot), which causes build error that looks like the following:</description>
     </item>
     
     <item>
@@ -893,7 +893,7 @@ For example, building your site on June 24, 2017, with the following templating:
       <description>The partialCached template function can offer significant performance gains for complex templates that don&amp;rsquo;t need to be re-rendered on every invocation.
 Note: Each Site (or language) has its own partialCached cache, so each site will execute a partial once.
 Here is the simplest usage:
-{{ partialCached &amp;quot;footer.html&amp;quot; . }}You can also pass additional parameters to partialCached to create variants of the cached partial. For example, if you have a complex partial that should be identical when rendered for pages within the same section, you could use a variant based upon section so that the partial is only rendered once per section:</description>
+{{ partialCached &amp;quot;footer.html&amp;quot; . }} You can also pass additional parameters to partialCached to create variants of the cached partial. For example, if you have a complex partial that should be identical when rendered for pages within the same section, you could use a variant based upon section so that the partial is only rendered once per section:</description>
     </item>
     
     <item>
@@ -902,7 +902,7 @@ Here is the simplest usage:
       <pubDate>Wed, 01 Feb 2017 00:00:00 +0000</pubDate>
       
       <guid>https://gohugo.io/functions/plainify/</guid>
-      <description>{{ &amp;quot;&amp;lt;b&amp;gt;BatMan&amp;lt;/b&amp;gt;&amp;quot; | plainify }} → &amp;quot;BatMan&amp;quot;See also the .PlainWords, .Plain, and .RawContent page variables.</description>
+      <description>{{ &amp;quot;&amp;lt;b&amp;gt;BatMan&amp;lt;/b&amp;gt;&amp;quot; | plainify }} → &amp;quot;BatMan&amp;quot; See also the .PlainWords, .Plain, and .RawContent page variables.</description>
     </item>
     
     <item>
@@ -911,7 +911,7 @@ Here is the simplest usage:
       <pubDate>Wed, 01 Feb 2017 00:00:00 +0000</pubDate>
       
       <guid>https://gohugo.io/functions/pluralize/</guid>
-      <description>{{ &amp;quot;cat&amp;quot; | pluralize }} → &amp;quot;cats&amp;quot;</description>
+      <description>{{ &amp;quot;cat&amp;quot; | pluralize }} → &amp;quot;cats&amp;quot; </description>
     </item>
     
     <item>
@@ -921,7 +921,7 @@ Here is the simplest usage:
       
       <guid>https://gohugo.io/functions/print/</guid>
       <description>See the go doc for additional information.
-{{ print &amp;quot;foo&amp;quot; }} → &amp;quot;foo&amp;quot;{{ print &amp;quot;foo&amp;quot; &amp;quot;bar&amp;quot; }} → &amp;quot;foobar&amp;quot;{{ print (slice 1 2 3) }} → [1 2 3]</description>
+{{ print &amp;quot;foo&amp;quot; }} → &amp;quot;foo&amp;quot; {{ print &amp;quot;foo&amp;quot; &amp;quot;bar&amp;quot; }} → &amp;quot;foobar&amp;quot; {{ print (slice 1 2 3) }} → [1 2 3] </description>
     </item>
     
     <item>
@@ -931,7 +931,7 @@ Here is the simplest usage:
       
       <guid>https://gohugo.io/functions/printf/</guid>
       <description>See the go doc for additional information.
-{{ i18n ( printf &amp;quot;combined_%s&amp;quot; $var ) }}{{ printf &amp;quot;formatted %.2f&amp;quot; 3.1416 }}</description>
+{{ i18n ( printf &amp;quot;combined_%s&amp;quot; $var ) }} {{ printf &amp;quot;formatted %.2f&amp;quot; 3.1416 }} </description>
     </item>
     
     <item>
@@ -941,7 +941,7 @@ Here is the simplest usage:
       
       <guid>https://gohugo.io/functions/println/</guid>
       <description>See the go doc for additional information. \n denotes the linebreak but isn&amp;rsquo;t printed in the templates as seen below:
-{{ println &amp;quot;foo&amp;quot; }} → &amp;quot;foo\n&amp;quot;</description>
+{{ println &amp;quot;foo&amp;quot; }} → &amp;quot;foo\n&amp;quot; </description>
     </item>
     
     <item>
@@ -973,7 +973,7 @@ range is fundamental to templating in Hugo. (See the Introduction to Hugo Templa
       
       <guid>https://gohugo.io/functions/readdir/</guid>
       <description>If your current project working directory has a single file named README.txt:
-{{ range (readDir &amp;quot;.&amp;quot;) }}{{ .Name }}{{ end }} → &amp;quot;README.txt&amp;quot;For more information on using readDir and readFile in your templates, see Local File Templates.</description>
+{{ range (readDir &amp;quot;.&amp;quot;) }}{{ .Name }}{{ end }} → &amp;quot;README.txt&amp;quot; For more information on using readDir and readFile in your templates, see Local File Templates.</description>
     </item>
     
     <item>
@@ -984,7 +984,7 @@ range is fundamental to templating in Hugo. (See the Introduction to Hugo Templa
       <guid>https://gohugo.io/functions/readfile/</guid>
       <description>Note that the filename must be relative to the current project working directory, or the project&amp;rsquo;s /content folder.
 So, if you have a file with the name README.txt in the root of your project with the content Hugo Rocks!:
-{{readFile &amp;quot;README.txt&amp;quot;}} → &amp;quot;Hugo Rocks!&amp;quot;If you receive a &amp;ldquo;file doesn&amp;rsquo;t exist&amp;rdquo; error with a path listed, do take note that the path is the last one checked by the function, and may not accurately reflect your target.</description>
+{{readFile &amp;quot;README.txt&amp;quot;}} → &amp;quot;Hugo Rocks!&amp;quot; If you receive a &amp;ldquo;file doesn&amp;rsquo;t exist&amp;rdquo; error with a path listed, do take note that the path is the last one checked by the function, and may not accurately reflect your target.</description>
     </item>
     
     <item>
@@ -1005,7 +1005,7 @@ So, if you have a file with the name README.txt in the root of your project with
       <guid>https://gohugo.io/functions/rellangurl/</guid>
       <description>absLangURL and relLangURL functions are similar to their absURL and relURL relatives but will add the correct language prefix when the site is configured with more than one language. (See Configuring Multilingual.)
 So for a site baseURL set to https://example.com/hugo/ and the current language is en:
-{{ &amp;quot;blog/&amp;quot; | absLangURL }} → &amp;quot;https://example.com/hugo/en/blog/&amp;quot;{{ &amp;quot;blog/&amp;quot; | relLangURL }} → &amp;quot;/hugo/en/blog/&amp;quot;</description>
+{{ &amp;quot;blog/&amp;quot; | absLangURL }} → &amp;quot;https://example.com/hugo/en/blog/&amp;quot; {{ &amp;quot;blog/&amp;quot; | relLangURL }} → &amp;quot;/hugo/en/blog/&amp;quot; </description>
     </item>
     
     <item>
@@ -1025,7 +1025,7 @@ So for a site baseURL set to https://example.com/hugo/ and the current language 
       
       <guid>https://gohugo.io/functions/relurl/</guid>
       <description>Both absURL and relURL consider the configured value of baseURL in your site&amp;rsquo;s config file. Given a baseURL set to https://example.com/hugo/:
-{{ &amp;quot;mystyle.css&amp;quot; | absURL }} → &amp;quot;https://example.com/hugo/mystyle.css&amp;quot;{{ &amp;quot;mystyle.css&amp;quot; | relURL }} → &amp;quot;/hugo/mystyle.css&amp;quot;{{ &amp;quot;http://gohugo.io/&amp;quot; | relURL }} → &amp;quot;http://gohugo.io/&amp;quot;{{ &amp;quot;http://gohugo.io/&amp;quot; | absURL }} → &amp;quot;http://gohugo.io/&amp;quot;The last two examples may look strange but can be very useful. For example, the following shows how to use absURL in JSON-LD structured data for SEO where some of your images for a piece of content may or may not be hosted locally:</description>
+{{ &amp;quot;mystyle.css&amp;quot; | absURL }} → &amp;quot;https://example.com/hugo/mystyle.css&amp;quot; {{ &amp;quot;mystyle.css&amp;quot; | relURL }} → &amp;quot;/hugo/mystyle.css&amp;quot; {{ &amp;quot;http://gohugo.io/&amp;quot; | relURL }} → &amp;quot;http://gohugo.io/&amp;quot; {{ &amp;quot;http://gohugo.io/&amp;quot; | absURL }} → &amp;quot;http://gohugo.io/&amp;quot; The last two examples may look strange but can be very useful. For example, the following shows how to use absURL in JSON-LD structured data for SEO where some of your images for a piece of content may or may not be hosted locally:</description>
     </item>
     
     <item>
@@ -1035,7 +1035,7 @@ So for a site baseURL set to https://example.com/hugo/ and the current language 
       
       <guid>https://gohugo.io/functions/replace/</guid>
       <description>Replace returns a copy of INPUT with all occurrences of OLD replaced with NEW. The number of replacements can be limited with an optional LIMIT parameter.
-`{{ replace &amp;quot;Batman and Robin&amp;quot; &amp;quot;Robin&amp;quot; &amp;quot;Catwoman&amp;quot; }}`→ &amp;quot;Batman and Catwoman&amp;quot;{{ replace &amp;quot;aabbaabb&amp;quot; &amp;quot;a&amp;quot; &amp;quot;z&amp;quot; 2 }} → &amp;quot;zzbbaabb&amp;quot;</description>
+`{{ replace &amp;quot;Batman and Robin&amp;quot; &amp;quot;Robin&amp;quot; &amp;quot;Catwoman&amp;quot; }}` → &amp;quot;Batman and Catwoman&amp;quot; {{ replace &amp;quot;aabbaabb&amp;quot; &amp;quot;a&amp;quot; &amp;quot;z&amp;quot; 2 }} → &amp;quot;zzbbaabb&amp;quot; </description>
     </item>
     
     <item>
@@ -1045,7 +1045,7 @@ So for a site baseURL set to https://example.com/hugo/ and the current language 
       
       <guid>https://gohugo.io/functions/replacere/</guid>
       <description>strings.ReplaceRE returns a copy of INPUT, replacing all matches of the regular expression PATTERN with the replacement text REPLACEMENT. The number of replacements can be limited with an optional LIMIT parameter.
-{{ replaceRE &amp;quot;^https?://([^/]+).*&amp;quot; &amp;quot;$1&amp;quot; &amp;quot;http://gohugo.io/docs&amp;quot; }}` → &amp;quot;gohugo.io&amp;quot;{{ &amp;quot;http://gohugo.io/docs&amp;quot; | replaceRE &amp;quot;^https?://([^/]+).*&amp;quot; &amp;quot;$1&amp;quot; }}` → &amp;quot;gohugo.io&amp;quot;{{ replaceRE &amp;quot;a+b&amp;quot; &amp;quot;X&amp;quot; &amp;quot;aabbaabbab&amp;quot; 1 }} → &amp;quot;Xbaabbab&amp;quot;Hugo uses Go&amp;rsquo;s Regular Expression package, which is the same general syntax used by Perl, Python, and other languages but with a few minor differences for those coming from a background in PCRE.</description>
+{{ replaceRE &amp;quot;^https?://([^/]+).*&amp;quot; &amp;quot;$1&amp;quot; &amp;quot;http://gohugo.io/docs&amp;quot; }}` → &amp;quot;gohugo.io&amp;quot; {{ &amp;quot;http://gohugo.io/docs&amp;quot; | replaceRE &amp;quot;^https?://([^/]+).*&amp;quot; &amp;quot;$1&amp;quot; }}` → &amp;quot;gohugo.io&amp;quot; {{ replaceRE &amp;quot;a+b&amp;quot; &amp;quot;X&amp;quot; &amp;quot;aabbaabbab&amp;quot; 1 }} → &amp;quot;Xbaabbab&amp;quot;   Hugo uses Go&amp;rsquo;s Regular Expression package, which is the same general syntax used by Perl, Python, and other languages but with a few minor differences for those coming from a background in PCRE.</description>
     </item>
     
     <item>
@@ -1067,7 +1067,7 @@ So for a site baseURL set to https://example.com/hugo/ and the current language 
       <guid>https://gohugo.io/functions/safehtml/</guid>
       <description>It should not be used for HTML from a third-party, or HTML with unclosed tags or comments.
 Given a site-wide config.toml with the following copyright value:
-config.yaml&amp;nbsp;toml&amp;nbsp;json&amp;nbsp;copyright:© 2015 Jane Doe. &amp;lt;a href=&amp;#34;https://creativecommons.org/licenses/by/4.0/&amp;#34;&amp;gt;Somerights reserved&amp;lt;/a&amp;gt;.copyright = &amp;#39;© 2015 Jane Doe. &amp;lt;a href=&amp;#34;https://creativecommons.org/licenses/by/4.0/&amp;#34;&amp;gt;Some rights reserved&amp;lt;/a&amp;gt;.&amp;#39; { &amp;#34;copyright&amp;#34;: &amp;#34;© 2015 Jane Doe. \u003ca href=\&amp;#34;https://creativecommons.org/licenses/by/4.0/\&amp;#34;\u003eSome rights reserved\u003c/a\u003e.&amp;#34; } {{ .</description>
+config.  yaml  &amp;nbsp; toml  &amp;nbsp; json  &amp;nbsp;  copyright:© 2015 Jane Doe. &amp;lt;a href=&amp;#34;https://creativecommons.org/licenses/by/4.0/&amp;#34;&amp;gt;Somerights reserved&amp;lt;/a&amp;gt;.   copyright = &amp;#34;© 2015 Jane Doe. &amp;lt;a href=\&amp;#34;https://creativecommons.org/licenses/by/4.0/\&amp;#34;&amp;gt;Some rights reserved&amp;lt;/a&amp;gt;.&amp;#34;    { &amp;#34;copyright&amp;#34;: &amp;#34;© 2015 Jane Doe. \u003ca href=\&amp;#34;https://creativecommons.org/licenses/by/4.0/\&amp;#34;\u003eSome rights reserved\u003c/a\u003e.&amp;#34; }      {{ .</description>
     </item>
     
     <item>
@@ -1077,7 +1077,7 @@ config.yaml&amp;nbsp;toml&amp;nbsp;json&amp;nbsp;copyright:© 2015 J
       
       <guid>https://gohugo.io/functions/safehtmlattr/</guid>
       <description>Example: Given a site-wide config.toml that contains this menu entry:
-config.yaml&amp;nbsp;toml&amp;nbsp;json&amp;nbsp;menu:main:- name: &amp;#39;IRC:#golang at freenode&amp;#39;url:irc://irc.freenode.net/#golang[menu] [[menu.main]] name = &amp;#39;IRC: #golang at freenode&amp;#39; url = &amp;#39;irc://irc.freenode.net/#golang&amp;#39; { &amp;#34;menu&amp;#34;: { &amp;#34;main&amp;#34;: [ { &amp;#34;name&amp;#34;: &amp;#34;IRC: #golang at freenode&amp;#34;, &amp;#34;url&amp;#34;: &amp;#34;irc://irc.freenode.net/#golang&amp;#34; } ] } }  &amp;lt;a href=&amp;quot;{{ .URL }}&amp;quot;&amp;gt; → &amp;lt;a href=&amp;quot;#ZgotmplZ&amp;quot;&amp;gt; &amp;lt;a {{ printf &amp;quot;href=%q&amp;quot; .</description>
+config.  yaml  &amp;nbsp; toml  &amp;nbsp; json  &amp;nbsp;  menu:main:- name: &amp;#39;IRC:#golang at freenode&amp;#39;url:irc://irc.freenode.net/#golang   [menu] [[menu.main]] name = &amp;#34;IRC: #golang at freenode&amp;#34; url = &amp;#34;irc://irc.freenode.net/#golang&amp;#34;    { &amp;#34;menu&amp;#34;: { &amp;#34;main&amp;#34;: [ { &amp;#34;name&amp;#34;: &amp;#34;IRC: #golang at freenode&amp;#34;, &amp;#34;url&amp;#34;: &amp;#34;irc://irc.freenode.net/#golang&amp;#34; } ] } }       &amp;lt;a href=&amp;quot;{{ .URL }}&amp;quot;&amp;gt; → &amp;lt;a href=&amp;quot;#ZgotmplZ&amp;quot;&amp;gt; &amp;lt;a {{ printf &amp;quot;href=%q&amp;quot; .</description>
     </item>
     
     <item>
@@ -1108,8 +1108,8 @@ Without safeURL, only the URI schemes http:, https: and mailto: are considered s
       
       <guid>https://gohugo.io/functions/seq/</guid>
       <description>It&amp;rsquo;s named and used in the model of GNU&amp;rsquo;s seq.
-3 → 1, 2, 31 2 4 → 1, 3-3 → -1, -2, -31 4 → 1, 2, 3, 41 -2 → 1, 0, -1, -2Example: seq with range and after You can use seq in combination with range and after. The following will return 19 elements:
-{{ range after 1 (seq 20)}}{{ end }}However, when ranging with an index, the following may be less confusing in that $indexStartingAt1 and $num will return 1,2,3 .</description>
+3 → 1, 2, 3 1 2 4 → 1, 3 -3 → -1, -2, -3 1 4 → 1, 2, 3, 4 1 -2 → 1, 0, -1, -2 Example: seq with range and after  You can use seq in combination with range and after. The following will return 19 elements:
+{{ range after 1 (seq 20)}} {{ end }} However, when ranging with an index, the following may be less confusing in that $indexStartingAt1 and $num will return 1,2,3 .</description>
     </item>
     
     <item>
@@ -1119,8 +1119,8 @@ Without safeURL, only the URI schemes http:, https: and mailto: are considered s
       
       <guid>https://gohugo.io/functions/sha/</guid>
       <description>sha1 hashes the given input and returns its SHA1 checksum.
-{{ sha1 &amp;quot;Hello world, gophers!&amp;quot; }}&amp;lt;!-- returns the string &amp;quot;c8b5b0e33d408246e30f53e32b8f7627a7a649d4&amp;quot; --&amp;gt;sha256 hashes the given input and returns its SHA256 checksum.
-{{ sha256 &amp;quot;Hello world, gophers!&amp;quot; }}&amp;lt;!-- returns the string &amp;quot;6ec43b78da9669f50e4e422575c54bf87536954ccd58280219c393f2ce352b46&amp;quot; --&amp;gt;</description>
+{{ sha1 &amp;quot;Hello world, gophers!&amp;quot; }} &amp;lt;!-- returns the string &amp;quot;c8b5b0e33d408246e30f53e32b8f7627a7a649d4&amp;quot; --&amp;gt; sha256 hashes the given input and returns its SHA256 checksum.
+{{ sha256 &amp;quot;Hello world, gophers!&amp;quot; }} &amp;lt;!-- returns the string &amp;quot;6ec43b78da9669f50e4e422575c54bf87536954ccd58280219c393f2ce352b46&amp;quot; --&amp;gt; </description>
     </item>
     
     <item>
@@ -1129,8 +1129,8 @@ Without safeURL, only the URI schemes http:, https: and mailto: are considered s
       <pubDate>Wed, 01 Feb 2017 00:00:00 +0000</pubDate>
       
       <guid>https://gohugo.io/functions/shuffle/</guid>
-      <description>shuffle-input.html&amp;lt;!-- Shuffled sequence = --&amp;gt; &amp;lt;div&amp;gt;{{shuffle(seq15)}}&amp;lt;/div&amp;gt; &amp;lt;!-- Shuffled slice = --&amp;gt; &amp;lt;div&amp;gt;{{shuffle(slice&amp;#34;foo&amp;#34;&amp;#34;bar&amp;#34;&amp;#34;buzz&amp;#34;)}}&amp;lt;/div&amp;gt; This example would return the following:
-shuffle-output.html&amp;lt;!-- Shuffled sequence = --&amp;gt;&amp;lt;div&amp;gt;2 5 3 1 4&amp;lt;/div&amp;gt;&amp;lt;!-- Shuffled slice = --&amp;gt;&amp;lt;div&amp;gt;buzz foo bar&amp;lt;/div&amp;gt; This example also makes use of the slice and seq functions.</description>
+      <description>shuffle-input.html  &amp;lt;!-- Shuffled sequence = --&amp;gt; &amp;lt;div&amp;gt;{{shuffle(seq15)}}&amp;lt;/div&amp;gt; &amp;lt;!-- Shuffled slice = --&amp;gt; &amp;lt;div&amp;gt;{{shuffle(slice&amp;#34;foo&amp;#34;&amp;#34;bar&amp;#34;&amp;#34;buzz&amp;#34;)}}&amp;lt;/div&amp;gt;   This example would return the following:
+shuffle-output.html  &amp;lt;!-- Shuffled sequence = --&amp;gt; &amp;lt;div&amp;gt;2 5 3 1 4&amp;lt;/div&amp;gt; &amp;lt;!-- Shuffled slice = --&amp;gt; &amp;lt;div&amp;gt;buzz foo bar&amp;lt;/div&amp;gt;    This example also makes use of the slice and seq functions.</description>
     </item>
     
     <item>
@@ -1150,7 +1150,7 @@ See also the .Data.Singular taxonomy variable for singularizing taxonomy names.<
       
       <guid>https://gohugo.io/functions/slice/</guid>
       <description>One use case is the concatenation of elements in combination with the delimit function:
-slice.html{{delimit(slice&amp;#34;foo&amp;#34;&amp;#34;bar&amp;#34;&amp;#34;buzz&amp;#34;)&amp;#34;, &amp;#34;}} &amp;lt;!-- returns the string &amp;#34;foo, bar, buzz&amp;#34; --&amp;gt; </description>
+slice.html  {{delimit(slice&amp;#34;foo&amp;#34;&amp;#34;bar&amp;#34;&amp;#34;buzz&amp;#34;)&amp;#34;, &amp;#34;}} &amp;lt;!-- returns the string &amp;#34;foo, bar, buzz&amp;#34; --&amp;gt;   </description>
     </item>
     
     <item>
@@ -1170,7 +1170,7 @@ slice.html{{delimit(slice&amp;#34;foo&amp;#34;&amp;#34;bar&amp;#34;&amp;#34;bu
       
       <guid>https://gohugo.io/functions/sort/</guid>
       <description>A sorted array of map values will be returned with the keys eliminated. There are two optional arguments: sortByField and sortAsc. If left blank, sort will sort by keys (for maps) in ascending order as its default behavior.
----tags: [&amp;quot;tag3&amp;quot;, &amp;quot;tag1&amp;quot;, &amp;quot;tag2&amp;quot;]---// Site config+++[params.authors][params.authors.Joe]firstName = &amp;quot;Joe&amp;quot;lastName = &amp;quot;Bergevin&amp;quot;[params.authors.Derek]firstName = &amp;quot;Derek&amp;quot;lastName = &amp;quot;Perkins&amp;quot;[params.authors.Tanner]firstName = &amp;quot;Tanner&amp;quot;lastName = &amp;quot;Linsley&amp;quot;+++// Sort by value, ascending (default for lists)Tags: {{ range sort .</description>
+--- tags: [&amp;quot;tag3&amp;quot;, &amp;quot;tag1&amp;quot;, &amp;quot;tag2&amp;quot;] --- // Site config +++ [params.authors] [params.authors.Joe] firstName = &amp;quot;Joe&amp;quot; lastName = &amp;quot;Bergevin&amp;quot; [params.authors.Derek] firstName = &amp;quot;Derek&amp;quot; lastName = &amp;quot;Perkins&amp;quot; [params.authors.Tanner] firstName = &amp;quot;Tanner&amp;quot; lastName = &amp;quot;Linsley&amp;quot; +++ // Sort by value, ascending (default for lists) Tags: {{ range sort .</description>
     </item>
     
     <item>
@@ -1198,8 +1198,8 @@ slice.html{{delimit(slice&amp;#34;foo&amp;#34;&amp;#34;bar&amp;#34;&amp;#34;bu
       
       <guid>https://gohugo.io/functions/strings.trimleft/</guid>
       <description>Given the string &amp;quot;abba&amp;quot;, leading &amp;quot;a&amp;quot;&amp;rsquo;s can be removed a follows:
-{{ strings.TrimLeft &amp;quot;a&amp;quot; &amp;quot;abba&amp;quot; }} → &amp;quot;bba&amp;quot; Numbers can be handled as well:
-{{ strings.TrimLeft 12 1221341221 }} → &amp;quot;341221&amp;quot; </description>
+{{ strings.TrimLeft &amp;quot;a&amp;quot; &amp;quot;abba&amp;quot; }} → &amp;quot;bba&amp;quot;  Numbers can be handled as well:
+{{ strings.TrimLeft 12 1221341221 }} → &amp;quot;341221&amp;quot;  </description>
     </item>
     
     <item>
@@ -1209,7 +1209,7 @@ slice.html{{delimit(slice&amp;#34;foo&amp;#34;&amp;#34;bar&amp;#34;&amp;#34;bu
       
       <guid>https://gohugo.io/functions/strings.trimprefix/</guid>
       <description>Given the string &amp;quot;aabbaa&amp;quot;, the specified prefix is only removed if &amp;quot;aabbaa&amp;quot; starts with it:
-{{ strings.TrimPrefix &amp;quot;a&amp;quot; &amp;quot;aabbaa&amp;quot; }} → &amp;quot;abbaa&amp;quot;{{ strings.TrimPrefix &amp;quot;aa&amp;quot; &amp;quot;aabbaa&amp;quot; }} → &amp;quot;bbaa&amp;quot;{{ strings.TrimPrefix &amp;quot;aaa&amp;quot; &amp;quot;aabbaa&amp;quot; }} → &amp;quot;aabbaa&amp;quot; </description>
+{{ strings.TrimPrefix &amp;quot;a&amp;quot; &amp;quot;aabbaa&amp;quot; }} → &amp;quot;abbaa&amp;quot; {{ strings.TrimPrefix &amp;quot;aa&amp;quot; &amp;quot;aabbaa&amp;quot; }} → &amp;quot;bbaa&amp;quot; {{ strings.TrimPrefix &amp;quot;aaa&amp;quot; &amp;quot;aabbaa&amp;quot; }} → &amp;quot;aabbaa&amp;quot; </description>
     </item>
     
     <item>
@@ -1219,8 +1219,8 @@ slice.html{{delimit(slice&amp;#34;foo&amp;#34;&amp;#34;bar&amp;#34;&amp;#34;bu
       
       <guid>https://gohugo.io/functions/strings.trimright/</guid>
       <description>Given the string &amp;quot;abba&amp;quot;, trailing &amp;quot;a&amp;quot;&amp;rsquo;s can be removed a follows:
-{{ strings.TrimRight &amp;quot;a&amp;quot; &amp;quot;abba&amp;quot; }} → &amp;quot;abb&amp;quot; Numbers can be handled as well:
-{{ strings.TrimRight 12 1221341221 }} → &amp;quot;122134&amp;quot; </description>
+{{ strings.TrimRight &amp;quot;a&amp;quot; &amp;quot;abba&amp;quot; }} → &amp;quot;abb&amp;quot;  Numbers can be handled as well:
+{{ strings.TrimRight 12 1221341221 }} → &amp;quot;122134&amp;quot;  </description>
     </item>
     
     <item>
@@ -1230,7 +1230,7 @@ slice.html{{delimit(slice&amp;#34;foo&amp;#34;&amp;#34;bar&amp;#34;&amp;#34;bu
       
       <guid>https://gohugo.io/functions/strings.trimsuffix/</guid>
       <description>Given the string &amp;quot;aabbaa&amp;quot;, the specified suffix is only removed if &amp;quot;aabbaa&amp;quot; ends with it:
-{{ strings.TrimSuffix &amp;quot;a&amp;quot; &amp;quot;aabbaa&amp;quot; }} → &amp;quot;aabba&amp;quot;{{ strings.TrimSuffix &amp;quot;aa&amp;quot; &amp;quot;aabbaa&amp;quot; }} → &amp;quot;aabb&amp;quot;{{ strings.TrimSuffix &amp;quot;aaa&amp;quot; &amp;quot;aabbaa&amp;quot; }} → &amp;quot;aabbaa&amp;quot; </description>
+{{ strings.TrimSuffix &amp;quot;a&amp;quot; &amp;quot;aabbaa&amp;quot; }} → &amp;quot;aabba&amp;quot; {{ strings.TrimSuffix &amp;quot;aa&amp;quot; &amp;quot;aabbaa&amp;quot; }} → &amp;quot;aabb&amp;quot; {{ strings.TrimSuffix &amp;quot;aaa&amp;quot; &amp;quot;aabbaa&amp;quot; }} → &amp;quot;aabbaa&amp;quot; </description>
     </item>
     
     <item>
@@ -1251,7 +1251,7 @@ In addition, borrowing from the extended behavior described at https://php.net s
       
       <guid>https://gohugo.io/functions/time/</guid>
       <description>time converts a timestamp string with an optional default location into a time.Time structure so you can access its fields:
-{{ time &amp;quot;2016-05-28&amp;quot; }} → &amp;quot;2016-05-28T00:00:00Z&amp;quot;{{ (time &amp;quot;2016-05-28&amp;quot;).YearDay }} → 149{{ mul 1000 (time &amp;quot;2016-05-28T10:30:00.00+10:00&amp;quot;).Unix }} → 1464395400000, or Unix time in millisecondsUsing Locations The optional TIMEZONE parameter is a string that sets a default time zone (or more specific, the location, which represents the collection of time offsets in a geographical area) that is associated with the specified time value.</description>
+{{ time &amp;quot;2016-05-28&amp;quot; }} → &amp;quot;2016-05-28T00:00:00Z&amp;quot; {{ (time &amp;quot;2016-05-28&amp;quot;).YearDay }} → 149 {{ mul 1000 (time &amp;quot;2016-05-28T10:30:00.00+10:00&amp;quot;).Unix }} → 1464395400000, or Unix time in milliseconds Using Locations  The optional TIMEZONE parameter is a string that sets a default time zone (or more specific, the location, which represents the collection of time offsets in a geographical area) that is associated with the specified time value.</description>
     </item>
     
     <item>
@@ -1261,7 +1261,7 @@ In addition, borrowing from the extended behavior described at https://php.net s
       
       <guid>https://gohugo.io/functions/dateformat/</guid>
       <description>time.Format (alias dateFormat) converts either a time.Time object (e.g. .Date) or a timestamp string INPUT into the format specified by the LAYOUT string.
-{{time.Format&amp;#34;Monday, Jan 2, 2006&amp;#34;&amp;#34;2015-01-21&amp;#34;}} → &amp;#34;Wednesday, Jan 21, 2015&amp;#34; Note that since Hugo 0.87.0, time.Format will return a localized string for the currrent language. New in v0.87.0
+{{time.Format&amp;#34;Monday, Jan 2, 2006&amp;#34;&amp;#34;2015-01-21&amp;#34;}} → &amp;#34;Wednesday, Jan 21, 2015&amp;#34; Note that since Hugo 0.87.0, time.Format will return a localized string for the currrent language. New in v0.87.0 
 The LAYOUT string can be either:
  Go’s Layout String to learn about how the LAYOUT string has to be formatted.</description>
     </item>
@@ -1272,8 +1272,8 @@ The LAYOUT string can be either:
       <pubDate>Wed, 01 Feb 2017 00:00:00 +0000</pubDate>
       
       <guid>https://gohugo.io/functions/title/</guid>
-      <description>{{title &amp;quot;BatMan&amp;quot;}}` → &amp;quot;Batman&amp;quot;Can be combined in pipes. In the following snippet, the link text is cleaned up using humanize to remove dashes and title to convert the value of $name to Initial Caps.
-{{ range $name, $items := .Site.Taxonomies.categories }}&amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;{{ printf &amp;quot;%s/%s&amp;quot; &amp;quot;categories&amp;quot; ($name | urlize | lower) | absURL }}&amp;quot;&amp;gt;{{ $name | humanize | title }} ({{ len $items }})&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;{{ end }}Configure Title Case The default is AP Stylebook, but you can configure it.</description>
+      <description>{{title &amp;quot;BatMan&amp;quot;}}` → &amp;quot;Batman&amp;quot; Can be combined in pipes. In the following snippet, the link text is cleaned up using humanize to remove dashes and title to convert the value of $name to Initial Caps.
+{{ range $name, $items := .Site.Taxonomies.categories }} &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;{{ printf &amp;quot;%s/%s&amp;quot; &amp;quot;categories&amp;quot; ($name | urlize | lower) | absURL }}&amp;quot;&amp;gt;{{ $name | humanize | title }} ({{ len $items }})&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt; {{ end }} Configure Title Case  The default is AP Stylebook, but you can configure it.</description>
     </item>
     
     <item>
@@ -1282,9 +1282,9 @@ The LAYOUT string can be either:
       <pubDate>Wed, 01 Feb 2017 00:00:00 +0000</pubDate>
       
       <guid>https://gohugo.io/functions/trim/</guid>
-      <description>{{ trim &amp;quot;++Batman--&amp;quot; &amp;quot;+-&amp;quot; }} → &amp;quot;Batman&amp;quot;trim requires the second argument, which tells the function specifically what to remove from the first argument. There is no default value for the second argument, so the following usage will not work:
-{{ trim .Inner}}Instead, the following example tells trim to remove extra new lines from the content contained in the shortcode .Inner variable:
-{{ trim .Inner &amp;quot;\n&amp;quot; }}Go templates also provide a simple method for trimming whitespace from either side of a Go tag by including a hyphen (-).</description>
+      <description>{{ trim &amp;quot;++Batman--&amp;quot; &amp;quot;+-&amp;quot; }} → &amp;quot;Batman&amp;quot; trim requires the second argument, which tells the function specifically what to remove from the first argument. There is no default value for the second argument, so the following usage will not work:
+{{ trim .Inner}} Instead, the following example tells trim to remove extra new lines from the content contained in the shortcode .Inner variable:
+{{ trim .Inner &amp;quot;\n&amp;quot; }}   Go templates also provide a simple method for trimming whitespace from either side of a Go tag by including a hyphen (-).</description>
     </item>
     
     <item>
@@ -1294,7 +1294,7 @@ The LAYOUT string can be either:
       
       <guid>https://gohugo.io/functions/truncate/</guid>
       <description>Since Go templates are HTML-aware, truncate will intelligently handle normal strings vs HTML strings:
-{{ &amp;quot;&amp;lt;em&amp;gt;Keep my HTML&amp;lt;/em&amp;gt;&amp;quot; | safeHTML | truncate 10 }}` → &amp;lt;em&amp;gt;Keep my …&amp;lt;/em&amp;gt;`If you have a raw string that contains HTML tags you want to remain treated as HTML, you will need to convert the string to HTML using the safeHTML template function before sending the value to truncate. Otherwise, the HTML tags will be escaped when passed through the truncate function.</description>
+{{ &amp;quot;&amp;lt;em&amp;gt;Keep my HTML&amp;lt;/em&amp;gt;&amp;quot; | safeHTML | truncate 10 }}` → &amp;lt;em&amp;gt;Keep my …&amp;lt;/em&amp;gt;`   If you have a raw string that contains HTML tags you want to remain treated as HTML, you will need to convert the string to HTML using the safeHTML template function before sending the value to truncate. Otherwise, the HTML tags will be escaped when passed through the truncate function.</description>
     </item>
     
     <item>
@@ -1304,7 +1304,7 @@ The LAYOUT string can be either:
       
       <guid>https://gohugo.io/functions/union/</guid>
       <description>Given two arrays (or slices) A and B, this function will return a new array that contains the elements or objects that belong to either A or to B or to both. The elements supported are strings, integers, and floats (only float64).
-{{ union (slice 1 2 3) (slice 3 4 5) }}&amp;lt;!-- returns [1 2 3 4 5] --&amp;gt;{{ union (slice 1 2 3) nil }}&amp;lt;!-- returns [1 2 3] --&amp;gt;{{ union nil (slice 1 2 3) }}&amp;lt;!</description>
+{{ union (slice 1 2 3) (slice 3 4 5) }} &amp;lt;!-- returns [1 2 3 4 5] --&amp;gt; {{ union (slice 1 2 3) nil }} &amp;lt;!-- returns [1 2 3] --&amp;gt; {{ union nil (slice 1 2 3) }} &amp;lt;!</description>
     </item>
     
     <item>
@@ -1313,7 +1313,7 @@ The LAYOUT string can be either:
       <pubDate>Wed, 01 Feb 2017 00:00:00 +0000</pubDate>
       
       <guid>https://gohugo.io/functions/uniq/</guid>
-      <description>{{ uniq (slice 1 2 3 2) }}{{ slice 1 2 3 2 | uniq }}&amp;lt;!-- both return [1 2 3] --&amp;gt;</description>
+      <description>{{ uniq (slice 1 2 3 2) }} {{ slice 1 2 3 2 | uniq }} &amp;lt;!-- both return [1 2 3] --&amp;gt; </description>
     </item>
     
     <item>
@@ -1323,7 +1323,7 @@ The LAYOUT string can be either:
       
       <guid>https://gohugo.io/functions/upper/</guid>
       <description>Note that upper can be applied in your templates in more than one way:
-{{ upper &amp;quot;BatMan&amp;quot; }} → &amp;quot;BATMAN&amp;quot;{{ &amp;quot;BatMan&amp;quot; | upper }} → &amp;quot;BATMAN&amp;quot;</description>
+{{ upper &amp;quot;BatMan&amp;quot; }} → &amp;quot;BATMAN&amp;quot; {{ &amp;quot;BatMan&amp;quot; | upper }} → &amp;quot;BATMAN&amp;quot; </description>
     </item>
     
     <item>
@@ -1333,8 +1333,8 @@ The LAYOUT string can be either:
       
       <guid>https://gohugo.io/functions/urlize/</guid>
       <description>The following examples pull from a content file with the following front matter:
-content/blog/greatest-city.md+++ title = &amp;#34;The World&amp;#39;s Greatest City&amp;#34; location = &amp;#34;Chicago IL&amp;#34; tags = [&amp;#34;pizza&amp;#34;,&amp;#34;beer&amp;#34;,&amp;#34;hot dogs&amp;#34;] +++ The following might be used as a partial within a single page template:
-layouts/partials/content-header.html&amp;lt;header&amp;gt; &amp;lt;h1&amp;gt;{{.Title}}&amp;lt;/h1&amp;gt; {{with.Params.location}} &amp;lt;div&amp;gt;&amp;lt;a href=&amp;#34;/locations/{{.|urlize}}&amp;#34;&amp;gt;{{.}}&amp;lt;/a&amp;gt;&amp;lt;/div&amp;gt; {{end}} &amp;lt;!-- Creates a list of tags for the content and links to each of their pages --&amp;gt; {{with.</description>
+content/blog/greatest-city.md +++ title = &amp;#34;The World&amp;#39;s Greatest City&amp;#34; location = &amp;#34;Chicago IL&amp;#34; tags = [&amp;#34;pizza&amp;#34;,&amp;#34;beer&amp;#34;,&amp;#34;hot dogs&amp;#34;] +++   The following might be used as a partial within a single page template:
+layouts/partials/content-header.html  &amp;lt;header&amp;gt; &amp;lt;h1&amp;gt;{{.Title}}&amp;lt;/h1&amp;gt; {{with.Params.location}} &amp;lt;div&amp;gt;&amp;lt;a href=&amp;#34;/locations/{{.|urlize}}&amp;#34;&amp;gt;{{.}}&amp;lt;/a&amp;gt;&amp;lt;/div&amp;gt; {{end}} &amp;lt;!-- Creates a list of tags for the content and links to each of their pages --&amp;gt; {{with.</description>
     </item>
     
     <item>
@@ -1346,7 +1346,7 @@ layouts/partials/content-header.html&amp;lt;header&amp;gt; &amp;lt;h1&amp;gt;{
       <description>where filters an array to only the elements containing a matching value for a given field.
 It works in a similar manner to the where keyword in SQL.
 {{rangewhere.Pages&amp;#34;Section&amp;#34;&amp;#34;foo&amp;#34;}} {{.Content}} {{end}} It can be used by dot-chaining the second argument to refer to a nested element of a value.
-+++series: golang+++{{rangewhere.Site.Pages&amp;#34;Params.series&amp;#34;&amp;#34;golang&amp;#34;}} {{.Content}} {{end}} It can also be used with the logical operators !=, &amp;gt;=, in, etc. Without an operator, where compares a given field with a matching value equivalent to =.</description>
++++ series: golang +++ {{rangewhere.Site.Pages&amp;#34;Params.series&amp;#34;&amp;#34;golang&amp;#34;}} {{.Content}} {{end}} It can also be used with the logical operators !=, &amp;gt;=, in, etc. Without an operator, where compares a given field with a matching value equivalent to =.</description>
     </item>
     
     <item>
