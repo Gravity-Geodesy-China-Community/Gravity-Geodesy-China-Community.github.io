@@ -13,7 +13,7 @@
   <title>Content View Templates | Hugo</title>
 
   <meta name="viewport" content="width=device-width,minimum-scale=1">
-  <meta name="generator" content="Hugo 0.87.0" />
+  <meta name="generator" content="Hugo 0.84.0" />
 
   
   <meta name="robots" content="noindex, nofollow">
@@ -42,7 +42,7 @@
 
 
   
-  <script type="text/javascript" src="/output/js/app.0984bf5469ab3c8aa82cf8eb015a560d74ee028723b1ab38e928998f5f72baba.js" integrity="sha256-CYS/VGmrPIqoLPjrAVpWDXTuAocjsas46SiZj19yuro=" crossorigin="anonymous" defer></script>
+  <script type="text/javascript" src="/output/js/app.175b405753a9c0ce86ab35944e9c4cc1a758a6873209cf5106600f6b2f5a59b6.js" integrity="sha256-F1tAV1OpwM6GqzWUTpxMwadYpocyCc9RBmAPay9aWbY=" crossorigin="anonymous" defer></script>
   
       
  
@@ -61,12 +61,12 @@
 <meta property="og:description" content="Hugo can render alternative views of your content, which is especially useful in list and summary views." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://gohugo.io/templates/views/" /><meta property="og:image" content="https://gohugo.io/images/gohugoio-card.png"/><meta property="article:section" content="templates" />
-<meta property="article:published_time" content="2017-02-01T00:00:00+00:00" />
-<meta property="article:modified_time" content="2019-10-21T10:22:28+02:00" />
+<meta property="article:published_time" content="2017-02-01T00:00:00&#43;00:00" />
+<meta property="article:modified_time" content="2021-08-13T21:11:25&#43;08:00" />
 
 <meta itemprop="name" content="Content View Templates">
-<meta itemprop="description" content="Hugo can render alternative views of your content, which is especially useful in list and summary views."><meta itemprop="datePublished" content="2017-02-01T00:00:00+00:00" />
-<meta itemprop="dateModified" content="2019-10-21T10:22:28+02:00" />
+<meta itemprop="description" content="Hugo can render alternative views of your content, which is especially useful in list and summary views."><meta itemprop="datePublished" content="2017-02-01T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2021-08-13T21:11:25&#43;08:00" />
 <meta itemprop="wordCount" content="418"><meta itemprop="image" content="https://gohugo.io/images/gohugoio-card.png"/>
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://gohugo.io/images/gohugoio-card.png"/>
@@ -312,16 +312,14 @@
 	
 	<div class="code-copy-content nt3" id="list.html">
 		
-		<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go-html-template" data-lang="go-html-template">
-<span class="p">&lt;</span><span class="nt">main</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;main&#34;</span><span class="p">&gt;</span>
+		<div class="highlight"><pre class="chroma"><code class="language-go-html-template" data-lang="go-html-template"><span class="p">&lt;</span><span class="nt">main</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;main&#34;</span><span class="p">&gt;</span>
   <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
   <span class="p">&lt;</span><span class="nt">h1</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;title&#34;</span><span class="p">&gt;</span><span class="cp">{{</span><span class="w"> </span><span class="na">.Title</span><span class="w"> </span><span class="cp">}}</span><span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
   <span class="cp">{{</span><span class="w"> </span><span class="k">range</span><span class="w"> </span><span class="na">.Pages</span><span class="w"> </span><span class="cp">}}</span>
     <span class="cp">{{</span><span class="w"> </span><span class="na">.Render</span><span class="w"> </span><span class="s">&#34;summary&#34;</span><span class="cp">}}</span>
   <span class="cp">{{</span><span class="w"> </span><span class="k">end</span><span class="w"> </span><span class="cp">}}</span>
   <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-<span class="p">&lt;/</span><span class="nt">main</span><span class="p">&gt;</span>
-</code></pre></div>
+<span class="p">&lt;/</span><span class="nt">main</span><span class="p">&gt;</span></code></pre></div>
 	</div>
 
 </div>
@@ -345,8 +343,7 @@
 	
 	<div class="code-copy-content nt3" id="summary.html">
 		
-		<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go-html-template" data-lang="go-html-template">
-<span class="p">&lt;</span><span class="nt">article</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;post&#34;</span><span class="p">&gt;</span>
+		<div class="highlight"><pre class="chroma"><code class="language-go-html-template" data-lang="go-html-template"><span class="p">&lt;</span><span class="nt">article</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;post&#34;</span><span class="p">&gt;</span>
   <span class="p">&lt;</span><span class="nt">header</span><span class="p">&gt;</span>
     <span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#39;</span><span class="cp">{{</span><span class="w"> </span><span class="na">.Permalink</span><span class="w"> </span><span class="cp">}}</span><span class="s">&#39;</span><span class="p">&gt;</span> <span class="cp">{{</span><span class="w"> </span><span class="na">.Title</span><span class="w"> </span><span class="cp">}}</span><span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span> <span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
     <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;post-meta&#34;</span><span class="p">&gt;</span><span class="cp">{{</span><span class="w"> </span><span class="na">.Date.Format</span><span class="w"> </span><span class="s">&#34;Mon, Jan 2, 2006&#34;</span><span class="w"> </span><span class="cp">}}</span> - <span class="cp">{{</span><span class="w"> </span><span class="na">.FuzzyWordCount</span><span class="w"> </span><span class="cp">}}</span> Words <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
@@ -355,8 +352,7 @@
   <span class="p">&lt;</span><span class="nt">footer</span><span class="p">&gt;</span>
   <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#39;</span><span class="cp">{{</span><span class="w"> </span><span class="na">.Permalink</span><span class="w"> </span><span class="cp">}}</span><span class="s">&#39;</span><span class="p">&gt;&lt;</span><span class="nt">nobr</span><span class="p">&gt;</span>Read more →<span class="p">&lt;/</span><span class="nt">nobr</span><span class="p">&gt;&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
   <span class="p">&lt;/</span><span class="nt">footer</span><span class="p">&gt;</span>
-<span class="p">&lt;/</span><span class="nt">article</span><span class="p">&gt;</span>
-</code></pre></div>
+<span class="p">&lt;/</span><span class="nt">article</span><span class="p">&gt;</span></code></pre></div>
 	</div>
 
 </div>
@@ -380,12 +376,10 @@
 	
 	<div class="code-copy-content nt3" id="li.html">
 		
-		<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go-html-template" data-lang="go-html-template">
-<span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>
+		<div class="highlight"><pre class="chroma"><code class="language-go-html-template" data-lang="go-html-template"><span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>
   <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;</span><span class="cp">{{</span><span class="w"> </span><span class="na">.Permalink</span><span class="w"> </span><span class="cp">}}</span><span class="s">&#34;</span><span class="p">&gt;</span><span class="cp">{{</span><span class="w"> </span><span class="na">.Title</span><span class="w"> </span><span class="cp">}}</span><span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
   <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;meta&#34;</span><span class="p">&gt;</span><span class="cp">{{</span><span class="w"> </span><span class="na">.Date.Format</span><span class="w"> </span><span class="s">&#34;Mon, Jan 2, 2006&#34;</span><span class="w"> </span><span class="cp">}}</span><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
-</code></pre></div>
+<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span></code></pre></div>
 	</div>
 
 </div>
@@ -519,124 +513,7 @@
       </li>
       
       <li class="f5 w-100 hover-bg-light-gray hover-accent-color-light fw8">
-        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".content-management">Content Management</a>
-        <ul class="content-management desktopmenu animated fadeIn list pl0 bg-light-gray dn">
-          <li class="f6 fw4">
-            <a href="/content-management/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Content Management Overview
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/content-management/organization/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Organization
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/content-management/page-bundles/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Page Bundles
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/content-management/formats/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Content Formats
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/content-management/front-matter/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Front Matter
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/content-management/build-options/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Build Options
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/content-management/page-resources/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Page Resources
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/content-management/image-processing/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Image Processing
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/content-management/shortcodes/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Shortcodes
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/content-management/related/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Related Content
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/content-management/sections/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Sections
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/content-management/types/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Content Types
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/content-management/archetypes/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Archetypes
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/content-management/taxonomies/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Taxonomies
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/content-management/summaries/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Summaries
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/content-management/cross-references/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Links and Cross References
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/content-management/urls/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              URL Management
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/content-management/menus/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Menus
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/content-management/static-files/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Static Files
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/content-management/toc/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Table of Contents
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/content-management/comments/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Comments
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/content-management/multilingual/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Multilingual and i18n
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/content-management/syntax-highlighting/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Syntax Highlighting
-            </a>
-          </li>
-        </ul>
+        <a href="/content-management/" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".content-management">Content Management</a>
       </li>
       
       <li class="f5 w-100 hover-bg-light-gray hover-accent-color-light fw8">
@@ -1561,11 +1438,6 @@
             </a>
           </li>
           <li class="f6 fw4">
-            <a href="/troubleshooting/faq/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              FAQ
-            </a>
-          </li>
-          <li class="f6 fw4">
             <a href="/troubleshooting/build-performance/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
               Build Performance
             </a>
@@ -1729,10 +1601,10 @@
   <span class="nl3 child"><svg class="grow" fill="" height="14px" viewBox="0 0 24 24" width="14px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg>
 </span>
     “Content View Templates”
-  </a> was last updated: October 21, 2019: <a class="hide-child link primary-color" href="https://github.com/gohugoio/hugoDocs/commit/c98bcff07ca6382a30c93ee37789bcafb13efa8c">Merge commit &#39;b9bd35d72e14932fb6588ff62b90cddef0a060fc&#39; as &#39;docs&#39; (c98bcff07)</a>
+  </a> was last updated: August 13, 2021: <a class="hide-child link primary-color" href="https://github.com/gohugoio/hugoDocs/commit/675299e5580f46886a1b39c571db992a3336bb8c">try hugo templete (675299e)</a>
 </h6>
 
-      <a href="https://github.com/gohugoio/hugoDocs/edit/master/content/en/templates%5cviews.md" class="
+      <a href="https://github.com/gohugoio/hugoDocs/edit/master/content/en/templates/views.md" class="
 f6 ph3 pv1 br2 dib  tc ttu mv3 bg-primary-color white hover-bg-green link
 ">Improve this page</a>
 

@@ -5,7 +5,7 @@ enableEmoji = true
 # Set the unicode character used for the "return" link in page footnotes.
 footnotereturnlinkcontents = "↩"
 languageCode = "en-us"
-title = "Hugo"
+title = "Gravity"
 
 googleAnalytics = "UA-7131036-4"
 
@@ -64,7 +64,7 @@ weight = 10
 pattern = "2006"
 
 [social]
-twitter = "GoHugoIO"
+twitter = "georgegou"
 
 
 # MARKDOWN

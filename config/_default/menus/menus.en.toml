@@ -1,5 +1,5 @@
 [[docs]]
-  name = "About Hugo"
+  name = "关于重力中国"
   weight = 1
   identifier = "about"
   url = "/about/"

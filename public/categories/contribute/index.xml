@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>contribute on Hugo</title>
+    <title>contribute on Gravity</title>
     <link>https://gohugo.io/categories/contribute/</link>
-    <description>Recent content in contribute on Hugo</description>
+    <description>Recent content in contribute on Gravity</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 01 Feb 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://gohugo.io/categories/contribute/index.xml" rel="self" type="application/rss+xml" />
@@ -23,9 +23,9 @@ Hugo&amp;rsquo;s contribution guidelines are detailed in a CONTRIBUTING.md in th
       <pubDate>Wed, 01 Feb 2017 00:00:00 +0000</pubDate>
       
       <guid>https://gohugo.io/contribute/development/</guid>
-      <description>Introduction Hugo is an open-source project and lives by the work of its contributors. There are plenty of open issues, and we need your help to make Hugo even more awesome. You don&amp;rsquo;t need to be a Go guru to contribute to the project&amp;rsquo;s development.
-Assumptions This contribution guide takes a step-by-step approach in hopes of helping newcomers. Therefore, we only assume the following:
- You are new to Git or open-source projects in general You are a fan of Hugo and enthusiastic about contributing to the project  If you&amp;rsquo;re struggling at any point in this contribution guide, reach out to the Hugo community in Hugo&amp;rsquo;s Discussion forum.</description>
+      <description>Introduction  Hugo is an open-source project and lives by the work of its contributors. There are plenty of open issues, and we need your help to make Hugo even more awesome. You don&amp;rsquo;t need to be a Go guru to contribute to the project&amp;rsquo;s development.
+Assumptions  This contribution guide takes a step-by-step approach in hopes of helping newcomers. Therefore, we only assume the following:
+ You are new to Git or open-source projects in general You are a fan of Hugo and enthusiastic about contributing to the project   If you&amp;rsquo;re struggling at any point in this contribution guide, reach out to the Hugo community in Hugo&amp;rsquo;s Discussion forum.</description>
     </item>
     
     <item>
@@ -34,7 +34,7 @@ Assumptions This contribution guide takes a step-by-step approach in hopes of h
       <pubDate>Wed, 01 Feb 2017 00:00:00 +0000</pubDate>
       
       <guid>https://gohugo.io/contribute/documentation/</guid>
-      <description>Create Your Fork It&amp;rsquo;s best to make changes to the Hugo docs on your local machine to check for consistent visual styling. Make sure you&amp;rsquo;ve created a fork of hugoDocs on GitHub and cloned the repository locally on your machine. For more information, you can see GitHub&amp;rsquo;s documentation on &amp;ldquo;forking&amp;rdquo; or follow along with Hugo&amp;rsquo;s development contribution guide.
+      <description>Create Your Fork  It&amp;rsquo;s best to make changes to the Hugo docs on your local machine to check for consistent visual styling. Make sure you&amp;rsquo;ve created a fork of hugoDocs on GitHub and cloned the repository locally on your machine. For more information, you can see GitHub&amp;rsquo;s documentation on &amp;ldquo;forking&amp;rdquo; or follow along with Hugo&amp;rsquo;s development contribution guide.
 You can then create a separate branch for your additions. Be sure to choose a descriptive branch name that best fits the type of content.</description>
     </item>
     
@@ -46,7 +46,7 @@ You can then create a separate branch for your additions. Be sure to choose a de
       <guid>https://gohugo.io/contribute/themes/</guid>
       <description>A collection of all themes created by the Hugo community, including screenshots and demos, can be found at themes.gohugo.io. Every theme in this list will automatically be added to the theme site.
 Another great site for Hugo themes is jamstackthemes.dev/.
-Add Your Theme to the Repo In order to add your Hugo theme to themes.gohugo.io please open a pull request in the theme repository. Please make sure that you&amp;rsquo;ve read the theme submission guidelines in the README of the hugoThemesSiteBuilder repository.</description>
+Add Your Theme to the Repo  In order to add your Hugo theme to themes.gohugo.io please open a pull request in the theme repository. Please make sure that you&amp;rsquo;ve read the theme submission guidelines in the README of the hugoThemesSiteBuilder repository.</description>
     </item>
     
   </channel>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>templates on Hugo</title>
+    <title>templates on Gravity</title>
     <link>https://gohugo.io/zh/categories/templates/</link>
-    <description>Recent content in templates on Hugo</description>
+    <description>Recent content in templates on Gravity</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 01 Feb 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://gohugo.io/zh/categories/templates/index.xml" rel="self" type="application/rss+xml" />
@@ -23,7 +23,7 @@
       
       <guid>https://gohugo.io/zh/templates/base/</guid>
       <description>The block keyword allows you to define the outer shell of your pages&#39; one or more master template(s) and then fill in or override portions as necessary.
-  Base Template Lookup Order The lookup order for base templates is as follows:
+  Base Template Lookup Order  The lookup order for base templates is as follows:
  /layouts/section/&amp;lt;TYPE&amp;gt;-baseof.html /themes/&amp;lt;THEME&amp;gt;/layouts/section/&amp;lt;TYPE&amp;gt;-baseof.html /layouts/&amp;lt;TYPE&amp;gt;/baseof.html /themes/&amp;lt;THEME&amp;gt;/layouts/&amp;lt;TYPE&amp;gt;/baseof.html /layouts/section/baseof.html /themes/&amp;lt;THEME&amp;gt;/layouts/section/baseof.html /layouts/_default/&amp;lt;TYPE&amp;gt;-baseof.html /themes/&amp;lt;THEME&amp;gt;/layouts/_default/&amp;lt;TYPE&amp;gt;-baseof.html /layouts/_default/baseof.html /themes/&amp;lt;THEME&amp;gt;/layouts/_default/baseof.html  Variables are denoted by capitalized text set within &amp;lt;&amp;gt;. Note that Hugo&amp;rsquo;s default behavior is for type to inherit from section unless otherwise specified.</description>
     </item>
     

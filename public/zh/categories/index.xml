@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on Hugo</title>
+    <title>Categories on Gravity</title>
     <link>https://gohugo.io/zh/categories/</link>
-    <description>Recent content in Categories on Hugo</description>
+    <description>Recent content in Categories on Gravity</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 23 Apr 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://gohugo.io/zh/categories/index.xml" rel="self" type="application/rss+xml" />
