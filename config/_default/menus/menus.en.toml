@@ -5,56 +5,33 @@
   url = "/about/"
 
 [[docs]]
-  name = "Getting Started"
+  name = "重力学入门"
   weight = 5
   identifier = "getting-started"
   url = "/getting-started/"
 
 [[docs]]
-  name = "Hugo Modules"
+  name = "重力软件教程"
+  weight = 10
+  identifier = "gravity-manual"
+  url = "/gravity-manual/"
+
+[[docs]]
+  name = "重力数据处理教程"
   weight = 15
-  identifier = "modules"
-  post = "break"
-  url = "/hugo-modules/"
-
-# Core Menus
-
+  identifier = "gravitydata"
+  url = "/gravitydata/"
 [[docs]]
-  name = "Content Management"
-  weight = 20
-  identifier = "content-management"
-  post = "expanded"
-  url = "/content-management/"
-
-[[docs]]
-  name = "Templates"
-  weight = 25
-  identifier = "templates"
-
-  url = "/templates/"
-
-[[docs]]
-  name = "Functions"
-  weight = 30
-  identifier = "functions"
-  url = "/functions/"
-
-[[docs]]
-  name = "Variables"
-  weight = 35
-  identifier = "variables"
-  url = "/variables/"
-[[docs]]
-  name = "Hugo Pipes"
+  name = "重力开源软件开发"
   weight = 36
-  identifier = "pipes"
-  url = "/hugo-pipes/"
+  identifier = "gravity-software"
+  url = "/gravity-software/"
 [[docs]]
-  name = "CLI"
+  name = "重力项目展示"
   weight = 40
   post = "break"
   identifier = "commands"
-  url = "/commands/"
+  url = "/gravity-projects/"
 
 
 
@@ -113,37 +90,37 @@
 ######## GLOBAL ITEMS TO BE SHARED WITH THE HUGO SITES
 
 [[global]]
-    name = "News"
+    name = "新闻"
     weight = 1
     identifier = "news"
     url = "/news/"
 
   [[global]]
-    name = "Docs"
+    name = "文档"
     weight = 5
     identifier = "docs"
     url = "/documentation/"
 
   [[global]]
-    name = "Themes"
-    weight = 10
+    name = "关于我们"
+    weight = 220
     identifier = "themes"
-    url = "https://themes.gohugo.io/"
+    url = "/about/"
 
     [[global]]
-      name = "Showcase"
+      name = "研究案例"
       weight = 20
       identifier = "showcase"
-      url = "/showcase/"
+      url = "/gravity-projects/"
 
   # Anything with a weight > 100 gets an external icon
   [[global]]
-    name = "Community"
-    weight = 150
+    name = "重力论坛"
+    weight = 120
     icon = true
     identifier = "community"
     post = "external"
-    url = "https://discourse.gohugo.io/"
+    url = "https://discourse.gravitychina.ga/"
 
 
   [[global]]
@@ -151,4 +128,4 @@
     weight = 200
     identifier = "github"
     post = "external"
-    url = "https://github.com/gohugoio/hugo"
+    url = "https://github.com/Gravity-Geodesy-China-Community"

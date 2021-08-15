@@ -6,22 +6,13 @@
     <description>Recent content in Categories on Gravity</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 03 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://gohugo.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 01 Aug 2021 18:36:00 +0200</lastBuildDate><atom:link href="https://gohugo.io/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Releases</title>
-      <link>https://gohugo.io/categories/releases/</link>
-      <pubDate>Tue, 03 Aug 2021 00:00:00 +0000</pubDate>
+      <title>blog</title>
+      <link>https://gohugo.io/categories/blog/</link>
+      <pubDate>Sun, 01 Aug 2021 18:36:00 +0200</pubDate>
       
-      <guid>https://gohugo.io/categories/releases/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>functions</title>
-      <link>https://gohugo.io/categories/functions/</link>
-      <pubDate>Wed, 28 Jul 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://gohugo.io/categories/functions/</guid>
+      <guid>https://gohugo.io/categories/blog/</guid>
       <description></description>
     </item>
     
@@ -80,29 +71,11 @@
     </item>
     
     <item>
-      <title>blog</title>
-      <link>https://gohugo.io/categories/blog/</link>
-      <pubDate>Wed, 04 Jul 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://gohugo.io/categories/blog/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>maintenance</title>
       <link>https://gohugo.io/categories/maintenance/</link>
       <pubDate>Fri, 09 Feb 2018 00:00:00 +0000</pubDate>
       
       <guid>https://gohugo.io/categories/maintenance/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>troubleshooting</title>
-      <link>https://gohugo.io/categories/troubleshooting/</link>
-      <pubDate>Sun, 12 Mar 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://gohugo.io/categories/troubleshooting/</guid>
       <description></description>
     </item>
     
