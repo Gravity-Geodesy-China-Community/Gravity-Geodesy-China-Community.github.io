@@ -12,63 +12,50 @@
 
 [[docs]]
   name = "重力软件教程"
-  weight = 10
-  identifier = "gravity-manual"
+  weight = 15
+  identifier = "modules"
+  post = "break"
   url = "/gravity-manual/"
+
+# Core Menus
+
 
 [[docs]]
   name = "重力数据处理教程"
-  weight = 15
-  identifier = "gravitydata"
+  weight = 35
+  identifier = "variables"
   url = "/gravitydata/"
 [[docs]]
   name = "重力开源软件开发"
   weight = 36
-  identifier = "gravity-software"
+  identifier = "pipes"
   url = "/gravity-software/"
-[[docs]]
-  name = "重力项目展示"
-  weight = 40
-  post = "break"
-  identifier = "commands"
-  url = "/gravity-projects/"
-
 
 
 # LOW LEVEL ITEMS
 
 
 [[docs]]
-  name = "Troubleshooting"
-  weight = 60
-  identifier = "troubleshooting"
-  url = "/troubleshooting/"
+
 
 [[docs]]
-  name = "Tools"
+  name = "重力项目展示"
   weight = 70
   identifier = "tools"
-  url = "/tools/"
+  url = "/gravity-projects/"
 
 [[docs]]
-  name = "Hosting & Deployment"
+  name = "编程教程"
   weight = 80
   identifier = "hosting-and-deployment"
-  url = "/hosting-and-deployment/"
+  url = "/coding/"
 
 [[docs]]
-  name = "Contribute"
+  name = "贡献指南"
   weight = 100
   post = "break"
   identifier = "contribute"
   url = "/contribute/"
-
-#[[docs]]
-#  name = "Tags"
-#  weight = 120
-#  identifier = "tags"
-#  url = "/tags/"
-
 
 # [[docs]]
 #   name = "Categories"
@@ -103,7 +90,7 @@
 
   [[global]]
     name = "关于我们"
-    weight = 220
+    weight = 10
     identifier = "themes"
     url = "/about/"
 
@@ -116,7 +103,7 @@
   # Anything with a weight > 100 gets an external icon
   [[global]]
     name = "重力论坛"
-    weight = 120
+    weight = 150
     icon = true
     identifier = "community"
     post = "external"
