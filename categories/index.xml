@@ -17,6 +17,15 @@
     </item>
     
     <item>
+      <title>about gravitychina</title>
+      <link>https://gohugo.io/categories/about-gravitychina/</link>
+      <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://gohugo.io/categories/about-gravitychina/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>asset management</title>
       <link>https://gohugo.io/categories/asset-management/</link>
       <pubDate>Mon, 20 Jul 2020 00:00:00 +0000</pubDate>
@@ -94,15 +103,6 @@
       <pubDate>Wed, 01 Feb 2017 00:00:00 +0000</pubDate>
       
       <guid>https://gohugo.io/categories/developer-tools/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>about hugo</title>
-      <link>https://gohugo.io/categories/about-hugo/</link>
-      <pubDate>Mon, 01 Feb 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://gohugo.io/categories/about-hugo/</guid>
       <description></description>
     </item>
     
