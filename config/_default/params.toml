@@ -1,22 +1,22 @@
 
-description = "The world’s fastest framework for building websites"
+description = "全球最大的重力与大地测量中文社区"
 ## Setting this to true will add a "noindex" to *EVERY* page on the site..
-removefromexternalsearch = false
+removefromexternalsearch = true
 ## Gh repo for site footer (include trailing slash)
-ghrepo = "https://github.com/gohugoio/hugoDocs/"
+ghrepo = "https://github.com/Gravity-Geodesy-China-Community/Gravity-Geodesy-China-Community.github.io"
 ## GH Repo for filing a new issue
-github_repo = "https://github.com/gohugoio/hugo/issues/new"
+github_repo = "https://github.com/Gravity-Geodesy-China-Community/Gravity-Geodesy-China-Community.github.io/issues/new"
 ### Edit content repo (set to automatically enter "edit" mode; this is good for "improve this page" links)
-ghdocsrepo = "https://github.com/gohugoio/hugoDocs/tree/master/docs"
+ghdocsrepo = "https://github.com/Gravity-Geodesy-China-Community/Gravity-Geodesy-China-Community.github.io/"
 ## Gitter URL
-gitter = "https://gitter.im/spf13/hugo"
+#gitter = "https://gitter.im/spf13/hugo"
 ## Discuss Forum URL
-forum = "https://discourse.gohugo.io/"
+#forum = "https://discourse.gohugo.io/"
 ## Google Tag Manager
 gtmid = ""
 
 # First one is picked as the Twitter card image if not set on page.
-images = ["images/gohugoio-card.png"]
+#images = ["images/gohugoio-card.png"]
 
 flex_box_interior_classes = "flex-auto w-100 w-40-l mr3 mb3 bg-white ba b--moon-gray nested-copy-line-height"
 

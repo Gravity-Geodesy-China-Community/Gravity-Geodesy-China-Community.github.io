@@ -6,69 +6,25 @@
     <description>Recent content in 关于重力中国 on Gravity</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 01 Feb 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://gohugo.io/about/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 01 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://gohugo.io/about/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Hugo&#39;s Security Model</title>
-      <link>https://gohugo.io/about/security-model/</link>
-      <pubDate>Tue, 01 Oct 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://gohugo.io/about/security-model/</guid>
-      <description>Runtime Security Hugo produces static output, so once built, the runtime is the browser (assuming the output is HTML) and any server (API) that you integrate with.
-But when developing and building your site, the runtime is the hugo executable. Securing a runtime can be a real challenge.
-Hugo&amp;rsquo;s main approach is that of sandboxing:
- Hugo has a virtual file system and only the main project (not third-party components) is allowed to mount directories or files outside the project root.</description>
-    </item>
-    
-    <item>
-      <title>Hugo and the  General Data Protection Regulation (GDPR)</title>
-      <link>https://gohugo.io/about/hugo-and-gdpr/</link>
-      <pubDate>Fri, 25 May 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://gohugo.io/about/hugo-and-gdpr/</guid>
-      <description>General Data Protection Regulation (GDPR) is a regulation in EU law on data protection and privacy for all individuals within the European Union and the European Economic Area. It became enforceable on 25 May 2018.
-Hugo is a static site generator. By using Hugo you are already standing on very solid ground. Static HTML files on disk are much easier to reason about compared to server and database driven web sites.</description>
-    </item>
-    
-    <item>
-      <title>What is Hugo</title>
-      <link>https://gohugo.io/about/what-is-hugo/</link>
-      <pubDate>Wed, 01 Feb 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://gohugo.io/about/what-is-hugo/</guid>
-      <description>Hugo is a general-purpose website framework. Technically speaking, Hugo is a static site generator. Unlike systems that dynamically build a page with each visitor request, Hugo builds pages when you create or update your content. Since websites are viewed far more often than they are edited, Hugo is designed to provide an optimal viewing experience for your website&amp;rsquo;s end users and an ideal writing experience for website authors.
-Websites built with Hugo are extremely fast and secure.</description>
-    </item>
-    
-    <item>
-      <title>Hugo Features</title>
+      <title>本站特点</title>
       <link>https://gohugo.io/about/features/</link>
-      <pubDate>Wed, 01 Feb 2017 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>https://gohugo.io/about/features/</guid>
-      <description>General  Extremely fast build times (&amp;lt; 1 ms per page) Completely cross platform, with easy installation on macOS, Linux, Windows, and more Renders changes on the fly with LiveReload as you develop Powerful theming Host your site anywhere  Organization  Straightforward organization for your projects, including website sections Customizable URLs Support for configurable taxonomies, including categories and tags Sort content as you desire through powerful template functions Automatic table of contents generation Dynamic menu creation Pretty URLs support Permalink pattern support Redirects via aliases  Content  Native Markdown and Emacs Org-Mode support, as well as other languages via external helpers (see supported formats) TOML, YAML, and JSON metadata support in front matter Customizable homepage Multiple content types Automatic and user defined content summaries Shortcodes to enable rich content inside of Markdown &amp;ldquo;Minutes to Read&amp;rdquo; functionality &amp;ldquo;WordCount&amp;rdquo; functionality  Additional Features  Integrated Disqus comment support Integrated Google Analytics support Automatic RSS creation Support for Go HTML templates Syntax highlighting powered by Chroma  </description>
-    </item>
-    
-    <item>
-      <title>The Benefits of Static Site Generators</title>
-      <link>https://gohugo.io/about/benefits/</link>
-      <pubDate>Wed, 01 Feb 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://gohugo.io/about/benefits/</guid>
-      <description>The purpose of website generators is to render content into HTML files. Most are &amp;ldquo;dynamic site generators.&amp;rdquo; That means the HTTP server&amp;mdash;i.e., the program that sends files to the browser to be viewed&amp;mdash;runs the generator to create a new HTML file every time an end user requests a page.
-Over time, dynamic site generators were programmed to cache their HTML files to prevent unnecessary delays in delivering pages to end users.</description>
+      <description>总结  提供项目测试用例 专注于重力开源软件开发 提供专业软件的中文文档与测试用例  </description>
     </item>
     
     <item>
       <title>Apache License</title>
       <link>https://gohugo.io/about/license/</link>
-      <pubDate>Mon, 01 Feb 2016 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>https://gohugo.io/about/license/</guid>
-      <description>##Hugo v0.15 and later are released under the Apache 2.0 license. #Earlier versions of Hugo were released under the Simple Public License. #
-Version 2.0, January 2004 https://www.apache.org/licenses/LICENSE-2.0
-Terms and Conditions for use, reproduction, and distribution
-1. Definitions “License” shall mean the terms and conditions for use, reproduction, and distribution as defined by Sections 1 through 9 of this document.
-“Licensor” shall mean the copyright owner or entity authorized by the copyright owner that is granting the License.</description>
+      <description>本网站采用知识共享署名-非商业性使用4.0国际许可协议(CC BY-NC 4.0) ，即任何人都可以自由分享、修改本站内容，但转载需要提供此站原文链接，且需要署名原文作者。Hugo v0.15 and later are released under the
+本站所开发所有软件均采用 the Apache 2.0 开源协议.
+ 任何人不能将本站内容进行商业化使用，否则责任自负 </description>
     </item>
     
   </channel>

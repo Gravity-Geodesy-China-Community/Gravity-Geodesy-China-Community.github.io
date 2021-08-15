@@ -2,15 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://gohugo.io/gravity-software/introduction/</loc>
-    <lastmod>2021-08-15T19:19:09+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/contribute/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/getting-started/</loc>
-    <lastmod>2021-08-15T19:19:09+08:00</lastmod>
-  </url><url>
     <loc>https://gohugo.io/documentation/</loc>
     <lastmod>2021-08-13T21:11:25+08:00</lastmod>
     <xhtml:link
@@ -24,11 +15,8 @@
                 href="https://gohugo.io/documentation/"
                 />
   </url><url>
-    <loc>https://gohugo.io/gravity-manual/</loc>
-    <lastmod>2021-08-15T19:19:09+08:00</lastmod>
-  </url><url>
     <loc>https://gohugo.io/about/</loc>
-    <lastmod>2021-08-15T19:19:09+08:00</lastmod>
+    <lastmod>2021-08-15T23:12:59+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
@@ -40,47 +28,53 @@
                 href="https://gohugo.io/about/"
                 />
   </url><url>
+    <loc>https://gohugo.io/gravity-software/introduction/</loc>
+    <lastmod>2021-08-15T19:19:09+08:00</lastmod>
+  </url><url>
+    <loc>https://gohugo.io/contribute/</loc>
+    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
+  </url><url>
+    <loc>https://gohugo.io/getting-started/</loc>
+    <lastmod>2021-08-15T19:19:09+08:00</lastmod>
+  </url><url>
+    <loc>https://gohugo.io/gravity-manual/</loc>
+    <lastmod>2021-08-15T19:19:09+08:00</lastmod>
+  </url><url>
     <loc>https://gohugo.io/gravitydata/</loc>
     <lastmod>2021-08-15T19:19:09+08:00</lastmod>
   </url><url>
     <loc>https://gohugo.io/tools/</loc>
     <lastmod>2021-08-13T21:11:25+08:00</lastmod>
   </url><url>
-    <loc>https://gohugo.io/hosting-and-deployment/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
+    <loc>https://gohugo.io/coding/</loc>
+    <lastmod>2021-08-15T23:12:59+08:00</lastmod>
   </url><url>
-    <loc>https://gohugo.io/hosting-and-deployment/hugo-deploy/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
+    <loc>https://gohugo.io/coding/hugo-deploy/</loc>
+    <lastmod>2021-08-15T23:12:59+08:00</lastmod>
   </url><url>
     <loc>https://gohugo.io/gravity-software/scss-sass/</loc>
     <lastmod>2021-08-15T19:19:09+08:00</lastmod>
   </url><url>
-    <loc>https://gohugo.io/about/security-model/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/about/hugo-and-gdpr/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/hosting-and-deployment/deployment-with-nanobox/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
+    <loc>https://gohugo.io/coding/deployment-with-nanobox/</loc>
+    <lastmod>2021-08-15T23:12:59+08:00</lastmod>
   </url><url>
     <loc>https://gohugo.io/gravity-manual/configuration/</loc>
     <lastmod>2021-08-15T19:19:09+08:00</lastmod>
   </url><url>
-    <loc>https://gohugo.io/hosting-and-deployment/hosting-on-render/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
+    <loc>https://gohugo.io/coding/hosting-on-render/</loc>
+    <lastmod>2021-08-15T23:12:59+08:00</lastmod>
   </url><url>
     <loc>https://gohugo.io/gravity-software/</loc>
     <lastmod>2021-08-15T19:19:09+08:00</lastmod>
   </url><url>
-    <loc>https://gohugo.io/hosting-and-deployment/hosting-on-aws-amplify/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
+    <loc>https://gohugo.io/coding/hosting-on-aws-amplify/</loc>
+    <lastmod>2021-08-15T23:12:59+08:00</lastmod>
   </url><url>
     <loc>https://gohugo.io/contribute/development/</loc>
     <lastmod>2021-08-13T21:11:25+08:00</lastmod>
   </url><url>
-    <loc>https://gohugo.io/hosting-and-deployment/hosting-on-netlify/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
+    <loc>https://gohugo.io/coding/hosting-on-netlify/</loc>
+    <lastmod>2021-08-15T23:12:59+08:00</lastmod>
   </url><url>
     <loc>https://gohugo.io/tools/migrations/</loc>
     <lastmod>2021-08-13T21:11:25+08:00</lastmod>
@@ -88,25 +82,22 @@
     <loc>https://gohugo.io/gravitydata/site/</loc>
     <lastmod>2021-08-15T19:19:09+08:00</lastmod>
   </url><url>
-    <loc>https://gohugo.io/about/what-is-hugo/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
     <loc>https://gohugo.io/getting-started/quick-start/</loc>
     <lastmod>2021-08-13T21:11:25+08:00</lastmod>
+  </url><url>
+    <loc>https://gohugo.io/about/features/</loc>
+    <lastmod>2021-08-15T23:12:59+08:00</lastmod>
   </url><url>
     <loc>https://gohugo.io/gravity-manual/use-modules/</loc>
     <lastmod>2021-08-15T19:19:09+08:00</lastmod>
   </url><url>
-    <loc>https://gohugo.io/hosting-and-deployment/hosting-on-firebase/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
+    <loc>https://gohugo.io/coding/hosting-on-firebase/</loc>
+    <lastmod>2021-08-15T23:12:59+08:00</lastmod>
   </url><url>
     <loc>https://gohugo.io/gravitydata/shortcodes/</loc>
     <lastmod>2021-08-15T19:19:09+08:00</lastmod>
   </url><url>
     <loc>https://gohugo.io/contribute/documentation/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/about/features/</loc>
     <lastmod>2021-08-13T21:11:25+08:00</lastmod>
   </url><url>
     <loc>https://gohugo.io/gravitydata/page/</loc>
@@ -121,17 +112,14 @@
     <loc>https://gohugo.io/gravitydata/taxonomy/</loc>
     <lastmod>2021-08-15T19:19:09+08:00</lastmod>
   </url><url>
-    <loc>https://gohugo.io/about/benefits/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
     <loc>https://gohugo.io/contribute/themes/</loc>
     <lastmod>2021-08-13T21:11:25+08:00</lastmod>
   </url><url>
     <loc>https://gohugo.io/getting-started/installing/</loc>
     <lastmod>2021-08-13T21:11:25+08:00</lastmod>
   </url><url>
-    <loc>https://gohugo.io/hosting-and-deployment/hosting-on-github/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
+    <loc>https://gohugo.io/coding/hosting-on-github/</loc>
+    <lastmod>2021-08-15T23:12:59+08:00</lastmod>
   </url><url>
     <loc>https://gohugo.io/gravity-software/postprocess/</loc>
     <lastmod>2021-08-15T19:19:09+08:00</lastmod>
@@ -148,8 +136,8 @@
     <loc>https://gohugo.io/tools/frontends/</loc>
     <lastmod>2021-08-13T21:11:25+08:00</lastmod>
   </url><url>
-    <loc>https://gohugo.io/hosting-and-deployment/hosting-on-gitlab/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
+    <loc>https://gohugo.io/coding/hosting-on-gitlab/</loc>
+    <lastmod>2021-08-15T23:12:59+08:00</lastmod>
   </url><url>
     <loc>https://gohugo.io/gravity-software/js/</loc>
     <lastmod>2021-08-15T19:19:09+08:00</lastmod>
@@ -163,14 +151,17 @@
     <loc>https://gohugo.io/gravitydata/menus/</loc>
     <lastmod>2021-08-15T19:19:09+08:00</lastmod>
   </url><url>
-    <loc>https://gohugo.io/hosting-and-deployment/hosting-on-bitbucket/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
+    <loc>https://gohugo.io/coding/hosting-on-bitbucket/</loc>
+    <lastmod>2021-08-15T23:12:59+08:00</lastmod>
   </url><url>
     <loc>https://gohugo.io/tools/editors/</loc>
     <lastmod>2021-08-13T21:11:25+08:00</lastmod>
   </url><url>
     <loc>https://gohugo.io/gravity-manual/theme-components/</loc>
     <lastmod>2021-08-15T19:19:09+08:00</lastmod>
+  </url><url>
+    <loc>https://gohugo.io/about/license/</loc>
+    <lastmod>2021-08-15T23:12:59+08:00</lastmod>
   </url><url>
     <loc>https://gohugo.io/gravity-software/bundling/</loc>
     <lastmod>2021-08-15T19:19:09+08:00</lastmod>
@@ -181,14 +172,11 @@
     <loc>https://gohugo.io/gravitydata/hugo/</loc>
     <lastmod>2021-08-15T19:19:09+08:00</lastmod>
   </url><url>
-    <loc>https://gohugo.io/hosting-and-deployment/deployment-with-wercker/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
+    <loc>https://gohugo.io/coding/deployment-with-wercker/</loc>
+    <lastmod>2021-08-15T23:12:59+08:00</lastmod>
   </url><url>
     <loc>https://gohugo.io/tools/search/</loc>
     <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/about/license/</loc>
-    <lastmod>2021-08-15T19:19:09+08:00</lastmod>
   </url><url>
     <loc>https://gohugo.io/getting-started/configuration/</loc>
     <lastmod>2021-08-13T21:11:25+08:00</lastmod>
@@ -205,8 +193,8 @@
     <loc>https://gohugo.io/gravitydata/git/</loc>
     <lastmod>2021-08-15T19:19:09+08:00</lastmod>
   </url><url>
-    <loc>https://gohugo.io/hosting-and-deployment/deployment-with-rsync/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
+    <loc>https://gohugo.io/coding/deployment-with-rsync/</loc>
+    <lastmod>2021-08-15T23:12:59+08:00</lastmod>
   </url><url>
     <loc>https://gohugo.io/tools/other/</loc>
     <lastmod>2021-08-13T21:11:25+08:00</lastmod>
@@ -227,7 +215,7 @@
     <lastmod>2021-08-15T19:19:09+08:00</lastmod>
   </url><url>
     <loc>https://gohugo.io/categories/</loc>
-    <lastmod>2021-08-15T19:19:09+08:00</lastmod>
+    <lastmod>2021-08-15T23:12:59+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
@@ -238,6 +226,9 @@
                 hreflang="en"
                 href="https://gohugo.io/categories/"
                 />
+  </url><url>
+    <loc>https://gohugo.io/categories/about-gravitychina/</loc>
+    <lastmod>2021-08-15T23:12:59+08:00</lastmod>
   </url><url>
     <loc>https://gohugo.io/myshowcase/</loc>
     <lastmod>2021-08-13T21:11:25+08:00</lastmod>
@@ -268,7 +259,7 @@
     <lastmod>2021-08-15T19:19:09+08:00</lastmod>
   </url><url>
     <loc>https://gohugo.io/categories/hosting-and-deployment/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
+    <lastmod>2021-08-15T23:12:59+08:00</lastmod>
   </url><url>
     <loc>https://gohugo.io/maintenance/</loc>
     <lastmod>2021-08-13T21:11:25+08:00</lastmod>
@@ -276,8 +267,8 @@
     <loc>https://gohugo.io/categories/maintenance/</loc>
     <lastmod>2021-08-13T21:11:25+08:00</lastmod>
   </url><url>
-    <loc>https://gohugo.io/hosting-and-deployment/hosting-on-keycdn/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
+    <loc>https://gohugo.io/coding/hosting-on-keycdn/</loc>
+    <lastmod>2021-08-15T23:12:59+08:00</lastmod>
   </url><url>
     <loc>https://gohugo.io/</loc>
     <lastmod>2021-08-14T20:24:05+08:00</lastmod>
@@ -297,9 +288,6 @@
   </url><url>
     <loc>https://gohugo.io/categories/developer-tools/</loc>
     <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/categories/about-hugo/</loc>
-    <lastmod>2021-08-15T19:19:09+08:00</lastmod>
   </url><url>
     <loc>https://gohugo.io/news/</loc>
     <lastmod>2021-08-15T19:19:09+08:00</lastmod>
