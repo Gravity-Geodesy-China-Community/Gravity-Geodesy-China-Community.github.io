@@ -13,7 +13,7 @@
   <title>Hugo Pipes Introduction | Gravity</title>
 
   <meta name="viewport" content="width=device-width,minimum-scale=1">
-  <meta name="generator" content="Hugo 0.84.0" />
+  <meta name="generator" content="Hugo 0.87.0" />
 
   
   <meta name="robots" content="noindex, nofollow">
@@ -42,7 +42,7 @@
 
 
   
-  <script type="text/javascript" src="/output/js/app.175b405753a9c0ce86ab35944e9c4cc1a758a6873209cf5106600f6b2f5a59b6.js" integrity="sha256-F1tAV1OpwM6GqzWUTpxMwadYpocyCc9RBmAPay9aWbY=" crossorigin="anonymous" defer></script>
+  <script type="text/javascript" src="/output/js/app.0984bf5469ab3c8aa82cf8eb015a560d74ee028723b1ab38e928998f5f72baba.js" integrity="sha256-CYS/VGmrPIqoLPjrAVpWDXTuAocjsas46SiZj19yuro=" crossorigin="anonymous" defer></script>
   
       
  
@@ -61,12 +61,12 @@
 <meta property="og:description" content="Hugo Pipes is Hugo&#39;s asset processing set of functions." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://gohugo.io/hugo-pipes/introduction/" /><meta property="og:image" content="https://gohugo.io/images/gohugoio-card.png"/><meta property="article:section" content="hugo-pipes" />
-<meta property="article:published_time" content="2018-07-14T00:00:00&#43;00:00" />
-<meta property="article:modified_time" content="2021-08-13T21:11:25&#43;08:00" />
+<meta property="article:published_time" content="2018-07-14T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-08-13T21:11:25+08:00" />
 
 <meta itemprop="name" content="Hugo Pipes Introduction">
-<meta itemprop="description" content="Hugo Pipes is Hugo&#39;s asset processing set of functions."><meta itemprop="datePublished" content="2018-07-14T00:00:00&#43;00:00" />
-<meta itemprop="dateModified" content="2021-08-13T21:11:25&#43;08:00" />
+<meta itemprop="description" content="Hugo Pipes is Hugo&#39;s asset processing set of functions."><meta itemprop="datePublished" content="2018-07-14T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2021-08-13T21:11:25+08:00" />
 <meta itemprop="wordCount" content="207"><meta itemprop="image" content="https://gohugo.io/images/gohugoio-card.png"/>
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://gohugo.io/images/gohugoio-card.png"/>
@@ -247,23 +247,23 @@
 <p>Asset files must be stored in the asset directory. This is <code>/assets</code> by default, but can be configured via the configuration file&rsquo;s <code>assetDir</code> key.</p>
 <h3 id="from-file-to-resource">From file to resource <a class="header-link" href="#from-file-to-resource"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
 <p>In order to process an asset with Hugo Pipes, it must be retrieved as a resource using <code>resources.Get</code>, which takes one argument: the filepath of the file relative to the asset directory.</p>
-<div class="highlight"><pre class="chroma"><code class="language-go-html-template" data-lang="go-html-template"><span class="cp">{{</span><span class="w"> </span><span class="nx">$style</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">resources</span><span class="na">.Get</span><span class="w"> </span><span class="s">&#34;sass/main.scss&#34;</span><span class="w"> </span><span class="cp">}}</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go-html-template" data-lang="go-html-template"><span class="cp">{{</span><span class="w"> </span><span class="nx">$style</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">resources</span><span class="na">.Get</span><span class="w"> </span><span class="s">&#34;sass/main.scss&#34;</span><span class="w"> </span><span class="cp">}}</span>
 </code></pre></div><h3 id="asset-publishing">Asset publishing <a class="header-link" href="#asset-publishing"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
 <p>Assets will only be published (to <code>/public</code>) if <code>.Permalink</code> or <code>.RelPermalink</code> is used.</p>
 <h3 id="go-pipes">Go Pipes <a class="header-link" href="#go-pipes"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
 <p>For improved readability, the Hugo Pipes examples of this documentation will be written using <a href="/templates/introduction/#pipes">Go Pipes</a>:</p>
-<div class="highlight"><pre class="chroma"><code class="language-go-html-template" data-lang="go-html-template"><span class="cp">{{</span><span class="w"> </span><span class="nx">$style</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">resources</span><span class="na">.Get</span><span class="w"> </span><span class="s">&#34;sass/main.scss&#34;</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nx">resources</span><span class="na">.ToCSS</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nx">resources</span><span class="na">.Minify</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nx">resources</span><span class="na">.Fingerprint</span><span class="w"> </span><span class="cp">}}</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go-html-template" data-lang="go-html-template"><span class="cp">{{</span><span class="w"> </span><span class="nx">$style</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">resources</span><span class="na">.Get</span><span class="w"> </span><span class="s">&#34;sass/main.scss&#34;</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nx">resources</span><span class="na">.ToCSS</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nx">resources</span><span class="na">.Minify</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nx">resources</span><span class="na">.Fingerprint</span><span class="w"> </span><span class="cp">}}</span>
 <span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#34;stylesheet&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;</span><span class="cp">{{</span><span class="w"> </span><span class="nx">$style</span><span class="na">.Permalink</span><span class="w"> </span><span class="cp">}}</span><span class="s">&#34;</span><span class="p">&gt;</span>
 </code></pre></div><h3 id="method-aliases">Method aliases <a class="header-link" href="#method-aliases"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
 <p>Each Hugo Pipes <code>resources</code> transformation method uses a <strong>camelCased</strong> alias (<code>toCSS</code> for <code>resources.ToCSS</code>).
 Non-transformation methods deprived of such aliases are <code>resources.Get</code>, <code>resources.FromString</code>, <code>resources.ExecuteAsTemplate</code> and <code>resources.Concat</code>.</p>
 <p>The example above can therefore also be written as follows:</p>
-<div class="highlight"><pre class="chroma"><code class="language-go-html-template" data-lang="go-html-template"><span class="cp">{{</span><span class="w"> </span><span class="nx">$style</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">resources</span><span class="na">.Get</span><span class="w"> </span><span class="s">&#34;sass/main.scss&#34;</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nx">toCSS</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nx">minify</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nx">fingerprint</span><span class="w"> </span><span class="cp">}}</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go-html-template" data-lang="go-html-template"><span class="cp">{{</span><span class="w"> </span><span class="nx">$style</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">resources</span><span class="na">.Get</span><span class="w"> </span><span class="s">&#34;sass/main.scss&#34;</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nx">toCSS</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nx">minify</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nx">fingerprint</span><span class="w"> </span><span class="cp">}}</span>
 <span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#34;stylesheet&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;</span><span class="cp">{{</span><span class="w"> </span><span class="nx">$style</span><span class="na">.Permalink</span><span class="w"> </span><span class="cp">}}</span><span class="s">&#34;</span><span class="p">&gt;</span>
 </code></pre></div><h3 id="caching">Caching <a class="header-link" href="#caching"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
 <p>Hugo Pipes invocations are cached based on the entire <em>pipe chain</em>.</p>
 <p>An example of a pipe chain is:</p>
-<div class="highlight"><pre class="chroma"><code class="language-go-html-template" data-lang="go-html-template"><span class="cp">{{</span><span class="w"> </span><span class="nx">$mainJs</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">resources</span><span class="na">.Get</span><span class="w"> </span><span class="s">&#34;js/main.js&#34;</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="k">js</span><span class="na">.Build</span><span class="w"> </span><span class="s">&#34;main.js&#34;</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nx">minify</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nx">fingerprint</span><span class="w"> </span><span class="cp">}}</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go-html-template" data-lang="go-html-template"><span class="cp">{{</span><span class="w"> </span><span class="nx">$mainJs</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">resources</span><span class="na">.Get</span><span class="w"> </span><span class="s">&#34;js/main.js&#34;</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="k">js</span><span class="na">.Build</span><span class="w"> </span><span class="s">&#34;main.js&#34;</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nx">minify</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nx">fingerprint</span><span class="w"> </span><span class="cp">}}</span>
 </code></pre></div><p>The pipe chain is only invoked the first time it is encountered in a site build, and results are otherwise loaded from cache. As such, Hugo Pipes can be used in templates which are executed thousands or millions of times without negatively impacting the build performance.</p>
 
 </div>
@@ -1356,7 +1356,7 @@ Non-transformation methods deprived of such aliases are <code>resources.Get</cod
   </a> was last updated: August 13, 2021: <a class="hide-child link primary-color" href="https://github.com/gohugoio/hugoDocs/commit/675299e5580f46886a1b39c571db992a3336bb8c">try hugo templete (675299e)</a>
 </h6>
 
-      <a href="https://github.com/gohugoio/hugoDocs/edit/master/content/en/hugo-pipes/introduction.md" class="
+      <a href="https://github.com/gohugoio/hugoDocs/edit/master/content/en/hugo-pipes%5cintroduction.md" class="
 f6 ph3 pv1 br2 dib  tc ttu mv3 bg-primary-color white hover-bg-green link
 ">Improve this page</a>
 

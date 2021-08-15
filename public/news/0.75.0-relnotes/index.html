@@ -13,7 +13,7 @@
   <title>NPM Pack | Gravity</title>
 
   <meta name="viewport" content="width=device-width,minimum-scale=1">
-  <meta name="generator" content="Hugo 0.84.0" />
+  <meta name="generator" content="Hugo 0.87.0" />
 
   
   <meta name="robots" content="noindex, nofollow">
@@ -42,7 +42,7 @@
 
 
   
-  <script type="text/javascript" src="/output/js/app.175b405753a9c0ce86ab35944e9c4cc1a758a6873209cf5106600f6b2f5a59b6.js" integrity="sha256-F1tAV1OpwM6GqzWUTpxMwadYpocyCc9RBmAPay9aWbY=" crossorigin="anonymous" defer></script>
+  <script type="text/javascript" src="/output/js/app.0984bf5469ab3c8aa82cf8eb015a560d74ee028723b1ab38e928998f5f72baba.js" integrity="sha256-CYS/VGmrPIqoLPjrAVpWDXTuAocjsas46SiZj19yuro=" crossorigin="anonymous" defer></script>
   
       
  
@@ -61,12 +61,12 @@
 <meta property="og:description" content="Hugo 0.75 comes with a new &#34;hugo mod npm pack&#34; command, several improvements re. Hugo Modules and the Node tools, and more." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://gohugo.io/news/0.75.0-relnotes/" /><meta property="og:image" content="https://gohugo.io/news/0.75.0-relnotes/featured.png"/><meta property="article:section" content="news" />
-<meta property="article:published_time" content="2020-09-14T00:00:00&#43;00:00" />
-<meta property="article:modified_time" content="2021-08-13T21:11:25&#43;08:00" />
+<meta property="article:published_time" content="2020-09-14T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-08-13T21:11:25+08:00" />
 
 <meta itemprop="name" content="NPM Pack">
-<meta itemprop="description" content="Hugo 0.75 comes with a new &#34;hugo mod npm pack&#34; command, several improvements re. Hugo Modules and the Node tools, and more."><meta itemprop="datePublished" content="2020-09-14T00:00:00&#43;00:00" />
-<meta itemprop="dateModified" content="2021-08-13T21:11:25&#43;08:00" />
+<meta itemprop="description" content="Hugo 0.75 comes with a new &#34;hugo mod npm pack&#34; command, several improvements re. Hugo Modules and the Node tools, and more."><meta itemprop="datePublished" content="2020-09-14T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2021-08-13T21:11:25+08:00" />
 <meta itemprop="wordCount" content="1386"><meta itemprop="image" content="https://gohugo.io/news/0.75.0-relnotes/featured.png">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://gohugo.io/news/0.75.0-relnotes/featured.png"/>
@@ -259,14 +259,14 @@
           
           
           
-          <img src="/news/0.75.0-relnotes/featured_hubc6f618a9a95ca518cbd88f6725b3660_125400_480x0_resize_catmullrom_2.png" alt="Featured Image for NPM Pack" class="mw-100">
+          <img src="/news/0.75.0-relnotes/featured_hubc6f618a9a95ca518cbd88f6725b3660_125400_480x0_resize_catmullrom_3.png" alt="Featured Image for NPM Pack" class="mw-100">
           
           
         <p>Hugo <code>0.75.0</code> brings several improvements to Hugo Modules, a new CLI command to bridge the JavaScript dependencies into Hugo, a refresh of the versions of the most important upstream dependencies, and more. There are also some good bug fixes in this release. One notable one is covered by <a href="https://github.com/gohugoio/hugo/commit/4055c121847847d8bd6b95a928185daee065091b">this commit</a> &ndash; which covers a &ldquo;stale content scenario in server&rdquo; when you include content or page data via <code>GetPage</code> from a shortcode.</p>
 <h2 id="npm-pack">NPM Pack <a class="header-link" href="#npm-pack"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
 <p>The new CLI command is called <code>hugo mod npm pack</code>.  We have marked it as experimental. It works great, go ahead and use it, but we need to test this out in real projects to get a feel of it; it is likely that it will change/improve in the upcoming versions of Hugo. The command creates a consolidated <code>package.json</code> from the project and all of its <a href="https://gohugo.io/hugo-modules/theme-components/">theme components</a>. On version conflicts, the version closest to the project is selected. We may revise that strategy in the future (<a href="https://about.sourcegraph.com/blog/the-pain-that-minimal-version-selection-solves/">minimal version selection</a> maybe?), but this should give both control and the least amount of surprise for the site owner.</p>
 <p>So, why did we do this? JavaScript is often a background actor in a Hugo project, and it doesn&rsquo;t make sense to publish it to a NPM registry. The JS dependencies are mostly build tools (PostCSS, TailwindCSS, Babel), <code>devDependencies</code>. This has been working fine as long as you kept the JS config files (including <code>package.json</code>) in the project, adding duplication/work when using ready-to-use theme components. These tools work best when you have everything below a single file tree, which is very much different to how <a href="https://gohugo.io/hugo-modules/">Hugo Modules</a> work. An example of a module with TailwindCSS:</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">tailwind-module
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">tailwind-module
 ├── assets
 │   └── css
 ├── package.json
@@ -283,7 +283,7 @@
 <li>The main project&rsquo;s <code>node_modules</code> folder is added to <a href="https://medium.com/nafsadh/setting-up-node-path-for-using-global-packages-via-require-642eb711c725">NODE_PATH</a> when running <code>PostCSS</code>and <code>Babel</code>.</li>
 <li>We have introduced a new mount point <code>assets/_jsconfig</code> where we, by default, mount the JS configuration files that we&rsquo;re interested in. This is where Hugo will start looking for these files, and the files' filenames will also be available in the Node environment, so you can do:</li>
 </ul>
-<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="kd">let</span> <span class="nx">tailwindConfig</span> <span class="o">=</span> <span class="nx">process</span><span class="p">.</span><span class="nx">env</span><span class="p">.</span><span class="nx">HUGO_FILE_TAILWIND_CONFIG_JS</span> <span class="o">||</span> <span class="s1">&#39;./tailwind.config.js&#39;</span><span class="p">;</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="kd">let</span> <span class="nx">tailwindConfig</span> <span class="o">=</span> <span class="nx">process</span><span class="p">.</span><span class="nx">env</span><span class="p">.</span><span class="nx">HUGO_FILE_TAILWIND_CONFIG_JS</span> <span class="o">||</span> <span class="s1">&#39;./tailwind.config.js&#39;</span><span class="p">;</span>
 <span class="kr">const</span> <span class="nx">tailwind</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;tailwindcss&#39;</span><span class="p">)(</span><span class="nx">tailwindConfig</span><span class="p">);</span>
 </code></pre></div><h2 id="module-enhancements">Module Enhancements <a class="header-link" href="#module-enhancements"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
 <ul>
@@ -294,7 +294,7 @@
 <h2 id="statistics">Statistics <a class="header-link" href="#statistics"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
 <p>This release represents <strong>79 contributions by 19 contributors</strong> to the main Hugo code base. <a href="https://github.com/bep">@bep</a> leads the Hugo development with a significant amount of contributions, but also a big shoutout to <a href="https://github.com/apps/dependabot">@dependabot[bot]</a>, <a href="https://github.com/moorereason">@moorereason</a>, and <a href="https://github.com/jmooring">@jmooring</a> for their ongoing contributions.
 And a big thanks to <a href="https://github.com/digitalcraftsman">@digitalcraftsman</a> for his relentless work on keeping the themes site in pristine condition and to <a href="https://github.com/davidsneighbour">@davidsneighbour</a>, <a href="https://github.com/coliff">@coliff</a> and <a href="https://github.com/kaushalmodi">@kaushalmodi</a> for all the great work on the documentation site.</p>
-<p>Many have also been busy writing and fixing the documentation in <a href="https://github.com/gohugoio/hugoDocs">hugoDocs</a>,
+<p>Many have also been busy writing and fixing the documentation in <a href="https://github.com/gohugoio/hugoDocs">hugoDocs</a>, 
 which has received <strong>24 contributions by 15 contributors</strong>. A special thanks to <a href="https://github.com/jmooring">@jmooring</a>, <a href="https://github.com/bep">@bep</a>, <a href="https://github.com/jornane">@jornane</a>, and <a href="https://github.com/inwardmovement">@inwardmovement</a> for their work on the documentation site.</p>
 <p>Hugo now has:</p>
 <ul>
@@ -407,7 +407,7 @@ which has received <strong>24 contributions by 15 contributors</strong>. A speci
 
       <div class="gray f6 mv6">
         Last Update: August 13, 2021 <br>
-        <a href="https://github.com/gohugoio/hugoDocs/edit/master/content/en/news/0.75.0-relnotes/index.md" class="
+        <a href="https://github.com/gohugoio/hugoDocs/edit/master/content/en/news%5c0.75.0-relnotes%5cindex.md" class="
 f6 ph3 pv1 br2 dib  tc ttu mv3 bg-primary-color white hover-bg-green link
 ">Improve this page</a>
 

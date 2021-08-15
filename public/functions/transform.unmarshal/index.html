@@ -13,7 +13,7 @@
   <title>transform.Unmarshal | Gravity</title>
 
   <meta name="viewport" content="width=device-width,minimum-scale=1">
-  <meta name="generator" content="Hugo 0.84.0" />
+  <meta name="generator" content="Hugo 0.87.0" />
 
   
   <meta name="robots" content="noindex, nofollow">
@@ -42,7 +42,7 @@
 
 
   
-  <script type="text/javascript" src="/output/js/app.175b405753a9c0ce86ab35944e9c4cc1a758a6873209cf5106600f6b2f5a59b6.js" integrity="sha256-F1tAV1OpwM6GqzWUTpxMwadYpocyCc9RBmAPay9aWbY=" crossorigin="anonymous" defer></script>
+  <script type="text/javascript" src="/output/js/app.0984bf5469ab3c8aa82cf8eb015a560d74ee028723b1ab38e928998f5f72baba.js" integrity="sha256-CYS/VGmrPIqoLPjrAVpWDXTuAocjsas46SiZj19yuro=" crossorigin="anonymous" defer></script>
   
       
  
@@ -61,12 +61,12 @@
 <meta property="og:description" content="`transform.Unmarshal` (alias `unmarshal`) parses the input and converts it into a map or an array. Supported formats are JSON, TOML, YAML and CSV." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://gohugo.io/functions/transform.unmarshal/" /><meta property="og:image" content="https://gohugo.io/images/gohugoio-card.png"/><meta property="article:section" content="functions" />
-<meta property="article:published_time" content="2018-12-23T00:00:00&#43;00:00" />
-<meta property="article:modified_time" content="2021-08-13T21:11:25&#43;08:00" />
+<meta property="article:published_time" content="2018-12-23T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-08-13T21:11:25+08:00" />
 
 <meta itemprop="name" content="transform.Unmarshal">
-<meta itemprop="description" content="`transform.Unmarshal` (alias `unmarshal`) parses the input and converts it into a map or an array. Supported formats are JSON, TOML, YAML and CSV."><meta itemprop="datePublished" content="2018-12-23T00:00:00&#43;00:00" />
-<meta itemprop="dateModified" content="2021-08-13T21:11:25&#43;08:00" />
+<meta itemprop="description" content="`transform.Unmarshal` (alias `unmarshal`) parses the input and converts it into a map or an array. Supported formats are JSON, TOML, YAML and CSV."><meta itemprop="datePublished" content="2018-12-23T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2021-08-13T21:11:25+08:00" />
 <meta itemprop="wordCount" content="97"><meta itemprop="image" content="https://gohugo.io/images/gohugoio-card.png"/>
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://gohugo.io/images/gohugoio-card.png"/>
@@ -254,10 +254,10 @@
       <pre class="f5 mb4 ph3 pv2 bg-light-gray" style="border-left:4px solid #0594CB;">RESOURCE or STRING | transform.Unmarshal [OPTIONS]</pre>
 
 <p>The function accepts either a <code>Resource</code> created in <a href="/hugo-pipes/">Hugo Pipes</a> or via <a href="/content-management/page-bundles/">Page Bundles</a>, or simply a string. The two examples below will produce the same map:</p>
-<div class="highlight"><pre class="chroma"><code class="language-go-html-template" data-lang="go-html-template"><span class="cp">{{</span><span class="w"> </span><span class="nx">$greetings</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="s">&#34;hello = \&#34;Hello Hugo\&#34;&#34;</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nx">transform</span><span class="na">.Unmarshal</span><span class="w"> </span><span class="cp">}}</span>`
-</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-go-html-template" data-lang="go-html-template"><span class="cp">{{</span><span class="w"> </span><span class="nx">$greetings</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="s">&#34;hello = \&#34;Hello Hugo\&#34;&#34;</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nx">resources</span><span class="na">.FromString</span><span class="w"> </span><span class="s">&#34;data/greetings.toml&#34;</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nx">transform</span><span class="na">.Unmarshal</span><span class="w"> </span><span class="cp">}}</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go-html-template" data-lang="go-html-template"><span class="cp">{{</span><span class="w"> </span><span class="nx">$greetings</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="s">&#34;hello = \&#34;Hello Hugo\&#34;&#34;</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nx">transform</span><span class="na">.Unmarshal</span><span class="w"> </span><span class="cp">}}</span>`
+</code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go-html-template" data-lang="go-html-template"><span class="cp">{{</span><span class="w"> </span><span class="nx">$greetings</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="s">&#34;hello = \&#34;Hello Hugo\&#34;&#34;</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nx">resources</span><span class="na">.FromString</span><span class="w"> </span><span class="s">&#34;data/greetings.toml&#34;</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nx">transform</span><span class="na">.Unmarshal</span><span class="w"> </span><span class="cp">}}</span>
 </code></pre></div><p>In both the above examples, you get a map you can work with:</p>
-<div class="highlight"><pre class="chroma"><code class="language-go-html-template" data-lang="go-html-template"><span class="cp">{{</span><span class="w"> </span><span class="nx">$greetings</span><span class="na">.hello</span><span class="w"> </span><span class="cp">}}</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go-html-template" data-lang="go-html-template"><span class="cp">{{</span><span class="w"> </span><span class="nx">$greetings</span><span class="na">.hello</span><span class="w"> </span><span class="cp">}}</span>
 </code></pre></div><p>The above prints <code>Hello Hugo</code>.</p>
 <h2 id="csv-options">CSV Options <a class="header-link" href="#csv-options"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
 <p>Unmarshal with CSV as input has some options you can set:</p>
@@ -268,7 +268,7 @@
 <dd>The comment character used in the CSV. If set, lines beginning with the comment character without preceding whitespace are ignored.:</dd>
 </dl>
 <p>Example:</p>
-<div class="highlight"><pre class="chroma"><code class="language-go-html-template" data-lang="go-html-template"><span class="cp">{{</span><span class="w"> </span><span class="nx">$csv</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="s">&#34;a;b;c&#34;</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nx">transform</span><span class="na">.Unmarshal</span><span class="w"> </span><span class="o">(</span><span class="nx">dict</span><span class="w"> </span><span class="s">&#34;delimiter&#34;</span><span class="w"> </span><span class="s">&#34;;&#34;</span><span class="o">)</span><span class="w"> </span><span class="cp">}}</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go-html-template" data-lang="go-html-template"><span class="cp">{{</span><span class="w"> </span><span class="nx">$csv</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="s">&#34;a;b;c&#34;</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nx">transform</span><span class="na">.Unmarshal</span><span class="w"> </span><span class="o">(</span><span class="nx">dict</span><span class="w"> </span><span class="s">&#34;delimiter&#34;</span><span class="w"> </span><span class="s">&#34;;&#34;</span><span class="o">)</span><span class="w"> </span><span class="cp">}}</span>
 </code></pre></div>
 </div>
 
@@ -1360,7 +1360,7 @@
   </a> was last updated: August 13, 2021: <a class="hide-child link primary-color" href="https://github.com/gohugoio/hugoDocs/commit/675299e5580f46886a1b39c571db992a3336bb8c">try hugo templete (675299e)</a>
 </h6>
 
-      <a href="https://github.com/gohugoio/hugoDocs/edit/master/content/en/functions/transform.Unmarshal.md" class="
+      <a href="https://github.com/gohugoio/hugoDocs/edit/master/content/en/functions%5ctransform.Unmarshal.md" class="
 f6 ph3 pv1 br2 dib  tc ttu mv3 bg-primary-color white hover-bg-green link
 ">Improve this page</a>
 

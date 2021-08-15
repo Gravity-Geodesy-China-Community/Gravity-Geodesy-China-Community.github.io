@@ -13,7 +13,7 @@
   <title>Hugo 0.45: Revival of ref, relref and GetPage | Gravity</title>
 
   <meta name="viewport" content="width=device-width,minimum-scale=1">
-  <meta name="generator" content="Hugo 0.84.0" />
+  <meta name="generator" content="Hugo 0.87.0" />
 
   
   <meta name="robots" content="noindex, nofollow">
@@ -42,7 +42,7 @@
 
 
   
-  <script type="text/javascript" src="/output/js/app.175b405753a9c0ce86ab35944e9c4cc1a758a6873209cf5106600f6b2f5a59b6.js" integrity="sha256-F1tAV1OpwM6GqzWUTpxMwadYpocyCc9RBmAPay9aWbY=" crossorigin="anonymous" defer></script>
+  <script type="text/javascript" src="/output/js/app.0984bf5469ab3c8aa82cf8eb015a560d74ee028723b1ab38e928998f5f72baba.js" integrity="sha256-CYS/VGmrPIqoLPjrAVpWDXTuAocjsas46SiZj19yuro=" crossorigin="anonymous" defer></script>
   
       
  
@@ -61,12 +61,12 @@
 <meta property="og:description" content="Hugo 0.45 adds relative page lookups, language support in ref/relref and several Hugo Pipes improvements." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://gohugo.io/news/0.45-relnotes/" /><meta property="og:image" content="https://gohugo.io/news/0.45-relnotes/featured-hugo-45-poster.png"/><meta property="article:section" content="news" />
-<meta property="article:published_time" content="2018-07-22T00:00:00&#43;00:00" />
-<meta property="article:modified_time" content="2021-08-13T21:11:25&#43;08:00" />
+<meta property="article:published_time" content="2018-07-22T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-08-13T21:11:25+08:00" />
 
 <meta itemprop="name" content="Hugo 0.45: Revival of ref, relref and GetPage">
-<meta itemprop="description" content="Hugo 0.45 adds relative page lookups, language support in ref/relref and several Hugo Pipes improvements."><meta itemprop="datePublished" content="2018-07-22T00:00:00&#43;00:00" />
-<meta itemprop="dateModified" content="2021-08-13T21:11:25&#43;08:00" />
+<meta itemprop="description" content="Hugo 0.45 adds relative page lookups, language support in ref/relref and several Hugo Pipes improvements."><meta itemprop="datePublished" content="2018-07-22T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2021-08-13T21:11:25+08:00" />
 <meta itemprop="wordCount" content="707"><meta itemprop="image" content="https://gohugo.io/news/0.45-relnotes/featured-hugo-45-poster.png">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://gohugo.io/news/0.45-relnotes/featured-hugo-45-poster.png"/>
@@ -259,23 +259,23 @@
           
           
           
-          <img src="/news/0.45-relnotes/featured-hugo-45-poster_huea79995576e3b93a3041ae824a391758_66863_480x0_resize_catmullrom_2.png" alt="Featured Image for Hugo 0.45: Revival of ref, relref and GetPage" class="mw-100">
+          <img src="/news/0.45-relnotes/featured-hugo-45-poster_huea79995576e3b93a3041ae824a391758_66863_480x0_resize_catmullrom_3.png" alt="Featured Image for Hugo 0.45: Revival of ref, relref and GetPage" class="mw-100">
           
           
         <p>Hugo <code>0.45</code> is the <strong>revival of ref, relref and GetPage</strong>. <a href="https://github.com/vassudanagunta">@vassudanagunta</a> and <a href="https://github.com/bep">@bep</a> have done some great work improving the API and implementation for the helper functions used to <strong>get one page</strong>. Before this release, the API was a little bit clumsy and the result potentially ambiguous in some situations.</p>
 <p>Now you can simply do:</p>
-<div class="highlight"><pre class="chroma"><code class="language-go-html-template" data-lang="go-html-template"><span class="cp">{{</span><span class="w"> </span><span class="k">with</span><span class="w"> </span><span class="na">.Site.GetPage</span><span class="w"> </span><span class="s">&#34;/blog/my-post.md&#34;</span><span class="w"> </span><span class="cp">}}{{</span><span class="w"> </span><span class="na">.Title</span><span class="w"> </span><span class="cp">}}{{</span><span class="w"> </span><span class="k">end</span><span class="w"> </span><span class="cp">}}</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go-html-template" data-lang="go-html-template"><span class="cp">{{</span><span class="w"> </span><span class="k">with</span><span class="w"> </span><span class="na">.Site.GetPage</span><span class="w"> </span><span class="s">&#34;/blog/my-post.md&#34;</span><span class="w"> </span><span class="cp">}}{{</span><span class="w"> </span><span class="na">.Title</span><span class="w"> </span><span class="cp">}}{{</span><span class="w"> </span><span class="k">end</span><span class="w"> </span><span class="cp">}}</span>
 </code></pre></div><p>Or to get a section page:</p>
-<div class="highlight"><pre class="chroma"><code class="language-go-html-template" data-lang="go-html-template"><span class="cp">{{</span><span class="w"> </span><span class="k">with</span><span class="w"> </span><span class="na">.Site.GetPage</span><span class="w"> </span><span class="s">&#34;/blog&#34;</span><span class="w"> </span><span class="cp">}}{{</span><span class="w"> </span><span class="na">.Title</span><span class="w"> </span><span class="cp">}}{{</span><span class="w"> </span><span class="k">end</span><span class="w"> </span><span class="cp">}}</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go-html-template" data-lang="go-html-template"><span class="cp">{{</span><span class="w"> </span><span class="k">with</span><span class="w"> </span><span class="na">.Site.GetPage</span><span class="w"> </span><span class="s">&#34;/blog&#34;</span><span class="w"> </span><span class="cp">}}{{</span><span class="w"> </span><span class="na">.Title</span><span class="w"> </span><span class="cp">}}{{</span><span class="w"> </span><span class="k">end</span><span class="w"> </span><span class="cp">}}</span>
 </code></pre></div><p>We have also added a <code>.GetPage</code> method on <code>Page</code> and added support for page-relative linking. This means that the leading slash (<code>/</code>) now has a meaning. For <code>.Site.GetPage</code>, all lookups will start at the content root. But for lookups with a <code>Page</code> context, paths without a leading slash will be treated as relative to the page.</p>
 <p>This means that the following example will find the page in the current section:</p>
-<div class="highlight"><pre class="chroma"><code class="language-go-html-template" data-lang="go-html-template"><span class="cp">{{</span><span class="err">&lt;</span><span class="w"> </span><span class="nx">ref</span><span class="w"> </span><span class="s">&#34;my-post.md&#34;</span><span class="w"> </span><span class="err">&gt;</span><span class="cp">}}</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go-html-template" data-lang="go-html-template"><span class="cp">{{</span><span class="err">&lt;</span><span class="w"> </span><span class="nx">ref</span><span class="w"> </span><span class="s">&#34;my-post.md&#34;</span><span class="w"> </span><span class="err">&gt;</span><span class="cp">}}</span>
 </code></pre></div><p>You can also use the <code>..</code> to refer to a page one level up etc.:</p>
-<div class="highlight"><pre class="chroma"><code class="language-go-html-template" data-lang="go-html-template"><span class="cp">{{</span><span class="err">&lt;</span><span class="w"> </span><span class="nx">ref</span><span class="w"> </span><span class="s">&#34;../my-post.md&#34;</span><span class="w"> </span><span class="err">&gt;</span><span class="cp">}}</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go-html-template" data-lang="go-html-template"><span class="cp">{{</span><span class="err">&lt;</span><span class="w"> </span><span class="nx">ref</span><span class="w"> </span><span class="s">&#34;../my-post.md&#34;</span><span class="w"> </span><span class="err">&gt;</span><span class="cp">}}</span>
 </code></pre></div><p>We have now also added language support to <code>ref</code> and <code>relref</code>, so you can link to a page in another language:</p>
-<div class="highlight"><pre class="chroma"><code class="language-go-html-template" data-lang="go-html-template"><span class="cp">{{</span><span class="err">&lt;</span><span class="w"> </span><span class="nx">relref</span><span class="w"> </span><span class="nx">path</span><span class="o">=</span><span class="s">&#34;document.md&#34;</span><span class="w"> </span><span class="nx">lang</span><span class="o">=</span><span class="s">&#34;ja&#34;</span><span class="w"> </span><span class="err">&gt;</span><span class="cp">}}</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go-html-template" data-lang="go-html-template"><span class="cp">{{</span><span class="err">&lt;</span><span class="w"> </span><span class="nx">relref</span><span class="w"> </span><span class="nx">path</span><span class="o">=</span><span class="s">&#34;document.md&#34;</span><span class="w"> </span><span class="nx">lang</span><span class="o">=</span><span class="s">&#34;ja&#34;</span><span class="w"> </span><span class="err">&gt;</span><span class="cp">}}</span>
 </code></pre></div><p>To link to a given Output Format of a document, you can use this syntax:</p>
-<div class="highlight"><pre class="chroma"><code class="language-go-html-template" data-lang="go-html-template"><span class="cp">{{</span><span class="err">&lt;</span><span class="w"> </span><span class="nx">relref</span><span class="w"> </span><span class="nx">path</span><span class="o">=</span><span class="s">&#34;document.md&#34;</span><span class="w"> </span><span class="nx">outputFormat</span><span class="o">=</span><span class="s">&#34;rss&#34;</span><span class="w"> </span><span class="err">&gt;</span><span class="cp">}}</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go-html-template" data-lang="go-html-template"><span class="cp">{{</span><span class="err">&lt;</span><span class="w"> </span><span class="nx">relref</span><span class="w"> </span><span class="nx">path</span><span class="o">=</span><span class="s">&#34;document.md&#34;</span><span class="w"> </span><span class="nx">outputFormat</span><span class="o">=</span><span class="s">&#34;rss&#34;</span><span class="w"> </span><span class="err">&gt;</span><span class="cp">}}</span>
 </code></pre></div><p>To make working with these reflinks on bigger sites easier to work with, we have also improved the error logging, and added two new configuration settings:</p>
 <ul>
 <li>refLinksErrorLevel: ERROR (default, will fail the build when a reflink cannot be resolved) or WARNING.</li>
@@ -286,7 +286,7 @@
 <p>This release represents <strong>31 contributions by 4 contributors</strong> to the main Hugo code base.
 <a href="https://github.com/bep">@bep</a> leads the Hugo development with a significant amount of contributions, but also a big shoutout to <a href="https://github.com/vassudanagunta">@vassudanagunta</a>, <a href="https://github.com/hairmare">@hairmare</a>, and <a href="https://github.com/garrmcnu">@garrmcnu</a> for their ongoing contributions.
 And a big thanks to <a href="https://github.com/digitalcraftsman">@digitalcraftsman</a> for his relentless work on keeping the themes site in pristine condition and to <a href="https://github.com/kaushalmodi">@kaushalmodi</a> for his great work on the documentation site.</p>
-<p>Many have also been busy writing and fixing the documentation in <a href="https://github.com/gohugoio/hugoDocs">hugoDocs</a>,
+<p>Many have also been busy writing and fixing the documentation in <a href="https://github.com/gohugoio/hugoDocs">hugoDocs</a>, 
 which has received <strong>10 contributions by 8 contributors</strong>. A special thanks to <a href="https://github.com/kaushalmodi">@kaushalmodi</a>, <a href="https://github.com/Hanzei">@Hanzei</a>, <a href="https://github.com/KurtTrowbridge">@KurtTrowbridge</a>, and <a href="https://github.com/regisphilibert">@regisphilibert</a> for their work on the documentation site.</p>
 <p>Hugo now has:</p>
 <ul>
@@ -337,7 +337,7 @@ which has received <strong>10 contributions by 8 contributors</strong>. A specia
 
       <div class="gray f6 mv6">
         Last Update: August 13, 2021 <br>
-        <a href="https://github.com/gohugoio/hugoDocs/edit/master/content/en/news/0.45-relnotes/index.md" class="
+        <a href="https://github.com/gohugoio/hugoDocs/edit/master/content/en/news%5c0.45-relnotes%5cindex.md" class="
 f6 ph3 pv1 br2 dib  tc ttu mv3 bg-primary-color white hover-bg-green link
 ">Improve this page</a>
 

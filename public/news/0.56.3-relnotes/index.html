@@ -13,7 +13,7 @@
   <title>Hugo 0.56.3: A couple of Bug Fixes | Gravity</title>
 
   <meta name="viewport" content="width=device-width,minimum-scale=1">
-  <meta name="generator" content="Hugo 0.84.0" />
+  <meta name="generator" content="Hugo 0.87.0" />
 
   
   <meta name="robots" content="noindex, nofollow">
@@ -42,7 +42,7 @@
 
 
   
-  <script type="text/javascript" src="/output/js/app.175b405753a9c0ce86ab35944e9c4cc1a758a6873209cf5106600f6b2f5a59b6.js" integrity="sha256-F1tAV1OpwM6GqzWUTpxMwadYpocyCc9RBmAPay9aWbY=" crossorigin="anonymous" defer></script>
+  <script type="text/javascript" src="/output/js/app.0984bf5469ab3c8aa82cf8eb015a560d74ee028723b1ab38e928998f5f72baba.js" integrity="sha256-CYS/VGmrPIqoLPjrAVpWDXTuAocjsas46SiZj19yuro=" crossorigin="anonymous" defer></script>
   
       
  
@@ -61,12 +61,12 @@
 <meta property="og:description" content="This version fixes a couple of bugs introduced in 0.56.0." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://gohugo.io/news/0.56.3-relnotes/" /><meta property="og:image" content="https://gohugo.io/images/blog/hugo-bug-poster.png" /><meta property="article:section" content="news" />
-<meta property="article:published_time" content="2019-07-31T00:00:00&#43;00:00" />
-<meta property="article:modified_time" content="2021-08-13T21:11:25&#43;08:00" />
+<meta property="article:published_time" content="2019-07-31T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-08-13T21:11:25+08:00" />
 
 <meta itemprop="name" content="Hugo 0.56.3: A couple of Bug Fixes">
-<meta itemprop="description" content="This version fixes a couple of bugs introduced in 0.56.0."><meta itemprop="datePublished" content="2019-07-31T00:00:00&#43;00:00" />
-<meta itemprop="dateModified" content="2021-08-13T21:11:25&#43;08:00" />
+<meta itemprop="description" content="This version fixes a couple of bugs introduced in 0.56.0."><meta itemprop="datePublished" content="2019-07-31T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2021-08-13T21:11:25+08:00" />
 <meta itemprop="wordCount" content="218"><meta itemprop="image" content="https://gohugo.io/images/blog/hugo-bug-poster.png">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://gohugo.io/images/blog/hugo-bug-poster.png"/>
@@ -291,7 +291,7 @@
   <div class="tab-content">
     
       <div data-pane="yaml" class="code-copy-content nt3 tab-pane active">
-        <div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">module</span><span class="p">:</span><span class="w">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">module</span><span class="p">:</span><span class="w">
 </span><span class="w">  </span><span class="nt">mounts</span><span class="p">:</span><span class="w">
 </span><span class="w">  </span>- <span class="nt">source</span><span class="p">:</span><span class="w"> </span><span class="l">content1</span><span class="w">
 </span><span class="w">    </span><span class="nt">target</span><span class="p">:</span><span class="w"> </span><span class="l">content</span><span class="w">
@@ -305,15 +305,15 @@
       
     
       <div data-pane="toml" class="code-copy-content nt3 tab-pane ">
-        <div class="highlight"><pre class="chroma"><code class="language-toml" data-lang="toml"><span class="p">[</span><span class="nx">module</span><span class="p">]</span>
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="p">[</span><span class="nx">module</span><span class="p">]</span>
+<span class="p">[[</span><span class="nx">module</span><span class="p">.</span><span class="nx">mounts</span><span class="p">]]</span>
+<span class="nx">source</span> <span class="p">=</span> <span class="s1">&#39;content1&#39;</span>
+<span class="nx">target</span> <span class="p">=</span> <span class="s1">&#39;content&#39;</span>
+<span class="p">[[</span><span class="nx">module</span><span class="p">.</span><span class="nx">mounts</span><span class="p">]]</span>
+<span class="nx">source</span> <span class="p">=</span> <span class="s1">&#39;content2&#39;</span>
+<span class="nx">target</span> <span class="p">=</span> <span class="s1">&#39;content/docs&#39;</span>
 
-  <span class="p">[[</span><span class="nx">module</span><span class="p">.</span><span class="nx">mounts</span><span class="p">]]</span>
-    <span class="nx">source</span> <span class="p">=</span> <span class="s2">&#34;content1&#34;</span>
-    <span class="nx">target</span> <span class="p">=</span> <span class="s2">&#34;content&#34;</span>
 
-  <span class="p">[[</span><span class="nx">module</span><span class="p">.</span><span class="nx">mounts</span><span class="p">]]</span>
-    <span class="nx">source</span> <span class="p">=</span> <span class="s2">&#34;content2&#34;</span>
-    <span class="nx">target</span> <span class="p">=</span> <span class="s2">&#34;content/docs&#34;</span>
 </code></pre></div>
       </div>
       
@@ -322,7 +322,7 @@
       
     
       <div data-pane="json" class="code-copy-content nt3 tab-pane ">
-        <div class="highlight"><pre class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
    <span class="nt">&#34;module&#34;</span><span class="p">:</span> <span class="p">{</span>
       <span class="nt">&#34;mounts&#34;</span><span class="p">:</span> <span class="p">[</span>
          <span class="p">{</span>
@@ -349,7 +349,7 @@
 
 <p>The above is obviously both common and very useful. This was never an issue with the situations where you load a specific file/directory (e.g. <code>resources.Get &quot;a/b/c/d/sunset.jpg&quot;</code>).</p>
 <p>User feedback also told us that these file mounts were a little hard to debug, so we added a new command that prints the configured mounts as a JSON:</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">hugo config mounts
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">hugo config mounts
 </code></pre></div><ul>
 <li>hugolib: Fix bundle header clone logic <a href="https://github.com/gohugoio/hugo/commit/0e086785fa4be8086256e9d7de6cda78e18d00ee">0e086785</a> <a href="https://github.com/bep">@bep</a> <a href="https://github.com/gohugoio/hugo/issues/6136">#6136</a></li>
 <li>docs: Regenerate CLI docs <a href="https://github.com/gohugoio/hugo/commit/02b947eaa3cc68404180d796a2f7119dce074539">02b947ea</a> <a href="https://github.com/bep">@bep</a></li>
@@ -366,7 +366,7 @@
 
       <div class="gray f6 mv6">
         Last Update: August 13, 2021 <br>
-        <a href="https://github.com/gohugoio/hugoDocs/edit/master/content/en/news/0.56.3-relnotes/index.md" class="
+        <a href="https://github.com/gohugoio/hugoDocs/edit/master/content/en/news%5c0.56.3-relnotes%5cindex.md" class="
 f6 ph3 pv1 br2 dib  tc ttu mv3 bg-primary-color white hover-bg-green link
 ">Improve this page</a>
 

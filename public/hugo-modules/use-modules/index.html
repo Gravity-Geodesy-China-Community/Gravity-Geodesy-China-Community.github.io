@@ -13,7 +13,7 @@
   <title>Use Hugo Modules | Gravity</title>
 
   <meta name="viewport" content="width=device-width,minimum-scale=1">
-  <meta name="generator" content="Hugo 0.84.0" />
+  <meta name="generator" content="Hugo 0.87.0" />
 
   
   <meta name="robots" content="noindex, nofollow">
@@ -42,7 +42,7 @@
 
 
   
-  <script type="text/javascript" src="/output/js/app.175b405753a9c0ce86ab35944e9c4cc1a758a6873209cf5106600f6b2f5a59b6.js" integrity="sha256-F1tAV1OpwM6GqzWUTpxMwadYpocyCc9RBmAPay9aWbY=" crossorigin="anonymous" defer></script>
+  <script type="text/javascript" src="/output/js/app.0984bf5469ab3c8aa82cf8eb015a560d74ee028723b1ab38e928998f5f72baba.js" integrity="sha256-CYS/VGmrPIqoLPjrAVpWDXTuAocjsas46SiZj19yuro=" crossorigin="anonymous" defer></script>
   
       
  
@@ -61,12 +61,12 @@
 <meta property="og:description" content="How to use Hugo Modules to build and manage your site." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://gohugo.io/hugo-modules/use-modules/" /><meta property="og:image" content="https://gohugo.io/images/gohugoio-card.png"/><meta property="article:section" content="hugo-modules" />
-<meta property="article:published_time" content="2019-07-24T00:00:00&#43;00:00" />
-<meta property="article:modified_time" content="2021-08-13T21:11:25&#43;08:00" />
+<meta property="article:published_time" content="2019-07-24T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-08-13T21:11:25+08:00" />
 
 <meta itemprop="name" content="Use Hugo Modules">
-<meta itemprop="description" content="How to use Hugo Modules to build and manage your site."><meta itemprop="datePublished" content="2019-07-24T00:00:00&#43;00:00" />
-<meta itemprop="dateModified" content="2021-08-13T21:11:25&#43;08:00" />
+<meta itemprop="description" content="How to use Hugo Modules to build and manage your site."><meta itemprop="datePublished" content="2019-07-24T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2021-08-13T21:11:25+08:00" />
 <meta itemprop="wordCount" content="504"><meta itemprop="image" content="https://gohugo.io/images/gohugoio-card.png"/>
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://gohugo.io/images/gohugoio-card.png"/>
@@ -284,7 +284,7 @@
 
 <h2 id="initialize-a-new-module">Initialize a New Module <a class="header-link" href="#initialize-a-new-module"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
 <p>Use <code>hugo mod init</code> to initialize a new Hugo Module. If it fails to guess the module path, you must provide it as an argument, e.g.:</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">hugo mod init github.com/gohugoio/myShortcodes
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">hugo mod init github.com/gohugoio/myShortcodes
 </code></pre></div><p>Also see the <a href="/commands/hugo_mod_init/">CLI Doc</a>.</p>
 <h2 id="use-a-module-for-a-theme">Use a Module for a Theme <a class="header-link" href="#use-a-module-for-a-theme"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
 <p>The easiest way to use a Module for a theme is to import it in the config.</p>
@@ -321,7 +321,7 @@
   <div class="tab-content">
     
       <div data-pane="yaml" class="code-copy-content nt3 tab-pane active">
-        <div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">module</span><span class="p">:</span><span class="w">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">module</span><span class="p">:</span><span class="w">
 </span><span class="w">  </span><span class="nt">imports</span><span class="p">:</span><span class="w">
 </span><span class="w">  </span>- <span class="nt">path</span><span class="p">:</span><span class="w"> </span><span class="l">github.com/spf13/hyde</span><span class="w">
 </span></code></pre></div>
@@ -332,10 +332,11 @@
       
     
       <div data-pane="toml" class="code-copy-content nt3 tab-pane ">
-        <div class="highlight"><pre class="chroma"><code class="language-toml" data-lang="toml"><span class="p">[</span><span class="nx">module</span><span class="p">]</span>
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="p">[</span><span class="nx">module</span><span class="p">]</span>
+<span class="p">[[</span><span class="nx">module</span><span class="p">.</span><span class="nx">imports</span><span class="p">]]</span>
+<span class="nx">path</span> <span class="p">=</span> <span class="s1">&#39;github.com/spf13/hyde&#39;</span>
 
-  <span class="p">[[</span><span class="nx">module</span><span class="p">.</span><span class="nx">imports</span><span class="p">]]</span>
-    <span class="nx">path</span> <span class="p">=</span> <span class="s2">&#34;github.com/spf13/hyde&#34;</span>
+
 </code></pre></div>
       </div>
       
@@ -344,7 +345,7 @@
       
     
       <div data-pane="json" class="code-copy-content nt3 tab-pane ">
-        <div class="highlight"><pre class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
    <span class="nt">&#34;module&#34;</span><span class="p">:</span> <span class="p">{</span>
       <span class="nt">&#34;imports&#34;</span><span class="p">:</span> <span class="p">[</span>
          <span class="p">{</span>
@@ -369,7 +370,7 @@
 <p>To update or manage versions, you can use <code>hugo mod get</code>.</p>
 <p>Some examples:</p>
 <h3 id="update-all-modules">Update All Modules <a class="header-link" href="#update-all-modules"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">hugo mod get -u
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">hugo mod get -u
 </code></pre></div><h3 id="update-all-modules-recursively">Update All Modules Recursively <a class="header-link" href="#update-all-modules-recursively"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
 
 
@@ -377,15 +378,15 @@
 <button class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 mr2 ml2 px-4 border border-gray-400 rounded shadow">
     <a href="https://gohugo.io/news/0.65.0-relnotes/" target="_blank">New in v0.65.0</a>
 </button>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">hugo mod get -u ./...
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">hugo mod get -u ./...
 </code></pre></div><h3 id="update-one-module">Update One Module <a class="header-link" href="#update-one-module"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">hugo mod get -u github.com/gohugoio/myShortcodes
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">hugo mod get -u github.com/gohugoio/myShortcodes
 </code></pre></div><h3 id="get-a-specific-version">Get a Specific Version <a class="header-link" href="#get-a-specific-version"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">hugo mod get github.com/gohugoio/myShortcodes@v1.0.7
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">hugo mod get github.com/gohugoio/myShortcodes@v1.0.7
 </code></pre></div><p>Also see the <a href="/commands/hugo_mod_get/">CLI Doc</a>.</p>
 <h2 id="make-and-test-changes-in-a-module">Make and test changes in a module <a class="header-link" href="#make-and-test-changes-in-a-module"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
 <p>One way to do local development of a module imported in a project is to add a replace directive to a local directory with the source in <code>go.mod</code>:</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">replace github.com/bep/hugotestmods/mypartials <span class="o">=</span>&gt; /Users/bep/hugotestmods/mypartials
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">replace github.com/bep/hugotestmods/mypartials <span class="o">=</span>&gt; /Users/bep/hugotestmods/mypartials
 </code></pre></div><p>If you have the <code>hugo server</code> running, the configuration will be reloaded and <code>/Users/bep/hugotestmods/mypartials</code> put on the watch list.</p>
 <p>Note that since v.0.77.0 you can use modules config <a href="https://gohugo.io/hugo-modules/configuration/#module-config-top-level"><code>replacements</code></a> option. 
 
@@ -1534,7 +1535,7 @@ github.com/bep/my-modular-site in-themesdir
   </a> was last updated: August 13, 2021: <a class="hide-child link primary-color" href="https://github.com/gohugoio/hugoDocs/commit/675299e5580f46886a1b39c571db992a3336bb8c">try hugo templete (675299e)</a>
 </h6>
 
-      <a href="https://github.com/gohugoio/hugoDocs/edit/master/content/en/hugo-modules/use-modules.md" class="
+      <a href="https://github.com/gohugoio/hugoDocs/edit/master/content/en/hugo-modules%5cuse-modules.md" class="
 f6 ph3 pv1 br2 dib  tc ttu mv3 bg-primary-color white hover-bg-green link
 ">Improve this page</a>
 
