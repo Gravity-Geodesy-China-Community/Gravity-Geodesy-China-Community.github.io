@@ -2,13 +2,10 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://gohugo.io/hugo-pipes/introduction/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
+    <loc>https://gohugo.io/gravity-software/introduction/</loc>
+    <lastmod>2018-07-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://gohugo.io/contribute/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/functions/</loc>
     <lastmod>2021-08-13T21:11:25+08:00</lastmod>
   </url><url>
     <loc>https://gohugo.io/getting-started/</loc>
@@ -27,8 +24,8 @@
                 href="https://gohugo.io/documentation/"
                 />
   </url><url>
-    <loc>https://gohugo.io/hugo-modules/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
+    <loc>https://gohugo.io/gravity-manual/</loc>
+    <lastmod>2017-02-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://gohugo.io/about/</loc>
     <lastmod>2021-08-13T21:11:25+08:00</lastmod>
@@ -43,11 +40,8 @@
                 href="https://gohugo.io/about/"
                 />
   </url><url>
-    <loc>https://gohugo.io/troubleshooting/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/variables/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
+    <loc>https://gohugo.io/gravitydata/</loc>
+    <lastmod>2017-02-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://gohugo.io/tools/</loc>
     <lastmod>2021-08-13T21:11:25+08:00</lastmod>
@@ -58,11 +52,8 @@
     <loc>https://gohugo.io/hosting-and-deployment/hugo-deploy/</loc>
     <lastmod>2021-08-13T21:11:25+08:00</lastmod>
   </url><url>
-    <loc>https://gohugo.io/hugo-pipes/scss-sass/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/troubleshooting/build-performance/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
+    <loc>https://gohugo.io/gravity-software/scss-sass/</loc>
+    <lastmod>2018-07-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://gohugo.io/about/security-model/</loc>
     <lastmod>2021-08-13T21:11:25+08:00</lastmod>
@@ -73,14 +64,14 @@
     <loc>https://gohugo.io/hosting-and-deployment/deployment-with-nanobox/</loc>
     <lastmod>2021-08-13T21:11:25+08:00</lastmod>
   </url><url>
-    <loc>https://gohugo.io/hugo-modules/configuration/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
+    <loc>https://gohugo.io/gravity-manual/configuration/</loc>
+    <lastmod>2019-07-24T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://gohugo.io/hosting-and-deployment/hosting-on-render/</loc>
     <lastmod>2021-08-13T21:11:25+08:00</lastmod>
   </url><url>
-    <loc>https://gohugo.io/hugo-pipes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
+    <loc>https://gohugo.io/gravity-software/</loc>
+    <lastmod>2018-07-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://gohugo.io/hosting-and-deployment/hosting-on-aws-amplify/</loc>
     <lastmod>2021-08-13T21:11:25+08:00</lastmod>
@@ -94,8 +85,8 @@
     <loc>https://gohugo.io/tools/migrations/</loc>
     <lastmod>2021-08-13T21:11:25+08:00</lastmod>
   </url><url>
-    <loc>https://gohugo.io/variables/site/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
+    <loc>https://gohugo.io/gravitydata/site/</loc>
+    <lastmod>2017-02-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://gohugo.io/about/what-is-hugo/</loc>
     <lastmod>2021-08-13T21:11:25+08:00</lastmod>
@@ -103,14 +94,14 @@
     <loc>https://gohugo.io/getting-started/quick-start/</loc>
     <lastmod>2021-08-13T21:11:25+08:00</lastmod>
   </url><url>
-    <loc>https://gohugo.io/hugo-modules/use-modules/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
+    <loc>https://gohugo.io/gravity-manual/use-modules/</loc>
+    <lastmod>2019-07-24T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://gohugo.io/hosting-and-deployment/hosting-on-firebase/</loc>
     <lastmod>2021-08-13T21:11:25+08:00</lastmod>
   </url><url>
-    <loc>https://gohugo.io/variables/shortcodes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
+    <loc>https://gohugo.io/gravitydata/shortcodes/</loc>
+    <lastmod>2017-03-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://gohugo.io/contribute/documentation/</loc>
     <lastmod>2021-08-13T21:11:25+08:00</lastmod>
@@ -118,17 +109,17 @@
     <loc>https://gohugo.io/about/features/</loc>
     <lastmod>2021-08-13T21:11:25+08:00</lastmod>
   </url><url>
-    <loc>https://gohugo.io/variables/page/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
+    <loc>https://gohugo.io/gravitydata/page/</loc>
+    <lastmod>2017-02-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://gohugo.io/variables/pages/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
+    <loc>https://gohugo.io/gravitydata/pages/</loc>
+    <lastmod>2019-10-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://gohugo.io/tools/starter-kits/</loc>
     <lastmod>2021-08-13T21:11:25+08:00</lastmod>
   </url><url>
-    <loc>https://gohugo.io/variables/taxonomy/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
+    <loc>https://gohugo.io/gravitydata/taxonomy/</loc>
+    <lastmod>2017-02-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://gohugo.io/about/benefits/</loc>
     <lastmod>2021-08-13T21:11:25+08:00</lastmod>
@@ -142,17 +133,17 @@
     <loc>https://gohugo.io/hosting-and-deployment/hosting-on-github/</loc>
     <lastmod>2021-08-13T21:11:25+08:00</lastmod>
   </url><url>
-    <loc>https://gohugo.io/hugo-pipes/postprocess/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
+    <loc>https://gohugo.io/gravity-software/postprocess/</loc>
+    <lastmod>2020-04-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://gohugo.io/hugo-pipes/postcss/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
+    <loc>https://gohugo.io/gravity-software/postcss/</loc>
+    <lastmod>2018-07-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://gohugo.io/getting-started/usage/</loc>
     <lastmod>2021-08-13T21:11:25+08:00</lastmod>
   </url><url>
-    <loc>https://gohugo.io/variables/files/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
+    <loc>https://gohugo.io/gravitydata/files/</loc>
+    <lastmod>2017-02-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://gohugo.io/tools/frontends/</loc>
     <lastmod>2021-08-13T21:11:25+08:00</lastmod>
@@ -160,17 +151,17 @@
     <loc>https://gohugo.io/hosting-and-deployment/hosting-on-gitlab/</loc>
     <lastmod>2021-08-13T21:11:25+08:00</lastmod>
   </url><url>
-    <loc>https://gohugo.io/hugo-pipes/js/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
+    <loc>https://gohugo.io/gravity-software/js/</loc>
+    <lastmod>2020-07-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://gohugo.io/hugo-pipes/babel/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
+    <loc>https://gohugo.io/gravity-software/babel/</loc>
+    <lastmod>2019-03-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://gohugo.io/hugo-pipes/minification/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
+    <loc>https://gohugo.io/gravity-software/minification/</loc>
+    <lastmod>2018-07-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://gohugo.io/variables/menus/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
+    <loc>https://gohugo.io/gravitydata/menus/</loc>
+    <lastmod>2017-03-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://gohugo.io/hosting-and-deployment/hosting-on-bitbucket/</loc>
     <lastmod>2021-08-13T21:11:25+08:00</lastmod>
@@ -178,20 +169,17 @@
     <loc>https://gohugo.io/tools/editors/</loc>
     <lastmod>2021-08-13T21:11:25+08:00</lastmod>
   </url><url>
-    <loc>https://gohugo.io/hugo-modules/theme-components/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
+    <loc>https://gohugo.io/gravity-manual/theme-components/</loc>
+    <lastmod>2017-02-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://gohugo.io/getting-started/directory-structure/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/hugo-pipes/bundling/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
+    <loc>https://gohugo.io/gravity-software/bundling/</loc>
+    <lastmod>2018-07-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://gohugo.io/getting-started/code-toggle/</loc>
     <lastmod>2021-08-13T21:11:25+08:00</lastmod>
   </url><url>
-    <loc>https://gohugo.io/variables/hugo/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
+    <loc>https://gohugo.io/gravitydata/hugo/</loc>
+    <lastmod>2017-03-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://gohugo.io/hosting-and-deployment/deployment-with-wercker/</loc>
     <lastmod>2021-08-13T21:11:25+08:00</lastmod>
@@ -211,11 +199,11 @@
     <loc>https://gohugo.io/getting-started/external-learning-resources/</loc>
     <lastmod>2021-08-13T21:11:25+08:00</lastmod>
   </url><url>
-    <loc>https://gohugo.io/hugo-pipes/fingerprint/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
+    <loc>https://gohugo.io/gravity-software/fingerprint/</loc>
+    <lastmod>2018-07-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://gohugo.io/variables/git/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
+    <loc>https://gohugo.io/gravitydata/git/</loc>
+    <lastmod>2017-03-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://gohugo.io/hosting-and-deployment/deployment-with-rsync/</loc>
     <lastmod>2021-08-13T21:11:25+08:00</lastmod>
@@ -223,14 +211,20 @@
     <loc>https://gohugo.io/tools/other/</loc>
     <lastmod>2021-08-13T21:11:25+08:00</lastmod>
   </url><url>
-    <loc>https://gohugo.io/hugo-pipes/resource-from-template/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
+    <loc>https://gohugo.io/gravity-software/resource-from-template/</loc>
+    <lastmod>2018-07-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://gohugo.io/variables/sitemap/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
+    <loc>https://gohugo.io/gravitydata/sitemap/</loc>
+    <lastmod>2017-03-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://gohugo.io/hugo-pipes/resource-from-string/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
+    <loc>https://gohugo.io/gravity-software/resource-from-string/</loc>
+    <lastmod>2018-07-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://gohugo.io/news/gravitychina_is_coming/</loc>
+    <lastmod>2021-08-01T18:36:00+02:00</lastmod>
+  </url><url>
+    <loc>https://gohugo.io/categories/blog/</loc>
+    <lastmod>2021-08-01T18:36:00+02:00</lastmod>
   </url><url>
     <loc>https://gohugo.io/categories/</loc>
     <lastmod>2021-08-13T21:11:25+08:00</lastmod>
@@ -245,224 +239,11 @@
                 href="https://gohugo.io/categories/"
                 />
   </url><url>
-    <loc>https://gohugo.io/news/0.87.0-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/categories/releases/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.86.1-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/categories/functions/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/functions/lang/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.86.0-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.85.0-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.84.4-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.84.3-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.84.2-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.84.1-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.84.0-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.83.1-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.83.0-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.82.1-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.82.0-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.81.0-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/functions/site/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
     <loc>https://gohugo.io/myshowcase/</loc>
     <lastmod>2021-08-13T21:11:25+08:00</lastmod>
   </url><url>
-    <loc>https://gohugo.io/news/0.80.0-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.79.1-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/hugo-macos-intel-vs-arm/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.79.0-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.78.2-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.78.1-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.78.0-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.77.0-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.76.5-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.76.4-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.76.3-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.76.1-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.76.2-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.76.0-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.75.1-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.75.0-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/functions/strings.count/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.74.3-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
     <loc>https://gohugo.io/categories/asset-management/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.74.2-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.74.1-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.74.0-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.73.0-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.72.0-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/functions/hmac/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.71.1-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.71.0-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.70.0-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.69.2-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.69.1-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.69.0-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.68.3-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.68.2-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.68.1-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.68.0-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.67.1-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.67.0-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.66.0-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.65.3-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.65.2-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.65.0-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.65.1-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.64.1-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.64.0-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.63.2-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.63.1-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.63.0-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.62.2-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.62.1-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.62.0-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/functions/renderstring/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.61.0-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.60.1-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.60.0-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
+    <lastmod>2020-07-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://gohugo.io/categories/fundamentals/</loc>
     <lastmod>2021-08-13T21:11:25+08:00</lastmod>
@@ -480,235 +261,13 @@
     <loc>https://gohugo.io/categories/getting-started/</loc>
     <lastmod>2021-08-13T21:11:25+08:00</lastmod>
   </url><url>
-    <loc>https://gohugo.io/news/0.59.1-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.59.0-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
     <loc>https://gohugo.io/categories/variables-and-params/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.58.3-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.58.2-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.58.1-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.58.0-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.57.2-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.57.1-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.57.0-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/functions/strings.hassuffix/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/functions/merge/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.56.3-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.56.2-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.56.1-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.56.0-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
+    <lastmod>2019-10-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://gohugo.io/categories/hugo-modules/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
+    <lastmod>2019-07-24T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://gohugo.io/categories/hosting-and-deployment/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.55.6-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.55.5-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.55.4-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.55.3-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.55.2-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.55.1-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.55.0-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.54.0-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/functions/hugo/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.53-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/functions/transform.unmarshal/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.52-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/functions/path.base/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/functions/path.dir/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/functions/path.ext/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/functions/path.join/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/functions/path.split/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/functions/reflect.ismap/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/functions/reflect.isslice/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/functions/complement/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.51-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/functions/symdiff/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/functions/templates.exists/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.50-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/functions/anchorize/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.49.2-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.49.1-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.49-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/functions/append/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/functions/group/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.48-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.47.1-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.47-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/functions/os.stat/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.46-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.45.1-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.45-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.44-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.43-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/categories/blog/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/lets-celebrate-hugos-5th-birthday/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.42.2-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.42.1-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.42-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/functions/strings.runecount/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/functions/strings.repeat/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.41-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.40.3-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.40.2-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.40.1-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.40-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.39-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.38.2-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.38.1-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.38-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/functions/lang.merge/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.37.1-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.37-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.36.1-relnotes/</loc>
     <lastmod>2021-08-13T21:11:25+08:00</lastmod>
   </url><url>
     <loc>https://gohugo.io/maintenance/</loc>
@@ -717,148 +276,7 @@
     <loc>https://gohugo.io/categories/maintenance/</loc>
     <lastmod>2021-08-13T21:11:25+08:00</lastmod>
   </url><url>
-    <loc>https://gohugo.io/news/0.36-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.35-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.34-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.33-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.32.4-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.32.3-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.32.2-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.32.1-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.32-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.31.1-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.31-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.30.2-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.30.1-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.30-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/functions/errorf/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/functions/float/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.29-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.28-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/functions/urls.parse/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.27.1-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
     <loc>https://gohugo.io/hosting-and-deployment/hosting-on-keycdn/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.27-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/functions/cond/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/functions/fileexists/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.26-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/functions/ge/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/functions/gt/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/functions/le/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/functions/lt/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/functions/ne/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/http2-server-push-in-hugo/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.25.1-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.25-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.24.1-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.24-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.23-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.22.1-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.22-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.21-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.20.7-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.20.6-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.20.5-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.20.4-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.20.3-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.20.2-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.20.1-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.20-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/categories/troubleshooting/</loc>
     <lastmod>2021-08-13T21:11:25+08:00</lastmod>
   </url><url>
     <loc>https://gohugo.io/</loc>
@@ -874,335 +292,30 @@
                 href="https://gohugo.io/"
                 />
   </url><url>
-    <loc>https://gohugo.io/news/0.19-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/functions/adddate/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/functions/format/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/functions/get/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/functions/getpage/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/functions/hasmenucurrent/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/functions/ismenucurrent/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/functions/param/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/functions/render/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/functions/scratch/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/functions/unix/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/functions/abslangurl/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/functions/absurl/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/functions/after/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/functions/apply/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/functions/base64/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/functions/chomp/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
     <loc>https://gohugo.io/categories/contribute/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/functions/countrunes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/functions/countwords/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/functions/default/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/functions/delimit/</loc>
     <lastmod>2021-08-13T21:11:25+08:00</lastmod>
   </url><url>
     <loc>https://gohugo.io/categories/developer-tools/</loc>
     <lastmod>2021-08-13T21:11:25+08:00</lastmod>
   </url><url>
-    <loc>https://gohugo.io/functions/dict/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/functions/echoparam/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/functions/emojify/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/functions/eq/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/functions/findre/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/functions/first/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/functions/getenv/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/functions/hasprefix/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/functions/highlight/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/functions/htmlescape/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/functions/htmlunescape/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/functions/humanize/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/functions/i18n/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/functions/images/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/functions/in/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/functions/index-function/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/functions/int/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/functions/intersect/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/functions/isset/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/functions/jsonify/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/functions/last/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/functions/len/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/functions/lower/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/functions/markdownify/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/functions/math/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/functions/md5/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/functions/now/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/functions/partialcached/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/functions/plainify/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/functions/pluralize/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/functions/print/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/functions/printf/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/functions/println/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/functions/querify/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/functions/range/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/functions/readdir/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/functions/readfile/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/functions/ref/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/functions/rellangurl/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/functions/relref/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/functions/relurl/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/functions/replace/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/functions/replacere/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/functions/safecss/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/functions/safehtml/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/functions/safehtmlattr/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/functions/safejs/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/functions/safeurl/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/functions/seq/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/functions/sha/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/functions/shuffle/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/functions/singularize/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/functions/slice/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/functions/slicestr/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/functions/sort/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/functions/split/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/functions/string/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/functions/strings.trimleft/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/functions/strings.trimprefix/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/functions/strings.trimright/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/functions/strings.trimsuffix/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/functions/substr/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/functions/time/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/functions/dateformat/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/functions/title/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/functions/trim/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/functions/truncate/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/functions/union/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/functions/uniq/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/functions/upper/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/functions/urlize/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/functions/where/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/functions/with/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.18-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.17-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.16-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
     <loc>https://gohugo.io/categories/about-hugo/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.15-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.14-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.13-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.12-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.11-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.10-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.9-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.8-relnotes/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/0.7-relnotes/</loc>
     <lastmod>2021-08-13T21:11:25+08:00</lastmod>
   </url><url>
     <loc>https://gohugo.io/commands/</loc>
     <lastmod>2021-08-13T21:11:25+08:00</lastmod>
+  </url><url>
+    <loc>https://gohugo.io/news/</loc>
+    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://gohugo.io/zh/news/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://gohugo.io/news/"
+                />
   </url><url>
     <loc>https://gohugo.io/commands/hugo/</loc>
     <lastmod>2021-08-13T21:11:25+08:00</lastmod>
@@ -1326,19 +439,6 @@
   </url><url>
     <loc>https://gohugo.io/commands/hugo_new_theme/</loc>
     <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/news/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://gohugo.io/zh/news/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://gohugo.io/news/"
-                />
   </url><url>
     <loc>https://gohugo.io/commands/hugo_server/</loc>
     <lastmod>2021-08-13T21:11:25+08:00</lastmod>

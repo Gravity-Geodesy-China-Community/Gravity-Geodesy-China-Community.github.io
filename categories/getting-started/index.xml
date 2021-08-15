@@ -13,7 +13,7 @@
       <pubDate>Wed, 01 Feb 2017 00:00:00 +0000</pubDate>
       
       <guid>https://gohugo.io/getting-started/</guid>
-      <description>If this is your first time using Hugo and you&amp;rsquo;ve already installed Hugo on your machine, we recommend the quick start. You can also use external learning resources to learn Hugo.</description>
+      <description>重力又称为物理大地测量</description>
     </item>
     
     <item>
@@ -49,17 +49,6 @@ Hugo currently provides pre-built binaries for the following:
       <description>The following is a description of the most common commands you will use while developing your Hugo project. See the Command Line Reference for a comprehensive view of Hugo&amp;rsquo;s CLI.
 Test Installation Once you have installed Hugo, make sure it is in your PATH. You can test that Hugo has been installed correctly via the help command:
 hugo helpThe output you see in your console should be similar to the following:</description>
-    </item>
-    
-    <item>
-      <title>Directory Structure</title>
-      <link>https://gohugo.io/getting-started/directory-structure/</link>
-      <pubDate>Mon, 02 Jan 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://gohugo.io/getting-started/directory-structure/</guid>
-      <description>New Site Scaffolding   Running the hugo new site generator from the command line will create a directory structure with the following elements:
-.├── archetypes├── config.toml├── content├── data├── layouts├── static└── themesDirectory Structure Explained The following is a high-level overview of each of the directories with links to each of their respective sections within the Hugo docs.
- archetypes You can create new content files in Hugo using the hugo new command.</description>
     </item>
     
     <item>
