@@ -1,6 +1,6 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Gravity – The world’s fastest framework for building websites</title>
+    <title>Gravity – The </title>
     <link>https://gohugo.io/</link>
     <description>Recent Hugo news from gohugo.io</description>
     <generator>Hugo -- gohugo.io</generator>
@@ -25,7 +25,7 @@
         
         
         
-        <![CDATA[<img src="https://gohugo.io/news/0.87.0-relnotes/featured_hud7315cc4b84c00922361254b17154b9c_104936_640x0_resize_catmullrom_2.png" width="640" height="320"/>]]>
+        <![CDATA[<img src="https://gohugo.io/news/0.87.0-relnotes/featured_hud7315cc4b84c00922361254b17154b9c_104936_640x0_resize_catmullrom_3.png" width="640" height="320"/>]]>
         
         &lt;p&gt;Hugo &lt;code&gt;0.87&lt;/code&gt; brings two long sought-after features: Default time zone support (per language if needed) for dates without zone offset or location info, and localized time and dates and numbers (backed by &lt;a href=&#34;https://en.wikipedia.org/wiki/Common_Locale_Data_Repository&#34;&gt;CLDR&lt;/a&gt;).&lt;/p&gt;
 &lt;p&gt;For more information, see:&lt;/p&gt;
@@ -129,12 +129,12 @@ which has received &lt;strong&gt;1 contributions by 1 contributors&lt;/strong&gt
         
         
         
-        <![CDATA[<img src="https://gohugo.io/news/0.86.0-relnotes/featured_hu90f1fa7584e0b08ff867964df5c6b0c6_188476_640x0_resize_catmullrom_2.png" width="640" height="320"/>]]>
+        <![CDATA[<img src="https://gohugo.io/news/0.86.0-relnotes/featured_hu90f1fa7584e0b08ff867964df5c6b0c6_188476_640x0_resize_catmullrom_3.png" width="640" height="320"/>]]>
         
         &lt;p&gt;This release is a set of smaller fixes and improvements. Some of the more notable:&lt;/p&gt;
 &lt;p&gt;You can now have a top level &lt;a href=&#34;https://gohugo.io/content-management/front-matter#front-matter-cascade&#34;&gt;cascade&lt;/a&gt; (or one per language, if needed) section in your site configuration (e.g. &lt;code&gt;config.toml&lt;/code&gt;). This way you can control default front matter values from outside of the content files.&lt;/p&gt;
 &lt;p&gt;Hugo&amp;rsquo;s &lt;a href=&#34;https://gohugo.io/content-management/menus/&#34;&gt;Menu system&lt;/a&gt; works well, but hasn&amp;rsquo;t been particularly easy to set the active menu state for section pages without a menu definition. We have had the option &lt;a href=&#34;https://gohugo.io/templates/menu-templates/#section-menu-for-lazy-bloggers&#34;&gt;Section Menu for Lazy Bloggers&lt;/a&gt;. That helped for the common case, but we have now made it behave more sensible out of the box: &lt;code&gt;$page.HasMenuCurrent $sectionMenuEntry&lt;/code&gt; will now always return true for any descendant of that section. To support this for menu definitions in the site config, we have added a new &lt;code&gt;pageRef&lt;/code&gt; option on &lt;a href=&#34;https://gohugo.io/variables/menus/#menu-entry-variables&#34;&gt;MenuEntry&lt;/a&gt;:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-toml&#34; data-lang=&#34;toml&#34;&gt;&lt;span class=&#34;p&#34;&gt;[[&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;menus&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;main&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]]&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-toml&#34; data-lang=&#34;toml&#34;&gt;&lt;span class=&#34;p&#34;&gt;[[&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;menus&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;main&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]]&lt;/span&gt;
 &lt;span class=&#34;nx&#34;&gt;pageRef&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;blog&amp;#34;&lt;/span&gt;
 &lt;span class=&#34;c&#34;&gt;# When pageRef is set, setting `url` is optional; it will be used as a fallback if the page is not found.&lt;/span&gt;
 &lt;span class=&#34;nx&#34;&gt;url&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;/blog&amp;#34;&lt;/span&gt;
@@ -184,13 +184,13 @@ which has received &lt;strong&gt;1 contributions by 1 contributors&lt;/strong&gt
         
         
         
-        <![CDATA[<img src="https://gohugo.io/news/0.85.0-relnotes/featured_hu8384a805e04f079f5699a02b45800244_67393_640x0_resize_catmullrom_2.png" width="640" height="320"/>]]>
+        <![CDATA[<img src="https://gohugo.io/news/0.85.0-relnotes/featured_hu8384a805e04f079f5699a02b45800244_67393_640x0_resize_catmullrom_3.png" width="640" height="320"/>]]>
         
         &lt;p&gt;Hugo &lt;code&gt;0.85.0&lt;/code&gt; is on the smaller side of releases, but the main new thing it brings should be important to those who need it: Poll based watching the filesystem for changes.&lt;/p&gt;
 &lt;p&gt;Hugo uses &lt;a href=&#34;https://github.com/fsnotify/fsnotify&#34;&gt;Fsnotify&lt;/a&gt; to provide native file system notifications. This is still the default, but there may situations where this isn&amp;rsquo;t working. The file may not support it (e.g. NFS), or you get the &amp;ldquo;too many open files&amp;rdquo; error and cannot or do not want to increase the &lt;code&gt;ulimit&lt;/code&gt;. Enable polling by passing the &lt;code&gt;--poll&lt;/code&gt; flag with an interval:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;hugo server --poll 700ms
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;hugo server --poll 700ms
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;You can even do &amp;ldquo;long polling&amp;rdquo; by passing a long interval:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;hugo server --poll 24h
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;hugo server --poll 24h
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This release represents &lt;strong&gt;23 contributions by 6 contributors&lt;/strong&gt; to the main Hugo code base.&lt;a href=&#34;https://github.com/bep&#34;&gt;@bep&lt;/a&gt; leads the Hugo development with a significant amount of contributions, but also a big shoutout to &lt;a href=&#34;https://github.com/raoulb&#34;&gt;@raoulb&lt;/a&gt;, &lt;a href=&#34;https://github.com/jmooring&#34;&gt;@jmooring&lt;/a&gt;, and &lt;a href=&#34;https://github.com/digitalcraftsman&#34;&gt;@digitalcraftsman&lt;/a&gt; for their ongoing contributions.&lt;/p&gt;
 &lt;p&gt;Many have also been busy writing and fixing the documentation in &lt;a href=&#34;https://github.com/gohugoio/hugoDocs&#34;&gt;hugoDocs&lt;/a&gt;,
 which has received &lt;strong&gt;1 contributions by 1 contributors&lt;/strong&gt;.&lt;/p&gt;
@@ -324,20 +324,20 @@ which has received &lt;strong&gt;1 contributions by 1 contributors&lt;/strong&gt
         
         
         
-        <![CDATA[<img src="https://gohugo.io/news/0.84.0-relnotes/featured_hu7c38afe80520529cfcae538ac032ebff_47732_640x0_resize_catmullrom_2.png" width="640" height="320"/>]]>
+        <![CDATA[<img src="https://gohugo.io/news/0.84.0-relnotes/featured_hu7c38afe80520529cfcae538ac032ebff_47732_640x0_resize_catmullrom_3.png" width="640" height="320"/>]]>
         
         &lt;p&gt;&lt;strong&gt;This release brings several configuration fixes and improvements that will be especially useful for themes.&lt;/strong&gt;&lt;/p&gt;
 &lt;h2 id=&#34;deep-merge-of-theme-params&#34;&gt;Deep merge of theme Params &lt;a class=&#34;header-link&#34; href=&#34;#deep-merge-of-theme-params&#34;&gt;&lt;svg class=&#34;fill-current o-60 hover-accent-color-light&#34; height=&#34;22px&#34; viewBox=&#34;0 0 24 24&#34; width=&#34;22px&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;none&#34;/&gt;&lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z&#34;/&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;One of the most common complaints from Hugo theme owners/users has been about the configuration handling. Hugo has up until now only performed a shallow merge of theme &lt;code&gt;params&lt;/code&gt; into the configuration.&lt;/p&gt;
 &lt;p&gt;With that, given this example from a theme configuration:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-toml&#34; data-lang=&#34;toml&#34;&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;params&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-toml&#34; data-lang=&#34;toml&#34;&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;params&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;
 &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;params&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;colours&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;
 &lt;span class=&#34;nx&#34;&gt;blue&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;#337DFF&amp;#34;&lt;/span&gt;
 &lt;span class=&#34;nx&#34;&gt;green&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;#68FF33&amp;#34;&lt;/span&gt;
 &lt;span class=&#34;nx&#34;&gt;red&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;#FF3358&amp;#34;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;If you would like to use the above theme, but want a different shade of red, you earlier had to copy the entire block, even the colours you&amp;rsquo;re totally happy with. This was painful with even the simplest setup.&lt;/p&gt;
 &lt;p&gt;Now you can just override the &lt;code&gt;params&lt;/code&gt; keys you want to change, e.g.:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-toml&#34; data-lang=&#34;toml&#34;&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;params&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-toml&#34; data-lang=&#34;toml&#34;&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;params&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;
 &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;params&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;colours&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;
 &lt;span class=&#34;nx&#34;&gt;red&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;#fc0f03&amp;#34;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;For more information, and especially about the way you can opt out of the above behaviour, see &lt;a href=&#34;https://gohugo.io/getting-started/configuration/#merge-configuration-from-themes&#34;&gt;Merge Configuration from Themes&lt;/a&gt;.&lt;/p&gt;
@@ -354,7 +354,7 @@ which has received &lt;strong&gt;1 contributions by 1 contributors&lt;/strong&gt
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Also see the discussion &lt;a href=&#34;https://github.com/gohugoio/hugo/issues/7879&#34;&gt;this issue&lt;/a&gt; about the access token above.&lt;/p&gt;
 &lt;h2 id=&#34;new-erroridf-template-func&#34;&gt;New erroridf template func &lt;a class=&#34;header-link&#34; href=&#34;#new-erroridf-template-func&#34;&gt;&lt;svg class=&#34;fill-current o-60 hover-accent-color-light&#34; height=&#34;22px&#34; viewBox=&#34;0 0 24 24&#34; width=&#34;22px&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;none&#34;/&gt;&lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z&#34;/&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Sometimes, especially when creating themes, it is useful to be able to let the user decide if an error situation is critical enough to fail the build. The new &lt;code&gt;erroridf&lt;/code&gt; produces &lt;code&gt;ERROR&lt;/code&gt; log statements that can be toggled off:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;{{ erroridf &amp;#34;some-custom-id&amp;#34; &amp;#34;Some error message.&amp;#34; }}
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;{{ erroridf &amp;#34;some-custom-id&amp;#34; &amp;#34;Some error message.&amp;#34; }}
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Will log:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;ERROR: Some error message.
 If you feel that this should not be logged as an ERROR, you can ignore it by adding this to your site config:
@@ -468,11 +468,11 @@ which has received &lt;strong&gt;20 contributions by 10 contributors&lt;/strong&
         
         
         
-        <![CDATA[<img src="https://gohugo.io/news/0.83.0-relnotes/featured_hu95eea831049f54a9a3609e4be0c231b7_82972_640x0_resize_catmullrom_2.png" width="640" height="320"/>]]>
+        <![CDATA[<img src="https://gohugo.io/news/0.83.0-relnotes/featured_hu95eea831049f54a9a3609e4be0c231b7_82972_640x0_resize_catmullrom_3.png" width="640" height="320"/>]]>
         
         &lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; If you use i18n, there is an unfortunate regression bug in this release (see &lt;a href=&#34;https://github.com/gohugoio/hugo/issues/8492&#34;&gt;issue&lt;/a&gt;). A patch release coming Sunday.&lt;/p&gt;
 &lt;p&gt;Hugo &lt;code&gt;0.83&lt;/code&gt; finally brings &lt;a href=&#34;https://gohugo.io/content-management/image-processing/&#34;&gt;WebP&lt;/a&gt; image processing support. Note that you need the &lt;a href=&#34;https://gohugo.io/troubleshooting/faq/#i-get-tocss--this-feature-is-not-available-in-your-current-hugo-version&#34;&gt;extended version&lt;/a&gt; of Hugo to encode to WebP. If you want to target all Hugo versions, you may use a construct such as this:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-go-html-template&#34; data-lang=&#34;go-html-template&#34;&gt;&lt;span class=&#34;cp&#34;&gt;{{&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;$images&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:=&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;slice&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;cp&#34;&gt;}}&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-go-html-template&#34; data-lang=&#34;go-html-template&#34;&gt;&lt;span class=&#34;cp&#34;&gt;{{&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;$images&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:=&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;slice&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;cp&#34;&gt;}}&lt;/span&gt;
 &lt;span class=&#34;cp&#34;&gt;{{&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;$images&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;$images&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;|&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;append&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;$img&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;.Resize&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;300x&amp;#34;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;cp&#34;&gt;}}&lt;/span&gt;
 &lt;span class=&#34;cp&#34;&gt;{{&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;if&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;hugo&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;.IsExtended&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;cp&#34;&gt;}}&lt;/span&gt;
   &lt;span class=&#34;cp&#34;&gt;{{&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;$images&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;$images&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;|&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;append&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;$img&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;.Resize&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;300x webp&amp;#34;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;cp&#34;&gt;}}&lt;/span&gt;
@@ -614,12 +614,12 @@ which has received &lt;strong&gt;10 contributions by 5 contributors&lt;/strong&g
         
         
         
-        <![CDATA[<img src="https://gohugo.io/news/0.82.0-relnotes/featured_hu5d8344c080499179dc5edbf7deb421a4_57106_640x0_resize_catmullrom_2.png" width="640" height="320"/>]]>
+        <![CDATA[<img src="https://gohugo.io/news/0.82.0-relnotes/featured_hu5d8344c080499179dc5edbf7deb421a4_57106_640x0_resize_catmullrom_3.png" width="640" height="320"/>]]>
         
         &lt;p&gt;This is a small release, mostly a maintainance/bugfix release. But also notable is that you can now add custom Markdown attributes (e.g. CSS classes) to code fences (&lt;a href=&#34;https://github.com/gohugoio/hugo/commit/aed7df62a811b07b73ec5cbbf03e69e4bbf00919&#34;&gt;aed7df62&lt;/a&gt; &lt;a href=&#34;https://github.com/bep&#34;&gt;@bep&lt;/a&gt; &lt;a href=&#34;https://github.com/gohugoio/hugo/issues/8278&#34;&gt;#8278&lt;/a&gt;) and that you can use the attribute lists in title render hooks (&lt;code&gt;.Attributes&lt;/code&gt;; see &lt;a href=&#34;https://github.com/gohugoio/hugo/commit/cd0c5d7ef32cbd570af00c50ce760452381df64e&#34;&gt;cd0c5d7e&lt;/a&gt; &lt;a href=&#34;https://github.com/bep&#34;&gt;@bep&lt;/a&gt; &lt;a href=&#34;https://github.com/gohugoio/hugo/issues/8270&#34;&gt;#8270&lt;/a&gt;).&lt;/p&gt;
 &lt;p&gt;This release represents &lt;strong&gt;28 contributions by 8 contributors&lt;/strong&gt; to the main Hugo code base.&lt;a href=&#34;https://github.com/bep&#34;&gt;@bep&lt;/a&gt; leads the Hugo development with a significant amount of contributions, but also a big shoutout to &lt;a href=&#34;https://github.com/moorereason&#34;&gt;@moorereason&lt;/a&gt;, and &lt;a href=&#34;https://github.com/gzagatti&#34;&gt;@gzagatti&lt;/a&gt; for their ongoing contributions.
 And a big thanks to &lt;a href=&#34;https://github.com/digitalcraftsman&#34;&gt;@digitalcraftsman&lt;/a&gt; for his relentless work on keeping the themes site in pristine condition and to &lt;a href=&#34;https://github.com/davidsneighbour&#34;&gt;@davidsneighbour&lt;/a&gt;, &lt;a href=&#34;https://github.com/coliff&#34;&gt;@coliff&lt;/a&gt; and &lt;a href=&#34;https://github.com/kaushalmodi&#34;&gt;@kaushalmodi&lt;/a&gt; for all the great work on the documentation site.&lt;/p&gt;
-&lt;p&gt;Many have also been busy writing and fixing the documentation in &lt;a href=&#34;https://github.com/gohugoio/hugoDocs&#34;&gt;hugoDocs&lt;/a&gt;,
+&lt;p&gt;Many have also been busy writing and fixing the documentation in &lt;a href=&#34;https://github.com/gohugoio/hugoDocs&#34;&gt;hugoDocs&lt;/a&gt;, 
 which has received &lt;strong&gt;20 contributions by 12 contributors&lt;/strong&gt;. A special thanks to &lt;a href=&#34;https://github.com/bep&#34;&gt;@bep&lt;/a&gt;, &lt;a href=&#34;https://github.com/jmooring&#34;&gt;@jmooring&lt;/a&gt;, &lt;a href=&#34;https://github.com/rootkea&#34;&gt;@rootkea&lt;/a&gt;, and &lt;a href=&#34;https://github.com/PaulPineda&#34;&gt;@PaulPineda&lt;/a&gt; for their work on the documentation site.&lt;/p&gt;
 &lt;p&gt;Hugo now has:&lt;/p&gt;
 &lt;ul&gt;
@@ -695,7 +695,7 @@ which has received &lt;strong&gt;20 contributions by 12 contributors&lt;/strong&
         &lt;p&gt;&lt;strong&gt;Hugo 0.81.0&lt;/strong&gt; is the first release of this decade, it is the fastest to date, and it&amp;rsquo;s packed with useful new features.&lt;/p&gt;
 &lt;h2 id=&#34;newlines-in-template-actions-and-commands&#34;&gt;Newlines in Template Actions and Commands &lt;a class=&#34;header-link&#34; href=&#34;#newlines-in-template-actions-and-commands&#34;&gt;&lt;svg class=&#34;fill-current o-60 hover-accent-color-light&#34; height=&#34;22px&#34; viewBox=&#34;0 0 24 24&#34; width=&#34;22px&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;none&#34;/&gt;&lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z&#34;/&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;You can now have newlines within template actions and pipelines. This means that you can now do this and similar:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-go-html-template&#34; data-lang=&#34;go-html-template&#34;&gt;&lt;span class=&#34;cp&#34;&gt;{{&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;dict&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; 
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-go-html-template&#34; data-lang=&#34;go-html-template&#34;&gt;&lt;span class=&#34;cp&#34;&gt;{{&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;dict&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; 
 &lt;/span&gt;&lt;span class=&#34;w&#34;&gt;	&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;country&amp;#34;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;Norway&amp;#34;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; 
 &lt;/span&gt;&lt;span class=&#34;w&#34;&gt;	&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;population&amp;#34;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;5 millions&amp;#34;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;span class=&#34;w&#34;&gt;	&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;language&amp;#34;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;Norwegian&amp;#34;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
@@ -817,7 +817,7 @@ SiteNew/Regular_List_terms-16                53.5k ± 0%     53.4k ± 0%   -0.18
   &lt;div class=&#34;tab-content&#34;&gt;
     
       &lt;div data-pane=&#34;yaml&#34; class=&#34;code-copy-content nt3 tab-pane active&#34;&gt;
-        &lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span class=&#34;nt&#34;&gt;minify&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+        &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span class=&#34;nt&#34;&gt;minify&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;span class=&#34;w&#34;&gt;  &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;tdewolff&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;html&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;span class=&#34;w&#34;&gt;      &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;keepComments&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;kc&#34;&gt;true&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
@@ -829,10 +829,13 @@ SiteNew/Regular_List_terms-16                53.5k ± 0%     53.4k ± 0%   -0.18
       
     
       &lt;div data-pane=&#34;toml&#34; class=&#34;code-copy-content nt3 tab-pane &#34;&gt;
-        &lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-toml&#34; data-lang=&#34;toml&#34;&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;minify&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;
-  &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;minify&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;tdewolff&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;
-    &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;minify&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;tdewolff&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;html&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;
-      &lt;span class=&#34;nx&#34;&gt;keepComments&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;true&lt;/span&gt;
+        &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-toml&#34; data-lang=&#34;toml&#34;&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;minify&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;
+&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;minify&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;tdewolff&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;
+&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;minify&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;tdewolff&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;html&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;
+&lt;span class=&#34;nx&#34;&gt;keepComments&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;true&lt;/span&gt;
+
+
+
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
       &lt;/div&gt;
       
@@ -841,7 +844,7 @@ SiteNew/Regular_List_terms-16                53.5k ± 0%     53.4k ± 0%   -0.18
       
     
       &lt;div data-pane=&#34;json&#34; class=&#34;code-copy-content nt3 tab-pane &#34;&gt;
-        &lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-json&#34; data-lang=&#34;json&#34;&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+        &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-json&#34; data-lang=&#34;json&#34;&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
    &lt;span class=&#34;nt&#34;&gt;&amp;#34;minify&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
       &lt;span class=&#34;nt&#34;&gt;&amp;#34;tdewolff&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
          &lt;span class=&#34;nt&#34;&gt;&amp;#34;html&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
@@ -864,7 +867,7 @@ SiteNew/Regular_List_terms-16                53.5k ± 0%     53.4k ± 0%   -0.18
 &lt;p&gt;The default value for this setting is &lt;code&gt;false&lt;/code&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;statistics&#34;&gt;Statistics &lt;a class=&#34;header-link&#34; href=&#34;#statistics&#34;&gt;&lt;svg class=&#34;fill-current o-60 hover-accent-color-light&#34; height=&#34;22px&#34; viewBox=&#34;0 0 24 24&#34; width=&#34;22px&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;none&#34;/&gt;&lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z&#34;/&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;This release represents &lt;strong&gt;59 contributions by 14 contributors&lt;/strong&gt; to the main Hugo code base.&lt;a href=&#34;https://github.com/bep&#34;&gt;@bep&lt;/a&gt; leads the Hugo development with a significant amount of contributions, but also a big shoutout to &lt;a href=&#34;https://github.com/moorereason&#34;&gt;@moorereason&lt;/a&gt; and &lt;a href=&#34;https://github.com/benmezger&#34;&gt;@benmezger&lt;/a&gt; for their ongoing contributions. And a big thanks to &lt;a href=&#34;https://github.com/digitalcraftsman&#34;&gt;@digitalcraftsman&lt;/a&gt; for his relentless work on keeping the themes site in pristine condition and to &lt;a href=&#34;https://github.com/davidsneighbour&#34;&gt;@davidsneighbour&lt;/a&gt;, &lt;a href=&#34;https://github.com/coliff&#34;&gt;@coliff&lt;/a&gt; and &lt;a href=&#34;https://github.com/kaushalmodi&#34;&gt;@kaushalmodi&lt;/a&gt; for all the great work on the documentation site.&lt;/p&gt;
-&lt;p&gt;Many have also been busy writing and fixing the documentation in &lt;a href=&#34;https://github.com/gohugoio/hugoDocs&#34;&gt;hugoDocs&lt;/a&gt;,
+&lt;p&gt;Many have also been busy writing and fixing the documentation in &lt;a href=&#34;https://github.com/gohugoio/hugoDocs&#34;&gt;hugoDocs&lt;/a&gt;, 
 which has received &lt;strong&gt;20 contributions by 13 contributors&lt;/strong&gt;. A special thanks to &lt;a href=&#34;https://github.com/bep&#34;&gt;@bep&lt;/a&gt;, &lt;a href=&#34;https://github.com/gagarine&#34;&gt;@gagarine&lt;/a&gt;, &lt;a href=&#34;https://github.com/fridde&#34;&gt;@fridde&lt;/a&gt;, and &lt;a href=&#34;https://github.com/NicoHood&#34;&gt;@NicoHood&lt;/a&gt; for their work on the documentation site.&lt;/p&gt;
 &lt;p&gt;Hugo now has:&lt;/p&gt;
 &lt;ul&gt;
@@ -953,12 +956,12 @@ which has received &lt;strong&gt;20 contributions by 13 contributors&lt;/strong&
         
         
         
-        <![CDATA[<img src="https://gohugo.io/news/0.80.0-relnotes/featured_hu79434c84cc6c2c78f7828eb64a40630a_162027_640x0_resize_catmullrom_2.png" width="640" height="320"/>]]>
+        <![CDATA[<img src="https://gohugo.io/news/0.80.0-relnotes/featured_hu79434c84cc6c2c78f7828eb64a40630a_162027_640x0_resize_catmullrom_3.png" width="640" height="320"/>]]>
         
         &lt;p&gt;The last Hugo release of the year brings a new &lt;a href=&#34;https://gohugo.io/functions/images/#overlay&#34;&gt;images.Overlay&lt;/a&gt; filter to overlay an image on top of another, e.g. for watermarking, and &lt;a href=&#34;https://gohugo.io/hugo-pipes/scss-sass/#options&#34;&gt;Dart Sass&lt;/a&gt; support.&lt;/p&gt;
 &lt;p&gt;This release represents &lt;strong&gt;29 contributions by 12 contributors&lt;/strong&gt; to the main Hugo code base. &lt;a href=&#34;https://github.com/bep&#34;&gt;@bep&lt;/a&gt; leads the Hugo development with a significant amount of contributions, but also a big shoutout to &lt;a href=&#34;https://github.com/moorereason&#34;&gt;@moorereason&lt;/a&gt;, and &lt;a href=&#34;https://github.com/davidsneighbour&#34;&gt;@davidsneighbour&lt;/a&gt; for their ongoing contributions.
 And a big thanks to &lt;a href=&#34;https://github.com/digitalcraftsman&#34;&gt;@digitalcraftsman&lt;/a&gt; for his relentless work on keeping the themes site in pristine condition and to &lt;a href=&#34;https://github.com/davidsneighbour&#34;&gt;@davidsneighbour&lt;/a&gt;, &lt;a href=&#34;https://github.com/coliff&#34;&gt;@coliff&lt;/a&gt; and &lt;a href=&#34;https://github.com/kaushalmodi&#34;&gt;@kaushalmodi&lt;/a&gt; for all the great work on the documentation site.&lt;/p&gt;
-&lt;p&gt;Many have also been busy writing and fixing the documentation in &lt;a href=&#34;https://github.com/gohugoio/hugoDocs&#34;&gt;hugoDocs&lt;/a&gt;,
+&lt;p&gt;Many have also been busy writing and fixing the documentation in &lt;a href=&#34;https://github.com/gohugoio/hugoDocs&#34;&gt;hugoDocs&lt;/a&gt;, 
 which has received &lt;strong&gt;22 contributions by 6 contributors&lt;/strong&gt;. A special thanks to &lt;a href=&#34;https://github.com/bep&#34;&gt;@bep&lt;/a&gt;, &lt;a href=&#34;https://github.com/D4D3VD4V3&#34;&gt;@D4D3VD4V3&lt;/a&gt;, &lt;a href=&#34;https://github.com/chrischute&#34;&gt;@chrischute&lt;/a&gt;, and &lt;a href=&#34;https://github.com/azenk&#34;&gt;@azenk&lt;/a&gt; for their work on the documentation site.&lt;/p&gt;
 &lt;p&gt;Hugo now has:&lt;/p&gt;
 &lt;ul&gt;
@@ -1048,7 +1051,7 @@ which has received &lt;strong&gt;22 contributions by 6 contributors&lt;/strong&g
         
         
         
-        <![CDATA[<img src="https://gohugo.io/news/hugo-macos-intel-vs-arm/featured_hu3f81ebb7eadaa5c67f592034ca4c1896_299333_640x0_resize_catmullrom_2.png" width="640" height="320"/>]]>
+        <![CDATA[<img src="https://gohugo.io/news/hugo-macos-intel-vs-arm/featured_hu3f81ebb7eadaa5c67f592034ca4c1896_299333_640x0_resize_catmullrom_3.png" width="640" height="320"/>]]>
         
         
 &lt;p&gt;&lt;i&gt;By &lt;a href=&#34;https://github.com/bep/&#34;&gt;bep&lt;/a&gt;&lt;/i&gt;&lt;/p&gt;
@@ -10198,11 +10201,11 @@ which has received &lt;strong&gt;22 contributions by 6 contributors&lt;/strong&g
         
         
         
-        <![CDATA[<img src="https://gohugo.io/news/0.79.0-relnotes/featured_hud3f5563b9eabb2fd9dcbcee84e72fe2d_75235_640x0_resize_catmullrom_2.png" width="640" height="320"/>]]>
+        <![CDATA[<img src="https://gohugo.io/news/0.79.0-relnotes/featured_hud3f5563b9eabb2fd9dcbcee84e72fe2d_75235_640x0_resize_catmullrom_3.png" width="640" height="320"/>]]>
         
         &lt;p&gt;Hugo &lt;code&gt;0.79.0&lt;/code&gt; is a small, but useful release. You can now set custom &lt;code&gt;.Params&lt;/code&gt; in your &lt;a href=&#34;https://gohugo.io/content-management/menus/&#34;&gt;menu&lt;/a&gt; configuration, and you can now also override deeply nested snake_cased configuration variables with &lt;a href=&#34;https://gohugo.io/getting-started/configuration/#configure-with-environment-variables&#34;&gt;OS environment variables&lt;/a&gt;. Other than that we have refreshed all the core upstream dependencies. A special thanks to &lt;a href=&#34;https://github.com/alecthomas&#34;&gt;@alecthomas&lt;/a&gt; (some new &lt;a href=&#34;https://github.com/alecthomas/chroma/releases/tag/v0.8.2&#34;&gt;Chroma lexers&lt;/a&gt; and fixes) and &lt;a href=&#34;https://github.com/evanw&#34;&gt;@evanw&lt;/a&gt; (&lt;a href=&#34;https://github.com/evanw/esbuild&#34;&gt;ESBuild&lt;/a&gt;).&lt;/p&gt;
 &lt;p&gt;This release represents &lt;strong&gt;33 contributions by 8 contributors&lt;/strong&gt; to the main Hugo code base. &lt;a href=&#34;https://github.com/bep&#34;&gt;@bep&lt;/a&gt; leads the Hugo development with a significant amount of contributions, but also a big shoutout &lt;a href=&#34;https://github.com/AdamKorcz&#34;&gt;@AdamKorcz&lt;/a&gt;, and &lt;a href=&#34;https://github.com/davidejones&#34;&gt;@davidejones&lt;/a&gt; for their ongoing contributions. And a big thanks to &lt;a href=&#34;https://github.com/digitalcraftsman&#34;&gt;@digitalcraftsman&lt;/a&gt; for his relentless work on keeping the themes site in pristine condition and to &lt;a href=&#34;https://github.com/davidsneighbour&#34;&gt;@davidsneighbour&lt;/a&gt;, &lt;a href=&#34;https://github.com/coliff&#34;&gt;@coliff&lt;/a&gt; and &lt;a href=&#34;https://github.com/kaushalmodi&#34;&gt;@kaushalmodi&lt;/a&gt; for all the great work on the documentation site.&lt;/p&gt;
-&lt;p&gt;Many have also been busy writing and fixing the documentation in &lt;a href=&#34;https://github.com/gohugoio/hugoDocs&#34;&gt;hugoDocs&lt;/a&gt;,
+&lt;p&gt;Many have also been busy writing and fixing the documentation in &lt;a href=&#34;https://github.com/gohugoio/hugoDocs&#34;&gt;hugoDocs&lt;/a&gt;, 
 which has received &lt;strong&gt;13 contributions by 11 contributors&lt;/strong&gt;. A special thanks to &lt;a href=&#34;https://github.com/Valac01&#34;&gt;@Valac01&lt;/a&gt;, &lt;a href=&#34;https://github.com/bep&#34;&gt;@bep&lt;/a&gt;, &lt;a href=&#34;https://github.com/mhansen&#34;&gt;@mhansen&lt;/a&gt;, and &lt;a href=&#34;https://github.com/chanjarster&#34;&gt;@chanjarster&lt;/a&gt; for their work on the documentation site.&lt;/p&gt;
 &lt;p&gt;Hugo now has:&lt;/p&gt;
 &lt;ul&gt;
@@ -10314,7 +10317,7 @@ which has received &lt;strong&gt;13 contributions by 11 contributors&lt;/strong&
         
         
         
-        <![CDATA[<img src="https://gohugo.io/news/0.78.0-relnotes/featured_hu16cc5f543b4302736ecbd476dcae86cf_47074_640x0_resize_catmullrom_2.png" width="640" height="320"/>]]>
+        <![CDATA[<img src="https://gohugo.io/news/0.78.0-relnotes/featured_hu16cc5f543b4302736ecbd476dcae86cf_47074_640x0_resize_catmullrom_3.png" width="640" height="320"/>]]>
         
         &lt;p&gt;This release finally brings full &lt;a href=&#34;https://gohugo.io/hugo-modules/&#34;&gt;Hugo Modules&lt;/a&gt; support to &lt;a href=&#34;https://gohugo.io/hugo-pipes/js/&#34;&gt;js.Build&lt;/a&gt;, curtsy of he new plugin API in the really, really fast &lt;a href=&#34;https://github.com/evanw/esbuild&#34;&gt;ESBuild&lt;/a&gt; by &lt;a href=&#34;https://github.com/evanw&#34;&gt;@evanw&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Some notes on the improvements in this release:&lt;/p&gt;
@@ -10326,9 +10329,9 @@ which has received &lt;strong&gt;13 contributions by 11 contributors&lt;/strong&
 &lt;/ul&gt;
 &lt;p&gt;Read more about this in &lt;a href=&#34;https://gohugo.io/hugo-pipes/js/&#34;&gt;the documentation&lt;/a&gt;, but a short usage example would look like:&lt;/p&gt;
 &lt;p&gt;In the template:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-go-html-template&#34; data-lang=&#34;go-html-template&#34;&gt;&lt;span class=&#34;cp&#34;&gt;{{&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;$js&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:=&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;resources&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;.Get&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;js/main.js&amp;#34;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;|&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;js&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;.Build&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;dict&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;params&amp;#34;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;dict&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;api&amp;#34;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;https://example.org/api&amp;#34;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;err&#34;&gt;}}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-go-html-template&#34; data-lang=&#34;go-html-template&#34;&gt;&lt;span class=&#34;cp&#34;&gt;{{&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;$js&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:=&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;resources&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;.Get&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;js/main.js&amp;#34;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;|&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;js&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;.Build&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;dict&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;params&amp;#34;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;dict&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;api&amp;#34;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;https://example.org/api&amp;#34;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;err&#34;&gt;}}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;And then in a JavaScript component:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span class=&#34;kr&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;as&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;params&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;from&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;@params&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span class=&#34;kr&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;as&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;params&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;from&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;@params&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
 
 &lt;span class=&#34;c1&#34;&gt;// Will resolve to one of `hello.{js,ts,tsx,jsx}` inside `assets/my/module`.
 &lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;&lt;span class=&#34;kr&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;hello&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;from&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;my/module/hello&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
@@ -10357,7 +10360,7 @@ which has received &lt;strong&gt;13 contributions by 11 contributors&lt;/strong&
         
         
         
-        <![CDATA[<img src="https://gohugo.io/news/0.77.0-relnotes/featured_hu95e3f73231f4ff78ed176e490b00b665_130926_640x0_resize_catmullrom_2.png" width="640" height="320"/>]]>
+        <![CDATA[<img src="https://gohugo.io/news/0.77.0-relnotes/featured_hu95e3f73231f4ff78ed176e490b00b665_130926_640x0_resize_catmullrom_3.png" width="640" height="320"/>]]>
         
         &lt;p&gt;Hugo &lt;code&gt;0.77.0&lt;/code&gt; is a small, but useful release. Some notable updates are:&lt;/p&gt;
 &lt;ul&gt;
@@ -10372,7 +10375,7 @@ which has received &lt;strong&gt;13 contributions by 11 contributors&lt;/strong&
 &lt;/ul&gt;
 &lt;p&gt;This release represents &lt;strong&gt;38 contributions by 11 contributors&lt;/strong&gt; to the main Hugo code base. &lt;a href=&#34;https://github.com/bep&#34;&gt;@bep&lt;/a&gt; leads the Hugo development with a significant amount of contributions, but also a big shoutout to &lt;a href=&#34;https://github.com/moorereason&#34;&gt;@moorereason&lt;/a&gt;, and &lt;a href=&#34;https://github.com/anthonyfok&#34;&gt;@anthonyfok&lt;/a&gt; for their ongoing contributions.&lt;/p&gt;
 &lt;p&gt;And a big thanks to &lt;a href=&#34;https://github.com/digitalcraftsman&#34;&gt;@digitalcraftsman&lt;/a&gt; for his relentless work on keeping the themes site in pristine condition and to &lt;a href=&#34;https://github.com/davidsneighbour&#34;&gt;@davidsneighbour&lt;/a&gt;, &lt;a href=&#34;https://github.com/coliff&#34;&gt;@coliff&lt;/a&gt; and &lt;a href=&#34;https://github.com/kaushalmodi&#34;&gt;@kaushalmodi&lt;/a&gt; for all the great work on the documentation site.&lt;/p&gt;
-&lt;p&gt;Many have also been busy writing and fixing the documentation in &lt;a href=&#34;https://github.com/gohugoio/hugoDocs&#34;&gt;hugoDocs&lt;/a&gt;,
+&lt;p&gt;Many have also been busy writing and fixing the documentation in &lt;a href=&#34;https://github.com/gohugoio/hugoDocs&#34;&gt;hugoDocs&lt;/a&gt;, 
 which has received &lt;strong&gt;3 contributions by 3 contributors&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;Hugo now has:&lt;/p&gt;
 &lt;ul&gt;
@@ -10535,10 +10538,10 @@ which has received &lt;strong&gt;3 contributions by 3 contributors&lt;/strong&gt
         
         
         
-        <![CDATA[<img src="https://gohugo.io/news/0.76.0-relnotes/featured_hu7b6a8a3a3ee53d378fbcd68c5150e8db_146539_640x0_resize_catmullrom_2.png" width="640" height="320"/>]]>
+        <![CDATA[<img src="https://gohugo.io/news/0.76.0-relnotes/featured_hu7b6a8a3a3ee53d378fbcd68c5150e8db_146539_640x0_resize_catmullrom_3.png" width="640" height="320"/>]]>
         
         &lt;p&gt;In &lt;strong&gt;Hugo 0.76.0&lt;/strong&gt; you can now have a list of &lt;a href=&#34;https://gohugo.io/content-management/front-matter#front-matter-cascade&#34;&gt;cascade&lt;/a&gt; blocks per page and a new &lt;code&gt;_target&lt;/code&gt; keyword where you can select which pages to &lt;em&gt;cascade&lt;/em&gt; upon using &lt;a href=&#34;https://github.com/gobwas/glob&#34;&gt;Glob&lt;/a&gt; patterns for a &lt;code&gt;Page&lt;/code&gt;&amp;rsquo;s &lt;code&gt;Kind&lt;/code&gt;, &lt;code&gt;Lang&lt;/code&gt; and/or &lt;code&gt;Path&lt;/code&gt;:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-toml&#34; data-lang=&#34;toml&#34;&gt;&lt;span class=&#34;nx&#34;&gt;title&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;Blog&amp;#34;&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-toml&#34; data-lang=&#34;toml&#34;&gt;&lt;span class=&#34;nx&#34;&gt;title&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;Blog&amp;#34;&lt;/span&gt;
 &lt;span class=&#34;p&#34;&gt;[[&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;cascade&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]]&lt;/span&gt;
 &lt;span class=&#34;nx&#34;&gt;background&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;yosemite.jpg&amp;#34;&lt;/span&gt;
 &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;cascade&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;_target&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;
@@ -10553,7 +10556,7 @@ which has received &lt;strong&gt;3 contributions by 3 contributors&lt;/strong&gt
 &lt;p&gt;A related improvement is that the &lt;a href=&#34;https://gohugo.io/content-management/build-options/#readout&#34;&gt;build option&lt;/a&gt; &lt;code&gt;render&lt;/code&gt; is now an enum. In addition to turning on/off rendering of a given page you can tell Hugo to not render, but you want to preserve the &lt;code&gt;.Permalink&lt;/code&gt;, useful for SPA applications.&lt;/p&gt;
 &lt;p&gt;This release represents &lt;strong&gt;35 contributions by 8 contributors&lt;/strong&gt; to the main Hugo code base. A big shoutout to &lt;a href=&#34;https://github.com/bep&#34;&gt;@bep&lt;/a&gt;, &lt;a href=&#34;https://github.com/ai&#34;&gt;@ai&lt;/a&gt;, and &lt;a href=&#34;https://github.com/jmooring&#34;&gt;@jmooring&lt;/a&gt; for their ongoing contributions.
 And a big thanks to &lt;a href=&#34;https://github.com/digitalcraftsman&#34;&gt;@digitalcraftsman&lt;/a&gt; for his relentless work on keeping the themes site in pristine condition and to &lt;a href=&#34;https://github.com/davidsneighbour&#34;&gt;@davidsneighbour&lt;/a&gt;, &lt;a href=&#34;https://github.com/coliff&#34;&gt;@coliff&lt;/a&gt; and &lt;a href=&#34;https://github.com/kaushalmodi&#34;&gt;@kaushalmodi&lt;/a&gt; for all the great work on the documentation site.&lt;/p&gt;
-&lt;p&gt;Many have also been busy writing and fixing the documentation in &lt;a href=&#34;https://github.com/gohugoio/hugoDocs&#34;&gt;hugoDocs&lt;/a&gt;,
+&lt;p&gt;Many have also been busy writing and fixing the documentation in &lt;a href=&#34;https://github.com/gohugoio/hugoDocs&#34;&gt;hugoDocs&lt;/a&gt;, 
 which has received &lt;strong&gt;11 contributions by 6 contributors&lt;/strong&gt;. A special thanks to &lt;a href=&#34;https://github.com/amdw&#34;&gt;@amdw&lt;/a&gt;, &lt;a href=&#34;https://github.com/davidsneighbour&#34;&gt;@davidsneighbour&lt;/a&gt;, &lt;a href=&#34;https://github.com/samrobbins85&#34;&gt;@samrobbins85&lt;/a&gt;, and &lt;a href=&#34;https://github.com/yaythomas&#34;&gt;@yaythomas&lt;/a&gt; for their work on the documentation site.&lt;/p&gt;
 &lt;p&gt;Hugo now has:&lt;/p&gt;
 &lt;ul&gt;
@@ -10593,7 +10596,7 @@ which has received &lt;strong&gt;11 contributions by 6 contributors&lt;/strong&g
   &lt;div class=&#34;tab-content&#34;&gt;
     
       &lt;div data-pane=&#34;yaml&#34; class=&#34;code-copy-content nt3 tab-pane active&#34;&gt;
-        &lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span class=&#34;nt&#34;&gt;redirects&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+        &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span class=&#34;nt&#34;&gt;redirects&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;- &lt;span class=&#34;nt&#34;&gt;force&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;kc&#34;&gt;true&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;span class=&#34;w&#34;&gt;  &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;from&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;/myspa/**&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;span class=&#34;w&#34;&gt;  &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;status&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;m&#34;&gt;200&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
@@ -10606,11 +10609,12 @@ which has received &lt;strong&gt;11 contributions by 6 contributors&lt;/strong&g
       
     
       &lt;div data-pane=&#34;toml&#34; class=&#34;code-copy-content nt3 tab-pane &#34;&gt;
-        &lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-toml&#34; data-lang=&#34;toml&#34;&gt;&lt;span class=&#34;p&#34;&gt;[[&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;redirects&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]]&lt;/span&gt;
-  &lt;span class=&#34;nx&#34;&gt;force&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;true&lt;/span&gt;
-  &lt;span class=&#34;nx&#34;&gt;from&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;/myspa/**&amp;#34;&lt;/span&gt;
-  &lt;span class=&#34;nx&#34;&gt;status&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;200&lt;/span&gt;
-  &lt;span class=&#34;nx&#34;&gt;to&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;/myspa/&amp;#34;&lt;/span&gt;
+        &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-toml&#34; data-lang=&#34;toml&#34;&gt;&lt;span class=&#34;p&#34;&gt;[[&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;redirects&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]]&lt;/span&gt;
+&lt;span class=&#34;nx&#34;&gt;force&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;true&lt;/span&gt;
+&lt;span class=&#34;nx&#34;&gt;from&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;/myspa/**&amp;#39;&lt;/span&gt;
+&lt;span class=&#34;nx&#34;&gt;status&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;200&lt;/span&gt;
+&lt;span class=&#34;nx&#34;&gt;to&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;/myspa/&amp;#39;&lt;/span&gt;
+
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
       &lt;/div&gt;
       
@@ -10619,7 +10623,7 @@ which has received &lt;strong&gt;11 contributions by 6 contributors&lt;/strong&g
       
     
       &lt;div data-pane=&#34;json&#34; class=&#34;code-copy-content nt3 tab-pane &#34;&gt;
-        &lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-json&#34; data-lang=&#34;json&#34;&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+        &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-json&#34; data-lang=&#34;json&#34;&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
    &lt;span class=&#34;nt&#34;&gt;&amp;#34;redirects&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;
       &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
          &lt;span class=&#34;nt&#34;&gt;&amp;#34;force&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;true&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
@@ -10722,13 +10726,13 @@ which has received &lt;strong&gt;11 contributions by 6 contributors&lt;/strong&g
         
         
         
-        <![CDATA[<img src="https://gohugo.io/news/0.75.0-relnotes/featured_hubc6f618a9a95ca518cbd88f6725b3660_125400_640x0_resize_catmullrom_2.png" width="640" height="320"/>]]>
+        <![CDATA[<img src="https://gohugo.io/news/0.75.0-relnotes/featured_hubc6f618a9a95ca518cbd88f6725b3660_125400_640x0_resize_catmullrom_3.png" width="640" height="320"/>]]>
         
         &lt;p&gt;Hugo &lt;code&gt;0.75.0&lt;/code&gt; brings several improvements to Hugo Modules, a new CLI command to bridge the JavaScript dependencies into Hugo, a refresh of the versions of the most important upstream dependencies, and more. There are also some good bug fixes in this release. One notable one is covered by &lt;a href=&#34;https://github.com/gohugoio/hugo/commit/4055c121847847d8bd6b95a928185daee065091b&#34;&gt;this commit&lt;/a&gt; &amp;ndash; which covers a &amp;ldquo;stale content scenario in server&amp;rdquo; when you include content or page data via &lt;code&gt;GetPage&lt;/code&gt; from a shortcode.&lt;/p&gt;
 &lt;h2 id=&#34;npm-pack&#34;&gt;NPM Pack &lt;a class=&#34;header-link&#34; href=&#34;#npm-pack&#34;&gt;&lt;svg class=&#34;fill-current o-60 hover-accent-color-light&#34; height=&#34;22px&#34; viewBox=&#34;0 0 24 24&#34; width=&#34;22px&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;none&#34;/&gt;&lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z&#34;/&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;The new CLI command is called &lt;code&gt;hugo mod npm pack&lt;/code&gt;.  We have marked it as experimental. It works great, go ahead and use it, but we need to test this out in real projects to get a feel of it; it is likely that it will change/improve in the upcoming versions of Hugo. The command creates a consolidated &lt;code&gt;package.json&lt;/code&gt; from the project and all of its &lt;a href=&#34;https://gohugo.io/hugo-modules/theme-components/&#34;&gt;theme components&lt;/a&gt;. On version conflicts, the version closest to the project is selected. We may revise that strategy in the future (&lt;a href=&#34;https://about.sourcegraph.com/blog/the-pain-that-minimal-version-selection-solves/&#34;&gt;minimal version selection&lt;/a&gt; maybe?), but this should give both control and the least amount of surprise for the site owner.&lt;/p&gt;
 &lt;p&gt;So, why did we do this? JavaScript is often a background actor in a Hugo project, and it doesn&amp;rsquo;t make sense to publish it to a NPM registry. The JS dependencies are mostly build tools (PostCSS, TailwindCSS, Babel), &lt;code&gt;devDependencies&lt;/code&gt;. This has been working fine as long as you kept the JS config files (including &lt;code&gt;package.json&lt;/code&gt;) in the project, adding duplication/work when using ready-to-use theme components. These tools work best when you have everything below a single file tree, which is very much different to how &lt;a href=&#34;https://gohugo.io/hugo-modules/&#34;&gt;Hugo Modules&lt;/a&gt; work. An example of a module with TailwindCSS:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;tailwind-module
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;tailwind-module
 ├── assets
 │   └── css
 ├── package.json
@@ -10745,7 +10749,7 @@ which has received &lt;strong&gt;11 contributions by 6 contributors&lt;/strong&g
 &lt;li&gt;The main project&amp;rsquo;s &lt;code&gt;node_modules&lt;/code&gt; folder is added to &lt;a href=&#34;https://medium.com/nafsadh/setting-up-node-path-for-using-global-packages-via-require-642eb711c725&#34;&gt;NODE_PATH&lt;/a&gt; when running &lt;code&gt;PostCSS&lt;/code&gt;and &lt;code&gt;Babel&lt;/code&gt;.&lt;/li&gt;
 &lt;li&gt;We have introduced a new mount point &lt;code&gt;assets/_jsconfig&lt;/code&gt; where we, by default, mount the JS configuration files that we&amp;rsquo;re interested in. This is where Hugo will start looking for these files, and the files&#39; filenames will also be available in the Node environment, so you can do:&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span class=&#34;kd&#34;&gt;let&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;tailwindConfig&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;process&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;env&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;HUGO_FILE_TAILWIND_CONFIG_JS&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;||&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;./tailwind.config.js&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span class=&#34;kd&#34;&gt;let&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;tailwindConfig&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;process&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;env&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;HUGO_FILE_TAILWIND_CONFIG_JS&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;||&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;./tailwind.config.js&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
 &lt;span class=&#34;kr&#34;&gt;const&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;tailwind&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;require&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;tailwindcss&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)(&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;tailwindConfig&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;module-enhancements&#34;&gt;Module Enhancements &lt;a class=&#34;header-link&#34; href=&#34;#module-enhancements&#34;&gt;&lt;svg class=&#34;fill-current o-60 hover-accent-color-light&#34; height=&#34;22px&#34; viewBox=&#34;0 0 24 24&#34; width=&#34;22px&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;none&#34;/&gt;&lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z&#34;/&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;ul&gt;
@@ -10756,7 +10760,7 @@ which has received &lt;strong&gt;11 contributions by 6 contributors&lt;/strong&g
 &lt;h2 id=&#34;statistics&#34;&gt;Statistics &lt;a class=&#34;header-link&#34; href=&#34;#statistics&#34;&gt;&lt;svg class=&#34;fill-current o-60 hover-accent-color-light&#34; height=&#34;22px&#34; viewBox=&#34;0 0 24 24&#34; width=&#34;22px&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;none&#34;/&gt;&lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z&#34;/&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;This release represents &lt;strong&gt;79 contributions by 19 contributors&lt;/strong&gt; to the main Hugo code base. &lt;a href=&#34;https://github.com/bep&#34;&gt;@bep&lt;/a&gt; leads the Hugo development with a significant amount of contributions, but also a big shoutout to &lt;a href=&#34;https://github.com/apps/dependabot&#34;&gt;@dependabot[bot]&lt;/a&gt;, &lt;a href=&#34;https://github.com/moorereason&#34;&gt;@moorereason&lt;/a&gt;, and &lt;a href=&#34;https://github.com/jmooring&#34;&gt;@jmooring&lt;/a&gt; for their ongoing contributions.
 And a big thanks to &lt;a href=&#34;https://github.com/digitalcraftsman&#34;&gt;@digitalcraftsman&lt;/a&gt; for his relentless work on keeping the themes site in pristine condition and to &lt;a href=&#34;https://github.com/davidsneighbour&#34;&gt;@davidsneighbour&lt;/a&gt;, &lt;a href=&#34;https://github.com/coliff&#34;&gt;@coliff&lt;/a&gt; and &lt;a href=&#34;https://github.com/kaushalmodi&#34;&gt;@kaushalmodi&lt;/a&gt; for all the great work on the documentation site.&lt;/p&gt;
-&lt;p&gt;Many have also been busy writing and fixing the documentation in &lt;a href=&#34;https://github.com/gohugoio/hugoDocs&#34;&gt;hugoDocs&lt;/a&gt;,
+&lt;p&gt;Many have also been busy writing and fixing the documentation in &lt;a href=&#34;https://github.com/gohugoio/hugoDocs&#34;&gt;hugoDocs&lt;/a&gt;, 
 which has received &lt;strong&gt;24 contributions by 15 contributors&lt;/strong&gt;. A special thanks to &lt;a href=&#34;https://github.com/jmooring&#34;&gt;@jmooring&lt;/a&gt;, &lt;a href=&#34;https://github.com/bep&#34;&gt;@bep&lt;/a&gt;, &lt;a href=&#34;https://github.com/jornane&#34;&gt;@jornane&lt;/a&gt;, and &lt;a href=&#34;https://github.com/inwardmovement&#34;&gt;@inwardmovement&lt;/a&gt; for their work on the documentation site.&lt;/p&gt;
 &lt;p&gt;Hugo now has:&lt;/p&gt;
 &lt;ul&gt;
@@ -10935,19 +10939,19 @@ which has received &lt;strong&gt;24 contributions by 15 contributors&lt;/strong&
         
         
         
-        <![CDATA[<img src="https://gohugo.io/news/0.74.0-relnotes/featured_hu7ff75a56a54dd46c9d2c16ab503af3cf_56047_640x0_resize_catmullrom_2.png" width="640" height="320"/>]]>
+        <![CDATA[<img src="https://gohugo.io/news/0.74.0-relnotes/featured_hu7ff75a56a54dd46c9d2c16ab503af3cf_56047_640x0_resize_catmullrom_3.png" width="640" height="320"/>]]>
         
         &lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; The documentation site isn&amp;rsquo;t updated with all of the main new things below. We will get to it soon. See &lt;a href=&#34;https://github.com/gohugoio/hugoDocs/issues/1171&#34;&gt;https://github.com/gohugoio/hugoDocs/issues/1171&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;This release comes with native JavaScript bundling (and minifier), with &lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import&#34;&gt;import&lt;/a&gt; support (from &lt;code&gt;node_modules&lt;/code&gt; etc.), tree shaking, scope hoisting for ES6 modules, transpilation of JSX and newer JS syntax down to ES6, JavaScript/JSX and TypeScript/TSX support. And it&amp;rsquo;s &lt;em&gt;very fast&lt;/em&gt;. &lt;a href=&#34;https://github.com/evanw/esbuild#benchmarks&#34;&gt;Benchmarks&lt;/a&gt; rates it &lt;strong&gt;at least 100x faster&lt;/strong&gt; than the other JavaScript bundlers included. This new feature is backed by the very impressive &lt;a href=&#34;https://github.com/evanw/esbuild&#34;&gt;ESBuild&lt;/a&gt; project by &lt;a href=&#34;https://github.com/evanw&#34;&gt;@evanw&lt;/a&gt;. Many thanks to &lt;a href=&#34;https://github.com/remko&#34;&gt;@remko&lt;/a&gt; for the integration work.&lt;/p&gt;
 &lt;p&gt;A very simple example building a TypeScript file:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-go-html-template&#34; data-lang=&#34;go-html-template&#34;&gt;&lt;span class=&#34;cp&#34;&gt;{{&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;$js&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:=&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;resources&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;.Get&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;js/main.ts&amp;#34;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;|&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;js&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;.Build&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;cp&#34;&gt;}}&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-go-html-template&#34; data-lang=&#34;go-html-template&#34;&gt;&lt;span class=&#34;cp&#34;&gt;{{&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;$js&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:=&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;resources&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;.Get&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;js/main.ts&amp;#34;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;|&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;js&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;.Build&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;cp&#34;&gt;}}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This release also comes with Open API 3-support. This makes it much easier to create &amp;ldquo;Swagger styled&amp;rdquo; API-documentation. The below will unmarshal your YAML file into &lt;a href=&#34;https://godoc.org/github.com/getkin/kin-openapi/openapi3#Swagger&#34;&gt;this object graph&lt;/a&gt;:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-go-html-template&#34; data-lang=&#34;go-html-template&#34;&gt;&lt;span class=&#34;cp&#34;&gt;{{&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;$api&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:=&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;resources&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;.Get&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;api/openapi.yaml&amp;#34;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;|&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;openapi3&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;.Unmarshal&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;cp&#34;&gt;}}&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-go-html-template&#34; data-lang=&#34;go-html-template&#34;&gt;&lt;span class=&#34;cp&#34;&gt;{{&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;$api&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:=&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;resources&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;.Get&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;api/openapi.yaml&amp;#34;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;|&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;openapi3&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;.Unmarshal&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;cp&#34;&gt;}}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Hugo&amp;rsquo;s Asciidoc integration has also gotten a face lift. A big shoutout to &lt;a href=&#34;https://github.com/muenchhausen&#34;&gt;@muenchhausen&lt;/a&gt; and &lt;a href=&#34;https://github.com/bwklein&#34;&gt;@bwklein&lt;/a&gt; for their work on this.&lt;/p&gt;
 &lt;p&gt;And finally, &lt;a href=&#34;https://gohugo.io/templates/partials/#inline-partials&#34;&gt;partials&lt;/a&gt; can now be defined inline &amp;ndash; and that is way more useful than it sounds.&lt;/p&gt;
 &lt;p&gt;This release represents &lt;strong&gt;23 contributions by 9 contributors&lt;/strong&gt; to the main Hugo code base. &lt;a href=&#34;https://github.com/bep&#34;&gt;@bep&lt;/a&gt; leads the Hugo development with a significant amount of contributions, but also a big shoutout to &lt;a href=&#34;https://github.com/niklasfasching&#34;&gt;@niklasfasching&lt;/a&gt;, &lt;a href=&#34;https://github.com/bwklein&#34;&gt;@bwklein&lt;/a&gt;, and &lt;a href=&#34;https://github.com/muenchhausen&#34;&gt;@muenchhausen&lt;/a&gt; for their ongoing contributions.&lt;/p&gt;
 &lt;p&gt;And a big thanks to &lt;a href=&#34;https://github.com/digitalcraftsman&#34;&gt;@digitalcraftsman&lt;/a&gt; for his relentless work on keeping the themes site in pristine condition and to &lt;a href=&#34;https://github.com/davidsneighbour&#34;&gt;@davidsneighbour&lt;/a&gt;, &lt;a href=&#34;https://github.com/coliff&#34;&gt;@coliff&lt;/a&gt; and &lt;a href=&#34;https://github.com/kaushalmodi&#34;&gt;@kaushalmodi&lt;/a&gt; for all the great work on the documentation site.&lt;/p&gt;
-&lt;p&gt;Many have also been busy writing and fixing the documentation in &lt;a href=&#34;https://github.com/gohugoio/hugoDocs&#34;&gt;hugoDocs&lt;/a&gt;,
+&lt;p&gt;Many have also been busy writing and fixing the documentation in &lt;a href=&#34;https://github.com/gohugoio/hugoDocs&#34;&gt;hugoDocs&lt;/a&gt;, 
 which has received &lt;strong&gt;8 contributions by 7 contributors&lt;/strong&gt;. A special thanks to &lt;a href=&#34;https://github.com/OmarEmaraDev&#34;&gt;@OmarEmaraDev&lt;/a&gt;, &lt;a href=&#34;https://github.com/regisphilibert&#34;&gt;@regisphilibert&lt;/a&gt;, &lt;a href=&#34;https://github.com/coliff&#34;&gt;@coliff&lt;/a&gt;, and &lt;a href=&#34;https://github.com/jessicahuynh&#34;&gt;@jessicahuynh&lt;/a&gt; for their work on the documentation site.&lt;/p&gt;
 &lt;p&gt;Hugo now has:&lt;/p&gt;
 &lt;ul&gt;
@@ -11009,13 +11013,13 @@ which has received &lt;strong&gt;8 contributions by 7 contributors&lt;/strong&gt
         
         
         
-        <![CDATA[<img src="https://gohugo.io/news/0.73.0-relnotes/hugo-73-featured_hu7b5b76bcc722e972da8ed35f022034d1_186170_640x0_resize_catmullrom_2.png" width="640" height="320"/>]]>
+        <![CDATA[<img src="https://gohugo.io/news/0.73.0-relnotes/hugo-73-featured_hu7b5b76bcc722e972da8ed35f022034d1_186170_640x0_resize_catmullrom_3.png" width="640" height="320"/>]]>
         
         &lt;p&gt;Again, a release on the small side. Some new features &amp;ndash; one example is that we now support hook templates per section/type, see &lt;a href=&#34;https://github.com/gohugoio/hugo/issues/7349&#34;&gt;#7349&lt;/a&gt; &amp;ndash; and some important bug fixes.&lt;/p&gt;
 &lt;p&gt;But the most important part of this release is that we have now finally cleaned up the terms used for the taxonomy page kinds. This has made the taxonomy feature in Hugo harder to understand than it needed to be. The old/new values for these are &lt;code&gt;taxonomy&lt;/code&gt; =&amp;gt; &lt;code&gt;term&lt;/code&gt; and &lt;code&gt;taxonomyTerm&lt;/code&gt; =&amp;gt; &lt;code&gt;taxonomy&lt;/code&gt;. We have taken great care to avoid site breakage. See &lt;a href=&#34;https://github.com/gohugoio/hugo/issues/6911&#34;&gt;#6911&lt;/a&gt; for more information.&lt;/p&gt;
 &lt;p&gt;This release represents &lt;strong&gt;21 contributions by 9 contributors&lt;/strong&gt; to the main Hugo code base.bjorn.erik.pedersen leads the Hugo development with a significant amount of contributions, but also a big shoutout to helfper, moorereason, and onedrawingperday for their ongoing contributions.
 And a big thanks to &lt;a href=&#34;https://github.com/digitalcraftsman&#34;&gt;@digitalcraftsman&lt;/a&gt; for his relentless work on keeping the themes site in pristine condition and to &lt;a href=&#34;https://github.com/davidsneighbour&#34;&gt;@davidsneighbour&lt;/a&gt;, &lt;a href=&#34;https://github.com/coliff&#34;&gt;@coliff&lt;/a&gt; and &lt;a href=&#34;https://github.com/kaushalmodi&#34;&gt;@kaushalmodi&lt;/a&gt; for all the great work on the documentation site.&lt;/p&gt;
-&lt;p&gt;Many have also been busy writing and fixing the documentation in &lt;a href=&#34;https://github.com/gohugoio/hugoDocs&#34;&gt;hugoDocs&lt;/a&gt;,
+&lt;p&gt;Many have also been busy writing and fixing the documentation in &lt;a href=&#34;https://github.com/gohugoio/hugoDocs&#34;&gt;hugoDocs&lt;/a&gt;, 
 which has received &lt;strong&gt;30 contributions by 14 contributors&lt;/strong&gt;. A special thanks to christianoliff, bjorn.erik.pedersen, patrick, and hello for their work on the documentation site.&lt;/p&gt;
 &lt;h2 id=&#34;notes&#34;&gt;Notes &lt;a class=&#34;header-link&#34; href=&#34;#notes&#34;&gt;&lt;svg class=&#34;fill-current o-60 hover-accent-color-light&#34; height=&#34;22px&#34; viewBox=&#34;0 0 24 24&#34; width=&#34;22px&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;none&#34;/&gt;&lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z&#34;/&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;ul&gt;
@@ -11070,12 +11074,12 @@ which has received &lt;strong&gt;30 contributions by 14 contributors&lt;/strong&
         
         
         
-        <![CDATA[<img src="https://gohugo.io/news/0.72.0-relnotes/hugo-72-featured_hu2851378649aa18f104ac3bb6a49cdd29_256988_640x0_resize_catmullrom_2.png" width="640" height="320"/>]]>
+        <![CDATA[<img src="https://gohugo.io/news/0.72.0-relnotes/hugo-72-featured_hu2851378649aa18f104ac3bb6a49cdd29_256988_640x0_resize_catmullrom_3.png" width="640" height="320"/>]]>
         
         &lt;p&gt;This is a rather small release, its probably main motivation being the fixes in Goldmark&amp;rsquo;s &lt;a href=&#34;https://github.com/gohugoio/hugo/commit/432885c499849efb29d3e50196f377fe0e908333&#34;&gt;Typographer extension&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;This release also adds &lt;a href=&#34;https://gohugo.io/getting-started/configuration/#configure-server&#34;&gt;redirect and URL rewrite support&lt;/a&gt; to the development server, with mostly Netlify-compatible configuration syntax. This is especially useful if you&amp;rsquo;re building a &lt;a href=&#34;https://en.wikipedia.org/wiki/Single-page_application&#34;&gt;SPA&lt;/a&gt; with client-side routing.&lt;/p&gt;
 &lt;p&gt;This release represents &lt;strong&gt;13 contributions by 3 contributors&lt;/strong&gt; to the main Hugo code base.&lt;/p&gt;
-&lt;p&gt;Many have also been busy writing and fixing the documentation in &lt;a href=&#34;https://github.com/gohugoio/hugoDocs&#34;&gt;hugoDocs&lt;/a&gt;,
+&lt;p&gt;Many have also been busy writing and fixing the documentation in &lt;a href=&#34;https://github.com/gohugoio/hugoDocs&#34;&gt;hugoDocs&lt;/a&gt;, 
 which has received &lt;strong&gt;9 contributions by 6 contributors&lt;/strong&gt;. A special thanks to &lt;a href=&#34;https://github.com/faraixyz&#34;&gt;@faraixyz&lt;/a&gt;, &lt;a href=&#34;https://github.com/bep&#34;&gt;@bep&lt;/a&gt;, &lt;a href=&#34;https://github.com/coliff&#34;&gt;@coliff&lt;/a&gt;, and &lt;a href=&#34;https://github.com/Leon0824&#34;&gt;@Leon0824&lt;/a&gt; for their work on the documentation site.&lt;/p&gt;
 &lt;p&gt;Hugo now has:&lt;/p&gt;
 &lt;ul&gt;
@@ -11133,12 +11137,12 @@ which has received &lt;strong&gt;9 contributions by 6 contributors&lt;/strong&gt
         
         
         
-        <![CDATA[<img src="https://gohugo.io/news/0.71.0-relnotes/hugo-71-featured_hu8a56287afe6ebd759706bbede29716ba_209832_640x0_resize_catmullrom_2.png" width="640" height="320"/>]]>
+        <![CDATA[<img src="https://gohugo.io/news/0.71.0-relnotes/hugo-71-featured_hu8a56287afe6ebd759706bbede29716ba_209832_640x0_resize_catmullrom_3.png" width="640" height="320"/>]]>
         
         &lt;p&gt;Hugo 0.71 brings &lt;a href=&#34;https://gohugo.io/getting-started/configuration-markup#markdown-render-hooks&#34;&gt;Markdown render hooks for headings&lt;/a&gt;, a set of bug fixes and more.&lt;/p&gt;
 &lt;p&gt;This release represents &lt;strong&gt;12 contributions by 7 contributors&lt;/strong&gt; to the main Hugo code base. &lt;a href=&#34;https://github.com/bep&#34;&gt;@bep&lt;/a&gt; leads the Hugo development with a significant amount of contributions, but also a big shoutout to &lt;a href=&#34;https://github.com/anthonyfok&#34;&gt;@anthonyfok&lt;/a&gt;, &lt;a href=&#34;https://github.com/apexskier&#34;&gt;@apexskier&lt;/a&gt;, and &lt;a href=&#34;https://github.com/johnweldon&#34;&gt;@johnweldon&lt;/a&gt; for their ongoing contributions.&lt;/p&gt;
 &lt;p&gt;And a big thanks to &lt;a href=&#34;https://github.com/digitalcraftsman&#34;&gt;@digitalcraftsman&lt;/a&gt; and &lt;a href=&#34;https://github.com/onedrawingperday&#34;&gt;@onedrawingperday&lt;/a&gt; for their relentless work on keeping the themes site in pristine condition and to &lt;a href=&#34;https://github.com/davidsneighbour&#34;&gt;@davidsneighbour&lt;/a&gt; and &lt;a href=&#34;https://github.com/kaushalmodi&#34;&gt;@kaushalmodi&lt;/a&gt; for all the great work on the documentation site.&lt;/p&gt;
-&lt;p&gt;Many have also been busy writing and fixing the documentation in &lt;a href=&#34;https://github.com/gohugoio/hugoDocs&#34;&gt;hugoDocs&lt;/a&gt;,
+&lt;p&gt;Many have also been busy writing and fixing the documentation in &lt;a href=&#34;https://github.com/gohugoio/hugoDocs&#34;&gt;hugoDocs&lt;/a&gt;, 
 which has received &lt;strong&gt;8 contributions by 7 contributors&lt;/strong&gt;. A special thanks to &lt;a href=&#34;https://github.com/bep&#34;&gt;@bep&lt;/a&gt;, &lt;a href=&#34;https://github.com/mikeee&#34;&gt;@mikeee&lt;/a&gt;, &lt;a href=&#34;https://github.com/h-enk&#34;&gt;@h-enk&lt;/a&gt;, and &lt;a href=&#34;https://github.com/tjamet&#34;&gt;@tjamet&lt;/a&gt; for their work on the documentation site.&lt;/p&gt;
 &lt;p&gt;Hugo now has:&lt;/p&gt;
 &lt;ul&gt;
@@ -11180,12 +11184,12 @@ which has received &lt;strong&gt;8 contributions by 7 contributors&lt;/strong&gt
         
         
         
-        <![CDATA[<img src="https://gohugo.io/news/0.70.0-relnotes/hugo-70-featured_hu7e53232ad438751d3345bfcf581a92c2_65533_640x0_resize_catmullrom_2.png" width="640" height="320"/>]]>
+        <![CDATA[<img src="https://gohugo.io/news/0.70.0-relnotes/hugo-70-featured_hu7e53232ad438751d3345bfcf581a92c2_65533_640x0_resize_catmullrom_3.png" width="640" height="320"/>]]>
         
         &lt;p&gt;This is a small release, and the main new feature is that you can now use &lt;a href=&#34;https://gohugo.io/hugo-pipes/babel/&#34;&gt;Babel&lt;/a&gt; to transpile JavaScript.&lt;/p&gt;
 &lt;p&gt;This release represents &lt;strong&gt;22 contributions by 12 contributors&lt;/strong&gt; to the main Hugo code base.&lt;a href=&#34;https://github.com/bep&#34;&gt;@bep&lt;/a&gt; leads the Hugo development with a significant amount of contributions, but also a big shoutout to &lt;a href=&#34;https://github.com/BurtonQin&#34;&gt;@BurtonQin&lt;/a&gt;, &lt;a href=&#34;https://github.com/tekezo&#34;&gt;@tekezo&lt;/a&gt;, and &lt;a href=&#34;https://github.com/sensimevanidus&#34;&gt;@sensimevanidus&lt;/a&gt; for their ongoing contributions.
 And a big thanks to &lt;a href=&#34;https://github.com/digitalcraftsman&#34;&gt;@digitalcraftsman&lt;/a&gt; and &lt;a href=&#34;https://github.com/onedrawingperday&#34;&gt;@onedrawingperday&lt;/a&gt; for their relentless work on keeping the themes site in pristine condition and to &lt;a href=&#34;https://github.com/davidsneighbour&#34;&gt;@davidsneighbour&lt;/a&gt; and &lt;a href=&#34;https://github.com/kaushalmodi&#34;&gt;@kaushalmodi&lt;/a&gt; for all the great work on the documentation site.&lt;/p&gt;
-&lt;p&gt;Many have also been busy writing and fixing the documentation in &lt;a href=&#34;https://github.com/gohugoio/hugoDocs&#34;&gt;hugoDocs&lt;/a&gt;,
+&lt;p&gt;Many have also been busy writing and fixing the documentation in &lt;a href=&#34;https://github.com/gohugoio/hugoDocs&#34;&gt;hugoDocs&lt;/a&gt;, 
 which has received &lt;strong&gt;6 contributions by 4 contributors&lt;/strong&gt;. A special thanks to &lt;a href=&#34;https://github.com/bep&#34;&gt;@bep&lt;/a&gt;, &lt;a href=&#34;https://github.com/MJ2097&#34;&gt;@MJ2097&lt;/a&gt;, &lt;a href=&#34;https://github.com/jeremyzilar&#34;&gt;@jeremyzilar&lt;/a&gt;, and &lt;a href=&#34;https://github.com/larryclaman&#34;&gt;@larryclaman&lt;/a&gt; for their work on the documentation site.&lt;/p&gt;
 &lt;p&gt;Hugo now has:&lt;/p&gt;
 &lt;ul&gt;
@@ -11292,10 +11296,10 @@ which has received &lt;strong&gt;6 contributions by 4 contributors&lt;/strong&gt
         
         
         
-        <![CDATA[<img src="https://gohugo.io/news/0.69.0-relnotes/hugo-69-easter-featured_hu1e6bcfa5c2c3547379b657838d335c52_398560_640x0_resize_catmullrom_2.png" width="640" height="335"/>]]>
+        <![CDATA[<img src="https://gohugo.io/news/0.69.0-relnotes/hugo-69-easter-featured_hu1e6bcfa5c2c3547379b657838d335c52_398560_640x0_resize_catmullrom_3.png" width="640" height="335"/>]]>
         
         &lt;p&gt;&lt;strong&gt;It&amp;rsquo;s Eeaster, a time for mysteries and puzzles.&lt;/strong&gt; And at first glance, this Hugo release looks a little mysterious. The core of if is a mind-twister:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-go-html-template&#34; data-lang=&#34;go-html-template&#34;&gt;&lt;span class=&#34;cp&#34;&gt;{{&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;$css&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:=&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;resources&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;.Get&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;css/main.css&amp;#34;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;cp&#34;&gt;}}&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-go-html-template&#34; data-lang=&#34;go-html-template&#34;&gt;&lt;span class=&#34;cp&#34;&gt;{{&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;$css&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:=&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;resources&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;.Get&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;css/main.css&amp;#34;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;cp&#34;&gt;}}&lt;/span&gt;
 &lt;span class=&#34;cp&#34;&gt;{{&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;$css&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;$css&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;|&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;resources&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;.PostCSS&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;cp&#34;&gt;}}&lt;/span&gt;
 &lt;span class=&#34;cp&#34;&gt;{{&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;if&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;hugo&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;.IsProduction&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;cp&#34;&gt;}}&lt;/span&gt;
 &lt;span class=&#34;cp&#34;&gt;{{&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;$css&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;$css&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;|&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;minify&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;|&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;fingerprint&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;|&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;resources&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;.PostProcess&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;cp&#34;&gt;}}&lt;/span&gt;
@@ -11305,7 +11309,7 @@ which has received &lt;strong&gt;6 contributions by 4 contributors&lt;/strong&gt
 &lt;p&gt;The prime current use case for the above is CSS pruning in PostCSS. In simple cases you can use the templates as a base for the content filters, but that has its limitations and can be very hard to setup, especially in themed configurations. So we have added a new &lt;a href=&#34;https://gohugo.io/getting-started/configuration/#configure-build&#34;&gt;writeStats&lt;/a&gt; configuration that, when enabled, will write a file named &lt;code&gt;hugo_stats.json&lt;/code&gt; to your project root with some aggregated data about the build, e.g. list of HTML entities published, to be used to do &lt;a href=&#34;https://gohugo.io/hugo-pipes/postprocess/#css-purging-with-postcss&#34;&gt;CSS pruning&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;This release represents &lt;strong&gt;20 contributions by 10 contributors&lt;/strong&gt; to the main Hugo code base.&lt;a href=&#34;https://github.com/bep&#34;&gt;@bep&lt;/a&gt; leads the Hugo development with a significant amount of contributions, but also a big shoutout to &lt;a href=&#34;https://github.com/moorereason&#34;&gt;@moorereason&lt;/a&gt;, &lt;a href=&#34;https://github.com/jaywilliams&#34;&gt;@jaywilliams&lt;/a&gt;, and &lt;a href=&#34;https://github.com/satotake&#34;&gt;@satotake&lt;/a&gt; for their ongoing contributions.
 And a big thanks to &lt;a href=&#34;https://github.com/digitalcraftsman&#34;&gt;@digitalcraftsman&lt;/a&gt; and &lt;a href=&#34;https://github.com/onedrawingperday&#34;&gt;@onedrawingperday&lt;/a&gt; for their relentless work on keeping the themes site in pristine condition and to &lt;a href=&#34;https://github.com/davidsneighbour&#34;&gt;@davidsneighbour&lt;/a&gt; and &lt;a href=&#34;https://github.com/kaushalmodi&#34;&gt;@kaushalmodi&lt;/a&gt; for all the great work on the documentation site.&lt;/p&gt;
-&lt;p&gt;Many have also been busy writing and fixing the documentation in &lt;a href=&#34;https://github.com/gohugoio/hugoDocs&#34;&gt;hugoDocs&lt;/a&gt;,
+&lt;p&gt;Many have also been busy writing and fixing the documentation in &lt;a href=&#34;https://github.com/gohugoio/hugoDocs&#34;&gt;hugoDocs&lt;/a&gt;, 
 which has received &lt;strong&gt;14 contributions by 7 contributors&lt;/strong&gt;. A special thanks to &lt;a href=&#34;https://github.com/bep&#34;&gt;@bep&lt;/a&gt;, &lt;a href=&#34;https://github.com/coliff&#34;&gt;@coliff&lt;/a&gt;, &lt;a href=&#34;https://github.com/dmgawel&#34;&gt;@dmgawel&lt;/a&gt;, and &lt;a href=&#34;https://github.com/jasikpark&#34;&gt;@jasikpark&lt;/a&gt; for their work on the documentation site.&lt;/p&gt;
 &lt;p&gt;Hugo now has:&lt;/p&gt;
 &lt;ul&gt;
@@ -11409,13 +11413,13 @@ which has received &lt;strong&gt;14 contributions by 7 contributors&lt;/strong&g
         
         
         
-        <![CDATA[<img src="https://gohugo.io/news/0.68.0-relnotes/hugo-68-featured_hubf411be7de0d7016f242fc7f0c46d71c_65337_640x0_resize_catmullrom_2.png" width="640" height="320"/>]]>
+        <![CDATA[<img src="https://gohugo.io/news/0.68.0-relnotes/hugo-68-featured_hubf411be7de0d7016f242fc7f0c46d71c_65337_640x0_resize_catmullrom_3.png" width="640" height="320"/>]]>
         
         &lt;p&gt;This release (finally) brings minify configuration, a big thanks to &lt;a href=&#34;https://github.com/satotake&#34;&gt;@satotake&lt;/a&gt; for that contribution. See &lt;a href=&#34;https://gohugo.io/getting-started/configuration/#configure-minify&#34;&gt;Configure Minify&lt;/a&gt; for details.&lt;/p&gt;
 &lt;p&gt;We have also extended the &lt;a href=&#34;https://gohugo.io/content-management/build-options/&#34;&gt;Page Build Options&lt;/a&gt; to allow fully navigable headless sections.&lt;/p&gt;
 &lt;p&gt;This release represents &lt;strong&gt;17 contributions by 6 contributors&lt;/strong&gt; to the main Hugo code base.&lt;a href=&#34;https://github.com/bep&#34;&gt;@bep&lt;/a&gt; leads the Hugo development with a significant amount of contributions, but also a big shoutout to &lt;a href=&#34;https://github.com/evankanderson&#34;&gt;@evankanderson&lt;/a&gt;, &lt;a href=&#34;https://github.com/QuLogic&#34;&gt;@QuLogic&lt;/a&gt;, and &lt;a href=&#34;https://github.com/le0tan&#34;&gt;@le0tan&lt;/a&gt; for their ongoing contributions.&lt;/p&gt;
 &lt;p&gt;And a big thanks to &lt;a href=&#34;https://github.com/digitalcraftsman&#34;&gt;@digitalcraftsman&lt;/a&gt; and &lt;a href=&#34;https://github.com/onedrawingperday&#34;&gt;@onedrawingperday&lt;/a&gt; for their relentless work on keeping the themes site in pristine condition and to &lt;a href=&#34;https://github.com/davidsneighbour&#34;&gt;@davidsneighbour&lt;/a&gt; and &lt;a href=&#34;https://github.com/kaushalmodi&#34;&gt;@kaushalmodi&lt;/a&gt; for all the great work on the documentation site.&lt;/p&gt;
-&lt;p&gt;Many have also been busy writing and fixing the documentation in &lt;a href=&#34;https://github.com/gohugoio/hugoDocs&#34;&gt;hugoDocs&lt;/a&gt;,
+&lt;p&gt;Many have also been busy writing and fixing the documentation in &lt;a href=&#34;https://github.com/gohugoio/hugoDocs&#34;&gt;hugoDocs&lt;/a&gt;, 
 which has received &lt;strong&gt;3 contributions by 3 contributors&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;Hugo now has:&lt;/p&gt;
 &lt;ul&gt;
@@ -11484,7 +11488,7 @@ which has received &lt;strong&gt;3 contributions by 3 contributors&lt;/strong&gt
         
         
         
-        <![CDATA[<img src="https://gohugo.io/news/0.67.0-relnotes/hugo-67-poster-featured_hub9adb3c2f94f651d39a760315e4e42f9_79436_640x0_resize_catmullrom_2.png" width="640" height="320"/>]]>
+        <![CDATA[<img src="https://gohugo.io/news/0.67.0-relnotes/hugo-67-poster-featured_hub9adb3c2f94f651d39a760315e4e42f9_79436_640x0_resize_catmullrom_3.png" width="640" height="320"/>]]>
         
         &lt;p&gt;The two main items in Hugo 0.67.0 is custom HTTP header support in &lt;code&gt;hugo server&lt;/code&gt; and include/exclude filters for &lt;a href=&#34;https://gohugo.io/hosting-and-deployment/hugo-deploy/#readout&#34;&gt;Hugo Deploy&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Being able to &lt;a href=&#34;https://gohugo.io/getting-started/configuration/#configure-server&#34;&gt;configure HTTP headers&lt;/a&gt; in your development server means that you can now verify how your site behaves with the intended Content Security Policy settings etc., e.g.:&lt;/p&gt;
@@ -11517,7 +11521,7 @@ which has received &lt;strong&gt;3 contributions by 3 contributors&lt;/strong&gt
   &lt;div class=&#34;tab-content&#34;&gt;
     
       &lt;div data-pane=&#34;yaml&#34; class=&#34;code-copy-content nt3 tab-pane active&#34;&gt;
-        &lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span class=&#34;nt&#34;&gt;server&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+        &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span class=&#34;nt&#34;&gt;server&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;span class=&#34;w&#34;&gt;  &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;headers&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;span class=&#34;w&#34;&gt;  &lt;/span&gt;- &lt;span class=&#34;nt&#34;&gt;for&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;/**.html&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;values&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
@@ -11534,16 +11538,18 @@ which has received &lt;strong&gt;3 contributions by 3 contributors&lt;/strong&gt
       
     
       &lt;div data-pane=&#34;toml&#34; class=&#34;code-copy-content nt3 tab-pane &#34;&gt;
-        &lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-toml&#34; data-lang=&#34;toml&#34;&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;server&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;
+        &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-toml&#34; data-lang=&#34;toml&#34;&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;server&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;
+&lt;span class=&#34;p&#34;&gt;[[&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;server&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;headers&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]]&lt;/span&gt;
+&lt;span class=&#34;nx&#34;&gt;for&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;/**.html&amp;#39;&lt;/span&gt;
+&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;server&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;headers&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;values&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;
+&lt;span class=&#34;nx&#34;&gt;Content-Security-Policy&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;script-src localhost:1313&amp;#39;&lt;/span&gt;
+&lt;span class=&#34;nx&#34;&gt;Referrer-Policy&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;strict-origin-when-cross-origin&amp;#39;&lt;/span&gt;
+&lt;span class=&#34;nx&#34;&gt;X-Content-Type-Options&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;nosniff&amp;#39;&lt;/span&gt;
+&lt;span class=&#34;nx&#34;&gt;X-Frame-Options&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;DENY&amp;#39;&lt;/span&gt;
+&lt;span class=&#34;nx&#34;&gt;X-XSS-Protection&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;1; mode=block&amp;#39;&lt;/span&gt;
 
-  &lt;span class=&#34;p&#34;&gt;[[&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;server&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;headers&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]]&lt;/span&gt;
-    &lt;span class=&#34;nx&#34;&gt;for&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;/**.html&amp;#34;&lt;/span&gt;
-    &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;server&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;headers&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;values&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;
-      &lt;span class=&#34;nx&#34;&gt;Content-Security-Policy&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;script-src localhost:1313&amp;#34;&lt;/span&gt;
-      &lt;span class=&#34;nx&#34;&gt;Referrer-Policy&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;strict-origin-when-cross-origin&amp;#34;&lt;/span&gt;
-      &lt;span class=&#34;nx&#34;&gt;X-Content-Type-Options&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;nosniff&amp;#34;&lt;/span&gt;
-      &lt;span class=&#34;nx&#34;&gt;X-Frame-Options&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;DENY&amp;#34;&lt;/span&gt;
-      &lt;span class=&#34;nx&#34;&gt;X-XSS-Protection&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;1; mode=block&amp;#34;&lt;/span&gt;
+
+
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
       &lt;/div&gt;
       
@@ -11552,7 +11558,7 @@ which has received &lt;strong&gt;3 contributions by 3 contributors&lt;/strong&gt
       
     
       &lt;div data-pane=&#34;json&#34; class=&#34;code-copy-content nt3 tab-pane &#34;&gt;
-        &lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-json&#34; data-lang=&#34;json&#34;&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+        &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-json&#34; data-lang=&#34;json&#34;&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
    &lt;span class=&#34;nt&#34;&gt;&amp;#34;server&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
       &lt;span class=&#34;nt&#34;&gt;&amp;#34;headers&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;
          &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
@@ -11582,7 +11588,7 @@ which has received &lt;strong&gt;3 contributions by 3 contributors&lt;/strong&gt
 &lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; This release also changes how raw HTML files inside /content is processed to be in line with the documentation. See &lt;a href=&#34;https://github.com/gohugoio/hugo/issues/7030&#34;&gt;#7030&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;This release represents &lt;strong&gt;7 contributions by 4 contributors&lt;/strong&gt; to the main Hugo code base.&lt;a href=&#34;https://github.com/bep&#34;&gt;@bep&lt;/a&gt; leads the Hugo development with a significant amount of contributions, but also a big shoutout to &lt;a href=&#34;https://github.com/satotake&#34;&gt;@satotake&lt;/a&gt;, &lt;a href=&#34;https://github.com/sams96&#34;&gt;@sams96&lt;/a&gt;, and &lt;a href=&#34;https://github.com/davidejones&#34;&gt;@davidejones&lt;/a&gt; for their ongoing contributions.
 And a big thanks to &lt;a href=&#34;https://github.com/digitalcraftsman&#34;&gt;@digitalcraftsman&lt;/a&gt; and &lt;a href=&#34;https://github.com/onedrawingperday&#34;&gt;@onedrawingperday&lt;/a&gt; for their relentless work on keeping the themes site in pristine condition and to &lt;a href=&#34;https://github.com/davidsneighbour&#34;&gt;@davidsneighbour&lt;/a&gt; and &lt;a href=&#34;https://github.com/kaushalmodi&#34;&gt;@kaushalmodi&lt;/a&gt; for all the great work on the documentation site.&lt;/p&gt;
-&lt;p&gt;Many have also been busy writing and fixing the documentation in &lt;a href=&#34;https://github.com/gohugoio/hugoDocs&#34;&gt;hugoDocs&lt;/a&gt;,
+&lt;p&gt;Many have also been busy writing and fixing the documentation in &lt;a href=&#34;https://github.com/gohugoio/hugoDocs&#34;&gt;hugoDocs&lt;/a&gt;, 
 which has received &lt;strong&gt;5 contributions by 5 contributors&lt;/strong&gt;. A special thanks to &lt;a href=&#34;https://github.com/bep&#34;&gt;@bep&lt;/a&gt;, &lt;a href=&#34;https://github.com/psliwka&#34;&gt;@psliwka&lt;/a&gt;, &lt;a href=&#34;https://github.com/digitalcraftsman&#34;&gt;@digitalcraftsman&lt;/a&gt;, and &lt;a href=&#34;https://github.com/jasikpark&#34;&gt;@jasikpark&lt;/a&gt; for their work on the documentation site.&lt;/p&gt;
 &lt;p&gt;Hugo now has:&lt;/p&gt;
 &lt;ul&gt;
@@ -11622,7 +11628,7 @@ which has received &lt;strong&gt;5 contributions by 5 contributors&lt;/strong&gt
         
         
         
-        <![CDATA[<img src="https://gohugo.io/news/0.66.0-relnotes/hugo-66-poster-featured_hu4d3a62a6d2ad42dd03e2a3723d4914a5_75588_640x0_resize_catmullrom_2.png" width="640" height="320"/>]]>
+        <![CDATA[<img src="https://gohugo.io/news/0.66.0-relnotes/hugo-66-poster-featured_hu4d3a62a6d2ad42dd03e2a3723d4914a5_75588_640x0_resize_catmullrom_3.png" width="640" height="320"/>]]>
         
         &lt;p&gt;This release adds &lt;a href=&#34;https://gohugo.io/hugo-pipes/postcss/#options&#34;&gt;inline &lt;code&gt;@import&lt;/code&gt;&lt;/a&gt; support to &lt;code&gt;resources.PostCSS&lt;/code&gt;, with imports relative to Hugo&amp;rsquo;s virtual, composable file system. Another useful addition is the new &lt;code&gt;build&lt;/code&gt; &lt;a href=&#34;https://gohugo.io/getting-started/configuration/#configure-build&#34;&gt;configuration section&lt;/a&gt;. As an example:&lt;/p&gt;
 
@@ -11654,7 +11660,7 @@ which has received &lt;strong&gt;5 contributions by 5 contributors&lt;/strong&gt
   &lt;div class=&#34;tab-content&#34;&gt;
     
       &lt;div data-pane=&#34;yaml&#34; class=&#34;code-copy-content nt3 tab-pane active&#34;&gt;
-        &lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span class=&#34;nt&#34;&gt;build&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+        &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span class=&#34;nt&#34;&gt;build&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;span class=&#34;w&#34;&gt;  &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;useResourceCacheWhen&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;always&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
       &lt;/div&gt;
@@ -11664,8 +11670,9 @@ which has received &lt;strong&gt;5 contributions by 5 contributors&lt;/strong&gt
       
     
       &lt;div data-pane=&#34;toml&#34; class=&#34;code-copy-content nt3 tab-pane &#34;&gt;
-        &lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-toml&#34; data-lang=&#34;toml&#34;&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;build&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;
-  &lt;span class=&#34;nx&#34;&gt;useResourceCacheWhen&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;always&amp;#34;&lt;/span&gt;
+        &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-toml&#34; data-lang=&#34;toml&#34;&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;build&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;
+&lt;span class=&#34;nx&#34;&gt;useResourceCacheWhen&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;always&amp;#39;&lt;/span&gt;
+
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
       &lt;/div&gt;
       
@@ -11674,7 +11681,7 @@ which has received &lt;strong&gt;5 contributions by 5 contributors&lt;/strong&gt
       
     
       &lt;div data-pane=&#34;json&#34; class=&#34;code-copy-content nt3 tab-pane &#34;&gt;
-        &lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-json&#34; data-lang=&#34;json&#34;&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+        &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-json&#34; data-lang=&#34;json&#34;&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
    &lt;span class=&#34;nt&#34;&gt;&amp;#34;build&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
       &lt;span class=&#34;nt&#34;&gt;&amp;#34;useResourceCacheWhen&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;always&amp;#34;&lt;/span&gt;
    &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
@@ -11693,7 +11700,7 @@ which has received &lt;strong&gt;5 contributions by 5 contributors&lt;/strong&gt
 &lt;p&gt;The above will tell Hugo to &lt;em&gt;always&lt;/em&gt; use the cached build resources inside &lt;code&gt;resources/_gen&lt;/code&gt; for the build steps requiring a non-standard dependency (PostCSS and SCSS/SASS). Valid values are &lt;code&gt;never&lt;/code&gt;, &lt;code&gt;always&lt;/code&gt; and &lt;code&gt;fallback&lt;/code&gt; (default).&lt;/p&gt;
 &lt;p&gt;This release represents &lt;strong&gt;27 contributions by 8 contributors&lt;/strong&gt; to the main Hugo code base.&lt;a href=&#34;https://github.com/bep&#34;&gt;@bep&lt;/a&gt; leads the Hugo development with a significant amount of contributions, but also a big shoutout to &lt;a href=&#34;https://github.com/anthonyfok&#34;&gt;@anthonyfok&lt;/a&gt;, &lt;a href=&#34;https://github.com/carlmjohnson&#34;&gt;@carlmjohnson&lt;/a&gt;, and &lt;a href=&#34;https://github.com/sams96&#34;&gt;@sams96&lt;/a&gt; for their ongoing contributions.
 And a big thanks to &lt;a href=&#34;https://github.com/digitalcraftsman&#34;&gt;@digitalcraftsman&lt;/a&gt; and &lt;a href=&#34;https://github.com/onedrawingperday&#34;&gt;@onedrawingperday&lt;/a&gt; for their relentless work on keeping the themes site in pristine condition and to &lt;a href=&#34;https://github.com/davidsneighbour&#34;&gt;@davidsneighbour&lt;/a&gt; and &lt;a href=&#34;https://github.com/kaushalmodi&#34;&gt;@kaushalmodi&lt;/a&gt; for all the great work on the documentation site.&lt;/p&gt;
-&lt;p&gt;Many have also been busy writing and fixing the documentation in &lt;a href=&#34;https://github.com/gohugoio/hugoDocs&#34;&gt;hugoDocs&lt;/a&gt;,
+&lt;p&gt;Many have also been busy writing and fixing the documentation in &lt;a href=&#34;https://github.com/gohugoio/hugoDocs&#34;&gt;hugoDocs&lt;/a&gt;, 
 which has received &lt;strong&gt;8 contributions by 5 contributors&lt;/strong&gt;. A special thanks to &lt;a href=&#34;https://github.com/bep&#34;&gt;@bep&lt;/a&gt;, &lt;a href=&#34;https://github.com/nantipov&#34;&gt;@nantipov&lt;/a&gt;, &lt;a href=&#34;https://github.com/regisphilibert&#34;&gt;@regisphilibert&lt;/a&gt;, and &lt;a href=&#34;https://github.com/inwardmovement&#34;&gt;@inwardmovement&lt;/a&gt; for their work on the documentation site.&lt;/p&gt;
 &lt;p&gt;Hugo now has:&lt;/p&gt;
 &lt;ul&gt;

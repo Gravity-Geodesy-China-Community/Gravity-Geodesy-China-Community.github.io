@@ -13,7 +13,7 @@
   <title>JavaScript Building | Gravity</title>
 
   <meta name="viewport" content="width=device-width,minimum-scale=1">
-  <meta name="generator" content="Hugo 0.84.0" />
+  <meta name="generator" content="Hugo 0.87.0" />
 
   
   <meta name="robots" content="noindex, nofollow">
@@ -42,7 +42,7 @@
 
 
   
-  <script type="text/javascript" src="/output/js/app.175b405753a9c0ce86ab35944e9c4cc1a758a6873209cf5106600f6b2f5a59b6.js" integrity="sha256-F1tAV1OpwM6GqzWUTpxMwadYpocyCc9RBmAPay9aWbY=" crossorigin="anonymous" defer></script>
+  <script type="text/javascript" src="/output/js/app.0984bf5469ab3c8aa82cf8eb015a560d74ee028723b1ab38e928998f5f72baba.js" integrity="sha256-CYS/VGmrPIqoLPjrAVpWDXTuAocjsas46SiZj19yuro=" crossorigin="anonymous" defer></script>
   
       
  
@@ -61,12 +61,12 @@
 <meta property="og:description" content="Hugo Pipes can process JavaScript files with [ESBuild](https://github.com/evanw/esbuild)." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://gohugo.io/hugo-pipes/js/" /><meta property="og:image" content="https://gohugo.io/images/gohugoio-card.png"/><meta property="article:section" content="hugo-pipes" />
-<meta property="article:published_time" content="2020-07-20T00:00:00&#43;00:00" />
-<meta property="article:modified_time" content="2021-08-13T21:11:25&#43;08:00" />
+<meta property="article:published_time" content="2020-07-20T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-08-13T21:11:25+08:00" />
 
 <meta itemprop="name" content="JavaScript Building">
-<meta itemprop="description" content="Hugo Pipes can process JavaScript files with [ESBuild](https://github.com/evanw/esbuild)."><meta itemprop="datePublished" content="2020-07-20T00:00:00&#43;00:00" />
-<meta itemprop="dateModified" content="2021-08-13T21:11:25&#43;08:00" />
+<meta itemprop="description" content="Hugo Pipes can process JavaScript files with [ESBuild](https://github.com/evanw/esbuild)."><meta itemprop="datePublished" content="2020-07-20T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2021-08-13T21:11:25+08:00" />
 <meta itemprop="wordCount" content="767"><meta itemprop="image" content="https://gohugo.io/images/gohugoio-card.png"/>
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://gohugo.io/images/gohugoio-card.png"/>
@@ -255,7 +255,7 @@
 <h3 id="options">Options <a class="header-link" href="#options"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
 <dl>
 <dt>targetPath [string]</dt>
-<dd>If not set, the source path will be used as the base target path.
+<dd>If not set, the source path will be used as the base target path. 
 Note that the target path&rsquo;s extension may change if the target MIME type is different, e.g. when the source is TypeScript.</dd>
 <dt>params [map or slice] 
 
@@ -265,9 +265,9 @@ Note that the target path&rsquo;s extension may change if the target MIME type i
 </button></dt>
 <dd>Params that can be imported as JSON in your JS files, e.g.:</dd>
 </dl>
-<div class="highlight"><pre class="chroma"><code class="language-go-html-template" data-lang="go-html-template"><span class="cp">{{</span><span class="w"> </span><span class="nx">$js</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">resources</span><span class="na">.Get</span><span class="w"> </span><span class="s">&#34;js/main.js&#34;</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="k">js</span><span class="na">.Build</span><span class="w"> </span><span class="o">(</span><span class="nx">dict</span><span class="w"> </span><span class="s">&#34;params&#34;</span><span class="w"> </span><span class="o">(</span><span class="nx">dict</span><span class="w"> </span><span class="s">&#34;api&#34;</span><span class="w"> </span><span class="s">&#34;https://example.org/api&#34;</span><span class="o">))</span><span class="w"> </span><span class="cp">}}</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go-html-template" data-lang="go-html-template"><span class="cp">{{</span><span class="w"> </span><span class="nx">$js</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">resources</span><span class="na">.Get</span><span class="w"> </span><span class="s">&#34;js/main.js&#34;</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="k">js</span><span class="na">.Build</span><span class="w"> </span><span class="o">(</span><span class="nx">dict</span><span class="w"> </span><span class="s">&#34;params&#34;</span><span class="w"> </span><span class="o">(</span><span class="nx">dict</span><span class="w"> </span><span class="s">&#34;api&#34;</span><span class="w"> </span><span class="s">&#34;https://example.org/api&#34;</span><span class="o">))</span><span class="w"> </span><span class="cp">}}</span>
 </code></pre></div><p>And then in your JS file:</p>
-<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="kr">import</span> <span class="o">*</span> <span class="nx">as</span> <span class="nx">params</span> <span class="nx">from</span> <span class="s1">&#39;@params&#39;</span><span class="p">;</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="kr">import</span> <span class="o">*</span> <span class="nx">as</span> <span class="nx">params</span> <span class="nx">from</span> <span class="s1">&#39;@params&#39;</span><span class="p">;</span>
 </code></pre></div><p>Note that this is meant for small data sets, e.g. config settings. For larger data, please put/mount the files into <code>/assets</code> and import them directly.</p>
 <dl>
 <dt>minify [bool]</dt>
@@ -290,12 +290,12 @@ Note that the target path&rsquo;s extension may change if the target MIME type i
 <pre><code>{{ $shims := dict &quot;react&quot; &quot;js/shims/react.js&quot;  &quot;react-dom&quot; &quot;js/shims/react-dom.js&quot; }}
 {{ $js = $js | js.Build dict &quot;shims&quot; $shims }}
 </code></pre><p>The <em>shim</em> files may look like these:</p>
-<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="c1">// js/shims/react.js
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="c1">// js/shims/react.js
 </span><span class="c1"></span><span class="nx">module</span><span class="p">.</span><span class="nx">exports</span> <span class="o">=</span> <span class="nb">window</span><span class="p">.</span><span class="nx">React</span><span class="p">;</span>
-</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="c1">// js/shims/react-dom.js
+</code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="c1">// js/shims/react-dom.js
 </span><span class="c1"></span><span class="nx">module</span><span class="p">.</span><span class="nx">exports</span> <span class="o">=</span> <span class="nb">window</span><span class="p">.</span><span class="nx">ReactDOM</span><span class="p">;</span>
 </code></pre></div><p>With the above, these imports should work in both scenarios:</p>
-<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="kr">import</span> <span class="o">*</span> <span class="nx">as</span> <span class="nx">React</span> <span class="nx">from</span> <span class="s1">&#39;react&#39;</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="kr">import</span> <span class="o">*</span> <span class="nx">as</span> <span class="nx">React</span> <span class="nx">from</span> <span class="s1">&#39;react&#39;</span>
 <span class="kr">import</span> <span class="o">*</span> <span class="nx">as</span> <span class="nx">ReactDOM</span> <span class="nx">from</span> <span class="s1">&#39;react-dom&#39;</span><span class="p">;</span>
 </code></pre></div><dl>
 <dt>target [string]</dt>
@@ -307,7 +307,7 @@ Default is <code>esnext</code>.</dd>
 <dt>defines [map]</dt>
 <dd>Allow to define a set of string replacement to be performed when building. Should be a map where each key is to be replaced by its value.</dd>
 </dl>
-<div class="highlight"><pre class="chroma"><code class="language-go-html-template" data-lang="go-html-template"><span class="cp">{{</span><span class="w"> </span><span class="nx">$defines</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">dict</span><span class="w"> </span><span class="s">&#34;process.env.NODE_ENV&#34;</span><span class="w"> </span><span class="s">`&#34;development&#34;`</span><span class="w"> </span><span class="cp">}}</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go-html-template" data-lang="go-html-template"><span class="cp">{{</span><span class="w"> </span><span class="nx">$defines</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">dict</span><span class="w"> </span><span class="s">&#34;process.env.NODE_ENV&#34;</span><span class="w"> </span><span class="s">`&#34;development&#34;`</span><span class="w"> </span><span class="cp">}}</span>
 </code></pre></div><dl>
 <dt>format [string] 
 
@@ -329,19 +329,19 @@ Default is <code>iife</code>, a self-executing function, suitable for inclusion 
     <a href="https://gohugo.io/news/0.78.0-relnotes/" target="_blank">New in v0.78.0</a>
 </button>
 <p>Since Hugo <code>v0.78.0</code> <code>js.Build</code> has full support for the virtual union file system in <a href="/hugo-modules/">Hugo Modules</a>. You can see some simple examples in this <a href="https://github.com/gohugoio/hugoTestProjectJSModImports">test project</a>, but in short this means that you can do this:</p>
-<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="kr">import</span> <span class="p">{</span> <span class="nx">hello</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;my/module&#39;</span><span class="p">;</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="kr">import</span> <span class="p">{</span> <span class="nx">hello</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;my/module&#39;</span><span class="p">;</span>
 </code></pre></div><p>And it will resolve to the top-most <code>index.{js,ts,tsx,jsx}</code> inside <code>assets/my/module</code> in the layered file system.</p>
-<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="kr">import</span> <span class="p">{</span> <span class="nx">hello3</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;my/module/hello3&#39;</span><span class="p">;</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="kr">import</span> <span class="p">{</span> <span class="nx">hello3</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;my/module/hello3&#39;</span><span class="p">;</span>
 </code></pre></div><p>Will resolve to <code>hello3.{js,ts,tsx,jsx}</code> inside <code>assets/my/module</code>.</p>
 <p>Any imports starting with <code>.</code> is resolved relative to the current file:</p>
-<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="kr">import</span> <span class="p">{</span> <span class="nx">hello4</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;./lib&#39;</span><span class="p">;</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="kr">import</span> <span class="p">{</span> <span class="nx">hello4</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;./lib&#39;</span><span class="p">;</span>
 </code></pre></div><p>For other files (e.g. <code>JSON</code>, <code>CSS</code>) you need to use the relative path including any extension, e.g:</p>
-<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="kr">import</span> <span class="o">*</span> <span class="nx">as</span> <span class="nx">data</span> <span class="nx">from</span> <span class="s1">&#39;my/module/data.json&#39;</span><span class="p">;</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="kr">import</span> <span class="o">*</span> <span class="nx">as</span> <span class="nx">data</span> <span class="nx">from</span> <span class="s1">&#39;my/module/data.json&#39;</span><span class="p">;</span>
 </code></pre></div><p>Any imports in a file outside <code>/assets</code> or that does not resolve to a component inside <code>/assets</code> will be resolved by <a href="https://esbuild.github.io/">ESBuild</a> with the <strong>project directory</strong> as the resolve directory (used as the starting point when looking for <code>node_modules</code> etc.). Also see <a href="/commands/hugo_mod_npm_pack/">hugo mod npm pack</a>.  If you have any imported NPM dependencies in your project, you need to make sure to run <code>npm install</code> before you run <code>hugo</code>.</p>
 <p>Also note the new <code>params</code> option that can be passed from template to your JS files, e.g.:</p>
-<div class="highlight"><pre class="chroma"><code class="language-go-html-template" data-lang="go-html-template"><span class="cp">{{</span><span class="w"> </span><span class="nx">$js</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">resources</span><span class="na">.Get</span><span class="w"> </span><span class="s">&#34;js/main.js&#34;</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="k">js</span><span class="na">.Build</span><span class="w"> </span><span class="o">(</span><span class="nx">dict</span><span class="w"> </span><span class="s">&#34;params&#34;</span><span class="w"> </span><span class="o">(</span><span class="nx">dict</span><span class="w"> </span><span class="s">&#34;api&#34;</span><span class="w"> </span><span class="s">&#34;https://example.org/api&#34;</span><span class="o">))</span><span class="w"> </span><span class="cp">}}</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go-html-template" data-lang="go-html-template"><span class="cp">{{</span><span class="w"> </span><span class="nx">$js</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">resources</span><span class="na">.Get</span><span class="w"> </span><span class="s">&#34;js/main.js&#34;</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="k">js</span><span class="na">.Build</span><span class="w"> </span><span class="o">(</span><span class="nx">dict</span><span class="w"> </span><span class="s">&#34;params&#34;</span><span class="w"> </span><span class="o">(</span><span class="nx">dict</span><span class="w"> </span><span class="s">&#34;api&#34;</span><span class="w"> </span><span class="s">&#34;https://example.org/api&#34;</span><span class="o">))</span><span class="w"> </span><span class="cp">}}</span>
 </code></pre></div><p>And then in your JS file:</p>
-<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="kr">import</span> <span class="o">*</span> <span class="nx">as</span> <span class="nx">params</span> <span class="nx">from</span> <span class="s1">&#39;@params&#39;</span><span class="p">;</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="kr">import</span> <span class="o">*</span> <span class="nx">as</span> <span class="nx">params</span> <span class="nx">from</span> <span class="s1">&#39;@params&#39;</span><span class="p">;</span>
 </code></pre></div><p>Hugo will, by default, generate a <code>assets/jsconfig.json</code> file that maps the imports. This is useful for navigation/intellisense help inside code editors, but if you don&rsquo;t need/want it, you can <a href="/getting-started/configuration/#configure-build">turn it off</a>.</p>
 <h3 id="include-dependencies-in-packagejson--node_modules">Include Dependencies In package.json / node_modules <a class="header-link" href="#include-dependencies-in-packagejson--node_modules"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
 <p>Any imports in a file outside <code>/assets</code> or that does not resolve to a component inside <code>/assets</code> will be resolved by <a href="https://esbuild.github.io/">ESBuild</a> with the <strong>project directory</strong> as the resolve directory (used as the starting point when looking for <code>node_modules</code> etc.). Also see <a href="/commands/hugo_mod_npm_pack/">hugo mod npm pack</a>.  If you have any imported NPM dependencies in your project, you need to make sure to run <code>npm install</code> before you run <code>hugo</code>.</p>
@@ -353,9 +353,9 @@ Default is <code>iife</code>, a self-executing function, suitable for inclusion 
 </button> From Hugo <code>0.78.1</code> the start directory for resolving NPM packages (aka. packages that live inside a <code>node_modules</code> folder) is always the main project folder.</p>
 <p><strong>Note:</strong> If you&rsquo;re developing a theme/component that is supposed to be imported and depends on dependencies inside <code>package.json</code>, we recommend reading about <a href="/commands/hugo_mod_npm_pack/">hugo mod npm pack</a>, a tool to consolidate all the NPM dependencies in a project.</p>
 <h3 id="examples">Examples <a class="header-link" href="#examples"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
-<div class="highlight"><pre class="chroma"><code class="language-go-html-template" data-lang="go-html-template"><span class="cp">{{</span><span class="w"> </span><span class="nx">$built</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">resources</span><span class="na">.Get</span><span class="w"> </span><span class="s">&#34;js/index.js&#34;</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="k">js</span><span class="na">.Build</span><span class="w"> </span><span class="s">&#34;main.js&#34;</span><span class="w"> </span><span class="cp">}}</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go-html-template" data-lang="go-html-template"><span class="cp">{{</span><span class="w"> </span><span class="nx">$built</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">resources</span><span class="na">.Get</span><span class="w"> </span><span class="s">&#34;js/index.js&#34;</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="k">js</span><span class="na">.Build</span><span class="w"> </span><span class="s">&#34;main.js&#34;</span><span class="w"> </span><span class="cp">}}</span>
 </code></pre></div><p>Or with options:</p>
-<div class="highlight"><pre class="chroma"><code class="language-go-html-template" data-lang="go-html-template"><span class="cp">{{</span><span class="w"> </span><span class="nx">$externals</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">slice</span><span class="w"> </span><span class="s">&#34;react&#34;</span><span class="w"> </span><span class="s">&#34;react-dom&#34;</span><span class="w"> </span><span class="cp">}}</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go-html-template" data-lang="go-html-template"><span class="cp">{{</span><span class="w"> </span><span class="nx">$externals</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">slice</span><span class="w"> </span><span class="s">&#34;react&#34;</span><span class="w"> </span><span class="s">&#34;react-dom&#34;</span><span class="w"> </span><span class="cp">}}</span>
 <span class="cp">{{</span><span class="w"> </span><span class="nx">$defines</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">dict</span><span class="w"> </span><span class="s">&#34;process.env.NODE_ENV&#34;</span><span class="w"> </span><span class="s">`&#34;development&#34;`</span><span class="w"> </span><span class="cp">}}</span>
 
 <span class="cp">{{</span><span class="w"> </span><span class="nx">$opts</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">dict</span><span class="w"> </span><span class="s">&#34;targetPath&#34;</span><span class="w"> </span><span class="s">&#34;main.js&#34;</span><span class="w"> </span><span class="s">&#34;externals&#34;</span><span class="w"> </span><span class="nx">$externals</span><span class="w"> </span><span class="s">&#34;defines&#34;</span><span class="w"> </span><span class="nx">$defines</span><span class="w"> </span><span class="cp">}}</span>
@@ -1452,7 +1452,7 @@ Default is <code>iife</code>, a self-executing function, suitable for inclusion 
   </a> was last updated: August 13, 2021: <a class="hide-child link primary-color" href="https://github.com/gohugoio/hugoDocs/commit/675299e5580f46886a1b39c571db992a3336bb8c">try hugo templete (675299e)</a>
 </h6>
 
-      <a href="https://github.com/gohugoio/hugoDocs/edit/master/content/en/hugo-pipes/js.md" class="
+      <a href="https://github.com/gohugoio/hugoDocs/edit/master/content/en/hugo-pipes%5cjs.md" class="
 f6 ph3 pv1 br2 dib  tc ttu mv3 bg-primary-color white hover-bg-green link
 ">Improve this page</a>
 

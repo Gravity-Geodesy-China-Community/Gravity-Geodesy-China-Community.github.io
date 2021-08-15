@@ -13,7 +13,7 @@
   <title>relref | Gravity</title>
 
   <meta name="viewport" content="width=device-width,minimum-scale=1">
-  <meta name="generator" content="Hugo 0.84.0" />
+  <meta name="generator" content="Hugo 0.87.0" />
 
   
   <meta name="robots" content="noindex, nofollow">
@@ -42,7 +42,7 @@
 
 
   
-  <script type="text/javascript" src="/output/js/app.175b405753a9c0ce86ab35944e9c4cc1a758a6873209cf5106600f6b2f5a59b6.js" integrity="sha256-F1tAV1OpwM6GqzWUTpxMwadYpocyCc9RBmAPay9aWbY=" crossorigin="anonymous" defer></script>
+  <script type="text/javascript" src="/output/js/app.0984bf5469ab3c8aa82cf8eb015a560d74ee028723b1ab38e928998f5f72baba.js" integrity="sha256-CYS/VGmrPIqoLPjrAVpWDXTuAocjsas46SiZj19yuro=" crossorigin="anonymous" defer></script>
   
       
  
@@ -61,12 +61,12 @@
 <meta property="og:description" content="Returns the relative permalink to a page." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://gohugo.io/functions/relref/" /><meta property="og:image" content="https://gohugo.io/images/gohugoio-card.png"/><meta property="article:section" content="functions" />
-<meta property="article:published_time" content="2017-02-01T00:00:00&#43;00:00" />
-<meta property="article:modified_time" content="2021-08-13T21:11:25&#43;08:00" />
+<meta property="article:published_time" content="2017-02-01T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-08-13T21:11:25+08:00" />
 
 <meta itemprop="name" content="relref">
-<meta itemprop="description" content="Returns the relative permalink to a page."><meta itemprop="datePublished" content="2017-02-01T00:00:00&#43;00:00" />
-<meta itemprop="dateModified" content="2021-08-13T21:11:25&#43;08:00" />
+<meta itemprop="description" content="Returns the relative permalink to a page."><meta itemprop="datePublished" content="2017-02-01T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2021-08-13T21:11:25+08:00" />
 <meta itemprop="wordCount" content="177"><meta itemprop="image" content="https://gohugo.io/images/gohugoio-card.png"/>
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://gohugo.io/images/gohugoio-card.png"/>
@@ -258,7 +258,7 @@
 <li>The context of the page from which to resolve relative paths, typically the current page (<code>.</code>)</li>
 <li>The path to a page, with or without a file extension, with or without an anchor. A path without a leading <code>/</code> is first resolved relative to the given context, then to the remainder of the site.</li>
 </ul>
-<div class="highlight"><pre class="chroma"><code class="language-go-html-template" data-lang="go-html-template"><span class="cp">{{</span><span class="w"> </span><span class="nx">relref</span><span class="w"> </span><span class="na">.</span><span class="w"> </span><span class="s">&#34;about&#34;</span><span class="w"> </span><span class="cp">}}</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go-html-template" data-lang="go-html-template"><span class="cp">{{</span><span class="w"> </span><span class="nx">relref</span><span class="w"> </span><span class="na">.</span><span class="w"> </span><span class="s">&#34;about&#34;</span><span class="w"> </span><span class="cp">}}</span>
 <span class="cp">{{</span><span class="w"> </span><span class="nx">relref</span><span class="w"> </span><span class="na">.</span><span class="w"> </span><span class="s">&#34;about#anchor&#34;</span><span class="w"> </span><span class="cp">}}</span>
 <span class="cp">{{</span><span class="w"> </span><span class="nx">relref</span><span class="w"> </span><span class="na">.</span><span class="w"> </span><span class="s">&#34;about.md&#34;</span><span class="w"> </span><span class="cp">}}</span>
 <span class="cp">{{</span><span class="w"> </span><span class="nx">relref</span><span class="w"> </span><span class="na">.</span><span class="w"> </span><span class="s">&#34;about.md#anchor&#34;</span><span class="w"> </span><span class="cp">}}</span>
@@ -288,9 +288,9 @@
 </tbody>
 </table>
 <p>To return the relative permalink to another language version of a page:</p>
-<div class="highlight"><pre class="chroma"><code class="language-go-html-template" data-lang="go-html-template"><span class="cp">{{</span><span class="w"> </span><span class="nx">relref</span><span class="w"> </span><span class="na">.</span><span class="w"> </span><span class="o">(</span><span class="nx">dict</span><span class="w"> </span><span class="s">&#34;path&#34;</span><span class="w"> </span><span class="s">&#34;about.md&#34;</span><span class="w"> </span><span class="s">&#34;lang&#34;</span><span class="w"> </span><span class="s">&#34;fr&#34;</span><span class="o">)</span><span class="w"> </span><span class="cp">}}</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go-html-template" data-lang="go-html-template"><span class="cp">{{</span><span class="w"> </span><span class="nx">relref</span><span class="w"> </span><span class="na">.</span><span class="w"> </span><span class="o">(</span><span class="nx">dict</span><span class="w"> </span><span class="s">&#34;path&#34;</span><span class="w"> </span><span class="s">&#34;about.md&#34;</span><span class="w"> </span><span class="s">&#34;lang&#34;</span><span class="w"> </span><span class="s">&#34;fr&#34;</span><span class="o">)</span><span class="w"> </span><span class="cp">}}</span>
 </code></pre></div><p>To return the relative permalink to another Output Format of a page:</p>
-<div class="highlight"><pre class="chroma"><code class="language-go-html-template" data-lang="go-html-template"><span class="cp">{{</span><span class="w"> </span><span class="nx">relref</span><span class="w"> </span><span class="na">.</span><span class="w"> </span><span class="o">(</span><span class="nx">dict</span><span class="w"> </span><span class="s">&#34;path&#34;</span><span class="w"> </span><span class="s">&#34;about.md&#34;</span><span class="w"> </span><span class="s">&#34;outputFormat&#34;</span><span class="w"> </span><span class="s">&#34;rss&#34;</span><span class="o">)</span><span class="w"> </span><span class="cp">}}</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go-html-template" data-lang="go-html-template"><span class="cp">{{</span><span class="w"> </span><span class="nx">relref</span><span class="w"> </span><span class="na">.</span><span class="w"> </span><span class="o">(</span><span class="nx">dict</span><span class="w"> </span><span class="s">&#34;path&#34;</span><span class="w"> </span><span class="s">&#34;about.md&#34;</span><span class="w"> </span><span class="s">&#34;outputFormat&#34;</span><span class="w"> </span><span class="s">&#34;rss&#34;</span><span class="o">)</span><span class="w"> </span><span class="cp">}}</span>
 </code></pre></div><p>Hugo emits an error or warning if the page cannot be uniquely resolved. The error behavior is configurable; see <a href="/content-management/cross-references/#ref-and-relref-configuration">Ref and RelRef Configuration</a>.</p>
 <p>This function is used by Hugo&rsquo;s built-in <a href="/content-management/shortcodes/#ref-and-relref"><code>relref</code></a> shortcode. For a detailed explanation of how to leverage this shortcode for content management, see <a href="/content-management/cross-references/">Links and Cross References</a>.</p>
 
@@ -1391,7 +1391,7 @@
   </a> was last updated: August 13, 2021: <a class="hide-child link primary-color" href="https://github.com/gohugoio/hugoDocs/commit/675299e5580f46886a1b39c571db992a3336bb8c">try hugo templete (675299e)</a>
 </h6>
 
-      <a href="https://github.com/gohugoio/hugoDocs/edit/master/content/en/functions/relref.md" class="
+      <a href="https://github.com/gohugoio/hugoDocs/edit/master/content/en/functions%5crelref.md" class="
 f6 ph3 pv1 br2 dib  tc ttu mv3 bg-primary-color white hover-bg-green link
 ">Improve this page</a>
 

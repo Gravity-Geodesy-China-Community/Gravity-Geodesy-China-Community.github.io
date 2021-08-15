@@ -14,8 +14,8 @@
       
       <guid>https://gohugo.io/tools/migrations/</guid>
       <description>This section highlights some projects around Hugo that are independently developed. These tools try to extend the functionality of our static site generator or help you to get started.
- Do you know or maintain a similar project around Hugo? Feel free to open a pull request on GitHub if you think it should be added.
-  Take a look at this list of migration tools if you currently use other blogging tools like Jekyll or WordPress but intend to switch to Hugo instead.</description>
+Do you know or maintain a similar project around Hugo? Feel free to open a pull request on GitHub if you think it should be added.
+Take a look at this list of migration tools if you currently use other blogging tools like Jekyll or WordPress but intend to switch to Hugo instead.</description>
     </item>
     
     <item>
@@ -25,8 +25,8 @@
       
       <guid>https://gohugo.io/tools/starter-kits/</guid>
       <description>Know of a Hugo-related starter kit that isn&amp;rsquo;t mentioned here? Please add it to the list.
- The following starter kits are developed by active members of the Hugo community. If you find yourself having issues with any of the projects, it&amp;rsquo;s best to file an issue directly with the project&amp;rsquo;s maintainer(s).
-   Hugo Wrapper. Hugo Wrapper is a POSIX-style shell script which acts as a wrapper to download and run Hugo binary for your platform.</description>
+The following starter kits are developed by active members of the Hugo community. If you find yourself having issues with any of the projects, it&amp;rsquo;s best to file an issue directly with the project&amp;rsquo;s maintainer(s).
+ Hugo Wrapper. Hugo Wrapper is a POSIX-style shell script which acts as a wrapper to download and run Hugo binary for your platform.</description>
     </item>
     
     <item>
@@ -45,7 +45,7 @@
       
       <guid>https://gohugo.io/tools/editors/</guid>
       <description>The Hugo community uses a wide range of preferred tools and has developed plug-ins for some of the most popular text editors to help automate parts of your workflow.
-Sublime Text   Hugofy. Hugofy is a plugin for Sublime Text 3 to make life easier to use Hugo static site generator. Hugo Snippets. Hugo Snippets is a useful plugin for adding automatic snippets to Sublime Text 3.  Visual Studio Code   Hugofy.</description>
+Sublime Text  Hugofy. Hugofy is a plugin for Sublime Text 3 to make life easier to use Hugo static site generator. Hugo Snippets. Hugo Snippets is a useful plugin for adding automatic snippets to Sublime Text 3.  Visual Studio Code  Hugofy.</description>
     </item>
     
     <item>

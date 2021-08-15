@@ -13,7 +13,7 @@
   <title>Hugo 0.86.0: Cascade in Config | Gravity</title>
 
   <meta name="viewport" content="width=device-width,minimum-scale=1">
-  <meta name="generator" content="Hugo 0.84.0" />
+  <meta name="generator" content="Hugo 0.87.0" />
 
   
   <meta name="robots" content="noindex, nofollow">
@@ -42,7 +42,7 @@
 
 
   
-  <script type="text/javascript" src="/output/js/app.175b405753a9c0ce86ab35944e9c4cc1a758a6873209cf5106600f6b2f5a59b6.js" integrity="sha256-F1tAV1OpwM6GqzWUTpxMwadYpocyCc9RBmAPay9aWbY=" crossorigin="anonymous" defer></script>
+  <script type="text/javascript" src="/output/js/app.0984bf5469ab3c8aa82cf8eb015a560d74ee028723b1ab38e928998f5f72baba.js" integrity="sha256-CYS/VGmrPIqoLPjrAVpWDXTuAocjsas46SiZj19yuro=" crossorigin="anonymous" defer></script>
   
       
  
@@ -61,12 +61,12 @@
 <meta property="og:description" content="Hugo 0.86.0 adds cascade keyword to site config, much improved &#34;active menu item&#34; logic for section pages, and more." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://gohugo.io/news/0.86.0-relnotes/" /><meta property="og:image" content="https://gohugo.io/news/0.86.0-relnotes/featured.png"/><meta property="article:section" content="news" />
-<meta property="article:published_time" content="2021-07-21T00:00:00&#43;00:00" />
-<meta property="article:modified_time" content="2021-08-13T21:11:25&#43;08:00" />
+<meta property="article:published_time" content="2021-07-21T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-08-13T21:11:25+08:00" />
 
 <meta itemprop="name" content="Hugo 0.86.0: Cascade in Config">
-<meta itemprop="description" content="Hugo 0.86.0 adds cascade keyword to site config, much improved &#34;active menu item&#34; logic for section pages, and more."><meta itemprop="datePublished" content="2021-07-21T00:00:00&#43;00:00" />
-<meta itemprop="dateModified" content="2021-08-13T21:11:25&#43;08:00" />
+<meta itemprop="description" content="Hugo 0.86.0 adds cascade keyword to site config, much improved &#34;active menu item&#34; logic for section pages, and more."><meta itemprop="datePublished" content="2021-07-21T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2021-08-13T21:11:25+08:00" />
 <meta itemprop="wordCount" content="358"><meta itemprop="image" content="https://gohugo.io/news/0.86.0-relnotes/featured.png">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://gohugo.io/news/0.86.0-relnotes/featured.png"/>
@@ -259,13 +259,13 @@
           
           
           
-          <img src="/news/0.86.0-relnotes/featured_hu90f1fa7584e0b08ff867964df5c6b0c6_188476_480x0_resize_catmullrom_2.png" alt="Featured Image for Hugo 0.86.0: Cascade in Config" class="mw-100">
+          <img src="/news/0.86.0-relnotes/featured_hu90f1fa7584e0b08ff867964df5c6b0c6_188476_480x0_resize_catmullrom_3.png" alt="Featured Image for Hugo 0.86.0: Cascade in Config" class="mw-100">
           
           
         <p>This release is a set of smaller fixes and improvements. Some of the more notable:</p>
 <p>You can now have a top level <a href="https://gohugo.io/content-management/front-matter#front-matter-cascade">cascade</a> (or one per language, if needed) section in your site configuration (e.g. <code>config.toml</code>). This way you can control default front matter values from outside of the content files.</p>
 <p>Hugo&rsquo;s <a href="https://gohugo.io/content-management/menus/">Menu system</a> works well, but hasn&rsquo;t been particularly easy to set the active menu state for section pages without a menu definition. We have had the option <a href="https://gohugo.io/templates/menu-templates/#section-menu-for-lazy-bloggers">Section Menu for Lazy Bloggers</a>. That helped for the common case, but we have now made it behave more sensible out of the box: <code>$page.HasMenuCurrent $sectionMenuEntry</code> will now always return true for any descendant of that section. To support this for menu definitions in the site config, we have added a new <code>pageRef</code> option on <a href="https://gohugo.io/variables/menus/#menu-entry-variables">MenuEntry</a>:</p>
-<div class="highlight"><pre class="chroma"><code class="language-toml" data-lang="toml"><span class="p">[[</span><span class="nx">menus</span><span class="p">.</span><span class="nx">main</span><span class="p">]]</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="p">[[</span><span class="nx">menus</span><span class="p">.</span><span class="nx">main</span><span class="p">]]</span>
 <span class="nx">pageRef</span> <span class="p">=</span> <span class="s2">&#34;blog&#34;</span>
 <span class="c"># When pageRef is set, setting `url` is optional; it will be used as a fallback if the page is not found.</span>
 <span class="nx">url</span> <span class="p">=</span> <span class="s2">&#34;/blog&#34;</span>
@@ -308,7 +308,7 @@ which has received <strong>1 contributions by 1 contributors</strong>.</p>
 
       <div class="gray f6 mv6">
         Last Update: August 13, 2021 <br>
-        <a href="https://github.com/gohugoio/hugoDocs/edit/master/content/en/news/0.86.0-relnotes/index.md" class="
+        <a href="https://github.com/gohugoio/hugoDocs/edit/master/content/en/news%5c0.86.0-relnotes%5cindex.md" class="
 f6 ph3 pv1 br2 dib  tc ttu mv3 bg-primary-color white hover-bg-green link
 ">Improve this page</a>
 
