@@ -43,9 +43,6 @@
     <loc>https://gohugo.io/gravitydata/</loc>
     <lastmod>2021-08-15T19:19:09+08:00</lastmod>
   </url><url>
-    <loc>https://gohugo.io/tools/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
     <loc>https://gohugo.io/coding/</loc>
     <lastmod>2021-08-15T23:12:59+08:00</lastmod>
   </url><url>
@@ -76,9 +73,6 @@
     <loc>https://gohugo.io/coding/hosting-on-netlify/</loc>
     <lastmod>2021-08-15T23:12:59+08:00</lastmod>
   </url><url>
-    <loc>https://gohugo.io/tools/migrations/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
     <loc>https://gohugo.io/gravitydata/site/</loc>
     <lastmod>2021-08-15T19:19:09+08:00</lastmod>
   </url><url>
@@ -106,9 +100,6 @@
     <loc>https://gohugo.io/gravitydata/pages/</loc>
     <lastmod>2021-08-15T19:19:09+08:00</lastmod>
   </url><url>
-    <loc>https://gohugo.io/tools/starter-kits/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
     <loc>https://gohugo.io/gravitydata/taxonomy/</loc>
     <lastmod>2021-08-15T19:19:09+08:00</lastmod>
   </url><url>
@@ -133,9 +124,6 @@
     <loc>https://gohugo.io/gravitydata/files/</loc>
     <lastmod>2021-08-15T19:19:09+08:00</lastmod>
   </url><url>
-    <loc>https://gohugo.io/tools/frontends/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
     <loc>https://gohugo.io/coding/hosting-on-gitlab/</loc>
     <lastmod>2021-08-15T23:12:59+08:00</lastmod>
   </url><url>
@@ -153,9 +141,6 @@
   </url><url>
     <loc>https://gohugo.io/coding/hosting-on-bitbucket/</loc>
     <lastmod>2021-08-15T23:12:59+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/tools/editors/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
   </url><url>
     <loc>https://gohugo.io/gravity-manual/theme-components/</loc>
     <lastmod>2021-08-15T19:19:09+08:00</lastmod>
@@ -175,15 +160,6 @@
     <loc>https://gohugo.io/coding/deployment-with-wercker/</loc>
     <lastmod>2021-08-15T23:12:59+08:00</lastmod>
   </url><url>
-    <loc>https://gohugo.io/tools/search/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/getting-started/configuration/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/getting-started/configuration-markup/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
     <loc>https://gohugo.io/getting-started/external-learning-resources/</loc>
     <lastmod>2021-08-13T21:11:25+08:00</lastmod>
   </url><url>
@@ -195,9 +171,6 @@
   </url><url>
     <loc>https://gohugo.io/coding/deployment-with-rsync/</loc>
     <lastmod>2021-08-15T23:12:59+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/tools/other/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
   </url><url>
     <loc>https://gohugo.io/gravity-software/resource-from-template/</loc>
     <lastmod>2021-08-15T19:19:09+08:00</lastmod>
@@ -236,6 +209,15 @@
     <loc>https://gohugo.io/categories/asset-management/</loc>
     <lastmod>2021-08-15T19:19:09+08:00</lastmod>
   </url><url>
+    <loc>https://gohugo.io/categories/variables-and-params/</loc>
+    <lastmod>2021-08-15T19:19:09+08:00</lastmod>
+  </url><url>
+    <loc>https://gohugo.io/categories/hugo-modules/</loc>
+    <lastmod>2021-08-15T19:19:09+08:00</lastmod>
+  </url><url>
+    <loc>https://gohugo.io/categories/hosting-and-deployment/</loc>
+    <lastmod>2021-08-15T23:12:59+08:00</lastmod>
+  </url><url>
     <loc>https://gohugo.io/categories/fundamentals/</loc>
     <lastmod>2021-08-13T21:11:25+08:00</lastmod>
     <xhtml:link
@@ -251,15 +233,6 @@
   </url><url>
     <loc>https://gohugo.io/categories/getting-started/</loc>
     <lastmod>2021-08-15T19:19:09+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/categories/variables-and-params/</loc>
-    <lastmod>2021-08-15T19:19:09+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/categories/hugo-modules/</loc>
-    <lastmod>2021-08-15T19:19:09+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/categories/hosting-and-deployment/</loc>
-    <lastmod>2021-08-15T23:12:59+08:00</lastmod>
   </url><url>
     <loc>https://gohugo.io/maintenance/</loc>
     <lastmod>2021-08-13T21:11:25+08:00</lastmod>
@@ -284,9 +257,6 @@
                 />
   </url><url>
     <loc>https://gohugo.io/categories/contribute/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/categories/developer-tools/</loc>
     <lastmod>2021-08-13T21:11:25+08:00</lastmod>
   </url><url>
     <loc>https://gohugo.io/news/</loc>
