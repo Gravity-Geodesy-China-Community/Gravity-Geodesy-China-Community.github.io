@@ -34,14 +34,10 @@
 
 # LOW LEVEL ITEMS
 
-
-[[docs]]
-
-
 [[docs]]
   name = "重力项目展示"
   weight = 70
-  identifier = "tools"
+  identifier = "projects"
   url = "/gravity-projects/"
 
 [[docs]]
@@ -62,16 +58,6 @@
 #   weight = 140
 #   identifier = "categories"
 #   url = "/categories/"
-
-######## QUICKLINKS
-
-  [[quicklinks]]
-    name = "Fundamentals"
-    weight = 1
-    identifier = "fundamentals"
-    url = "/tags/fundamentals/"
-
-
 
 
 ######## GLOBAL ITEMS TO BE SHARED WITH THE HUGO SITES
