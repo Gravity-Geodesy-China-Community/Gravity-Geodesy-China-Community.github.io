@@ -10,8 +10,6 @@
 /themes/                           	/gravity-manual/
 /templates/variables/              	/gravitydata/
 /tutorials/deployment-with-nanobox/	/coding/deployment-with-nanobox/
-/developer-tools/migrations/       	/tools/migrations/
-/developer-tools/migrated/         	/tools/migrations/
 /variables/site-variables/         	/gravitydata/site/
 /quickstart/                       	/getting-started/quick-start/
 /overview/quickstart/              	/getting-started/quick-start/
@@ -20,8 +18,6 @@
 /installing-and-using-themes/      	/gravity-manual/use-modules/
 /contribute/docs/                  	/contribute/documentation/
 /pages                             	/gravitydata/pages/
-/developer-tools/migrations/       	/tools/starter-kits/
-/developer-tools/migrated/         	/tools/starter-kits/
 /contribute/theme/                 	/contribute/themes/
 /tutorials/installing-on-windows/  	/getting-started/installing/
 /tutorials/installing-on-mac/      	/getting-started/installing/
@@ -41,8 +37,6 @@
 /themes/customizing/               	/gravity-manual/theme-components/
 /meta/license                      	/about/license/
 /tutorials/automated-deployments/  	/coding/deployment-with-wercker/
-/overview/source-directory/        	/getting-started/configuration/
-/overview/configuration/           	/getting-started/configuration/
 /extras/gitinfo/                   	/gravitydata/git/
 /tutorials/deployment-with-rsync/  	/coding/deployment-with-rsync/
 /release-notes/                    	/news/
