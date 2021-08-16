@@ -10,7 +10,7 @@
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
-  <title>SASS / SCSS | Gravity</title>
+  <title>GravDPIS中文文档 | Gravity</title>
 
   <meta name="viewport" content="width=device-width,minimum-scale=1">
   <meta name="generator" content="Hugo 0.87.0" />
@@ -32,7 +32,7 @@
   
 
   <meta name="description"
-  content="Hugo Pipes allows the processing of SASS and SCSS files.">
+  content="GravDPIS是一个重力数据处理与解释软件.">
 
   
 
@@ -57,20 +57,20 @@
 <link rel="manifest" href="/manifest.json">
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0594cb">
 <meta name="theme-color" content="#ffffff">
-<meta property="og:title" content="SASS / SCSS" />
-<meta property="og:description" content="Hugo Pipes allows the processing of SASS and SCSS files." />
+<meta property="og:title" content="GravDPIS中文文档" />
+<meta property="og:description" content="GravDPIS是一个重力数据处理与解释软件." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://gohugo.io/gravity-software/scss-sass/" /><meta property="article:section" content="gravity-software" />
-<meta property="article:published_time" content="2018-07-14T00:00:00+00:00" />
-<meta property="article:modified_time" content="2021-08-15T19:19:09+08:00" />
+<meta property="og:url" content="https://gohugo.io/gravity-software/gravdpis_manual/" /><meta property="article:section" content="gravity-software" />
+<meta property="article:published_time" content="2021-08-14T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-08-15T00:00:00+00:00" />
 
-<meta itemprop="name" content="SASS / SCSS">
-<meta itemprop="description" content="Hugo Pipes allows the processing of SASS and SCSS files."><meta itemprop="datePublished" content="2018-07-14T00:00:00+00:00" />
-<meta itemprop="dateModified" content="2021-08-15T19:19:09+08:00" />
-<meta itemprop="wordCount" content="220">
+<meta itemprop="name" content="GravDPIS中文文档">
+<meta itemprop="description" content="GravDPIS是一个重力数据处理与解释软件."><meta itemprop="datePublished" content="2021-08-14T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2021-08-15T00:00:00+00:00" />
+<meta itemprop="wordCount" content="1">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="SASS / SCSS"/>
-<meta name="twitter:description" content="Hugo Pipes allows the processing of SASS and SCSS files."/>
+<meta name="twitter:title" content="GravDPIS中文文档"/>
+<meta name="twitter:description" content="GravDPIS是一个重力数据处理与解释软件."/>
 <meta name="twitter:site" content="@georgegou"/>
 
 
@@ -197,7 +197,7 @@
 
 	<div date-pref>
 		
-			<a href="https://gohugo.io/gravity-software/introduction/" class="dib f6 pl1 hover-bg-light-gray br-100" title="Hugo Pipes Introduction ">
+			<a href="https://gohugo.io/gravity-software/bundling/" class="dib f6 pl1 hover-bg-light-gray br-100" title="Asset bundling ">
 				<svg class="fill-current" height="30px" viewBox="0 0 24 24" width="30px" xmlns="http://www.w3.org/2000/svg">
     <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
     <path d="M0 0h24v24H0z" fill="none"/>
@@ -207,7 +207,7 @@
 		
 
 		
-			<a href="https://gohugo.io/gravity-software/postprocess/" class="dib f6 pr1 hover-bg-light-gray br-100" title="PostProcess">
+			<a href="https://gohugo.io/gravity-software/resource-from-template/" class="dib f6 pr1 hover-bg-light-gray br-100" title="Creating a resource from template">
 			<svg class="fill-current" height="30px" viewBox="0 0 24 24" width="30px" xmlns="http://www.w3.org/2000/svg">
     <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
     <path d="M0 0h24v24H0z" fill="none"/>
@@ -232,13 +232,13 @@
       </a>
     
   
-  <h1 class="lh-title mb3 mv0 pt3 primary-color-dark">SASS / SCSS</h1>
+  <h1 class="lh-title mb3 mv0 pt3 primary-color-dark">GravDPIS中文文档</h1>
 </header>
 
 <aside class="bt bw1 pt3 mt2 mid-gray b--mid-gray fn w-100">
   
     <div class="f4 fw4 lh-copy">
-      Hugo Pipes allows the processing of SASS and SCSS files.
+      GravDPIS是一个重力数据处理与解释软件.
     </div>
   
 
@@ -249,44 +249,7 @@
 
 <div class="prose" id="prose">
 
-<p>Any SASS or SCSS file can be transformed into a CSS file using <code>resources.ToCSS</code> which takes two arguments, the resource object and a map of options listed below.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go-html-template" data-lang="go-html-template"><span class="cp">{{</span><span class="w"> </span><span class="nx">$sass</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">resources</span><span class="na">.Get</span><span class="w"> </span><span class="s">&#34;sass/main.scss&#34;</span><span class="w"> </span><span class="cp">}}</span>
-<span class="cp">{{</span><span class="w"> </span><span class="nx">$style</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">$sass</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nx">resources</span><span class="na">.ToCSS</span><span class="w"> </span><span class="cp">}}</span>
-</code></pre></div><h3 id="options">Options <a class="header-link" href="#options"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
-<dl>
-<dt>transpiler [string] 
-
-
-<button class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 mr2 ml2 px-4 border border-gray-400 rounded shadow">
-    <a href="https://gohugo.io/news/0.80.0-relnotes/" target="_blank">New in v0.80.0</a>
-</button></dt>
-<dd>
-<p>The <code>transpiler</code> to use, valid values are <code>libsass</code> (default) and <code>dartsass</code>. Note that the Embedded Dart Sass project is still in beta. We will try to improve the installation process when it has stable releases, but if you want to use Hugo with Dart Sass you need to download a release binary from <a href="https://github.com/sass/dart-sass-embedded/releases">Embedded Dart Sass</a> (Hugo after 0.81.0 requires beta 6 or newer) and make sure it&rsquo;s in your PC&rsquo;s <code>$PATH</code> (or <code>%PATH%</code> on Windows).</p>
-</dd>
-<dt>targetPath [string]</dt>
-<dd>If not set, the resource&rsquo;s target path will be the asset file original path with its extension replaced by <code>.css</code>.</dd>
-<dt>outputStyle [string]</dt>
-<dd>Default is <code>nested</code> (LibSass) and <code>expanded</code> (Dart Sass). Other available output styles for LibSass are <code>expanded</code>, <code>compact</code> and <code>compressed</code>. Dart Sass only supports <code>expanded</code> and <code>compressed</code>.</dd>
-<dt>precision [int]</dt>
-<dd>Precision of floating point math. <strong>Note:</strong> This option is not supported by Dart Sass.</dd>
-<dt>enableSourceMap [bool]</dt>
-<dd>When enabled, a source map will be generated.</dd>
-<dt>includePaths [string slice]</dt>
-<dd>Additional SCSS/SASS include paths. Paths must be relative to the project directory.</dd>
-</dl>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go-html-template" data-lang="go-html-template"><span class="cp">{{</span><span class="w"> </span><span class="nx">$options</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="o">(</span><span class="nx">dict</span><span class="w"> </span><span class="s">&#34;targetPath&#34;</span><span class="w"> </span><span class="s">&#34;style.css&#34;</span><span class="w"> </span><span class="s">&#34;outputStyle&#34;</span><span class="w"> </span><span class="s">&#34;compressed&#34;</span><span class="w"> </span><span class="s">&#34;enableSourceMap&#34;</span><span class="w"> </span><span class="k">true</span><span class="w"> </span><span class="s">&#34;includePaths&#34;</span><span class="w"> </span><span class="o">(</span><span class="nx">slice</span><span class="w"> </span><span class="s">&#34;node_modules/myscss&#34;</span><span class="o">))</span><span class="w"> </span><span class="cp">}}</span>
-<span class="cp">{{</span><span class="w"> </span><span class="nx">$style</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">resources</span><span class="na">.Get</span><span class="w"> </span><span class="s">&#34;sass/main.scss&#34;</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nx">resources</span><span class="na">.ToCSS</span><span class="w"> </span><span class="nx">$options</span><span class="w"> </span><span class="cp">}}</span>
-</code></pre></div>
-<aside class="admonition note">
-	<div class="note-icon">
-		
-	</div>
-	
-	
-	<div class="admonition-content"><p>Setting <code>outputStyle</code> to <code>compressed</code> will handle SASS/SCSS files minification better than the more generic <a href="https://gohugo.io/gravity-software/minification/"><code>resources.Minify</code></a>.</p>
-</div>
-</aside>
-
+<p>GravDPIS</p>
 
 </div>
 
@@ -374,7 +337,7 @@
             </a>
           </li>
           <li class="f6 fw4">
-            <a href="/gravity-software/scss-sass/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 primary-color ">
+            <a href="/gravity-software/scss-sass/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
               SASS / SCSS
             </a>
           </li>
@@ -409,7 +372,7 @@
             </a>
           </li>
           <li class="f6 fw4">
-            <a href="/gravity-software/gravdpis_manual/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+            <a href="/gravity-software/gravdpis_manual/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 primary-color ">
               GravDPIS中文文档
             </a>
           </li>
@@ -621,14 +584,14 @@
   <div class="w-100 bg-light-gray">
     <div class="mw7 pa4 center nested-lh-copy lh-copy">
       <h6 class="f4 dark-gray mb2">
-  <a href="https://gohugo.io/gravity-software/scss-sass/" class="hide-child link primary-color">
+  <a href="https://gohugo.io/gravity-software/gravdpis_manual/" class="hide-child link primary-color">
   <span class="nl3 child"><svg class="grow" fill="" height="14px" viewBox="0 0 24 24" width="14px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg>
 </span>
-    “SASS / SCSS”
-  </a> was last updated: August 15, 2021: <a class="hide-child link primary-color" href="https://github.com/Gravity-Geodesy-China-Community/Gravity-Geodesy-China-Community.github.iocommit/078401c0fc222e431219a9b3839ae9b254e65839">update framwork (078401c)</a>
+    “GravDPIS中文文档”
+  </a> was last updated: August 15, 2021
 </h6>
 
-      <a href="https://github.com/Gravity-Geodesy-China-Community/Gravity-Geodesy-China-Community.github.ioedit/master/content/en/gravity-software%5cscss-sass.md" class="
+      <a href="https://github.com/Gravity-Geodesy-China-Community/Gravity-Geodesy-China-Community.github.ioedit/master/content/en/gravity-software%5cGravDPIS_manual.md" class="
 f6 ph3 pv1 br2 dib  tc ttu mv3 bg-primary-color white hover-bg-green link
 ">Improve this page</a>
 
