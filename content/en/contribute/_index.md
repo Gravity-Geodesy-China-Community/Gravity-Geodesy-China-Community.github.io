@@ -18,6 +18,7 @@ aliases: [/tutorials/how-to-contribute-to-hugo/,/community/contributing/]
 toc: false
 ---
 
-Hugo relies heavily on the enthusiasm and participation of the open-source community. We need your support in both its development and documentation.
+我们欢迎您以任何形式对重力中文社区做贡献，包含但不限于Email 站长[Gravpher](mailto:goujianing19@mails.ucas.ac.cn)
 
-Hugo's contribution guidelines are [detailed in a `CONTRIBUTING.md`](https://github.com/gohugoio/hugo/blob/master/CONTRIBUTING.md) in the Hugo source repository on GitHub.
+，在github中提交[issue](https://github.com/Gravity-Geodesy-China-Community/Gravity-Geodesy-China-Community.github.io/issues)，或提交[PR](https://github.com/Gravity-Geodesy-China-Community/Gravity-Geodesy-China-Community.github.io/pulls)
+

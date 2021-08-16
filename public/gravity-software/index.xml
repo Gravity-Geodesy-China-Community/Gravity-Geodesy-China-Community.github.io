@@ -92,14 +92,12 @@ Options  targetPath [string] If not set, the source path will be used as the ba
     </item>
     
     <item>
-      <title>Fingerprinting and SRI</title>
-      <link>https://gohugo.io/gravity-software/fingerprint/</link>
-      <pubDate>Sat, 14 Jul 2018 00:00:00 +0000</pubDate>
+      <title>GravDPIS中文文档</title>
+      <link>https://gohugo.io/gravity-software/gravdpis_manual/</link>
+      <pubDate>Wed, 14 Jul 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://gohugo.io/gravity-software/fingerprint/</guid>
-      <description>Fingerprinting and SRI can be applied to any asset file using resources.Fingerprint which takes two arguments, the resource object and a hash function.
-The default hash function is sha256. Other available functions are sha384 (from Hugo 0.55), sha512 and md5.
-Any so processed asset will bear a .Data.Integrity property containing an integrity string, which is made up of the name of the hash function, one hyphen and the base64-encoded hash sum.</description>
+      <guid>https://gohugo.io/gravity-software/gravdpis_manual/</guid>
+      <description>GravDPIS</description>
     </item>
     
     <item>
