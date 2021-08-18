@@ -1,11 +1,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Gravity – The world’s fastest framework for building websites</title>
+    <title>Gravity – 重力与大地测量中文社区</title>
     <link>https://gohugo.io/</link>
     <description>Recent Hugo news from gohugo.io</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 02 Mar 2017 12:00:00 -0500</lastBuildDate>
+    <lastBuildDate>Tue, 02 Mar 2021 12:00:00 -0500</lastBuildDate>
     <image>
       <url>https://gohugo.io/img/hugo.png</url>
       <title>GoHugo.io</title>

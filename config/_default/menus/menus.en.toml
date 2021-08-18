@@ -76,7 +76,7 @@
 
   [[global]]
     name = "关于我们"
-    weight = 10
+    weight = 300
     identifier = "themes"
     url = "/about/"
 
