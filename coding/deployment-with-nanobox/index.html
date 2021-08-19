@@ -10,7 +10,7 @@
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
-  <title>Host-Agnostic Deploys with Nanobox | Gravity</title>
+  <title>Shell脚本编程 | Gravity</title>
 
   <meta name="viewport" content="width=device-width,minimum-scale=1">
   <meta name="generator" content="Hugo 0.87.0" />
@@ -32,7 +32,7 @@
   
 
   <meta name="description"
-  content="Easily deploy Hugo to AWS, DigitalOcean, Google, Azure, and more...">
+  content="Shell脚本语言是实现Linux/UNIX系统管理及自动化运维所必备的重要工具，能够简化工作流程，将日常工作脚本化.">
 
   
 
@@ -57,20 +57,20 @@
 <link rel="manifest" href="/manifest.json">
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0594cb">
 <meta name="theme-color" content="#ffffff">
-<meta property="og:title" content="Host-Agnostic Deploys with Nanobox" />
-<meta property="og:description" content="Easily deploy Hugo to AWS, DigitalOcean, Google, Azure, and more..." />
+<meta property="og:title" content="Shell脚本编程" />
+<meta property="og:description" content="Shell脚本语言是实现Linux/UNIX系统管理及自动化运维所必备的重要工具，能够简化工作流程，将日常工作脚本化." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://gohugo.io/coding/deployment-with-nanobox/" /><meta property="article:section" content="coding" />
 <meta property="article:published_time" content="2017-08-24T00:00:00+00:00" />
 <meta property="article:modified_time" content="2021-08-15T23:12:59+08:00" />
 
-<meta itemprop="name" content="Host-Agnostic Deploys with Nanobox">
-<meta itemprop="description" content="Easily deploy Hugo to AWS, DigitalOcean, Google, Azure, and more..."><meta itemprop="datePublished" content="2017-08-24T00:00:00+00:00" />
+<meta itemprop="name" content="Shell脚本编程">
+<meta itemprop="description" content="Shell脚本语言是实现Linux/UNIX系统管理及自动化运维所必备的重要工具，能够简化工作流程，将日常工作脚本化."><meta itemprop="datePublished" content="2017-08-24T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2021-08-15T23:12:59+08:00" />
-<meta itemprop="wordCount" content="955">
+<meta itemprop="wordCount" content="2">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Host-Agnostic Deploys with Nanobox"/>
-<meta name="twitter:description" content="Easily deploy Hugo to AWS, DigitalOcean, Google, Azure, and more..."/>
+<meta name="twitter:title" content="Shell脚本编程"/>
+<meta name="twitter:description" content="Shell脚本语言是实现Linux/UNIX系统管理及自动化运维所必备的重要工具，能够简化工作流程，将日常工作脚本化."/>
 <meta name="twitter:site" content="@georgegou"/>
 
 
@@ -197,35 +197,10 @@
 		<p class="b">What's on this Page</p>
   	<nav id="TableOfContents">
   <ul>
-    <li><a href="#what-youll-need">What You&rsquo;ll Need</a></li>
-    <li><a href="#getting-started">Getting Started</a></li>
-    <li><a href="#deploying-hugo-with-nanobox">Deploying Hugo with Nanobox</a></li>
+    <li><a href="#摘要">摘要</a></li>
   </ul>
 </nav>
 	
-
-	<div date-pref>
-		
-			<a href="https://gohugo.io/coding/hugo-deploy/" class="dib f6 pl1 hover-bg-light-gray br-100" title="Hugo Deploy ">
-				<svg class="fill-current" height="30px" viewBox="0 0 24 24" width="30px" xmlns="http://www.w3.org/2000/svg">
-    <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
-    <path d="M0 0h24v24H0z" fill="none"/>
-</svg>
-
-			</a>
-		
-
-		
-			<a href="https://gohugo.io/coding/hosting-on-render/" class="dib f6 pr1 hover-bg-light-gray br-100" title="Host on Render">
-			<svg class="fill-current" height="30px" viewBox="0 0 24 24" width="30px" xmlns="http://www.w3.org/2000/svg">
-    <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
-    <path d="M0 0h24v24H0z" fill="none"/>
-</svg>
-
-			</a>
-		
-	</div>
-
 </aside>
 </div>
 
@@ -241,13 +216,13 @@
       </a>
     
   
-  <h1 class="lh-title mb3 mv0 pt3 primary-color-dark">Host-Agnostic Deploys with Nanobox</h1>
+  <h1 class="lh-title mb3 mv0 pt3 primary-color-dark">Shell脚本编程</h1>
 </header>
 
 <aside class="bt bw1 pt3 mt2 mid-gray b--mid-gray fn w-100">
   
     <div class="f4 fw4 lh-copy">
-      Easily deploy Hugo to AWS, DigitalOcean, Google, Azure, and more&hellip;
+      Shell脚本语言是实现Linux/UNIX系统管理及自动化运维所必备的重要工具，能够简化工作流程，将日常工作脚本化.
     </div>
   
 
@@ -258,275 +233,8 @@
 
 <div class="prose" id="prose">
 
-<p><img src="/images/hosting-and-deployment/deployment-with-nanobox/hugo-with-nanobox.png" alt="hugo with nanobox"></p>
-<p>Nanobox provides an entire end-to-end workflow for developing and deploying applications. Using Nanobox to deploy also means you&rsquo;ll use it to develop your application.</p>
-
-<aside class="admonition note">
-	<div class="note-icon">
-		
-	</div>
-	
-	
-	<div class="admonition-content"><p>If you&rsquo;re already using Nanobox and just need deployment instructions, you can skip to <a href="#deploying-hugo-with-nanobox">Deploying Hugo with Nanobox</a></p>
-</div>
-</aside>
-
-<h2 id="what-youll-need">What You&rsquo;ll Need <a class="header-link" href="#what-youll-need"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
-<p>With Nanobox you don&rsquo;t need to worry about having Go or Hugo installed. They&rsquo;ll be installed as part of the development environment created for you.</p>
-<p>To get started you&rsquo;ll just need the following three items:</p>
-<ul>
-<li><a href="https://nanobox.io">A Nanobox Account</a> - Signup is free</li>
-<li><a href="https://dashboard.nanobox.io/download">Nanobox Desktop</a> - The free desktop development tool</li>
-<li>An account with a hosting provider such as:
-<ul>
-<li><a href="https://docs.nanobox.io/providers/hosting-accounts/aws/">AWS</a></li>
-<li><a href="https://docs.nanobox.io/providers/hosting-accounts/gcp/">Google</a></li>
-<li><a href="https://docs.nanobox.io/providers/hosting-accounts/azure/">Azure</a></li>
-<li><a href="https://docs.nanobox.io/providers/hosting-accounts/digitalocean/">DigitalOcean</a></li>
-<li><a href="https://docs.nanobox.io/providers/hosting-accounts/linode/">Linode</a></li>
-<li><a href="https://docs.nanobox.io/providers/hosting-accounts/">More&hellip;</a></li>
-<li><a href="https://docs.nanobox.io/providers/create/">Roll Your Own</a></li>
-</ul>
-</li>
-</ul>
-<h3 id="before-you-begin">Before You Begin <a class="header-link" href="#before-you-begin"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
-<p>There are a few things to get out of the way before diving into the guide. To deploy, you&rsquo;ll need to make sure you have connected a host account to your Nanobox account, and launched a new application.</p>
-<h4 id="connect-a-host-account">Connect a Host Account <a class="header-link" href="#connect-a-host-account"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h4>
-<p>Nanobox lets you choose where to host your application (AWS, DigitalOcean, Google, Azure, etc.). In the <a href="https://dashboard.nanobox.io/provider_accounts">Hosting Accounts</a> section of your Nanobox dashboard <a href="https://docs.nanobox.io/providers/hosting-accounts/">link your Nanobox account with your host</a>.</p>
-<h4 id="launch-a-new-application-on-nanobox">Launch a New Application on Nanobox <a class="header-link" href="#launch-a-new-application-on-nanobox"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h4>
-<p><a href="https://docs.nanobox.io/workflow/launch-app/">Launching a new app on Nanobox</a> is very simple. Navigate to <a href="https://dashboard.nanobox.io/apps/new">Launch New App</a> in the dashboard, and follow the steps there. You&rsquo;ll be asked to name your app, and to select a host and region.</p>
-<p>With those out of the way you&rsquo;re ready to get started!</p>
-<h2 id="getting-started">Getting Started <a class="header-link" href="#getting-started"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
-
-<aside class="admonition note">
-	<div class="note-icon">
-		
-	</div>
-	
-	
-	<div class="admonition-content"><p>If you already have a functioning Hugo app, you can skip to <a href="#configure-hugo-to-run-with-nanobox">Configure Hugo to run with Nanobox</a></p>
-</div>
-</aside>
-
-<p>To get started, all you&rsquo;ll need is an empty project directory. Create a directory wherever you want your application to live and <code>cd</code> into it:</p>
-<p><code>mkdir path/to/project &amp;&amp; cd path/to/project</code></p>
-<h3 id="configure-hugo-to-run-with-nanobox">Configure Hugo to run with Nanobox <a class="header-link" href="#configure-hugo-to-run-with-nanobox"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
-<p>Nanobox uses a simple config file known as a <a href="https://docs.nanobox.io/boxfile/">boxfile.yml</a> to describe your application&rsquo;s infrastructure. In the root of your project add the following <code>boxfile.yml</code>:</p>
-
-
-
-
-
-
-
-
-<div class="code relative" id="boxfile.yml"><div class="filename san-serif f6 dib lh-solid pl2 pv2">boxfile.yml</div>
-		<button class="needs-js copy bg-accent-color-dark f6 absolute top-0 right-0 lh-solid hover-bg-primary-color-dark bn white ph3 pv2" title="Copy this code to your clipboard." data-clipboard-action="copy" aria-label="copy button">
-		</button>
-		
-	
-	<div class="code-copy-content nt3" >
-		
-		<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yml" data-lang="yml"><span class="w">
-</span><span class="w"></span><span class="nt">run.config</span><span class="p">:</span><span class="w">
-</span><span class="w">
-</span><span class="w">  </span><span class="c"># use the static engine</span><span class="w">
-</span><span class="w">  </span><span class="nt">engine</span><span class="p">:</span><span class="w"> </span><span class="l">static</span><span class="w">
-</span><span class="w">  </span><span class="nt">engine.config</span><span class="p">:</span><span class="w">
-</span><span class="w">
-</span><span class="w">    </span><span class="c"># tell the engine where to serve static assets from</span><span class="w">
-</span><span class="w">    </span><span class="nt">rel_dir</span><span class="p">:</span><span class="w"> </span><span class="l">public</span><span class="w">
-</span><span class="w">
-</span><span class="w">  </span><span class="c"># enable file watching for live reload</span><span class="w">
-</span><span class="w">  </span><span class="nt">fs_watch</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
-</span><span class="w">
-</span><span class="w">  </span><span class="c"># install hugo</span><span class="w">
-</span><span class="w">  </span><span class="nt">extra_steps</span><span class="p">:</span><span class="w">
-</span><span class="w">    </span>- <span class="l">bash ./install.sh</span><span class="w">
-</span><span class="w">
-</span><span class="w"></span><span class="nt">deploy.config</span><span class="p">:</span><span class="w">
-</span><span class="w">
-</span><span class="w">  </span><span class="c"># generate site on deploy</span><span class="w">
-</span><span class="w">  </span><span class="nt">extra_steps</span><span class="p">:</span><span class="w">
-</span><span class="w">    </span>- <span class="l">hugo</span><span class="w">
-</span><span class="w">
-</span></code></pre></div>
-	</div>
-
-</div>
-
-
-<aside class="admonition note">
-	<div class="note-icon">
-		
-	</div>
-	
-	
-	<div class="admonition-content"><p>If you already have a functioning Hugo app, after adding the boxfile, you can skip to <a href="#deploying-hugo-with-nanobox">Deploying Hugo with Nanobox</a>.</p>
-</div>
-</aside>
-
-<h3 id="installing-hugo">Installing Hugo <a class="header-link" href="#installing-hugo"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
-<p>Nanobox uses Docker to create instant, isolated, development environments. Because of this, you&rsquo;ll need to make sure that during development you have Hugo available.</p>
-<p>Do this by adding a custom install script at the root of your project that will install Hugo automatically for you:</p>
-
-
-
-
-
-
-
-
-<div class="code relative" id="install.sh"><div class="filename san-serif f6 dib lh-solid pl2 pv2">install.sh</div>
-		<button class="needs-js copy bg-accent-color-dark f6 absolute top-0 right-0 lh-solid hover-bg-primary-color-dark bn white ph3 pv2" title="Copy this code to your clipboard." data-clipboard-action="copy" aria-label="copy button">
-		</button>
-		
-	
-	<div class="code-copy-content nt3" >
-		
-		<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh">
-
-<span class="c1">#!/bin/bash</span>
-
-<span class="k">if</span> <span class="o">[[</span> ! -f /data/bin/hugo <span class="o">]]</span><span class="p">;</span> <span class="k">then</span>
-  <span class="nb">cd</span> /tmp
-  wget https://github.com/gohugoio/hugo/releases/download/v0.31.1/hugo_0.31.1_Linux-64bit.tar.gz
-  tar -xzf hugo_0.31.1_Linux-64bit.tar.gz
-  mv hugo /data/bin/hugo
-  <span class="nb">cd</span> -
-  rm -rf /tmp/*
-<span class="k">fi</span>
-
-</code></pre></div>
-	</div>
-
-</div>
-
-<p>
-<aside class="admonition note">
-	<div class="note-icon">
-		
-	</div>
-	
-	
-	<div class="admonition-content"><p>If the install script fails during <code>nanobox run</code> you may need to make it executable with <code>chmod +x install.sh</code></p>
-</div>
-</aside>
-
-
-<aside class="admonition note">
-	<div class="note-icon">
-		
-	</div>
-	
-	
-	<div class="admonition-content"><p>Make sure to check the version of Hugo you have installed and update the install script to match.</p>
-</div>
-</aside>
-</p>
-<h3 id="generating-a-new-hugo-app">Generating a New Hugo App <a class="header-link" href="#generating-a-new-hugo-app"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
-<p>You&rsquo;ll generate your new application from inside the Nanobox VM (this is why you don&rsquo;t need to worry about having Go or Hugo installed).</p>
-<p>Run the following command to drop into a Nanobox console (inside the VM) where your codebase is mounted:</p>
-<pre><code>nanobox run
-</code></pre><p><img src="/images/hosting-and-deployment/deployment-with-nanobox/nanobox-run.png" alt="nanobox run"></p>
-<p>Once inside the console use the following steps to create a new Hugo application:</p>
-<pre><code># cd into the /tmp dir to create an app
-cd /tmp
-
-# generate the hugo app
-hugo new site app
-
-# cd back into the /app dir
-cd -
-
-# copy the generated app into the project
-shopt -s dotglob
-cp -a /tmp/app/* .
-</code></pre><h3 id="install-a-theme">Install a theme <a class="header-link" href="#install-a-theme"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
-<p><code>cd</code> into the <code>themes</code> directory and clone the <code>nanobox-hugo-theme</code> repo:</p>
-<pre><code>cd themes
-git clone https://github.com/sdomino/nanobox-hugo-theme
-</code></pre><p>To use the theme <em>either</em> copy the entire <code>config.toml</code> that comes with the theme, or just add the theme to your existing <code>config.toml</code></p>
-<pre><code># copy the config.toml that comes with the theme
-cp ./themes/nanobox-hugo-theme/config.toml config.toml
-
-# or, add it to your existing config.toml
-theme = &quot;nanobox-hugo-theme&quot;
-</code></pre>
-<aside class="admonition note">
-	<div class="note-icon">
-		
-	</div>
-	
-	
-	<div class="admonition-content"><p>It is not intended that you use the <code>nanobox-hugo-theme</code> as your actual theme. It&rsquo;s simply a theme to start with and should be replaced.</p>
-</div>
-</aside>
-
-<h3 id="view-your-app">View Your App <a class="header-link" href="#view-your-app"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
-<p>To view your application simply run the following command from a Nanobox console:</p>
-<pre><code>hugo server --bind=&quot;0.0.0.0&quot; --baseUrl=$APP_IP
-</code></pre><p><img src="/images/hosting-and-deployment/deployment-with-nanobox/hugo-server.png" alt="hugo server"></p>
-<p>With that you should be able to visit your app at the given IP:1313 address</p>
-
-<aside class="admonition note">
-	<div class="note-icon">
-		
-	</div>
-	
-	
-	<div class="admonition-content"><p>You can <a href="https://docs.nanobox.io/cli/dns/#add">add a custom DNS alias</a> to make it easier to access your app. Run <code>nanobox dns add local hugo.dev</code>. After starting your server, visit your app at <a href="http://hugo.dev:1313">hugo.dev:1313</a></p>
-</div>
-</aside>
-
-<h3 id="develop-develop-develop">Develop, Develop, Develop <a class="header-link" href="#develop-develop-develop"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
-
-<aside class="admonition note">
-	<div class="note-icon">
-		
-	</div>
-	
-	
-	<div class="admonition-content"><p>IMPORTANT: One issue we are aware of, and actively investigating, is livereload. Currently, livereload does not work when developing Hugo applications with Nanobox.</p>
-</div>
-</aside>
-
-<p>With Hugo installed you&rsquo;re ready to go. Develop Hugo like you would normally (using all the generators, etc.). Once your app is ready to deploy, run <code>hugo</code> to generate your static assets and get ready to deploy!</p>
-<h2 id="deploying-hugo-with-nanobox">Deploying Hugo with Nanobox <a class="header-link" href="#deploying-hugo-with-nanobox"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
-
-<aside class="admonition note">
-	<div class="note-icon">
-		
-	</div>
-	
-	
-	<div class="admonition-content"><p>If you haven&rsquo;t already, make sure to <a href="#connect-a-host-account">connect a hosting account</a> to your Nanobox account, and <a href="#launch-a-new-application-on-nanobox">launch a new application</a> in the Dashboard.</p>
-</div>
-</aside>
-
-<p>To deploy your application to Nanobox you simply need to <a href="https://docs.nanobox.io/workflow/deploy-code/#add-your-live-app-as-a-remote">link your local codebase</a> to an application you&rsquo;ve created on Nanobox. That is done with the following command:</p>
-<pre><code>nanobox remote add &lt;your-app-name&gt;
-</code></pre>
-<aside class="admonition note">
-	<div class="note-icon">
-		
-	</div>
-	
-	
-	<div class="admonition-content"><p>You may be prompted to login using your <em><strong>Nanobox credentials</strong></em> at this time</p>
-</div>
-</aside>
-
-<h3 id="stage-your-application-optional">Stage Your Application (optional) <a class="header-link" href="#stage-your-application-optional"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
-<p>Nanobox gives you the ability to <a href="https://docs.nanobox.io/workflow/deploy-code/#preview-locally">simulate your production environment locally</a>. While staging is optional it&rsquo;s always recommended, so there&rsquo;s no reason not to!</p>
-<p>To stage your app simply run:</p>
-<pre><code>nanobox deploy dry-run
-</code></pre><p>Now visit your application with the IP address provided.</p>
-<p><img src="/images/hosting-and-deployment/deployment-with-nanobox/nanobox-deploy-dry-run.png" alt="nanobox deploy dry-run"></p>
-<h3 id="deploy-your-application">Deploy Your Application <a class="header-link" href="#deploy-your-application"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3>
-<p>Once everything checks out and you&rsquo;re <a href="https://docs.nanobox.io/workflow/deploy-code/#deploy-to-production">ready to deploy</a>, simply run:</p>
-<pre><code>nanobox deploy
-</code></pre><p>Within minutes you&rsquo;re Hugo app will be deployed to your host and humming along smoothly. That&rsquo;s it!</p>
+<h2 id="摘要">摘要 <a class="header-link" href="#%e6%91%98%e8%a6%81"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
+<p>本章介绍如何利用Shell编程实现工作流程、数据处理自动化，能极大提高工作学习效率。</p>
 
 </div>
 
@@ -535,15 +243,7 @@ theme = &quot;nanobox-hugo-theme&quot;
 <h2>See Also</h2>
 <ul>
 	
-	<li><a href="/coding/hugo-deploy/">Hugo Deploy</a></li>
-	
-	<li><a href="/coding/hosting-on-keycdn/">Hosting on KeyCDN</a></li>
-	
-	<li><a href="/coding/hosting-on-bitbucket/">Host on Bitbucket</a></li>
-	
-	<li><a href="/coding/hosting-on-netlify/">Host on Netlify</a></li>
-	
-	<li><a href="/coding/hosting-on-render/">Host on Render</a></li>
+	<li><a href="/getting-started/installing/">重力学入门</a></li>
 	
 </ul>
 
@@ -585,282 +285,104 @@ theme = &quot;nanobox-hugo-theme&quot;
             </a>
           </li>
           <li class="f6 fw4">
-            <a href="/getting-started/quick-start/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Quick Start
-            </a>
-          </li>
-          <li class="f6 fw4">
             <a href="/getting-started/installing/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Install Hugo
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/getting-started/usage/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Basic Usage
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/getting-started/external-learning-resources/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              External Learning Resources
+              重力学概述
             </a>
           </li>
         </ul>
       </li>
       
       <li class="f5 w-100 hover-bg-light-gray hover-accent-color-light fw8 mb1 bb b--moon-gray">
-        <a href="/gravity-manual/" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".">重力软件教程</a>
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".gravity-manual">重力软件中文手册</a>
+        <ul class="gravity-manual desktopmenu animated fadeIn list pl0 bg-light-gray dn">
+          <li class="f6 fw4">
+            <a href="/gravity-manual/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Introduction
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/gravity-manual/tsoft/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Tsoft 中文手册
+            </a>
+          </li>
+        </ul>
       </li>
       
       <li class="f5 w-100 hover-bg-light-gray hover-accent-color-light fw8">
-        <a href="/gravitydata/" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".">重力数据处理教程</a>
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".gravity-data">重力数据处理教程</a>
+        <ul class="gravity-data desktopmenu animated fadeIn list pl0 bg-light-gray dn">
+          <li class="f6 fw4">
+            <a href="/gravity-data/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              概述
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/gravity-data/absolute-gravity-process/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              绝对重力数据处理
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/gravity-data/continuous-gravity-process/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              连续重力数据处理
+            </a>
+          </li>
+        </ul>
       </li>
       
-      <li class="f5 w-100 hover-bg-light-gray hover-accent-color-light fw8">
-        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".pipes">重力开源软件开发</a>
-        <ul class="pipes desktopmenu animated fadeIn list pl0 bg-light-gray dn">
+      <li class="f5 w-100 hover-bg-light-gray hover-accent-color-light fw8 mb1 bb b--moon-gray">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".gravity-software">重力开源软件</a>
+        <ul class="gravity-software desktopmenu animated fadeIn list pl0 bg-light-gray dn">
           <li class="f6 fw4">
             <a href="/gravity-software/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Hugo Pipes Overview
+              Overview
             </a>
           </li>
           <li class="f6 fw4">
-            <a href="/gravity-software/introduction/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Hugo Pipes Introduction
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/gravity-software/scss-sass/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              SASS / SCSS
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/gravity-software/postprocess/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              PostProcess
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/gravity-software/postcss/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              PostCSS
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/gravity-software/js/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              JavaScript Building
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/gravity-software/babel/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Babel
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/gravity-software/minification/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Asset minification
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/gravity-software/bundling/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Asset bundling
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/gravity-software/gravdpis_manual/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              GravDPIS中文文档
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/gravity-software/resource-from-template/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Resource from Template
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/gravity-software/resource-from-string/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Resource from String
+            <a href="/gravity-software/gravdpis/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              GravDPIS
             </a>
           </li>
         </ul>
-      </li>
-      
-      <li class="f5 w-100 hover-bg-light-gray hover-accent-color-light fw8">
-        <a href="/gravity-projects/" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".">重力项目展示</a>
-      </li>
-      
-      <li class="f5 w-100 hover-bg-light-gray hover-accent-color-light fw8">
-        <a href="/coding/" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".">编程教程</a>
       </li>
       
       <li class="f5 w-100 hover-bg-light-gray hover-accent-color-light fw8 mb1 bb b--moon-gray">
-        <a href="/contribute/" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".">贡献指南</a>
-      </li>
-      
-      <li class="f5 w-100 hover-bg-light-gray hover-accent-color-light fw8">
-        <a href="/maintenance/" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".">Maintenance</a>
-      </li>
-      
-      <li class="f5 w-100 hover-bg-light-gray hover-accent-color-light fw8">
-        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".">contribute</a>
-        <ul class=" desktopmenu animated fadeIn list pl0 bg-light-gray dn">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".gravity-projects">重力项目展示</a>
+        <ul class="gravity-projects desktopmenu animated fadeIn list pl0 bg-light-gray dn">
           <li class="f6 fw4">
-            <a href="/contribute/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Contribute to Hugo
+            <a href="/gravity-projects/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Start Project journey
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/gravity-projects/configuration/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              1、岩石圈有效弹性厚度
             </a>
           </li>
         </ul>
       </li>
       
-      <li class="f5 w-100 hover-bg-light-gray hover-accent-color-light fw8">
-        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2  primary-color" data-target=".">hosting-and-deployment</a>
-        <ul class=" desktopmenu animated fadeIn list pl0 bg-light-gray db">
+      <li class="f5 w-100 hover-bg-light-gray hover-accent-color-light fw8 mb1 bb b--moon-gray">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2  primary-color" data-target=".coding">跟Gravpher学编程</a>
+        <ul class="coding desktopmenu animated fadeIn list pl0 bg-light-gray db">
           <li class="f6 fw4">
             <a href="/coding/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Hosting &amp; Deployment Overview
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/coding/hugo-deploy/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Hugo Deploy
+              编程入门
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/coding/deployment-with-nanobox/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 primary-color ">
-              Host-Agnostic Deploys with Nanobox
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/coding/hosting-on-aws-amplify/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Host on AWS Amplify
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/coding/hosting-on-netlify/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Host on Netlify
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/coding/hosting-on-render/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Host on Render
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/coding/hosting-on-firebase/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Host on Firebase
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/coding/hosting-on-github/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Host on GitHub
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/coding/hosting-on-gitlab/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Host on GitLab
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/coding/hosting-on-keycdn/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Hosting on KeyCDN
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/coding/hosting-on-bitbucket/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Host on Bitbucket
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/coding/deployment-with-wercker/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Deployment with Wercker
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/coding/deployment-with-rsync/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Deployment with Rsync
+              Shell脚本编程
             </a>
           </li>
         </ul>
       </li>
       
-      <li class="f5 w-100 hover-bg-light-gray hover-accent-color-light fw8">
-        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".">modules</a>
-        <ul class=" desktopmenu animated fadeIn list pl0 bg-light-gray dn">
+      <li class="f5 w-100 hover-bg-light-gray hover-accent-color-light fw8 mb1 bb b--moon-gray">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".contribute">贡献指南</a>
+        <ul class="contribute desktopmenu animated fadeIn list pl0 bg-light-gray dn">
           <li class="f6 fw4">
-            <a href="/gravity-manual/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Hugo Modules Overview
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/gravity-manual/configuration/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Configure Modules
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/gravity-manual/use-modules/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Use Hugo Modules
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/gravity-manual/theme-components/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Theme Components
-            </a>
-          </li>
-        </ul>
-      </li>
-      
-      <li class="f5 w-100 hover-bg-light-gray hover-accent-color-light fw8">
-        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".">variables</a>
-        <ul class=" desktopmenu animated fadeIn list pl0 bg-light-gray dn">
-          <li class="f6 fw4">
-            <a href="/gravitydata/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Variables Overview
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/gravitydata/site/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Site Variables
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/gravitydata/page/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Page Variables
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/gravitydata/shortcodes/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Shortcode Variables
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/gravitydata/pages/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Pages Methods
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/gravitydata/taxonomy/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Taxonomy Variables
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/gravitydata/files/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              File Variables
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/gravitydata/menus/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Menu Entry Properties
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/gravitydata/hugo/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Hugo Variables
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/gravitydata/git/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Git Variables
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/gravitydata/sitemap/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Sitemap Variables
+            <a href="/contribute/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              向重力中国贡献
             </a>
           </li>
         </ul>
@@ -879,7 +401,7 @@ theme = &quot;nanobox-hugo-theme&quot;
   <a href="https://gohugo.io/coding/deployment-with-nanobox/" class="hide-child link primary-color">
   <span class="nl3 child"><svg class="grow" fill="" height="14px" viewBox="0 0 24 24" width="14px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg>
 </span>
-    “Host-Agnostic Deploys with Nanobox”
+    “Shell脚本编程”
   </a> was last updated: August 15, 2021: <a class="hide-child link primary-color" href="https://github.com/Gravity-Geodesy-China-Community/Gravity-Geodesy-China-Community.github.iocommit/24917dd03507c3161100e3009fd3e1b1a221d9a1">update overview (24917dd)</a>
 </h6>
 
@@ -917,11 +439,18 @@ f6 ph3 pv1 br2 dib  tc ttu mv3 bg-primary-color white hover-bg-green link
 		  	<div class="b f4  light-red mb3 nested-links tc">
            本站主要贡献者：  <br />
           </div>
-          <ul class="center f6 list ma0 mv4 pa0 tc">
-            <li class="dib mr3"><a href="https://twitter.com/gohugoio" class="dim link light-gray pv2">@Yijun Liu</a></li>
+          <ul class="left f6 list ma0 mv4 pa0 tc">
+            <li class="dib mr3"><a href="https://github.com/guyunqianqiu" class="dim link light-gray pv2">@Yijun Liu</a></li>
             <li class="dib mr3"><a href="https://twitter.com/spf13" class="dim link light-gray pv2">@Yabo Zhao</a></li>
-            <li class="dib"><a href="https://twitter.com/bepsays" class="dim link light-gray pv2">@Zehua Guo</a></li>
+            <li class="dib"><a href="https://twitter.com/bepsays" class="dim link light-gray pv2">@Xiaochun Li</a></li>
+            <li class="dib mr3"><a href="https://twitter.com/gohugoio" class="dim link light-gray pv2">  @Chung Wang</a></li>
+            <li class="dib mr3"><a href="https://github.com/GZH-EM" class="dim link light-gray pv2">@Zehua Guo</a></li>
+            <li class="dib"><a href="https://twitter.com/bepsays" class="dim link light-gray pv2">@Huaqing Yuan</a></li>
+		   <li class="dib mr3"><a href="https://twitter.com/gohugoio" class="dim link light-gray pv2">  @Dong Fang</a></li>
+            <li class="dib mr3"><a href="https://twitter.com/spf13" class="dim link light-gray pv2">@Yi Peng</a></li>
+            <li class="dib"><a href="https://twitter.com/bepsays" class="dim link light-gray pv2">@Lei Li</a></li>
           </ul>
+		  
 
           
 
@@ -949,6 +478,7 @@ f6 ph3 pv1 br2 dib  tc ttu mv3 bg-primary-color white hover-bg-green link
 		    <div class="b f3  light-yellow mb3 nested-links tc">
            Don't let a bad day make you feel like you have a bad life. You Remember？ <br />
           </div>
+
       </div>
 
     </div>
@@ -1022,67 +552,37 @@ f6 ph3 pv1 br2 dib  tc ttu mv3 bg-primary-color white hover-bg-green link
   
     <li  class="tl dib ma0 hover-bg-black w-100 mb2 bb b--mid-gray">
         <a href="/gravity-manual/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
-          重力软件教程
+          重力软件中文手册
         </a>
     </li>
   
     <li  class="tl dib ma0 hover-bg-black w-100">
-        <a href="/gravitydata/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
+        <a href="/gravity-data/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
           重力数据处理教程
         </a>
     </li>
   
-    <li  class="tl dib ma0 hover-bg-black w-100">
+    <li  class="tl dib ma0 hover-bg-black w-100 mb2 bb b--mid-gray">
         <a href="/gravity-software/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
-          重力开源软件开发
+          重力开源软件
         </a>
     </li>
   
-    <li  class="tl dib ma0 hover-bg-black w-100">
+    <li  class="tl dib ma0 hover-bg-black w-100 mb2 bb b--mid-gray">
         <a href="/gravity-projects/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
           重力项目展示
         </a>
     </li>
   
-    <li  class="tl dib ma0 hover-bg-black w-100">
+    <li  class="tl dib ma0 hover-bg-black w-100 mb2 bb b--mid-gray">
         <a href="/coding/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
-          编程教程
+          跟Gravpher学编程
         </a>
     </li>
   
     <li  class="tl dib ma0 hover-bg-black w-100 mb2 bb b--mid-gray">
         <a href="/contribute/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
           贡献指南
-        </a>
-    </li>
-  
-    <li  class="tl dib ma0 hover-bg-black w-100">
-        <a href="/maintenance/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
-          Maintenance
-        </a>
-    </li>
-  
-    <li  class="tl dib ma0 hover-bg-black w-100">
-        <a href="" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
-          contribute
-        </a>
-    </li>
-  
-    <li  class="tl dib ma0 hover-bg-black w-100">
-        <a href="" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
-          hosting-and-deployment
-        </a>
-    </li>
-  
-    <li  class="tl dib ma0 hover-bg-black w-100">
-        <a href="" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
-          modules
-        </a>
-    </li>
-  
-    <li  class="tl dib ma0 hover-bg-black w-100">
-        <a href="" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
-          variables
         </a>
     </li>
   
