@@ -1,4 +1,6 @@
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://gohugo.io/contribute/documentation/)
+## 重力中国官方网站
+
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/Gravity-Geodesy-China-Community/Gravity-Geodesy-China-Community.github.io/pulls) [![License](http://img.shields.io/:license-apache-brightgreen.svg)](http://www.apache.org/licenses/LICENSE-2.0.html)
 
 受到国内外科研社区及学者的启发，如[地震“学”](https://seismo-learn.org/) 、[gmt中文社区](https://gmt-china.org/)、[机器学习中文社区](https://www.jiqixuexishequ.com/)、[深度学习中文社区](http://studydl.com/)、[开源中国](https://www.oschina.net/)、[冰霜之地](https://halfrost.com/)、[PINGA](https://www.pinga-lab.org/)、[Leonardo Uieda](https://www.leouieda.com/)等等，这些优秀开源项目为我的日常工作中提供了重要的参考。基于此，为了给中国从事重力与大地测量研究的学生或学者提供学习与交流平台，重力中文社区孕育而生，[重力中文网](https://gravitychina.ga/)由[Gravpher](http://goujianing.ml/)于2021年夏天创建，重力室的小伙伴们共同维护。
 
@@ -12,38 +14,14 @@
 
 ## 贡献
 
-Like this Project？
-Then feel free to support this project. You Can do a lot, such as
+#### Like this Project？
+
+#### Then feel free to support this project. You Can do a lot, such as
+
 1、受到本站启发的所有内容，请挂上本站链接
 2、加入我们，共同维护重力中国开源社区
 3、Star ，并分享这个项目
 4、您也可以捐赠作者@Gravpher一杯咖啡，您的支持是我做下去的最大动力，捐款请注明来自GravityChina，感谢您的支持 denote link
-Don't let a bad day make you feel like you have a bad life. You Remember？
 
-## Branches
+#### Don't let a bad day make you feel like you have a bad life. You Remember？
 
-* The `master` branch is where the site is automatically built from, and is the place to put changes relevant to the current Hugo version.
-* The `next` branch is where we store changes that are related to the next Hugo release. This can be previewed here: https://next--gohugoio.netlify.com/
-
-## Build
-
-To view the documentation site locally, you need to clone this repository:
-
-```bash
-git clone https://github.com/gohugoio/hugoDocs.git
-```
-
-Also note that the documentation version for a given version of Hugo can also be found in the `/docs` sub-folder of the [Hugo source repository](https://github.com/gohugoio/hugo).
-
-Then to view the docs in your browser, run Hugo and open up the link:
-
-```bash
-▶ hugo server
-
-Started building sites ...
-.
-.
-Serving pages from memory
-Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
-Press Ctrl+C to stop
-```
