@@ -18,10 +18,10 @@
 
 #### Then feel free to support this project. You Can do a lot, such as
 
-1、受到本站启发的所有内容，请挂上本站链接
-2、加入我们，共同维护重力中国开源社区
-3、Star ，并分享这个项目
-4、您也可以捐赠作者@Gravpher一杯咖啡，您的支持是我做下去的最大动力，捐款请注明来自GravityChina，感谢您的支持 denote link
+- 受到本站启发的所有内容，请挂上[本站链接](https://gravitychina.ga/)
+- [加入我们](https://github.com/Gravity-Geodesy-China-Community/Gravity-Geodesy-China-Community.github.io/pulse)，共同维护重力中国开源社区
+- Star ，并分享这个项目
+- 您也可以捐赠作者@[Gravpher](https://goujianing.ml/)一杯咖啡，您的支持是我做下去的最大动力，捐款请注明来自GravityChina，感谢您的支持 [denote link](https://goujianing.ml/blog/denote/)
 
 #### Don't let a bad day make you feel like you have a bad life. You Remember？
 
