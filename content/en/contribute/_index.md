@@ -1,10 +1,10 @@
 ---
-title: Contribute to the Hugo Project
-linktitle: Contribute to Hugo
-description: Contribute to Hugo development and documentation.
-date: 2017-02-01
-publishdate: 2017-02-01
-lastmod: 2017-02-01
+title: 你准备好向重力中国贡献了吗
+linktitle: 向重力中国贡献
+description: 
+date: 2021-08-01
+publishdate: 2021-08-01
+lastmod: 2021-08-01
 categories: [contribute]
 keywords: []
 menu:

@@ -1,7 +1,7 @@
 ---
 title: 关于重力中国
 linktitle: 简介
-description: Hugo's features, roadmap, license, and motivation.
+description: 重力中国.
 date: 2021-08-01
 publishdate: 2021-08-01
 lastmod: 2021-08-01
@@ -13,7 +13,7 @@ menu:
     weight: 1
 weight: 1
 draft: false
-aliases: [/about-hugo/,/docs/]
+aliases: [/about-gravitychina/,/docs/]
 toc: false
 ---
 

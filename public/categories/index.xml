@@ -26,74 +26,83 @@
     </item>
     
     <item>
-      <title>asset management</title>
-      <link>https://gohugo.io/categories/asset-management/</link>
-      <pubDate>Wed, 14 Jul 2021 00:00:00 +0000</pubDate>
+      <title>Coding</title>
+      <link>https://gohugo.io/categories/coding/</link>
+      <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://gohugo.io/categories/asset-management/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>variables and params</title>
-      <link>https://gohugo.io/categories/variables-and-params/</link>
-      <pubDate>Sun, 20 Oct 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://gohugo.io/categories/variables-and-params/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>hugo modules</title>
-      <link>https://gohugo.io/categories/hugo-modules/</link>
-      <pubDate>Wed, 24 Jul 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://gohugo.io/categories/hugo-modules/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>hosting and deployment</title>
-      <link>https://gohugo.io/categories/hosting-and-deployment/</link>
-      <pubDate>Thu, 06 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://gohugo.io/categories/hosting-and-deployment/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>fundamentals</title>
-      <link>https://gohugo.io/categories/fundamentals/</link>
-      <pubDate>Fri, 16 Mar 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://gohugo.io/categories/fundamentals/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>getting started</title>
-      <link>https://gohugo.io/categories/getting-started/</link>
-      <pubDate>Fri, 16 Mar 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://gohugo.io/categories/getting-started/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>maintenance</title>
-      <link>https://gohugo.io/categories/maintenance/</link>
-      <pubDate>Fri, 09 Feb 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://gohugo.io/categories/maintenance/</guid>
+      <guid>https://gohugo.io/categories/coding/</guid>
       <description></description>
     </item>
     
     <item>
       <title>contribute</title>
       <link>https://gohugo.io/categories/contribute/</link>
-      <pubDate>Wed, 01 Feb 2017 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>https://gohugo.io/categories/contribute/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>gravity manual</title>
+      <link>https://gohugo.io/categories/gravity-manual/</link>
+      <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://gohugo.io/categories/gravity-manual/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hugo modules</title>
+      <link>https://gohugo.io/categories/hugo-modules/</link>
+      <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://gohugo.io/categories/hugo-modules/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>开源软件</title>
+      <link>https://gohugo.io/categories/%E5%BC%80%E6%BA%90%E8%BD%AF%E4%BB%B6/</link>
+      <pubDate>Wed, 14 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://gohugo.io/categories/%E5%BC%80%E6%BA%90%E8%BD%AF%E4%BB%B6/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>variables and params</title>
+      <link>https://gohugo.io/categories/variables-and-params/</link>
+      <pubDate>Mon, 01 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://gohugo.io/categories/variables-and-params/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hosting and deployment</title>
+      <link>https://gohugo.io/categories/hosting-and-deployment/</link>
+      <pubDate>Thu, 24 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://gohugo.io/categories/hosting-and-deployment/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>getting started</title>
+      <link>https://gohugo.io/categories/getting-started/</link>
+      <pubDate>Wed, 01 Feb 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://gohugo.io/categories/getting-started/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>fundamentals</title>
+      <link>https://gohugo.io/categories/fundamentals/</link>
+      <pubDate>Tue, 01 Nov 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://gohugo.io/categories/fundamentals/</guid>
       <description></description>
     </item>
     

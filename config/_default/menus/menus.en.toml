@@ -11,9 +11,9 @@
   url = "/getting-started/"
 
 [[docs]]
-  name = "重力软件教程"
+  name = "重力软件中文手册"
   weight = 15
-#  identifier = "modules"
+ identifier = "gravity-manual"
   post = "break"
   url = "/gravity-manual/"
 
@@ -23,12 +23,14 @@
 [[docs]]
   name = "重力数据处理教程"
   weight = 35
-#  identifier = "variables"
-  url = "/gravitydata/"
+  identifier = "gravity-data"
+  url = "/gravity-data/"
+
 [[docs]]
-  name = "重力开源软件开发"
-  weight = 36
-  identifier = "pipes"
+  name = "重力开源软件"
+  weight = 40
+  post = "break"
+  identifier = "gravity-software"
   url = "/gravity-software/"
 
 
@@ -37,26 +39,28 @@
 [[docs]]
   name = "重力项目展示"
   weight = 70
-#  identifier = "tools"
+  post = "break"
+  identifier = "gravity-projects"
   url = "/gravity-projects/"
 
 [[docs]]
-  name = "编程教程"
+  name = "跟Gravpher学编程"
   weight = 80
-#  identifier = "hosting-and-deployment"
+  post = "break"
+  identifier = "coding"
   url = "/coding/"
 
 [[docs]]
   name = "贡献指南"
   weight = 100
   post = "break"
-#  identifier = "contribute"
+  identifier = "contribute"
   url = "/contribute/"
 
 # [[docs]]
 #   name = "Categories"
 #   weight = 140
-#   identifier = "categories"
+#   identifier = "categories" 
 #   url = "/categories/"
 
 

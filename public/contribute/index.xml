@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Contribute to the Hugo Project on Gravity</title>
+    <title>你准备好向重力中国贡献了吗 on Gravity</title>
     <link>https://gohugo.io/contribute/</link>
-    <description>Recent content in Contribute to the Hugo Project on Gravity</description>
+    <description>Recent content in 你准备好向重力中国贡献了吗 on Gravity</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 01 Feb 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://gohugo.io/contribute/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 01 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://gohugo.io/contribute/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
