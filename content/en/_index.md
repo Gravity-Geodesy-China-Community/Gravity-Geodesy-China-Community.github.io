@@ -12,7 +12,7 @@ sections:
 
 GravityChina.ga致力于打造中国最大的 Geophysics and Geodesy Rsearch 学习交流平台
 
-由于站长还是在读研究生，水平有限，有错误欢迎大家批评指正，可以提交 [PR](https://github.com/Gravity-Geodesy-China-Community/Gravity-Geodesy-China-Community.github.io/pulls) 或Email 管理员[Gravpher](mailto:**admin@gravitychina.ga**)提供修改意见
+由于站长还是在读研究生，水平有限，有错误欢迎大家批评指正，可以提交 [Issue](https://github.com/Gravity-Geodesy-China-Community/Gravity-Geodesy-China-Community.github.io/issues) 或Email 管理员[Gravpher](mailto:**admin@gravitychina.ga**)提供修改意见
 
 
 
