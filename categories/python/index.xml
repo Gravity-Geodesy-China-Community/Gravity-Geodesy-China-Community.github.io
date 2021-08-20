@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Coding Life on Gravity</title>
-    <link>https://gohugo.io/coding/</link>
-    <description>Recent content in Coding Life on Gravity</description>
+    <title>python on Gravity</title>
+    <link>https://gohugo.io/categories/python/</link>
+    <description>Recent content in python on Gravity</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 01 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://gohugo.io/coding/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 20 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://gohugo.io/categories/python/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Python脚本编程</title>
       <link>https://gohugo.io/coding/python/</link>
