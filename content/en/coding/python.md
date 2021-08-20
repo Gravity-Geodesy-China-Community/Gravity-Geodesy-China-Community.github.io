@@ -1,22 +1,23 @@
 ---
-title: Shell脚本编程
-linktitle: Shell脚本编程
+title: Python脚本编程
+linktitle: Python编程教程
 description: Shell脚本语言是实现Linux/UNIX系统管理及自动化运维所必备的重要工具，能够简化工作流程，将日常工作脚本化.
-date: 2017-08-24
-publishdate: 2017-08-24
-lastmod: 2017-08-24
-categories: [hosting and deployment]
-keywords: [shell,linux]
-authors: [Steve Domino]
+date: 2021-08-20
+publishdate: 2021-08-20
+lastmod: 2021-08-24
+categories: [coding,python]
+keywords: [python]
+authors: [Gravpher]
 menu:
   docs:
     parent: "coding"
-    weight: 02
-weight: 02
+    weight: 03
+weight: 03
 sections_weight: 05
 draft: false
-aliases: [/tutorials/deployment-with-nanobox/]
+aliases: []
 toc: true
+
 ---
 
 ## 摘要

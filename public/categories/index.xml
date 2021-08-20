@@ -6,7 +6,25 @@
     <description>Recent content in Categories on Gravity</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 01 Aug 2021 18:36:00 +0200</lastBuildDate><atom:link href="https://gohugo.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 20 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://gohugo.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Coding</title>
+      <link>https://gohugo.io/categories/coding/</link>
+      <pubDate>Fri, 20 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://gohugo.io/categories/coding/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>python</title>
+      <link>https://gohugo.io/categories/python/</link>
+      <pubDate>Fri, 20 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://gohugo.io/categories/python/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>blog</title>
       <link>https://gohugo.io/categories/blog/</link>
@@ -22,15 +40,6 @@
       <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>https://gohugo.io/categories/about-gravitychina/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Coding</title>
-      <link>https://gohugo.io/categories/coding/</link>
-      <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://gohugo.io/categories/coding/</guid>
       <description></description>
     </item>
     
@@ -85,15 +94,6 @@
       <pubDate>Mon, 01 Feb 2021 00:00:00 +0000</pubDate>
       
       <guid>https://gohugo.io/categories/variables-and-params/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>hosting and deployment</title>
-      <link>https://gohugo.io/categories/hosting-and-deployment/</link>
-      <pubDate>Thu, 24 Aug 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://gohugo.io/categories/hosting-and-deployment/</guid>
       <description></description>
     </item>
     
