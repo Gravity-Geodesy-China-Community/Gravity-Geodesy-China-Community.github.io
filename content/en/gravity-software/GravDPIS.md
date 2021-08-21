@@ -4,7 +4,7 @@ description: GravDPIS是一个重力数据处理与解释软件.
 date: 2021-07-14
 publishdate: 2021-08-14
 lastmod: 2021-08-15
-categories: [开源软件]
+categories: [open source software]
 keywords: []
 menu:
   docs:

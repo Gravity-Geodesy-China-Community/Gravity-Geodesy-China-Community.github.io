@@ -3,7 +3,7 @@ title: Tsoft中文文档
 linktitle: Eterna中文手册
 description: Eterna是国际地潮中心推荐的调和分析软件.
 date: 2021-08-01
-categories: [hugo modules]
+categories: [gravity manual]
 keywords: [Eterna, 调和分析]
 menu:
   docs:

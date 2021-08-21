@@ -5,8 +5,8 @@ description:
 date: 2021-02-01
 publishdate: 2017-02-01
 lastmod: 2017-02-01
-categories: [variables and params]
-keywords: [variables,params,values,globals]
+categories: [Gravity data process]
+keywords: [gravitydata]
 draft: false
 menu:
   docs:
@@ -14,7 +14,7 @@ menu:
     weight: 1
 weight: 01	#rem
 sections_weight: 01
-aliases: [/templates/variables/]
+aliases: []
 toc: false
 ---
 

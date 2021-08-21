@@ -57,11 +57,11 @@
   identifier = "contribute"
   url = "/contribute/"
 
-# [[docs]]
-#   name = "Categories"
-#   weight = 140
-#   identifier = "categories" 
-#   url = "/categories/"
+ [[docs]]
+   name = "内容导航"
+   weight = 140
+   identifier = "categories" 
+   url = "/categories/"
 
 
 ######## GLOBAL ITEMS TO BE SHARED WITH THE HUGO SITES

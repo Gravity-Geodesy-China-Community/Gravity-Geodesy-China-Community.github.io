@@ -1,18 +1,13 @@
 # Netlify redirects. See https://www.netlify.com/docs/redirects/
 
-/themes/overview/                  	/gravity-manual/
-/themes/                           	/gravity-manual/
 /themes/overview/                  	/gravity-software/
 /themes/                           	/gravity-software/
 /themes/overview/                  	/gravity-projects/
 /themes/                           	/gravity-projects/
 /tutorials/how-to-contribute-to-hugo/	/contribute/
 /community/contributing/           	/contribute/
-/about-gravitychina/               	/about/
+/about/                            	/about/
 /docs/                             	/about/
-/templates/variables/              	/gravity-data/
 /overview/introduction/            	/getting-started/
-/variables/file-variables/         	/gravity-data/absolute-gravity-process/
-/variables/file-variables/         	/gravity-data/continuous-gravity-process/
 /meta/license                      	/about/license/
 /release-notes/                    	/news/

@@ -10,8 +10,8 @@ menu:
     weight: 01
 weight: 01
 sections_weight: 01
-categories: [hugo modules]
-keywords: [themes,modules]
+categories: [Gravity Projects]
+keywords: [projects]
 draft: false
 aliases: [/themes/overview/,/themes/]
 toc: true

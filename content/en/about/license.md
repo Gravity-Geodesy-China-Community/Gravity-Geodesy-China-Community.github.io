@@ -5,7 +5,7 @@ description:
 date: 2021-08-01
 publishdate: 2021-08-01
 lastmod: 2021-08-15
-categories: ["about gravitychina"]
+categories: ["License"]
 keywords: ["License","apache"]
 menu:
   docs:

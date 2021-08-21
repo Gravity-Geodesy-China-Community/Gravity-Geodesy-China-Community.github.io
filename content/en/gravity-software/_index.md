@@ -10,7 +10,7 @@ menu:
     weight: 01
 weight: 01
 sections_weight: 01
-categories: [gravity manual]
+categories: [gravity software]
 keywords: [Tsoft,manual]
 draft: false
 aliases: [/themes/overview/,/themes/]

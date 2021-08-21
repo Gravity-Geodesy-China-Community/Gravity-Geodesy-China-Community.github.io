@@ -13,7 +13,7 @@ sections_weight: 01
 categories: [gravity manual]
 keywords: [Tsoft,manual]
 draft: false
-aliases: [/themes/overview/,/themes/]
+aliases: []
 toc: true
 ---
 

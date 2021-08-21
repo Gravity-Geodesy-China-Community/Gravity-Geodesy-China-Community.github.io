@@ -5,7 +5,7 @@ description: 重力中国.
 date: 2021-08-01
 publishdate: 2021-08-01
 lastmod: 2021-08-01
-categories: []
+categories: [about]
 keywords: []
 menu:
   docs:
@@ -13,7 +13,7 @@ menu:
     weight: 1
 weight: 1
 draft: false
-aliases: [/about-gravitychina/,/docs/]
+aliases: [/about/,/docs/]
 toc: false
 ---
 

@@ -1,13 +1,13 @@
 ---
 title: Shell脚本编程
-linktitle: Shell脚本编程
+linktitle: Shell编程教程
 description: Why Shell？ Shell脚本是Linux/UNIX系统管理及自动化运维所必备的重要工具，能够通过编程实现日常简单工作的自动化.
-date: 2021-08-24
-publishdate: 2021-08-24
+date: 2021-08-20
+publishdate: 2021-08-20
 lastmod: 2021-08-24
-categories: [hosting and deployment]
-keywords: [shell,linux]
-authors: [Steve Domino]
+categories: [coding,python]
+keywords: [python]
+authors: [Gravpher]
 menu:
   docs:
     parent: "coding"
@@ -15,8 +15,9 @@ menu:
 weight: 02
 sections_weight: 05
 draft: false
-aliases: [/tutorials/deployment-with-nanobox/]
+aliases: []
 toc: true
+
 ---
 
 ## 摘要

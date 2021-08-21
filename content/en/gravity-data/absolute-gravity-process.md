@@ -5,8 +5,8 @@ description: "绝对重力值仪器直接测量得到重力场的绝对值"
 date: 2021-02-01
 publishdate: 2021-08-19
 lastmod: 2021-08-19
-categories: [variables and params]
-keywords: [files]
+categories: [gravity data process]
+keywords: []
 draft: false
 menu:
   docs:
@@ -14,7 +14,7 @@ menu:
     weight: 40
 weight: 40
 sections_weight: 40
-aliases: [/variables/file-variables/]
+aliases: []
 toc: false
 ---
 

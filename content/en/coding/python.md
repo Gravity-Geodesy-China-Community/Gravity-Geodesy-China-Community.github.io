@@ -1,7 +1,7 @@
 ---
 title: Python脚本编程
 linktitle: Python编程教程
-description: Shell脚本语言是实现Linux/UNIX系统管理及自动化运维所必备的重要工具，能够简化工作流程，将日常工作脚本化.
+description: Python是一种开源的、跨平台的、强交互性的、扩展性好的脚本解释性语言.
 date: 2021-08-20
 publishdate: 2021-08-20
 lastmod: 2021-08-24

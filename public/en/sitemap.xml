@@ -29,8 +29,11 @@
     <loc>https://gohugo.io/getting-started/</loc>
     <lastmod>2021-08-19T16:33:57+08:00</lastmod>
   </url><url>
-    <loc>https://gohugo.io/coding/python/</loc>
+    <loc>https://gohugo.io/coding/shell/</loc>
     <lastmod>2021-08-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://gohugo.io/coding/python/</loc>
+    <lastmod>2021-08-20T23:42:07+08:00</lastmod>
   </url><url>
     <loc>https://gohugo.io/gravity-projects/configuration/</loc>
     <lastmod>2021-08-19T16:33:57+08:00</lastmod>
@@ -47,8 +50,8 @@
     <loc>https://gohugo.io/gravity-manual/growth3.0/</loc>
     <lastmod>2021-08-19T17:13:40+08:00</lastmod>
   </url><url>
-    <loc>https://gohugo.io/getting-started/installing/</loc>
-    <lastmod>2021-08-19T16:33:57+08:00</lastmod>
+    <loc>https://gohugo.io/getting-started/gravity_start/</loc>
+    <lastmod>2018-01-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://gohugo.io/gravity-manual/groops/</loc>
     <lastmod>2021-08-19T17:13:40+08:00</lastmod>
@@ -93,22 +96,25 @@
     <loc>https://gohugo.io/categories/blog/</loc>
     <lastmod>2021-08-15T19:19:09+08:00</lastmod>
   </url><url>
-    <loc>https://gohugo.io/categories/about-gravitychina/</loc>
-    <lastmod>2021-08-15T23:12:59+08:00</lastmod>
+    <loc>https://gohugo.io/categories/about/</loc>
+    <lastmod>2021-08-19T16:33:57+08:00</lastmod>
   </url><url>
     <loc>https://gohugo.io/categories/contribute/</loc>
     <lastmod>2021-08-19T16:33:57+08:00</lastmod>
   </url><url>
     <loc>https://gohugo.io/categories/gravity-manual/</loc>
+    <lastmod>2021-08-19T17:13:40+08:00</lastmod>
+  </url><url>
+    <loc>https://gohugo.io/categories/gravity-projects/</loc>
     <lastmod>2021-08-19T16:33:57+08:00</lastmod>
   </url><url>
-    <loc>https://gohugo.io/categories/hugo-modules/</loc>
-    <lastmod>2021-08-19T17:13:40+08:00</lastmod>
+    <loc>https://gohugo.io/categories/gravity-software/</loc>
+    <lastmod>2021-08-19T16:33:57+08:00</lastmod>
   </url><url>
-    <loc>https://gohugo.io/categories/software-manual/</loc>
-    <lastmod>2021-08-19T17:13:40+08:00</lastmod>
+    <loc>https://gohugo.io/categories/license/</loc>
+    <lastmod>2021-08-15T23:12:59+08:00</lastmod>
   </url><url>
-    <loc>https://gohugo.io/categories/%E5%BC%80%E6%BA%90%E8%BD%AF%E4%BB%B6/</loc>
+    <loc>https://gohugo.io/categories/open-source-software/</loc>
     <lastmod>2021-08-19T16:33:57+08:00</lastmod>
   </url><url>
     <loc>https://gohugo.io/</loc>
@@ -124,14 +130,14 @@
                 href="https://gohugo.io/"
                 />
   </url><url>
-    <loc>https://gohugo.io/categories/variables-and-params/</loc>
+    <loc>https://gohugo.io/categories/gravity-data-process/</loc>
     <lastmod>2021-08-19T16:33:57+08:00</lastmod>
   </url><url>
     <loc>https://gohugo.io/categories/getting-started/</loc>
     <lastmod>2021-08-19T16:33:57+08:00</lastmod>
   </url><url>
     <loc>https://gohugo.io/categories/fundamentals/</loc>
-    <lastmod>2021-08-19T16:33:57+08:00</lastmod>
+    <lastmod>2018-01-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://gohugo.io/news/</loc>
     <lastmod>2021-08-15T19:19:09+08:00</lastmod>

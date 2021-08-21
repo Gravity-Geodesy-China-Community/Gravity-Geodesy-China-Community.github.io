@@ -3,8 +3,8 @@ title: Tsoft中文文档
 linktitle: Tsoft 中文手册
 description: Tsoft由比利时皇家天文台开发，是著名的地球潮汐与时间序列处理软件.
 date: 2019-07-24
-categories: [hugo modules]
-keywords: [themes, source, organization, directories]
+categories: [gravity manual]
+keywords: [Tsoft]
 menu:
   docs:
     parent: "gravity-manual"

@@ -5,8 +5,8 @@ description: "连续重力一般指相对重力连续测量"
 date: 2017-02-01
 publishdate: 2017-02-01
 lastmod: 2017-02-01
-categories: [variables and params]
-keywords: [files]
+categories: [gravity data process]
+keywords: [continuous gravity]
 draft: false
 menu:
   docs:
@@ -14,7 +14,7 @@ menu:
     weight: 40
 weight: 40
 sections_weight: 40
-aliases: [/variables/file-variables/]
+aliases: []
 toc: false
 ---
 
