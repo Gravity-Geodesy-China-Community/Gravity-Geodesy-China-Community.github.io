@@ -81,8 +81,14 @@
   [[global]]
     name = "关于我们"
     weight = 300
-    identifier = "themes"
+    identifier = "about"
     url = "/about/"
+
+  [[global]]
+    name = "捐赠本项目"
+    weight = 300
+    identifier = "contribute"
+    url = "/contribute/denote/"
 
     [[global]]
       name = "研究案例"

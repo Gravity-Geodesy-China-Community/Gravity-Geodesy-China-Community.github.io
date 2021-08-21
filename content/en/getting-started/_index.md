@@ -6,7 +6,7 @@ date: 2017-02-01
 publishdate: 2017-02-01
 lastmod: 2017-02-01
 categories: [getting started]
-keywords: [重力入门]
+keywords: [gravity started]
 menu:
   docs:
     parent: "getting-started"

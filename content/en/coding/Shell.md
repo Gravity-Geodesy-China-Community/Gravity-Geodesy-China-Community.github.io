@@ -6,7 +6,7 @@ date: 2021-08-20
 publishdate: 2021-08-20
 lastmod: 2021-08-24
 categories: [coding,python]
-keywords: [python]
+keywords: [coding]
 authors: [Gravpher]
 menu:
   docs:
