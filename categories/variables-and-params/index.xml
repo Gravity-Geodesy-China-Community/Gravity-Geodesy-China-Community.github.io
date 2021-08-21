@@ -1,42 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>variables and params on Gravity</title>
-    <link>https://gohugo.io/categories/variables-and-params/</link>
-    <description>Recent content in variables and params on Gravity</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Mon, 01 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://gohugo.io/categories/variables-and-params/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>重力数据处理概述</title>
-      <link>https://gohugo.io/gravity-data/</link>
-      <pubDate>Mon, 01 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://gohugo.io/gravity-data/</guid>
-      <description>本章介绍重力数据处理流程，一般来说，重力测量的方式和手段较多，主要分为卫星重力、海空重力、陆地重力等，测量方式也有弹簧相对重力仪、绝对重力仪等，故本章主要分为上述几个部分分别叙述。</description>
-    </item>
-    
-    <item>
-      <title>连续重力数据处理</title>
-      <link>https://gohugo.io/gravity-data/absolute-gravity-process/</link>
-      <pubDate>Mon, 01 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://gohugo.io/gravity-data/absolute-gravity-process/</guid>
-      <description>连续重力一般指相对重力连续测量
-The .File object contains the following fields:
- .File.Path the original relative path of the page, relative to the content dir (e.g., posts/foo.en.md) .File.LogicalName the name of the content file that represents a page (e.g., foo.en.md) .File.TranslationBaseName the filename without extension or optional language identifier (e.g., foo) .File.ContentBaseName is a either TranslationBaseName or name of containing folder if file is a leaf bundle. .File.BaseFileName the filename without extension (e.</description>
-    </item>
-    
-    <item>
-      <title>连续重力数据处理</title>
-      <link>https://gohugo.io/gravity-data/continuous-gravity-process/</link>
-      <pubDate>Wed, 01 Feb 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://gohugo.io/gravity-data/continuous-gravity-process/</guid>
-      <description>连续重力一般指相对重力连续测量
-The .File object contains the following fields:
- .File.Path the original relative path of the page, relative to the content dir (e.g., posts/foo.en.md) .File.LogicalName the name of the content file that represents a page (e.g., foo.en.md) .File.TranslationBaseName the filename without extension or optional language identifier (e.g., foo) .File.ContentBaseName is a either TranslationBaseName or name of containing folder if file is a leaf bundle. .File.BaseFileName the filename without extension (e.</description>
-    </item>
-    
-  </channel>
-</rss>

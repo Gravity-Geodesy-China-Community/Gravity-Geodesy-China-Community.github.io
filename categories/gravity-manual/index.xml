@@ -17,12 +17,48 @@
     </item>
     
     <item>
-      <title>重力软件教程</title>
-      <link>https://gohugo.io/gravity-software/</link>
+      <title>Tsoft中文文档</title>
+      <link>https://gohugo.io/gravity-manual/tsoft/</link>
+      <pubDate>Wed, 24 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://gohugo.io/gravity-manual/tsoft/</guid>
+      <description>摘要 本节主要介绍Tsoft软件的基本使用以及脚本范例，让读者可以轻松入手潮汐序列的处理</description>
+    </item>
+    
+    <item>
+      <title>Tsoft中文文档</title>
+      <link>https://gohugo.io/gravity-manual/eterna/</link>
       <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://gohugo.io/gravity-software/</guid>
-      <description>本章主要内容为重力开源软件的资源整合和开发，收集了互联网上开源的优质代码，介绍作者 Gravpher 主要开发与维护的开源软件</description>
+      <guid>https://gohugo.io/gravity-manual/eterna/</guid>
+      <description>摘要 Eterna</description>
+    </item>
+    
+    <item>
+      <title>GROWTH中文文档</title>
+      <link>https://gohugo.io/gravity-manual/growth3.0/</link>
+      <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://gohugo.io/gravity-manual/growth3.0/</guid>
+      <description>摘要 GROWTH</description>
+    </item>
+    
+    <item>
+      <title>GROOPS中文文档</title>
+      <link>https://gohugo.io/gravity-manual/groops/</link>
+      <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://gohugo.io/gravity-manual/groops/</guid>
+      <description>摘要 GROWTH</description>
+    </item>
+    
+    <item>
+      <title>Fatiando中文文档</title>
+      <link>https://gohugo.io/gravity-manual/fatiando/</link>
+      <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://gohugo.io/gravity-manual/fatiando/</guid>
+      <description>摘要 Fatiando</description>
     </item>
     
   </channel>

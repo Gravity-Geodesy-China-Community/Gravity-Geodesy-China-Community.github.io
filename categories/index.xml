@@ -35,11 +35,11 @@
     </item>
     
     <item>
-      <title>about gravitychina</title>
-      <link>https://gohugo.io/categories/about-gravitychina/</link>
+      <title>about</title>
+      <link>https://gohugo.io/categories/about/</link>
       <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://gohugo.io/categories/about-gravitychina/</guid>
+      <guid>https://gohugo.io/categories/about/</guid>
       <description></description>
     </item>
     
@@ -62,38 +62,47 @@
     </item>
     
     <item>
-      <title>hugo modules</title>
-      <link>https://gohugo.io/categories/hugo-modules/</link>
+      <title>Gravity Projects</title>
+      <link>https://gohugo.io/categories/gravity-projects/</link>
       <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://gohugo.io/categories/hugo-modules/</guid>
+      <guid>https://gohugo.io/categories/gravity-projects/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Software manual</title>
-      <link>https://gohugo.io/categories/software-manual/</link>
+      <title>gravity software</title>
+      <link>https://gohugo.io/categories/gravity-software/</link>
       <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://gohugo.io/categories/software-manual/</guid>
+      <guid>https://gohugo.io/categories/gravity-software/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>开源软件</title>
-      <link>https://gohugo.io/categories/%E5%BC%80%E6%BA%90%E8%BD%AF%E4%BB%B6/</link>
+      <title>License</title>
+      <link>https://gohugo.io/categories/license/</link>
+      <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://gohugo.io/categories/license/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>open source software</title>
+      <link>https://gohugo.io/categories/open-source-software/</link>
       <pubDate>Wed, 14 Jul 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://gohugo.io/categories/%E5%BC%80%E6%BA%90%E8%BD%AF%E4%BB%B6/</guid>
+      <guid>https://gohugo.io/categories/open-source-software/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>variables and params</title>
-      <link>https://gohugo.io/categories/variables-and-params/</link>
+      <title>Gravity data process</title>
+      <link>https://gohugo.io/categories/gravity-data-process/</link>
       <pubDate>Mon, 01 Feb 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://gohugo.io/categories/variables-and-params/</guid>
+      <guid>https://gohugo.io/categories/gravity-data-process/</guid>
       <description></description>
     </item>
     
