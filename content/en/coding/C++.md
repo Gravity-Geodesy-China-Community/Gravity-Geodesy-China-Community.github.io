@@ -1,11 +1,11 @@
 ---
-title: "{{ replace .TranslationBaseName "-" " " | title }}"
-linktitle:title: {{ replace .TranslationBaseName "-" " " | title }}
+title: "C++"
+linktitle:title: C++
 description: ""
 godocref: ""
 publishdate: ""
-date: {{ .Date }}
-lastmod: {{ .Date }}
+date: 2021-08-21T14:30:56+08:00
+lastmod: 2021-08-21T14:30:56+08:00
 categories: []
 tags: []
 authors: [Gravpher]
