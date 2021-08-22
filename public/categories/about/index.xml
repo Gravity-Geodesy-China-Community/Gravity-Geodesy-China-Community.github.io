@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>about on Gravity</title>
+    <link>https://gohugo.io/categories/about/</link>
+    <description>Recent content in about on Gravity</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 01 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://gohugo.io/categories/about/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>关于重力中国</title>
+      <link>https://gohugo.io/about/</link>
+      <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://gohugo.io/about/</guid>
+      <description>受到国内外科研社区及学者的启发，如地震“学” 、gmt中文社区、机器学习中文社区、深度学习中文社区、开源中国、冰霜之地、PINGA、Leonardo Uieda等等，这些优秀开源项目为我的日常工作中提供了重要的参考。基于此，为了给中国从事重力与大地测量研究的学生或学者提供学习与交流平台，重力中文社区孕育而生，重力中文网由Gravpher于2021年夏天创建，重力室的小伙伴们共同维护。
+本网站基于优秀的静态网页生成器Hugo、主题HugoDoc、Markdown编辑器、应用容器引擎Docker、文档托管服务Read the Docs、静态网页托管工具github page、vercel等开源工具构建，感谢Hugo的核心开发者Bjørn Erik Pedersen在本应用构建时的指点，再次对以上出色的开源工具表示感谢！
+本站建立的目标为：
+ 整合互联网上有关重力与大地测量相关的学习资料，不涉及保密资料 提供重力与大地测量相关研究的学习参考资料，方便初学者能够很快入门 促进重力与大地测量中文社区的交流和发展，促进重力与大地测量相关开源软件的发展  </description>
+    </item>
+    
+  </channel>
+</rss>

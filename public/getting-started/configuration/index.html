@@ -13,7 +13,7 @@
   <title>Configure Hugo | Gravity</title>
 
   <meta name="viewport" content="width=device-width,minimum-scale=1">
-  <meta name="generator" content="Hugo 0.84.0" />
+  <meta name="generator" content="Hugo 0.87.0" />
 
   
   <meta name="robots" content="noindex, nofollow">
@@ -42,7 +42,7 @@
 
 
   
-  <script type="text/javascript" src="/output/js/app.175b405753a9c0ce86ab35944e9c4cc1a758a6873209cf5106600f6b2f5a59b6.js" integrity="sha256-F1tAV1OpwM6GqzWUTpxMwadYpocyCc9RBmAPay9aWbY=" crossorigin="anonymous" defer></script>
+  <script type="text/javascript" src="/output/js/app.0984bf5469ab3c8aa82cf8eb015a560d74ee028723b1ab38e928998f5f72baba.js" integrity="sha256-CYS/VGmrPIqoLPjrAVpWDXTuAocjsas46SiZj19yuro=" crossorigin="anonymous" defer></script>
   
       
  
@@ -60,17 +60,15 @@
 <meta property="og:title" content="Configure Hugo" />
 <meta property="og:description" content="How to configure your Hugo site." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://gohugo.io/getting-started/configuration/" /><meta property="og:image" content="https://gohugo.io/images/gohugoio-card.png"/><meta property="article:section" content="getting-started" />
-<meta property="article:published_time" content="2017-01-02T00:00:00&#43;00:00" />
-<meta property="article:modified_time" content="2021-08-13T21:11:25&#43;08:00" />
+<meta property="og:url" content="https://gohugo.io/getting-started/configuration/" /><meta property="article:section" content="getting-started" />
+<meta property="article:published_time" content="2017-01-02T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-08-13T21:11:25+08:00" />
 
 <meta itemprop="name" content="Configure Hugo">
-<meta itemprop="description" content="How to configure your Hugo site."><meta itemprop="datePublished" content="2017-01-02T00:00:00&#43;00:00" />
-<meta itemprop="dateModified" content="2021-08-13T21:11:25&#43;08:00" />
-<meta itemprop="wordCount" content="3581"><meta itemprop="image" content="https://gohugo.io/images/gohugoio-card.png"/>
-<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://gohugo.io/images/gohugoio-card.png"/>
-
+<meta itemprop="description" content="How to configure your Hugo site."><meta itemprop="datePublished" content="2017-01-02T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2021-08-13T21:11:25+08:00" />
+<meta itemprop="wordCount" content="3581">
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Configure Hugo"/>
 <meta name="twitter:description" content="How to configure your Hugo site."/>
 <meta name="twitter:site" content="@georgegou"/>
@@ -94,7 +92,7 @@
         <li class="f5 dib mr4" role="menuitem">
             
           <a href="/news/" class="dim link light-silver">
-            News
+            新闻
               
             
             
@@ -104,7 +102,7 @@
         <li class="f5 dib mr4" role="menuitem">
             
           <a href="/documentation/" class="dim link light-silver">
-            Docs
+            文档
               
             
             
@@ -113,8 +111,8 @@
       
         <li class="f5 dib mr4" role="menuitem">
             
-          <a href="https://themes.gohugo.io/" class="dim link light-silver">
-            Themes
+          <a href="/about/" class="dim link light-silver">
+            关于我们
               
             
             
@@ -123,8 +121,8 @@
       
         <li class="f5 dib mr4" role="menuitem">
             
-          <a href="/showcase/" class="dim link light-silver">
-            Showcase
+          <a href="/gravity-projects/" class="dim link light-silver">
+            研究案例
               
             
             
@@ -133,8 +131,8 @@
       
         <li class="f5 dib mr4" role="menuitem">
             
-          <a href="https://discourse.gohugo.io/" class="dim link light-silver">
-            Community
+          <a href="https://discourse.gravitychina.ga/" class="dim link light-silver">
+            重力论坛
               
             
             
@@ -150,7 +148,7 @@
       
         <li class="f5 dib mr4" role="menuitem">
             
-          <a href="https://github.com/gohugoio/hugo" class="dim link light-silver">
+          <a href="https://github.com/Gravity-Geodesy-China-Community" class="dim link light-silver">
             GitHub
               
             
@@ -333,7 +331,7 @@ hugo --config a.toml,b.toml,c.toml
   <div class="tab-content">
     
       <div data-pane="yaml" class="code-copy-content nt3 tab-pane active">
-        <div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">Params</span><span class="p">:</span><span class="w">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">Params</span><span class="p">:</span><span class="w">
 </span><span class="w">  </span><span class="nt">foo</span><span class="p">:</span><span class="w"> </span><span class="l">bar</span><span class="w">
 </span></code></pre></div>
       </div>
@@ -343,8 +341,9 @@ hugo --config a.toml,b.toml,c.toml
       
     
       <div data-pane="toml" class="code-copy-content nt3 tab-pane ">
-        <div class="highlight"><pre class="chroma"><code class="language-toml" data-lang="toml"><span class="p">[</span><span class="nx">Params</span><span class="p">]</span>
-  <span class="nx">foo</span> <span class="p">=</span> <span class="s2">&#34;bar&#34;</span>
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="p">[</span><span class="nx">Params</span><span class="p">]</span>
+<span class="nx">foo</span> <span class="p">=</span> <span class="s1">&#39;bar&#39;</span>
+
 </code></pre></div>
       </div>
       
@@ -353,7 +352,7 @@ hugo --config a.toml,b.toml,c.toml
       
     
       <div data-pane="json" class="code-copy-content nt3 tab-pane ">
-        <div class="highlight"><pre class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
    <span class="nt">&#34;Params&#34;</span><span class="p">:</span> <span class="p">{</span>
       <span class="nt">&#34;foo&#34;</span><span class="p">:</span> <span class="s2">&#34;bar&#34;</span>
    <span class="p">}</span>
@@ -398,7 +397,7 @@ hugo --config a.toml,b.toml,c.toml
   <div class="tab-content">
     
       <div data-pane="yaml" class="code-copy-content nt3 tab-pane active">
-        <div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">foo</span><span class="p">:</span><span class="w"> </span><span class="l">bar</span><span class="w">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">foo</span><span class="p">:</span><span class="w"> </span><span class="l">bar</span><span class="w">
 </span></code></pre></div>
       </div>
       
@@ -407,7 +406,7 @@ hugo --config a.toml,b.toml,c.toml
       
     
       <div data-pane="toml" class="code-copy-content nt3 tab-pane ">
-        <div class="highlight"><pre class="chroma"><code class="language-toml" data-lang="toml"><span class="nx">foo</span> <span class="p">=</span> <span class="s2">&#34;bar&#34;</span>
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="nx">foo</span> <span class="p">=</span> <span class="s1">&#39;bar&#39;</span>
 </code></pre></div>
       </div>
       
@@ -416,7 +415,7 @@ hugo --config a.toml,b.toml,c.toml
       
     
       <div data-pane="json" class="code-copy-content nt3 tab-pane ">
-        <div class="highlight"><pre class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
    <span class="nt">&#34;foo&#34;</span><span class="p">:</span> <span class="s2">&#34;bar&#34;</span>
 <span class="p">}</span>
 </code></pre></div>
@@ -511,7 +510,7 @@ hugo --config a.toml,b.toml,c.toml
   <div class="tab-content">
     
       <div data-pane="yaml" class="code-copy-content nt3 tab-pane active">
-        <div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">build</span><span class="p">:</span><span class="w">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">build</span><span class="p">:</span><span class="w">
 </span><span class="w">  </span><span class="nt">_merge</span><span class="p">:</span><span class="w"> </span><span class="l">none</span><span class="w">
 </span><span class="w"></span><span class="nt">caches</span><span class="p">:</span><span class="w">
 </span><span class="w">  </span><span class="nt">_merge</span><span class="p">:</span><span class="w"> </span><span class="l">none</span><span class="w">
@@ -559,62 +558,66 @@ hugo --config a.toml,b.toml,c.toml
       
     
       <div data-pane="toml" class="code-copy-content nt3 tab-pane ">
-        <div class="highlight"><pre class="chroma"><code class="language-toml" data-lang="toml"><span class="p">[</span><span class="nx">build</span><span class="p">]</span>
-  <span class="nx">_merge</span> <span class="p">=</span> <span class="s2">&#34;none&#34;</span>
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="p">[</span><span class="nx">build</span><span class="p">]</span>
+<span class="nx">_merge</span> <span class="p">=</span> <span class="s1">&#39;none&#39;</span>
 
 <span class="p">[</span><span class="nx">caches</span><span class="p">]</span>
-  <span class="nx">_merge</span> <span class="p">=</span> <span class="s2">&#34;none&#34;</span>
+<span class="nx">_merge</span> <span class="p">=</span> <span class="s1">&#39;none&#39;</span>
 
 <span class="p">[</span><span class="nx">cascade</span><span class="p">]</span>
-  <span class="nx">_merge</span> <span class="p">=</span> <span class="s2">&#34;none&#34;</span>
+<span class="nx">_merge</span> <span class="p">=</span> <span class="s1">&#39;none&#39;</span>
 
 <span class="p">[</span><span class="nx">frontmatter</span><span class="p">]</span>
-  <span class="nx">_merge</span> <span class="p">=</span> <span class="s2">&#34;none&#34;</span>
+<span class="nx">_merge</span> <span class="p">=</span> <span class="s1">&#39;none&#39;</span>
 
 <span class="p">[</span><span class="nx">imaging</span><span class="p">]</span>
-  <span class="nx">_merge</span> <span class="p">=</span> <span class="s2">&#34;none&#34;</span>
+<span class="nx">_merge</span> <span class="p">=</span> <span class="s1">&#39;none&#39;</span>
 
 <span class="p">[</span><span class="nx">languages</span><span class="p">]</span>
-  <span class="nx">_merge</span> <span class="p">=</span> <span class="s2">&#34;none&#34;</span>
-  <span class="p">[</span><span class="nx">languages</span><span class="p">.</span><span class="nx">en</span><span class="p">]</span>
-    <span class="nx">_merge</span> <span class="p">=</span> <span class="s2">&#34;none&#34;</span>
-    <span class="p">[</span><span class="nx">languages</span><span class="p">.</span><span class="nx">en</span><span class="p">.</span><span class="nx">menus</span><span class="p">]</span>
-      <span class="nx">_merge</span> <span class="p">=</span> <span class="s2">&#34;shallow&#34;</span>
-    <span class="p">[</span><span class="nx">languages</span><span class="p">.</span><span class="nx">en</span><span class="p">.</span><span class="nx">params</span><span class="p">]</span>
-      <span class="nx">_merge</span> <span class="p">=</span> <span class="s2">&#34;deep&#34;</span>
+<span class="nx">_merge</span> <span class="p">=</span> <span class="s1">&#39;none&#39;</span>
+<span class="p">[</span><span class="nx">languages</span><span class="p">.</span><span class="nx">en</span><span class="p">]</span>
+<span class="nx">_merge</span> <span class="p">=</span> <span class="s1">&#39;none&#39;</span>
+<span class="p">[</span><span class="nx">languages</span><span class="p">.</span><span class="nx">en</span><span class="p">.</span><span class="nx">menus</span><span class="p">]</span>
+<span class="nx">_merge</span> <span class="p">=</span> <span class="s1">&#39;shallow&#39;</span>
+
+<span class="p">[</span><span class="nx">languages</span><span class="p">.</span><span class="nx">en</span><span class="p">.</span><span class="nx">params</span><span class="p">]</span>
+<span class="nx">_merge</span> <span class="p">=</span> <span class="s1">&#39;deep&#39;</span>
+
+
 
 <span class="p">[</span><span class="nx">markup</span><span class="p">]</span>
-  <span class="nx">_merge</span> <span class="p">=</span> <span class="s2">&#34;none&#34;</span>
+<span class="nx">_merge</span> <span class="p">=</span> <span class="s1">&#39;none&#39;</span>
 
 <span class="p">[</span><span class="nx">mediatypes</span><span class="p">]</span>
-  <span class="nx">_merge</span> <span class="p">=</span> <span class="s2">&#34;shallow&#34;</span>
+<span class="nx">_merge</span> <span class="p">=</span> <span class="s1">&#39;shallow&#39;</span>
 
 <span class="p">[</span><span class="nx">menus</span><span class="p">]</span>
-  <span class="nx">_merge</span> <span class="p">=</span> <span class="s2">&#34;shallow&#34;</span>
+<span class="nx">_merge</span> <span class="p">=</span> <span class="s1">&#39;shallow&#39;</span>
 
 <span class="p">[</span><span class="nx">minify</span><span class="p">]</span>
-  <span class="nx">_merge</span> <span class="p">=</span> <span class="s2">&#34;none&#34;</span>
+<span class="nx">_merge</span> <span class="p">=</span> <span class="s1">&#39;none&#39;</span>
 
 <span class="p">[</span><span class="nx">module</span><span class="p">]</span>
-  <span class="nx">_merge</span> <span class="p">=</span> <span class="s2">&#34;none&#34;</span>
+<span class="nx">_merge</span> <span class="p">=</span> <span class="s1">&#39;none&#39;</span>
 
 <span class="p">[</span><span class="nx">outputformats</span><span class="p">]</span>
-  <span class="nx">_merge</span> <span class="p">=</span> <span class="s2">&#34;shallow&#34;</span>
+<span class="nx">_merge</span> <span class="p">=</span> <span class="s1">&#39;shallow&#39;</span>
 
 <span class="p">[</span><span class="nx">params</span><span class="p">]</span>
-  <span class="nx">_merge</span> <span class="p">=</span> <span class="s2">&#34;deep&#34;</span>
+<span class="nx">_merge</span> <span class="p">=</span> <span class="s1">&#39;deep&#39;</span>
 
 <span class="p">[</span><span class="nx">permalinks</span><span class="p">]</span>
-  <span class="nx">_merge</span> <span class="p">=</span> <span class="s2">&#34;none&#34;</span>
+<span class="nx">_merge</span> <span class="p">=</span> <span class="s1">&#39;none&#39;</span>
 
 <span class="p">[</span><span class="nx">related</span><span class="p">]</span>
-  <span class="nx">_merge</span> <span class="p">=</span> <span class="s2">&#34;none&#34;</span>
+<span class="nx">_merge</span> <span class="p">=</span> <span class="s1">&#39;none&#39;</span>
 
 <span class="p">[</span><span class="nx">sitemap</span><span class="p">]</span>
-  <span class="nx">_merge</span> <span class="p">=</span> <span class="s2">&#34;none&#34;</span>
+<span class="nx">_merge</span> <span class="p">=</span> <span class="s1">&#39;none&#39;</span>
 
 <span class="p">[</span><span class="nx">taxonomies</span><span class="p">]</span>
-  <span class="nx">_merge</span> <span class="p">=</span> <span class="s2">&#34;none&#34;</span>
+<span class="nx">_merge</span> <span class="p">=</span> <span class="s1">&#39;none&#39;</span>
+
 </code></pre></div>
       </div>
       
@@ -623,7 +626,7 @@ hugo --config a.toml,b.toml,c.toml
       
     
       <div data-pane="json" class="code-copy-content nt3 tab-pane ">
-        <div class="highlight"><pre class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
    <span class="nt">&#34;build&#34;</span><span class="p">:</span> <span class="p">{</span>
       <span class="nt">&#34;_merge&#34;</span><span class="p">:</span> <span class="s2">&#34;none&#34;</span>
    <span class="p">},</span>
@@ -944,7 +947,7 @@ hugo config | grep emoji
   <div class="tab-content">
     
       <div data-pane="yaml" class="code-copy-content nt3 tab-pane active">
-        <div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">build</span><span class="p">:</span><span class="w">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">build</span><span class="p">:</span><span class="w">
 </span><span class="w">  </span><span class="nt">noJSConfigInAssets</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
 </span><span class="w">  </span><span class="nt">useResourceCacheWhen</span><span class="p">:</span><span class="w"> </span><span class="l">fallback</span><span class="w">
 </span><span class="w">  </span><span class="nt">writeStats</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
@@ -956,10 +959,11 @@ hugo config | grep emoji
       
     
       <div data-pane="toml" class="code-copy-content nt3 tab-pane ">
-        <div class="highlight"><pre class="chroma"><code class="language-toml" data-lang="toml"><span class="p">[</span><span class="nx">build</span><span class="p">]</span>
-  <span class="nx">noJSConfigInAssets</span> <span class="p">=</span> <span class="kc">false</span>
-  <span class="nx">useResourceCacheWhen</span> <span class="p">=</span> <span class="s2">&#34;fallback&#34;</span>
-  <span class="nx">writeStats</span> <span class="p">=</span> <span class="kc">false</span>
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="p">[</span><span class="nx">build</span><span class="p">]</span>
+<span class="nx">noJSConfigInAssets</span> <span class="p">=</span> <span class="kc">false</span>
+<span class="nx">useResourceCacheWhen</span> <span class="p">=</span> <span class="s1">&#39;fallback&#39;</span>
+<span class="nx">writeStats</span> <span class="p">=</span> <span class="kc">false</span>
+
 </code></pre></div>
       </div>
       
@@ -968,7 +972,7 @@ hugo config | grep emoji
       
     
       <div data-pane="json" class="code-copy-content nt3 tab-pane ">
-        <div class="highlight"><pre class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
    <span class="nt">&#34;build&#34;</span><span class="p">:</span> <span class="p">{</span>
       <span class="nt">&#34;noJSConfigInAssets&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
       <span class="nt">&#34;useResourceCacheWhen&#34;</span><span class="p">:</span> <span class="s2">&#34;fallback&#34;</span><span class="p">,</span>
@@ -1044,7 +1048,7 @@ hugo config | grep emoji
   <div class="tab-content">
     
       <div data-pane="yaml" class="code-copy-content nt3 tab-pane active">
-        <div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">server</span><span class="p">:</span><span class="w">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">server</span><span class="p">:</span><span class="w">
 </span><span class="w">  </span><span class="nt">headers</span><span class="p">:</span><span class="w">
 </span><span class="w">  </span>- <span class="nt">for</span><span class="p">:</span><span class="w"> </span><span class="l">/**.html</span><span class="w">
 </span><span class="w">    </span><span class="nt">values</span><span class="p">:</span><span class="w">
@@ -1061,16 +1065,18 @@ hugo config | grep emoji
       
     
       <div data-pane="toml" class="code-copy-content nt3 tab-pane ">
-        <div class="highlight"><pre class="chroma"><code class="language-toml" data-lang="toml"><span class="p">[</span><span class="nx">server</span><span class="p">]</span>
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="p">[</span><span class="nx">server</span><span class="p">]</span>
+<span class="p">[[</span><span class="nx">server</span><span class="p">.</span><span class="nx">headers</span><span class="p">]]</span>
+<span class="nx">for</span> <span class="p">=</span> <span class="s1">&#39;/**.html&#39;</span>
+<span class="p">[</span><span class="nx">server</span><span class="p">.</span><span class="nx">headers</span><span class="p">.</span><span class="nx">values</span><span class="p">]</span>
+<span class="nx">Content-Security-Policy</span> <span class="p">=</span> <span class="s1">&#39;script-src localhost:1313&#39;</span>
+<span class="nx">Referrer-Policy</span> <span class="p">=</span> <span class="s1">&#39;strict-origin-when-cross-origin&#39;</span>
+<span class="nx">X-Content-Type-Options</span> <span class="p">=</span> <span class="s1">&#39;nosniff&#39;</span>
+<span class="nx">X-Frame-Options</span> <span class="p">=</span> <span class="s1">&#39;DENY&#39;</span>
+<span class="nx">X-XSS-Protection</span> <span class="p">=</span> <span class="s1">&#39;1; mode=block&#39;</span>
 
-  <span class="p">[[</span><span class="nx">server</span><span class="p">.</span><span class="nx">headers</span><span class="p">]]</span>
-    <span class="nx">for</span> <span class="p">=</span> <span class="s2">&#34;/**.html&#34;</span>
-    <span class="p">[</span><span class="nx">server</span><span class="p">.</span><span class="nx">headers</span><span class="p">.</span><span class="nx">values</span><span class="p">]</span>
-      <span class="nx">Content-Security-Policy</span> <span class="p">=</span> <span class="s2">&#34;script-src localhost:1313&#34;</span>
-      <span class="nx">Referrer-Policy</span> <span class="p">=</span> <span class="s2">&#34;strict-origin-when-cross-origin&#34;</span>
-      <span class="nx">X-Content-Type-Options</span> <span class="p">=</span> <span class="s2">&#34;nosniff&#34;</span>
-      <span class="nx">X-Frame-Options</span> <span class="p">=</span> <span class="s2">&#34;DENY&#34;</span>
-      <span class="nx">X-XSS-Protection</span> <span class="p">=</span> <span class="s2">&#34;1; mode=block&#34;</span>
+
+
 </code></pre></div>
       </div>
       
@@ -1079,7 +1085,7 @@ hugo config | grep emoji
       
     
       <div data-pane="json" class="code-copy-content nt3 tab-pane ">
-        <div class="highlight"><pre class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
    <span class="nt">&#34;server&#34;</span><span class="p">:</span> <span class="p">{</span>
       <span class="nt">&#34;headers&#34;</span><span class="p">:</span> <span class="p">[</span>
          <span class="p">{</span>
@@ -1136,7 +1142,7 @@ hugo config | grep emoji
   <div class="tab-content">
     
       <div data-pane="yaml" class="code-copy-content nt3 tab-pane active">
-        <div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">headers</span><span class="p">:</span><span class="w">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">headers</span><span class="p">:</span><span class="w">
 </span><span class="w"></span>- <span class="nt">for</span><span class="p">:</span><span class="w"> </span><span class="l">/**.html</span><span class="w">
 </span><span class="w">  </span><span class="nt">values</span><span class="p">:</span><span class="w">
 </span><span class="w">    </span><span class="nt">Content-Security-Policy</span><span class="p">:</span><span class="w"> </span><span class="l">script-src localhost:1313</span><span class="w">
@@ -1152,14 +1158,16 @@ hugo config | grep emoji
       
     
       <div data-pane="toml" class="code-copy-content nt3 tab-pane ">
-        <div class="highlight"><pre class="chroma"><code class="language-toml" data-lang="toml"><span class="p">[[</span><span class="nx">headers</span><span class="p">]]</span>
-  <span class="nx">for</span> <span class="p">=</span> <span class="s2">&#34;/**.html&#34;</span>
-  <span class="p">[</span><span class="nx">headers</span><span class="p">.</span><span class="nx">values</span><span class="p">]</span>
-    <span class="nx">Content-Security-Policy</span> <span class="p">=</span> <span class="s2">&#34;script-src localhost:1313&#34;</span>
-    <span class="nx">Referrer-Policy</span> <span class="p">=</span> <span class="s2">&#34;strict-origin-when-cross-origin&#34;</span>
-    <span class="nx">X-Content-Type-Options</span> <span class="p">=</span> <span class="s2">&#34;nosniff&#34;</span>
-    <span class="nx">X-Frame-Options</span> <span class="p">=</span> <span class="s2">&#34;DENY&#34;</span>
-    <span class="nx">X-XSS-Protection</span> <span class="p">=</span> <span class="s2">&#34;1; mode=block&#34;</span>
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="p">[[</span><span class="nx">headers</span><span class="p">]]</span>
+<span class="nx">for</span> <span class="p">=</span> <span class="s1">&#39;/**.html&#39;</span>
+<span class="p">[</span><span class="nx">headers</span><span class="p">.</span><span class="nx">values</span><span class="p">]</span>
+<span class="nx">Content-Security-Policy</span> <span class="p">=</span> <span class="s1">&#39;script-src localhost:1313&#39;</span>
+<span class="nx">Referrer-Policy</span> <span class="p">=</span> <span class="s1">&#39;strict-origin-when-cross-origin&#39;</span>
+<span class="nx">X-Content-Type-Options</span> <span class="p">=</span> <span class="s1">&#39;nosniff&#39;</span>
+<span class="nx">X-Frame-Options</span> <span class="p">=</span> <span class="s1">&#39;DENY&#39;</span>
+<span class="nx">X-XSS-Protection</span> <span class="p">=</span> <span class="s1">&#39;1; mode=block&#39;</span>
+
+
 </code></pre></div>
       </div>
       
@@ -1168,7 +1176,7 @@ hugo config | grep emoji
       
     
       <div data-pane="json" class="code-copy-content nt3 tab-pane ">
-        <div class="highlight"><pre class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
    <span class="nt">&#34;headers&#34;</span><span class="p">:</span> <span class="p">[</span>
       <span class="p">{</span>
          <span class="nt">&#34;for&#34;</span><span class="p">:</span> <span class="s2">&#34;/**.html&#34;</span><span class="p">,</span>
@@ -1230,7 +1238,7 @@ hugo config | grep emoji
   <div class="tab-content">
     
       <div data-pane="yaml" class="code-copy-content nt3 tab-pane active">
-        <div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">redirects</span><span class="p">:</span><span class="w">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">redirects</span><span class="p">:</span><span class="w">
 </span><span class="w"></span>- <span class="nt">force</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
 </span><span class="w">  </span><span class="nt">from</span><span class="p">:</span><span class="w"> </span><span class="l">/myspa/**</span><span class="w">
 </span><span class="w">  </span><span class="nt">status</span><span class="p">:</span><span class="w"> </span><span class="m">200</span><span class="w">
@@ -1243,11 +1251,12 @@ hugo config | grep emoji
       
     
       <div data-pane="toml" class="code-copy-content nt3 tab-pane ">
-        <div class="highlight"><pre class="chroma"><code class="language-toml" data-lang="toml"><span class="p">[[</span><span class="nx">redirects</span><span class="p">]]</span>
-  <span class="nx">force</span> <span class="p">=</span> <span class="kc">false</span>
-  <span class="nx">from</span> <span class="p">=</span> <span class="s2">&#34;/myspa/**&#34;</span>
-  <span class="nx">status</span> <span class="p">=</span> <span class="mi">200</span>
-  <span class="nx">to</span> <span class="p">=</span> <span class="s2">&#34;/myspa/&#34;</span>
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="p">[[</span><span class="nx">redirects</span><span class="p">]]</span>
+<span class="nx">force</span> <span class="p">=</span> <span class="kc">false</span>
+<span class="nx">from</span> <span class="p">=</span> <span class="s1">&#39;/myspa/**&#39;</span>
+<span class="nx">status</span> <span class="p">=</span> <span class="mi">200</span>
+<span class="nx">to</span> <span class="p">=</span> <span class="s1">&#39;/myspa/&#39;</span>
+
 </code></pre></div>
       </div>
       
@@ -1256,7 +1265,7 @@ hugo config | grep emoji
       
     
       <div data-pane="json" class="code-copy-content nt3 tab-pane ">
-        <div class="highlight"><pre class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
    <span class="nt">&#34;redirects&#34;</span><span class="p">:</span> <span class="p">[</span>
       <span class="p">{</span>
          <span class="nt">&#34;force&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
@@ -1329,7 +1338,7 @@ hugo config | grep emoji
   <div class="tab-content">
     
       <div data-pane="yaml" class="code-copy-content nt3 tab-pane active">
-        <div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">baseURL</span><span class="p">:</span><span class="w"> </span><span class="l">https://yoursite.example.com/</span><span class="w">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">baseURL</span><span class="p">:</span><span class="w"> </span><span class="l">https://yoursite.example.com/</span><span class="w">
 </span><span class="w"></span><span class="nt">footnoteReturnLinkContents</span><span class="p">:</span><span class="w"> </span><span class="l">↩</span><span class="w">
 </span><span class="w"></span><span class="nt">params</span><span class="p">:</span><span class="w">
 </span><span class="w">  </span><span class="nt">AuthorName</span><span class="p">:</span><span class="w"> </span><span class="l">Jon Doe</span><span class="w">
@@ -1350,19 +1359,19 @@ hugo config | grep emoji
       
     
       <div data-pane="toml" class="code-copy-content nt3 tab-pane ">
-        <div class="highlight"><pre class="chroma"><code class="language-toml" data-lang="toml"><span class="nx">baseURL</span> <span class="p">=</span> <span class="s2">&#34;https://yoursite.example.com/&#34;</span>
-<span class="nx">footnoteReturnLinkContents</span> <span class="p">=</span> <span class="s2">&#34;↩&#34;</span>
-<span class="nx">title</span> <span class="p">=</span> <span class="s2">&#34;My Hugo Site&#34;</span>
-
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="nx">baseURL</span> <span class="p">=</span> <span class="s1">&#39;https://yoursite.example.com/&#39;</span>
+<span class="nx">footnoteReturnLinkContents</span> <span class="p">=</span> <span class="s1">&#39;↩&#39;</span>
+<span class="nx">title</span> <span class="p">=</span> <span class="s1">&#39;My Hugo Site&#39;</span>
 <span class="p">[</span><span class="nx">params</span><span class="p">]</span>
-  <span class="nx">AuthorName</span> <span class="p">=</span> <span class="s2">&#34;Jon Doe&#34;</span>
-  <span class="nx">GitHubUser</span> <span class="p">=</span> <span class="s2">&#34;spf13&#34;</span>
-  <span class="nx">ListOfFoo</span> <span class="p">=</span> <span class="p">[</span><span class="s2">&#34;foo1&#34;</span><span class="p">,</span> <span class="s2">&#34;foo2&#34;</span><span class="p">]</span>
-  <span class="nx">SidebarRecentLimit</span> <span class="p">=</span> <span class="mi">5</span>
-  <span class="nx">Subtitle</span> <span class="p">=</span> <span class="s2">&#34;Hugo is Absurdly Fast!&#34;</span>
+<span class="nx">AuthorName</span> <span class="p">=</span> <span class="s1">&#39;Jon Doe&#39;</span>
+<span class="nx">GitHubUser</span> <span class="p">=</span> <span class="s1">&#39;spf13&#39;</span>
+<span class="nx">ListOfFoo</span> <span class="p">=</span> <span class="p">[</span><span class="s1">&#39;foo1&#39;</span><span class="p">,</span> <span class="s1">&#39;foo2&#39;</span><span class="p">]</span>
+<span class="nx">SidebarRecentLimit</span> <span class="p">=</span> <span class="mi">5</span>
+<span class="nx">Subtitle</span> <span class="p">=</span> <span class="s1">&#39;Hugo is Absurdly Fast!&#39;</span>
 
 <span class="p">[</span><span class="nx">permalinks</span><span class="p">]</span>
-  <span class="nx">posts</span> <span class="p">=</span> <span class="s2">&#34;/:year/:month/:title/&#34;</span>
+<span class="nx">posts</span> <span class="p">=</span> <span class="s1">&#39;/:year/:month/:title/&#39;</span>
+
 </code></pre></div>
       </div>
       
@@ -1371,7 +1380,7 @@ hugo config | grep emoji
       
     
       <div data-pane="json" class="code-copy-content nt3 tab-pane ">
-        <div class="highlight"><pre class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
    <span class="nt">&#34;baseURL&#34;</span><span class="p">:</span> <span class="s2">&#34;https://yoursite.example.com/&#34;</span><span class="p">,</span>
    <span class="nt">&#34;footnoteReturnLinkContents&#34;</span><span class="p">:</span> <span class="s2">&#34;↩&#34;</span><span class="p">,</span>
    <span class="nt">&#34;params&#34;</span><span class="p">:</span> <span class="p">{</span>
@@ -1454,7 +1463,7 @@ hugo config | grep emoji
   <div class="tab-content">
     
       <div data-pane="yaml" class="code-copy-content nt3 tab-pane active">
-        <div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">ignoreFiles</span><span class="p">:</span><span class="w">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">ignoreFiles</span><span class="p">:</span><span class="w">
 </span><span class="w"></span>- <span class="l">\.foo$</span><span class="w">
 </span><span class="w"></span>- <span class="l">\.boo$</span><span class="w">
 </span></code></pre></div>
@@ -1465,7 +1474,7 @@ hugo config | grep emoji
       
     
       <div data-pane="toml" class="code-copy-content nt3 tab-pane ">
-        <div class="highlight"><pre class="chroma"><code class="language-toml" data-lang="toml"><span class="nx">ignoreFiles</span> <span class="p">=</span> <span class="p">[</span><span class="s2">&#34;\\.foo$&#34;</span><span class="p">,</span> <span class="s2">&#34;\\.boo$&#34;</span><span class="p">]</span>
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="nx">ignoreFiles</span> <span class="p">=</span> <span class="p">[</span><span class="s1">&#39;\.foo$&#39;</span><span class="p">,</span> <span class="s1">&#39;\.boo$&#39;</span><span class="p">]</span>
 </code></pre></div>
       </div>
       
@@ -1474,7 +1483,7 @@ hugo config | grep emoji
       
     
       <div data-pane="json" class="code-copy-content nt3 tab-pane ">
-        <div class="highlight"><pre class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
    <span class="nt">&#34;ignoreFiles&#34;</span><span class="p">:</span> <span class="p">[</span>
       <span class="s2">&#34;\\.foo$&#34;</span><span class="p">,</span>
       <span class="s2">&#34;\\.boo$&#34;</span>
@@ -1524,7 +1533,7 @@ hugo config | grep emoji
   <div class="tab-content">
     
       <div data-pane="yaml" class="code-copy-content nt3 tab-pane active">
-        <div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">frontmatter</span><span class="p">:</span><span class="w">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">frontmatter</span><span class="p">:</span><span class="w">
 </span><span class="w">  </span><span class="nt">date</span><span class="p">:</span><span class="w">
 </span><span class="w">  </span>- <span class="l">date</span><span class="w">
 </span><span class="w">  </span>- <span class="l">publishDate</span><span class="w">
@@ -1547,11 +1556,12 @@ hugo config | grep emoji
       
     
       <div data-pane="toml" class="code-copy-content nt3 tab-pane ">
-        <div class="highlight"><pre class="chroma"><code class="language-toml" data-lang="toml"><span class="p">[</span><span class="nx">frontmatter</span><span class="p">]</span>
-  <span class="nx">date</span> <span class="p">=</span> <span class="p">[</span><span class="s2">&#34;date&#34;</span><span class="p">,</span> <span class="s2">&#34;publishDate&#34;</span><span class="p">,</span> <span class="s2">&#34;lastmod&#34;</span><span class="p">]</span>
-  <span class="nx">expiryDate</span> <span class="p">=</span> <span class="p">[</span><span class="s2">&#34;expiryDate&#34;</span><span class="p">]</span>
-  <span class="nx">lastmod</span> <span class="p">=</span> <span class="p">[</span><span class="s2">&#34;:git&#34;</span><span class="p">,</span> <span class="s2">&#34;lastmod&#34;</span><span class="p">,</span> <span class="s2">&#34;date&#34;</span><span class="p">,</span> <span class="s2">&#34;publishDate&#34;</span><span class="p">]</span>
-  <span class="nx">publishDate</span> <span class="p">=</span> <span class="p">[</span><span class="s2">&#34;publishDate&#34;</span><span class="p">,</span> <span class="s2">&#34;date&#34;</span><span class="p">]</span>
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="p">[</span><span class="nx">frontmatter</span><span class="p">]</span>
+<span class="nx">date</span> <span class="p">=</span> <span class="p">[</span><span class="s1">&#39;date&#39;</span><span class="p">,</span> <span class="s1">&#39;publishDate&#39;</span><span class="p">,</span> <span class="s1">&#39;lastmod&#39;</span><span class="p">]</span>
+<span class="nx">expiryDate</span> <span class="p">=</span> <span class="p">[</span><span class="s1">&#39;expiryDate&#39;</span><span class="p">]</span>
+<span class="nx">lastmod</span> <span class="p">=</span> <span class="p">[</span><span class="s1">&#39;:git&#39;</span><span class="p">,</span> <span class="s1">&#39;lastmod&#39;</span><span class="p">,</span> <span class="s1">&#39;date&#39;</span><span class="p">,</span> <span class="s1">&#39;publishDate&#39;</span><span class="p">]</span>
+<span class="nx">publishDate</span> <span class="p">=</span> <span class="p">[</span><span class="s1">&#39;publishDate&#39;</span><span class="p">,</span> <span class="s1">&#39;date&#39;</span><span class="p">]</span>
+
 </code></pre></div>
       </div>
       
@@ -1560,7 +1570,7 @@ hugo config | grep emoji
       
     
       <div data-pane="json" class="code-copy-content nt3 tab-pane ">
-        <div class="highlight"><pre class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
    <span class="nt">&#34;frontmatter&#34;</span><span class="p">:</span> <span class="p">{</span>
       <span class="nt">&#34;date&#34;</span><span class="p">:</span> <span class="p">[</span>
          <span class="s2">&#34;date&#34;</span><span class="p">,</span>
@@ -1623,7 +1633,7 @@ hugo config | grep emoji
   <div class="tab-content">
     
       <div data-pane="yaml" class="code-copy-content nt3 tab-pane active">
-        <div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">frontmatter</span><span class="p">:</span><span class="w">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">frontmatter</span><span class="p">:</span><span class="w">
 </span><span class="w">  </span><span class="nt">date</span><span class="p">:</span><span class="w">
 </span><span class="w">  </span>- <span class="l">myDate</span><span class="w">
 </span><span class="w">  </span>- <span class="p">:</span><span class="l">default</span><span class="w">
@@ -1635,8 +1645,9 @@ hugo config | grep emoji
       
     
       <div data-pane="toml" class="code-copy-content nt3 tab-pane ">
-        <div class="highlight"><pre class="chroma"><code class="language-toml" data-lang="toml"><span class="p">[</span><span class="nx">frontmatter</span><span class="p">]</span>
-  <span class="nx">date</span> <span class="p">=</span> <span class="p">[</span><span class="s2">&#34;myDate&#34;</span><span class="p">,</span> <span class="s2">&#34;:default&#34;</span><span class="p">]</span>
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="p">[</span><span class="nx">frontmatter</span><span class="p">]</span>
+<span class="nx">date</span> <span class="p">=</span> <span class="p">[</span><span class="s1">&#39;myDate&#39;</span><span class="p">,</span> <span class="s1">&#39;:default&#39;</span><span class="p">]</span>
+
 </code></pre></div>
       </div>
       
@@ -1645,7 +1656,7 @@ hugo config | grep emoji
       
     
       <div data-pane="json" class="code-copy-content nt3 tab-pane ">
-        <div class="highlight"><pre class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
    <span class="nt">&#34;frontmatter&#34;</span><span class="p">:</span> <span class="p">{</span>
       <span class="nt">&#34;date&#34;</span><span class="p">:</span> <span class="p">[</span>
          <span class="s2">&#34;myDate&#34;</span><span class="p">,</span>
@@ -1701,7 +1712,7 @@ hugo config | grep emoji
   <div class="tab-content">
     
       <div data-pane="yaml" class="code-copy-content nt3 tab-pane active">
-        <div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">frontmatter</span><span class="p">:</span><span class="w">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">frontmatter</span><span class="p">:</span><span class="w">
 </span><span class="w">  </span><span class="nt">lastmod</span><span class="p">:</span><span class="w">
 </span><span class="w">  </span>- <span class="l">lastmod</span><span class="w">
 </span><span class="w">  </span>- <span class="p">:</span><span class="l">fileModTime</span><span class="w">
@@ -1714,8 +1725,9 @@ hugo config | grep emoji
       
     
       <div data-pane="toml" class="code-copy-content nt3 tab-pane ">
-        <div class="highlight"><pre class="chroma"><code class="language-toml" data-lang="toml"><span class="p">[</span><span class="nx">frontmatter</span><span class="p">]</span>
-  <span class="nx">lastmod</span> <span class="p">=</span> <span class="p">[</span><span class="s2">&#34;lastmod&#34;</span><span class="p">,</span> <span class="s2">&#34;:fileModTime&#34;</span><span class="p">,</span> <span class="s2">&#34;:default&#34;</span><span class="p">]</span>
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="p">[</span><span class="nx">frontmatter</span><span class="p">]</span>
+<span class="nx">lastmod</span> <span class="p">=</span> <span class="p">[</span><span class="s1">&#39;lastmod&#39;</span><span class="p">,</span> <span class="s1">&#39;:fileModTime&#39;</span><span class="p">,</span> <span class="s1">&#39;:default&#39;</span><span class="p">]</span>
+
 </code></pre></div>
       </div>
       
@@ -1724,7 +1736,7 @@ hugo config | grep emoji
       
     
       <div data-pane="json" class="code-copy-content nt3 tab-pane ">
-        <div class="highlight"><pre class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
    <span class="nt">&#34;frontmatter&#34;</span><span class="p">:</span> <span class="p">{</span>
       <span class="nt">&#34;lastmod&#34;</span><span class="p">:</span> <span class="p">[</span>
          <span class="s2">&#34;lastmod&#34;</span><span class="p">,</span>
@@ -1779,7 +1791,7 @@ hugo config | grep emoji
   <div class="tab-content">
     
       <div data-pane="yaml" class="code-copy-content nt3 tab-pane active">
-        <div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">frontmatter</span><span class="p">:</span><span class="w">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">frontmatter</span><span class="p">:</span><span class="w">
 </span><span class="w">  </span><span class="nt">date</span><span class="p">:</span><span class="w">
 </span><span class="w">  </span>- <span class="p">:</span><span class="l">filename</span><span class="w">
 </span><span class="w">  </span>- <span class="p">:</span><span class="l">default</span><span class="w">
@@ -1791,8 +1803,9 @@ hugo config | grep emoji
       
     
       <div data-pane="toml" class="code-copy-content nt3 tab-pane ">
-        <div class="highlight"><pre class="chroma"><code class="language-toml" data-lang="toml"><span class="p">[</span><span class="nx">frontmatter</span><span class="p">]</span>
-  <span class="nx">date</span> <span class="p">=</span> <span class="p">[</span><span class="s2">&#34;:filename&#34;</span><span class="p">,</span> <span class="s2">&#34;:default&#34;</span><span class="p">]</span>
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="p">[</span><span class="nx">frontmatter</span><span class="p">]</span>
+<span class="nx">date</span> <span class="p">=</span> <span class="p">[</span><span class="s1">&#39;:filename&#39;</span><span class="p">,</span> <span class="s1">&#39;:default&#39;</span><span class="p">]</span>
+
 </code></pre></div>
       </div>
       
@@ -1801,7 +1814,7 @@ hugo config | grep emoji
       
     
       <div data-pane="json" class="code-copy-content nt3 tab-pane ">
-        <div class="highlight"><pre class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
    <span class="nt">&#34;frontmatter&#34;</span><span class="p">:</span> <span class="p">{</span>
       <span class="nt">&#34;date&#34;</span><span class="p">:</span> <span class="p">[</span>
          <span class="s2">&#34;:filename&#34;</span><span class="p">,</span>
@@ -1868,7 +1881,7 @@ hugo config | grep emoji
   <div class="tab-content">
     
       <div data-pane="yaml" class="code-copy-content nt3 tab-pane active">
-        <div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">minify</span><span class="p">:</span><span class="w">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">minify</span><span class="p">:</span><span class="w">
 </span><span class="w">  </span><span class="nt">disableCSS</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
 </span><span class="w">  </span><span class="nt">disableHTML</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
 </span><span class="w">  </span><span class="nt">disableJS</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
@@ -1906,36 +1919,44 @@ hugo config | grep emoji
       
     
       <div data-pane="toml" class="code-copy-content nt3 tab-pane ">
-        <div class="highlight"><pre class="chroma"><code class="language-toml" data-lang="toml"><span class="p">[</span><span class="nx">minify</span><span class="p">]</span>
-  <span class="nx">disableCSS</span> <span class="p">=</span> <span class="kc">false</span>
-  <span class="nx">disableHTML</span> <span class="p">=</span> <span class="kc">false</span>
-  <span class="nx">disableJS</span> <span class="p">=</span> <span class="kc">false</span>
-  <span class="nx">disableJSON</span> <span class="p">=</span> <span class="kc">false</span>
-  <span class="nx">disableSVG</span> <span class="p">=</span> <span class="kc">false</span>
-  <span class="nx">disableXML</span> <span class="p">=</span> <span class="kc">false</span>
-  <span class="nx">minifyOutput</span> <span class="p">=</span> <span class="kc">false</span>
-  <span class="p">[</span><span class="nx">minify</span><span class="p">.</span><span class="nx">tdewolff</span><span class="p">]</span>
-    <span class="p">[</span><span class="nx">minify</span><span class="p">.</span><span class="nx">tdewolff</span><span class="p">.</span><span class="nx">css</span><span class="p">]</span>
-      <span class="nx">keepCSS2</span> <span class="p">=</span> <span class="kc">true</span>
-      <span class="nx">precision</span> <span class="p">=</span> <span class="mi">0</span>
-    <span class="p">[</span><span class="nx">minify</span><span class="p">.</span><span class="nx">tdewolff</span><span class="p">.</span><span class="nx">html</span><span class="p">]</span>
-      <span class="nx">keepComments</span> <span class="p">=</span> <span class="kc">false</span>
-      <span class="nx">keepConditionalComments</span> <span class="p">=</span> <span class="kc">true</span>
-      <span class="nx">keepDefaultAttrVals</span> <span class="p">=</span> <span class="kc">true</span>
-      <span class="nx">keepDocumentTags</span> <span class="p">=</span> <span class="kc">true</span>
-      <span class="nx">keepEndTags</span> <span class="p">=</span> <span class="kc">true</span>
-      <span class="nx">keepQuotes</span> <span class="p">=</span> <span class="kc">false</span>
-      <span class="nx">keepWhitespace</span> <span class="p">=</span> <span class="kc">true</span>
-    <span class="p">[</span><span class="nx">minify</span><span class="p">.</span><span class="nx">tdewolff</span><span class="p">.</span><span class="nx">js</span><span class="p">]</span>
-      <span class="nx">keepVarNames</span> <span class="p">=</span> <span class="kc">false</span>
-      <span class="nx">precision</span> <span class="p">=</span> <span class="mi">0</span>
-    <span class="p">[</span><span class="nx">minify</span><span class="p">.</span><span class="nx">tdewolff</span><span class="p">.</span><span class="nx">json</span><span class="p">]</span>
-      <span class="nx">keepNumbers</span> <span class="p">=</span> <span class="kc">false</span>
-      <span class="nx">precision</span> <span class="p">=</span> <span class="mi">0</span>
-    <span class="p">[</span><span class="nx">minify</span><span class="p">.</span><span class="nx">tdewolff</span><span class="p">.</span><span class="nx">svg</span><span class="p">]</span>
-      <span class="nx">precision</span> <span class="p">=</span> <span class="mi">0</span>
-    <span class="p">[</span><span class="nx">minify</span><span class="p">.</span><span class="nx">tdewolff</span><span class="p">.</span><span class="nx">xml</span><span class="p">]</span>
-      <span class="nx">keepWhitespace</span> <span class="p">=</span> <span class="kc">false</span>
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="p">[</span><span class="nx">minify</span><span class="p">]</span>
+<span class="nx">disableCSS</span> <span class="p">=</span> <span class="kc">false</span>
+<span class="nx">disableHTML</span> <span class="p">=</span> <span class="kc">false</span>
+<span class="nx">disableJS</span> <span class="p">=</span> <span class="kc">false</span>
+<span class="nx">disableJSON</span> <span class="p">=</span> <span class="kc">false</span>
+<span class="nx">disableSVG</span> <span class="p">=</span> <span class="kc">false</span>
+<span class="nx">disableXML</span> <span class="p">=</span> <span class="kc">false</span>
+<span class="nx">minifyOutput</span> <span class="p">=</span> <span class="kc">false</span>
+<span class="p">[</span><span class="nx">minify</span><span class="p">.</span><span class="nx">tdewolff</span><span class="p">]</span>
+<span class="p">[</span><span class="nx">minify</span><span class="p">.</span><span class="nx">tdewolff</span><span class="p">.</span><span class="nx">css</span><span class="p">]</span>
+<span class="nx">keepCSS2</span> <span class="p">=</span> <span class="kc">true</span>
+<span class="nx">precision</span> <span class="p">=</span> <span class="mi">0</span>
+
+<span class="p">[</span><span class="nx">minify</span><span class="p">.</span><span class="nx">tdewolff</span><span class="p">.</span><span class="nx">html</span><span class="p">]</span>
+<span class="nx">keepComments</span> <span class="p">=</span> <span class="kc">false</span>
+<span class="nx">keepConditionalComments</span> <span class="p">=</span> <span class="kc">true</span>
+<span class="nx">keepDefaultAttrVals</span> <span class="p">=</span> <span class="kc">true</span>
+<span class="nx">keepDocumentTags</span> <span class="p">=</span> <span class="kc">true</span>
+<span class="nx">keepEndTags</span> <span class="p">=</span> <span class="kc">true</span>
+<span class="nx">keepQuotes</span> <span class="p">=</span> <span class="kc">false</span>
+<span class="nx">keepWhitespace</span> <span class="p">=</span> <span class="kc">true</span>
+
+<span class="p">[</span><span class="nx">minify</span><span class="p">.</span><span class="nx">tdewolff</span><span class="p">.</span><span class="nx">js</span><span class="p">]</span>
+<span class="nx">keepVarNames</span> <span class="p">=</span> <span class="kc">false</span>
+<span class="nx">precision</span> <span class="p">=</span> <span class="mi">0</span>
+
+<span class="p">[</span><span class="nx">minify</span><span class="p">.</span><span class="nx">tdewolff</span><span class="p">.</span><span class="nx">json</span><span class="p">]</span>
+<span class="nx">keepNumbers</span> <span class="p">=</span> <span class="kc">false</span>
+<span class="nx">precision</span> <span class="p">=</span> <span class="mi">0</span>
+
+<span class="p">[</span><span class="nx">minify</span><span class="p">.</span><span class="nx">tdewolff</span><span class="p">.</span><span class="nx">svg</span><span class="p">]</span>
+<span class="nx">precision</span> <span class="p">=</span> <span class="mi">0</span>
+
+<span class="p">[</span><span class="nx">minify</span><span class="p">.</span><span class="nx">tdewolff</span><span class="p">.</span><span class="nx">xml</span><span class="p">]</span>
+<span class="nx">keepWhitespace</span> <span class="p">=</span> <span class="kc">false</span>
+
+
+
 </code></pre></div>
       </div>
       
@@ -1944,7 +1965,7 @@ hugo config | grep emoji
       
     
       <div data-pane="json" class="code-copy-content nt3 tab-pane ">
-        <div class="highlight"><pre class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
    <span class="nt">&#34;minify&#34;</span><span class="p">:</span> <span class="p">{</span>
       <span class="nt">&#34;disableCSS&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
       <span class="nt">&#34;disableHTML&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
@@ -2024,7 +2045,7 @@ hugo config | grep emoji
   <div class="tab-content">
     
       <div data-pane="yaml" class="code-copy-content nt3 tab-pane active">
-        <div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">caches</span><span class="p">:</span><span class="w">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">caches</span><span class="p">:</span><span class="w">
 </span><span class="w">  </span><span class="nt">assets</span><span class="p">:</span><span class="w">
 </span><span class="w">    </span><span class="nt">dir</span><span class="p">:</span><span class="w"> </span><span class="p">:</span><span class="l">resourceDir/_gen</span><span class="w">
 </span><span class="w">    </span><span class="nt">maxAge</span><span class="p">:</span><span class="w"> </span>-<span class="m">1</span><span class="w">
@@ -2048,22 +2069,28 @@ hugo config | grep emoji
       
     
       <div data-pane="toml" class="code-copy-content nt3 tab-pane ">
-        <div class="highlight"><pre class="chroma"><code class="language-toml" data-lang="toml"><span class="p">[</span><span class="nx">caches</span><span class="p">]</span>
-  <span class="p">[</span><span class="nx">caches</span><span class="p">.</span><span class="nx">assets</span><span class="p">]</span>
-    <span class="nx">dir</span> <span class="p">=</span> <span class="s2">&#34;:resourceDir/_gen&#34;</span>
-    <span class="nx">maxAge</span> <span class="p">=</span> <span class="mi">-1</span>
-  <span class="p">[</span><span class="nx">caches</span><span class="p">.</span><span class="nx">getcsv</span><span class="p">]</span>
-    <span class="nx">dir</span> <span class="p">=</span> <span class="s2">&#34;:cacheDir/:project&#34;</span>
-    <span class="nx">maxAge</span> <span class="p">=</span> <span class="mi">-1</span>
-  <span class="p">[</span><span class="nx">caches</span><span class="p">.</span><span class="nx">getjson</span><span class="p">]</span>
-    <span class="nx">dir</span> <span class="p">=</span> <span class="s2">&#34;:cacheDir/:project&#34;</span>
-    <span class="nx">maxAge</span> <span class="p">=</span> <span class="mi">-1</span>
-  <span class="p">[</span><span class="nx">caches</span><span class="p">.</span><span class="nx">images</span><span class="p">]</span>
-    <span class="nx">dir</span> <span class="p">=</span> <span class="s2">&#34;:resourceDir/_gen&#34;</span>
-    <span class="nx">maxAge</span> <span class="p">=</span> <span class="mi">-1</span>
-  <span class="p">[</span><span class="nx">caches</span><span class="p">.</span><span class="nx">modules</span><span class="p">]</span>
-    <span class="nx">dir</span> <span class="p">=</span> <span class="s2">&#34;:cacheDir/modules&#34;</span>
-    <span class="nx">maxAge</span> <span class="p">=</span> <span class="mi">-1</span>
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="p">[</span><span class="nx">caches</span><span class="p">]</span>
+<span class="p">[</span><span class="nx">caches</span><span class="p">.</span><span class="nx">assets</span><span class="p">]</span>
+<span class="nx">dir</span> <span class="p">=</span> <span class="s1">&#39;:resourceDir/_gen&#39;</span>
+<span class="nx">maxAge</span> <span class="p">=</span> <span class="mi">-1</span>
+
+<span class="p">[</span><span class="nx">caches</span><span class="p">.</span><span class="nx">getcsv</span><span class="p">]</span>
+<span class="nx">dir</span> <span class="p">=</span> <span class="s1">&#39;:cacheDir/:project&#39;</span>
+<span class="nx">maxAge</span> <span class="p">=</span> <span class="mi">-1</span>
+
+<span class="p">[</span><span class="nx">caches</span><span class="p">.</span><span class="nx">getjson</span><span class="p">]</span>
+<span class="nx">dir</span> <span class="p">=</span> <span class="s1">&#39;:cacheDir/:project&#39;</span>
+<span class="nx">maxAge</span> <span class="p">=</span> <span class="mi">-1</span>
+
+<span class="p">[</span><span class="nx">caches</span><span class="p">.</span><span class="nx">images</span><span class="p">]</span>
+<span class="nx">dir</span> <span class="p">=</span> <span class="s1">&#39;:resourceDir/_gen&#39;</span>
+<span class="nx">maxAge</span> <span class="p">=</span> <span class="mi">-1</span>
+
+<span class="p">[</span><span class="nx">caches</span><span class="p">.</span><span class="nx">modules</span><span class="p">]</span>
+<span class="nx">dir</span> <span class="p">=</span> <span class="s1">&#39;:cacheDir/modules&#39;</span>
+<span class="nx">maxAge</span> <span class="p">=</span> <span class="mi">-1</span>
+
+
 </code></pre></div>
       </div>
       
@@ -2072,7 +2099,7 @@ hugo config | grep emoji
       
     
       <div data-pane="json" class="code-copy-content nt3 tab-pane ">
-        <div class="highlight"><pre class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
    <span class="nt">&#34;caches&#34;</span><span class="p">:</span> <span class="p">{</span>
       <span class="nt">&#34;assets&#34;</span><span class="p">:</span> <span class="p">{</span>
          <span class="nt">&#34;dir&#34;</span><span class="p">:</span> <span class="s2">&#34;:resourceDir/_gen&#34;</span><span class="p">,</span>
@@ -2139,8 +2166,6 @@ hugo config | grep emoji
 	
 	<li><a href="/getting-started/configuration-markup/">Configure Markup</a></li>
 	
-	<li><a href="/functions/jsonify/">jsonify</a></li>
-	
 </ul>
 
         </div>
@@ -2156,44 +2181,24 @@ hugo config | grep emoji
         <ul class="about desktopmenu animated fadeIn list pl0 bg-light-gray dn">
           <li class="f6 fw4">
             <a href="/about/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Overview
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/about/security-model/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Hugo&#39;s Security Model
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/about/hugo-and-gdpr/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Hugo and GDPR
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/about/what-is-hugo/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              What is Hugo
+              简介
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/about/features/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Hugo Features
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/about/benefits/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              The Benefits of Static
+              特点
             </a>
           </li>
           <li class="f6 fw4">
             <a href="/about/license/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              License
+              开源协议
             </a>
           </li>
         </ul>
       </li>
       
       <li class="f5 w-100 hover-bg-light-gray hover-accent-color-light fw8">
-        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2  primary-color" data-target=".getting-started">Getting Started</a>
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2  primary-color" data-target=".getting-started">重力学入门</a>
         <ul class="getting-started desktopmenu animated fadeIn list pl0 bg-light-gray db">
           <li class="f6 fw4">
             <a href="/getting-started/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
@@ -2216,11 +2221,6 @@ hugo config | grep emoji
             </a>
           </li>
           <li class="f6 fw4">
-            <a href="/getting-started/directory-structure/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Directory Structure
-            </a>
-          </li>
-          <li class="f6 fw4">
             <a href="/getting-started/configuration/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 primary-color ">
               Configuration
             </a>
@@ -2234,25 +2234,25 @@ hugo config | grep emoji
       </li>
       
       <li class="f5 w-100 hover-bg-light-gray hover-accent-color-light fw8 mb1 bb b--moon-gray">
-        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".modules">Hugo Modules</a>
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".modules">重力软件教程</a>
         <ul class="modules desktopmenu animated fadeIn list pl0 bg-light-gray dn">
           <li class="f6 fw4">
-            <a href="/hugo-modules/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+            <a href="/gravity-manual/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
               Hugo Modules Overview
             </a>
           </li>
           <li class="f6 fw4">
-            <a href="/hugo-modules/configuration/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+            <a href="/gravity-manual/configuration/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
               Configure Modules
             </a>
           </li>
           <li class="f6 fw4">
-            <a href="/hugo-modules/use-modules/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+            <a href="/gravity-manual/use-modules/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
               Use Hugo Modules
             </a>
           </li>
           <li class="f6 fw4">
-            <a href="/hugo-modules/theme-components/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+            <a href="/gravity-manual/theme-components/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
               Theme Components
             </a>
           </li>
@@ -2260,724 +2260,60 @@ hugo config | grep emoji
       </li>
       
       <li class="f5 w-100 hover-bg-light-gray hover-accent-color-light fw8">
-        <a href="/content-management/" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".content-management">Content Management</a>
-      </li>
-      
-      <li class="f5 w-100 hover-bg-light-gray hover-accent-color-light fw8">
-        <a href="/templates/" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".templates">Templates</a>
-      </li>
-      
-      <li class="f5 w-100 hover-bg-light-gray hover-accent-color-light fw8">
-        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".functions">Functions</a>
-        <ul class="functions desktopmenu animated fadeIn list pl0 bg-light-gray dn">
-          <li class="f6 fw4">
-            <a href="/functions/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Functions Quick Reference
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/functions/adddate/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              .AddDate
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/functions/format/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              .Format
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/functions/get/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              .Get
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/functions/getpage/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              .GetPage
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/functions/hasmenucurrent/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              .HasMenuCurrent
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/functions/ismenucurrent/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              .IsMenuCurrent
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/functions/param/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              .Param
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/functions/render/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              .Render
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/functions/renderstring/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              .RenderString
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/functions/scratch/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              .Scratch
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/functions/unix/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              .Unix
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/functions/abslangurl/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              absLangURL
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/functions/absurl/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              absURL
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/functions/after/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              after
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/functions/anchorize/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              anchorize
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/functions/append/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              append
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/functions/apply/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              apply
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/functions/base64/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              base64
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/functions/chomp/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              chomp
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/functions/complement/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              complement
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/functions/cond/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              cond
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/functions/countrunes/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              countrunes
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/functions/countwords/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              countwords
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/functions/default/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              default
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/functions/delimit/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              delimit
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/functions/dict/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              dict
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/functions/echoparam/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              echoParam
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/functions/emojify/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              emojify
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/functions/eq/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              eq
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/functions/errorf/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              errorf and warnf
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/functions/fileexists/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              fileExists
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/functions/findre/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              findRE
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/functions/first/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              first
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/functions/float/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              float
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/functions/ge/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              ge
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/functions/getenv/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              getenv
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/functions/group/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              group
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/functions/gt/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              gt
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/functions/hasprefix/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              hasPrefix
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/functions/highlight/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              highlight
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/functions/hmac/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              hmac
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/functions/htmlescape/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              htmlEscape
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/functions/htmlunescape/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              htmlUnescape
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/functions/hugo/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              hugo
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/functions/humanize/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              humanize
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/functions/i18n/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              i18n
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/functions/images/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Image Functions
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/functions/in/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              in
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/functions/index-function/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              index
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/functions/int/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              int
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/functions/intersect/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              intersect
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/functions/isset/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              isset
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/functions/jsonify/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              jsonify
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/functions/lang/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              lang
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/functions/lang.merge/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              lang.Merge
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/functions/last/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              last
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/functions/le/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              le
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/functions/len/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              len
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/functions/lower/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              lower
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/functions/lt/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              lt
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/functions/markdownify/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              markdownify
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/functions/math/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Math
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/functions/md5/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              md5
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/functions/merge/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              merge
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/functions/ne/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              ne
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/functions/now/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              now
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/functions/os.stat/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              os.Stat
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/functions/partialcached/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              partialCached
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/functions/path.base/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              path.Base
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/functions/path.dir/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              path.Dir
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/functions/path.ext/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              path.Ext
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/functions/path.join/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              path.Join
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/functions/path.split/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              path.Split
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/functions/plainify/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              plainify
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/functions/pluralize/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              pluralize
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/functions/print/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              print
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/functions/printf/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              printf
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/functions/println/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              println
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/functions/querify/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              querify
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/functions/range/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              range
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/functions/readdir/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              readDir
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/functions/readfile/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              readFile
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/functions/ref/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              ref
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/functions/reflect.ismap/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              reflect.IsMap
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/functions/reflect.isslice/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              reflect.IsSlice
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/functions/rellangurl/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              relLangURL
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/functions/relref/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              relref
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/functions/relurl/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              relURL
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/functions/replace/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              replace
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/functions/replacere/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              replaceRE
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/functions/safecss/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              safeCSS
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/functions/safehtml/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              safeHTML
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/functions/safehtmlattr/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              safeHTMLAttr
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/functions/safejs/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              safeJS
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/functions/safeurl/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              safeURL
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/functions/seq/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              seq
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/functions/sha/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              sha
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/functions/shuffle/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              shuffle
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/functions/singularize/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              singularize
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/functions/site/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              site
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/functions/slice/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              slice
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/functions/slicestr/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              slicestr
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/functions/sort/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              sort
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/functions/split/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              split
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/functions/string/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              string
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/functions/strings.count/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              strings.Count
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/functions/strings.hassuffix/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              strings.HasSuffix
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/functions/strings.repeat/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              strings.Repeat
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/functions/strings.runecount/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              strings.RuneCount
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/functions/strings.trimleft/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              strings.TrimLeft
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/functions/strings.trimprefix/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              strings.TrimPrefix
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/functions/strings.trimright/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              strings.TrimRight
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/functions/strings.trimsuffix/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              strings.TrimSuffix
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/functions/substr/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              substr
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/functions/symdiff/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              symdiff
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/functions/templates.exists/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              templates.Exists
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/functions/time/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              time
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/functions/dateformat/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              time.Format
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/functions/title/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              title
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/functions/transform.unmarshal/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              transform.Unmarshal
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/functions/trim/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              trim
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/functions/truncate/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              truncate
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/functions/union/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              union
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/functions/uniq/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              uniq
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/functions/upper/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              upper
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/functions/urlize/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              urlize
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/functions/urls.parse/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              urls.Parse
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/functions/where/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              where
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/functions/with/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              with
-            </a>
-          </li>
-        </ul>
-      </li>
-      
-      <li class="f5 w-100 hover-bg-light-gray hover-accent-color-light fw8">
-        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".variables">Variables</a>
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".variables">重力数据处理教程</a>
         <ul class="variables desktopmenu animated fadeIn list pl0 bg-light-gray dn">
           <li class="f6 fw4">
-            <a href="/variables/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+            <a href="/gravitydata/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
               Variables Overview
             </a>
           </li>
           <li class="f6 fw4">
-            <a href="/variables/site/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+            <a href="/gravitydata/site/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
               Site Variables
             </a>
           </li>
           <li class="f6 fw4">
-            <a href="/variables/page/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+            <a href="/gravitydata/page/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
               Page Variables
             </a>
           </li>
           <li class="f6 fw4">
-            <a href="/variables/shortcodes/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+            <a href="/gravitydata/shortcodes/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
               Shortcode Variables
             </a>
           </li>
           <li class="f6 fw4">
-            <a href="/variables/pages/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+            <a href="/gravitydata/pages/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
               Pages Methods
             </a>
           </li>
           <li class="f6 fw4">
-            <a href="/variables/taxonomy/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+            <a href="/gravitydata/taxonomy/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
               Taxonomy Variables
             </a>
           </li>
           <li class="f6 fw4">
-            <a href="/variables/files/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+            <a href="/gravitydata/files/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
               File Variables
             </a>
           </li>
           <li class="f6 fw4">
-            <a href="/variables/menus/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+            <a href="/gravitydata/menus/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
               Menu Entry Properties
             </a>
           </li>
           <li class="f6 fw4">
-            <a href="/variables/hugo/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+            <a href="/gravitydata/hugo/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
               Hugo Variables
             </a>
           </li>
           <li class="f6 fw4">
-            <a href="/variables/git/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+            <a href="/gravitydata/git/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
               Git Variables
             </a>
           </li>
           <li class="f6 fw4">
-            <a href="/variables/sitemap/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+            <a href="/gravitydata/sitemap/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
               Sitemap Variables
             </a>
           </li>
@@ -2985,93 +2321,73 @@ hugo config | grep emoji
       </li>
       
       <li class="f5 w-100 hover-bg-light-gray hover-accent-color-light fw8">
-        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".pipes">Hugo Pipes</a>
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".pipes">重力开源软件开发</a>
         <ul class="pipes desktopmenu animated fadeIn list pl0 bg-light-gray dn">
           <li class="f6 fw4">
-            <a href="/hugo-pipes/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+            <a href="/gravity-software/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
               Hugo Pipes Overview
             </a>
           </li>
           <li class="f6 fw4">
-            <a href="/hugo-pipes/introduction/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+            <a href="/gravity-software/introduction/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
               Hugo Pipes Introduction
             </a>
           </li>
           <li class="f6 fw4">
-            <a href="/hugo-pipes/scss-sass/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+            <a href="/gravity-software/scss-sass/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
               SASS / SCSS
             </a>
           </li>
           <li class="f6 fw4">
-            <a href="/hugo-pipes/postprocess/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+            <a href="/gravity-software/postprocess/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
               PostProcess
             </a>
           </li>
           <li class="f6 fw4">
-            <a href="/hugo-pipes/postcss/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+            <a href="/gravity-software/postcss/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
               PostCSS
             </a>
           </li>
           <li class="f6 fw4">
-            <a href="/hugo-pipes/js/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+            <a href="/gravity-software/js/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
               JavaScript Building
             </a>
           </li>
           <li class="f6 fw4">
-            <a href="/hugo-pipes/babel/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+            <a href="/gravity-software/babel/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
               Babel
             </a>
           </li>
           <li class="f6 fw4">
-            <a href="/hugo-pipes/minification/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+            <a href="/gravity-software/minification/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
               Asset minification
             </a>
           </li>
           <li class="f6 fw4">
-            <a href="/hugo-pipes/bundling/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+            <a href="/gravity-software/bundling/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
               Asset bundling
             </a>
           </li>
           <li class="f6 fw4">
-            <a href="/hugo-pipes/fingerprint/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+            <a href="/gravity-software/fingerprint/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
               Fingerprinting and SRI
             </a>
           </li>
           <li class="f6 fw4">
-            <a href="/hugo-pipes/resource-from-template/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+            <a href="/gravity-software/resource-from-template/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
               Resource from Template
             </a>
           </li>
           <li class="f6 fw4">
-            <a href="/hugo-pipes/resource-from-string/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+            <a href="/gravity-software/resource-from-string/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
               Resource from String
             </a>
           </li>
         </ul>
       </li>
       
-      <li class="f5 w-100 hover-bg-light-gray hover-accent-color-light fw8 mb1 bb b--moon-gray">
-        <a href="/commands/" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".commands">CLI</a>
-      </li>
-      
       <li class="f5 w-100 hover-bg-light-gray hover-accent-color-light fw8">
-        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".troubleshooting">Troubleshooting</a>
-        <ul class="troubleshooting desktopmenu animated fadeIn list pl0 bg-light-gray dn">
-          <li class="f6 fw4">
-            <a href="/troubleshooting/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Troubleshoot
-            </a>
-          </li>
-          <li class="f6 fw4">
-            <a href="/troubleshooting/build-performance/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
-              Build Performance
-            </a>
-          </li>
-        </ul>
-      </li>
-      
-      <li class="f5 w-100 hover-bg-light-gray hover-accent-color-light fw8">
-        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".tools">Tools</a>
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".tools">重力项目展示</a>
         <ul class="tools desktopmenu animated fadeIn list pl0 bg-light-gray dn">
           <li class="f6 fw4">
             <a href="/tools/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
@@ -3112,70 +2428,70 @@ hugo config | grep emoji
       </li>
       
       <li class="f5 w-100 hover-bg-light-gray hover-accent-color-light fw8">
-        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".hosting-and-deployment">Hosting &amp; Deployment</a>
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".hosting-and-deployment">编程教程</a>
         <ul class="hosting-and-deployment desktopmenu animated fadeIn list pl0 bg-light-gray dn">
           <li class="f6 fw4">
-            <a href="/hosting-and-deployment/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+            <a href="/coding/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
               Hosting &amp; Deployment Overview
             </a>
           </li>
           <li class="f6 fw4">
-            <a href="/hosting-and-deployment/hugo-deploy/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+            <a href="/coding/hugo-deploy/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
               Hugo Deploy
             </a>
           </li>
           <li class="f6 fw4">
-            <a href="/hosting-and-deployment/deployment-with-nanobox/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+            <a href="/coding/deployment-with-nanobox/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
               Host-Agnostic Deploys with Nanobox
             </a>
           </li>
           <li class="f6 fw4">
-            <a href="/hosting-and-deployment/hosting-on-aws-amplify/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+            <a href="/coding/hosting-on-aws-amplify/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
               Host on AWS Amplify
             </a>
           </li>
           <li class="f6 fw4">
-            <a href="/hosting-and-deployment/hosting-on-netlify/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+            <a href="/coding/hosting-on-netlify/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
               Host on Netlify
             </a>
           </li>
           <li class="f6 fw4">
-            <a href="/hosting-and-deployment/hosting-on-render/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+            <a href="/coding/hosting-on-render/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
               Host on Render
             </a>
           </li>
           <li class="f6 fw4">
-            <a href="/hosting-and-deployment/hosting-on-firebase/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+            <a href="/coding/hosting-on-firebase/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
               Host on Firebase
             </a>
           </li>
           <li class="f6 fw4">
-            <a href="/hosting-and-deployment/hosting-on-github/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+            <a href="/coding/hosting-on-github/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
               Host on GitHub
             </a>
           </li>
           <li class="f6 fw4">
-            <a href="/hosting-and-deployment/hosting-on-gitlab/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+            <a href="/coding/hosting-on-gitlab/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
               Host on GitLab
             </a>
           </li>
           <li class="f6 fw4">
-            <a href="/hosting-and-deployment/hosting-on-keycdn/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+            <a href="/coding/hosting-on-keycdn/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
               Hosting on KeyCDN
             </a>
           </li>
           <li class="f6 fw4">
-            <a href="/hosting-and-deployment/hosting-on-bitbucket/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+            <a href="/coding/hosting-on-bitbucket/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
               Host on Bitbucket
             </a>
           </li>
           <li class="f6 fw4">
-            <a href="/hosting-and-deployment/deployment-with-wercker/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+            <a href="/coding/deployment-with-wercker/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
               Deployment with Wercker
             </a>
           </li>
           <li class="f6 fw4">
-            <a href="/hosting-and-deployment/deployment-with-rsync/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+            <a href="/coding/deployment-with-rsync/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
               Deployment with Rsync
             </a>
           </li>
@@ -3183,7 +2499,7 @@ hugo config | grep emoji
       </li>
       
       <li class="f5 w-100 hover-bg-light-gray hover-accent-color-light fw8 mb1 bb b--moon-gray">
-        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".contribute">Contribute</a>
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".contribute">贡献指南</a>
         <ul class="contribute desktopmenu animated fadeIn list pl0 bg-light-gray dn">
           <li class="f6 fw4">
             <a href="/contribute/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
@@ -3211,6 +2527,10 @@ hugo config | grep emoji
       <li class="f5 w-100 hover-bg-light-gray hover-accent-color-light fw8">
         <a href="/maintenance/" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".">Maintenance</a>
       </li>
+      
+      <li class="f5 w-100 hover-bg-light-gray hover-accent-color-light fw8">
+        <a href="" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target="."></a>
+      </li>
   </ul>
 </nav>
 
@@ -3226,10 +2546,10 @@ hugo config | grep emoji
   <span class="nl3 child"><svg class="grow" fill="" height="14px" viewBox="0 0 24 24" width="14px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg>
 </span>
     “Configure Hugo”
-  </a> was last updated: August 13, 2021: <a class="hide-child link primary-color" href="https://github.com/gohugoio/hugoDocs/commit/675299e5580f46886a1b39c571db992a3336bb8c">try hugo templete (675299e)</a>
+  </a> was last updated: August 13, 2021: <a class="hide-child link primary-color" href="https://github.com/Gravity-Geodesy-China-Community/Gravity-Geodesy-China-Community.github.iocommit/675299e5580f46886a1b39c571db992a3336bb8c">try hugo templete (675299e)</a>
 </h6>
 
-      <a href="https://github.com/gohugoio/hugoDocs/edit/master/content/en/getting-started/configuration.md" class="
+      <a href="https://github.com/Gravity-Geodesy-China-Community/Gravity-Geodesy-China-Community.github.ioedit/master/content/en/getting-started%5cconfiguration.md" class="
 f6 ph3 pv1 br2 dib  tc ttu mv3 bg-primary-color white hover-bg-green link
 ">Improve this page</a>
 
@@ -3253,7 +2573,7 @@ f6 ph3 pv1 br2 dib  tc ttu mv3 bg-primary-color white hover-bg-green link
             <img src="/images/hugo-logo-wide.svg" alt="Hugo Logo">
           </div>
 
-          <ul class="center f6 list ma0 mv3 pa0 tc"><li class="dib mr3"><a href="https://github.com/gohugoio/hugo/issues/new" class="dim link light-gray pv2">File an Issue</a></li><li class="dib mr3"><a href="https://discourse.gohugo.io/" class="dim link light-gray pv2">Get Help</a></li><li class="dib"><a href="https://gitter.im/spf13/hugo" class="dim link light-gray pv2">Discuss Source Code</a></li></ul>
+          <ul class="center f6 list ma0 mv3 pa0 tc"><li class="dib mr3"><a href="https://github.com/Gravity-Geodesy-China-Community/Gravity-Geodesy-China-Community.github.io/issues/new" class="dim link light-gray pv2">File an Issue</a></li></ul>
 
           <ul class="center f6 list ma0 mv4 pa0 tc">
             <li class="dib mr3"><a href="https://twitter.com/gohugoio" class="dim link light-gray pv2">@GoHugoIO</a></li>
@@ -3336,36 +2656,36 @@ f6 ph3 pv1 br2 dib  tc ttu mv3 bg-primary-color white hover-bg-green link
   
     <li  class="tl dib ma0 hover-bg-black w-100">
         <a href="/news/" class="ttu f6 link primary-color-light overflow hover-white db brand-font  ma0 w-100 pv3 ph4">
-          News
+          新闻
         </a>
     </li>
   
     <li  class="tl dib ma0 hover-bg-black w-100">
         <a href="/documentation/" class="ttu f6 link primary-color-light overflow hover-white db brand-font  ma0 w-100 pv3 ph4">
-          Docs
+          文档
         </a>
     </li>
   
     <li  class="tl dib ma0 hover-bg-black w-100">
-        <a href="https://themes.gohugo.io/" class="ttu f6 link primary-color-light overflow hover-white db brand-font  ma0 w-100 pv3 ph4">
-          Themes
+        <a href="/about/" class="ttu f6 link primary-color-light overflow hover-white db brand-font  ma0 w-100 pv3 ph4">
+          关于我们
         </a>
     </li>
   
     <li  class="tl dib ma0 hover-bg-black w-100">
-        <a href="/showcase/" class="ttu f6 link primary-color-light overflow hover-white db brand-font  ma0 w-100 pv3 ph4">
-          Showcase
+        <a href="/gravity-projects/" class="ttu f6 link primary-color-light overflow hover-white db brand-font  ma0 w-100 pv3 ph4">
+          研究案例
         </a>
     </li>
   
     <li  class="tl dib ma0 hover-bg-black w-100">
-        <a href="https://discourse.gohugo.io/" class="ttu f6 link primary-color-light overflow hover-white db brand-font  ma0 w-100 pv3 ph4">
-          Community
+        <a href="https://discourse.gravitychina.ga/" class="ttu f6 link primary-color-light overflow hover-white db brand-font  ma0 w-100 pv3 ph4">
+          重力论坛
         </a>
     </li>
   
     <li  class="tl dib ma0 hover-bg-black w-100">
-        <a href="https://github.com/gohugoio/hugo" class="ttu f6 link primary-color-light overflow hover-white db brand-font  ma0 w-100 pv3 ph4">
+        <a href="https://github.com/Gravity-Geodesy-China-Community" class="ttu f6 link primary-color-light overflow hover-white db brand-font  ma0 w-100 pv3 ph4">
           GitHub
         </a>
     </li>
@@ -3386,79 +2706,55 @@ f6 ph3 pv1 br2 dib  tc ttu mv3 bg-primary-color white hover-bg-green link
   
     <li  class="tl dib ma0 hover-bg-black w-100">
         <a href="/getting-started/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
-          Getting Started
+          重力学入门
         </a>
     </li>
   
     <li  class="tl dib ma0 hover-bg-black w-100 mb2 bb b--mid-gray">
-        <a href="/hugo-modules/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
-          Hugo Modules
+        <a href="/gravity-manual/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
+          重力软件教程
         </a>
     </li>
   
     <li  class="tl dib ma0 hover-bg-black w-100">
-        <a href="/content-management/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
-          Content Management
+        <a href="/gravitydata/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
+          重力数据处理教程
         </a>
     </li>
   
     <li  class="tl dib ma0 hover-bg-black w-100">
-        <a href="/templates/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
-          Templates
+        <a href="/gravity-software/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
+          重力开源软件开发
         </a>
     </li>
   
     <li  class="tl dib ma0 hover-bg-black w-100">
-        <a href="/functions/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
-          Functions
+        <a href="/gravity-projects/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
+          重力项目展示
         </a>
     </li>
   
     <li  class="tl dib ma0 hover-bg-black w-100">
-        <a href="/variables/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
-          Variables
-        </a>
-    </li>
-  
-    <li  class="tl dib ma0 hover-bg-black w-100">
-        <a href="/hugo-pipes/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
-          Hugo Pipes
-        </a>
-    </li>
-  
-    <li  class="tl dib ma0 hover-bg-black w-100 mb2 bb b--mid-gray">
-        <a href="/commands/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
-          CLI
-        </a>
-    </li>
-  
-    <li  class="tl dib ma0 hover-bg-black w-100">
-        <a href="/troubleshooting/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
-          Troubleshooting
-        </a>
-    </li>
-  
-    <li  class="tl dib ma0 hover-bg-black w-100">
-        <a href="/tools/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
-          Tools
-        </a>
-    </li>
-  
-    <li  class="tl dib ma0 hover-bg-black w-100">
-        <a href="/hosting-and-deployment/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
-          Hosting &amp; Deployment
+        <a href="/coding/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
+          编程教程
         </a>
     </li>
   
     <li  class="tl dib ma0 hover-bg-black w-100 mb2 bb b--mid-gray">
         <a href="/contribute/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
-          Contribute
+          贡献指南
         </a>
     </li>
   
     <li  class="tl dib ma0 hover-bg-black w-100">
         <a href="/maintenance/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
           Maintenance
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100">
+        <a href="" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
+          
         </a>
     </li>
   

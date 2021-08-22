@@ -6,16 +6,56 @@
       <div class="flex-ns flex-wrap center mw9">
 
         <div class="w-100 w-50-l {{ if modBool $i 2 }}order-1{{ else }}order-0{{ end }}">
-          <div class="w-90-ns center">
+          <div class="w-90-ns left">
             <img src="{{ .image }}" alt="image depicting an example of {{ .heading }}" class="img shadow-5">
           </div>
         </div>
 
         <div class="w-100 w-50-l">
-          <div class="w-80-ns center tc">
+          <div class="w-80-ns left tc">
             <h3 class="f1 fw4 black ma0 pt4 lh-title pt0-l">{{ .heading }}</h3>
             <p class="f3 lh-copy">
-              {{ .copy }}
+              本站制作并维护了一些重力专业软件中文手册，如：
+            </p>
+			<li class="mb3 f4">
+		<a href="/gravity-manual/tsoft/" class="f4 lh-copy">
+		Tsoft</a>
+		<a href="http://seismologie.oma.be/en/downloads/tsoft/" class="f4 lh-copy">
+		[官方文档]</a>
+              ：重力固体潮预处理与时间序列分析软件
+            </p>
+			</li>
+				<li class="mb3 f4">
+		<a href="/gravity-manual/groops/" class="f4 lh-copy">
+		ETERNA</a> 	<a href="http://ggp.bkg.bund.de/eterna/" class="f4 lh-copy">
+		[官方文档]</a>
+              ：重力潮汐调和分析软件
+            </p>
+		
+		<a href="/gravity-manual/growth3.0/" class="f4 lh-copy">
+		GROWTH3.0</a><a href="https://www.sciencedirect.com/science/article/pii/S0098300421000327" class="f4 lh-copy">
+		[官方文档]</a> 
+              ：三维重力反演软件
+            </p>
+			</li>
+			
+			<li class="mb3 f4">
+		<a href="/gravity-manual/groops/" class="f4 lh-copy">
+		GROOPS</a> <a href="https://www.sciencedirect.com/science/article/pii/S009830042100159X" class="f4 lh-copy">
+		[官方文档]</a>
+              ：重力场恢复与GNSS数据处理软件
+            </p>
+			</li>
+			
+			<li class="mb3 f4">
+		<a href="/gravity-manual/fatiando/" class="f4 lh-copy">
+		Fatiando、harmonica、Boule、Pooch</a> <a href="https://www.fatiando.org/" class="f4 lh-copy">
+		[官方文档]</a>
+              ：重磁位场数据处理与可视化软件
+            </p>
+			</li>
+			       <p class="f3 lh-copy">
+              <b>未来还会有更多项目加入到本项目，敬请期待！</b>
             </p>
               <p class="f4 lh-copy nested-linksTK">
                 <a href="{{ .link | absURL }}" class="link black dim">

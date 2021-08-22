@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>gravity software on Gravity</title>
+    <link>https://gohugo.io/categories/gravity-software/</link>
+    <description>Recent content in gravity software on Gravity</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 01 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://gohugo.io/categories/gravity-software/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>重力软件教程</title>
+      <link>https://gohugo.io/gravity-software/</link>
+      <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://gohugo.io/gravity-software/</guid>
+      <description>本章主要内容为重力开源软件的资源整合和开发，收集了互联网上开源的优质代码，介绍作者 Gravpher 主要开发与维护的开源软件</description>
+    </item>
+    
+  </channel>
+</rss>

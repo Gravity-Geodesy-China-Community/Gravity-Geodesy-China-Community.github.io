@@ -1,48 +1,27 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/e0dbbfc7-34f1-4393-a679-c16e80162705/deploy-status)](https://app.netlify.com/sites/gohugoio/deploys)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://gohugo.io/contribute/documentation/)
+## 重力中国官方网站（GravityChina.ga）
 
-# Hugo Docs
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/Gravity-Geodesy-China-Community/Gravity-Geodesy-China-Community.github.io/pulls) [![License](http://img.shields.io/:license-apache-brightgreen.svg)](http://www.apache.org/licenses/LICENSE-2.0.html)
 
-Documentation site for [Hugo](https://github.com/gohugoio/hugo), the very fast and flexible static site generator built with love in Go.
+受到国内外科研社区及学者的启发，如[地震“学”](https://seismo-learn.org/) 、[gmt中文社区](https://gmt-china.org/)、[机器学习中文社区](https://www.jiqixuexishequ.com/)、[深度学习中文社区](http://studydl.com/)、[开源中国](https://www.oschina.net/)、[冰霜之地](https://halfrost.com/)、[PINGA](https://www.pinga-lab.org/)、[Leonardo Uieda](https://www.leouieda.com/)等等，这些优秀开源项目为我的日常工作中提供了重要的参考。基于此，为了给中国从事重力与大地测量研究的学生或学者提供学习与交流平台，重力中文社区孕育而生，[重力中文网](https://gravitychina.ga/)由[Gravpher](http://goujianing.ml/)于2021年夏天创建，重力室的小伙伴们共同维护。
 
-## Contributing
+本网站基于优秀的静态网页生成器[Hugo](https://gohugo.io/)、主题[HugoDoc](https://github.com/gohugoio/hugoDocs)、[Markdown](https://www.markdownguide.org/)编辑器、应用容器引擎[Docker](https://www.docker.com/)、文档托管服务[Read the Docs](https://readthedocs.org/)、静态网页托管工具[github page](https://pages.github.com/)、[verce](https://vercel.com/)l等开源工具构建，感谢Hugo的核心开发者[Bjørn Erik Pedersen](https://bep.is)在本应用构建时的指点，再次对以上出色的开源工具表示感谢！
 
-We welcome contributions to Hugo of any kind including documentation, suggestions, bug reports, pull requests etc. Also check out our [contribution guide](https://gohugo.io/contribute/documentation/). We would love to hear from you. 
+本站建立的目标为：
 
-Note that this repository contains solely the documentation for Hugo. For contributions that aren't documentation-related please refer to the [hugo](https://github.com/gohugoio/hugo) repository. 
+- **整合互联网上有关重力与大地测量相关的学习资料，不涉及保密资料**
+- **提供重力与大地测量相关研究的学习参考资料，方便初学者能够很快入门**
+- **促进重力与大地测量中文社区的交流和发展，促进重力与大地测量相关开源软件的发展**
 
-*Pull requests shall **only** contain changes to the actual documentation. However, changes on the code base of Hugo **and** the documentation shall be a single, atomic pull request in the [hugo](https://github.com/gohugoio/hugo) repository.*
+## 贡献
 
-Spelling fixes are most welcomed, and if you want to contribute longer sections to the documentation, it would be great if you had the following criteria in mind when writing:
+#### Like this Project？
 
-* Short is good. People go to the library to read novels. If there is more than one way to _do a thing_ in Hugo, describe the current _best practice_ (avoid "… but you can also do …" and "… in older versions of Hugo you had to …".
-* For example, try to find short snippets that teaches people about the concept. If the example is also useful as-is (copy and paste), then great. Don't list long and similar examples just so people can use them on their sites.
-* Hugo has users from all over the world, so easy to understand and [simple English](https://simple.wikipedia.org/wiki/Basic_English) is good.
+#### Then feel free to support this project. You Can do a lot, such as
 
-## Branches
+- 受到本站启发的所有内容，请挂上[本站链接](https://gravitychina.ga/)
+- [加入我们](https://github.com/Gravity-Geodesy-China-Community/Gravity-Geodesy-China-Community.github.io/pulse)，共同维护重力中国开源社区
+- Star ，并分享这个项目
+- 您也可以捐赠作者@[Gravpher](https://goujianing.ml/)一杯咖啡，您的支持是我做下去的最大动力，捐款请注明来自GravityChina，感谢您的支持 [denote link](https://goujianing.ml/blog/denote/)
 
-* The `master` branch is where the site is automatically built from, and is the place to put changes relevant to the current Hugo version.
-* The `next` branch is where we store changes that are related to the next Hugo release. This can be previewed here: https://next--gohugoio.netlify.com/
+#### Don't let a bad day make you feel like you have a bad life. You Remember？
 
-## Build
-
-To view the documentation site locally, you need to clone this repository:
-
-```bash
-git clone https://github.com/gohugoio/hugoDocs.git
-```
-
-Also note that the documentation version for a given version of Hugo can also be found in the `/docs` sub-folder of the [Hugo source repository](https://github.com/gohugoio/hugo).
-
-Then to view the docs in your browser, run Hugo and open up the link:
-
-```bash
-▶ hugo server
-
-Started building sites ...
-.
-.
-Serving pages from memory
-Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
-Press Ctrl+C to stop
-```

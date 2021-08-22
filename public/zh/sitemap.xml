@@ -2,43 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://gohugo.io/zh/about/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://gohugo.io/about/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://gohugo.io/zh/about/"
-                />
-  </url><url>
-    <loc>https://gohugo.io/zh/content-management/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/zh/documentation/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://gohugo.io/documentation/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://gohugo.io/zh/documentation/"
-                />
-  </url><url>
-    <loc>https://gohugo.io/zh/templates/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/zh/templates/base/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
     <loc>https://gohugo.io/zh/categories/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -50,11 +14,7 @@
                 href="https://gohugo.io/zh/categories/"
                 />
   </url><url>
-    <loc>https://gohugo.io/zh/categories/content-management/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
     <loc>https://gohugo.io/zh/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -64,35 +24,6 @@
                 rel="alternate"
                 hreflang="zh"
                 href="https://gohugo.io/zh/"
-                />
-  </url><url>
-    <loc>https://gohugo.io/zh/categories/fundamentals/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://gohugo.io/categories/fundamentals/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://gohugo.io/zh/categories/fundamentals/"
-                />
-  </url><url>
-    <loc>https://gohugo.io/zh/categories/templates/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/zh/news/</loc>
-    <lastmod>2021-08-13T21:11:25+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://gohugo.io/news/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://gohugo.io/zh/news/"
                 />
   </url>
 </urlset>

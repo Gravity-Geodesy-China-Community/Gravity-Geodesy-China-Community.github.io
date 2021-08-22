@@ -1,10 +1,10 @@
 ---
-title: Hugo Features
-linktitle: Hugo Features
-description: Hugo boasts blistering speed, robust content management, and a powerful templating language making it a great fit for all kinds of static websites.
-date: 2017-02-01
-publishdate: 2017-02-01
-lastmod: 2017-02-01
+title: 本站特点
+linktitle: 特点
+description:  GravityChina为全球最大的重力中文社区，旨在整合互联网所有的重力与大地测量领域相关的资源，提供培训教程
+date: 2021-08-01
+publishdate: 2021-08-01
+lastmod: 2021-08-15
 menu:
   docs:
     parent: "about"
@@ -15,71 +15,8 @@ draft: false
 toc: true
 ---
 
-## General
+## 总结
 
-* [Extremely fast][] build times (&lt; 1 ms per page)
-* Completely cross platform, with [easy installation][install] on macOS, Linux, Windows, and more
-* Renders changes on the fly with [LiveReload][] as you develop
-* [Powerful theming][]
-* [Host your site anywhere][hostanywhere]
-
-## Organization
-
-* Straightforward [organization for your projects][], including website sections
-* Customizable [URLs][]
-* Support for configurable [taxonomies][], including categories and tags
-* [Sort content][] as you desire through powerful template [functions][]
-* Automatic [table of contents][] generation
-* [Dynamic menu][] creation
-* [Pretty URLs][] support
-* [Permalink][] pattern support
-* Redirects via [aliases][]
-
-## Content
-
-* Native Markdown and Emacs Org-Mode support, as well as other languages via *external helpers* (see [supported formats][])
-* TOML, YAML, and JSON metadata support in [front matter][]
-* Customizable [homepage][]
-* Multiple [content types][]
-* Automatic and user defined [content summaries][]
-* [Shortcodes][] to enable rich content inside of Markdown
-* ["Minutes to Read"][pagevars] functionality
-* ["WordCount"][pagevars] functionality
-
-## Additional Features
-
-* Integrated [Disqus][] comment support
-* Integrated [Google Analytics][] support
-* Automatic [RSS][] creation
-* Support for [Go][] HTML templates
-* [Syntax highlighting][] powered by [Chroma][]
-
-
-[aliases]: /content-management/urls/#aliases
-[Chroma]: https://github.com/alecthomas/chroma
-[content summaries]: /content-management/summaries/
-[content types]: /content-management/types/
-[Disqus]: https://disqus.com/
-[Dynamic menu]: /templates/menus/
-[Extremely fast]: https://github.com/bep/hugo-benchmark
-[front matter]: /content-management/front-matter/
-[functions]: /functions/
-[Go]: https://golang.org/pkg/html/template/
-[Google Analytics]: https://google-analytics.com/
-[homepage]: /templates/homepage/
-[hostanywhere]: /hosting-and-deployment/
-[install]: /getting-started/installing/
-[LiveReload]: /getting-started/usage/
-[organization for your projects]: /getting-started/directory-structure/
-[pagevars]: /variables/page/
-[Permalink]: /content-management/urls/#permalinks
-[Powerful theming]: /themes/
-[Pretty URLs]: /content-management/urls/
-[RSS]: /templates/rss/
-[Shortcodes]: /content-management/shortcodes/
-[sort content]: /templates/
-[supported formats]: /content-management/formats/
-[Syntax highlighting]: /tools/syntax-highlighting/
-[table of contents]: /content-management/toc/
-[taxonomies]: /content-management/taxonomies/
-[URLs]: /content-management/urls/
+* 提供[项目测试](/gravity-projects/)用例
+* 专注于重力[开源软件](/gravity-software/)开发
+* 提供专业软件的[中文文档](/gravity-manual/)与测试用例

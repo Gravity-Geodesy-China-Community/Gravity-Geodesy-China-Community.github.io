@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>gravity manual on Gravity</title>
+    <link>https://gohugo.io/categories/gravity-manual/</link>
+    <description>Recent content in gravity manual on Gravity</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 01 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://gohugo.io/categories/gravity-manual/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>重力软件教程</title>
+      <link>https://gohugo.io/gravity-manual/</link>
+      <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://gohugo.io/gravity-manual/</guid>
+      <description>本章主要内容为重力数据处理中主要用的软件中文手册</description>
+    </item>
+    
+    <item>
+      <title>Tsoft中文文档</title>
+      <link>https://gohugo.io/gravity-manual/tsoft/</link>
+      <pubDate>Wed, 24 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://gohugo.io/gravity-manual/tsoft/</guid>
+      <description>摘要  本节主要介绍Tsoft软件的基本使用以及脚本范例，让读者可以轻松入手潮汐序列的处理</description>
+    </item>
+    
+    <item>
+      <title>Tsoft中文文档</title>
+      <link>https://gohugo.io/gravity-manual/eterna/</link>
+      <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://gohugo.io/gravity-manual/eterna/</guid>
+      <description>摘要  Eterna</description>
+    </item>
+    
+    <item>
+      <title>GROWTH中文文档</title>
+      <link>https://gohugo.io/gravity-manual/growth3.0/</link>
+      <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://gohugo.io/gravity-manual/growth3.0/</guid>
+      <description>摘要  GROWTH</description>
+    </item>
+    
+    <item>
+      <title>GROOPS中文文档</title>
+      <link>https://gohugo.io/gravity-manual/groops/</link>
+      <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://gohugo.io/gravity-manual/groops/</guid>
+      <description>摘要  GROWTH</description>
+    </item>
+    
+    <item>
+      <title>Fatiando中文文档</title>
+      <link>https://gohugo.io/gravity-manual/fatiando/</link>
+      <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://gohugo.io/gravity-manual/fatiando/</guid>
+      <description>摘要  Fatiando</description>
+    </item>
+    
+  </channel>
+</rss>

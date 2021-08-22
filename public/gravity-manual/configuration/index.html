@@ -1,0 +1,1330 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+  
+  <link rel="preload" href="https://gohugo.io/fonts/muli-latin-200.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="https://gohugo.io/fonts/muli-latin-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="https://gohugo.io/fonts/muli-latin-800.woff2" as="font" type="font/woff2" crossorigin>
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <title>Configure Modules | Gravity</title>
+
+  <meta name="viewport" content="width=device-width,minimum-scale=1">
+  <meta name="generator" content="Hugo 0.87.0" />
+
+  
+  <meta name="robots" content="noindex, nofollow">
+  
+
+  
+  
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/output/css/app.min.bab83909a2f2fe2aa45bf7e4813899f4f705e6858479cea5bd48eee72fdf0a70.css" integrity="sha256-urg5CaLy/iqkW/fkgTiZ9PcF5oWEec6lvUju5y/fCnA=" crossorigin="anonymous">
+  
+  
+  
+
+  <meta name="description"
+  content="This page describes the configuration options for a module.">
+
+  
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/output/js/app.0984bf5469ab3c8aa82cf8eb015a560d74ee028723b1ab38e928998f5f72baba.js" integrity="sha256-CYS/VGmrPIqoLPjrAVpWDXTuAocjsas46SiZj19yuro=" crossorigin="anonymous" defer></script>
+  
+      
+ 
+
+
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+  
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0594cb">
+<meta name="theme-color" content="#ffffff">
+<meta property="og:title" content="Configure Modules" />
+<meta property="og:description" content="This page describes the configuration options for a module." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://gohugo.io/gravity-manual/configuration/" /><meta property="article:section" content="gravity-manual" />
+<meta property="article:published_time" content="2019-07-24T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-08-15T19:19:09+08:00" />
+
+<meta itemprop="name" content="Configure Modules">
+<meta itemprop="description" content="This page describes the configuration options for a module."><meta itemprop="datePublished" content="2019-07-24T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2021-08-15T19:19:09+08:00" />
+<meta itemprop="wordCount" content="895">
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Configure Modules"/>
+<meta name="twitter:description" content="This page describes the configuration options for a module."/>
+<meta name="twitter:site" content="@georgegou"/>
+
+
+</head>
+
+<body class="ma0 sans-serif bg-primary-color-light">
+  
+<nav class="bg-primary-color-dark pv4 w-100" role="navigation">
+
+  <div class="center flex-ns flex-wrap items-center justify-start mw9">
+
+    <h1 class="dim f3 lh-solid ml0-ns mr0 mr4-l mv0 pl3 pl4-ns">
+      <a href="https://gravitychina.ga/" class="link purple">
+         GGC(Gravity Geodesy China)
+      </a>
+    </h1>
+    <ul class="list ma0 pa0 dn dib-l">
+      
+        <li class="f5 dib mr4" role="menuitem">
+            
+          <a href="/news/" class="dim link light-silver">
+            新闻
+              
+            
+            
+          </a>
+        </li>
+      
+        <li class="f5 dib mr4" role="menuitem">
+            
+          <a href="/documentation/" class="dim link light-silver">
+            文档
+              
+            
+            
+          </a>
+        </li>
+      
+        <li class="f5 dib mr4" role="menuitem">
+            
+          <a href="/gravity-projects/" class="dim link light-silver">
+            研究案例
+              
+            
+            
+          </a>
+        </li>
+      
+        <li class="f5 dib mr4" role="menuitem">
+            
+          <a href="https://discourse.gravitychina.ga/" class="dim link light-silver">
+            重力论坛
+              
+            
+            
+              <span class="pl1">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10" height="10" viewBox="0 0 32 32" class="fill-current v-base" aria-label="External Link">
+<path d="M25.152 16.576v5.696q0 2.144-1.504 3.648t-3.648 1.504h-14.848q-2.144 0-3.648-1.504t-1.504-3.648v-14.848q0-2.112 1.504-3.616t3.648-1.536h12.576q0.224 0 0.384 0.16t0.16 0.416v1.152q0 0.256-0.16 0.416t-0.384 0.16h-12.576q-1.184 0-2.016 0.832t-0.864 2.016v14.848q0 1.184 0.864 2.016t2.016 0.864h14.848q1.184 0 2.016-0.864t0.832-2.016v-5.696q0-0.256 0.16-0.416t0.416-0.16h1.152q0.256 0 0.416 0.16t0.16 0.416zM32 1.152v9.12q0 0.48-0.352 0.8t-0.8 0.352-0.8-0.352l-3.136-3.136-11.648 11.648q-0.16 0.192-0.416 0.192t-0.384-0.192l-2.048-2.048q-0.192-0.16-0.192-0.384t0.192-0.416l11.648-11.648-3.136-3.136q-0.352-0.352-0.352-0.8t0.352-0.8 0.8-0.352h9.12q0.48 0 0.8 0.352t0.352 0.8z"></path>
+</svg>
+
+              </span>
+            
+          </a>
+        </li>
+      
+        <li class="f5 dib mr4" role="menuitem">
+            
+          <a href="https://github.com/Gravity-Geodesy-China-Community" class="dim link light-silver">
+            GitHub
+              
+            
+            
+              <span class="pl1">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10" height="10" viewBox="0 0 32 32" class="fill-current v-base" aria-label="External Link">
+<path d="M25.152 16.576v5.696q0 2.144-1.504 3.648t-3.648 1.504h-14.848q-2.144 0-3.648-1.504t-1.504-3.648v-14.848q0-2.112 1.504-3.616t3.648-1.536h12.576q0.224 0 0.384 0.16t0.16 0.416v1.152q0 0.256-0.16 0.416t-0.384 0.16h-12.576q-1.184 0-2.016 0.832t-0.864 2.016v14.848q0 1.184 0.864 2.016t2.016 0.864h14.848q1.184 0 2.016-0.864t0.832-2.016v-5.696q0-0.256 0.16-0.416t0.416-0.16h1.152q0.256 0 0.416 0.16t0.16 0.416zM32 1.152v9.12q0 0.48-0.352 0.8t-0.8 0.352-0.8-0.352l-3.136-3.136-11.648 11.648q-0.16 0.192-0.416 0.192t-0.384-0.192l-2.048-2.048q-0.192-0.16-0.192-0.384t0.192-0.416l11.648-11.648-3.136-3.136q-0.352-0.352-0.352-0.8t0.352-0.8 0.8-0.352h9.12q0.48 0 0.8 0.352t0.352 0.8z"></path>
+</svg>
+
+              </span>
+            
+          </a>
+        </li>
+      
+        <li class="f5 dib mr4" role="menuitem">
+            
+          <a href="/about/" class="dim link light-silver">
+            关于我们
+              
+            
+            
+          </a>
+        </li>
+      
+    </ul>
+
+    <div class="db dib-ns pl3"><form id="site-search-form" action="" role="search">
+  <fieldset class="bn ma0 pa0">
+    <label class="clip" for="search-input">Search</label>
+    <input type="search" id="search-input" class="needs-js bg-left bn f5 input-reset lh-solid mt3 mt0-ns pl4 pv2 w5 white" placeholder="搜索文档" name="search-input" value="" style="background: url('/images/icon-search.png') 5px 11px/16px 16px no-repeat; background-color: rgba(255,255,255,0);">
+  </fieldset>
+</form></div>
+
+    <span class="absolute mt1 mt2-l pr3 right-0 top-0">
+
+  <a href="https://goujianing.ml/blog/denote/" title="捐赠本项目" class="link-transition twitter link dib z-999 pt3 pt0-l mr2">
+    <svg height="32px" id="Layer_1" style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
+
+  </a>
+
+<a class="github-button needs-js link primary-color-dark" href="https://github.com/Gravity-Geodesy-China-Community/Gravity-Geodesy-China-Community.github.io" data-size="large" data-show-count="true" aria-label="在github上Star重力中国">Star this project</a>
+<a class="github-button needs-js link primary-color-dark" href="https://github.com/George-Gou" data-size="large" data-show-count="true" aria-label="在github上Star重力中国">Follow Gravpher on github</a></span>
+
+  </div>
+</nav>
+
+  
+  <main role="main" class="content-with-sidebar min-vh-100 pb7 pb0-ns">
+    
+  <article class="w-100 ph4 pb5 pb6-ns pt1 pt5-ns">
+    <div class="flex-l">
+
+      <div class="order-2 w-100 w-20-l ph5-m ph0-l mb4 sticky">
+<aside class="fixed-lTK mw5-l right-0 f6 bl-l b--moon-gray pv4 pv0-ns ph4-l nested-list-reset nested-links nested-copy-line-height">
+	
+		<p class="b">What's on this Page</p>
+  	<nav id="TableOfContents">
+  <ul>
+    <li><a href="#module-config-top">Module Config: Top</a></li>
+    <li><a href="#module-config-hugoversion">Module Config: hugoVersion</a></li>
+    <li><a href="#module-config-imports">Module Config: imports</a></li>
+    <li><a href="#module-config-mounts">Module Config: mounts</a></li>
+  </ul>
+</nav>
+	
+
+	<div date-pref>
+		
+
+		
+			<a href="https://gohugo.io/gravity-manual/use-modules/" class="dib f6 pr1 hover-bg-light-gray br-100" title="Use Hugo Modules">
+			<svg class="fill-current" height="30px" viewBox="0 0 24 24" width="30px" xmlns="http://www.w3.org/2000/svg">
+    <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
+    <path d="M0 0h24v24H0z" fill="none"/>
+</svg>
+
+			</a>
+		
+	</div>
+
+</aside>
+</div>
+
+      <div class="order-1 w-60-l mw7 ph0 ph5-ns mid-gray nested-copy-line-height no-underline nested-links nested-img nested-copy-seperator nested-blockquote mt0-ns" style="flex-grow:1;">
+        <div class="documentation-copy center measure-wide-l">
+          <div id="readout" class="fixed right-0 bottom-0">
+          </div>
+          <header class="flex-none w-100">
+  
+    
+      <a href="/categories/hugo-modules" class="f6 fw8 mb0 link mid-gray dim mr3">
+        HUGO MODULES
+      </a>
+    
+  
+  <h1 class="lh-title mb3 mv0 pt3 primary-color-dark">Configure Modules</h1>
+</header>
+
+<aside class="bt bw1 pt3 mt2 mid-gray b--mid-gray fn w-100">
+  
+    <div class="f4 fw4 lh-copy">
+      This page describes the configuration options for a module.
+    </div>
+  
+
+  
+</aside>
+
+
+
+<div class="prose" id="prose">
+
+<h2 id="module-config-top">Module Config: Top <a class="header-link" href="#module-config-top"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
+
+
+
+  
+
+
+<div class="code relative" id="config">
+  <div class="code-nav flex flex-nowrap items-stretch"><div class="san-serif f6 dib lh-solid pl2 pv2 mr2">
+        config.
+      </div>
+      <button data-toggle-tab="yaml" class="tab-button active ba san-serif f6 dib lh-solid ph2 pv2">
+        yaml
+      </button>
+      &nbsp;
+    
+      <button data-toggle-tab="toml" class="tab-button  ba san-serif f6 dib lh-solid ph2 pv2">
+        toml
+      </button>
+      &nbsp;
+    
+      <button data-toggle-tab="json" class="tab-button  ba san-serif f6 dib lh-solid ph2 pv2">
+        json
+      </button>
+      &nbsp;
+    
+  </div>
+  <div class="tab-content">
+    
+      <div data-pane="yaml" class="code-copy-content nt3 tab-pane active">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">module</span><span class="p">:</span><span class="w">
+</span><span class="w">  </span><span class="nt">noProxy</span><span class="p">:</span><span class="w"> </span><span class="l">none</span><span class="w">
+</span><span class="w">  </span><span class="nt">noVendor</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;&#34;</span><span class="w">
+</span><span class="w">  </span><span class="nt">private</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;*.*&#39;</span><span class="w">
+</span><span class="w">  </span><span class="nt">proxy</span><span class="p">:</span><span class="w"> </span><span class="l">direct</span><span class="w">
+</span><span class="w">  </span><span class="nt">replacements</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;&#34;</span><span class="w">
+</span></code></pre></div>
+      </div>
+      
+        <button class="needs-js copy copy-toggle bg-accent-color-dark f6 absolute top-0 right-0 lh-solid hover-bg-primary-color-dark bn white ph3 pv2" title="Copy this code to your clipboard." data-clipboard-action="copy" aria-label="copy button"></button>
+        
+      
+    
+      <div data-pane="toml" class="code-copy-content nt3 tab-pane ">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="p">[</span><span class="nx">module</span><span class="p">]</span>
+<span class="nx">noProxy</span> <span class="p">=</span> <span class="s1">&#39;none&#39;</span>
+<span class="nx">noVendor</span> <span class="p">=</span> <span class="s1">&#39;&#39;</span>
+<span class="nx">private</span> <span class="p">=</span> <span class="s1">&#39;*.*&#39;</span>
+<span class="nx">proxy</span> <span class="p">=</span> <span class="s1">&#39;direct&#39;</span>
+<span class="nx">replacements</span> <span class="p">=</span> <span class="s1">&#39;&#39;</span>
+
+</code></pre></div>
+      </div>
+      
+        <button class="needs-js copy copy-toggle bg-accent-color-dark f6 absolute top-0 right-0 lh-solid hover-bg-primary-color-dark bn white ph3 pv2" title="Copy this code to your clipboard." data-clipboard-action="copy" aria-label="copy button"></button>
+        
+      
+    
+      <div data-pane="json" class="code-copy-content nt3 tab-pane ">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
+   <span class="nt">&#34;module&#34;</span><span class="p">:</span> <span class="p">{</span>
+      <span class="nt">&#34;noProxy&#34;</span><span class="p">:</span> <span class="s2">&#34;none&#34;</span><span class="p">,</span>
+      <span class="nt">&#34;noVendor&#34;</span><span class="p">:</span> <span class="s2">&#34;&#34;</span><span class="p">,</span>
+      <span class="nt">&#34;private&#34;</span><span class="p">:</span> <span class="s2">&#34;*.*&#34;</span><span class="p">,</span>
+      <span class="nt">&#34;proxy&#34;</span><span class="p">:</span> <span class="s2">&#34;direct&#34;</span><span class="p">,</span>
+      <span class="nt">&#34;replacements&#34;</span><span class="p">:</span> <span class="s2">&#34;&#34;</span>
+   <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+      </div>
+      
+        <button class="needs-js copy copy-toggle bg-accent-color-dark f6 absolute top-0 right-0 lh-solid hover-bg-primary-color-dark bn white ph3 pv2" title="Copy this code to your clipboard." data-clipboard-action="copy" aria-label="copy button"></button>
+        
+      
+    
+  </div>
+  
+</div>
+
+<dl>
+<dt>noVendor 
+
+
+<button class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 mr2 ml2 px-4 border border-gray-400 rounded shadow">
+    <a href="https://gohugo.io/news/0.75.0-relnotes/" target="_blank">New in v0.75.0</a>
+</button></dt>
+<dd>A optional Glob pattern matching module paths to skip when vendoring, e.g. &ldquo;github.com/**&rdquo;</dd>
+<dt>vendorClosest 
+
+
+<button class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 mr2 ml2 px-4 border border-gray-400 rounded shadow">
+    <a href="https://gohugo.io/news/0.81.0-relnotes/" target="_blank">New in v0.81.0</a>
+</button></dt>
+<dd>When enabled, we will pick the vendored module closest to the module using it. The default behaviour is to pick the first. Note that there can still be only one dependency of a given module path, so once it is in use it cannot be redefined.</dd>
+<dt>proxy</dt>
+<dd>Defines the proxy server to use to download remote modules. Default is <code>direct</code>, which means &ldquo;git clone&rdquo; and similar.</dd>
+<dt>noProxy</dt>
+<dd>Comma separated glob list matching paths that should not use the proxy configured above.</dd>
+<dt>private</dt>
+<dd>Comma separated glob list matching paths that should be treated as private.</dd>
+<dt>replacements 
+
+
+<button class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 mr2 ml2 px-4 border border-gray-400 rounded shadow">
+    <a href="https://gohugo.io/news/0.77.0-relnotes/" target="_blank">New in v0.77.0</a>
+</button></dt>
+<dd>A comma separated (or a slice) list of module path to directory replacement mapping, e.g. <code>&quot;github.com/bep/myprettytheme -&gt; ../..,github.com/bep/shortcodes -&gt; /some/path</code>. This is mostly useful for temporary locally development of a module, and then it makes sense to set it as an OS environment variable, e.g: <code>env HUGO_MODULE_REPLACEMENTS=&quot;github.com/bep/myprettytheme -&gt; ../..&quot;</code>. Any relative path is relate to <a href="https://gohugo.io/getting-started/configuration/#all-configuration-settings">themesDir</a>, and absolute paths are allowed.</dd>
+</dl>
+<p>Note that the above terms maps directly to their counterparts in Go Modules. Some of these setting may be natural to set as OS environment variables. To set the proxy server to use, as an example:</p>
+<pre><code>env HUGO_MODULE_PROXY=https://proxy.example.org hugo
+</code></pre>
+
+<aside class="admonition note">
+	<div class="note-icon">
+		
+	</div>
+	<div class="admonition-content"><p>Most of the commands for <strong>Hugo Modules</strong> requires a newer version of Go installed (see <a href="https://golang.org/dl/">https://golang.org/dl/</a>) and the relevant VCS client (e.g. Git, see <a href="https://git-scm.com/downloads/">https://git-scm.com/downloads/</a> ). If you have an &ldquo;older&rdquo; site running on Netlify, you may have to set GO_VERSION to 1.12 in your Environment settings.</p>
+<p>For more information about Go Modules, see:</p>
+<ul>
+<li><a href="https://github.com/golang/go/wiki/Modules">https://github.com/golang/go/wiki/Modules</a></li>
+<li><a href="https://blog.golang.org/using-go-modules">https://blog.golang.org/using-go-modules</a></li>
+</ul>
+</div>
+</aside>
+
+<h2 id="module-config-hugoversion">Module Config: hugoVersion <a class="header-link" href="#module-config-hugoversion"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
+<p>If your module requires a particular version of Hugo to work, you can indicate that in the <code>module</code> section and the user will be warned if using a too old/new version.</p>
+
+
+
+  
+
+
+<div class="code relative" id="config">
+  <div class="code-nav flex flex-nowrap items-stretch"><div class="san-serif f6 dib lh-solid pl2 pv2 mr2">
+        config.
+      </div>
+      <button data-toggle-tab="yaml" class="tab-button active ba san-serif f6 dib lh-solid ph2 pv2">
+        yaml
+      </button>
+      &nbsp;
+    
+      <button data-toggle-tab="toml" class="tab-button  ba san-serif f6 dib lh-solid ph2 pv2">
+        toml
+      </button>
+      &nbsp;
+    
+      <button data-toggle-tab="json" class="tab-button  ba san-serif f6 dib lh-solid ph2 pv2">
+        json
+      </button>
+      &nbsp;
+    
+  </div>
+  <div class="tab-content">
+    
+      <div data-pane="yaml" class="code-copy-content nt3 tab-pane active">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">module</span><span class="p">:</span><span class="w">
+</span><span class="w">  </span><span class="nt">hugoVersion</span><span class="p">:</span><span class="w">
+</span><span class="w">    </span><span class="nt">extended</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+</span><span class="w">    </span><span class="nt">max</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;&#34;</span><span class="w">
+</span><span class="w">    </span><span class="nt">min</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;&#34;</span><span class="w">
+</span></code></pre></div>
+      </div>
+      
+        <button class="needs-js copy copy-toggle bg-accent-color-dark f6 absolute top-0 right-0 lh-solid hover-bg-primary-color-dark bn white ph3 pv2" title="Copy this code to your clipboard." data-clipboard-action="copy" aria-label="copy button"></button>
+        
+      
+    
+      <div data-pane="toml" class="code-copy-content nt3 tab-pane ">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="p">[</span><span class="nx">module</span><span class="p">]</span>
+<span class="p">[</span><span class="nx">module</span><span class="p">.</span><span class="nx">hugoVersion</span><span class="p">]</span>
+<span class="nx">extended</span> <span class="p">=</span> <span class="kc">false</span>
+<span class="nx">max</span> <span class="p">=</span> <span class="s1">&#39;&#39;</span>
+<span class="nx">min</span> <span class="p">=</span> <span class="s1">&#39;&#39;</span>
+
+
+</code></pre></div>
+      </div>
+      
+        <button class="needs-js copy copy-toggle bg-accent-color-dark f6 absolute top-0 right-0 lh-solid hover-bg-primary-color-dark bn white ph3 pv2" title="Copy this code to your clipboard." data-clipboard-action="copy" aria-label="copy button"></button>
+        
+      
+    
+      <div data-pane="json" class="code-copy-content nt3 tab-pane ">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
+   <span class="nt">&#34;module&#34;</span><span class="p">:</span> <span class="p">{</span>
+      <span class="nt">&#34;hugoVersion&#34;</span><span class="p">:</span> <span class="p">{</span>
+         <span class="nt">&#34;extended&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+         <span class="nt">&#34;max&#34;</span><span class="p">:</span> <span class="s2">&#34;&#34;</span><span class="p">,</span>
+         <span class="nt">&#34;min&#34;</span><span class="p">:</span> <span class="s2">&#34;&#34;</span>
+      <span class="p">}</span>
+   <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+      </div>
+      
+        <button class="needs-js copy copy-toggle bg-accent-color-dark f6 absolute top-0 right-0 lh-solid hover-bg-primary-color-dark bn white ph3 pv2" title="Copy this code to your clipboard." data-clipboard-action="copy" aria-label="copy button"></button>
+        
+      
+    
+  </div>
+  
+</div>
+
+<p>Any of the above can be omitted.</p>
+<dl>
+<dt>min</dt>
+<dd>The minimum Hugo version supported, e.g. <code>0.55.0</code></dd>
+<dt>max</dt>
+<dd>The maximum Hugo version supported, e.g. <code>0.55.0</code></dd>
+<dt>extended</dt>
+<dd>Whether the extended version of Hugo is required.</dd>
+</dl>
+<h2 id="module-config-imports">Module Config: imports <a class="header-link" href="#module-config-imports"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
+
+
+
+  
+
+
+<div class="code relative" id="config">
+  <div class="code-nav flex flex-nowrap items-stretch"><div class="san-serif f6 dib lh-solid pl2 pv2 mr2">
+        config.
+      </div>
+      <button data-toggle-tab="yaml" class="tab-button active ba san-serif f6 dib lh-solid ph2 pv2">
+        yaml
+      </button>
+      &nbsp;
+    
+      <button data-toggle-tab="toml" class="tab-button  ba san-serif f6 dib lh-solid ph2 pv2">
+        toml
+      </button>
+      &nbsp;
+    
+      <button data-toggle-tab="json" class="tab-button  ba san-serif f6 dib lh-solid ph2 pv2">
+        json
+      </button>
+      &nbsp;
+    
+  </div>
+  <div class="tab-content">
+    
+      <div data-pane="yaml" class="code-copy-content nt3 tab-pane active">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">module</span><span class="p">:</span><span class="w">
+</span><span class="w">  </span><span class="nt">imports</span><span class="p">:</span><span class="w">
+</span><span class="w">  </span>- <span class="nt">disable</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+</span><span class="w">    </span><span class="nt">ignoreConfig</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+</span><span class="w">    </span><span class="nt">ignoreImports</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+</span><span class="w">    </span><span class="nt">path</span><span class="p">:</span><span class="w"> </span><span class="l">github.com/gohugoio/hugoTestModules1_linux/modh1_2_1v</span><span class="w">
+</span><span class="w">  </span>- <span class="nt">path</span><span class="p">:</span><span class="w"> </span><span class="l">my-shortcodes</span><span class="w">
+</span></code></pre></div>
+      </div>
+      
+        <button class="needs-js copy copy-toggle bg-accent-color-dark f6 absolute top-0 right-0 lh-solid hover-bg-primary-color-dark bn white ph3 pv2" title="Copy this code to your clipboard." data-clipboard-action="copy" aria-label="copy button"></button>
+        
+      
+    
+      <div data-pane="toml" class="code-copy-content nt3 tab-pane ">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="p">[</span><span class="nx">module</span><span class="p">]</span>
+<span class="p">[[</span><span class="nx">module</span><span class="p">.</span><span class="nx">imports</span><span class="p">]]</span>
+<span class="nx">disable</span> <span class="p">=</span> <span class="kc">false</span>
+<span class="nx">ignoreConfig</span> <span class="p">=</span> <span class="kc">false</span>
+<span class="nx">ignoreImports</span> <span class="p">=</span> <span class="kc">false</span>
+<span class="nx">path</span> <span class="p">=</span> <span class="s1">&#39;github.com/gohugoio/hugoTestModules1_linux/modh1_2_1v&#39;</span>
+<span class="p">[[</span><span class="nx">module</span><span class="p">.</span><span class="nx">imports</span><span class="p">]]</span>
+<span class="nx">path</span> <span class="p">=</span> <span class="s1">&#39;my-shortcodes&#39;</span>
+
+
+</code></pre></div>
+      </div>
+      
+        <button class="needs-js copy copy-toggle bg-accent-color-dark f6 absolute top-0 right-0 lh-solid hover-bg-primary-color-dark bn white ph3 pv2" title="Copy this code to your clipboard." data-clipboard-action="copy" aria-label="copy button"></button>
+        
+      
+    
+      <div data-pane="json" class="code-copy-content nt3 tab-pane ">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
+   <span class="nt">&#34;module&#34;</span><span class="p">:</span> <span class="p">{</span>
+      <span class="nt">&#34;imports&#34;</span><span class="p">:</span> <span class="p">[</span>
+         <span class="p">{</span>
+            <span class="nt">&#34;disable&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+            <span class="nt">&#34;ignoreConfig&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+            <span class="nt">&#34;ignoreImports&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+            <span class="nt">&#34;path&#34;</span><span class="p">:</span> <span class="s2">&#34;github.com/gohugoio/hugoTestModules1_linux/modh1_2_1v&#34;</span>
+         <span class="p">},</span>
+         <span class="p">{</span>
+            <span class="nt">&#34;path&#34;</span><span class="p">:</span> <span class="s2">&#34;my-shortcodes&#34;</span>
+         <span class="p">}</span>
+      <span class="p">]</span>
+   <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+      </div>
+      
+        <button class="needs-js copy copy-toggle bg-accent-color-dark f6 absolute top-0 right-0 lh-solid hover-bg-primary-color-dark bn white ph3 pv2" title="Copy this code to your clipboard." data-clipboard-action="copy" aria-label="copy button"></button>
+        
+      
+    
+  </div>
+  
+</div>
+
+<dl>
+<dt>path</dt>
+<dd>Can be either a valid Go Module module path, e.g. <code>github.com/gohugoio/myShortcodes</code>, or the directory name for the module as stored in your themes folder.</dd>
+<dt>ignoreConfig</dt>
+<dd>If enabled, any module configuration file, e.g. <code>config.toml</code>, will not be loaded. Note that this will also stop the loading of any transitive module dependencies.</dd>
+<dt>ignoreImports 
+
+
+<button class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 mr2 ml2 px-4 border border-gray-400 rounded shadow">
+    <a href="https://gohugo.io/news/0.80.0-relnotes/" target="_blank">New in v0.80.0</a>
+</button></dt>
+<dd>If enabled, module imports will not be followed.</dd>
+<dt>disable</dt>
+<dd>Set to <code>true</code> to disable the module while keeping any version info in the <code>go.*</code> files.</dd>
+<dt>noMounts 
+
+
+<button class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 mr2 ml2 px-4 border border-gray-400 rounded shadow">
+    <a href="https://gohugo.io/news/0.84.2-relnotes/" target="_blank">New in v0.84.2</a>
+</button></dt>
+<dd>Do not mount any folder in this import.</dd>
+<dt>noVendor</dt>
+<dd>Never vendor this import (only allowed in main project).</dd>
+</dl>
+
+
+<aside class="admonition note">
+	<div class="note-icon">
+		
+	</div>
+	<div class="admonition-content"><p>Most of the commands for <strong>Hugo Modules</strong> requires a newer version of Go installed (see <a href="https://golang.org/dl/">https://golang.org/dl/</a>) and the relevant VCS client (e.g. Git, see <a href="https://git-scm.com/downloads/">https://git-scm.com/downloads/</a> ). If you have an &ldquo;older&rdquo; site running on Netlify, you may have to set GO_VERSION to 1.12 in your Environment settings.</p>
+<p>For more information about Go Modules, see:</p>
+<ul>
+<li><a href="https://github.com/golang/go/wiki/Modules">https://github.com/golang/go/wiki/Modules</a></li>
+<li><a href="https://blog.golang.org/using-go-modules">https://blog.golang.org/using-go-modules</a></li>
+</ul>
+</div>
+</aside>
+
+<h2 id="module-config-mounts">Module Config: mounts <a class="header-link" href="#module-config-mounts"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2>
+
+<aside class="admonition note">
+	<div class="note-icon">
+		
+	</div>
+	
+	
+	<div class="admonition-content"><p>When the <code>mounts</code> config was introduced in Hugo 0.56.0, we were careful to preserve the existing <code>staticDir</code> and similar configuration to make sure all existing sites just continued to work. But you should not have both: if you add a <code>mounts</code> section you should remove the old <code>staticDir</code> etc. settings.</p>
+</div>
+</aside>
+
+
+<aside class="admonition warning">
+	<div class="admonition-icon">
+		
+	</div>
+	
+	
+	<div class="admonition-content"><p>When you add a mount, the default mount for the concerned target root is ignored: be sure to explicitly add it.</p>
+</div>
+</aside>
+
+<p><strong>Default mounts</strong>
+
+
+
+  
+
+
+<div class="code relative" id="config">
+  <div class="code-nav flex flex-nowrap items-stretch"><div class="san-serif f6 dib lh-solid pl2 pv2 mr2">
+        config.
+      </div>
+      <button data-toggle-tab="yaml" class="tab-button active ba san-serif f6 dib lh-solid ph2 pv2">
+        yaml
+      </button>
+      &nbsp;
+    
+      <button data-toggle-tab="toml" class="tab-button  ba san-serif f6 dib lh-solid ph2 pv2">
+        toml
+      </button>
+      &nbsp;
+    
+      <button data-toggle-tab="json" class="tab-button  ba san-serif f6 dib lh-solid ph2 pv2">
+        json
+      </button>
+      &nbsp;
+    
+  </div>
+  <div class="tab-content">
+    
+      <div data-pane="yaml" class="code-copy-content nt3 tab-pane active">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">module</span><span class="p">:</span><span class="w">
+</span><span class="w">  </span><span class="nt">mounts</span><span class="p">:</span><span class="w">
+</span><span class="w">  </span>- <span class="nt">source</span><span class="p">:</span><span class="w"> </span><span class="l">content</span><span class="w">
+</span><span class="w">    </span><span class="nt">target</span><span class="p">:</span><span class="w"> </span><span class="l">content</span><span class="w">
+</span><span class="w">  </span>- <span class="nt">source</span><span class="p">:</span><span class="w"> </span><span class="l">static</span><span class="w">
+</span><span class="w">    </span><span class="nt">target</span><span class="p">:</span><span class="w"> </span><span class="l">static</span><span class="w">
+</span><span class="w">  </span>- <span class="nt">source</span><span class="p">:</span><span class="w"> </span><span class="l">layouts</span><span class="w">
+</span><span class="w">    </span><span class="nt">target</span><span class="p">:</span><span class="w"> </span><span class="l">layouts</span><span class="w">
+</span><span class="w">  </span>- <span class="nt">source</span><span class="p">:</span><span class="w"> </span><span class="l">data</span><span class="w">
+</span><span class="w">    </span><span class="nt">target</span><span class="p">:</span><span class="w"> </span><span class="l">data</span><span class="w">
+</span><span class="w">  </span>- <span class="nt">source</span><span class="p">:</span><span class="w"> </span><span class="l">assets</span><span class="w">
+</span><span class="w">    </span><span class="nt">target</span><span class="p">:</span><span class="w"> </span><span class="l">assets</span><span class="w">
+</span><span class="w">  </span>- <span class="nt">source</span><span class="p">:</span><span class="w"> </span><span class="l">i18n</span><span class="w">
+</span><span class="w">    </span><span class="nt">target</span><span class="p">:</span><span class="w"> </span><span class="l">i18n</span><span class="w">
+</span><span class="w">  </span>- <span class="nt">source</span><span class="p">:</span><span class="w"> </span><span class="l">archetypes</span><span class="w">
+</span><span class="w">    </span><span class="nt">target</span><span class="p">:</span><span class="w"> </span><span class="l">archetypes</span><span class="w">
+</span></code></pre></div>
+      </div>
+      
+        <button class="needs-js copy copy-toggle bg-accent-color-dark f6 absolute top-0 right-0 lh-solid hover-bg-primary-color-dark bn white ph3 pv2" title="Copy this code to your clipboard." data-clipboard-action="copy" aria-label="copy button"></button>
+        
+      
+    
+      <div data-pane="toml" class="code-copy-content nt3 tab-pane ">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="p">[</span><span class="nx">module</span><span class="p">]</span>
+<span class="p">[[</span><span class="nx">module</span><span class="p">.</span><span class="nx">mounts</span><span class="p">]]</span>
+<span class="nx">source</span> <span class="p">=</span> <span class="s1">&#39;content&#39;</span>
+<span class="nx">target</span> <span class="p">=</span> <span class="s1">&#39;content&#39;</span>
+<span class="p">[[</span><span class="nx">module</span><span class="p">.</span><span class="nx">mounts</span><span class="p">]]</span>
+<span class="nx">source</span> <span class="p">=</span> <span class="s1">&#39;static&#39;</span>
+<span class="nx">target</span> <span class="p">=</span> <span class="s1">&#39;static&#39;</span>
+<span class="p">[[</span><span class="nx">module</span><span class="p">.</span><span class="nx">mounts</span><span class="p">]]</span>
+<span class="nx">source</span> <span class="p">=</span> <span class="s1">&#39;layouts&#39;</span>
+<span class="nx">target</span> <span class="p">=</span> <span class="s1">&#39;layouts&#39;</span>
+<span class="p">[[</span><span class="nx">module</span><span class="p">.</span><span class="nx">mounts</span><span class="p">]]</span>
+<span class="nx">source</span> <span class="p">=</span> <span class="s1">&#39;data&#39;</span>
+<span class="nx">target</span> <span class="p">=</span> <span class="s1">&#39;data&#39;</span>
+<span class="p">[[</span><span class="nx">module</span><span class="p">.</span><span class="nx">mounts</span><span class="p">]]</span>
+<span class="nx">source</span> <span class="p">=</span> <span class="s1">&#39;assets&#39;</span>
+<span class="nx">target</span> <span class="p">=</span> <span class="s1">&#39;assets&#39;</span>
+<span class="p">[[</span><span class="nx">module</span><span class="p">.</span><span class="nx">mounts</span><span class="p">]]</span>
+<span class="nx">source</span> <span class="p">=</span> <span class="s1">&#39;i18n&#39;</span>
+<span class="nx">target</span> <span class="p">=</span> <span class="s1">&#39;i18n&#39;</span>
+<span class="p">[[</span><span class="nx">module</span><span class="p">.</span><span class="nx">mounts</span><span class="p">]]</span>
+<span class="nx">source</span> <span class="p">=</span> <span class="s1">&#39;archetypes&#39;</span>
+<span class="nx">target</span> <span class="p">=</span> <span class="s1">&#39;archetypes&#39;</span>
+
+
+</code></pre></div>
+      </div>
+      
+        <button class="needs-js copy copy-toggle bg-accent-color-dark f6 absolute top-0 right-0 lh-solid hover-bg-primary-color-dark bn white ph3 pv2" title="Copy this code to your clipboard." data-clipboard-action="copy" aria-label="copy button"></button>
+        
+      
+    
+      <div data-pane="json" class="code-copy-content nt3 tab-pane ">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
+   <span class="nt">&#34;module&#34;</span><span class="p">:</span> <span class="p">{</span>
+      <span class="nt">&#34;mounts&#34;</span><span class="p">:</span> <span class="p">[</span>
+         <span class="p">{</span>
+            <span class="nt">&#34;source&#34;</span><span class="p">:</span> <span class="s2">&#34;content&#34;</span><span class="p">,</span>
+            <span class="nt">&#34;target&#34;</span><span class="p">:</span> <span class="s2">&#34;content&#34;</span>
+         <span class="p">},</span>
+         <span class="p">{</span>
+            <span class="nt">&#34;source&#34;</span><span class="p">:</span> <span class="s2">&#34;static&#34;</span><span class="p">,</span>
+            <span class="nt">&#34;target&#34;</span><span class="p">:</span> <span class="s2">&#34;static&#34;</span>
+         <span class="p">},</span>
+         <span class="p">{</span>
+            <span class="nt">&#34;source&#34;</span><span class="p">:</span> <span class="s2">&#34;layouts&#34;</span><span class="p">,</span>
+            <span class="nt">&#34;target&#34;</span><span class="p">:</span> <span class="s2">&#34;layouts&#34;</span>
+         <span class="p">},</span>
+         <span class="p">{</span>
+            <span class="nt">&#34;source&#34;</span><span class="p">:</span> <span class="s2">&#34;data&#34;</span><span class="p">,</span>
+            <span class="nt">&#34;target&#34;</span><span class="p">:</span> <span class="s2">&#34;data&#34;</span>
+         <span class="p">},</span>
+         <span class="p">{</span>
+            <span class="nt">&#34;source&#34;</span><span class="p">:</span> <span class="s2">&#34;assets&#34;</span><span class="p">,</span>
+            <span class="nt">&#34;target&#34;</span><span class="p">:</span> <span class="s2">&#34;assets&#34;</span>
+         <span class="p">},</span>
+         <span class="p">{</span>
+            <span class="nt">&#34;source&#34;</span><span class="p">:</span> <span class="s2">&#34;i18n&#34;</span><span class="p">,</span>
+            <span class="nt">&#34;target&#34;</span><span class="p">:</span> <span class="s2">&#34;i18n&#34;</span>
+         <span class="p">},</span>
+         <span class="p">{</span>
+            <span class="nt">&#34;source&#34;</span><span class="p">:</span> <span class="s2">&#34;archetypes&#34;</span><span class="p">,</span>
+            <span class="nt">&#34;target&#34;</span><span class="p">:</span> <span class="s2">&#34;archetypes&#34;</span>
+         <span class="p">}</span>
+      <span class="p">]</span>
+   <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+      </div>
+      
+        <button class="needs-js copy copy-toggle bg-accent-color-dark f6 absolute top-0 right-0 lh-solid hover-bg-primary-color-dark bn white ph3 pv2" title="Copy this code to your clipboard." data-clipboard-action="copy" aria-label="copy button"></button>
+        
+      
+    
+  </div>
+  
+</div>
+</p>
+<dl>
+<dt>source</dt>
+<dd>The source directory of the mount. For the main project, this can be either project-relative or absolute and even a symbolic link. For other modules it must be project-relative.</dd>
+<dt>target</dt>
+<dd>Where it should be mounted into Hugo&rsquo;s virtual filesystem. It must start with one of Hugo&rsquo;s component folders: <code>static</code>, <code>content</code>, <code>layouts</code>, <code>data</code>, <code>assets</code>, <code>i18n</code>, or <code>archetypes</code>. E.g. <code>content/blog</code>.</dd>
+<dt>lang</dt>
+<dd>The language code, e.g. &ldquo;en&rdquo;. Only relevant for <code>content</code> mounts, and <code>static</code> mounts when in multihost mode.</dd>
+</dl>
+
+</div>
+
+          
+
+<h2>See Also</h2>
+<ul>
+	
+	<li><a href="/gravity-manual/use-modules/">Use Hugo Modules</a></li>
+	
+	<li><a href="/gravity-manual/theme-components/">Theme Components</a></li>
+	
+</ul>
+
+        </div>
+      </div>
+      <div class="order-0 w-20 dn db-l">
+        
+<nav role="navigation">
+  <ul class="list pa0 nl2">
+    
+      
+      <li class="f5 w-100 hover-bg-light-gray hover-accent-color-light fw8">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".about">关于重力中国</a>
+        <ul class="about desktopmenu animated fadeIn list pl0 bg-light-gray dn">
+          <li class="f6 fw4">
+            <a href="/about/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              简介
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/about/features/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              特点
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/about/license/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              开源协议
+            </a>
+          </li>
+        </ul>
+      </li>
+      
+      <li class="f5 w-100 hover-bg-light-gray hover-accent-color-light fw8">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".getting-started">重力学入门</a>
+        <ul class="getting-started desktopmenu animated fadeIn list pl0 bg-light-gray dn">
+          <li class="f6 fw4">
+            <a href="/getting-started/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Get Started Overview
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/getting-started/quick-start/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Quick Start
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/getting-started/installing/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Install Hugo
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/getting-started/usage/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Basic Usage
+            </a>
+          </li>
+        </ul>
+      </li>
+      
+      <li class="f5 w-100 hover-bg-light-gray hover-accent-color-light fw8 mb1 bb b--moon-gray">
+        <a href="/gravity-manual/" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".">重力软件教程</a>
+      </li>
+      
+      <li class="f5 w-100 hover-bg-light-gray hover-accent-color-light fw8">
+        <a href="/gravitydata/" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".">重力数据处理教程</a>
+      </li>
+      
+      <li class="f5 w-100 hover-bg-light-gray hover-accent-color-light fw8">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".pipes">重力开源软件开发</a>
+        <ul class="pipes desktopmenu animated fadeIn list pl0 bg-light-gray dn">
+          <li class="f6 fw4">
+            <a href="/gravity-software/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Hugo Pipes Overview
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/gravity-software/introduction/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Hugo Pipes Introduction
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/gravity-software/scss-sass/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              SASS / SCSS
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/gravity-software/postprocess/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              PostProcess
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/gravity-software/postcss/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              PostCSS
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/gravity-software/js/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              JavaScript Building
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/gravity-software/babel/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Babel
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/gravity-software/minification/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Asset minification
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/gravity-software/bundling/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Asset bundling
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/gravity-software/gravdpis_manual/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              GravDPIS中文文档
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/gravity-software/resource-from-template/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Resource from Template
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/gravity-software/resource-from-string/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Resource from String
+            </a>
+          </li>
+        </ul>
+      </li>
+      
+      <li class="f5 w-100 hover-bg-light-gray hover-accent-color-light fw8">
+        <a href="/gravity-projects/" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".">重力项目展示</a>
+      </li>
+      
+      <li class="f5 w-100 hover-bg-light-gray hover-accent-color-light fw8">
+        <a href="/coding/" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".">编程教程</a>
+      </li>
+      
+      <li class="f5 w-100 hover-bg-light-gray hover-accent-color-light fw8 mb1 bb b--moon-gray">
+        <a href="/contribute/" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".">贡献指南</a>
+      </li>
+      
+      <li class="f5 w-100 hover-bg-light-gray hover-accent-color-light fw8">
+        <a href="/maintenance/" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".">Maintenance</a>
+      </li>
+      
+      <li class="f5 w-100 hover-bg-light-gray hover-accent-color-light fw8">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".">contribute</a>
+        <ul class=" desktopmenu animated fadeIn list pl0 bg-light-gray dn">
+          <li class="f6 fw4">
+            <a href="/contribute/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Contribute to Hugo
+            </a>
+          </li>
+        </ul>
+      </li>
+      
+      <li class="f5 w-100 hover-bg-light-gray hover-accent-color-light fw8">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".">hosting-and-deployment</a>
+        <ul class=" desktopmenu animated fadeIn list pl0 bg-light-gray dn">
+          <li class="f6 fw4">
+            <a href="/coding/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Hosting &amp; Deployment Overview
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/coding/hugo-deploy/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Hugo Deploy
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/coding/deployment-with-nanobox/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Host-Agnostic Deploys with Nanobox
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/coding/hosting-on-aws-amplify/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Host on AWS Amplify
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/coding/hosting-on-netlify/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Host on Netlify
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/coding/hosting-on-render/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Host on Render
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/coding/hosting-on-firebase/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Host on Firebase
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/coding/hosting-on-github/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Host on GitHub
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/coding/hosting-on-gitlab/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Host on GitLab
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/coding/hosting-on-keycdn/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Hosting on KeyCDN
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/coding/hosting-on-bitbucket/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Host on Bitbucket
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/coding/deployment-with-wercker/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Deployment with Wercker
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/coding/deployment-with-rsync/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Deployment with Rsync
+            </a>
+          </li>
+        </ul>
+      </li>
+      
+      <li class="f5 w-100 hover-bg-light-gray hover-accent-color-light fw8">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2  primary-color" data-target=".">modules</a>
+        <ul class=" desktopmenu animated fadeIn list pl0 bg-light-gray db">
+          <li class="f6 fw4">
+            <a href="/gravity-manual/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Hugo Modules Overview
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/gravity-manual/configuration/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 primary-color ">
+              Configure Modules
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/gravity-manual/use-modules/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Use Hugo Modules
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/gravity-manual/theme-components/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Theme Components
+            </a>
+          </li>
+        </ul>
+      </li>
+      
+      <li class="f5 w-100 hover-bg-light-gray hover-accent-color-light fw8">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".">variables</a>
+        <ul class=" desktopmenu animated fadeIn list pl0 bg-light-gray dn">
+          <li class="f6 fw4">
+            <a href="/gravitydata/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Variables Overview
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/gravitydata/site/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Site Variables
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/gravitydata/page/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Page Variables
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/gravitydata/shortcodes/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Shortcode Variables
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/gravitydata/pages/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Pages Methods
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/gravitydata/taxonomy/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Taxonomy Variables
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/gravitydata/files/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              File Variables
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/gravitydata/menus/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Menu Entry Properties
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/gravitydata/hugo/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Hugo Variables
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/gravitydata/git/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Git Variables
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/gravitydata/sitemap/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Sitemap Variables
+            </a>
+          </li>
+        </ul>
+      </li>
+  </ul>
+</nav>
+
+      </div>
+
+    </div>
+  </article>
+
+  <div class="w-100 bg-light-gray">
+    <div class="mw7 pa4 center nested-lh-copy lh-copy">
+      <h6 class="f4 dark-gray mb2">
+  <a href="https://gohugo.io/gravity-manual/configuration/" class="hide-child link primary-color">
+  <span class="nl3 child"><svg class="grow" fill="" height="14px" viewBox="0 0 24 24" width="14px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg>
+</span>
+    “Configure Modules”
+  </a> was last updated: August 15, 2021: <a class="hide-child link primary-color" href="https://github.com/Gravity-Geodesy-China-Community/Gravity-Geodesy-China-Community.github.iocommit/078401c0fc222e431219a9b3839ae9b254e65839">update framwork (078401c)</a>
+</h6>
+
+      <a href="https://github.com/Gravity-Geodesy-China-Community/Gravity-Geodesy-China-Community.github.ioedit/master/content/en/gravity-manual%5cconfiguration.md" class="
+f6 ph3 pv1 br2 dib  tc ttu mv3 bg-primary-color white hover-bg-green link
+">Improve this page</a>
+
+      
+
+
+    </div>
+  </div>
+
+  </main>
+
+  <footer class="bg-primary-color-dark ph4-ns pt4 relative w-100" role="contentinfo">
+    <div class="center flex-ns flex-wrap justify-between mw9 w-90">
+      <div class="pb3 pt4 w-100 w-50-ns">
+
+         <div class="b f3  light-gray mb3 nested-links tc">
+           By the <a href="https://github.com/Gravity-Geodesy-China-Community/Gravity-Geodesy-China-Community.github.io/graphs/contributors" class="link">Grvity China Team</a> in Wuhan, China<br />
+          </div>
+
+          <div class="center w4">
+            <img src="images/gravitychinalogo.svg" alt="Gravity China Logo">
+          </div>
+			<div class="b f4  light-red mb3 nested-links tc">
+           This Website is founded by： <li class="dib mr3"><a href="https://goujianing.ml/" class="dim link light-gray pv2">@Gravpher</a></li>a Phd candidate<br />
+          </div>
+
+	
+		  <div class="b f4  light-red mb3 nested-links tc">
+           本站核心维护与贡献者： <li class="dib mr3"> <a href="https://goujianing.ml/" class="dim link light-gray pv2">@Gravpher</a> <a href="https://github.com/bylwxcj/" class="dim link light-gray pv2">@Gongzhe Wei</a></li><br />
+          </div>
+		  	<div class="b f4  light-red mb3 nested-links tc">
+           本站主要贡献者：  <br />
+          </div>
+          <ul class="center f6 list ma0 mv4 pa0 tc">
+            <li class="dib mr3"><a href="https://twitter.com/gohugoio" class="dim link light-gray pv2">@Yijun Liu</a></li>
+            <li class="dib mr3"><a href="https://twitter.com/spf13" class="dim link light-gray pv2">@Yabo Zhao</a></li>
+            <li class="dib"><a href="https://twitter.com/bepsays" class="dim link light-gray pv2">@Zehua Guo</a></li>
+          </ul>
+
+          
+
+      </div>
+
+      <div class="w-100 w-50-l"> 
+       <div class="b f3  light-red mb3 nested-links tc">
+           Like this Project？  <br />
+          </div>
+		   <div class="b f4  light-purple mb3 nested-links tc">
+           Then feel free to support this project. You Can do a lot, such as<br />
+          </div>
+		  <div class="b f5  light-gray mb3 nested-links tc">
+           1、受到本站启发的所有内容，请挂上<a href="https://gravitychian.ga" class="dim link light-gray pv2">本站链接</a><br />
+          </div>
+		    <div class="b f5  light-gray mb3 nested-links tc">
+           2、<a href="https://github.com/Gravity-Geodesy-China-Community" class="dim link light-gray pv2">加入我们</a>，共同维护重力中国开源社区<br />
+          </div>
+		     <div class="b f5  light-gray mb3 nested-links tc">
+           3、<a href="https://github.com/Gravity-Geodesy-China-Community/Gravity-Geodesy-China-Community.github.io" class="dim link light-gray pv2">Star</a> ，并分享这个项目<br />
+          </div>
+		     <div class="b f5  light-gray mb3 nested-links tc">
+           4、您也可以捐赠作者<a href="https://goujianing.ml/" class="dim link light-gray pv2">@Gravpher</a>一杯咖啡，您的支持是我做下去的最大动力，捐款请注明来自GravityChina，感谢您的支持   <a href="https://goujianing.ml/blog/denote/" class="dim link light-gray pv2">denote link</a><br />
+          </div>
+		    <div class="b f3  light-yellow mb3 nested-links tc">
+           Don't let a bad day make you feel like you have a bad life. You Remember？ <br />
+          </div>
+      </div>
+
+    </div>
+
+    <div class="f5 gray mb5 mb0-ns ph3 w-100"> 
+      <p class="dib mr4">重力中国版权 logo 属于 <a href="https://www.goujianing.ml" class="dim link light-gray pv2">@Gravpher</a> 2021–2021, Gravpher thinks <a href="http://icgem.gfz-potsdam.de/calcgrid?modeltype=celestial" class="dim link light-gray pv2">GFZ</a> and <a href="https://gohugo.io/" class="dim link light-gray pv2">Hugo</a>  work for inspiration </p>
+    </div>
+
+    <img src="/images/gopher-side_color.svg" alt="" class="absolute-l bottom-0 dn db-l h4 right-0 z-999"/>
+
+    <div class="bg-primary-color-dark bottom-0 left-0 right-0 dn-l fixed pb3 ph3 w-100"><div  class="globalmenu mobilemenu pb3 dn">
+    
+
+<ul class="list hidden dib ph0 ma0 scrolling-touch tc">
+  
+    <li  class="tl dib ma0 hover-bg-black w-100">
+        <a href="/news/" class="ttu f6 link primary-color-light overflow hover-white db brand-font  ma0 w-100 pv3 ph4">
+          新闻
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100">
+        <a href="/documentation/" class="ttu f6 link primary-color-light overflow hover-white db brand-font  ma0 w-100 pv3 ph4">
+          文档
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100">
+        <a href="/gravity-projects/" class="ttu f6 link primary-color-light overflow hover-white db brand-font  ma0 w-100 pv3 ph4">
+          研究案例
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100">
+        <a href="https://discourse.gravitychina.ga/" class="ttu f6 link primary-color-light overflow hover-white db brand-font  ma0 w-100 pv3 ph4">
+          重力论坛
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100">
+        <a href="https://github.com/Gravity-Geodesy-China-Community" class="ttu f6 link primary-color-light overflow hover-white db brand-font  ma0 w-100 pv3 ph4">
+          GitHub
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100">
+        <a href="/about/" class="ttu f6 link primary-color-light overflow hover-white db brand-font  ma0 w-100 pv3 ph4">
+          关于我们
+        </a>
+    </li>
+  
+</ul>
+
+</div>
+<div  class="docsmenu mobilemenu pb3 dn">
+    
+
+<ul class="list dib ph0 ma0 scrolling-touch tc">
+  
+    <li  class="tl dib ma0 hover-bg-black w-100">
+        <a href="/about/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
+          关于重力中国
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100">
+        <a href="/getting-started/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
+          重力学入门
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100 mb2 bb b--mid-gray">
+        <a href="/gravity-manual/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
+          重力软件教程
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100">
+        <a href="/gravitydata/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
+          重力数据处理教程
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100">
+        <a href="/gravity-software/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
+          重力开源软件开发
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100">
+        <a href="/gravity-projects/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
+          重力项目展示
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100">
+        <a href="/coding/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
+          编程教程
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100 mb2 bb b--mid-gray">
+        <a href="/contribute/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
+          贡献指南
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100">
+        <a href="/maintenance/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
+          Maintenance
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100">
+        <a href="" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
+          contribute
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100">
+        <a href="" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
+          hosting-and-deployment
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100">
+        <a href="" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
+          modules
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100">
+        <a href="" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
+          variables
+        </a>
+    </li>
+  
+</ul>
+
+</div>
+
+<div class="flex dn-l justify-between">
+  <button class="js-toggle flex-auto dib dn-l f6 tc db mt4-ns ph3 pv2 link mr2 white bg-primary-color-dark hover-bg-primary-color ba b--white-40 w-auto" data-target=".globalmenu">目录</button>
+
+  <button class="js-toggle flex-auto dib dn-l f6 tc db mt4-ns ph3 pv2 link white bg-primary-color-dark hover-bg-primary-color ba b--white-40 w-auto" data-target=".docsmenu">文档目录</button>
+</div>
+</div>
+	
+      <div class="w-100 w-50-l"> 
+        
+
+
+
+      </div>
+
+     
+
+</footer>
+
+
+</body>
+
+</html>

@@ -1,9 +1,9 @@
 ---
-title: Hugo Documentation
-linktitle: Hugo
-description: Hugo is the world's fastest static website engine. It's written in Go (aka Golang) and developed by bep, spf13 and friends.
-date: 2017-02-01
-publishdate: 2017-02-01
+title: GravityChina项目文档
+linktitle: 
+description: 
+date: 2021-08-01
+publishdate: 2021-08-15
 menu:
   main:
     parent: "section name"
@@ -16,6 +16,5 @@ toc: false
 layout: documentation-home
 ---
 
-Hugo is the **world's fastest static website engine.** It's written in Go (aka Golang) and developed by [bep](https://github.com/bep), [spf13](https://github.com/spf13) and [friends](https://github.com/gohugoio/hugo/graphs/contributors).
+GravityChina.ga致力于打造中国最大的重力与大地测量研究的学习交流平台，本站终极目标为促进科学交流与发展，发展计算机技术在地球科学中的应用。本站是由Gravpher2021年夏天于武汉创建，由[Gravpher](www.goujianing.ml)与重力室朋友们共同维护。
 
-Below you will find some of the most common and helpful pages from our documentation.
