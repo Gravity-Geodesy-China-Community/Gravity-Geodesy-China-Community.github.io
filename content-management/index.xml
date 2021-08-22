@@ -1,250 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Content Management on Hugo</title>
-    <link>https://gohugo.io/content-management/</link>
-    <description>Recent content in Content Management on Hugo</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Wed, 01 Feb 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://gohugo.io/content-management/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Content Organization</title>
-      <link>https://gohugo.io/content-management/organization/</link>
-      <pubDate>Wed, 01 Feb 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://gohugo.io/content-management/organization/</guid>
-      <description>Page Bundles Hugo 0.32 announced page-relative images and other resources packaged into Page Bundles.
-These terms are connected, and you also need to read about Page Resources and Image Processing to get the full picture.
-The illustration shows 3 bundles. Note that the home page bundle cannot contain other content pages, but other files (images etc.) are fine. The bundle documentation is work in progress.</description>
-    </item>
-    
-    <item>
-      <title>Syntax Highlighting</title>
-      <link>https://gohugo.io/content-management/syntax-highlighting/</link>
-      <pubDate>Wed, 01 Feb 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://gohugo.io/content-management/syntax-highlighting/</guid>
-      <description>Hugo uses Chroma as its code highlighter; it is built in Go and is really, really fast &amp;ndash; and for the most important parts compatible with Pygments we used before.
-Configure Syntax Highlighter See Configure Highlight.
-Generate Syntax Highlighter CSS If you run with pygmentsUseClasses=true in your site config, you need a style sheet.
-You can generate one with Hugo:
-hugo gen chromastyles --style=monokai &amp;gt; syntax.css Run hugo gen chromastyles -h for more options.</description>
-    </item>
-    
-    <item>
-      <title>Content Formats</title>
-      <link>https://gohugo.io/content-management/formats/</link>
-      <pubDate>Tue, 10 Jan 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://gohugo.io/content-management/formats/</guid>
-      <description>You can put any file type into your /content directories, but Hugo uses the markup front matter value if set or the file extension (see Markup identifiers in the table below) to determine if the markup needs to be processed, e.g.:
- Markdown converted to HTML Shortcodes processed Layout applied  List of content formats The current list of content formats in Hugo:
-   Name Markup identifiers Comment     Goldmark md, markdown, goldmark Note that you can set the default handler of md and markdown to something else, see Configure Markup.</description>
-    </item>
-    
-    <item>
-      <title>Related Content</title>
-      <link>https://gohugo.io/content-management/related/</link>
-      <pubDate>Tue, 05 Sep 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://gohugo.io/content-management/related/</guid>
-      <description>Hugo uses a set of factors to identify a page&amp;rsquo;s related content based on Front Matter parameters. This can be tuned to the desired set of indices and parameters or left to Hugo&amp;rsquo;s default Related Content configuration.
-List Related Content To list up to 5 related pages (which share the same date or keyword parameters) is as simple as including something similar to this partial in your single page template:</description>
-    </item>
-    
-    <item>
-      <title>Front Matter</title>
-      <link>https://gohugo.io/content-management/front-matter/</link>
-      <pubDate>Mon, 09 Jan 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://gohugo.io/content-management/front-matter/</guid>
-      <description>Front matter allows you to keep metadata attached to an instance of a content type&amp;mdash;i.e., embedded inside a content file&amp;mdash;and is one of the many features that gives Hugo its strength.
-  Front Matter Formats Hugo supports four formats for front matter, each with their own identifying tokens.
- TOML identified by opening and closing +++. YAML identified by opening and closing ---. JSON a single JSON object surrounded by &amp;lsquo;{&amp;rsquo; and &amp;lsquo;}&amp;rsquo;, followed by a new line.</description>
-    </item>
-    
-    <item>
-      <title>Build Options</title>
-      <link>https://gohugo.io/content-management/build-options/</link>
-      <pubDate>Mon, 02 Mar 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://gohugo.io/content-management/build-options/</guid>
-      <description>They are stored in a reserved Front Matter object named _build with the following defaults:
-_build:render:alwayslist:alwayspublishResources:truerender If always, the page will be treated as a published page, holding its dedicated output files (index.html, etc&amp;hellip;) and permalink.
-New in v0.76.0 We extended this property from a boolean to an enum in Hugo 0.76.0. Valid values are:
- never The page will not be included in any page collection. always (default) The page will be rendered to disk and get a RelPermalink etc.</description>
-    </item>
-    
-    <item>
-      <title>Shortcodes</title>
-      <link>https://gohugo.io/content-management/shortcodes/</link>
-      <pubDate>Wed, 01 Feb 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://gohugo.io/content-management/shortcodes/</guid>
-      <description>What a Shortcode is Hugo loves Markdown because of its simple content format, but there are times when Markdown falls short. Often, content authors are forced to add raw HTML (e.g., video &amp;lt;iframe&amp;gt;&amp;rsquo;s) to Markdown content. We think this contradicts the beautiful simplicity of Markdown&amp;rsquo;s syntax.
-Hugo created shortcodes to circumvent these limitations.
-A shortcode is a simple snippet inside a content file that Hugo will render using a predefined template.</description>
-    </item>
-    
-    <item>
-      <title>Content Sections</title>
-      <link>https://gohugo.io/content-management/sections/</link>
-      <pubDate>Wed, 01 Feb 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://gohugo.io/content-management/sections/</guid>
-      <description>A Section is a collection of pages that gets defined based on the organization structure under the content/ directory.
-By default, all the first-level directories under content/ form their own sections (root sections) provided they constitute Branch Bundles. Directories which are just Leaf Bundles do not form their own sections, despite being first-level directories.
-If a user needs to define a section foo at a deeper level, they need to create a directory named foo with an _index.</description>
-    </item>
-    
-    <item>
-      <title>Content Types</title>
-      <link>https://gohugo.io/content-management/types/</link>
-      <pubDate>Wed, 01 Feb 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://gohugo.io/content-management/types/</guid>
-      <description>A content type is a way to organize your content. Hugo resolves the content type from either the type in front matter or, if not set, the first directory in the file path. E.g. content/blog/my-first-event.md will be of type blog if no type set.
-A content type is used to
- Determine how the content is rendered. See Template Lookup Order and Content Views for more. Determine which archetype template to use for new content.</description>
-    </item>
-    
-    <item>
-      <title>Archetypes</title>
-      <link>https://gohugo.io/content-management/archetypes/</link>
-      <pubDate>Wed, 01 Feb 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://gohugo.io/content-management/archetypes/</guid>
-      <description>What are Archetypes? Archetypes are content template files in the archetypes directory of your project that contain preconfigured front matter and possibly also a content disposition for your website&amp;rsquo;s content types. These will be used when you run hugo new.
-The hugo new uses the content-section to find the most suitable archetype template in your project. If your project does not contain any archetype files, it will also look in the theme.</description>
-    </item>
-    
-    <item>
-      <title>Taxonomies</title>
-      <link>https://gohugo.io/content-management/taxonomies/</link>
-      <pubDate>Wed, 01 Feb 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://gohugo.io/content-management/taxonomies/</guid>
-      <description>What is a Taxonomy? Hugo includes support for user-defined groupings of content called taxonomies. Taxonomies are classifications of logical relationships between content.
-Definitions  Taxonomy a categorization that can be used to classify content Term a key within the taxonomy Value a piece of content assigned to a term  Example Taxonomy: Movie Website Let&amp;rsquo;s assume you are making a website about movies. You may want to include the following taxonomies:</description>
-    </item>
-    
-    <item>
-      <title>Content Summaries</title>
-      <link>https://gohugo.io/content-management/summaries/</link>
-      <pubDate>Tue, 10 Jan 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://gohugo.io/content-management/summaries/</guid>
-      <description>With the use of the .Summary page variable, Hugo generates summaries of content to use as a short version in summary views.
-Summary Splitting Options  Automatic Summary Split Manual Summary Split Front Matter Summary  It is natural to accompany the summary with links to the original content, and a common design pattern is to see this link in the form of a &amp;ldquo;Read More &amp;hellip;&amp;rdquo; button. See the .</description>
-    </item>
-    
-    <item>
-      <title>Links and Cross References</title>
-      <link>https://gohugo.io/content-management/cross-references/</link>
-      <pubDate>Wed, 01 Feb 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://gohugo.io/content-management/cross-references/</guid>
-      <description>The ref and relref shortcodes display the absolute and relative permalinks to a document, respectively.
-Use ref and relref {{&amp;lt;ref&amp;#34;document&amp;#34;&amp;gt;}} {{&amp;lt;ref&amp;#34;document#anchor&amp;#34;&amp;gt;}} {{&amp;lt;ref&amp;#34;document.md&amp;#34;&amp;gt;}} {{&amp;lt;ref&amp;#34;document.md#anchor&amp;#34;&amp;gt;}} {{&amp;lt;ref&amp;#34;#anchor&amp;#34;&amp;gt;}} {{&amp;lt;ref&amp;#34;/blog/my-post&amp;#34;&amp;gt;}} {{&amp;lt;ref&amp;#34;/blog/my-post.md&amp;#34;&amp;gt;}} {{&amp;lt;relref&amp;#34;document&amp;#34;&amp;gt;}} {{&amp;lt;relref&amp;#34;document.md&amp;#34;&amp;gt;}} {{&amp;lt;relref&amp;#34;#anchor&amp;#34;&amp;gt;}} {{&amp;lt;relref&amp;#34;/blog/my-post.md&amp;#34;&amp;gt;}} To generate a hyperlink using ref or relref in markdown:
-[About]({{&amp;lt; ref &amp;#34;/page/about&amp;#34; &amp;gt;}} &amp;#34;About Us&amp;#34;) The ref and relref shortcodes require a single parameter: the path to a content document, with or without a file extension, with or without an anchor.</description>
-    </item>
-    
-    <item>
-      <title>URL Management</title>
-      <link>https://gohugo.io/content-management/urls/</link>
-      <pubDate>Wed, 01 Feb 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://gohugo.io/content-management/urls/</guid>
-      <description>Permalinks The default Hugo target directory for your built website is public/. However, you can change this value by specifying a different publishDir in your site configuration. The directories created at build time for a section reflect the position of the content&amp;rsquo;s directory within the content folder and namespace matching its layout within the contentdir hierarchy.
-The permalinks option in your site configuration allows you to adjust the directory paths (i.</description>
-    </item>
-    
-    <item>
-      <title>Menus</title>
-      <link>https://gohugo.io/content-management/menus/</link>
-      <pubDate>Wed, 01 Feb 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://gohugo.io/content-management/menus/</guid>
-      <description>If all you want is a simple menu for your sections, see the &amp;ldquo;Section Menu for Lazy Bloggers&amp;rdquo; in Menu Templates.
-You can do this:
- Place content in one or many menus Handle nested menus with unlimited depth Create menu entries without being attached to any content Distinguish active element (and active branch)  What is a Menu in Hugo? A menu is a named array of menu entries accessible by name via the .</description>
-    </item>
-    
-    <item>
-      <title>Static Files</title>
-      <link>https://gohugo.io/content-management/static-files/</link>
-      <pubDate>Sat, 18 Nov 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://gohugo.io/content-management/static-files/</guid>
-      <description>By default, the static/ directory in the site project is used for all static files (e.g. stylesheets, JavaScript, images). The static files are served on the site root path (eg. if you have the file static/image.png you can access it using http://{server-url}/image.png, to include it in a document you can use ![Example image](/image.png) ).
-Hugo can be configured to look into a different directory, or even multiple directories for such static files by configuring the staticDir parameter in the site config.</description>
-    </item>
-    
-    <item>
-      <title>Table of Contents</title>
-      <link>https://gohugo.io/content-management/toc/</link>
-      <pubDate>Wed, 01 Feb 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://gohugo.io/content-management/toc/</guid>
-      <description>Previously, there was no out-of-the-box way to specify which heading levels you want the TOC to render. See the related GitHub discussion (#1778). As such, the resulting &amp;lt;nav id=&amp;quot;TableOfContents&amp;quot;&amp;gt;&amp;lt;ul&amp;gt;&amp;lt;/ul&amp;gt;&amp;lt;/nav&amp;gt; was going to start at &amp;lt;h1&amp;gt; when pulling from {{.Content}}.
-Hugo v0.60.0 made a switch to Goldmark as the default library for Markdown which has improved and configurable implementation of TOC. Take a look at how to configure TOC for Goldmark renderer.</description>
-    </item>
-    
-    <item>
-      <title>Comments</title>
-      <link>https://gohugo.io/content-management/comments/</link>
-      <pubDate>Wed, 01 Feb 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://gohugo.io/content-management/comments/</guid>
-      <description>Hugo ships with support for Disqus, a third-party service that provides comment and community capabilities to websites via JavaScript.
-Your theme may already support Disqus, but if not, it is easy to add to your templates via Hugo&amp;rsquo;s built-in Disqus partial.
-Add Disqus Hugo comes with all the code you need to load Disqus into your templates. Before adding Disqus to your site, you&amp;rsquo;ll need to set up an account.</description>
-    </item>
-    
-    <item>
-      <title>Multilingual Mode</title>
-      <link>https://gohugo.io/content-management/multilingual/</link>
-      <pubDate>Tue, 10 Jan 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://gohugo.io/content-management/multilingual/</guid>
-      <description>You should define the available languages in a languages section in your site configuration.
- Also See Hugo Multilingual Part 1: Content translation
- Configure Languages The following is an example of a site configuration for a multilingual Hugo project:
-config.yaml&amp;nbsp;toml&amp;nbsp;json&amp;nbsp;copyright:Everything is minedefaultContentLanguage:enlanguages:ar:languagedirection:rtltitle:مدونتيweight:2en:params:linkedin:https://linkedin.com/whoevertitle:My blogweight:1fr:params:linkedin:https://linkedin.com/fr/whoevernavigation:help:Aidetitle:Mon blogueweight:2pt-pt:title:O meu blogweight:3params:navigation:help:Helpcopyright = &amp;#39;Everything is mine&amp;#39; defaultContentLanguage = &amp;#39;en&amp;#39; [languages] [languages.</description>
-    </item>
-    
-    <item>
-      <title>Page Resources</title>
-      <link>https://gohugo.io/content-management/page-resources/</link>
-      <pubDate>Wed, 24 Jan 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://gohugo.io/content-management/page-resources/</guid>
-      <description>Page resources are only accessible from page bundles, those directories with index.md or _index.md files at their root. Page resources are only available to the page with which they are bundled.
-In this example, first-post is a page bundle with access to 10 page resources including audio, data, documents, images, and video. Although second-post is also a page bundle, it has no page resources and is unable to directly access the page resources associated with first-post.</description>
-    </item>
-    
-    <item>
-      <title>Image Processing</title>
-      <link>https://gohugo.io/content-management/image-processing/</link>
-      <pubDate>Wed, 24 Jan 2018 13:10:00 -0500</pubDate>
-      
-      <guid>https://gohugo.io/content-management/image-processing/</guid>
-      <description>The Image Page Resource The image is a Page Resource, and the processing methods listed below do not work on images inside your /static folder.
-To print all images paths in a Page Bundle:
-{{with.Resources.ByType&amp;#34;image&amp;#34;}} {{range.}} {{.RelPermalink}} {{end}} {{end}} The Image Resource The image resource can also be retrieved from a global resource
-{{-$image:=resources.Get&amp;#34;images/logo.jpg&amp;#34;-}} Image Processing Methods The image resource implements the Resize, Fit, Fill, and Filter methods, each returning a transformed image using the specified dimensions and processing options.</description>
-    </item>
-    
-    <item>
-      <title>Page Bundles</title>
-      <link>https://gohugo.io/content-management/page-bundles/</link>
-      <pubDate>Wed, 24 Jan 2018 13:09:00 -0500</pubDate>
-      
-      <guid>https://gohugo.io/content-management/page-bundles/</guid>
-      <description>Page Bundles are a way to group Page Resources.
-A Page Bundle can be one of:
- Leaf Bundle (leaf means it has no children) Branch Bundle (home page, section, taxonomy terms, taxonomy list)      Leaf Bundle Branch Bundle     Usage Collection of content and attachments for single pages Collection of attachments for section pages (home page, section, taxonomy terms, taxonomy list)   Index file name index.</description>
-    </item>
-    
-  </channel>
-</rss>

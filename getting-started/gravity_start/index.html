@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+  
+  <link rel="preload" href="https://gohugo.io/fonts/muli-latin-200.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="https://gohugo.io/fonts/muli-latin-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="https://gohugo.io/fonts/muli-latin-800.woff2" as="font" type="font/woff2" crossorigin>
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <title>重力学入门 | Gravity</title>
+
+  <meta name="viewport" content="width=device-width,minimum-scale=1">
+  <meta name="generator" content="Hugo 0.84.0" />
+
+  
+  <meta name="robots" content="noindex, nofollow">
+  
+
+  
+  
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/output/css/app.min.bab83909a2f2fe2aa45bf7e4813899f4f705e6858479cea5bd48eee72fdf0a70.css" integrity="sha256-urg5CaLy/iqkW/fkgTiZ9PcF5oWEec6lvUju5y/fCnA=" crossorigin="anonymous">
+  
+  
+  
+
+  <meta name="description"
+  content="如何快速进入重力学的研究.">
+
+  
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/output/js/app.175b405753a9c0ce86ab35944e9c4cc1a758a6873209cf5106600f6b2f5a59b6.js" integrity="sha256-F1tAV1OpwM6GqzWUTpxMwadYpocyCc9RBmAPay9aWbY=" crossorigin="anonymous" defer></script>
+  
+      
+ 
+
+
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+  
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0594cb">
+<meta name="theme-color" content="#ffffff">
+<meta property="og:title" content="重力学入门" />
+<meta property="og:description" content="如何快速进入重力学的研究." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://gohugo.io/getting-started/gravity_start/" /><meta property="article:section" content="getting-started" />
+<meta property="article:published_time" content="2016-11-01T00:00:00&#43;00:00" />
+<meta property="article:modified_time" content="2018-01-02T00:00:00&#43;00:00" />
+
+<meta itemprop="name" content="重力学入门">
+<meta itemprop="description" content="如何快速进入重力学的研究."><meta itemprop="datePublished" content="2016-11-01T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2018-01-02T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="0">
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="重力学入门"/>
+<meta name="twitter:description" content="如何快速进入重力学的研究."/>
+<meta name="twitter:site" content="@georgegou"/>
+
+
+</head>
+
+<body class="ma0 sans-serif bg-primary-color-light">
+  
+<nav class="bg-primary-color-dark pv4 w-100" role="navigation">
+
+  <div class="center flex-ns flex-wrap items-center justify-start mw9">
+
+    <h1 class="dim f3 lh-solid ml0-ns mr0 mr4-l mv0 pl3 pl4-ns">
+      <a href="https://gravitychina.ga/" class="link purple">
+         GGC(Gravity Geodesy China)
+      </a>
+    </h1>
+    <ul class="list ma0 pa0 dn dib-l">
+      
+        <li class="f5 dib mr4" role="menuitem">
+            
+          <a href="/news/" class="dim link light-silver">
+            新闻
+              
+            
+            
+          </a>
+        </li>
+      
+        <li class="f5 dib mr4" role="menuitem">
+            
+          <a href="/documentation/" class="dim link light-silver">
+            文档
+              
+            
+            
+          </a>
+        </li>
+      
+        <li class="f5 dib mr4" role="menuitem">
+            
+          <a href="/gravity-projects/" class="dim link light-silver">
+            研究案例
+              
+            
+            
+          </a>
+        </li>
+      
+        <li class="f5 dib mr4" role="menuitem">
+            
+          <a href="https://discourse.gravitychina.ga/" class="dim link light-silver">
+            重力论坛
+              
+            
+            
+              <span class="pl1">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10" height="10" viewBox="0 0 32 32" class="fill-current v-base" aria-label="External Link">
+<path d="M25.152 16.576v5.696q0 2.144-1.504 3.648t-3.648 1.504h-14.848q-2.144 0-3.648-1.504t-1.504-3.648v-14.848q0-2.112 1.504-3.616t3.648-1.536h12.576q0.224 0 0.384 0.16t0.16 0.416v1.152q0 0.256-0.16 0.416t-0.384 0.16h-12.576q-1.184 0-2.016 0.832t-0.864 2.016v14.848q0 1.184 0.864 2.016t2.016 0.864h14.848q1.184 0 2.016-0.864t0.832-2.016v-5.696q0-0.256 0.16-0.416t0.416-0.16h1.152q0.256 0 0.416 0.16t0.16 0.416zM32 1.152v9.12q0 0.48-0.352 0.8t-0.8 0.352-0.8-0.352l-3.136-3.136-11.648 11.648q-0.16 0.192-0.416 0.192t-0.384-0.192l-2.048-2.048q-0.192-0.16-0.192-0.384t0.192-0.416l11.648-11.648-3.136-3.136q-0.352-0.352-0.352-0.8t0.352-0.8 0.8-0.352h9.12q0.48 0 0.8 0.352t0.352 0.8z"></path>
+</svg>
+
+              </span>
+            
+          </a>
+        </li>
+      
+        <li class="f5 dib mr4" role="menuitem">
+            
+          <a href="https://github.com/Gravity-Geodesy-China-Community" class="dim link light-silver">
+            GitHub
+              
+            
+            
+              <span class="pl1">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10" height="10" viewBox="0 0 32 32" class="fill-current v-base" aria-label="External Link">
+<path d="M25.152 16.576v5.696q0 2.144-1.504 3.648t-3.648 1.504h-14.848q-2.144 0-3.648-1.504t-1.504-3.648v-14.848q0-2.112 1.504-3.616t3.648-1.536h12.576q0.224 0 0.384 0.16t0.16 0.416v1.152q0 0.256-0.16 0.416t-0.384 0.16h-12.576q-1.184 0-2.016 0.832t-0.864 2.016v14.848q0 1.184 0.864 2.016t2.016 0.864h14.848q1.184 0 2.016-0.864t0.832-2.016v-5.696q0-0.256 0.16-0.416t0.416-0.16h1.152q0.256 0 0.416 0.16t0.16 0.416zM32 1.152v9.12q0 0.48-0.352 0.8t-0.8 0.352-0.8-0.352l-3.136-3.136-11.648 11.648q-0.16 0.192-0.416 0.192t-0.384-0.192l-2.048-2.048q-0.192-0.16-0.192-0.384t0.192-0.416l11.648-11.648-3.136-3.136q-0.352-0.352-0.352-0.8t0.352-0.8 0.8-0.352h9.12q0.48 0 0.8 0.352t0.352 0.8z"></path>
+</svg>
+
+              </span>
+            
+          </a>
+        </li>
+      
+        <li class="f5 dib mr4" role="menuitem">
+            
+          <a href="/about/" class="dim link light-silver">
+            关于我们
+              
+            
+            
+          </a>
+        </li>
+      
+        <li class="f5 dib mr4" role="menuitem">
+            
+          <a href="/contribute/denote/" class="dim link light-silver">
+            捐赠本项目
+              
+            
+            
+          </a>
+        </li>
+      
+    </ul>
+
+    <div class="db dib-ns pl3"><form id="site-search-form" action="" role="search">
+  <fieldset class="bn ma0 pa0">
+    <label class="clip" for="search-input">Search</label>
+    <input type="search" id="search-input" class="needs-js bg-left bn f5 input-reset lh-solid mt3 mt0-ns pl4 pv2 w5 white" placeholder="搜索文档" name="search-input" value="" style="background: url('/images/icon-search.png') 5px 11px/16px 16px no-repeat; background-color: rgba(255,255,255,0);">
+  </fieldset>
+</form></div>
+
+    <span class="absolute mt1 mt2-l pr3 right-0 top-0">
+
+  <a href="https://goujianing.ml/blog/denote/" title="捐赠本项目" class="link-transition twitter link dib z-999 pt3 pt0-l mr2">
+   
+  </a>
+
+<a class="github-button needs-js link primary-color-dark" href="https://github.com/Gravity-Geodesy-China-Community/Gravity-Geodesy-China-Community.github.io" data-size="large" data-show-count="true" aria-label="在github上Star重力中国">Star this project</a>
+<a class="github-button needs-js link primary-color-dark" href="https://github.com/George-Gou" data-size="large" data-show-count="true" aria-label="在github上Star重力中国">Follow Gravpher on github</a></span>
+
+  </div>
+</nav>
+
+  
+  <main role="main" class="content-with-sidebar min-vh-100 pb7 pb0-ns">
+    
+  <article class="w-100 ph4 pb5 pb6-ns pt1 pt5-ns">
+    <div class="flex-l">
+
+      <div class="order-2 w-100 w-20-l ph5-m ph0-l mb4 sticky">
+<aside class="fixed-lTK mw5-l right-0 f6 bl-l b--moon-gray pv4 pv0-ns ph4-l nested-list-reset nested-links nested-copy-line-height">
+	
+		<p class="b">What's on this Page</p>
+  	<nav id="TableOfContents"></nav>
+	
+</aside>
+</div>
+
+      <div class="order-1 w-60-l mw7 ph0 ph5-ns mid-gray nested-copy-line-height no-underline nested-links nested-img nested-copy-seperator nested-blockquote mt0-ns" style="flex-grow:1;">
+        <div class="documentation-copy center measure-wide-l">
+          <div id="readout" class="fixed right-0 bottom-0">
+          </div>
+          <header class="flex-none w-100">
+  
+    
+      <a href="/categories/getting-started" class="f6 fw8 mb0 link mid-gray dim mr3">
+        GETTING STARTED
+      </a>
+    
+      <a href="/categories/fundamentals" class="f6 fw8 mb0 link mid-gray dim mr3">
+        FUNDAMENTALS
+      </a>
+    
+  
+  <h1 class="lh-title mb3 mv0 pt3 primary-color-dark">重力学入门</h1>
+</header>
+
+<aside class="bt bw1 pt3 mt2 mid-gray b--mid-gray fn w-100">
+  
+    <div class="f4 fw4 lh-copy">
+      如何快速进入重力学的研究.
+    </div>
+  
+
+  
+</aside>
+
+
+
+<div class="prose" id="prose">
+
+
+</div>
+
+          
+
+        </div>
+      </div>
+      <div class="order-0 w-20 dn db-l">
+        
+<nav role="navigation">
+  <ul class="list pa0 nl2">
+    
+      
+      <li class="f5 w-100 hover-bg-light-gray hover-accent-color-light fw8">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".about">关于重力中国</a>
+        <ul class="about desktopmenu animated fadeIn list pl0 bg-light-gray dn">
+          <li class="f6 fw4">
+            <a href="/about/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              简介
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/about/features/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              特点
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/about/license/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              开源协议
+            </a>
+          </li>
+        </ul>
+      </li>
+      
+      <li class="f5 w-100 hover-bg-light-gray hover-accent-color-light fw8">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2  primary-color" data-target=".getting-started">重力学入门</a>
+        <ul class="getting-started desktopmenu animated fadeIn list pl0 bg-light-gray db">
+          <li class="f6 fw4">
+            <a href="/getting-started/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Get Started Overview
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/getting-started/gravity_start/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 primary-color ">
+              重力学概述
+            </a>
+          </li>
+        </ul>
+      </li>
+      
+      <li class="f5 w-100 hover-bg-light-gray hover-accent-color-light fw8 mb1 bb b--moon-gray">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".gravity-manual">重力软件中文手册</a>
+        <ul class="gravity-manual desktopmenu animated fadeIn list pl0 bg-light-gray dn">
+          <li class="f6 fw4">
+            <a href="/gravity-manual/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Introduction
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/gravity-manual/tsoft/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Tsoft 中文手册
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/gravity-manual/eterna/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Eterna中文手册
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/gravity-manual/growth3.0/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              GROWTH中文手册
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/gravity-manual/groops/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              GROOPS中文手册
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/gravity-manual/fatiando/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Fatiando中文手册
+            </a>
+          </li>
+        </ul>
+      </li>
+      
+      <li class="f5 w-100 hover-bg-light-gray hover-accent-color-light fw8">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".gravity-data">重力数据处理教程</a>
+        <ul class="gravity-data desktopmenu animated fadeIn list pl0 bg-light-gray dn">
+          <li class="f6 fw4">
+            <a href="/gravity-data/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              概述
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/gravity-data/absolute-gravity-process/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              绝对重力数据处理
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/gravity-data/continuous-gravity-process/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              连续重力数据处理
+            </a>
+          </li>
+        </ul>
+      </li>
+      
+      <li class="f5 w-100 hover-bg-light-gray hover-accent-color-light fw8 mb1 bb b--moon-gray">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".gravity-software">重力开源软件</a>
+        <ul class="gravity-software desktopmenu animated fadeIn list pl0 bg-light-gray dn">
+          <li class="f6 fw4">
+            <a href="/gravity-software/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Overview
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/gravity-software/gravdpis/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              GravDPIS
+            </a>
+          </li>
+        </ul>
+      </li>
+      
+      <li class="f5 w-100 hover-bg-light-gray hover-accent-color-light fw8 mb1 bb b--moon-gray">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".gravity-projects">重力项目展示</a>
+        <ul class="gravity-projects desktopmenu animated fadeIn list pl0 bg-light-gray dn">
+          <li class="f6 fw4">
+            <a href="/gravity-projects/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Start Project journey
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/gravity-projects/configuration/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              1、岩石圈有效弹性厚度
+            </a>
+          </li>
+        </ul>
+      </li>
+      
+      <li class="f5 w-100 hover-bg-light-gray hover-accent-color-light fw8 mb1 bb b--moon-gray">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".coding">跟Gravpher学编程</a>
+        <ul class="coding desktopmenu animated fadeIn list pl0 bg-light-gray dn">
+          <li class="f6 fw4">
+            <a href="/coding/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              编程入门
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/coding/shell/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Shell编程教程
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/coding/c&#43;&#43;/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              C&#43;&#43;
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/coding/python/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              Python编程教程
+            </a>
+          </li>
+        </ul>
+      </li>
+      
+      <li class="f5 w-100 hover-bg-light-gray hover-accent-color-light fw8 mb1 bb b--moon-gray">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".contribute">贡献指南</a>
+        <ul class="contribute desktopmenu animated fadeIn list pl0 bg-light-gray dn">
+          <li class="f6 fw4">
+            <a href="/contribute/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              向重力中国贡献
+            </a>
+          </li>
+          <li class="f6 fw4">
+            <a href="/contribute/denote/" class="db link hover-bg-gray hover-white pl3 pr2 pv2 black ">
+              关于捐赠
+            </a>
+          </li>
+        </ul>
+      </li>
+      
+      <li class="f5 w-100 hover-bg-light-gray hover-accent-color-light fw8">
+        <a href="/categories/" class="js-toggle dib w-100 link mid-gray hover-accent-color-light pl2 pr2 pv2 " data-target=".categories">内容导航</a>
+      </li>
+  </ul>
+</nav>
+
+      </div>
+
+    </div>
+  </article>
+
+  <div class="w-100 bg-light-gray">
+    <div class="mw7 pa4 center nested-lh-copy lh-copy">
+      <h6 class="f4 dark-gray mb2">
+  <a href="https://gohugo.io/getting-started/gravity_start/" class="hide-child link primary-color">
+  <span class="nl3 child"><svg class="grow" fill="" height="14px" viewBox="0 0 24 24" width="14px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg>
+</span>
+    “重力学入门”
+  </a> was last updated: January 2, 2018
+</h6>
+
+      <a href="https://github.com/Gravity-Geodesy-China-Community/Gravity-Geodesy-China-Community.github.ioedit/master/content/en/getting-started/gravity_start.md" class="
+f6 ph3 pv1 br2 dib  tc ttu mv3 bg-primary-color white hover-bg-green link
+">Improve this page</a>
+
+      
+
+
+    </div>
+  </div>
+
+  </main>
+
+  <footer class="bg-primary-color-dark ph4-ns pt4 relative w-100" role="contentinfo">
+    <div class="center flex-ns flex-wrap justify-between mw9 w-90">
+      <div class="pb3 pt4 w-100 w-50-ns">
+
+         <div class="b f3  light-gray mb3 nested-links tc">
+           By the <a href="https://github.com/Gravity-Geodesy-China-Community/Gravity-Geodesy-China-Community.github.io/graphs/contributors" class="link">Grvity China Team</a> in Wuhan, China<br />
+          </div>
+
+          <div class="center w4">
+            <img src="images/gravitychinalogo.svg" alt="Gravity China Logo">
+          </div>
+			<div class="b f4  light-red mb3 nested-links tc">
+           This Website is founded by： <li class="dib mr3"><a href="https://goujianing.ml/" class="dim link light-gray pv2">@Gravpher</a></li>a Phd candidate<br />
+          </div>
+
+	
+		  <div class="b f4  light-red mb3 nested-links tc">
+           本站核心维护与贡献者： <li class="dib mr3"> <a href="https://goujianing.ml/" class="dim link light-gray pv2">@Gravpher</a> <a href="https://github.com/bylwxcj/" class="dim link light-gray pv2">@Gongzhe Wei</a></li><br />
+          </div>
+		  	<div class="b f4  light-red mb3 nested-links tc">
+           本站主要贡献者：  <br />
+          </div>
+          <ul class="left f6 list ma0 mv4 pa0 tc">
+            <li class="dib mr3"><a href="https://github.com/guyunqianqiu" class="dim link light-gray pv2">@Yijun Liu</a></li>
+            <li class="dib mr3"><a href="https://twitter.com/spf13" class="dim link light-gray pv2">@Yabo Zhao</a></li>
+            <li class="dib"><a href="https://twitter.com/bepsays" class="dim link light-gray pv2">@Xiaochun Li</a></li>
+            <li class="dib mr3"><a href="https://twitter.com/gohugoio" class="dim link light-gray pv2">  @Chung Wang</a></li>
+            <li class="dib mr3"><a href="https://github.com/GZH-EM" class="dim link light-gray pv2">@Zehua Guo</a></li>
+            <li class="dib"><a href="https://twitter.com/bepsays" class="dim link light-gray pv2">@Huaqing Yuan</a></li>
+		   <li class="dib mr3"><a href="https://twitter.com/gohugoio" class="dim link light-gray pv2">  @Dong Fang</a></li>
+            <li class="dib mr3"><a href="https://twitter.com/spf13" class="dim link light-gray pv2">@Yi Peng</a></li>
+            <li class="dib"><a href="https://twitter.com/bepsays" class="dim link light-gray pv2">@Lei Li</a></li>
+          </ul>
+		  
+
+          
+
+      </div>
+
+      <div class="w-100 w-50-l"> 
+       <div class="b f3  light-red mb3 nested-links tc">
+           Like this Project？  <br />
+          </div>
+		   <div class="b f4  light-purple mb3 nested-links tc">
+           Then feel free to support this project. You Can do a lot, such as<br />
+          </div>
+		  <div class="b f5  light-gray mb3 nested-links tc">
+           1、受到本站启发的所有内容，请挂上<a href="https://gravitychian.ga" class="dim link light-gray pv2">本站链接</a><br />
+          </div>
+		    <div class="b f5  light-gray mb3 nested-links tc">
+           2、<a href="https://github.com/Gravity-Geodesy-China-Community" class="dim link light-gray pv2">加入我们</a>，共同维护重力中国开源社区<br />
+          </div>
+		     <div class="b f5  light-gray mb3 nested-links tc">
+           3、<a href="https://github.com/Gravity-Geodesy-China-Community/Gravity-Geodesy-China-Community.github.io" class="dim link light-gray pv2">Star</a> ，并分享这个项目<br />
+          </div>
+		     <div class="b f5  light-gray mb3 nested-links tc">
+           4、您也可以捐赠作者<a href="https://goujianing.ml/" class="dim link light-gray pv2">@Gravpher</a>一杯咖啡，您的支持是我做下去的最大动力，捐款请注明来自GravityChina，感谢您的支持   <a href="https://goujianing.ml/blog/denote/" class="dim link light-gray pv2">denote link</a><br />
+          </div>
+		    <div class="b f3  light-yellow mb3 nested-links tc">
+           Don't let a bad day make you feel like you have a bad life. You Remember？ <br />
+          </div>
+
+      </div>
+
+    </div>
+
+    <div class="f5 gray mb5 mb0-ns ph3 w-100"> 
+      <p class="dib mr4">重力中国版权 logo 属于 <a href="https://www.goujianing.ml" class="dim link light-gray pv2">@Gravpher</a> 2021–2021, Gravpher thinks <a href="http://icgem.gfz-potsdam.de/calcgrid?modeltype=celestial" class="dim link light-gray pv2">GFZ</a> and <a href="https://gohugo.io/" class="dim link light-gray pv2">Hugo</a>  work for inspiration </p>
+    </div>
+
+    <img src="/images/gopher-side_color.svg" alt="" class="absolute-l bottom-0 dn db-l h4 right-0 z-999"/>
+
+    <div class="bg-primary-color-dark bottom-0 left-0 right-0 dn-l fixed pb3 ph3 w-100"><div  class="globalmenu mobilemenu pb3 dn">
+    
+
+<ul class="list hidden dib ph0 ma0 scrolling-touch tc">
+  
+    <li  class="tl dib ma0 hover-bg-black w-100">
+        <a href="/news/" class="ttu f6 link primary-color-light overflow hover-white db brand-font  ma0 w-100 pv3 ph4">
+          新闻
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100">
+        <a href="/documentation/" class="ttu f6 link primary-color-light overflow hover-white db brand-font  ma0 w-100 pv3 ph4">
+          文档
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100">
+        <a href="/gravity-projects/" class="ttu f6 link primary-color-light overflow hover-white db brand-font  ma0 w-100 pv3 ph4">
+          研究案例
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100">
+        <a href="https://discourse.gravitychina.ga/" class="ttu f6 link primary-color-light overflow hover-white db brand-font  ma0 w-100 pv3 ph4">
+          重力论坛
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100">
+        <a href="https://github.com/Gravity-Geodesy-China-Community" class="ttu f6 link primary-color-light overflow hover-white db brand-font  ma0 w-100 pv3 ph4">
+          GitHub
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100">
+        <a href="/about/" class="ttu f6 link primary-color-light overflow hover-white db brand-font  ma0 w-100 pv3 ph4">
+          关于我们
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100">
+        <a href="/contribute/denote/" class="ttu f6 link primary-color-light overflow hover-white db brand-font  ma0 w-100 pv3 ph4">
+          捐赠本项目
+        </a>
+    </li>
+  
+</ul>
+
+</div>
+<div  class="docsmenu mobilemenu pb3 dn">
+    
+
+<ul class="list dib ph0 ma0 scrolling-touch tc">
+  
+    <li  class="tl dib ma0 hover-bg-black w-100">
+        <a href="/about/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
+          关于重力中国
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100">
+        <a href="/getting-started/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
+          重力学入门
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100 mb2 bb b--mid-gray">
+        <a href="/gravity-manual/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
+          重力软件中文手册
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100">
+        <a href="/gravity-data/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
+          重力数据处理教程
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100 mb2 bb b--mid-gray">
+        <a href="/gravity-software/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
+          重力开源软件
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100 mb2 bb b--mid-gray">
+        <a href="/gravity-projects/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
+          重力项目展示
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100 mb2 bb b--mid-gray">
+        <a href="/coding/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
+          跟Gravpher学编程
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100 mb2 bb b--mid-gray">
+        <a href="/contribute/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
+          贡献指南
+        </a>
+    </li>
+  
+    <li  class="tl dib ma0 hover-bg-black w-100">
+        <a href="/categories/" class="ttu f6 link primary-color-light  hover-white db brand-font mb1  ma0 w-100 pv2 ph4">
+          内容导航
+        </a>
+    </li>
+  
+</ul>
+
+</div>
+
+<div class="flex dn-l justify-between">
+  <button class="js-toggle flex-auto dib dn-l f6 tc db mt4-ns ph3 pv2 link mr2 white bg-primary-color-dark hover-bg-primary-color ba b--white-40 w-auto" data-target=".globalmenu">目录</button>
+
+  <button class="js-toggle flex-auto dib dn-l f6 tc db mt4-ns ph3 pv2 link white bg-primary-color-dark hover-bg-primary-color ba b--white-40 w-auto" data-target=".docsmenu">文档目录</button>
+</div>
+</div>
+	
+      <div class="w-100 w-50-l"> 
+        
+
+
+
+      </div>
+
+     
+
+</footer>
+
+
+</body>
+
+</html>

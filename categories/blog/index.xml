@@ -6,28 +6,14 @@
     <description>Recent content in blog on Gravity</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 04 Jul 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://gohugo.io/categories/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 01 Aug 2021 18:36:00 +0200</lastBuildDate><atom:link href="https://gohugo.io/categories/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Let’s celebrate Hugo’s 5th birthday</title>
-      <link>https://gohugo.io/news/lets-celebrate-hugos-5th-birthday/</link>
-      <pubDate>Wed, 04 Jul 2018 00:00:00 +0000</pubDate>
+      <title></title>
+      <link>https://gohugo.io/news/gravitychina_is_coming/</link>
+      <pubDate>Sun, 01 Aug 2021 18:36:00 +0200</pubDate>
       
-      <guid>https://gohugo.io/news/lets-celebrate-hugos-5th-birthday/</guid>
-      <description>By Bjørn Erik Pedersen (@bepsays / @bep), Hugo Lead
-Five years ago today, Steve Francia made his first commit on the Hugo project: &amp;ldquo;Hugo: A Fast and Flexible Static Site Generator built with love by spf13 in GoLang&amp;rdquo;.
-Steve was writing that on a train commute to New York. I&amp;rsquo;m writing this article running Hugo v0.43-DEV, the preview version of the next Hugo release. The release is scheduled for Monday and adds a powerful assets pipeline, with SCSS/SASS support, assets minification, fingerprinting/subresource integrity, ad-hoc image processing and much more.</description>
-    </item>
-    
-    <item>
-      <title>HTTP/2 Server Push in Hugo</title>
-      <link>https://gohugo.io/news/http2-server-push-in-hugo/</link>
-      <pubDate>Mon, 24 Jul 2017 18:36:00 +0200</pubDate>
-      
-      <guid>https://gohugo.io/news/http2-server-push-in-hugo/</guid>
-      <description>Netlify recently announced support for HTTP/2 server push, and we have now added it to the gohugo.io sites for the main CSS and JS bundles, along with server-side 301 redirect support.
-If you navigate to https://gohugo.io and look in the Chrome developer network console, you should now see Push as the new source (&amp;ldquo;Initiator&amp;rdquo;) for the CSS and JSS:
- Network log for https://gohugo.io
-  Setting up this in Hugo was easy:</description>
+      <guid>https://gohugo.io/news/gravitychina_is_coming/</guid>
+      <description>建站的初衷是构建中国最大的重力与大地测量研究学习交流社区，本站主要维护重力软件中文文档，重力开源软件，研究论文代码等项目，如有更好地建议，欢迎提交PR。</description>
     </item>
     
   </channel>

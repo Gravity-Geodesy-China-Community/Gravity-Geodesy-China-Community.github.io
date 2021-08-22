@@ -6,47 +6,32 @@
     <description>Recent content in hugo modules on Gravity</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 24 Jul 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://gohugo.io/categories/hugo-modules/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 01 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://gohugo.io/categories/hugo-modules/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Hugo Modules</title>
-      <link>https://gohugo.io/hugo-modules/</link>
-      <pubDate>Wed, 01 Feb 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://gohugo.io/hugo-modules/</guid>
-      <description>Hugo Modules are the core building blocks in Hugo. A module can be your main project or a smaller module providing one or more of the 7 component types defined in Hugo: static, content, layouts, data, assets, i18n, and archetypes.
-You can combine modules in any combination you like, and even mount directories from non-Hugo projects, forming a big, virtual union file system.
-Hugo Modules are powered by Go Modules. For more information about Go Modules, see:</description>
-    </item>
-    
-    <item>
-      <title>Configure Modules</title>
-      <link>https://gohugo.io/hugo-modules/configuration/</link>
+      <title>Tsoft中文文档</title>
+      <link>https://gohugo.io/gravity-manual/tsoft/</link>
       <pubDate>Wed, 24 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://gohugo.io/hugo-modules/configuration/</guid>
-      <description>Module Config: Top level  config.  yaml  &amp;nbsp; toml  &amp;nbsp; json  &amp;nbsp;  module:noProxy:nonenoVendor:&amp;#34;&amp;#34;private:&amp;#39;*.*&amp;#39;proxy:directreplacements:&amp;#34;&amp;#34;   [module] noProxy = &amp;#34;none&amp;#34; noVendor = &amp;#34;&amp;#34; private = &amp;#34;*.*&amp;#34; proxy = &amp;#34;direct&amp;#34; replacements = &amp;#34;&amp;#34;    { &amp;#34;module&amp;#34;: { &amp;#34;noProxy&amp;#34;: &amp;#34;none&amp;#34;, &amp;#34;noVendor&amp;#34;: &amp;#34;&amp;#34;, &amp;#34;private&amp;#34;: &amp;#34;*.*&amp;#34;, &amp;#34;proxy&amp;#34;: &amp;#34;direct&amp;#34;, &amp;#34;replacements&amp;#34;: &amp;#34;&amp;#34; } }       noVendor New in v0.75.0  A optional Glob pattern matching module paths to skip when vendoring, e.</description>
+      <guid>https://gohugo.io/gravity-manual/tsoft/</guid>
+      <description>摘要 本节主要介绍Tsoft软件的基本使用以及脚本范例，让读者可以轻松入手潮汐序列的处理</description>
     </item>
     
     <item>
-      <title>Use Hugo Modules</title>
-      <link>https://gohugo.io/hugo-modules/use-modules/</link>
-      <pubDate>Wed, 24 Jul 2019 00:00:00 +0000</pubDate>
+      <title>Tsoft中文文档</title>
+      <link>https://gohugo.io/gravity-manual/eterna/</link>
+      <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://gohugo.io/hugo-modules/use-modules/</guid>
-      <description>Prerequisite   Most of the commands for Hugo Modules requires a newer version of Go installed (see https://golang.org/dl/) and the relevant VCS client (e.g. Git, see https://git-scm.com/downloads/ ). If you have an &amp;ldquo;older&amp;rdquo; site running on Netlify, you may have to set GO_VERSION to 1.12 in your Environment settings.
-For more information about Go Modules, see:
- https://github.com/golang/go/wiki/Modules https://blog.golang.org/using-go-modules    Initialize a New Module  Use hugo mod init to initialize a new Hugo Module.</description>
+      <guid>https://gohugo.io/gravity-manual/eterna/</guid>
+      <description>摘要 Eterna</description>
     </item>
     
     <item>
-      <title>Theme Components</title>
-      <link>https://gohugo.io/hugo-modules/theme-components/</link>
-      <pubDate>Wed, 01 Feb 2017 00:00:00 +0000</pubDate>
+      <title>GROWTH中文文档</title>
+      <link>https://gohugo.io/gravity-manual/growth3.0/</link>
+      <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://gohugo.io/hugo-modules/theme-components/</guid>
-      <description>This section contain information that may be outdated and is in the process of being rewritten.
-  Since Hugo 0.42 a project can configure a theme as a composite of as many theme components you need:
-config.  yaml  &amp;nbsp; toml  &amp;nbsp; json  &amp;nbsp;  theme:- my-shortcodes- base-theme- hyde   theme = [&amp;#34;my-shortcodes&amp;#34;, &amp;#34;base-theme&amp;#34;, &amp;#34;hyde&amp;#34;]    { &amp;#34;theme&amp;#34;: [ &amp;#34;my-shortcodes&amp;#34;, &amp;#34;base-theme&amp;#34;, &amp;#34;hyde&amp;#34; ] }      You can even nest this, and have the theme component itself include theme components in its own config.</description>
+      <guid>https://gohugo.io/gravity-manual/growth3.0/</guid>
+      <description>摘要 GROWTH</description>
     </item>
     
   </channel>

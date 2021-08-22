@@ -13,7 +13,7 @@
   <title>Hugo 0.50: Errors so Good, You’ll Want to Fail! | Gravity</title>
 
   <meta name="viewport" content="width=device-width,minimum-scale=1">
-  <meta name="generator" content="Hugo 0.84.0" />
+  <meta name="generator" content="Hugo 0.87.0" />
 
   
   <meta name="robots" content="noindex, nofollow">
@@ -42,7 +42,7 @@
 
 
   
-  <script type="text/javascript" src="/output/js/app.175b405753a9c0ce86ab35944e9c4cc1a758a6873209cf5106600f6b2f5a59b6.js" integrity="sha256-F1tAV1OpwM6GqzWUTpxMwadYpocyCc9RBmAPay9aWbY=" crossorigin="anonymous" defer></script>
+  <script type="text/javascript" src="/output/js/app.0984bf5469ab3c8aa82cf8eb015a560d74ee028723b1ab38e928998f5f72baba.js" integrity="sha256-CYS/VGmrPIqoLPjrAVpWDXTuAocjsas46SiZj19yuro=" crossorigin="anonymous" defer></script>
   
       
  
@@ -61,12 +61,12 @@
 <meta property="og:description" content="Errors with full filename and line and column number, shown in browser. And improved Fast Render Mode …" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://gohugo.io/news/0.50-relnotes/" /><meta property="og:image" content="https://gohugo.io/news/0.50-relnotes/featured-hugo-50-poster.png"/><meta property="article:section" content="news" />
-<meta property="article:published_time" content="2018-10-29T00:00:00&#43;00:00" />
-<meta property="article:modified_time" content="2021-08-13T21:11:25&#43;08:00" />
+<meta property="article:published_time" content="2018-10-29T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-08-13T21:11:25+08:00" />
 
 <meta itemprop="name" content="Hugo 0.50: Errors so Good, You’ll Want to Fail!">
-<meta itemprop="description" content="Errors with full filename and line and column number, shown in browser. And improved Fast Render Mode …"><meta itemprop="datePublished" content="2018-10-29T00:00:00&#43;00:00" />
-<meta itemprop="dateModified" content="2021-08-13T21:11:25&#43;08:00" />
+<meta itemprop="description" content="Errors with full filename and line and column number, shown in browser. And improved Fast Render Mode …"><meta itemprop="datePublished" content="2018-10-29T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2021-08-13T21:11:25+08:00" />
 <meta itemprop="wordCount" content="1024"><meta itemprop="image" content="https://gohugo.io/news/0.50-relnotes/featured-hugo-50-poster.png">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://gohugo.io/news/0.50-relnotes/featured-hugo-50-poster.png"/>
@@ -259,17 +259,17 @@
           
           
           
-          <img src="/news/0.50-relnotes/featured-hugo-50-poster_hudcbbb9a5a0079d08447101e6cfae6e40_227240_480x0_resize_catmullrom_2.png" alt="Featured Image for Hugo 0.50: Errors so Good, You’ll Want to Fail!" class="mw-100">
+          <img src="/news/0.50-relnotes/featured-hugo-50-poster_hudcbbb9a5a0079d08447101e6cfae6e40_227240_480x0_resize_catmullrom_3.png" alt="Featured Image for Hugo 0.50: Errors so Good, You’ll Want to Fail!" class="mw-100">
           
           
         <p>Hugo <code>0.50</code> brings <strong>greatly improved error messages</strong>, and we now also show them in the browser. Having error messages with filename, line- and column number greatly simplify troubleshooting. Many editors (like VS Code) even let you click and navigate directly to the problematic line. If your editor requires a different log format, you can set it via the <code>HUGO_FILE_LOG_FORMAT</code> OS environment variable:</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">env <span class="nv">HUGO_FILE_LOG_FORMAT</span><span class="o">=</span><span class="s2">&#34;\&#34;:file::line::col\&#34;&#34;</span> hugo server
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">env <span class="nv">HUGO_FILE_LOG_FORMAT</span><span class="o">=</span><span class="s2">&#34;\&#34;:file::line::col\&#34;&#34;</span> hugo server
 </code></pre></div><p>But this release isn&rsquo;t all about error handling. Getting line- and column number into &ldquo;every&rdquo; error also meant that we had to consolidate and simplify some code paths, which, as a nice side effect, made Hugo a little bit faster. Benchmarks show it running <strong>about 5% faster and consume about 8% less memory</strong>.</p>
 <p>Also, we have now implemented <strong>&ldquo;render on demand&rdquo;</strong> in Hugo&rsquo;s Fast Render Mode (default when running <code>hugo server</code>). This means that you should now always see updated content when navigating around the site after a change.</p>
 <p>This release represents <strong>88 contributions by 14 contributors</strong> to the main Hugo code base.
 <a href="https://github.com/bep">@bep</a> leads the Hugo development with a significant amount of contributions, but also a big shoutout to <a href="https://github.com/moorereason">@moorereason</a>, <a href="https://github.com/anthonyfok">@anthonyfok</a>, and <a href="https://github.com/GregorioMartinez">@GregorioMartinez</a> for their ongoing contributions.</p>
 <p>And a big thanks to <a href="https://github.com/digitalcraftsman">@digitalcraftsman</a> and <a href="https://github.com/onedrawingperday">@onedrawingperday</a> for their relentless work on keeping the themes site in pristine condition and to <a href="https://github.com/kaushalmodi">@kaushalmodi</a> for his great work on the documentation site.</p>
-<p>Many have also been busy writing and fixing the documentation in <a href="https://github.com/gohugoio/hugoDocs">hugoDocs</a>,
+<p>Many have also been busy writing and fixing the documentation in <a href="https://github.com/gohugoio/hugoDocs">hugoDocs</a>, 
 which has received <strong>14 contributions by 9 contributors</strong>. A special thanks to <a href="https://github.com/bep">@bep</a>, <a href="https://github.com/NotWoods">@NotWoods</a>, <a href="https://github.com/Nick-Rivera">@Nick-Rivera</a>, and <a href="https://github.com/tomanistor">@tomanistor</a> for their work on the documentation site.</p>
 <p>Hugo now has:</p>
 <ul>
@@ -395,7 +395,7 @@ which has received <strong>14 contributions by 9 contributors</strong>. A specia
 
       <div class="gray f6 mv6">
         Last Update: August 13, 2021 <br>
-        <a href="https://github.com/gohugoio/hugoDocs/edit/master/content/en/news/0.50-relnotes/index.md" class="
+        <a href="https://github.com/gohugoio/hugoDocs/edit/master/content/en/news%5c0.50-relnotes%5cindex.md" class="
 f6 ph3 pv1 br2 dib  tc ttu mv3 bg-primary-color white hover-bg-green link
 ">Improve this page</a>
 
