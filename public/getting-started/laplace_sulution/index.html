@@ -62,12 +62,12 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://gohugo.io/getting-started/laplace_sulution/" /><meta property="article:section" content="getting-started" />
 <meta property="article:published_time" content="2021-11-01T00:00:00+00:00" />
-<meta property="article:modified_time" content="2021-11-16T23:56:28+08:00" />
+<meta property="article:modified_time" content="2021-11-17T00:13:30+08:00" />
 
 <meta itemprop="name" content="拉普拉斯微分方程式在球坐标系中的解法">
 <meta itemprop="description" content="如何快速进入重力学的研究."><meta itemprop="datePublished" content="2021-11-01T00:00:00+00:00" />
-<meta itemprop="dateModified" content="2021-11-16T23:56:28+08:00" />
-<meta itemprop="wordCount" content="87">
+<meta itemprop="dateModified" content="2021-11-17T00:13:30+08:00" />
+<meta itemprop="wordCount" content="132">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="拉普拉斯微分方程式在球坐标系中的解法"/>
 <meta name="twitter:description" content="如何快速进入重力学的研究."/>
@@ -314,16 +314,60 @@ $$</p>
 <p>下面求解（9）式，设$Y\left(\theta,\lambda\right)=g\left(\theta\right)h\left(\lambda\right)$</p>
 <p>函数$g\left(\theta\right)$和$h\left(\theta\right)$都只与一个变量有关，将上式代入（9）并乘以$\frac{sin\theta}{g\left(\theta\right)h\left(\lambda\right)}$,则有：
 $$
-\frac{sin{\theta}}{g\left(\theta\right)}\left[sin{\theta}g^\pprime\left(\theta\right)+cos{\theta}g^\prime\left(\theta\right)+n\left(n+1\right)sin{\theta}g\left(\theta\right)\right]=-\frac{h^\pprime\left(\lambda\right)}{h\left(\lambda\right)}
+\frac{sin{\theta}}{g\left(\theta\right)}\left[sin{\theta}g^{''}\left(\theta\right)+cos{\theta}g^\prime\left(\theta\right)+n\left(n+1\right)sin{\theta}g\left(\theta\right)\right]=-\frac{h^{''}\left(\lambda\right)}{h\left(\lambda\right)}
 $$
 等号左边只是θ的函数，与λ无关；右边只是λ的函数，与θ无关。方程两端又只能都是同一个常数记作Λ，上式就被分解为两个常微分方程，即
 $$
-h^\pprime\left(\lambda\right)+\Lambda h\left(\lambda\right)=0
+h^{''}\left(\lambda\right)+\Lambda h\left(\lambda\right)=0
 $$</p>
 <p>$$
-sin{\theta}g^\pprime\left(\theta\right)+cos{\theta}g^\prime\left(\theta\right)+\left[n\left(n+1\right)sin{\theta}-\frac{\Lambda}{sin{\theta}}\right]g\left(\theta\right)=0
+sin{\theta}g^{''}\left(\theta\right)+cos{\theta}g^\prime\left(\theta\right)+\left[n\left(n+1\right)sin{\theta}-\frac{\Lambda}{sin{\theta}}\right]g\left(\theta\right)=0
 $$</p>
 <p>实际上，常微分方程（14）隐含着一个附加条件即“自然的周期条件”，$h\left(\varphi+2\pi\right)=h\left(\varphi\right)$常微分方程（14)和自然周期条件构成本征值问题，</p>
+<p>本征值是：
+$$
+\Lambda=m^2\left(m=0,1,2,3,\cdots\right)
+$$
+本征函数是：
+$$
+h\left(\lambda\right)=C_1cos{m}\lambda+C_2sin{m}\lambda
+$$
+这就是常微分方程式（14）的通解。</p>
+<p>常微分方程（15）称为勒让德微分方程，它的解算较复杂，可以证明，只有当n和m为整数0,1,2,…而且m小于或等于n时，才有物理意义的解。</p>
+<p>勒让德方程式（15）的解$g\left(\theta\right)$改用符号$P_{nm}\left(cos\theta\right)$来表示，称为勒让德函数，即：
+$$
+P_{nm}\left(cos{\theta}\right)=g\left(\theta\right)
+$$
+因而有通解：
+$$
+Y\left(\theta,\lambda\right)=g\left(\theta\right)h\left(\lambda\right)=C_1P_{nm}\left(cos{\theta}\right)cos{m}\lambda+C_2P_{nm}\left(cos{\theta}\right)sin{m}\lambda	
+$$
+这就是拉普拉斯面谐函数微分方程式的通解。式中C1和C2为常数，在具体问题中需由边值条件确定。</p>
+<p>因为这个方程式是线性的，它的任何线性组合也必然是微分方程式（9）的解。设𝐶1=𝑎𝑛𝑚，𝐶2=𝑏𝑛𝑚，则一般线性组合的形式为：
+$$
+Y\left(\theta,\lambda\right)=\sum_{m=0}^{n}\left[a_{nm}cos{m}\lambda+b_{nm}sin{m}\lambda\right]P_{nm}\left(cos{\theta}\right)
+$$
+或写成
+$$
+Y\left(\theta,\lambda\right)=a_nP_n\left(cos{\theta}\right)+\sum_{m=1}^{n}{\left[a_{nm}cos{m}\lambda+b_{nm}sin{m}\lambda\right]P_{nm}\left(cos{\theta}\right)}
+$$
+这是面谐函数Y(θ,λ)的一般表达式。</p>
+<p>其中m=0时，$P_{nm}\left(cos\theta\right)$称为主球函数，当m≠0时，$P_{nm}\left(cos\theta\right)\begin{pmatrix}cosm\lambda\cosm\lambda\end{pmatrix}$称为谛合球函数（也称伴随球函数、连带球函数）。通常n称为球函数的阶，m称为球函数的次（或级)。相应的系数𝑎𝑛称为主球函数系数；𝑎𝑛𝑚和𝑏𝑛𝑚称为缔合球函数系数，两者统称为球函数系数。而且次m一定小于或等于阶n，所以上式中求和的上限为n。</p>
+<p>缔合球函数用符号𝑅𝑛𝑚(𝜃,𝜆)、𝑆𝑛𝑚(𝜃,𝜆)表示；
+$$
+R_{nm}\left(\theta,\lambda\right)=P_{nm}\left(cos{\theta}\right)cos{m}\lambda \<br>
+S_{nm}\left(\theta,\lambda\right)=P_{nm}\left(cos{\theta}\right)sin{m}\lambda
+$$
+把（21）代入（12）式得：</p>
+<p>球内：
+$$
+V_i\left(\theta,\lambda\right)=\sum_{n=0}^{\infty}r^n\sum_{m=0}^{n}{\left[a_{nm}cos{m}\lambda+b_{nm}sin{m}\lambda\right]P_{nm}}\left(cos{\theta}\right)
+$$
+球外：
+$$
+V_e\left(\theta,\lambda\right)=\sum_{n=0}^{\infty}\frac{1}{r^{n+1}}\sum_{m=0}^{n}{\left[a_{nm}cos{m}\lambda+b_{nm}sin{m}\lambda\right]P_{nm}}\left(cos{\theta}\right)
+$$
+上两式都是拉普拉斯方程式的解，因而都是谐函数。</p>
 
 </div>
 
@@ -530,7 +574,7 @@ $$</p>
   <span class="nl3 child"><svg class="grow" fill="" height="14px" viewBox="0 0 24 24" width="14px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg>
 </span>
     “拉普拉斯微分方程式在球坐标系中的解法”
-  </a> was last updated: November 16, 2021: <a class="hide-child link primary-color" href="https://github.com/Gravity-Geodesy-China-Community/Gravity-Geodesy-China-Community.github.iocommit/bbd7cabb613d4011138568a2e914584e022982b8">laplase (bbd7cab)</a>
+  </a> was last updated: November 17, 2021: <a class="hide-child link primary-color" href="https://github.com/Gravity-Geodesy-China-Community/Gravity-Geodesy-China-Community.github.iocommit/462541dc6739708508ba66e70f10c1c28515d07c">add laplase solution (462541d)</a>
 </h6>
 
       <a href="https://github.com/Gravity-Geodesy-China-Community/Gravity-Geodesy-China-Community.github.ioedit/master/content/en/getting-started%5cLaplace_sulution.md" class="
