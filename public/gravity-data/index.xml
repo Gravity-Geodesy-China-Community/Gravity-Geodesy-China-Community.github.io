@@ -14,7 +14,7 @@
       
       <guid>https://gohugo.io/gravity-data/absolute-gravity-process/</guid>
       <description>连续重力一般指相对重力连续测量
-The .File object contains the following fields:
+  The .File object contains the following fields:
  .File.Path the original relative path of the page, relative to the content dir (e.g., posts/foo.en.md) .File.LogicalName the name of the content file that represents a page (e.g., foo.en.md) .File.TranslationBaseName the filename without extension or optional language identifier (e.g., foo) .File.ContentBaseName is a either TranslationBaseName or name of containing folder if file is a leaf bundle. .File.BaseFileName the filename without extension (e.</description>
     </item>
     
@@ -24,8 +24,8 @@
       <pubDate>Wed, 01 Feb 2017 00:00:00 +0000</pubDate>
       
       <guid>https://gohugo.io/gravity-data/continuous-gravity-process/</guid>
-      <description>连续重力一般指相对重力连续测量
-</description>
+      <description>  连续重力一般指相对重力连续测量
+  </description>
     </item>
     
   </channel>
