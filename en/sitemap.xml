@@ -30,7 +30,7 @@
     <lastmod>2021-08-21T15:19:30+08:00</lastmod>
   </url><url>
     <loc>https://gohugo.io/coding/shell/</loc>
-    <lastmod>2021-08-21T15:19:30+08:00</lastmod>
+    <lastmod>2021-08-24T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://gohugo.io/coding/c&#43;&#43;/</loc>
     <lastmod>2021-08-21T14:31:38+08:00</lastmod>
@@ -52,6 +52,9 @@
   </url><url>
     <loc>https://gohugo.io/about/features/</loc>
     <lastmod>2021-08-15T23:12:59+08:00</lastmod>
+  </url><url>
+    <loc>https://gohugo.io/getting-started/laplace_sulution/</loc>
+    <lastmod>2021-11-16T23:56:28+08:00</lastmod>
   </url><url>
     <loc>https://gohugo.io/gravity-manual/growth3.0/</loc>
     <lastmod>2021-08-21T14:14:00+08:00</lastmod>
@@ -78,7 +81,7 @@
     <lastmod>2021-08-21T14:14:00+08:00</lastmod>
   </url><url>
     <loc>https://gohugo.io/categories/</loc>
-    <lastmod>2021-08-21T15:19:30+08:00</lastmod>
+    <lastmod>2021-11-16T23:56:28+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
@@ -90,11 +93,17 @@
                 href="https://gohugo.io/categories/"
                 />
   </url><url>
+    <loc>https://gohugo.io/categories/fundamentals/</loc>
+    <lastmod>2021-11-16T23:56:28+08:00</lastmod>
+  </url><url>
+    <loc>https://gohugo.io/categories/getting-started/</loc>
+    <lastmod>2021-11-16T23:56:28+08:00</lastmod>
+  </url><url>
     <loc>https://gohugo.io/categories/coding/</loc>
-    <lastmod>2021-08-21T15:19:30+08:00</lastmod>
+    <lastmod>2021-08-24T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://gohugo.io/categories/python/</loc>
-    <lastmod>2021-08-21T15:19:30+08:00</lastmod>
+    <lastmod>2021-08-24T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://gohugo.io/news/gravitychina_is_coming/</loc>
     <lastmod>2021-08-15T19:19:09+08:00</lastmod>
@@ -138,12 +147,6 @@
   </url><url>
     <loc>https://gohugo.io/categories/gravity-data-process/</loc>
     <lastmod>2021-08-21T15:19:30+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/categories/getting-started/</loc>
-    <lastmod>2021-08-21T15:19:30+08:00</lastmod>
-  </url><url>
-    <loc>https://gohugo.io/categories/fundamentals/</loc>
-    <lastmod>2021-08-21T14:14:00+08:00</lastmod>
   </url><url>
     <loc>https://gohugo.io/news/</loc>
     <lastmod>2021-08-15T19:19:09+08:00</lastmod>
