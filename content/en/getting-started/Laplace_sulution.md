@@ -88,16 +88,67 @@ $$
 
 函数$g\left(\theta\right)$和$h\left(\theta\right)$都只与一个变量有关，将上式代入（9）并乘以$\frac{sin\theta}{g\left(\theta\right)h\left(\lambda\right)}$,则有：
 $$
-\frac{sin{\theta}}{g\left(\theta\right)}\left[sin{\theta}g^\pprime\left(\theta\right)+cos{\theta}g^\prime\left(\theta\right)+n\left(n+1\right)sin{\theta}g\left(\theta\right)\right]=-\frac{h^\pprime\left(\lambda\right)}{h\left(\lambda\right)}
+\frac{sin{\theta}}{g\left(\theta\right)}\left[sin{\theta}g^{''}\left(\theta\right)+cos{\theta}g^\prime\left(\theta\right)+n\left(n+1\right)sin{\theta}g\left(\theta\right)\right]=-\frac{h^{''}\left(\lambda\right)}{h\left(\lambda\right)}
 $$
 等号左边只是θ的函数，与λ无关；右边只是λ的函数，与θ无关。方程两端又只能都是同一个常数记作Λ，上式就被分解为两个常微分方程，即
 $$
-h^\pprime\left(\lambda\right)+\Lambda h\left(\lambda\right)=0
+h^{''}\left(\lambda\right)+\Lambda h\left(\lambda\right)=0
 $$
 
 $$
-sin{\theta}g^\pprime\left(\theta\right)+cos{\theta}g^\prime\left(\theta\right)+\left[n\left(n+1\right)sin{\theta}-\frac{\Lambda}{sin{\theta}}\right]g\left(\theta\right)=0
+sin{\theta}g^{''}\left(\theta\right)+cos{\theta}g^\prime\left(\theta\right)+\left[n\left(n+1\right)sin{\theta}-\frac{\Lambda}{sin{\theta}}\right]g\left(\theta\right)=0
 $$
 
 实际上，常微分方程（14）隐含着一个附加条件即“自然的周期条件”，$h\left(\varphi+2\pi\right)=h\left(\varphi\right)$常微分方程（14)和自然周期条件构成本征值问题，
+
+本征值是：
+$$
+\Lambda=m^2\left(m=0,1,2,3,\cdots\right)
+$$
+本征函数是：
+$$
+h\left(\lambda\right)=C_1cos{m}\lambda+C_2sin{m}\lambda
+$$
+这就是常微分方程式（14）的通解。
+
+常微分方程（15）称为勒让德微分方程，它的解算较复杂，可以证明，只有当n和m为整数0,1,2,…而且m小于或等于n时，才有物理意义的解。
+
+勒让德方程式（15）的解$g\left(\theta\right)$改用符号$P_{nm}\left(cos\theta\right)$来表示，称为勒让德函数，即：
+$$
+P_{nm}\left(cos{\theta}\right)=g\left(\theta\right)
+$$
+因而有通解：
+$$
+Y\left(\theta,\lambda\right)=g\left(\theta\right)h\left(\lambda\right)=C_1P_{nm}\left(cos{\theta}\right)cos{m}\lambda+C_2P_{nm}\left(cos{\theta}\right)sin{m}\lambda	
+$$
+这就是拉普拉斯面谐函数微分方程式的通解。式中C1和C2为常数，在具体问题中需由边值条件确定。
+
+因为这个方程式是线性的，它的任何线性组合也必然是微分方程式（9）的解。设𝐶1=𝑎𝑛𝑚，𝐶2=𝑏𝑛𝑚，则一般线性组合的形式为：
+$$
+Y\left(\theta,\lambda\right)=\sum_{m=0}^{n}\left[a_{nm}cos{m}\lambda+b_{nm}sin{m}\lambda\right]P_{nm}\left(cos{\theta}\right)
+$$
+或写成
+$$
+Y\left(\theta,\lambda\right)=a_nP_n\left(cos{\theta}\right)+\sum_{m=1}^{n}{\left[a_{nm}cos{m}\lambda+b_{nm}sin{m}\lambda\right]P_{nm}\left(cos{\theta}\right)}
+$$
+这是面谐函数Y(θ,λ)的一般表达式。
+
+其中m=0时，$P_{nm}\left(cos\theta\right)$称为主球函数，当m≠0时，$P_{nm}\left(cos\theta\right)\begin{pmatrix}cosm\lambda\\cosm\lambda\end{pmatrix}$称为谛合球函数（也称伴随球函数、连带球函数）。通常n称为球函数的阶，m称为球函数的次（或级)。相应的系数𝑎𝑛称为主球函数系数；𝑎𝑛𝑚和𝑏𝑛𝑚称为缔合球函数系数，两者统称为球函数系数。而且次m一定小于或等于阶n，所以上式中求和的上限为n。
+
+缔合球函数用符号𝑅𝑛𝑚(𝜃,𝜆)、𝑆𝑛𝑚(𝜃,𝜆)表示；
+$$
+R_{nm}\left(\theta,\lambda\right)=P_{nm}\left(cos{\theta}\right)cos{m}\lambda \\
+S_{nm}\left(\theta,\lambda\right)=P_{nm}\left(cos{\theta}\right)sin{m}\lambda
+$$
+把（21）代入（12）式得：
+
+球内：
+$$
+V_i\left(\theta,\lambda\right)=\sum_{n=0}^{\infty}r^n\sum_{m=0}^{n}{\left[a_{nm}cos{m}\lambda+b_{nm}sin{m}\lambda\right]P_{nm}}\left(cos{\theta}\right)
+$$
+球外：
+$$
+V_e\left(\theta,\lambda\right)=\sum_{n=0}^{\infty}\frac{1}{r^{n+1}}\sum_{m=0}^{n}{\left[a_{nm}cos{m}\lambda+b_{nm}sin{m}\lambda\right]P_{nm}}\left(cos{\theta}\right)
+$$
+上两式都是拉普拉斯方程式的解，因而都是谐函数。
 
