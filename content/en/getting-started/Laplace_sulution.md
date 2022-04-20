@@ -1,7 +1,7 @@
 ---
 title: 拉普拉斯微分方程式在球坐标系中的解法
 linktitle: 重力学概述
-description: 如何快速进入重力学的研究.
+description:
 date: 2021-11-01
 publishdate: 2021-11-01
 lastmod: 2021-11-16
@@ -16,6 +16,7 @@ weight: 30
 sections_weight: 30
 draft: false
 toc: true
+math: true
 ---
 
 设V是坐标$x,y,z$的函数，则偏微分方程：
@@ -31,8 +32,6 @@ $$
 \Delta=\frac{\partial^2}{\partial x^2}+\frac{\partial^2}{\partial y^2}+\frac{\partial^2}{\partial z^2}
 $$
 拉普拉斯方程又称调和方程、位势方程，拉普拉斯方程是泊松方程的特殊形式，拉普拉斯函数是调和函数，泊松方程不是调和函数。
-
-![image-20211116233943704](https://gitee.com/georgegou/gravitychina/raw/picture/202111162339118.png)
 
 直角坐标系-球坐标系中的转化：
 $$

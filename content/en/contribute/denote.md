@@ -31,7 +31,7 @@ toc: false
 
 ## 捐赠途径
 
-![image-20210426123002427](https://gitee.com/georgegou/mark-down_picture/raw/picture/2021/image-20210426123002427.png)
+![image-20210426123002427](https://cdn.jsdelivr.net/gh/George-Gou/PictureBed@master/2022/image-20210426123002427.png)
 
 不推荐学生群体进行大额捐赠，一杯咖啡即可。
 
